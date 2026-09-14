@@ -1,0 +1,50 @@
+{
+  "slug": "qwen3-14b-fit-ladder-2026-07-15",
+  "event_id": "qwen3-14b-fit-ladder-2026-07-15",
+  "event_type": "specialized-test",
+  "event_date": "2026-07-15",
+  "record_date": "2026-07-15",
+  "model_id": "qwen3-14b",
+  "profile_id": "qwen3-14b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M (unsloth)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — fit ladder",
+  "event_title": "Fit-ladder success-fallback E2E (LLMGauge feature validation)",
+  "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LLMGauge fit-ladder success-fallback E2E payload (32k -> 8k).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3-14b/events/qwen3-14b-fit-ladder-2026-07-15",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3-14b",
+      "commit": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+      "path": "events/qwen3-14b-fit-ladder-2026-07-15.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3-14b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3-14b",
+      "ref": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+      "url": "https://github.com/WumboLabs/eval-qwen3-14b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3-14b/events/qwen3-14b-fit-ladder-2026-07-15/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3-14b/events/qwen3-14b-fit-ladder-2026-07-15/WEBSITE-SUMMARY.md",
+    "sha256": "a7207a65f7159a4e38b484490a58d97323107a1fac5a1464f7f87178f61abe76",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

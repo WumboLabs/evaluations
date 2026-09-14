@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen2.5-3b",
+  "model_display_name": "Qwen2.5-3B Instruct",
+  "profile_id": "qwen2.5-3b-llamacpp-f16",
+  "profile_display_name": "llama.cpp F16 (comparison reference)",
+  "runtime_family": "llama.cpp",
+  "artifact": "Qwen2.5-3B-Instruct F16 GGUF (6,178,317,312-byte fingerprint)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "benchmark-only",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
+      "commit": "651bbea8c5d1e9c1c5dfa21a538a6922f2bf60a8",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen2.5-3b/profiles/qwen2.5-3b-llamacpp-f16",
+  "event_ids": [
+    "qwen25-3b-cross-runtime-2026-07-15"
+  ],
+  "legacy_first_event": "qwen25-3b-cross-runtime-2026-07-15"
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "gemma4-e4b",
+  "event_id": "initial-evaluation-2026-09-10-gemma4",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-10",
+  "record_date": "2026-09-10",
+  "model_id": "gemma4-e4b",
+  "profile_id": "gemma4-e4b-llamacpp-qat-q4-0",
+  "profile_name": "llama.cpp official QAT Q4_0",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — official QAT Q4_0",
+  "event_title": "Initial evaluation (full characterization)",
+  "welp_status": "READY_WITH_GUARDRAILS / CLOSED_WELP_CROSS_FAMILY_CONTROL",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "source": {
+    "path": "models/gemma4-e4b/events/initial-evaluation-2026-09-10-gemma4/website-publication.json",
+    "sha256": "45aca9eb0ff421280e04e6137cdcdc8571e40754a89c5f4e705b410ab7a052bb",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "FULL_EVALUATION",
+  "event_path": "models/gemma4-e4b/events/initial-evaluation-2026-09-10-gemma4",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma4-e4b",
+      "commit": "980b54ac5a0bb26534929149d6f6f3d041e65e56",
+      "path": "EVIDENCE-SUMMARY.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma4-e4b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma4-e4b",
+      "ref": "336d86a0fefb7c64e3c7c770d4cd41057b98990d",
+      "url": "https://github.com/WumboLabs/eval-gemma4-e4b"
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-gemma4-e4b",
+      "ref": "336d86a0fefb7c64e3c7c770d4cd41057b98990d",
+      "path": "website-publication.json",
+      "sha256": "45aca9eb0ff421280e04e6137cdcdc8571e40754a89c5f4e705b410ab7a052bb"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma4-e4b/events/initial-evaluation-2026-09-10-gemma4/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

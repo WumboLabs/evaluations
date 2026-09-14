@@ -1,0 +1,61 @@
+{
+  "slug": "qwen38-27b-context-envelope",
+  "event_id": "context-envelope-completion-2026-09-12",
+  "event_type": "context-envelope-completion",
+  "event_date": "2026-09-12",
+  "record_date": "2026-09-12",
+  "model_id": "qwen38-27b",
+  "profile_id": "qwen38-27b-exl3-h1",
+  "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
+  "profile_status": "current",
+  "event_kicker": "Context Envelope — ExLlamaV3 H1",
+  "event_title": "Context envelope completion",
+  "welp_status": "GUARDED / MODEL-CARD CONTEXT ENVELOPE COMPLETE",
+  "evidence_scope": [
+    "context"
+  ],
+  "authoring": "generated",
+  "legacy_urls": [
+    "/labs/qwen38-27b-context-envelope/"
+  ],
+  "publication_state": "published",
+  "source": {
+    "path": "models/qwen38-27b/events/context-envelope-completion-2026-09-12/website-publication.json",
+    "sha256": "efbde1adf01c3a57b59d1b51d9234384cd62738de299cbe9c8b6f06f80f8064f",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "CONTEXT_COMPLETION",
+  "event_path": "models/qwen38-27b/events/context-envelope-completion-2026-09-12",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "commit": "484c9184ae459c79754b77b7dc95da09e64d37a5",
+      "path": "reports/qwen38-27b-context-envelope-completion-2026-09-12.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "ref": "7138cd9f0c73bf306d08ef1a81075eb892f3ae99",
+      "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "original_repo": "WumboLabs/eval-qwen3.8-27b",
+      "original_commit": "78e8ebf636d33048f1e23b687ed060be9ccc1e97",
+      "note": "Export byte-identical to the original context-envelope publication; migrated to the canonical profile repository on 2026-09-12."
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "ref": "7138cd9f0c73bf306d08ef1a81075eb892f3ae99",
+      "path": "website-publication.json",
+      "sha256": "efbde1adf01c3a57b59d1b51d9234384cd62738de299cbe9c8b6f06f80f8064f"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen38-27b/events/context-envelope-completion-2026-09-12/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

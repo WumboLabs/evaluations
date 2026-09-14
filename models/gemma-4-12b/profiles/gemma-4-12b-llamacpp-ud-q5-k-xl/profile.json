@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "gemma-4-12b",
+  "model_display_name": "Gemma 4 12B IT",
+  "profile_id": "gemma-4-12b-llamacpp-ud-q5-k-xl",
+  "profile_display_name": "llama.cpp Unsloth UD-Q5_K_XL",
+  "runtime_family": "llama.cpp",
+  "artifact": "unsloth/gemma-4-12b-it-GGUF UD-Q5_K_XL",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "practical-use",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
+      "commit": "1089dc35016e72342019266608ad958af0de1256",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-llamacpp-ud-q5-k-xl",
+  "event_ids": [
+    "gemma4-12b-lmx-speed-2026-07-04"
+  ],
+  "legacy_first_event": "gemma4-12b-practical-use-family-2026-06-21"
+}

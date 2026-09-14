@@ -1,0 +1,25 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "grug-12b",
+  "model_display_name": "Grug 12B",
+  "profile_id": "grug-12b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "kai-os/Grug-12B-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "practical-use",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-grug-12b",
+      "commit": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/grug-12b/profiles/grug-12b-llamacpp-q4km",
+  "event_ids": [
+    "grug-honesty-smoke-2026-07-04",
+    "grug-lmx-speed-2026-07-04"
+  ],
+  "legacy_first_event": "grug-practical-verdict-2026-07-04"
+}

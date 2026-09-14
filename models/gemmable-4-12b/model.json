@@ -1,0 +1,31 @@
+{
+  "model_id": "gemmable-4-12b",
+  "display_name": "Gemmable 4 12B MTP",
+  "vendor": "Mia-AiLab (Gemma 4 12B MTP derivative)",
+  "weight": 15,
+  "website_slug": "gemmable-4-12b",
+  "website_url": "https://wumbolabs.dev/evaluations/gemmable-4-12b/",
+  "current_state": {
+    "agent-backend": "gemmable-agent-backend-2026-06-21",
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "gemmable-lmx-speed-2026-07-04",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "gemmable-agent-backend-2026-06-21",
+    "practical-use": null,
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "gemmable-4-12b-llamacpp-q4km",
+    "classification": null,
+    "profile_ids": [
+      "gemmable-4-12b-llamacpp-q4km"
+    ],
+    "event_ids": [
+      "gemmable-agent-backend-2026-06-21",
+      "gemmable-lmx-speed-2026-07-04"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

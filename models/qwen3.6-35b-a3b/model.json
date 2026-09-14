@@ -1,0 +1,31 @@
+{
+  "model_id": "qwen3.6-35b-a3b",
+  "display_name": "Qwen3.6-35B-A3B",
+  "vendor": "Alibaba (Qwen team)",
+  "weight": 14,
+  "website_slug": "qwen3-6-35b-a3b",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen36-35b-practical-v071-2026-07-22",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "qwen36-35b-fit-ladder-e2e-2026-07-15",
+    "practical-use": "qwen36-35b-practical-v071-2026-07-22",
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+    "classification": null,
+    "profile_ids": [
+      "qwen3.6-35b-a3b-llamacpp-ud-iq2-m"
+    ],
+    "event_ids": [
+      "qwen36-35b-practical-v071-2026-07-22",
+      "qwen36-35b-fit-ladder-e2e-2026-07-15"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

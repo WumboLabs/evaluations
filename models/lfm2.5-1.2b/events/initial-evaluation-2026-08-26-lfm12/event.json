@@ -1,0 +1,54 @@
+{
+  "slug": "lfm2.5-1.2b",
+  "event_id": "initial-evaluation-2026-08-26-lfm12",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-26",
+  "record_date": "2026-08-26",
+  "model_id": "lfm2.5-1.2b",
+  "profile_id": "lfm2.5-1.2b-llamacpp-qad-q4-0",
+  "profile_name": "llama.cpp QAD Q4_0",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+  "event_title": "Initial evaluation (small-model evaluation)",
+  "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale — every quant including BF16 fabricates confidently on invented subjects.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "evidence_maturity": "FULL_EVALUATION",
+  "event_path": "models/lfm2.5-1.2b/events/initial-evaluation-2026-08-26-lfm12",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-lfm2.5-1.2b",
+      "commit": "251a523bb46684c138cf0e9fe6f38c3fa49a4e95",
+      "path": "report.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-lfm2.5-1.2b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-lfm2.5-1.2b",
+      "ref": "main",
+      "url": "https://github.com/WumboLabs/eval-lfm2.5-1.2b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/lfm2.5-1.2b/events/initial-evaluation-2026-08-26-lfm12/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/lfm2.5-1.2b/events/initial-evaluation-2026-08-26-lfm12/WEBSITE-SUMMARY.md",
+    "sha256": "829eb9db0817846024f3a9636c564a7ba40aaa8b74d79fa04346dbf05517f422",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

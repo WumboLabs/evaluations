@@ -1,0 +1,23 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "bonsai-27b",
+  "model_display_name": "Bonsai 27B (Q1_0)",
+  "profile_id": "bonsai-27b-q1-0-llamacpp",
+  "profile_display_name": "llama.cpp Q1_0 (unscored smoke payload)",
+  "runtime_family": "llama.cpp",
+  "artifact": "Upstream identity unresolved; retained public evidence describes a 3,803,452,480-byte Q1_0 artifact fingerprint.",
+  "artifact_precision": "Q1_0",
+  "current_status": "specialized",
+  "repository": "WumboLabs/evaluations",
+  "profile_path": "models/bonsai-27b/profiles/bonsai-27b-q1-0-llamacpp",
+  "event_ids": [
+    "bonsai-27b-smoke-v070-2026-07-14"
+  ],
+  "legacy_sources": [
+    {
+      "repo": "RIPPERONInCHEEZ/wumbolabs",
+      "commit": "e27ddcb89b56c27e87d7a3af34003cd8c6d7355b",
+      "path": "data/labs-registry.json"
+    }
+  ]
+}

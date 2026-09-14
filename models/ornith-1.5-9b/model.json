@@ -1,0 +1,31 @@
+{
+  "model_id": "ornith-1.5-9b",
+  "display_name": "Ornith 1.5 9B",
+  "vendor": "ornith-ai",
+  "weight": 6,
+  "website_slug": "ornith-1-5-9b",
+  "website_url": "https://wumbolabs.dev/evaluations/ornith-1-5-9b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "initial-evaluation-2026-08-27",
+    "localmaxxing": null,
+    "performance": "ornith-9b-wumboserver-admission-2026-09-02",
+    "capabilities": "initial-evaluation-2026-08-27",
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": "initial-evaluation-2026-08-27",
+    "reliability": "initial-evaluation-2026-08-27",
+    "recommended_profile_id": "ornith-1.5-9b-llamacpp-q4km",
+    "classification": "COMPLETE / FINAL_WELP_READINESS_NOT_READY",
+    "profile_ids": [
+      "ornith-1.5-9b-llamacpp-q4km"
+    ],
+    "event_ids": [
+      "initial-evaluation-2026-08-27",
+      "ornith-9b-wumboserver-admission-2026-09-02"
+    ]
+  },
+  "context_summary": "Full WELP campaign completed. Phase 3 practical viability ADVANCE (0.922); Phase 4 reliability gate FAIL (DO_NOT_ADVANCE) closes all deployment roles: FINAL WELP READINESS: NOT_READY. Later-phase evidence is characterization only."
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "mellum2-agent-backend-64k-2026-06-17",
+  "event_id": "mellum2-agent-backend-64k-2026-06-17",
+  "event_type": "specialized-test",
+  "event_date": "2026-06-17",
+  "record_date": "2026-06-17",
+  "model_id": "mellum2-12b-a2.5b",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+  "profile_name": "llama.cpp Q4_K_M (Instruct)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — LLMGauge agent-backend-v1",
+  "event_title": "Agent backend fit test (64k, Instruct + Thinking)",
+  "welp_status": "SPECIALIZED_TEST / AGENT_BACKEND_FIT_TEST (not a general quality verdict)",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized",
+    "agent-backend"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "64k agent-backend fit confirmed (Instruct 5/5 complete, 251.0-257.2 tok/s out, 9203 MiB peak VRAM); Instruct preferred over Thinking; neither unsupervised-shell safe.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "report_page": "records/mellum2-agent-backend-test.md",
+  "report_title": "Mellum2 Agent Backend Test",
+  "related_profile_ids": [
+    "mellum2-12b-a2.5b-llamacpp-q4km-thinking"
+  ],
+  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-agent-backend-64k-2026-06-17",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "commit": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "path": "events/mellum2-agent-backend-64k-2026-06-17.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-agent-backend-64k-2026-06-17/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-agent-backend-64k-2026-06-17/WEBSITE-SUMMARY.md",
+    "sha256": "44fb923a12c642c8504e966f9c7b89baa86e15e79c047b97a349903cfc5529cb",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

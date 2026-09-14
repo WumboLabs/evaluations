@@ -1,0 +1,25 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3-14b",
+  "model_display_name": "Qwen3-14B",
+  "profile_id": "qwen3-14b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M (unsloth)",
+  "runtime_family": "llama.cpp",
+  "artifact": "unsloth/Qwen3-14B-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "benchmark-only",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3-14b",
+      "commit": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km",
+  "event_ids": [
+    "qwen3-14b-lmx-speed-2026-07-05",
+    "qwen3-14b-fit-ladder-2026-07-15"
+  ],
+  "legacy_first_event": "qwen3-14b-practical-v025-2026-07-05"
+}

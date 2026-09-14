@@ -1,0 +1,26 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "apodex-1.1-mini",
+  "model_display_name": "Apodex 1.1 mini",
+  "profile_id": "apodex-1.1-mini-llamacpp-iq1m",
+  "profile_display_name": "llama.cpp IQ1_M (community conversion)",
+  "runtime_family": "llama.cpp",
+  "artifact": "Apodex-1.1-mini-IQ1_M.gguf (community conversion abenzerps/Apodex-1.1-mini-GGUF @ 59afa57852525f79a9634d5f80dd639cceee572c)",
+  "artifact_precision": "IQ1_M",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "notes": "Bounded early-stop campaign; PHASE_3_DO_NOT_ADVANCE is the model-level outcome.",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-apodex-1.1-mini",
+      "commit": "202d2ee09cec20ec6981c6ed22541e44b9dc3865",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/apodex-1.1-mini/profiles/apodex-1.1-mini-llamacpp-iq1m",
+  "event_ids": [
+    "initial-evaluation-2026-08-25-apodex"
+  ],
+  "legacy_first_event": "initial-evaluation-2026-08-25"
+}

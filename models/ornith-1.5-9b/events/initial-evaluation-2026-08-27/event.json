@@ -1,0 +1,54 @@
+{
+  "slug": "ornith-1.5-9b",
+  "event_id": "initial-evaluation-2026-08-27",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-27",
+  "record_date": "2026-08-27",
+  "model_id": "ornith-1.5-9b",
+  "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — Full Campaign (NOT_READY)",
+  "event_title": "Initial evaluation (full-lifecycle WELP campaign)",
+  "welp_status": "COMPLETE / FINAL_WELP_READINESS_NOT_READY",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Full WELP campaign completed. Phase 3 practical viability ADVANCE (0.922); Phase 4 reliability gate FAIL (DO_NOT_ADVANCE) closes all deployment roles: FINAL WELP READINESS: NOT_READY. Later-phase evidence is characterization only.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "evidence_maturity": "FULL_EVALUATION",
+  "event_path": "models/ornith-1.5-9b/events/initial-evaluation-2026-08-27",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-ornith-1.5-9b",
+      "commit": "608294a336ce0de9fc9298ce65564b12242a0980",
+      "path": "report.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-ornith-1.5-9b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-ornith-1.5-9b",
+      "ref": "main",
+      "url": "https://github.com/WumboLabs/eval-ornith-1.5-9b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/ornith-1.5-9b/events/initial-evaluation-2026-08-27/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/ornith-1.5-9b/events/initial-evaluation-2026-08-27/WEBSITE-SUMMARY.md",
+    "sha256": "dca5ae3e49ea9152f0ebeab182dbb5bd5a204e03134e24f7151cc0bc0816b325",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

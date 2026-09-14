@@ -1,0 +1,65 @@
+{
+  "slug": "gemma4-12b-practical-use-family-2026-06-21",
+  "event_id": "gemma4-12b-practical-use-family-2026-06-21",
+  "event_type": "practical-use-comparison",
+  "event_date": "2026-06-21",
+  "record_date": "2026-06-21",
+  "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+  "profile_status": "current",
+  "event_kicker": "Practical Use — LLMGauge wumbolabs-practical-use-v1",
+  "event_title": "12B Gemma practical-use test (QAT vs UD-Q5 vs Gemmable)",
+  "welp_status": "PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)",
+  "evidence_maturity": "PRACTICAL_USE",
+  "evidence_scope": [
+    "practical-use"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "QAT Q4_0 was the strongest 12B Gemma practical variant: 259.2/300 (4.32 avg), ahead of UD-Q5_K_XL (254.0/300) on the same suite.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "report_page": "records/gemma-12b-practical-use.md",
+  "report_title": "12B Gemma-Based Practical Use Test",
+  "related_model_ids": [
+    "gemma-4-12b",
+    "gemmable-4-12b"
+  ],
+  "shared_event_id": "practical-use-comparison-2026-06-21",
+  "shared_model_notes": {
+    "gemmable-4-12b": "Gemmable 4 12B MTP Q4_K_M scored 119.8/300 (2.0 avg) on the same suite"
+  },
+  "event_path": "shared-events/practical-use-comparison-2026-06-21",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "commit": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "shared/compare-gemma4-family-wumbolabs-practical-v024-scored.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "ref": "945cc3d549475ca7360781a94460005ab5932926",
+      "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "shared-events/practical-use-comparison-2026-06-21/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "shared-events/practical-use-comparison-2026-06-21/WEBSITE-SUMMARY.md",
+    "sha256": "f71be45612f590099cbf55539aeb68f6dc23e18efa43ac9eb99adc9c162f91ab",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "website_attribution": {
+    "model_id": "gemma-4-12b",
+    "profile_id": "gemma-4-12b-llamacpp-qat-q4-0"
+  },
+  "related_profile_ids": [
+    "gemma-4-12b-llamacpp-qat-q4-0"
+  ]
+}

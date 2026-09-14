@@ -1,0 +1,25 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "gemmable-4-12b",
+  "model_display_name": "Gemmable 4 12B MTP",
+  "profile_id": "gemmable-4-12b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "Mia-AiLab/Gemmable-4-12B-MTP-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "practical-use",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemmable-4-12b",
+      "commit": "f307603ad9e1515ff59261d86f842e1cace43980",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/gemmable-4-12b/profiles/gemmable-4-12b-llamacpp-q4km",
+  "event_ids": [
+    "gemmable-agent-backend-2026-06-21",
+    "gemmable-lmx-speed-2026-07-04"
+  ],
+  "legacy_first_event": "gemmable-practical-use-2026-06-21"
+}

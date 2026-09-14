@@ -1,0 +1,51 @@
+{
+  "slug": "qwen36-35b-practical-v071-2026-07-22",
+  "event_id": "qwen36-35b-practical-v071-2026-07-22",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-22",
+  "record_date": "2026-07-22",
+  "model_id": "qwen3.6-35b-a3b",
+  "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+  "profile_name": "llama.cpp Unsloth UD-IQ2_M",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — tool-version re-run",
+  "event_title": "LLMGauge v0.71 practical re-run",
+  "welp_status": "BENCHMARK_ONLY (TOOL_VERSION_RERUN)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance",
+    "practical-use"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Same artifact/suite re-run under LLMGauge v0.71 for tool-version continuity.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3.6-35b-a3b/events/qwen36-35b-practical-v071-2026-07-22",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "commit": "d89df9bc26227247b858033742048bc6ccede901",
+      "path": "events/qwen36-35b-practical-v071-2026-07.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "ref": "d89df9bc26227247b858033742048bc6ccede901",
+      "url": "https://github.com/WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-practical-v071-2026-07-22/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-practical-v071-2026-07-22/WEBSITE-SUMMARY.md",
+    "sha256": "a7cfb89287bd21704017da384cfcbad4fcea21e2da2cb4b48eb577a4935589bd",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

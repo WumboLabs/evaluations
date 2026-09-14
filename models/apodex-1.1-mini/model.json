@@ -1,0 +1,30 @@
+{
+  "model_id": "apodex-1.1-mini",
+  "display_name": "Apodex 1.1 mini",
+  "vendor": "Apodex (Qwen3.5-35B-A3B MoE base)",
+  "weight": 3,
+  "website_slug": "apodex-1-1-mini",
+  "website_url": "https://wumbolabs.dev/evaluations/apodex-1-1-mini/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "initial-evaluation-2026-08-25-apodex",
+    "localmaxxing": null,
+    "performance": "initial-evaluation-2026-08-25-apodex",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "apodex-1.1-mini-llamacpp-iq1m",
+    "classification": "BOUNDED_EARLY_STOP / PHASE_3_DO_NOT_ADVANCE",
+    "profile_ids": [
+      "apodex-1.1-mini-llamacpp-iq1m"
+    ],
+    "event_ids": [
+      "initial-evaluation-2026-08-25-apodex"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+  "event_id": "qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+  "event_type": "specialized-test",
+  "event_date": "2026-07-15",
+  "record_date": "2026-07-15",
+  "model_id": "qwen2.5-3b",
+  "profile_id": "qwen2.5-3b-vllm-bf16",
+  "profile_name": "vLLM BF16 (cross-runtime lane)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — runtime fingerprint",
+  "event_title": "vLLM fingerprint live smoke",
+  "welp_status": "SPECIALIZED_TEST / RUNTIME_FINGERPRINT",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "vLLM runtime-fingerprint smoke using Qwen2.5-3B as payload.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen2.5-3b/events/qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+      "commit": "92e975e31a46b1e84e21b838f7a79e5c91cd7e86",
+      "path": "events/qwen25-3b-vllm-fingerprint-smoke-2026-07.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+      "ref": "92e975e31a46b1e84e21b838f7a79e5c91cd7e86",
+      "url": "https://github.com/WumboLabs/eval-qwen2.5-3b-vllm-bf16"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen2.5-3b/events/qwen25-3b-vllm-fingerprint-smoke-2026-07-15/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen2.5-3b/events/qwen25-3b-vllm-fingerprint-smoke-2026-07-15/WEBSITE-SUMMARY.md",
+    "sha256": "89f1396c010ff94684eae26b7976a316266c6c8ef2efdeac5276258ccf319926",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

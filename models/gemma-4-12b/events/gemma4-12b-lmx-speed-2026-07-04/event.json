@@ -1,0 +1,55 @@
+{
+  "slug": "gemma4-12b-lmx-speed-2026-07-04",
+  "event_id": "gemma4-12b-lmx-speed-2026-07-04",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-04",
+  "record_date": "2026-07-04",
+  "model_id": "gemma-4-12b",
+  "profile_id": "gemma-4-12b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M (ggml-org)",
+  "profile_status": "specialized",
+  "event_kicker": "Benchmark Only — LMX local speed",
+  "event_title": "LMX speed runs across four Gemma 4 12B quants",
+  "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LMX local speed evidence across four quants: Q4_K_M 72.11, UD-Q5_K_XL 62.76, UD-Q6_K_XL 51.26 tok/s out.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "related_profile_ids": [
+    "gemma-4-12b-llamacpp-qat-q4-0",
+    "gemma-4-12b-llamacpp-ud-q5-k-xl",
+    "gemma-4-12b-llamacpp-ud-q6-k-xl"
+  ],
+  "event_path": "models/gemma-4-12b/events/gemma4-12b-lmx-speed-2026-07-04",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-q4km",
+      "commit": "561be30e6f39eefb19fa36844904fb110c6a66a8",
+      "path": "events/gemma4-12b-lmx-speed-2026-07-04.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma-4-12b-q4km",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma-4-12b-q4km",
+      "ref": "561be30e6f39eefb19fa36844904fb110c6a66a8",
+      "url": "https://github.com/WumboLabs/eval-gemma-4-12b-q4km"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma-4-12b/events/gemma4-12b-lmx-speed-2026-07-04/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/gemma-4-12b/events/gemma4-12b-lmx-speed-2026-07-04/WEBSITE-SUMMARY.md",
+    "sha256": "85de2b2a89157bdde25d4d4cbd8674747d7e180eedb5aeef599f5150d730e1fe",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "mellum2-12b-a2.5b",
+  "model_display_name": "Mellum2 12B-A2.5B (Thinking)",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+  "profile_display_name": "llama.cpp Q4_K_M (Thinking)",
+  "runtime_family": "llama.cpp",
+  "artifact": "JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "specialized-test",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
+      "commit": "294840163db9f3f6ecc19c8767b975aa003314f1",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/mellum2-12b-a2.5b/profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+  "event_ids": [
+    "mellum2-agent-backend-64k-2026-06-17"
+  ],
+  "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
+}

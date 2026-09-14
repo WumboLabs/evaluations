@@ -1,0 +1,49 @@
+{
+  "slug": "bonsai-27b-smoke-v070-2026-07-14",
+  "event_id": "bonsai-27b-smoke-v070-2026-07-14",
+  "event_type": "specialized-test",
+  "event_date": "2026-07-14",
+  "record_date": "2026-07-14",
+  "model_id": "bonsai-27b",
+  "profile_id": "bonsai-27b-q1-0-llamacpp",
+  "profile_name": "llama.cpp Q1_0 (unscored smoke payload)",
+  "profile_status": "specialized",
+  "event_kicker": "Specialized Test — unscored smoke",
+  "event_title": "LLMGauge v0.70 smoke runs (Q1_0 payload, unscored)",
+  "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE / IDENTITY_UNRESOLVED",
+  "evidence_maturity": "UNRESOLVED_HISTORICAL",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Three completed unscored 1-prompt smoke runs under LLMGauge v0.70 with a Q1_0 27B artifact locally labeled bonsai_27b_q1_0; upstream artifact identity unresolved.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/bonsai-27b/events/bonsai-27b-smoke-v070-2026-07-14",
+  "legacy_sources": [
+    {
+      "repo": "RIPPERONInCHEEZ/wumbolabs",
+      "commit": "e27ddcb89b56c27e87d7a3af34003cd8c6d7355b",
+      "path": "data/labs-events/bonsai-27b-smoke-v070-2026-07-14.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "UNRESOLVED_UPSTREAM_IDENTITY (canonical profile repository blocked; see provenance note)",
+    "canonical_evidence": {
+      "state": "published",
+      "url": "https://wumbolabs.dev/evaluations/bonsai-27b/",
+      "note": "No canonical profile repository exists yet: the upstream artifact identity cannot be proven (v0.70+ provenance redacts model paths; archaeology preserves a 3,803,452,480-byte fingerprint). The canonical evidence for this event is the model page itself plus the retained local run trees."
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/bonsai-27b/events/bonsai-27b-smoke-v070-2026-07-14/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/bonsai-27b/events/bonsai-27b-smoke-v070-2026-07-14/REPORT.md",
+    "sha256": "da93ae11e0174269ac446d77c585f695979689a778399475af7248f98d91c790",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

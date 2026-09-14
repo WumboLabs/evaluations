@@ -1,0 +1,54 @@
+{
+  "slug": "lfm2.5-2.6b",
+  "event_id": "initial-evaluation-2026-08-26-lfm26",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-26",
+  "record_date": "2026-08-26",
+  "model_id": "lfm2.5-2.6b",
+  "profile_id": "lfm2.5-2.6b-llamacpp-qad-q4-0",
+  "profile_name": "llama.cpp QAD Q4_0",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+  "event_title": "Initial evaluation (small-model evaluation)",
+  "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "QAD Q4_0 is the rational ultra-fast deployment quant when 1.59 GB is the hard model-size target. No material practical-quality win over PTQ Q4_0 was reproduced.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "evidence_maturity": "FULL_EVALUATION",
+  "event_path": "models/lfm2.5-2.6b/events/initial-evaluation-2026-08-26-lfm26",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-lfm2.5-2.6b",
+      "commit": "0f42b59c7a69eccbed2367c6f9e303471e4f0677",
+      "path": "report.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-lfm2.5-2.6b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-lfm2.5-2.6b",
+      "ref": "main",
+      "url": "https://github.com/WumboLabs/eval-lfm2.5-2.6b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/lfm2.5-2.6b/events/initial-evaluation-2026-08-26-lfm26/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/lfm2.5-2.6b/events/initial-evaluation-2026-08-26-lfm26/WEBSITE-SUMMARY.md",
+    "sha256": "48301c1090dd342fd7aa3c786c21d9348f1854f06139d5a28e7a626c331cf63c",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

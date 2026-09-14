@@ -1,0 +1,50 @@
+{
+  "slug": "gemmable-lmx-speed-2026-07-04",
+  "event_id": "gemmable-lmx-speed-2026-07-04",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-04",
+  "record_date": "2026-07-04",
+  "model_id": "gemmable-4-12b",
+  "profile_id": "gemmable-4-12b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — LMX local speed",
+  "event_title": "LMX speed run",
+  "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LMX local speed evidence: 71.24 tok/s out (llama.cpp Q4_K_M).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/gemmable-4-12b/events/gemmable-lmx-speed-2026-07-04",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemmable-4-12b",
+      "commit": "f307603ad9e1515ff59261d86f842e1cace43980",
+      "path": "events/gemmable-lmx-speed-2026-07-04.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemmable-4-12b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemmable-4-12b",
+      "ref": "f307603ad9e1515ff59261d86f842e1cace43980",
+      "url": "https://github.com/WumboLabs/eval-gemmable-4-12b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemmable-4-12b/events/gemmable-lmx-speed-2026-07-04/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/gemmable-4-12b/events/gemmable-lmx-speed-2026-07-04/WEBSITE-SUMMARY.md",
+    "sha256": "e796d38fe89c9df5a547035251e7992f9b21d6426b15afc1b706e7e0b8585738",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

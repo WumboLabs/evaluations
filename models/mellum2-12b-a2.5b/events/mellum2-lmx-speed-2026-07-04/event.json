@@ -1,0 +1,50 @@
+{
+  "slug": "mellum2-lmx-speed-2026-07-04",
+  "event_id": "mellum2-lmx-speed-2026-07-04",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-04",
+  "record_date": "2026-07-04",
+  "model_id": "mellum2-12b-a2.5b",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+  "profile_name": "llama.cpp Q4_K_M (Instruct)",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — LMX local speed",
+  "event_title": "LocalMaxxing LMX speed runs (Instruct + Thinking)",
+  "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LMX local speed evidence: Instruct 261.41, Thinking 265.47 tok/s out.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-lmx-speed-2026-07-04",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "commit": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "path": "events/mellum2-lmx-speed-2026-07-04.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-lmx-speed-2026-07-04/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-lmx-speed-2026-07-04/WEBSITE-SUMMARY.md",
+    "sha256": "581686ce1f92e4a2af0794971695488e60e5ec6e0c7d91dcf2c682d2beb421f3",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

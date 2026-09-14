@@ -1,0 +1,63 @@
+{
+  "slug": "qwen38-27b-h1",
+  "event_id": "h1-canonical-promotion-2026-09-09",
+  "event_type": "profile-canonical-promotion",
+  "event_date": "2026-09-09",
+  "record_date": "2026-09-09",
+  "model_id": "qwen38-27b",
+  "profile_id": "qwen38-27b-exl3-h1",
+  "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
+  "profile_status": "current",
+  "event_kicker": "H1 Canonical Promotion — ExLlamaV3",
+  "event_title": "H1 deployment / canonical promotion",
+  "welp_status": "COMPLETE / CURRENT_CANONICAL_H1_PROFILE",
+  "evidence_scope": [
+    "serving-profile",
+    "performance",
+    "localmaxxing"
+  ],
+  "authoring": "generated",
+  "legacy_urls": [
+    "/labs/qwen38-27b-h1/"
+  ],
+  "publication_state": "published",
+  "source": {
+    "path": "models/qwen38-27b/events/h1-canonical-promotion-2026-09-09/website-publication.json",
+    "sha256": "dc5d2ca7e8aefe8cec801041aaedc637f88ad9c3c37cf1ac9ddfe80cfcb0248b",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/qwen38-27b/events/h1-canonical-promotion-2026-09-09",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "commit": "484c9184ae459c79754b77b7dc95da09e64d37a5",
+      "path": "reports/h1-canonical-profile-update.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "ref": "4d9d47b98a7538b9eb0f06e1f949ed41e325ea0a",
+      "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "original_repo": "WumboLabs/eval-qwen3.8-27b",
+      "original_commit": "cc5a435092c17394b9e29b228a0e8509613f26b3",
+      "note": "Export byte-identical to the original H1 publication; migrated to the canonical profile repository on 2026-09-12."
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "ref": "4d9d47b98a7538b9eb0f06e1f949ed41e325ea0a",
+      "path": "website-publication.json",
+      "sha256": "dc5d2ca7e8aefe8cec801041aaedc637f88ad9c3c37cf1ac9ddfe80cfcb0248b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen38-27b/events/h1-canonical-promotion-2026-09-09/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

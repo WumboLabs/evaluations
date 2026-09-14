@@ -1,0 +1,50 @@
+{
+  "slug": "grug-honesty-smoke-2026-07-04",
+  "event_id": "grug-honesty-smoke-2026-07-04",
+  "event_type": "specialized-test",
+  "event_date": "2026-07-04",
+  "record_date": "2026-07-04",
+  "model_id": "grug-12b",
+  "profile_id": "grug-12b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — honesty/provenance",
+  "event_title": "Honesty smoke + provenance refresh",
+  "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Honesty smoke (2026-07-04) and provenance-refresh re-run (2026-07-24) for the Grug practical record.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/grug-12b/events/grug-honesty-smoke-2026-07-04",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-grug-12b",
+      "commit": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+      "path": "events/grug-honesty-smoke-2026-07.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-grug-12b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-grug-12b",
+      "ref": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+      "url": "https://github.com/WumboLabs/eval-grug-12b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/grug-12b/events/grug-honesty-smoke-2026-07-04/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/grug-12b/events/grug-honesty-smoke-2026-07-04/WEBSITE-SUMMARY.md",
+    "sha256": "f9d3fb8e0d8a7f88d90e8cf4d94a3dcf45adf5cc635afc8933367a8b51ff98fe",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

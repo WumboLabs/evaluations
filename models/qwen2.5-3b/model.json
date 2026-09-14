@@ -1,0 +1,32 @@
+{
+  "model_id": "qwen2.5-3b",
+  "display_name": "Qwen2.5-3B Instruct",
+  "vendor": "Alibaba (Qwen team)",
+  "weight": 17,
+  "website_slug": "qwen2-5-3b",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen2-5-3b/",
+  "current_state": {
+    "agent-backend": "qwen25-3b-cross-runtime-2026-07-15",
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen25-3b-cross-runtime-2026-07-15",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+    "practical-use": null,
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "qwen2.5-3b-vllm-bf16",
+    "classification": null,
+    "profile_ids": [
+      "qwen2.5-3b-llamacpp-f16",
+      "qwen2.5-3b-vllm-bf16"
+    ],
+    "event_ids": [
+      "qwen25-3b-cross-runtime-2026-07-15",
+      "qwen25-3b-vllm-fingerprint-smoke-2026-07-15"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

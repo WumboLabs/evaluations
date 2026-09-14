@@ -1,0 +1,59 @@
+{
+  "slug": "minicpm5-2b",
+  "event_id": "initial-evaluation-2026-09-10-minicpm5",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-10",
+  "record_date": "2026-09-10",
+  "model_id": "minicpm5-2b",
+  "profile_id": "minicpm5-2b-vllm-bf16",
+  "profile_name": "contained vLLM BF16",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — contained vLLM BF16",
+  "event_title": "Initial evaluation (full characterization)",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "source": {
+    "path": "models/minicpm5-2b/events/initial-evaluation-2026-09-10-minicpm5/website-publication.json",
+    "sha256": "20f817b5c706f0f68319bebe02e1766510c93a6c5249acb8104a57549eb7f7e1",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "FULL_EVALUATION",
+  "event_path": "models/minicpm5-2b/events/initial-evaluation-2026-09-10-minicpm5",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-minicpm5-2b",
+      "commit": "e0fba74cf21d6cd0bbac0461e9cba8796825429c",
+      "path": "EVIDENCE-SUMMARY.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-minicpm5-2b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-minicpm5-2b",
+      "ref": "e4563e2e5f9898b71d0ef2a39d46241112b1146c",
+      "url": "https://github.com/WumboLabs/eval-minicpm5-2b"
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-minicpm5-2b",
+      "ref": "e4563e2e5f9898b71d0ef2a39d46241112b1146c",
+      "path": "website-publication.json",
+      "sha256": "20f817b5c706f0f68319bebe02e1766510c93a6c5249acb8104a57549eb7f7e1"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/minicpm5-2b/events/initial-evaluation-2026-09-10-minicpm5/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

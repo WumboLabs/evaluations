@@ -1,0 +1,50 @@
+{
+  "slug": "qwen36-35b-fit-ladder-e2e-2026-07-15",
+  "event_id": "qwen36-35b-fit-ladder-e2e-2026-07-15",
+  "event_type": "specialized-test",
+  "event_date": "2026-07-15",
+  "record_date": "2026-07-15",
+  "model_id": "qwen3.6-35b-a3b",
+  "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+  "profile_name": "llama.cpp Unsloth UD-IQ2_M",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — fit ladder",
+  "event_title": "Fit-ladder E2E (LLMGauge feature validation)",
+  "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Fit-ladder E2E (32k/16k/8k attempts) payload; primary subject is LLMGauge behavior.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3.6-35b-a3b/events/qwen36-35b-fit-ladder-e2e-2026-07-15",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "commit": "d89df9bc26227247b858033742048bc6ccede901",
+      "path": "events/qwen36-35b-fit-ladder-e2e-2026-07-15.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "ref": "d89df9bc26227247b858033742048bc6ccede901",
+      "url": "https://github.com/WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-fit-ladder-e2e-2026-07-15/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-fit-ladder-e2e-2026-07-15/WEBSITE-SUMMARY.md",
+    "sha256": "f2aeeba21ca0a9c47806d84ace02b90803038afa871bf6f39510df4bc83677b4",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

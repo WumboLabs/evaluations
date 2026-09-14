@@ -1,0 +1,50 @@
+{
+  "slug": "ornith-9b-wumboserver-admission-2026-09-02",
+  "event_id": "ornith-9b-wumboserver-admission-2026-09-02",
+  "event_type": "benchmark-only",
+  "event_date": "2026-09-02",
+  "record_date": "2026-09-02",
+  "model_id": "ornith-1.5-9b",
+  "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — WumboServer hardware lane",
+  "event_title": "WumboServer RTX 2060S admission benchmark",
+  "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboServer (RTX 2060 SUPER 8GB)",
+  "headline": "Ornith 1.5 9B Q4_K_M admission benchmark on WumboServer RTX 2060 SUPER (hardware-lane fit evidence).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/ornith-1.5-9b/events/ornith-9b-wumboserver-admission-2026-09-02",
+  "legacy_sources": [
+    {
+      "repo": "RIPPERONInCHEEZ/wumbolabs",
+      "commit": "e27ddcb89b56c27e87d7a3af34003cd8c6d7355b",
+      "path": "data/labs-events/ornith-9b-wumboserver-admission-2026-09-02.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-ornith-1.5-9b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-ornith-1.5-9b",
+      "url": "https://github.com/WumboLabs/eval-ornith-1.5-9b",
+      "note": "Hardware-lane admission evidence retained locally under hardware/wumboserver; the canonical profile repository for the WumboJetsII WELP campaign remains eval-ornith-1.5-9b. A public-safe lane summary is published on the model page."
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/ornith-1.5-9b/events/ornith-9b-wumboserver-admission-2026-09-02/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/ornith-1.5-9b/events/ornith-9b-wumboserver-admission-2026-09-02/REPORT.md",
+    "sha256": "6624d2fdddb00f279f378c61624b93a9020cee25589f1c400ffd0566cb44c956",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "gemma-4-12b",
+  "model_display_name": "Gemma 4 12B IT",
+  "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+  "profile_display_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+  "runtime_family": "llama.cpp",
+  "artifact": "google/gemma-4-12b-it-qat-q4_0-gguf (QAT UD-Q4_K_XL packaging)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "runtime_version": "b9672 (74ade5274, CUDA SM120)",
+  "artifact_precision": "UD-Q4_K_XL weights (QAT Q4_0 lineage); f16 KV cache",
+  "notes": "One material profile (llama.cpp CUDA, UD-Q4_K_XL packaging of the Google QAT Q4_0 lineage). Two published event generations: the historical practical-use/benchmark events (2026-06/07, preserved) and the 2026-09-12/13 current-WELP recharacterization (READY_WITH_GUARDRAILS, current). Text profile complete under current WELP; the officially supported multimodal lane remains SUPPORTED_NOT_CHARACTERIZED (projector not acquired).",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "commit": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-llamacpp-qat-q4-0",
+  "event_ids": [
+    "gemma4-12b-practical-use-family-2026-06-21",
+    "gemma4-12b-core-agent-v016-2026-06-16",
+    "gemma4-12b-honesty-ladder-2026-06-21",
+    "gemma4-12b-practical-pool-v025-2026-07-04",
+    "gemma4-12b-lmx-speed-2026-07-04",
+    "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12"
+  ],
+  "legacy_first_event": "gemma4-12b-practical-use-family-2026-06-21"
+}

@@ -1,0 +1,33 @@
+{
+  "model_id": "mellum2-12b-a2.5b",
+  "display_name": "Mellum2 12B-A2.5B",
+  "vendor": "JetBrains",
+  "weight": 12,
+  "website_slug": "mellum2-12b-a2-5b",
+  "website_url": "https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/",
+  "current_state": {
+    "agent-backend": "mellum2-agent-backend-64k-2026-06-17",
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "mellum2-lmx-speed-2026-07-04",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "mellum2-fake-tool-2026-06-17",
+    "practical-use": null,
+    "context": null,
+    "reliability": "mellum2-fake-tool-2026-06-17",
+    "recommended_profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+    "classification": null,
+    "profile_ids": [
+      "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+      "mellum2-12b-a2.5b-llamacpp-q4km-thinking"
+    ],
+    "event_ids": [
+      "mellum2-agent-backend-64k-2026-06-17",
+      "mellum2-fake-tool-2026-06-17",
+      "mellum2-lmx-speed-2026-07-04"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

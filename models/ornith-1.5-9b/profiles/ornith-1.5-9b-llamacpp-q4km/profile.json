@@ -1,0 +1,27 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "ornith-1.5-9b",
+  "model_display_name": "Ornith 1.5 9B",
+  "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "Ornith-1.5-9B-Q4_K_M.gguf (source rev 489cb97981b8654bcfcf30ce1f94ed1b62e07b53)",
+  "artifact_precision": "Q4_K_M",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "notes": "Model-level final classification NOT_READY is a model finding, not a profile-status label.",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-ornith-1.5-9b",
+      "commit": "608294a336ce0de9fc9298ce65564b12242a0980",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/ornith-1.5-9b/profiles/ornith-1.5-9b-llamacpp-q4km",
+  "event_ids": [
+    "initial-evaluation-2026-08-27",
+    "ornith-9b-wumboserver-admission-2026-09-02"
+  ],
+  "legacy_first_event": "initial-evaluation-2026-08-27"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3.6-35b-a3b",
+  "model_display_name": "Qwen3.6-35B-A3B",
+  "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+  "profile_display_name": "llama.cpp Unsloth UD-IQ2_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "unsloth Qwen3.6-35B-A3B UD-IQ2_M GGUF (11,522,702,304-byte fingerprint)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "practical-use",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "commit": "d89df9bc26227247b858033742048bc6ccede901",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+  "event_ids": [
+    "qwen36-35b-practical-v071-2026-07-22",
+    "qwen36-35b-fit-ladder-e2e-2026-07-15"
+  ],
+  "legacy_first_event": "qwen36-35b-practical-v025-2026-07-05"
+}

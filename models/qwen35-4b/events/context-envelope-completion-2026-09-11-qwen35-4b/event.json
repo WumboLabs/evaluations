@@ -1,0 +1,57 @@
+{
+  "slug": "qwen35-4b",
+  "event_id": "context-envelope-completion-2026-09-11-qwen35-4b",
+  "event_type": "context-envelope-completion",
+  "event_date": "2026-09-11",
+  "record_date": "2026-09-09",
+  "model_id": "qwen35-4b",
+  "profile_id": "qwen35-4b-llamacpp-bf16",
+  "profile_name": "llama.cpp BF16 GGUF",
+  "profile_status": "current",
+  "event_kicker": "Context Envelope — llama.cpp BF16",
+  "event_title": "Context envelope completion",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "context"
+  ],
+  "baseline_event_id": "initial-evaluation-2026-09-09-qwen35-4b",
+  "baseline_note": "Baseline characterization (campaign qwen35-4b-rtx5070-baseline-2026-09-09, event 2026-09-09) is a same-profile event in eval-qwen3.5-4b@c4891275b02d67a2ec9a8aaaf8a51919508f7b8e; the public record was updated in place by the completion export, so record_date 2026-09-09 is preserved for chronology.",
+  "authoring": "generated",
+  "publication_state": "published",
+  "source": {
+    "path": "models/qwen35-4b/events/context-envelope-completion-2026-09-11-qwen35-4b/website-publication.json",
+    "sha256": "3c8fab5a1dcea73dd57a5296a00fd8238caf1b3eb8dd28be7fb2d5d56ee4bb04",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "CONTEXT_COMPLETION",
+  "event_path": "models/qwen35-4b/events/context-envelope-completion-2026-09-11-qwen35-4b",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.5-4b",
+      "commit": "c85ec602269eeb01d3cf3c50b5f9a76506338e66",
+      "path": "reports/qwen35-4b-context-envelope-completion-2026-09-11.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.5-4b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.5-4b",
+      "ref": "cb01b6826c67f8fcb5ce9dfffdb36664c23ee0d0",
+      "url": "https://github.com/WumboLabs/eval-qwen3.5-4b"
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-qwen3.5-4b",
+      "ref": "cb01b6826c67f8fcb5ce9dfffdb36664c23ee0d0",
+      "path": "website-publication.json",
+      "sha256": "3c8fab5a1dcea73dd57a5296a00fd8238caf1b3eb8dd28be7fb2d5d56ee4bb04"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen35-4b/events/context-envelope-completion-2026-09-11-qwen35-4b/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

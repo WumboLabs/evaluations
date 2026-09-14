@@ -1,0 +1,51 @@
+{
+  "slug": "gemma4-12b-honesty-ladder-2026-06-21",
+  "event_id": "gemma4-12b-honesty-ladder-2026-06-21",
+  "event_type": "specialized-test",
+  "event_date": "2026-06-21",
+  "record_date": "2026-06-21",
+  "model_id": "gemma-4-12b",
+  "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+  "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — honesty ladder",
+  "event_title": "Honesty ladder smoke (QAT Q4)",
+  "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized",
+    "reliability"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Honesty-ladder smoke runs against the QAT Q4 practical profile.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/gemma-4-12b/events/gemma4-12b-honesty-ladder-2026-06-21",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "commit": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "events/gemma4-12b-honesty-ladder-2026-06.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "ref": "945cc3d549475ca7360781a94460005ab5932926",
+      "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma-4-12b/events/gemma4-12b-honesty-ladder-2026-06-21/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/gemma-4-12b/events/gemma4-12b-honesty-ladder-2026-06-21/WEBSITE-SUMMARY.md",
+    "sha256": "a050a411754e932b3764118efb54a79f015256b402b361bab41f48c05389f1b0",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

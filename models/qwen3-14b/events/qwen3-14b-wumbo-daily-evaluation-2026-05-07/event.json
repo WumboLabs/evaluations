@@ -1,0 +1,50 @@
+{
+  "slug": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+  "event_id": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+  "event_type": "practical-use-comparison",
+  "event_date": "2026-05-07",
+  "record_date": "2026-05-07",
+  "model_id": "qwen3-14b",
+  "profile_id": "qwen3-14b-ollama-q4km-wumbo",
+  "profile_name": "Ollama Q4_K_M (qwen3-14b-wumbo custom tag, historical daily driver)",
+  "profile_status": "historical",
+  "event_kicker": "Practical Use — historical daily driver",
+  "event_title": "Practical daily-driver evaluation (Ollama era, qwen3-14b-wumbo tag)",
+  "welp_status": "PRACTICAL_USE / PRE_WELP_HISTORICAL",
+  "evidence_maturity": "PRACTICAL_USE",
+  "evidence_scope": [
+    "practical-use"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Historical May 2026 daily-driver evaluation: good enough for daily local technical-assistant use with mandatory command review; 4096-context guidance.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3-14b/events/qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+      "commit": "285d06529dab955e9458c646b72493843c8998f0",
+      "path": "events/qwen3-14b-wumbo-daily-evaluation-2026-05-07.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+      "ref": "285d06529dab955e9458c646b72493843c8998f0",
+      "url": "https://github.com/WumboLabs/eval-qwen3-14b-ollama-q4km"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3-14b/events/qwen3-14b-wumbo-daily-evaluation-2026-05-07/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3-14b/events/qwen3-14b-wumbo-daily-evaluation-2026-05-07/WEBSITE-SUMMARY.md",
+    "sha256": "61311b4b01e00ca423957a01a93b25cb6ad70fbf0931572b3f279d76cdcdc2d3",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

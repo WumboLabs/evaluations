@@ -1,0 +1,62 @@
+{
+  "slug": "eval-gemma-4-12b-recharacterization-2026-09-12",
+  "event_id": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+  "event_type": "welp-recharacterization",
+  "event_date": "2026-09-12",
+  "record_date": "2026-09-12",
+  "model_id": "gemma-4-12b",
+  "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+  "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+  "profile_status": "current",
+  "event_kicker": "WELP Recharacterization — llama.cpp QAT UD-Q4_K_XL",
+  "event_title": "Current-WELP recharacterization",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "authoring": "generated",
+  "legacy_urls": [
+    "/labs/eval-gemma-4-12b-recharacterization-2026-09-12/"
+  ],
+  "publication_state": "published",
+  "source": {
+    "path": "models/gemma-4-12b/events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12/website-publication.json",
+    "sha256": "9af5545eea7fc407dc428cc9f804d2d076ea6b41a4271b7a6ee083fb136f5a93",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/gemma-4-12b/events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "commit": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "reports/gemma4-12b-welp-recharacterization-2026-09-12.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "ref": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "ref": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "website-publication.json",
+      "sha256": "9af5545eea7fc407dc428cc9f804d2d076ea6b41a4271b7a6ee083fb136f5a93"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma-4-12b/events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

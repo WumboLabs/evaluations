@@ -1,0 +1,51 @@
+{
+  "slug": "qwen38-empero-4b-vendor-battery-2026-08-18",
+  "event_id": "qwen38-empero-4b-vendor-battery-2026-08-18",
+  "event_type": "specialized-test",
+  "event_date": "2026-08-18",
+  "record_date": "2026-08-18",
+  "model_id": "qwen3.8-4b-empero",
+  "profile_id": "qwen3.8-4b-empero-vendor-battery",
+  "profile_name": "LLMGauge vendor-alignment battery (bf16/q4)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — vendor alignment",
+  "event_title": "LLMGauge vendor-alignment battery (4B bf16/q4)",
+  "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LLMGauge vendor-alignment qualification battery on the 4B artifact (BF16 + Q4 lanes).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-vendor-battery-2026-08-18",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-4b-empero",
+      "commit": "891dec8a5bd371cf50660efbbee98924f6d4e768",
+      "path": "events/qwen38-empero-4b-vendor-battery-2026-08-18.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.8-4b-empero",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.8-4b-empero",
+      "ref": "891dec8a5bd371cf50660efbbee98924f6d4e768",
+      "url": "https://github.com/WumboLabs/eval-qwen3.8-4b-empero"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-vendor-battery-2026-08-18/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-vendor-battery-2026-08-18/WEBSITE-SUMMARY.md",
+    "sha256": "d1bdaa5a7447b265e1eff11d0461fa60a9699c1e56c46c2096126e670d27ec53",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

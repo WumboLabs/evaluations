@@ -1,0 +1,30 @@
+{
+  "model_id": "bonsai-27b",
+  "display_name": "Bonsai 27B (Q1_0)",
+  "vendor": "Upstream identity unresolved (local artifact name)",
+  "weight": 21,
+  "website_slug": "bonsai-27b",
+  "website_url": "https://wumbolabs.dev/evaluations/bonsai-27b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": null,
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "bonsai-27b-smoke-v070-2026-07-14",
+    "practical-use": null,
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "bonsai-27b-q1-0-llamacpp",
+    "classification": null,
+    "profile_ids": [
+      "bonsai-27b-q1-0-llamacpp"
+    ],
+    "event_ids": [
+      "bonsai-27b-smoke-v070-2026-07-14"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

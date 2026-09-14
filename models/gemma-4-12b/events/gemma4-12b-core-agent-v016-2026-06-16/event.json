@@ -1,0 +1,51 @@
+{
+  "slug": "gemma4-12b-core-agent-v016-2026-06-16",
+  "event_id": "gemma4-12b-core-agent-v016-2026-06-16",
+  "event_type": "benchmark-only",
+  "event_date": "2026-06-16",
+  "record_date": "2026-06-16",
+  "model_id": "gemma-4-12b",
+  "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+  "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — LLMGauge v0.16 era",
+  "event_title": "Early core-v1 + agent-backend-v1 scored runs (QAT Q4)",
+  "welp_status": "BENCHMARK_ONLY",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance",
+    "capabilities"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Early LLMGauge v0.16-era core-v1 run (8/8, 308/400 manual) plus agent-backend-v1 on the QAT artifact.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/gemma-4-12b/events/gemma4-12b-core-agent-v016-2026-06-16",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "commit": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+      "path": "events/gemma4-12b-core-agent-v016-2026-06-16.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "ref": "945cc3d549475ca7360781a94460005ab5932926",
+      "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma-4-12b/events/gemma4-12b-core-agent-v016-2026-06-16/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/gemma-4-12b/events/gemma4-12b-core-agent-v016-2026-06-16/WEBSITE-SUMMARY.md",
+    "sha256": "9b8d2b579347b03b0dba4d4e9f241db732d39616c59eee3e410d78adf62ec39b",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

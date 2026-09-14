@@ -1,0 +1,51 @@
+{
+  "slug": "apodex-1.1-mini",
+  "event_id": "initial-evaluation-2026-08-25-apodex",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-25",
+  "record_date": "2026-08-25",
+  "model_id": "apodex-1.1-mini",
+  "profile_id": "apodex-1.1-mini-llamacpp-iq1m",
+  "profile_name": "llama.cpp IQ1_M (community conversion)",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — Early Stop",
+  "event_title": "Initial evaluation (bounded early stop)",
+  "welp_status": "BOUNDED_EARLY_STOP / PHASE_3_DO_NOT_ADVANCE",
+  "evidence_scope": [
+    "model-classification",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Early stop at Phase 3 gate. Model failed the applicable advancement gate; later phases were not run. Bounded result only.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "evidence_maturity": "EARLY_STOP",
+  "event_path": "models/apodex-1.1-mini/events/initial-evaluation-2026-08-25-apodex",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-apodex-1.1-mini",
+      "commit": "202d2ee09cec20ec6981c6ed22541e44b9dc3865",
+      "path": "report.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-apodex-1.1-mini",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-apodex-1.1-mini",
+      "ref": "main",
+      "url": "https://github.com/WumboLabs/eval-apodex-1.1-mini"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/apodex-1.1-mini/events/initial-evaluation-2026-08-25-apodex/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/apodex-1.1-mini/events/initial-evaluation-2026-08-25-apodex/WEBSITE-SUMMARY.md",
+    "sha256": "a89d43f9ea11819830b4259e3fbc1a51936e3ec729654769394453b1f21a52fa",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

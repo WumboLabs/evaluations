@@ -12,7 +12,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -25,7 +26,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -38,7 +40,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -51,7 +54,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -64,7 +68,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -77,7 +82,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -90,7 +96,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -103,7 +110,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -116,7 +124,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -129,7 +138,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -142,7 +152,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -155,7 +166,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -168,7 +180,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -181,7 +194,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -194,7 +208,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -207,7 +222,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -220,7 +236,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -233,7 +250,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -246,7 +264,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -259,7 +278,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -272,7 +292,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -285,7 +306,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -298,7 +320,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -311,7 +334,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -324,7 +348,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -337,7 +362,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -350,7 +376,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -363,7 +390,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -376,7 +404,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -389,7 +418,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -402,7 +432,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -415,7 +446,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -428,7 +460,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -441,7 +474,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -454,7 +488,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -467,7 +502,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -480,7 +516,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -493,7 +530,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "existing public-safe website evidence summary; no fuller public report exists for this event"
+      "role": "existing public-safe website evidence summary; no fuller public report exists for this event",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -506,7 +544,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "existing public-safe website evidence summary; no fuller public report exists for this event"
+      "role": "existing public-safe website evidence summary; no fuller public report exists for this event",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -519,7 +558,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "existing public-safe website evidence summary; no fuller public report exists for this event"
+      "role": "existing public-safe website evidence summary; no fuller public report exists for this event",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -532,7 +572,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "canonical public report"
+      "role": "canonical public report",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -545,7 +586,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -558,7 +600,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -571,7 +614,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -584,7 +628,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -597,7 +642,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -610,7 +656,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -623,7 +670,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -636,7 +684,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -649,7 +698,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -662,7 +712,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -675,7 +726,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -688,7 +740,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -701,7 +754,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -714,7 +768,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -727,7 +782,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -740,7 +796,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -753,7 +810,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -766,7 +824,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -779,7 +838,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -792,7 +852,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -805,7 +866,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -818,7 +880,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -831,7 +894,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -844,7 +908,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -857,7 +922,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -870,7 +936,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -883,7 +950,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -896,7 +964,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -909,7 +978,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -922,7 +992,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -935,7 +1006,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -948,7 +1020,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -961,7 +1034,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -974,7 +1048,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -987,7 +1062,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -1000,7 +1076,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -1013,7 +1090,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable previously published website narrative"
+      "role": "immutable previously published website narrative",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1026,7 +1104,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "immutable published export; legacy publication fields retained"
+      "role": "immutable published export; legacy publication fields retained",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1039,7 +1118,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1052,7 +1132,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1065,7 +1146,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1078,7 +1160,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1091,7 +1174,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1104,7 +1188,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1117,7 +1202,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1130,7 +1216,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1143,7 +1230,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
@@ -1156,7 +1244,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1169,7 +1258,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1182,7 +1272,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1195,7 +1286,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1208,7 +1300,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1221,7 +1314,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
@@ -1234,7 +1328,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1247,7 +1342,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1260,7 +1356,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1273,7 +1370,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1286,7 +1384,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1299,7 +1398,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-9b-empero",
@@ -1312,7 +1412,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1325,7 +1426,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1338,7 +1440,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1351,7 +1454,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1364,7 +1468,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1377,7 +1482,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
@@ -1390,7 +1496,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1403,7 +1510,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1416,7 +1524,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1429,7 +1538,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1442,7 +1552,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1455,7 +1566,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-4b-empero",
@@ -1468,7 +1580,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1481,7 +1594,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1494,7 +1608,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1507,7 +1622,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1520,7 +1636,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1533,7 +1650,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-2b-empero",
@@ -1546,7 +1664,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1559,7 +1678,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1572,7 +1692,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1585,7 +1706,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1598,7 +1720,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1611,7 +1734,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1624,7 +1748,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
@@ -1637,7 +1762,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1650,7 +1776,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1663,7 +1790,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1676,7 +1804,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1689,7 +1818,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1702,7 +1832,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1715,7 +1846,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
@@ -1728,7 +1860,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1741,7 +1874,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1754,7 +1888,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1767,7 +1902,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1780,7 +1916,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1793,7 +1930,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1806,7 +1944,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1819,7 +1958,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1832,7 +1972,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1845,7 +1986,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1858,7 +2000,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1871,7 +2014,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1884,7 +2028,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1897,7 +2042,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b",
@@ -1910,7 +2056,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1923,7 +2070,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1936,7 +2084,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1949,7 +2098,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1962,7 +2112,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1975,7 +2126,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -1988,7 +2140,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
@@ -2001,7 +2154,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2014,7 +2168,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2027,7 +2182,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2040,7 +2196,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2053,7 +2210,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2066,7 +2224,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2079,7 +2238,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2092,7 +2252,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2105,7 +2266,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2118,7 +2280,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2131,7 +2294,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -2144,7 +2308,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2157,7 +2322,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2170,7 +2336,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2183,7 +2350,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2196,7 +2364,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2209,7 +2378,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2222,7 +2392,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2235,7 +2406,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2248,7 +2420,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
@@ -2261,7 +2434,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2274,7 +2448,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2287,7 +2462,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2300,7 +2476,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2313,7 +2490,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2326,7 +2504,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2339,7 +2518,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2352,7 +2532,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-grug-12b",
@@ -2365,7 +2546,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2378,7 +2560,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2391,7 +2574,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2404,7 +2588,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2417,7 +2602,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2430,7 +2616,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2443,7 +2630,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemmable-4-12b",
@@ -2456,7 +2644,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2469,7 +2658,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2482,7 +2672,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2495,7 +2686,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2508,7 +2700,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2521,7 +2714,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2534,7 +2728,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q6",
@@ -2547,7 +2742,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2560,7 +2756,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2573,7 +2770,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2586,7 +2784,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2599,7 +2798,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2612,7 +2812,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-q4km",
@@ -2625,7 +2826,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2638,7 +2840,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2651,7 +2854,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2664,7 +2868,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2677,7 +2882,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2690,7 +2896,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2703,7 +2910,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2716,7 +2924,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma-4-12b-ud-q5",
@@ -2729,7 +2938,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2742,7 +2952,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2755,7 +2966,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2768,7 +2980,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2781,7 +2994,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2794,7 +3008,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2807,7 +3022,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2820,7 +3036,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2833,7 +3050,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2846,7 +3064,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2859,7 +3078,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2872,7 +3092,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2885,7 +3106,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2898,7 +3120,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2911,7 +3134,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2924,7 +3148,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2937,7 +3162,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2950,7 +3176,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2963,7 +3190,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2976,7 +3204,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -2989,7 +3218,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3002,7 +3232,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3015,7 +3246,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3028,7 +3260,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3041,7 +3274,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3054,7 +3288,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3067,7 +3302,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3080,7 +3316,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3093,7 +3330,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3106,7 +3344,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3119,7 +3358,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3132,7 +3372,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3145,7 +3386,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-2.6b",
@@ -3158,7 +3400,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3171,7 +3414,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3184,7 +3428,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3197,7 +3442,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3210,7 +3456,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3223,7 +3470,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3236,7 +3484,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3249,7 +3498,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3262,7 +3512,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3275,7 +3526,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3288,7 +3540,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3301,7 +3554,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3314,7 +3568,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3327,7 +3582,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3340,7 +3596,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3353,7 +3610,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3366,7 +3624,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3379,7 +3638,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3392,7 +3652,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3405,7 +3666,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3418,7 +3680,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3431,7 +3694,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3444,7 +3708,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3457,7 +3722,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3470,7 +3736,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3483,7 +3750,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3496,7 +3764,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3509,7 +3778,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3522,7 +3792,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3535,7 +3806,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3548,7 +3820,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3561,7 +3834,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3574,7 +3848,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3587,7 +3862,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3600,7 +3876,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3613,7 +3890,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3626,7 +3904,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3639,7 +3918,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3652,7 +3932,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3665,7 +3946,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3678,7 +3960,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3691,7 +3974,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-lfm2.5-1.2b",
@@ -3704,7 +3988,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3717,7 +4002,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3730,7 +4016,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3743,7 +4030,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3756,7 +4044,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3769,7 +4058,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3782,7 +4072,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3795,7 +4086,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3808,7 +4100,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3821,7 +4114,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3834,7 +4128,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3847,7 +4142,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3860,7 +4156,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3873,7 +4170,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3886,7 +4184,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3899,7 +4198,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3912,7 +4212,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3925,7 +4226,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -3938,7 +4240,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4016,7 +4319,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4029,7 +4333,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4042,7 +4347,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4055,7 +4361,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4068,7 +4375,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4081,7 +4389,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4094,7 +4403,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4107,7 +4417,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4120,7 +4431,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4133,7 +4445,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4146,7 +4459,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4159,7 +4473,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4173,7 +4488,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "fbfc876751f50f95516c36f8e451f0f3c5bd92d67c70d93e4b0a1a03b2325a25"
+      "canonical_sha256": "fbfc876751f50f95516c36f8e451f0f3c5bd92d67c70d93e4b0a1a03b2325a25",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4186,7 +4502,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4199,7 +4516,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4213,7 +4531,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "2c5007e81cf2a1d0520196a16ff183d0b01fe58d83e3156e069256802351d353"
+      "canonical_sha256": "2c5007e81cf2a1d0520196a16ff183d0b01fe58d83e3156e069256802351d353",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4226,7 +4545,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4239,7 +4559,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4252,7 +4573,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4265,7 +4587,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4278,7 +4601,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4291,7 +4615,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4304,7 +4629,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4317,7 +4643,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4330,7 +4657,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4343,7 +4671,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4356,7 +4685,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4369,7 +4699,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-apodex-1.1-mini",
@@ -4382,7 +4713,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4395,7 +4727,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4408,7 +4741,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4421,7 +4755,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4434,7 +4769,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4447,7 +4783,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4460,7 +4797,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4473,7 +4811,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4486,7 +4825,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4499,7 +4839,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4512,7 +4853,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4525,7 +4867,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4538,7 +4881,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4551,7 +4895,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4564,7 +4909,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4577,7 +4923,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4590,7 +4937,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4603,7 +4951,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4616,7 +4965,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4629,7 +4979,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4642,7 +4993,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4655,7 +5007,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4668,7 +5021,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4681,7 +5035,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4694,7 +5049,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4707,7 +5063,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4720,7 +5077,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4733,7 +5091,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4746,7 +5105,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4759,7 +5119,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4772,7 +5133,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4785,7 +5147,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4798,7 +5161,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4811,7 +5175,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4824,7 +5189,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4837,7 +5203,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4850,7 +5217,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4863,7 +5231,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4876,7 +5245,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4889,7 +5259,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4902,7 +5273,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4915,7 +5287,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4928,7 +5301,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4941,7 +5315,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4954,7 +5329,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4967,7 +5343,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4980,7 +5357,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -4993,7 +5371,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5006,7 +5385,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5020,7 +5400,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "2c5007e81cf2a1d0520196a16ff183d0b01fe58d83e3156e069256802351d353"
+      "canonical_sha256": "2c5007e81cf2a1d0520196a16ff183d0b01fe58d83e3156e069256802351d353",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5033,7 +5414,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5046,7 +5428,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5059,7 +5442,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5072,7 +5456,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5085,7 +5470,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5098,7 +5484,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5111,7 +5498,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5124,7 +5512,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5137,7 +5526,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5150,7 +5540,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5163,7 +5554,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5176,7 +5568,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5189,7 +5582,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5202,7 +5596,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5215,7 +5610,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5228,7 +5624,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5241,7 +5638,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5254,7 +5652,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5267,7 +5666,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5280,7 +5680,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5293,7 +5694,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5306,7 +5708,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5319,7 +5722,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5332,7 +5736,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5345,7 +5750,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5358,7 +5764,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5371,7 +5778,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5384,7 +5792,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5397,7 +5806,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5410,7 +5820,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5423,7 +5834,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5436,7 +5848,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5449,7 +5862,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5462,7 +5876,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5475,7 +5890,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5488,7 +5904,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5501,7 +5918,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5514,7 +5932,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-ornith-1.5-9b",
@@ -5527,7 +5946,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5540,7 +5960,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5553,7 +5974,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5566,7 +5988,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5579,7 +6002,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5592,7 +6016,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5605,7 +6030,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5618,7 +6044,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5631,7 +6058,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5644,7 +6072,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-minicpm5-2b",
@@ -5657,7 +6086,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5670,7 +6100,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5683,7 +6114,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5696,7 +6128,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5709,7 +6142,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5722,7 +6156,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5735,7 +6170,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5748,7 +6184,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5761,7 +6198,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5774,7 +6212,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-gemma4-e4b",
@@ -5787,7 +6226,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5800,7 +6240,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5813,7 +6254,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5826,7 +6268,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5839,7 +6282,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5852,7 +6296,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5865,7 +6310,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5878,7 +6324,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5891,7 +6338,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5904,7 +6352,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5917,7 +6366,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5930,7 +6380,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5943,7 +6394,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5956,7 +6408,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5969,7 +6422,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5982,7 +6436,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -5995,7 +6450,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -6008,7 +6464,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -6021,7 +6478,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -6034,7 +6492,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-nemotron-3-nano-4b",
@@ -6047,7 +6506,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6060,7 +6520,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6073,7 +6534,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6086,7 +6548,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6099,7 +6562,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6112,7 +6576,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6125,7 +6590,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6138,7 +6604,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6151,7 +6618,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6164,7 +6632,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6177,7 +6646,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-9b",
@@ -6190,7 +6660,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6203,7 +6674,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6216,7 +6688,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6229,7 +6702,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6242,7 +6716,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6255,7 +6730,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6268,7 +6744,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6281,7 +6758,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6294,7 +6772,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6307,7 +6786,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6320,7 +6800,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.5-4b",
@@ -6333,7 +6814,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6346,7 +6828,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6359,7 +6842,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6372,7 +6856,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6385,7 +6870,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6398,7 +6884,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6411,7 +6898,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6425,7 +6913,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f"
+      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6438,7 +6927,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6451,7 +6941,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6464,7 +6955,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6477,7 +6969,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6490,7 +6983,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6503,7 +6997,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6516,7 +7011,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6529,7 +7025,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6542,7 +7039,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6555,7 +7053,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6568,7 +7067,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6581,7 +7081,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6594,7 +7095,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6607,7 +7109,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6620,7 +7123,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6634,7 +7138,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "5cde00dee162b60b720bf33029d82b86b53b4741866095f3d4f01721205277b6"
+      "canonical_sha256": "5cde00dee162b60b720bf33029d82b86b53b4741866095f3d4f01721205277b6",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6647,7 +7152,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6660,7 +7166,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6673,7 +7180,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b",
@@ -6686,7 +7194,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6699,7 +7208,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6712,7 +7222,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6725,7 +7236,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6738,7 +7250,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6751,7 +7264,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6764,7 +7278,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6777,7 +7292,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6791,7 +7307,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f"
+      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6804,7 +7321,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6817,7 +7335,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6830,7 +7349,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6843,7 +7363,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6856,7 +7377,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6869,7 +7391,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6882,7 +7405,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6895,7 +7419,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6908,7 +7433,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
@@ -6921,7 +7447,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6934,7 +7461,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6947,7 +7475,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6960,7 +7489,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6973,7 +7503,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6986,7 +7517,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -6999,7 +7531,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7012,7 +7545,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7026,7 +7560,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f"
+      "canonical_sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7039,7 +7574,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7052,7 +7588,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7065,7 +7602,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7078,7 +7616,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7091,7 +7630,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7104,7 +7644,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7117,7 +7658,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7130,7 +7672,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7143,7 +7686,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7156,7 +7700,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7169,7 +7714,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7182,7 +7728,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7195,7 +7742,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7209,7 +7757,8 @@
       "byte_identical": "NO",
       "transformation": "Normalize CRLF to LF, remove trailing horizontal whitespace and redundant EOF blank lines; no non-whitespace content changed. Python AST unchanged where applicable.",
       "role": "public evidence",
-      "canonical_sha256": "5cde00dee162b60b720bf33029d82b86b53b4741866095f3d4f01721205277b6"
+      "canonical_sha256": "5cde00dee162b60b720bf33029d82b86b53b4741866095f3d4f01721205277b6",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7222,7 +7771,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7235,7 +7785,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
@@ -7248,7 +7799,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7261,7 +7813,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7274,7 +7827,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7287,7 +7841,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7300,7 +7855,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7313,7 +7869,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "WumboLabs/labs",
@@ -7326,7 +7883,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "public evidence"
+      "role": "public evidence",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     },
     {
       "legacy_repo": "RIPPERONInCHEEZ/wumbolabs",
@@ -7339,7 +7897,8 @@
       "import_result": "IMPORTED",
       "byte_identical": "YES",
       "transformation": null,
-      "role": "historical registry and identity aliases; not current publication configuration"
+      "role": "historical registry and identity aliases; not current publication configuration",
+      "canonical_commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
     }
   ]
 }

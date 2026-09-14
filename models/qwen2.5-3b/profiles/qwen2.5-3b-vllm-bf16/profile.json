@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen2.5-3b",
+  "model_display_name": "Qwen2.5-3B Instruct",
+  "profile_id": "qwen2.5-3b-vllm-bf16",
+  "profile_display_name": "vLLM BF16 (cross-runtime lane)",
+  "runtime_family": "vLLM",
+  "artifact": "Qwen/Qwen2.5-3B-Instruct BF16",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "benchmark-only",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+      "commit": "92e975e31a46b1e84e21b838f7a79e5c91cd7e86",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen2.5-3b/profiles/qwen2.5-3b-vllm-bf16",
+  "event_ids": [
+    "qwen25-3b-vllm-fingerprint-smoke-2026-07-15"
+  ],
+  "legacy_first_event": "qwen25-3b-cross-runtime-2026-07-15"
+}

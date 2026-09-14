@@ -1,0 +1,62 @@
+{
+  "slug": "eval-nemotron-3-nano-4b-recharacterization-2026-09-11",
+  "event_id": "welp-recharacterization-2026-09-11",
+  "event_type": "welp-recharacterization",
+  "event_date": "2026-09-11",
+  "record_date": "2026-09-11",
+  "model_id": "nemotron-3-nano-4b",
+  "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M",
+  "event_title": "Current-WELP recharacterization",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "authoring": "generated",
+  "legacy_urls": [
+    "/labs/eval-nemotron-3-nano-4b-recharacterization-2026-09-11/"
+  ],
+  "publication_state": "published",
+  "source": {
+    "path": "models/nemotron-3-nano-4b/events/welp-recharacterization-2026-09-11/website-publication.json",
+    "sha256": "457ef6f472770425857963f5cb899dc4d7f6dd6ddb0bb12cbe33b54511ae07fa",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/nemotron-3-nano-4b/events/welp-recharacterization-2026-09-11",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "commit": "3e357b5e4fb6b45bddd8a15847e96476dca035ca",
+      "path": "reports/nemotron3-nano-4b-welp-recharacterization-2026-09-11.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "ref": "86d615c23bc1422890b32d9c1cf8e7d68b6001c1",
+      "url": "https://github.com/WumboLabs/eval-nemotron-3-nano-4b"
+    },
+    "source": {
+      "kind": "github-raw",
+      "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "ref": "86d615c23bc1422890b32d9c1cf8e7d68b6001c1",
+      "path": "website-publication.json",
+      "sha256": "457ef6f472770425857963f5cb899dc4d7f6dd6ddb0bb12cbe33b54511ae07fa"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/nemotron-3-nano-4b/events/welp-recharacterization-2026-09-11/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

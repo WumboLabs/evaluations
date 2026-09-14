@@ -1,0 +1,50 @@
+{
+  "slug": "grug-lmx-speed-2026-07-04",
+  "event_id": "grug-lmx-speed-2026-07-04",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-04",
+  "record_date": "2026-07-04",
+  "model_id": "grug-12b",
+  "profile_id": "grug-12b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — LMX local speed",
+  "event_title": "LMX speed run",
+  "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LMX local speed evidence: 69.24 tok/s out (llama.cpp Q4_K_M).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/grug-12b/events/grug-lmx-speed-2026-07-04",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-grug-12b",
+      "commit": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+      "path": "events/grug-lmx-speed-2026-07-04.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-grug-12b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-grug-12b",
+      "ref": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+      "url": "https://github.com/WumboLabs/eval-grug-12b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/grug-12b/events/grug-lmx-speed-2026-07-04/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/grug-12b/events/grug-lmx-speed-2026-07-04/WEBSITE-SUMMARY.md",
+    "sha256": "3ef821533655666269a531d6889628f48b9be90fd1579f4ad86590281c98f125",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

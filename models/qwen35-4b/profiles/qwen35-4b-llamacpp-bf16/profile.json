@@ -1,0 +1,26 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen35-4b",
+  "model_display_name": "Qwen3.5-4B",
+  "profile_id": "qwen35-4b-llamacpp-bf16",
+  "profile_display_name": "llama.cpp BF16 GGUF",
+  "runtime_family": "llama.cpp",
+  "artifact": "Qwen3.5-4B-BF16.gguf (text-only conversion; Unsloth rev e87f176479d0855a907a41277aca2f8ee7a09523)",
+  "artifact_precision": "BF16 weights; f16 KV (primary surface); q4_0 KV (one alternate admission surface)",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "notes": "One material profile; two published events (baseline characterization and the 2026-09-11 context-envelope completion) appended in this repository.",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.5-4b",
+      "commit": "c85ec602269eeb01d3cf3c50b5f9a76506338e66",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen35-4b/profiles/qwen35-4b-llamacpp-bf16",
+  "event_ids": [
+    "context-envelope-completion-2026-09-11-qwen35-4b"
+  ],
+  "legacy_first_event": "initial-evaluation-2026-09-09"
+}

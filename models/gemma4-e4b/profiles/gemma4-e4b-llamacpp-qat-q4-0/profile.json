@@ -1,0 +1,25 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "gemma4-e4b",
+  "model_display_name": "Gemma 4 E4B",
+  "profile_id": "gemma4-e4b-llamacpp-qat-q4-0",
+  "profile_display_name": "llama.cpp official QAT Q4_0",
+  "runtime_family": "llama.cpp",
+  "artifact": "gemma-4-E4B_q4_0-it.gguf + official gemma-4-E4B-it-mmproj.gguf (Google official QAT release)",
+  "artifact_precision": "QAT Q4_0 weights, F16 KV cache",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-gemma4-e4b",
+      "commit": "980b54ac5a0bb26534929149d6f6f3d041e65e56",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/gemma4-e4b/profiles/gemma4-e4b-llamacpp-qat-q4-0",
+  "event_ids": [
+    "initial-evaluation-2026-09-10-gemma4"
+  ],
+  "legacy_first_event": "initial-evaluation-2026-09-10"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3.8-2b-empero",
+  "model_display_name": "Qwen3.8-2B (Empero)",
+  "profile_id": "qwen3.8-2b-empero-vllm-bf16",
+  "profile_display_name": "vLLM BF16 vendor-alignment battery",
+  "runtime_family": "vLLM/llama.cpp",
+  "artifact": "empero-ai/Qwen3.8-2B-GGUF (+ BF16)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "specialized-test",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-2b-empero",
+      "commit": "e09ed632fe835dac69eb05f9e37f7b57485923fd",
+      "path": "profile.json"
+    }
+  ],
+  "profile_path": "models/qwen3.8-2b-empero/profiles/qwen3.8-2b-empero-vllm-bf16",
+  "event_ids": [
+    "qwen38-empero-2b-vendor-battery-2026-08-18"
+  ],
+  "legacy_first_event": "qwen38-empero-2b-vendor-battery-2026-08-18"
+}

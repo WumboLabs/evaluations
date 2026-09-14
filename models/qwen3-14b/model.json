@@ -1,0 +1,33 @@
+{
+  "model_id": "qwen3-14b",
+  "display_name": "Qwen3-14B",
+  "vendor": "Alibaba (Qwen team)",
+  "weight": 13,
+  "website_slug": "qwen3-14b",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen3-14b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen3-14b-lmx-speed-2026-07-05",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "qwen3-14b-fit-ladder-2026-07-15",
+    "practical-use": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "qwen3-14b-ollama-q4km-wumbo",
+    "classification": null,
+    "profile_ids": [
+      "qwen3-14b-llamacpp-q4km",
+      "qwen3-14b-ollama-q4km-wumbo"
+    ],
+    "event_ids": [
+      "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+      "qwen3-14b-lmx-speed-2026-07-05",
+      "qwen3-14b-fit-ladder-2026-07-15"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

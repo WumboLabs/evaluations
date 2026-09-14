@@ -1,0 +1,30 @@
+{
+  "model_id": "lfm2.5-1.2b",
+  "display_name": "LFM2.5 1.2B",
+  "vendor": "Liquid AI",
+  "weight": 5,
+  "website_slug": "lfm2-5-1-2b",
+  "website_url": "https://wumbolabs.dev/evaluations/lfm2-5-1-2b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "initial-evaluation-2026-08-26-lfm12",
+    "localmaxxing": null,
+    "performance": "initial-evaluation-2026-08-26-lfm12",
+    "capabilities": "initial-evaluation-2026-08-26-lfm12",
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": "initial-evaluation-2026-08-26-lfm12",
+    "reliability": "initial-evaluation-2026-08-26-lfm12",
+    "recommended_profile_id": "lfm2.5-1.2b-llamacpp-qad-q4-0",
+    "classification": "COMPLETE_SMALL_MODEL_EVALUATION",
+    "profile_ids": [
+      "lfm2.5-1.2b-llamacpp-qad-q4-0"
+    ],
+    "event_ids": [
+      "initial-evaluation-2026-08-26-lfm12"
+    ]
+  },
+  "context_summary": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale — every quant including BF16 fabricates confidently on invented subjects."
+}

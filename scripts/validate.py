@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import re
+import subprocess
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,7 @@ ID = re.compile(r"[a-z0-9][a-z0-9.-]*")
 SHA = re.compile(r"[0-9a-f]{40}")
 HASH = re.compile(r"[0-9a-f]{64}")
 GENERATED = "<!-- Generated from registry metadata — do not hand-edit. -->\n\n"
+PINNED = {}
 
 
 def load(path):
@@ -39,6 +41,15 @@ def relative(value):
     require((ROOT / value).resolve().is_relative_to(ROOT), f"escaping evidence path: {value}")
     return value
 
+def verify_pin(commit, path):
+    key = (commit, path)
+    if key not in PINNED:
+        result = subprocess.run(["git", "show", f"{commit}:{path}"], cwd=ROOT, capture_output=True)
+        require(result.returncode == 0, f"missing pinned Git object: {commit}:{path}")
+        PINNED[key] = hashlib.sha256(result.stdout).hexdigest()
+    require(PINNED[key] == digest(ROOT / path), f"working evidence differs from pinned commit: {path}")
+
+
 
 def citation(evidence):
     require(evidence.get("repo") == REPO, "canonical evidence must use WumboLabs/evaluations")
@@ -46,6 +57,7 @@ def citation(evidence):
             "canonical evidence requires a full commit SHA")
     path = relative(evidence.get("path"))
     require((ROOT / path).is_file(), f"missing evidence file: {path}")
+    verify_pin(evidence["commit"], path)
     return f"https://github.com/{REPO}/blob/{evidence['commit']}/{path}"
 
 
@@ -103,6 +115,8 @@ def validate(registry):
     profiles = unique(registry["profiles"], "profile_id")
     events = unique(registry["records"] + registry["shared_events"], "event_id")
     unique(registry["shared_events"], "shared_event_id")
+    order = registry["website_event_order"]
+    require(len(order) == len(set(order)) and set(order) == events.keys(), "website event order must cover each event exactly once")
     used_paths = set()
     for mid, model in models.items():
         require(model.get("website_url") == f"https://wumbolabs.dev/evaluations/{model['website_slug']}/", f"invalid website URL: {mid}")
@@ -110,9 +124,14 @@ def validate(registry):
         require(state["recommended_profile_id"] in profiles, f"unknown recommended profile: {mid}")
         require(profiles[state["recommended_profile_id"]]["model_id"] == mid, f"cross-model recommendation: {mid}")
         require(set(state["event_ids"]) <= events.keys(), f"unknown current-state event: {mid}")
+        require(all(mid in event_models(events[eid]) for eid in state["event_ids"]), f"cross-model current-state event: {mid}")
     for pid, profile in profiles.items():
         require(profile["model_id"] in models, f"unknown profile model: {pid}")
         require(set(profile["event_ids"]) <= events.keys(), f"unknown profile event: {pid}")
+        require(profile.get("profile_path") == f"models/{profile['model_id']}/profiles/{pid}", f"profile path identity mismatch: {pid}")
+        require(profile.get("repository") == REPO, f"invalid current profile repository: {pid}")
+        expected_events = {eid for eid, event in events.items() if pid in event_profiles(event)}
+        require(len(profile["event_ids"]) == len(set(profile["event_ids"])) and set(profile["event_ids"]) == expected_events, f"incomplete profile event relationships: {pid}")
         require(bool(profile.get("legacy_sources")) or bool(profile.get("publication_provenance")), f"missing profile provenance: {pid}")
     for eid, event in events.items():
         mids, pids = event_models(event), event_profiles(event)
@@ -139,6 +158,7 @@ def validate(registry):
                 file = ROOT / relative(source["path"])
                 require(file.is_file() and HASH.fullmatch(source["sha256"]) and digest(file) == source["sha256"], f"invalid {field} bytes: {eid}")
                 require(SHA.fullmatch(source["commit"]), f"unpinned {field}: {eid}")
+                verify_pin(source["commit"], source["path"])
     imports = load("provenance/legacy-imports.json")["imports"]
     seen = set()
     for record in imports:
@@ -154,6 +174,7 @@ def validate(registry):
         require(SHA.fullmatch(record["canonical_commit"]), "missing import commit")
         file = ROOT / relative(path)
         require(file.is_file(), f"missing imported file: {path}")
+        verify_pin(record["canonical_commit"], path)
         if record["byte_identical"] == "YES":
             require(digest(file) == record["source_sha256"], f"changed scientific source bytes: {path}")
         else:

@@ -1,0 +1,50 @@
+{
+  "slug": "qwen38-empero-4b-distill-wumboserver-2026-09-01",
+  "event_id": "qwen38-empero-4b-distill-wumboserver-2026-09-01",
+  "event_type": "benchmark-only",
+  "event_date": "2026-09-01",
+  "record_date": "2026-09-01",
+  "model_id": "qwen3.8-4b-empero",
+  "profile_id": "qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver",
+  "profile_name": "llama.cpp Q4_K_M Distill (WumboServer RTX 2060S lane)",
+  "profile_status": "specialized",
+  "event_kicker": "Benchmark Only — WumboServer hardware lane",
+  "event_title": "WumboServer RTX 2060S LocalMaxxing 4B Q4_K_M",
+  "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboServer (RTX 2060 SUPER 8GB)",
+  "headline": "RTX 2060S lane: 97.14 tok/s out, 2145.66 tok/s prefill, 3.0 GB peak VRAM, 172 W; LocalMaxxing APPROVED from WumboServer.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-distill-wumboserver-2026-09-01",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+      "commit": "5b942eee8bb028b7a4f154b2aaee3026b57b6671",
+      "path": "events/qwen38-empero-4b-distill-wumboserver-2026-09-01.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+      "ref": "5b942eee8bb028b7a4f154b2aaee3026b57b6671",
+      "url": "https://github.com/WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-distill-wumboserver-2026-09-01/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3.8-4b-empero/events/qwen38-empero-4b-distill-wumboserver-2026-09-01/WEBSITE-SUMMARY.md",
+    "sha256": "fb486ee99051663eb4c808605fa5a765785b5f827328b5feb1c37ea59457dd04",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

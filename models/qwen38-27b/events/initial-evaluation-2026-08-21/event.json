@@ -1,0 +1,62 @@
+{
+  "slug": "qwen3.8-27b",
+  "event_id": "initial-evaluation-2026-08-21",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-21",
+  "record_date": "2026-08-21",
+  "model_id": "qwen38-27b",
+  "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
+  "profile_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
+  "profile_status": "historical",
+  "event_kicker": "Initial Evaluation — Historical llama.cpp",
+  "event_title": "Initial evaluation (deep evaluation, historical llama.cpp)",
+  "welp_status": "COMPLETED_DEEP_EVALUATION",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Strong reviewed local coding/technical assistant. Not recommended as unguarded daily driver or unattended autonomous agent.",
+  "authoring": "hand-authored",
+  "legacy_urls": [
+    "/labs/qwen3.8-27b/"
+  ],
+  "publication_state": "published",
+  "report_page": "records/qwen38-27b-rtx5070-evaluation.md",
+  "report_title": "Qwen3.8-27B on 12GB: How Far Can an RTX 5070 Really Push It?",
+  "evidence_maturity": "HISTORICAL_EVALUATION",
+  "event_path": "models/qwen38-27b/events/initial-evaluation-2026-08-21",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+      "commit": "2f8d9fa9f9433cb64fcd416492e3a73c3a5773c7",
+      "path": "reports/comparison.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+      "ref": "2f8d9fa9f9433cb64fcd416492e3a73c3a5773c7",
+      "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-llamacpp",
+      "original_repo": "WumboLabs/eval-qwen3.8-27b",
+      "original_commit": "54b14b30e3779f15486c3785222647324459dcf5",
+      "note": "Evidence imported byte-identical into the canonical historical-profile repository on 2026-09-12; the original mixed repository is preserved as a historical archive."
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen38-27b/events/initial-evaluation-2026-08-21/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen38-27b/events/initial-evaluation-2026-08-21/WEBSITE-SUMMARY.md",
+    "sha256": "b015aab4b5c7c06e59991491ae68ca11decfc137006af587b4f450d537e5b407",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

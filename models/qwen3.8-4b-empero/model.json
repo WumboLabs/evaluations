@@ -1,0 +1,32 @@
+{
+  "model_id": "qwen3.8-4b-empero",
+  "display_name": "Qwen3.8-4B (Empero)",
+  "vendor": "empero-ai (Qwen3.8 derivative)",
+  "weight": 19,
+  "website_slug": "qwen3-8-4b-empero",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen3-8-4b-empero/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen38-empero-4b-distill-wumboserver-2026-09-01",
+    "capabilities": null,
+    "serving-profile": null,
+    "specialized": "qwen38-empero-4b-vendor-battery-2026-08-18",
+    "practical-use": null,
+    "context": null,
+    "reliability": null,
+    "recommended_profile_id": "qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver",
+    "classification": null,
+    "profile_ids": [
+      "qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver",
+      "qwen3.8-4b-empero-vendor-battery"
+    ],
+    "event_ids": [
+      "qwen38-empero-4b-vendor-battery-2026-08-18",
+      "qwen38-empero-4b-distill-wumboserver-2026-09-01"
+    ]
+  },
+  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+}

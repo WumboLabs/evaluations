@@ -1,0 +1,50 @@
+{
+  "slug": "qwen3-14b-lmx-speed-2026-07-05",
+  "event_id": "qwen3-14b-lmx-speed-2026-07-05",
+  "event_type": "benchmark-only",
+  "event_date": "2026-07-05",
+  "record_date": "2026-07-05",
+  "model_id": "qwen3-14b",
+  "profile_id": "qwen3-14b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M (unsloth)",
+  "profile_status": "current",
+  "event_kicker": "Benchmark Only — LMX local speed",
+  "event_title": "LMX speed run",
+  "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+  "evidence_maturity": "BENCHMARK_ONLY",
+  "evidence_scope": [
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LMX local speed evidence: 66.57 tok/s out (llama.cpp Q4_K_M).",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/qwen3-14b/events/qwen3-14b-lmx-speed-2026-07-05",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-qwen3-14b",
+      "commit": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+      "path": "events/qwen3-14b-lmx-speed-2026-07-05.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-qwen3-14b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-qwen3-14b",
+      "ref": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+      "url": "https://github.com/WumboLabs/eval-qwen3-14b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3-14b/events/qwen3-14b-lmx-speed-2026-07-05/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/qwen3-14b/events/qwen3-14b-lmx-speed-2026-07-05/WEBSITE-SUMMARY.md",
+    "sha256": "0460d335b0a34c1092b4a1eb443c8a48b6c86ceeffafcaaa9d8b092fb053a1ce",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "nemotron-3-nano-4b",
+  "event_id": "initial-evaluation-2026-08-25",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-08-25",
+  "record_date": "2026-08-25",
+  "model_id": "nemotron-3-nano-4b",
+  "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+  "profile_name": "llama.cpp Q4_K_M",
+  "profile_status": "current",
+  "event_kicker": "Initial Evaluation — PROTOCOL_BLOCKED (historical, preserved)",
+  "event_title": "Initial evaluation (protocol development, PROTOCOL_BLOCKED)",
+  "welp_status": "PARTIAL_PROTOCOL_DEVELOPMENT",
+  "evidence_scope": [
+    "protocol-development",
+    "performance"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Protocol development campaign. Phases 0–2 passed; stopped at Phase 3 gate decision. Not a complete WELP capability review.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "evidence_maturity": "PROTOCOL_BLOCKED",
+  "event_path": "models/nemotron-3-nano-4b/events/initial-evaluation-2026-08-25",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "commit": "3e357b5e4fb6b45bddd8a15847e96476dca035ca",
+      "path": "report.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "ref": "main",
+      "url": "https://github.com/WumboLabs/eval-nemotron-3-nano-4b"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/nemotron-3-nano-4b/events/initial-evaluation-2026-08-25/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/nemotron-3-nano-4b/events/initial-evaluation-2026-08-25/WEBSITE-SUMMARY.md",
+    "sha256": "1a9052320d5610460cea2aa61fad8939e74e3016f4834a21fb8a0c415e996f4c",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}

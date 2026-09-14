@@ -1,0 +1,31 @@
+{
+  "model_id": "nemotron-3-nano-4b",
+  "display_name": "Nemotron 3 Nano 4B",
+  "vendor": "NVIDIA",
+  "weight": 2,
+  "website_slug": "nemotron-3-nano-4b",
+  "website_url": "https://wumbolabs.dev/evaluations/nemotron-3-nano-4b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": "initial-evaluation-2026-08-25",
+    "model-classification": "welp-recharacterization-2026-09-11",
+    "localmaxxing": null,
+    "performance": "welp-recharacterization-2026-09-11",
+    "capabilities": "welp-recharacterization-2026-09-11",
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": "welp-recharacterization-2026-09-11",
+    "reliability": "welp-recharacterization-2026-09-11",
+    "recommended_profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+    "classification": "READY_WITH_GUARDRAILS",
+    "profile_ids": [
+      "nemotron-3-nano-4b-llamacpp-q4km"
+    ],
+    "event_ids": [
+      "initial-evaluation-2026-08-25",
+      "welp-recharacterization-2026-09-11"
+    ]
+  },
+  "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 262144; extension_mechanism: \"none — source-backed absence on both official model cards (the family 1M claim belongs to the 30B-A3B MoE sibling; the GGUF header value 1,048,576 is converter metadata, not a card claim)\"; envelope_complete: true; native_maximum_disposition: \"VALIDATED — capacity admitted, near-full performance measured (uncached prefill ~2,877 tok/s, decode ~79-81 tok/s, 7,268 MiB VRAM), strict useful-context PASS at both required seeds (42, 314159)\"; exact_max_dispositions: {\"native_262144\": \"VALIDATED at both seeds at >=99.48% near-full occupancy with depth-placement errors <= 0.21 pp\", \"official_extensions\": \"NONE exist (source-backed absence); nothing to disposition beyond the native maximum\"}; useful_context_finding: \"All five useful-context fields (exact retrieval, synthesis, decoy resistance, absent-information grounding, instruction/output compliance) passed the strict aggregate at every tested rung — 8,192 / 32,768 / 131,072 / 262,144 — including both native-maximum seeds. The tested frozen near-full context fixture passes strictly; this is not proof of universal long-document reasoning on arbitrary material\"; notes: \"Hybrid Mamba-2 memory model measured: 4 attention layers carry context-linear KV (~16 KiB/token f16); the 38 Mamba-2 layers carry a fixed context-independent recurrent state (~100-300 MiB). The full 262,144 slot fits in 7,268 MiB with 4,546 MiB free\""
+}

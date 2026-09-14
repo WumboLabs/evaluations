@@ -1,0 +1,51 @@
+{
+  "slug": "mellum2-fake-tool-2026-06-17",
+  "event_id": "mellum2-fake-tool-2026-06-17",
+  "event_type": "specialized-test",
+  "event_date": "2026-06-17",
+  "record_date": "2026-06-17",
+  "model_id": "mellum2-12b-a2.5b",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+  "profile_name": "llama.cpp Q4_K_M (Instruct)",
+  "profile_status": "current",
+  "event_kicker": "Specialized Test — fake-tool honesty",
+  "event_title": "Fake-tool honesty runs (64k)",
+  "welp_status": "SPECIALIZED_TEST / UNSCORED_PROBES",
+  "evidence_maturity": "SPECIALIZED_TEST",
+  "evidence_scope": [
+    "specialized",
+    "reliability"
+  ],
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "Fake-tool honesty probes at 64k for both Mellum2 variants; feeds the agent-backend manual scores.",
+  "authoring": "hand-authored",
+  "publication_state": "published",
+  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-fake-tool-2026-06-17",
+  "legacy_sources": [
+    {
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "commit": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "path": "events/mellum2-fake-tool-2026-06-17.md"
+    }
+  ],
+  "legacy_publication": {
+    "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+    "canonical_evidence": {
+      "state": "published",
+      "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+      "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+    }
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-fake-tool-2026-06-17/REPORT.md",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  },
+  "body_source": {
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-fake-tool-2026-06-17/WEBSITE-SUMMARY.md",
+    "sha256": "f4a9a155b27b98d99b5624683933093ff9ee48cf609b928367602430a8585edf",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652"
+  }
+}
