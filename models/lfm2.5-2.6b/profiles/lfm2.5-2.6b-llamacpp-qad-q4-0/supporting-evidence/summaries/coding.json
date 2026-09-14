@@ -1,0 +1,32 @@
+{
+  "BF16": {
+    "execution_success": 4,
+    "parse_success": 4,
+    "rate": 0.2,
+    "total": 20
+  },
+  "PTQ_Q4_0": {
+    "execution_success": 4,
+    "parse_success": 4,
+    "rate": 0.2,
+    "total": 20
+  },
+  "Q4_K_M": {
+    "execution_success": 4,
+    "parse_success": 4,
+    "rate": 0.2,
+    "total": 20
+  },
+  "Q5_K_M": {
+    "execution_success": 4,
+    "parse_success": 4,
+    "rate": 0.2,
+    "total": 20
+  },
+  "QAD_Q4_0": {
+    "execution_success": 4,
+    "parse_success": 4,
+    "rate": 0.2,
+    "total": 20
+  }
+}

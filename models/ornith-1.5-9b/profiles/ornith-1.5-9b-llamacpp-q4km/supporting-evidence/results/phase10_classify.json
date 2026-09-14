@@ -1,0 +1,14 @@
+{
+ "roles": [],
+ "readiness": "NOT_READY",
+ "guardrails": [
+  "scorer-lexicon false-negative risk: exact-string gates understate capability (Phase 4 G6 + Phase 5 linux/rag failure analysis)",
+  "arithmetic/precision errors persist at temp 0.2 (r-arith-3 0.2 vs 2.0)",
+  "FINAL-line discipline unstable across seeds (reasoning-off ESCALATE_TO_5)"
+ ],
+ "not_reached": [],
+ "producer_claims_separate": {
+  "reported_separately": true,
+  "card": "262144 ctx trained; tool-calling supported; vision via mmproj (NOT_EVALUATED here)"
+ }
+}

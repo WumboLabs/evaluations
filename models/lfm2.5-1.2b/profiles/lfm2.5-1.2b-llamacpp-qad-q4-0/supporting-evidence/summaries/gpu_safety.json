@@ -1,0 +1,14 @@
+{
+  "telemetry_interval_s": 2,
+  "telemetry_samples": 1569,
+  "journal_xid_events": 0,
+  "journal_reset_required": false,
+  "journal_gsp_failures": 0,
+  "journal_channel_failures": 0,
+  "soak_peak_power_w": 33.58,
+  "soak_max_temp_c": 52.0,
+  "desktop_baseline_after_shutdown_mib": 576,
+  "gpu_memory_released": true,
+  "clean_shutdown": true,
+  "campaign_stopped_for_gpu_event": false
+}

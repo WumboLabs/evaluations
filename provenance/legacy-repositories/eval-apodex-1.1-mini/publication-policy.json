@@ -1,0 +1,48 @@
+{
+  "future_repo": "WumboLabs/eval-apodex-1.1-mini",
+  "localmaxxing_status": "SUBMITTED/APPROVED",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "report.md",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "WLEP-CONFORMANCE.md",
+      "protocol-findings.md",
+      "contracts/",
+      "scorers/",
+      "protocol-snapshot/",
+      "publication/",
+      "results/",
+      "summaries/",
+      "localmaxxing/ (IDs/status/performance/repro summary only)",
+      "scripts/ (commands)",
+      "calibration/"
+    ],
+    "LOCAL_ONLY": [
+      "models/ (symlink -> ../../models/apodex-1.1-mini/artifacts, never tracked)",
+      "runtime/ (bundled llama.cpp incl. ggml-vocab tokenizer files)",
+      "logs/",
+      "telemetry/ raw host paths",
+      "private machine identifiers"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/ (EXCLUDED_INITIAL_RELEASE; excluded wholesale; no per-file source review performed)",
+      "omp/ (OMP session internals)"
+    ]
+  },
+  "restricted_default_do_not_publish": [
+    "sources/ (acquisition)",
+    "omp*/, omp-evidence/",
+    "runtime/",
+    "logs/",
+    "telemetry/ raw host paths",
+    "caches/",
+    "private machine identifiers"
+  ],
+  "secret_scan": "CLEAN 2026-08-26",
+  "initial_source_policy": "EXCLUDED_INITIAL_RELEASE: sources/ is excluded wholesale; no per-file source review performed.",
+  "policy": "ALLOWLIST_FIRST"
+}

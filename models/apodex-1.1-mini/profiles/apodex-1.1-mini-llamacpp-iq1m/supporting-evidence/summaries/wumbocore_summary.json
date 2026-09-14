@@ -1,0 +1,13 @@
+{
+  "campaign": "apodex-1.1-mini",
+  "wumbocore_lab_record_ready": true,
+  "canonical_evidence_source": "GitHub lab-record bundle at publication/repo-candidate/lab-records/apodex-1.1-mini/wlep-2026-08-25 (git operations deferred to human)",
+  "website_edits": "none performed",
+  "headline": {
+    "model": "Apodex 1.1 mini (community IQ1_M GGUF of apodex/Apodex-1.1-mini @62583b46)",
+    "hardware": "RTX 5070 12 GB",
+    "protocol": "WLEP end-to-end snapshot 2026-08-25",
+    "outcome": "DO_NOT_ADVANCE at Phase 3 (frozen gate); performance characterized: decode 169 t/s, prefill ~1800 t/s on IQ1_M",
+    "role_readiness": "no role readiness supported by evidence; early stop limits conclusions"
+  }
+}

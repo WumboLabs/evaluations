@@ -1,0 +1,1 @@
+{"phase4_gate_decision": "DO_NOT_ADVANCE", "modules": {"extraction_rag": {"class": "PASS"}, "structured_interfaces": {"class": "FAIL"}}, "guardrails": ["fabricated-flag resistance gaps"]}

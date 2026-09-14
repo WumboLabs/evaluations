@@ -1,0 +1,48 @@
+{
+  "BF16": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "hallucination",
+        "model": "BF16",
+        "pass": false,
+        "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE."
+      }
+    ],
+    "pass": 1,
+    "rate": 0.5,
+    "total": 2
+  },
+  "PTQ_Q4_0": {
+    "failures": [],
+    "pass": 2,
+    "rate": 1.0,
+    "total": 2
+  },
+  "Q4_K_M": {
+    "failures": [],
+    "pass": 2,
+    "rate": 1.0,
+    "total": 2
+  },
+  "Q5_K_M": {
+    "failures": [],
+    "pass": 2,
+    "rate": 1.0,
+    "total": 2
+  },
+  "QAD_Q4_0": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "hallucination",
+        "model": "QAD_Q4_0",
+        "pass": false,
+        "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE."
+      }
+    ],
+    "pass": 1,
+    "rate": 0.5,
+    "total": 2
+  }
+}

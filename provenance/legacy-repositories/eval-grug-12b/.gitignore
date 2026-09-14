@@ -1,0 +1,22 @@
+# Publication defense in depth
+.env
+.env.*
+credentials*
+secrets*
+auth*
+*.pem
+*.key
+*.p12
+*.gguf
+*.safetensors
+*.bin
+__pycache__/
+*.pyc
+.cache/
+cache/
+sources/
+runtime/
+logs/
+local/
+models/
+telemetry/

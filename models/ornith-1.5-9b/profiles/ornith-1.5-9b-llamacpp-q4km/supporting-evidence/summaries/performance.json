@@ -1,0 +1,59 @@
+{
+  "schema": "welp-performance/0.1.0-draft",
+  "phase": "WELP Phase 2 — Performance & Resource Characterization",
+  "campaign_id": "ornith-1.5-9b-welp-2026-08-27",
+  "outcome": "COMPLETE",
+  "generated_utc": "2026-08-27T20:28:05+00:00",
+  "canonical_profile": {
+    "model": "Ornith-1.5-9B-Q4_K_M.gguf",
+    "runtime": "0d9ceae1e38291035605613ab41a8f5e693d6fcd",
+    "build": 10449,
+    "ngl": 99,
+    "np": 1,
+    "ctx": 32768,
+    "fit": "off",
+    "fa": "on",
+    "kv_unified": false,
+    "ubatch": 512,
+    "speculation": "off",
+    "note": "kv_unified=false observed in server log at np=1; serving_profile.json requested block governs"
+  },
+  "decode_tps": {
+    "method": "5 measured reps after 2 warmups; long-form story task (~1024 max tokens); unique [tag-seed] prompts; thinking disabled; predicted_per_second from server timings",
+    "values": [102.01, 102.12, 102.08, 102.03, 101.97],
+    "mean": 102.04,
+    "median": 102.03,
+    "stdev": 0.06,
+    "n_invalidated": 0,
+    "raw": "results/phase2_raw.jsonl"
+  },
+  "prefill_tps": {
+    "method": "dedicated --no-cache-prompt instance (port 8932, frozen Invalid Run Handling technique); 5 measured reps; unique [tag-seed] content; cached_tokens=0 verified per rep; implied-t/s cross-check PASS all reps",
+    "prompt_size_tokens_mean": 5578,
+    "prompt_size_note": "nominal 4096-word body tokenizes to ~5.5-5.6k tokens with this vocab",
+    "values": [4024.65, 4042.17, 4051.04, 4068.1, 4047.41],
+    "mean": 4046.67,
+    "median": 4047.41,
+    "stdev": 15.68,
+    "n_invalidated": 0,
+    "raw": "results/phase2_raw.jsonl"
+  },
+  "ttft": {
+    "short_prompt_prompt_ms_mean": 36.93,
+    "first_token_est_ms": 46.72,
+    "prefill_5578tok_ms_mean": 1378.0,
+    "note": "first-token estimate = prompt_ms + mean inter-token; 4k prefill ≈ 1.38 s at T=0.2"
+  },
+  "load_time_s": 0.76,
+  "load_time_note": "server-relative log timestamp at 'model loaded' with warm page cache (mmap); cold-cache disk variance not separately measured (measurement limitation)",
+  "vram_idle_mib": 6794,
+  "vram_total_mib": 12227,
+  "vram_headroom_mib": 5433,
+  "power_temp_at_idle": {"watts": 28.44, "celsius": 41},
+  "invalidated_runs": [],
+  "harness_notes": [
+    "cache metrics on this runtime verified trustworthy during phase 2 (cached_tokens=0 on no-cache instance; main instance prompts unique); no PF-04-style telemetry artifact",
+    "decode stdev 0.06 t/s across reps — thermal/power stable at 9B Q4_K_M on RTX 5070",
+    "two-instance sequencing used because 12 GiB VRAM cannot host two 6.8 GiB copies simultaneously (main instance terminated before no-cache launch; single-runtime rule preserved)"
+  ]
+}

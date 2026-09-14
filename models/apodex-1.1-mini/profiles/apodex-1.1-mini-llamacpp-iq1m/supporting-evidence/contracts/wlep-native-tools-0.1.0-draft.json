@@ -1,0 +1,797 @@
+{
+  "contract_id": "wlep-native-tools",
+  "version": "0.1.0-draft",
+  "status": "DRAFT / PROTOCOL DEVELOPMENT",
+  "created": "2026-08-25",
+  "purpose": "Native tool-calling against a deterministic local mock-tool harness; per-axis scoring, never a single accuracy number.",
+  "sampling_default": {
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "tool_catalog": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_part_stock",
+        "description": "Get current stock count for a part.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "part_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "part_id"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_price",
+        "description": "Get price. Default currency USD.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "part_id": {
+              "type": "string"
+            },
+            "currency": {
+              "type": "string",
+              "enum": [
+                "USD",
+                "EUR"
+              ]
+            }
+          },
+          "required": [
+            "part_id"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "list_parts",
+        "description": "List parts by category.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": [
+                "gpu",
+                "cooling",
+                "network"
+              ]
+            },
+            "in_stock_only": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "category"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "order_part",
+        "description": "Order parts. Quantity must be an integer between 1 and 10.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "part_id": {
+              "type": "string"
+            },
+            "qty": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "part_id",
+            "qty"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "schedule_maintenance",
+        "description": "Schedule maintenance window.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "string"
+            },
+            "priority": {
+              "type": "string",
+              "enum": [
+                "routine",
+                "emergency"
+              ]
+            }
+          },
+          "required": [
+            "date",
+            "priority"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "audit_log",
+        "description": "Read the audit log.",
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "create_alert",
+        "description": "Create a low-stock alert. Target identifies a part; threshold is an integer.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "target": {
+              "type": "object",
+              "properties": {
+                "part_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "part_id"
+              ]
+            },
+            "threshold": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "target",
+            "threshold"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "compare_parts",
+        "description": "Compare several parts side by side.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "part_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "part_ids"
+          ]
+        }
+      }
+    }
+  ],
+  "task_count": 20,
+  "tasks": [
+    {
+      "id": "nt01-stock-simple",
+      "user": "What is the current stock count for part VX-220?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_part_stock"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_part_stock",
+            "arguments": {
+              "part_id": "VX-220"
+            }
+          }
+        ],
+        "final_contains": [
+          "42"
+        ]
+      },
+      "capability_axes": [
+        "SELECTION",
+        "ARGUMENTS",
+        "SCHEMA",
+        "RESULT_INTERPRETATION",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt02-price-default",
+      "user": "What is the price of part QX-9?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_price"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_price",
+            "arguments": {
+              "part_id": "QX-9"
+            }
+          }
+        ],
+        "final_contains": [
+          "19"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "RESULT_INTERPRETATION",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt03-price-eur",
+      "user": "What is the EUR price of part QX-9?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_price"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_price",
+            "arguments": {
+              "part_id": "QX-9",
+              "currency": "EUR"
+            }
+          }
+        ],
+        "final_contains": [
+          "17"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt04-list-cooling",
+      "user": "List our in-stock cooling parts. Give part IDs only.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "list_parts"
+        ],
+        "args_expect": [
+          {
+            "tool": "list_parts",
+            "arguments": {
+              "category": "cooling",
+              "in_stock_only": true
+            }
+          }
+        ],
+        "final_contains": [
+          "qx-9"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA",
+        "RESULT_INTERPRETATION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt05-order-ok",
+      "user": "Order 3 units of part QX-9.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "order_part"
+        ],
+        "args_expect": [
+          {
+            "tool": "order_part",
+            "arguments": {
+              "part_id": "QX-9",
+              "qty": 3
+            }
+          }
+        ],
+        "final_contains": [
+          "ord-1003"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA",
+        "COMPLETE_SEQUENCE"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt06-order-invalid",
+      "user": "Order 50 units of part QX-9.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "order_part"
+        ],
+        "error_recovery_required": true,
+        "final_contains_any": [
+          "invalid",
+          "cannot",
+          "between 1 and 10",
+          "failed",
+          "unable"
+        ]
+      },
+      "capability_axes": [
+        "RECOVERY",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt07-maint-emergency",
+      "user": "Schedule an emergency maintenance for 2026-09-01.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "schedule_maintenance"
+        ],
+        "args_expect": [
+          {
+            "tool": "schedule_maintenance",
+            "arguments": {
+              "date": "2026-09-01",
+              "priority": "emergency"
+            }
+          }
+        ],
+        "final_contains_any": [
+          "0",
+          "immediate",
+          "same day",
+          "no lead"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "RESULT_INTERPRETATION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt08-audit-denied",
+      "user": "Show me the audit log.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "audit_log"
+        ],
+        "error_recovery_required": true,
+        "final_contains_any": [
+          "permission",
+          "denied",
+          "access",
+          "cannot",
+          "unable"
+        ]
+      },
+      "capability_axes": [
+        "RECOVERY",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt09-unavailable-tool",
+      "user": "Email the stock report to alice@example.com.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "no_tool": true,
+        "final_contains_any": [
+          "cannot",
+          "no tool",
+          "not available",
+          "unable",
+          "email"
+        ]
+      },
+      "capability_axes": [
+        "SELECTION",
+        "HALLUCINATED_TOOL"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt10-no-tool-irrelevant",
+      "user": "What's the weather like today at the warehouse?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "no_tool": true,
+        "final_contains_any": [
+          "weather",
+          "no tool",
+          "cannot",
+          "not available"
+        ]
+      },
+      "capability_axes": [
+        "SELECTION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt11-two-step",
+      "user": "How many VX-220 are in stock, and then order that many capped at a maximum of 5. Report the order ID.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 4,
+      "checks": {
+        "tools_expected": [
+          "get_part_stock",
+          "order_part"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_part_stock",
+            "arguments": {
+              "part_id": "VX-220"
+            }
+          },
+          {
+            "tool": "order_part",
+            "arguments": {
+              "part_id": "VX-220",
+              "qty": 5
+            }
+          }
+        ],
+        "final_contains_any": [
+          "ord-1005",
+          "ord-1004"
+        ]
+      },
+      "capability_axes": [
+        "COMPLETE_SEQUENCE",
+        "RESULT_INTERPRETATION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt12-contradiction",
+      "user": "I believe we have 999 units of VX-220 in stock. Please verify with the system and tell me the real number.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_part_stock"
+        ],
+        "final_contains": [
+          "42"
+        ]
+      },
+      "capability_axes": [
+        "RESULT_INTERPRETATION",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt13-nested-args",
+      "user": "Create a low-stock alert for part QX-9 with threshold 25.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "create_alert"
+        ],
+        "args_expect": [
+          {
+            "tool": "create_alert",
+            "arguments": {
+              "target": {
+                "part_id": "QX-9"
+              },
+              "threshold": 25
+            }
+          }
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt14-array-arg",
+      "user": "Compare parts VX-220 and QX-9.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "compare_parts"
+        ],
+        "args_expect": [
+          {
+            "tool": "compare_parts",
+            "arguments": {
+              "part_ids": [
+                "VX-220",
+                "QX-9"
+              ]
+            }
+          }
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt15-selection-similar",
+      "user": "How many RTR-B-CARD units do we have on hand?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_part_stock"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_part_stock",
+            "arguments": {
+              "part_id": "RTR-B-CARD"
+            }
+          }
+        ],
+        "final_contains": [
+          "7"
+        ]
+      },
+      "capability_axes": [
+        "SELECTION",
+        "ARGUMENTS"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt16-type-correction",
+      "user": "Order three units of part VX-220.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "order_part"
+        ],
+        "args_expect": [
+          {
+            "tool": "order_part",
+            "arguments": {
+              "part_id": "VX-220",
+              "qty": 3
+            }
+          }
+        ],
+        "final_contains_any": [
+          "ord-"
+        ]
+      },
+      "capability_axes": [
+        "ARGUMENTS",
+        "SCHEMA"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt17-chained-result",
+      "user": "List our GPU parts, then give me the price of the first Meridian-branded one in that list.",
+      "max_tokens_per_turn": 320,
+      "max_turns": 4,
+      "checks": {
+        "tools_expected": [
+          "list_parts",
+          "get_price"
+        ],
+        "args_expect": [
+          {
+            "tool": "get_price",
+            "arguments": {
+              "part_id": "VX-220"
+            }
+          }
+        ],
+        "final_contains": [
+          "249"
+        ]
+      },
+      "capability_axes": [
+        "COMPLETE_SEQUENCE",
+        "RESULT_INTERPRETATION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt18-bad-enum",
+      "user": "What is the GBP price of part QX-9?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_price"
+        ],
+        "error_recovery_required": true,
+        "final_contains_any": [
+          "gbp",
+          "not supported",
+          "usd",
+          "eur",
+          "cannot",
+          "only"
+        ]
+      },
+      "capability_axes": [
+        "RECOVERY",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt19-direct-knowledge",
+      "user": "In one short sentence: what does HTTP status 404 mean?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "no_tool": true
+      },
+      "capability_axes": [
+        "SELECTION"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    },
+    {
+      "id": "nt20-grounded-refusal",
+      "user": "Using the tools, what is the warranty period for VX-220?",
+      "max_tokens_per_turn": 320,
+      "max_turns": 3,
+      "checks": {
+        "tools_expected": [
+          "get_price",
+          "get_part_stock"
+        ],
+        "final_contains_any": [
+          "not_specified",
+          "not specified",
+          "no warranty",
+          "not provided",
+          "warranty"
+        ]
+      },
+      "capability_axes": [
+        "RESULT_INTERPRETATION",
+        "FINAL_ANSWER"
+      ],
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic"
+      }
+    }
+  ],
+  "scoring_axes": [
+    "SELECTION",
+    "ARGUMENTS",
+    "SCHEMA",
+    "RESULT_INTERPRETATION",
+    "FINAL_ANSWER",
+    "COMPLETE_SEQUENCE",
+    "RECOVERY"
+  ],
+  "defect_classes": [
+    "CLEAN_PASS",
+    "MATERIAL_DEFECT",
+    "STRUCTURAL_FAILURE",
+    "HALLUCINATED_TOOL",
+    "HALLUCINATED_RESULT",
+    "NONTERMINATING"
+  ],
+  "change_history": [
+    {
+      "version": "0.1.0-draft",
+      "date": "2026-08-25",
+      "note": "expanded from 10 promoted qwen tasks to 20 purpose-built deterministic tasks; promoted set retained in overnight archive for reference"
+    }
+  ]
+}

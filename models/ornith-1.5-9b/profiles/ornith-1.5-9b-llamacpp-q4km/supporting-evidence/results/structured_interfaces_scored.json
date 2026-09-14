@@ -1,0 +1,698 @@
+[
+ {
+  "id": "strict-csv-02",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "id,ok\n7,true"
+  }
+ },
+ {
+  "id": "strict-csv-04",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "port,proto\n53,udp\n443,tcp"
+  }
+ },
+ {
+  "id": "strict-enum-03",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "TRUE"
+  }
+ },
+ {
+  "id": "strict-enum-05",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "SAFE"
+  }
+ },
+ {
+  "id": "strict-enum-08",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "UNKNOWN"
+  }
+ },
+ {
+  "id": "strict-enum-10",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "NONE"
+  }
+ },
+ {
+  "id": "strict-exact-04",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "alpha_BETA"
+  }
+ },
+ {
+  "id": "strict-exact-06",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "GPU0"
+  }
+ },
+ {
+  "id": "strict-exact-09",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "END"
+  }
+ },
+ {
+  "id": "strict-extract-02",
+  "seed": 42,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "ZZ-1\nZZ-9"
+  }
+ },
+ {
+  "id": "strict-extract-05",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "aa11\nbb22\ncc33"
+  }
+ },
+ {
+  "id": "strict-extract-07",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "ERR_A\nERR_B\nERR_C"
+  }
+ },
+ {
+  "id": "strict-json-01",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "name": "Ada",
+    "count": 3
+   }
+  }
+ },
+ {
+  "id": "strict-json-03",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "mode": "q8",
+    "enabled": false
+   }
+  }
+ },
+ {
+  "id": "strict-json-06",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "ports": [
+     80,
+     443
+    ]
+   }
+  }
+ },
+ {
+  "id": "strict-json-08",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "kind": "test",
+    "version": 1
+   }
+  }
+ },
+ {
+  "id": "strict-limit-02",
+  "seed": 42,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "Pre-merge check"
+  }
+ },
+ {
+  "id": "strict-limit-04",
+  "seed": 42,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "json"
+  }
+ },
+ {
+  "id": "si-schema-req-fields",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-enum-null",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-nested-array",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-extraction-into-schema",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-numeric-constraint",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-code-block-only",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "blocks_found": 1,
+   "missing": [],
+   "prose_around": false
+  }
+ },
+ {
+  "id": "strict-csv-02",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "id,ok\n7,true"
+  }
+ },
+ {
+  "id": "strict-csv-04",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "port,proto\n53,udp\n443,tcp"
+  }
+ },
+ {
+  "id": "strict-enum-03",
+  "seed": 43,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "FALSE"
+  }
+ },
+ {
+  "id": "strict-enum-05",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "SAFE"
+  }
+ },
+ {
+  "id": "strict-enum-08",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "UNKNOWN"
+  }
+ },
+ {
+  "id": "strict-enum-10",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "NONE"
+  }
+ },
+ {
+  "id": "strict-exact-04",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "alpha_BETA"
+  }
+ },
+ {
+  "id": "strict-exact-06",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "GPU0"
+  }
+ },
+ {
+  "id": "strict-exact-09",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "END"
+  }
+ },
+ {
+  "id": "strict-extract-02",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "ZX-1\nZX-9"
+  }
+ },
+ {
+  "id": "strict-extract-05",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "aa11\nbb22\ncc33"
+  }
+ },
+ {
+  "id": "strict-extract-07",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "ERR_A\nERR_B\nERR_C"
+  }
+ },
+ {
+  "id": "strict-json-01",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "name": "Ada",
+    "count": 3
+   }
+  }
+ },
+ {
+  "id": "strict-json-03",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "mode": "q8",
+    "enabled": false
+   }
+  }
+ },
+ {
+  "id": "strict-json-06",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "ports": [
+     80,
+     443
+    ]
+   }
+  }
+ },
+ {
+  "id": "strict-json-08",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "kind": "test",
+    "version": 1
+   }
+  }
+ },
+ {
+  "id": "strict-limit-02",
+  "seed": 43,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "Pre-merge check"
+  }
+ },
+ {
+  "id": "strict-limit-04",
+  "seed": 43,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "json"
+  }
+ },
+ {
+  "id": "si-schema-req-fields",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-enum-null",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-nested-array",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-extraction-into-schema",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-numeric-constraint",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-code-block-only",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "blocks_found": 1,
+   "missing": [],
+   "prose_around": false
+  }
+ },
+ {
+  "id": "strict-csv-02",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "id,ok\n7,true"
+  }
+ },
+ {
+  "id": "strict-csv-04",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "port,proto\n53,udp\n443,tcp"
+  }
+ },
+ {
+  "id": "strict-enum-03",
+  "seed": 44,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "FALSE"
+  }
+ },
+ {
+  "id": "strict-enum-05",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "SAFE"
+  }
+ },
+ {
+  "id": "strict-enum-08",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "UNKNOWN"
+  }
+ },
+ {
+  "id": "strict-enum-10",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "NONE"
+  }
+ },
+ {
+  "id": "strict-exact-04",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "alpha_BETA"
+  }
+ },
+ {
+  "id": "strict-exact-06",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "GPU0"
+  }
+ },
+ {
+  "id": "strict-exact-09",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "END"
+  }
+ },
+ {
+  "id": "strict-extract-02",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "ZX-1\nZX-9"
+  }
+ },
+ {
+  "id": "strict-extract-05",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "aa11\nbb22\ncc33"
+  }
+ },
+ {
+  "id": "strict-extract-07",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "ERR_A\nERR_B\nERR_C"
+  }
+ },
+ {
+  "id": "strict-json-01",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "name": "Ada",
+    "count": 3
+   }
+  }
+ },
+ {
+  "id": "strict-json-03",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "mode": "q8",
+    "enabled": false
+   }
+  }
+ },
+ {
+  "id": "strict-json-06",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "ports": [
+     80,
+     443
+    ]
+   }
+  }
+ },
+ {
+  "id": "strict-json-08",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "kind": "test",
+    "version": 1
+   }
+  }
+ },
+ {
+  "id": "strict-limit-02",
+  "seed": 44,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "Pre-merge check"
+  }
+ },
+ {
+  "id": "strict-limit-04",
+  "seed": 44,
+  "passed": false,
+  "class": "STRUCTURAL_FAILURE",
+  "detail": {
+   "actual": "json"
+  }
+ },
+ {
+  "id": "si-schema-req-fields",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-enum-null",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-schema-nested-array",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-extraction-into-schema",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-numeric-constraint",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "violations": []
+  }
+ },
+ {
+  "id": "si-code-block-only",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "blocks_found": 1,
+   "missing": [],
+   "prose_around": false
+  }
+ }
+]

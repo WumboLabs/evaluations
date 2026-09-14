@@ -1,0 +1,55 @@
+{
+  "standard": "Execution Accounting (vault): machine-readable execution_counts.json",
+  "campaign": "nemotron-3-nano-4b-wlep-validation",
+  "generated_at_utc": "2026-08-25T02:15Z",
+  "counts": {
+    "speed_warmups": 8,
+    "measured_speed_runs": 31,
+    "performance_runs_invalidated_by_kv_cache_artifact": {
+      "note": "Two full perf.py passes produced prefill measurements polluted by llama.cpp KV prefix caching (identical repeated prompts); plus two aborted attempts. Their generations still count toward totals.",
+      "generations": 26
+    },
+    "practical_tasks_unique": 12,
+    "practical_seeds": 1,
+    "practical_generations": 12,
+    "admission_generations": 3,
+    "hallucination_probes": {
+      "within_practical_screen_P09": 1
+    },
+    "structured_output_probes": {
+      "within_practical_screen_P04_P05_P06": 3
+    },
+    "coding_executions": 0,
+    "tool_call_generations": 0,
+    "context_probes": 0,
+    "reasoning_probes": {
+      "mode_observations": [
+        "default thinking-on (admission smoke)",
+        "enable_thinking=false verification"
+      ],
+      "dedicated_capability_module": 0
+    },
+    "omp_model_turns": 1,
+    "omp_tool_calls": 0,
+    "soak_requests": 0,
+    "variance_seed_repetitions": 0,
+    "producer_benchmark_questions": 0
+  },
+  "totals": {
+    "approximate_local_model_generations": 55,
+    "breakdown": {
+      "performance_all_attempts": 39,
+      "practical_screen": 12,
+      "admission_smokes": 3,
+      "omp_smoke_turn": 1
+    },
+    "mechanically_scored": 12,
+    "manually_inspected_outputs": 3,
+    "note_on_manual_inspection": "Bounded review per Agent Token & Context Discipline: scorer-validation spot checks (P09 uncertainty probe, P10 bat-and-ball) plus admission smoke summary."
+  },
+  "repetition_policy_applied": "Warmup + 5 measured repetitions per workload (Repetition Policy provisional standard); individual repetitions reported with mean/median/stdev; fastest-run-only reporting avoided.",
+  "seeds": {
+    "perf_sampling": "temperature=0 greedy",
+    "practical_screen": "seed=42 temperature=0.6 top_p=0.95"
+  }
+}

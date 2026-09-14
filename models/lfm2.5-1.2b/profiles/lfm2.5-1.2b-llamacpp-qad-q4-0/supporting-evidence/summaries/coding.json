@@ -1,0 +1,68 @@
+{
+  "BF16": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 8,
+    "parse_success": 20,
+    "total_executions": 20
+  },
+  "PTQ_Q4_0": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 4,
+    "parse_success": 20,
+    "total_executions": 20
+  },
+  "Q4_K_M": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 8,
+    "parse_success": 20,
+    "total_executions": 20
+  },
+  "Q5_K_M": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 12,
+    "parse_success": 20,
+    "total_executions": 20
+  },
+  "QAD_Q4_0": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 4,
+    "parse_success": 20,
+    "total_executions": 20
+  },
+  "UD_Q4_K_XL": {
+    "dep_probe": {
+      "dependency_hallucination": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "parse_success": false
+    },
+    "execution_pass": 8,
+    "parse_success": 20,
+    "total_executions": 20
+  }
+}

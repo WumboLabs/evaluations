@@ -1,0 +1,21 @@
+{
+  "campaign": "apodex-1.1-mini",
+  "frozen_before_phase5_execution": true,
+  "frozen_at_utc": "2026-08-25",
+  "derived_from": {
+    "architecture_modalities": ["text", "multimodal-capable-source (vision_config present)"],
+    "producer_claims": "apodex/Apodex-1.1-mini model card @ 62583b46: reasoning-first, files/data/code/tools agentic work, native function calling via tools= parameter, Qwen3.5 template with qwen3_coder parser",
+    "declared_campaign_objective": "TEXT + REASONING + CODING + TOOLS + AGENTIC USE"
+  },
+  "applicability": {
+    "structured_interfaces": {"class": "UNIVERSAL_CORE", "required_for_roles": ["primary_assistant"]},
+    "extraction_rag": {"class": "UNIVERSAL_CORE", "required_for_roles": ["extraction_helper"]},
+    "linux_systems": {"class": "UNIVERSAL_CORE", "required_for_roles": []},
+    "coding": {"class": "CONDITIONAL_APPLICABLE_REQUIRED_FOR_CLAIMED_ROLE", "rationale": "Producer positions model for working directly with code; campaign objective includes CODING", "required_for_roles": ["coding_specialist"], "constrains_classification": true},
+    "native_tools": {"class": "CONDITIONAL_APPLICABLE_REQUIRED_FOR_CLAIMED_ROLE", "rationale": "Native function calling is an explicit producer claim and campaign objective includes TOOLS/AGENTIC", "required_for_roles": ["tool_agent"], "constrains_classification": true},
+    "reasoning": {"class": "CONDITIONAL_APPLICABLE", "rationale": "Reasoning-first producer positioning; official mechanism is <think>...</think> per model card/template", "baseline_vs_enabled": true, "official_mechanism_only": true},
+    "omp_local_agent": {"class": "CONDITIONAL_APPLICABLE_GATED", "gate": "Phase 3 PASS + Phase 4 ADVANCE + Coding module prerequisite per frozen execution order", "result_class": "SYSTEM_LEVEL_ONLY"},
+    "vision": {"class": "NOT_APPLICABLE", "rationale": "Declared objective is TEXT+AGENTIC; no vision testing authorized by frozen policy; recorded SUPPORTED_BY_SOURCE / NOT_EVALUATED"}
+  },
+  "execution_order_frozen": ["structured_interfaces", "extraction_rag", "linux_systems", "coding", "native_tools", "reasoning", "omp_local_agent"]
+}

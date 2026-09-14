@@ -1,0 +1,62 @@
+{
+  "schema": "welp-publication-policy/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "future_repo": "WumboLabs/eval-ornith-1.5-9b",
+  "policy": "ALLOWLIST_FIRST",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "PUBLICATION-MANIFEST.json",
+      "publication-allowlist.json",
+      ".gitignore",
+      "report.md",
+      "WELP-CONFORMANCE.md",
+      "protocol-findings.md",
+      "summaries/",
+      "contracts/",
+      "scorers/",
+      "scripts/",
+      "corpus/",
+      "harness/",
+      "results/",
+      "calibration/"
+    ],
+    "LOCAL_ONLY": [
+      "models/ (symlink, never tracked)",
+      "logs/",
+      "runtime binaries",
+      "raw sampler CSVs with host pids (results/soak/*.csv)",
+      "sources/ (acquisition provenance)",
+      "protocol-snapshot/ (frozen upstream tree copy)",
+      "unsanitized originals of files published with <USER_HOME>/<USER> rewrites"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/ (acquisition provenance; excluded wholesale)"
+    ]
+  },
+  "sanitization": {
+    "rule": "no absolute user paths or private host identifiers in PUBLIC set",
+    "rewritten_in_place": [
+      "summaries/environment_identity.json",
+      "summaries/toolchain_inventory.json",
+      "summaries/toolchain_preflight.json",
+      "summaries/campaign_manifest.json",
+      "summaries/launch_command.txt",
+      "scripts/freeze_provenance.py",
+      "scripts/phase1_admission.py",
+      "scripts/soak_sampler.sh"
+    ],
+    "remedy": "published copies substitute the absolute user home -> <USER_HOME> and username -> <USER>; originals remain LOCAL_ONLY in the campaign working tree",
+    "host_alias": "WumboJetsII retained: established public hardware alias already used in apodex INITIAL_PUBLIC_RELEASE report.md; not a private identifier. Absolute user paths were the only host-identifying leakage and are rewritten in published copies.",
+    "wlep_tokens": {
+      "frozen_artifact_names": "KEEP (functional compatibility: contract ids wlep-reliability-0.1.0-draft, corpus wlep-rag-corpus-0.1.0, harness filenames are hash-pinned)",
+      "narrative": "protocol-findings.md PF-07 references upstream tree path wlep-development/ \u2014 factual provenance, retained"
+    }
+  },
+  "secret_scan": "CLEAN 2026-08-27 (validator heuristic + extended patterns incl. PRIVATE KEY/Bearer/AKIA/gho_; 0 hits)",
+  "human_git_gate_required": true
+}

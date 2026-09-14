@@ -1,0 +1,25 @@
+{
+  "repository": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/qwen3_6_35b_a3b_ud_iq2_m-v025-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-wumbolabs-practical-v025-plus-grug.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "170a1744c77a7b07eb76163ae9f5f06acbf1154382cdd9cbf2ef8bd01667a648",
+      "bytes": 15825
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen3_6_35b_a3b_ud_iq2_m-v071-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/2026-07-15-fit-ladder-e2e-qwen36-35b-a3b-001",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

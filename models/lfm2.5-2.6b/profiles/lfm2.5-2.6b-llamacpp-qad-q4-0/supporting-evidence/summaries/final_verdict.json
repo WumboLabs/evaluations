@@ -1,0 +1,8 @@
+{
+  "winner":"QAD_Q4_0 for the strict 1.59 GB ultra-fast sidecar deployment slot",
+  "recommended_profile":{"runtime":"llama.cpp build 10449 commit 0d9ceae1e38291035605613ab41a8f5e693d6fcd","flags":"-ngl all -fit off -c 4096 -b 2048 -ub 512 -fa on -np 1","sampling":{"temperature":0.1,"top_k":50,"repeat_penalty":1.1},"binding":"127.0.0.1 loopback only"},
+  "answers":{"qad_materially_beats_ptq":"PARTIALLY_REPRODUCED: lower fixed-corpus perplexity, no material practical-score win demonstrated","bf16_retention":"INCONCLUSIVE; no valid percentage from local results","ptq_gap_recovery":"INCONCLUSIVE; denominator invalid on small practical suite","matches_q4_k_m":"INCONCLUSIVE","preserves_ptq_speed":"REPRODUCED","preserves_ptq_memory":"REPRODUCED","improves_tools":"INCONCLUSIVE; all simple cases saturated","improves_structured_output":"NOT_REPRODUCED","improves_hallucination_resistance":"NOT_REPRODUCED","improves_long_context":"NOT_REPRODUCED","best_deployment_choice":"YES for strict Q4_0-size sidecar; not a general quality winner","practical_role":"always-loaded local sidecar with schema/evidence guardrails; not daily primary assistant or coding agent"},
+  "claims":{"96_6_percent_bf16_aggregate":"INCONCLUSIVE","48_4_percent_gap_recovery":"INCONCLUSIVE","q4_k_m_quality":"INCONCLUSIVE","q4_0_memory":"REPRODUCED","q4_0_throughput":"REPRODUCED"},
+  "stability":{"soak_seconds":1808.685,"requests":175,"errors":0,"xid_reset_or_gsp_failure":false,"clean_gpu_release":true},
+  "llmgauge_unchanged":true
+}

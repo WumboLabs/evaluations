@@ -1,0 +1,64 @@
+{
+  "schema": "welp-toolchain-inventory/0.1.0-draft",
+  "generated_utc": "2026-08-27T20:19:30+00:00",
+  "host": "wumbojetsii (Fedora Linux, kernel 7.1.10-200.fc44.x86_64, AMD Ryzen 7 9800X3D)",
+  "gpu": "NVIDIA GeForce RTX 5070 (GB205, sm_120)",
+  "driver": "610.57.04",
+  "cuda_toolkit": "CUDA 13.3 (/usr/local/cuda-13.3; llama-server built with GNU 15.3.1)",
+  "policy": "LEAVE_IN_PLACE: runtime/toolchain sources are never modified by the campaign; only pinned commits + build dirs are referenced.",
+  "tools": [
+    {
+      "tool": "llama.cpp",
+      "purpose": "campaign serving runtime (llama-server)",
+      "installed": true,
+      "path": "<USER_HOME>/Projects/local-llm/llama.cpp-sm120-upgrade",
+      "commit": "0d9ceae1e38291035605613ab41a8f5e693d6fcd",
+      "version": "b10449-0d9ceae1e",
+      "environment": {
+        "build_dir": "<USER_HOME>/Projects/local-llm/llama.cpp-sm120-upgrade/build-cuda-sm120-new",
+        "binary": "<USER_HOME>/Projects/local-llm/llama.cpp-sm120-upgrade/build-cuda-sm120-new/bin/llama-server",
+        "binary_sha256": "b3a740b8e69f84420cdc7068d48bdc5d3ab3f8ca366e358f5d0d1d75d2daaaf3",
+        "cmake": {
+          "CMAKE_CUDA_ARCHITECTURES": "120",
+          "GGML_CUDA": "ON"
+        },
+        "built_with": "GNU 15.3.1, CUDA 13.3"
+      },
+      "compatible_status": "COMPATIBLE_ADMISSION_VERIFIED",
+      "preferred": true,
+      "notes": "admission: qwen35 arch loads, 33 layers -ngl 99, reasoning extraction + native tool_calls probes PASS; commit date 2026-08-15T20:00:18+02:00"
+    },
+    {
+      "tool": "llama.cpp (stale trees)",
+      "purpose": "documented exclusions",
+      "installed": true,
+      "path": "<USER_HOME>/Projects/local-llm/llama.cpp",
+      "commit": "74ade52741203e5c8f81eaf06a96cb1cfe15f2a3",
+      "compatible_status": "NOT_USED",
+      "preferred": false,
+      "notes": "single-runtime rule; llama.cpp-current also at 0d9ceae1e but not the campaign build dir"
+    },
+    {
+      "tool": "python",
+      "purpose": "runner + validators",
+      "installed": true,
+      "path": "/usr/bin/python3",
+      "version": "Python 3.14.7",
+      "compatible_status": "COMPATIBLE",
+      "preferred": true,
+      "notes": "jsonschema installed"
+    },
+    {
+      "tool": "localmaxxing-cli",
+      "purpose": "Phase 11 external publication",
+      "installed": true,
+      "path": "/usr/local/sbin/lmx",
+      "version": "v0.1.33",
+      "commit": "4a36be4871d0bf26960b2868e18771269df4dc8e",
+      "environment": "system binary; saved CLI-native auth config",
+      "compatible_status": "COMPATIBLE",
+      "preferred": true,
+      "notes": "lmx auth status PASS 2026-08-27 (provider: manual); no key material recorded in any campaign artifact"
+    }
+  ]
+}

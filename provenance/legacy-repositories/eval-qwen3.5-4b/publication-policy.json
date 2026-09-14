@@ -1,0 +1,9 @@
+{
+  "evaluation_classification": "READY_WITH_GUARDRAILS",
+  "bounded_conclusion": "Comfortable-fit BF16 text control, READY_WITH_GUARDRAILS on the RTX 5070: 32K default / 64K guarded, 67.9 tok/s short decode, 7/7 constrained quality and 20/20 reliability. 2026-09-11 context-envelope completion: MODEL-CARD CONTEXT ENVELOPE COMPLETE = YES; native 262,144 FIT_LIMIT (f16 primary lower bound; q4_0 alternate measured admission failure), YaRN 1,010,000 FIT_LIMIT at every representable KV precision, highest measured/admitted near-full primary context 65,536 (not the absolute runtime maximum; 98,304 projected below the frozen safety floor and not launched); strict useful-context gate FAILED 0/4 at near-full occupancy while planted-target retrieval was perfect; free-form grounding cautions apply.",
+  "localmaxxing_status": "SUBMITTED/cmtwcmm3207eqps01w7fubuuw",
+  "policy": "ALLOWLIST_FIRST",
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ]
+}

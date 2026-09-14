@@ -1,0 +1,41 @@
+{
+  "future_repo": "WumboLabs/eval-qwen3.8-27b",
+  "evaluation_classification": "COMPLETED_DEEP_EVALUATION",
+  "bounded_conclusion": "Strong reviewed local coding/technical-assistant evidence under the tested configuration; guarded/limited deployment suitability; not recommended as an unguarded daily driver or unattended autonomous agent. 2026-09-12 context-envelope completion on the accepted H1 ExLlamaV3 surface: MODEL-CARD CONTEXT ENVELOPE COMPLETE = YES; 65,536 anchor and 98,304 guarded boundary VALIDATED at >=99.4% near-full occupancy with strict useful-context 4/4; native 262,144 FIT_LIMIT on this 12 GB H1 surface (nearest measured boundary 98,304); official YaRN 1,000,000 INTEGRATION_BLOCKED on the accepted surface and independently FIT_LIMIT; practical default unchanged at 65,536.",
+  "localmaxxing_status": "SUBMITTED/APPROVED",
+  "policy": "ALLOWLIST_FIRST",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "PUBLICATION-MANIFEST.json",
+      "publication-allowlist.json",
+      ".gitignore",
+      "reports/",
+      "manifests/",
+      "evidence/inventory/",
+      "notes/continuation-notes.md",
+      "README.md (public LocalMaxxing IDs/status)"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/",
+      "runtime/",
+      "logs/",
+      "telemetry/",
+      "models/",
+      "evaluations/sharp-dflash/",
+      "evidence/ outside inventory/",
+      "notes/ outside continuation-notes.md",
+      "omp/",
+      "caches/",
+      "credentials/"
+    ]
+  },
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ],
+  "secret_scan": "See migration/secret_scan.json; values are never recorded."
+}

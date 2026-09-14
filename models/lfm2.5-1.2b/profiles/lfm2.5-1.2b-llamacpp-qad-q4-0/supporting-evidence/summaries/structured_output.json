@@ -1,0 +1,32 @@
+{
+  "BF16": {
+    "passes": 12,
+    "rate": 1.0,
+    "tasks": 12
+  },
+  "PTQ_Q4_0": {
+    "passes": 10,
+    "rate": 0.8333,
+    "tasks": 12
+  },
+  "Q4_K_M": {
+    "passes": 10,
+    "rate": 0.8333,
+    "tasks": 12
+  },
+  "Q5_K_M": {
+    "passes": 10,
+    "rate": 0.8333,
+    "tasks": 12
+  },
+  "QAD_Q4_0": {
+    "passes": 11,
+    "rate": 0.9167,
+    "tasks": 12
+  },
+  "UD_Q4_K_XL": {
+    "passes": 10,
+    "rate": 0.8333,
+    "tasks": 12
+  }
+}

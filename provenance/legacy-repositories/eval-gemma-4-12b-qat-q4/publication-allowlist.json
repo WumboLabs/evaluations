@@ -1,0 +1,31 @@
+{
+  "version": "1.1",
+  "policy": "ALLOWLIST_FIRST",
+  "default": "DO_NOT_PUBLISH",
+  "allowed": [
+    "README.md",
+    "EVIDENCE-SUMMARY.md",
+    "profile.json",
+    "provenance.json",
+    "events/",
+    "shared/",
+    ".gitignore",
+    "publication-allowlist.json",
+    "reports/**",
+    "website-publication.json",
+    "summaries/**"
+  ],
+  "excluded": [
+    "sources/**",
+    "runtime/**",
+    "logs/**",
+    "telemetry/**",
+    "models/**",
+    "**/.cache/**",
+    "*.gguf",
+    "*.safetensors",
+    "*.bin"
+  ],
+  "default_public_eligibility": "DO_NOT_PUBLISH",
+  "reason": "Historical release: practical-use/benchmark evidence. 2026-09-13: reports/**, website-publication.json and summaries/** added for the append-only current-WELP recharacterization follow-up."
+}

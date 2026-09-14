@@ -1,0 +1,41 @@
+{
+  "future_repo": "WumboLabs/eval-qwen3.8-27b",
+  "evaluation_classification": "COMPLETED_DEEP_EVALUATION",
+  "bounded_conclusion": "Strong reviewed local coding/technical-assistant evidence under the tested configuration; guarded/limited deployment suitability; not recommended as an unguarded daily driver or unattended autonomous agent.",
+  "localmaxxing_status": "SUBMITTED/APPROVED",
+  "policy": "ALLOWLIST_FIRST",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "PUBLICATION-MANIFEST.json",
+      "publication-allowlist.json",
+      ".gitignore",
+      "reports/",
+      "manifests/",
+      "evidence/inventory/",
+      "notes/continuation-notes.md",
+      "README.md (public LocalMaxxing IDs/status)"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/",
+      "runtime/",
+      "logs/",
+      "telemetry/",
+      "models/",
+      "evaluations/sharp-dflash/",
+      "evidence/ outside inventory/",
+      "notes/ outside continuation-notes.md",
+      "omp/",
+      "caches/",
+      "credentials/"
+    ]
+  },
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ],
+  "secret_scan": "See migration/secret_scan.json; values are never recorded."
+}

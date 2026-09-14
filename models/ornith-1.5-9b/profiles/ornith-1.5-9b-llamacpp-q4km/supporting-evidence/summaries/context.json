@@ -1,0 +1,58 @@
+{
+  "schema": "welp-context/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 6,
+  "contract": {
+    "id": "welp-context",
+    "version": "0.1.0-draft",
+    "frozen_path": "welp/contracts/welp-context-0.1.0-draft.json",
+    "sha256": "18591507dd3fea5724a68a847db0234179c33138d177c73b9c5924417b0e31c5",
+    "path": "welp/contracts/welp-context-0.1.0-draft.json"
+  },
+  "harness": {
+    "run_context.py": "a45b41159e009253aef3b63e93970fdc7c39e17093da78a7da9751bcaf3d0bfb",
+    "context_gen.py": "ba183eacc0fd0853268239bfba7e699c378473cd908589a9518e36511af6209e",
+    "method": "deterministic seeded generator + live /tokenize two-pass targeting (\u00b110%), B/M/E retrieval + absent-evidence screening"
+  },
+  "configured_context": 32768,
+  "native_limit_note": "model trained to 262144; serving allocation 32768 (frozen profile) bounds the ladder",
+  "ladder": [
+    {
+      "rung": 4096,
+      "seeds_passed": "3/3",
+      "verdict": "PASS",
+      "mean_tokens_actual": 4173,
+      "max_token_delta_pct": 2.6
+    },
+    {
+      "rung": 16384,
+      "seeds_passed": "3/3",
+      "verdict": "PASS",
+      "mean_tokens_actual": 16503,
+      "max_token_delta_pct": 1.0
+    },
+    {
+      "rung": 32768,
+      "seeds_passed": "0/3",
+      "verdict": "INCONCLUSIVE_HARNESS_OVERFLOW",
+      "detail": "seeds 42/43: HTTP 400 exceed_context_size (prompt tokenized to 42044 > n_ctx 32768; /tokenize returned None so two-pass refinement skipped \u2014 request never entered model). seed 44: refinement converged to ~25.5k, retrieval 3/4 checks (ABSENT failed on output formatting). Not a confirmed behavioral failure per >=2/3-seed rule semantics: failure mode was transport-level rejection."
+    },
+    {
+      "rung": 24576,
+      "probe": "mandatory midpoint at first failure",
+      "seeds_passed": "3/3",
+      "verdict": "PASS",
+      "mean_tokens_actual": 24608,
+      "max_token_delta_pct": 0.4
+    }
+  ],
+  "useful_context": 24576,
+  "useful_context_semantics": "highest confirmed-passing rung under frozen profile; 32768 allocation is NOT confirmed useful (generator overshoot prevented in-model test at nominal 32768; confirmed depth = 24576)",
+  "allocation_vs_useful": "CONFIGURED 32768 > USEFUL(confirmed) 24576; retrieval at 24576 clean across all screening checks including absent-evidence",
+  "decision": "CONTEXT_CHARACTERIZED (no gate thresholds defined for Phase 6)",
+  "artifacts": {
+    "ladder_raw": "6d78401821b393d5ea07706d560273de752d2b3913ba50229d88b6809a4647bb",
+    "midpoint_raw": "203db036e1527cd247af9c526858c6f8bafaf6d23b27b8d603909e12521ce7a5",
+    "scored": "results/ornith-1.5-9b.scored.json"
+  }
+}

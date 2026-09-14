@@ -1,0 +1,13 @@
+{
+  "campaign_scope_note": "Campaign early-stopped at Phase 3 (DO_NOT_ADVANCE). Only claims within tested scope receive a classification; all others are NOT_TESTED, which is NOT a refutation.",
+  "claims": [
+    {"claim": "~36B total parameters (35.95B), Qwen3.5-35B-A3B lineage", "source": "HF model card/config @62583b46", "classification": "REPRODUCED_IDENTITY", "evidence": "config.json qwen3_5_moe, 40 layers x 256 experts, base_model tag Qwen/Qwen3.5-35B-A3B; GGUF conversion consistent"},
+    {"claim": "context up to ~262K", "classification": "INCONCLUSIVE", "reason": "Phase 6 NOT_REACHED; max_position_embeddings=262144 verified in config but useful context unmeasured"},
+    {"claim": "official sampler temp 1.0 / top_p 0.95 / rep-pen 1.05", "classification": "RECORDED_VERBATIM", "evidence": "generation_config.json + model card Best Practices section"},
+    {"claim": "native tool calling via tools= with Qwen3-style parsing", "classification": "NOT_REPRODUCED_UNTESTED", "reason": "Native Tools module gated behind Phase 4 ADVANCE; NOT_REACHED"},
+    {"claim": "reasoning-first model (<think> mechanism)", "classification": "PARTIALLY_REPRODUCED", "evidence": "thinking mechanism functional at runtime (admission probe: correct answer only WITH thinking enabled); but Phase 3 scored 0.667-0.733 aggregate in thinking-off baseline, and thinking consumes budgets aggressively — reasoning-first positioning is directionally supported yet the canonical IQ1_M quant fails basic practical-viability gates"},
+    {"claim": "Agent Team benchmark scores (APEX-Agent 27.7, FrontierFinance 50.2, FrontierScience-Research 51.7 for mini)", "classification": "PHYSICALLY_UNTESTABLE", "reason": "FrontierAgent harness system-level results; harness not authorized for this campaign; explicitly NOT comparable to raw-model WLEP results"},
+    {"claim": "ReAct workflow results", "classification": "INCONCLUSIVE", "reason": "producer reports ReAct scores only as chart-relative comparisons without absolute numbers in the model card text; raw-model WLEP Phase-3 result (0.667-0.733 mechanical pass rate) is not methodologically comparable to any producer benchmark"}
+  ],
+  "critical_distinction_enforced": "Producer Agent Team claims are SYSTEM-level (FrontierAgent harness). This campaign's canonical result is RAW MODEL at IQ1_M quantization on a 12 GB consumer GPU — a strictly weaker representation than the BF16 producer deployment."
+}

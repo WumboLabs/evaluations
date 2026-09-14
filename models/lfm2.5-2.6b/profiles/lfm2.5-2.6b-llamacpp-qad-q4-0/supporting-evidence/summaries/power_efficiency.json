@@ -1,0 +1,6 @@
+{
+  "run": false,
+  "classification": "PHYSICALLY_UNTESTABLE under campaign policy",
+  "reason":"No established non-privileged operator workflow for changing the GPU power limit was available. The matched QAD run peaked at 163.29 W, already below 175 W, so 200 W and 175 W tests were unlikely to provide a meaningful stock-limit comparison without a supported change workflow.",
+  "stock_observation":{"power_limit_w":250,"qad_peak_w":163.29,"ptq_peak_w":163.36}
+}

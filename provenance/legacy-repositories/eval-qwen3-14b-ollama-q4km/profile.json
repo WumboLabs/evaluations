@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen3-14b",
+  "model_display_name": "Qwen3-14B",
+  "profile_id": "qwen3-14b-ollama-q4km-wumbo",
+  "profile_display_name": "Ollama Q4_K_M (qwen3-14b-wumbo custom tag, historical daily driver)",
+  "runtime_family": "Ollama",
+  "artifact": "unsloth/Qwen3-14B-GGUF Q4_K_M (custom qwen3-14b-wumbo Ollama tag; 9,001,753,376-byte weights fingerprint)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+  "first_event": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+  "current_status": "practical-use"
+}

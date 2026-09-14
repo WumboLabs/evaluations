@@ -1,0 +1,10 @@
+{
+  "candidate": "abenzerps/Apodex-1.1-mini-GGUF@59afa578 Apodex-1.1-mini-IQ2_M.gguf",
+  "sha256": "450afff9cd60e19ad485b4be4c22adf561df35072e4b4879bcc981e6fad88a8f",
+  "requested_profile": {"ngl": 999, "parallel": 1, "ctx": 32768, "fit": "off", "fa": "on", "kv_unified": true, "speculation": "off", "ubatch": 512, "batch": 2048},
+  "result": "FAIL_FULL_GPU_ADMISSION",
+  "evidence": "llama_model_load: unable to allocate CUDA0 buffer of size 11429724672 bytes; free VRAM at attempt: 10866 MiB (12227 MiB total, 945 MiB desktop). Weights alone exceed device memory before KV/compute buffers.",
+  "deterministic": true,
+  "note": "Repo guidance predicted IQ2_M 'may require hybrid offload' on 12 GB. Hybrid offload violates the frozen WumboJetsII full-GPU baseline invariant, so IQ2_M is rejected as canonical without hybrid testing.",
+  "log": "results/admission_iq2m_server.log"
+}

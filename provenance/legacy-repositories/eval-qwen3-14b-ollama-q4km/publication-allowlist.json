@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "policy": "ALLOWLIST_FIRST",
+  "default": "DO_NOT_PUBLISH",
+  "allowed": [
+    "README.md",
+    "EVIDENCE-SUMMARY.md",
+    "profile.json",
+    "provenance.json",
+    "events/",
+    "shared/",
+    ".gitignore",
+    "publication-allowlist.json"
+  ],
+  "excluded": [
+    "sources/**",
+    "runtime/**",
+    "logs/**",
+    "telemetry/**",
+    "models/**",
+    "**/.cache/**",
+    "*.gguf",
+    "*.safetensors",
+    "*.bin"
+  ]
+}

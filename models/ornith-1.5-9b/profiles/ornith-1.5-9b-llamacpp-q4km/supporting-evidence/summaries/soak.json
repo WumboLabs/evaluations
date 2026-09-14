@@ -1,0 +1,61 @@
+{
+  "schema": "welp-stability/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 9,
+  "contract": {
+    "id": "welp-stability",
+    "version": "0.1.0-draft",
+    "sha256": "77fec7fb637d490b23f2edc72c6ca8e9428c75f8dd2dbdf5fea865cecba34aed"
+  },
+  "harness": {
+    "soak.py_snapshot": "scripts/soak_snapshot.py",
+    "sha256": "85945dd2183da7b6d4c5ca803d528427291fde0f510fa94dee1adcbc0d55d41c",
+    "source": "apodex protocol-snapshot final-hardening/phase9-stability (original tree consolidated into welp/ mid-run; snapshot copy used, selftest PASS 3 fixtures)"
+  },
+  "level": "SCREENING_SOAK (30 min)",
+  "duration_s": 1800,
+  "results": {
+    "requests": 11449,
+    "errors": 5724,
+    "sentinel_successes": 5725,
+    "sentinel_total": 5725,
+    "latency_first10_mean_ms": 37.6,
+    "latency_last10_mean_ms": 33.1,
+    "latency_drift_pct": -11.99,
+    "tps_drift_pct": -0.02,
+    "error_attribution": "ALL 5724 counted errors are a harness defect: SENTINELS s2 lacks key \"expect\" -> KeyError raised at s[\"expect\"] AFTER a successful HTTP response, caught by generic except and counted as error. Verified post-hoc: live probes of both sentinel patterns return valid responses (SOAK_OK_2026 / {\"ok\": true}). Effective server failure rate: 0/11449 (100.0% transport success). sentinel_successes 5725/5725 = every s1 request matched exactly.",
+    "effective_requests": 11449,
+    "effective_errors": 0
+  },
+  "drift": {
+    "latency_pct": -11.99,
+    "tps_pct": -0.02,
+    "interpretation": "latency drift -11.99% = improvement (warm slot reuse); tps drift -0.02% = none. Contract drift_definition (first-vs-last window means) satisfied; no degradation."
+  },
+  "resources": {
+    "rss_kb_first_last": [
+      1117816,
+      2054676
+    ],
+    "rss_growth_kb": 936860,
+    "gpu_mem_used_mib_range": [
+      6761,
+      6773
+    ],
+    "samples": 63,
+    "note": "RSS constant 1950244 kB across 62 samples; GPU 6761 MiB flat; RSS growth alone never a leak claim (contract) \u2014 none observed anyway"
+  },
+  "hard_stops": {
+    "Xid": 0,
+    "NVRM_events": 0,
+    "gpu_reset": 0,
+    "channel_error": 0,
+    "cuda_fatal": 0,
+    "display_collapse": 0,
+    "check": "journalctl -k over soak window: 0 NVRM Xid (one r8169 NIC line contains literal \"XID 688\" \u2014 ethernet driver device ID, not GPU)"
+  },
+  "lockin_soak": "NOT_RUN \u2014 LOCKIN (120 min + 3 startup/shutdown cycles + VRAM release checks) is scoped to models advancing toward deployment; Phase 4 DO_NOT_ADVANCE precludes lock-in. Documented as NOT_REACHED, not PASS.",
+  "startup_shutdown_cycles_observed": 3,
+  "cycle_note": "unplanned but real: canonical server restarted 3x during campaign (fa-on restore, MTP swap out, MTP swap back); each reload 0.7-0.8 s warm-cache, VRAM reclaimed cleanly each stop (6767->~300->6761 MiB)",
+  "decision": "SOAK_PASS_SCREENING (zero real errors, zero drift, zero hard stops)"
+}

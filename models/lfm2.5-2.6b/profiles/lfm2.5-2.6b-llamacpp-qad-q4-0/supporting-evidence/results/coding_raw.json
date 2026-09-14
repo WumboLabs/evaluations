@@ -1,0 +1,712 @@
+{
+  "BF16": [
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    }
+  ],
+  "PTQ_Q4_0": [
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    }
+  ],
+  "QAD_Q4_0": [
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    }
+  ],
+  "Q4_K_M": [
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    }
+  ],
+  "Q5_K_M": [
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "add",
+      "parse_success": true,
+      "execution_success": true,
+      "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+      "error": ""
+    },
+    {
+      "task": "reverse",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "even",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "words",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    },
+    {
+      "task": "max",
+      "parse_success": false,
+      "execution_success": false,
+      "answer": "",
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 2, in <module>\n    assert solve([-1,9,3])==9\n           ^^^^^\nNameError: name 'solve' is not defined\n"
+    }
+  ]
+}

@@ -1,0 +1,4375 @@
+{
+  "duration_target_s": 1800,
+  "duration_actual_s": 1805.9,
+  "requests": [
+    {
+      "t": 1787612293.036588,
+      "latency_s": 0.0172,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.699,
+        "prompt_per_token_ms": 0.67475,
+        "prompt_per_second": 1482.0303816228234,
+        "predicted_n": 6,
+        "predicted_ms": 9.078,
+        "predicted_per_token_ms": 1.8155999999999999,
+        "predicted_per_second": 550.7821105970479
+      },
+      "gpu": [
+        1544.0,
+        23.61,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612303.0678594,
+      "latency_s": 0.0169,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.609,
+        "prompt_per_token_ms": 0.65225,
+        "prompt_per_second": 1533.1544653123801,
+        "predicted_n": 8,
+        "predicted_ms": 12.457,
+        "predicted_per_token_ms": 1.7795714285714286,
+        "predicted_per_second": 561.9330496909367
+      },
+      "gpu": [
+        1544.0,
+        29.72,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612313.1065884,
+      "latency_s": 0.0232,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 3.703,
+        "prompt_per_token_ms": 0.92575,
+        "prompt_per_second": 1080.2052389954092,
+        "predicted_n": 11,
+        "predicted_ms": 17.454,
+        "predicted_per_token_ms": 1.7454,
+        "predicted_per_second": 572.9345708720064
+      },
+      "gpu": [
+        1544.0,
+        29.81,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612323.1377985,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.69,
+        "prompt_per_token_ms": 0.6725,
+        "prompt_per_second": 1486.988847583643,
+        "predicted_n": 7,
+        "predicted_ms": 10.857,
+        "predicted_per_token_ms": 1.8094999999999999,
+        "predicted_per_second": 552.638850511191
+      },
+      "gpu": [
+        1544.0,
+        30.28,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612333.166615,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.583,
+        "prompt_per_token_ms": 0.64575,
+        "prompt_per_second": 1548.5869144405729,
+        "predicted_n": 6,
+        "predicted_ms": 9.15,
+        "predicted_per_token_ms": 1.83,
+        "predicted_per_second": 546.448087431694
+      },
+      "gpu": [
+        1544.0,
+        29.91,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612343.2001686,
+      "latency_s": 0.0177,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.648,
+        "prompt_per_token_ms": 0.662,
+        "prompt_per_second": 1510.5740181268882,
+        "predicted_n": 8,
+        "predicted_ms": 12.964,
+        "predicted_per_token_ms": 1.852,
+        "predicted_per_second": 539.9568034557235
+      },
+      "gpu": [
+        1544.0,
+        30.09,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612353.2386527,
+      "latency_s": 0.0232,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.659,
+        "prompt_per_token_ms": 0.66475,
+        "prompt_per_second": 1504.3249341857843,
+        "predicted_n": 11,
+        "predicted_ms": 18.431,
+        "predicted_per_token_ms": 1.8431000000000002,
+        "predicted_per_second": 542.5641582117084
+      },
+      "gpu": [
+        1544.0,
+        29.81,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612363.2691255,
+      "latency_s": 0.0159,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.713,
+        "prompt_per_token_ms": 0.67825,
+        "prompt_per_second": 1474.382602285293,
+        "predicted_n": 7,
+        "predicted_ms": 11.13,
+        "predicted_per_token_ms": 1.8550000000000002,
+        "predicted_per_second": 539.0835579514825
+      },
+      "gpu": [
+        1544.0,
+        29.34,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612373.299482,
+      "latency_s": 0.0142,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.627,
+        "prompt_per_token_ms": 0.65675,
+        "prompt_per_second": 1522.6494099733538,
+        "predicted_n": 6,
+        "predicted_ms": 9.612,
+        "predicted_per_token_ms": 1.9224,
+        "predicted_per_second": 520.1831044527673
+      },
+      "gpu": [
+        1544.0,
+        29.75,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612383.3320227,
+      "latency_s": 0.0179,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.648,
+        "prompt_per_token_ms": 0.662,
+        "prompt_per_second": 1510.5740181268882,
+        "predicted_n": 8,
+        "predicted_ms": 13.209,
+        "predicted_per_token_ms": 1.887,
+        "predicted_per_second": 529.9417064122947
+      },
+      "gpu": [
+        1544.0,
+        29.06,
+        38.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612393.3694386,
+      "latency_s": 0.0223,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.67,
+        "prompt_per_token_ms": 0.6675,
+        "prompt_per_second": 1498.1273408239701,
+        "predicted_n": 11,
+        "predicted_ms": 17.811,
+        "predicted_per_token_ms": 1.7811,
+        "predicted_per_second": 561.4507888383583
+      },
+      "gpu": [
+        1544.0,
+        28.87,
+        38.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612403.4005048,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.638,
+        "prompt_per_token_ms": 0.6595,
+        "prompt_per_second": 1516.3002274450341,
+        "predicted_n": 7,
+        "predicted_ms": 10.856,
+        "predicted_per_token_ms": 1.8093333333333332,
+        "predicted_per_second": 552.689756816507
+      },
+      "gpu": [
+        1544.0,
+        28.29,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612413.4295237,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.582,
+        "prompt_per_token_ms": 0.6455,
+        "prompt_per_second": 1549.186676994578,
+        "predicted_n": 6,
+        "predicted_ms": 9.127,
+        "predicted_per_token_ms": 1.8254000000000001,
+        "predicted_per_second": 547.8251342171578
+      },
+      "gpu": [
+        1544.0,
+        28.66,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612423.461153,
+      "latency_s": 0.017,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.618,
+        "prompt_per_token_ms": 0.6545,
+        "prompt_per_second": 1527.8838808250573,
+        "predicted_n": 8,
+        "predicted_ms": 12.481,
+        "predicted_per_token_ms": 1.783,
+        "predicted_per_second": 560.8524957936063
+      },
+      "gpu": [
+        1544.0,
+        29.6,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612433.49819,
+      "latency_s": 0.022,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.618,
+        "prompt_per_token_ms": 0.6545,
+        "prompt_per_second": 1527.8838808250573,
+        "predicted_n": 11,
+        "predicted_ms": 17.446,
+        "predicted_per_token_ms": 1.7446000000000002,
+        "predicted_per_second": 573.1972945087698
+      },
+      "gpu": [
+        1544.0,
+        29.31,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612443.5294113,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.632,
+        "prompt_per_token_ms": 0.658,
+        "prompt_per_second": 1519.756838905775,
+        "predicted_n": 7,
+        "predicted_ms": 10.859,
+        "predicted_per_token_ms": 1.8098333333333334,
+        "predicted_per_second": 552.5370660281794
+      },
+      "gpu": [
+        1544.0,
+        29.05,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612453.558506,
+      "latency_s": 0.014,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.841,
+        "prompt_per_token_ms": 0.71025,
+        "prompt_per_second": 1407.9549454417458,
+        "predicted_n": 6,
+        "predicted_ms": 9.249,
+        "predicted_per_token_ms": 1.8498,
+        "predicted_per_second": 540.5989836739107
+      },
+      "gpu": [
+        1544.0,
+        29.37,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612463.5918012,
+      "latency_s": 0.0178,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.877,
+        "prompt_per_token_ms": 0.71925,
+        "prompt_per_second": 1390.3371567605145,
+        "predicted_n": 8,
+        "predicted_ms": 12.963,
+        "predicted_per_token_ms": 1.8518571428571426,
+        "predicted_per_second": 539.9984571472653
+      },
+      "gpu": [
+        1544.0,
+        30.02,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612473.630886,
+      "latency_s": 0.0225,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.569,
+        "prompt_per_token_ms": 0.64225,
+        "prompt_per_second": 1557.026080186843,
+        "predicted_n": 11,
+        "predicted_ms": 17.651,
+        "predicted_per_token_ms": 1.7651,
+        "predicted_per_second": 566.5401393688743
+      },
+      "gpu": [
+        1557.0,
+        30.18,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612483.661339,
+      "latency_s": 0.016,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.795,
+        "prompt_per_token_ms": 0.69875,
+        "prompt_per_second": 1431.1270125223614,
+        "predicted_n": 7,
+        "predicted_ms": 10.896,
+        "predicted_per_token_ms": 1.816,
+        "predicted_per_second": 550.6607929515419
+      },
+      "gpu": [
+        1608.0,
+        30.22,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612493.692734,
+      "latency_s": 0.0159,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 3.301,
+        "prompt_per_token_ms": 0.82525,
+        "prompt_per_second": 1211.754013935171,
+        "predicted_n": 6,
+        "predicted_ms": 9.507,
+        "predicted_per_token_ms": 1.9014,
+        "predicted_per_second": 525.9282633848743
+      },
+      "gpu": [
+        1559.0,
+        31.61,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612503.7245955,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.885,
+        "prompt_per_token_ms": 0.72125,
+        "prompt_per_second": 1386.4818024263432,
+        "predicted_n": 8,
+        "predicted_ms": 12.68,
+        "predicted_per_token_ms": 1.8114285714285714,
+        "predicted_per_second": 552.0504731861199
+      },
+      "gpu": [
+        1552.0,
+        29.84,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612513.762867,
+      "latency_s": 0.0225,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.695,
+        "prompt_per_token_ms": 0.67375,
+        "prompt_per_second": 1484.2300556586272,
+        "predicted_n": 11,
+        "predicted_ms": 17.889,
+        "predicted_per_token_ms": 1.7889,
+        "predicted_per_second": 559.0027391134217
+      },
+      "gpu": [
+        1550.0,
+        29.73,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612523.7937613,
+      "latency_s": 0.0159,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.754,
+        "prompt_per_token_ms": 0.6885,
+        "prompt_per_second": 1452.4328249818445,
+        "predicted_n": 7,
+        "predicted_ms": 11.075,
+        "predicted_per_token_ms": 1.8458333333333332,
+        "predicted_per_second": 541.7607223476298
+      },
+      "gpu": [
+        1549.0,
+        30.18,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612533.8238766,
+      "latency_s": 0.014,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.654,
+        "prompt_per_token_ms": 0.6635,
+        "prompt_per_second": 1507.1590052750566,
+        "predicted_n": 6,
+        "predicted_ms": 9.313,
+        "predicted_per_token_ms": 1.8626,
+        "predicted_per_second": 536.8839256952647
+      },
+      "gpu": [
+        1545.0,
+        30.49,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612543.8562858,
+      "latency_s": 0.0167,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.579,
+        "prompt_per_token_ms": 0.64475,
+        "prompt_per_second": 1550.9887553315236,
+        "predicted_n": 8,
+        "predicted_ms": 12.322,
+        "predicted_per_token_ms": 1.7602857142857142,
+        "predicted_per_second": 568.0895958448305
+      },
+      "gpu": [
+        1542.0,
+        30.59,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612553.893989,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.74,
+        "prompt_per_token_ms": 0.685,
+        "prompt_per_second": 1459.85401459854,
+        "predicted_n": 11,
+        "predicted_ms": 18.048,
+        "predicted_per_token_ms": 1.8047999999999997,
+        "predicted_per_second": 554.0780141843973
+      },
+      "gpu": [
+        1542.0,
+        30.29,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612563.9252863,
+      "latency_s": 0.0154,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.622,
+        "prompt_per_token_ms": 0.6555,
+        "prompt_per_second": 1525.5530129672006,
+        "predicted_n": 7,
+        "predicted_ms": 10.909,
+        "predicted_per_token_ms": 1.8181666666666667,
+        "predicted_per_second": 550.004583371528
+      },
+      "gpu": [
+        1542.0,
+        30.68,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612573.9546998,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.562,
+        "prompt_per_token_ms": 0.6405,
+        "prompt_per_second": 1561.28024980484,
+        "predicted_n": 6,
+        "predicted_ms": 9.44,
+        "predicted_per_token_ms": 1.888,
+        "predicted_per_second": 529.6610169491526
+      },
+      "gpu": [
+        1542.0,
+        31.47,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612583.9882507,
+      "latency_s": 0.0191,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 3.36,
+        "prompt_per_token_ms": 0.84,
+        "prompt_per_second": 1190.4761904761906,
+        "predicted_n": 8,
+        "predicted_ms": 13.794,
+        "predicted_per_token_ms": 1.9705714285714286,
+        "predicted_per_second": 507.46701464404816
+      },
+      "gpu": [
+        1542.0,
+        31.5,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612594.025591,
+      "latency_s": 0.0225,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.672,
+        "prompt_per_token_ms": 0.668,
+        "prompt_per_second": 1497.005988023952,
+        "predicted_n": 11,
+        "predicted_ms": 17.935,
+        "predicted_per_token_ms": 1.7934999999999999,
+        "predicted_per_second": 557.5689991636465
+      },
+      "gpu": [
+        1542.0,
+        31.1,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612604.0560338,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.654,
+        "prompt_per_token_ms": 0.6635,
+        "prompt_per_second": 1507.1590052750566,
+        "predicted_n": 7,
+        "predicted_ms": 10.847,
+        "predicted_per_token_ms": 1.8078333333333332,
+        "predicted_per_second": 553.1483359454228
+      },
+      "gpu": [
+        1542.0,
+        31.44,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612614.0869012,
+      "latency_s": 0.0143,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 3.034,
+        "prompt_per_token_ms": 0.7585,
+        "prompt_per_second": 1318.3915622940015,
+        "predicted_n": 6,
+        "predicted_ms": 9.312,
+        "predicted_per_token_ms": 1.8623999999999998,
+        "predicted_per_second": 536.9415807560138
+      },
+      "gpu": [
+        1542.0,
+        30.7,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612624.1201327,
+      "latency_s": 0.0173,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.601,
+        "prompt_per_token_ms": 0.65025,
+        "prompt_per_second": 1537.8700499807767,
+        "predicted_n": 8,
+        "predicted_ms": 12.786,
+        "predicted_per_token_ms": 1.8265714285714285,
+        "predicted_per_second": 547.4737994681684
+      },
+      "gpu": [
+        1542.0,
+        30.55,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612634.1577806,
+      "latency_s": 0.0226,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.699,
+        "prompt_per_token_ms": 0.67475,
+        "prompt_per_second": 1482.0303816228234,
+        "predicted_n": 11,
+        "predicted_ms": 17.882,
+        "predicted_per_token_ms": 1.7882000000000002,
+        "predicted_per_second": 559.2215635834917
+      },
+      "gpu": [
+        1542.0,
+        30.28,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612644.1894796,
+      "latency_s": 0.0158,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.634,
+        "prompt_per_token_ms": 0.6585,
+        "prompt_per_second": 1518.6028853454823,
+        "predicted_n": 7,
+        "predicted_ms": 10.87,
+        "predicted_per_token_ms": 1.8116666666666665,
+        "predicted_per_second": 551.9779208831646
+      },
+      "gpu": [
+        1542.0,
+        30.2,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612654.2183595,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.601,
+        "prompt_per_token_ms": 0.65025,
+        "prompt_per_second": 1537.8700499807767,
+        "predicted_n": 6,
+        "predicted_ms": 8.993,
+        "predicted_per_token_ms": 1.7986,
+        "predicted_per_second": 555.9879906594017
+      },
+      "gpu": [
+        1542.0,
+        31.04,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612664.2504213,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.601,
+        "prompt_per_token_ms": 0.65025,
+        "prompt_per_second": 1537.8700499807767,
+        "predicted_n": 8,
+        "predicted_ms": 12.325,
+        "predicted_per_token_ms": 1.7607142857142857,
+        "predicted_per_second": 567.9513184584179
+      },
+      "gpu": [
+        1542.0,
+        30.03,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612674.2879746,
+      "latency_s": 0.0221,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.558,
+        "prompt_per_token_ms": 0.6395,
+        "prompt_per_second": 1563.721657544957,
+        "predicted_n": 11,
+        "predicted_ms": 17.628,
+        "predicted_per_token_ms": 1.7628,
+        "predicted_per_second": 567.2793283412752
+      },
+      "gpu": [
+        1542.0,
+        29.83,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612684.3179252,
+      "latency_s": 0.0152,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.668,
+        "prompt_per_token_ms": 0.667,
+        "prompt_per_second": 1499.2503748125937,
+        "predicted_n": 7,
+        "predicted_ms": 10.556,
+        "predicted_per_token_ms": 1.7593333333333332,
+        "predicted_per_second": 568.3971201212581
+      },
+      "gpu": [
+        1542.0,
+        31.08,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612694.347076,
+      "latency_s": 0.0135,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.59,
+        "prompt_per_token_ms": 0.6475,
+        "prompt_per_second": 1544.4015444015445,
+        "predicted_n": 6,
+        "predicted_ms": 9.009,
+        "predicted_per_token_ms": 1.8018,
+        "predicted_per_second": 555.000555000555
+      },
+      "gpu": [
+        1542.0,
+        31.81,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612704.3803375,
+      "latency_s": 0.0168,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.611,
+        "prompt_per_token_ms": 0.65275,
+        "prompt_per_second": 1531.9800842589045,
+        "predicted_n": 8,
+        "predicted_ms": 12.414,
+        "predicted_per_token_ms": 1.7734285714285714,
+        "predicted_per_second": 563.8794908973739
+      },
+      "gpu": [
+        1542.0,
+        30.59,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612714.4170105,
+      "latency_s": 0.0222,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.57,
+        "prompt_per_token_ms": 0.6425,
+        "prompt_per_second": 1556.4202334630352,
+        "predicted_n": 11,
+        "predicted_ms": 17.769,
+        "predicted_per_token_ms": 1.7769,
+        "predicted_per_second": 562.7778715740898
+      },
+      "gpu": [
+        1542.0,
+        31.15,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612724.4468234,
+      "latency_s": 0.0154,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.617,
+        "prompt_per_token_ms": 0.65425,
+        "prompt_per_second": 1528.4677111196027,
+        "predicted_n": 7,
+        "predicted_ms": 10.809,
+        "predicted_per_token_ms": 1.8014999999999999,
+        "predicted_per_second": 555.0929780738275
+      },
+      "gpu": [
+        1542.0,
+        30.99,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612734.4773204,
+      "latency_s": 0.014,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.742,
+        "prompt_per_token_ms": 0.6855,
+        "prompt_per_second": 1458.7892049598834,
+        "predicted_n": 6,
+        "predicted_ms": 8.991,
+        "predicted_per_token_ms": 1.7982,
+        "predicted_per_second": 556.1116672227784
+      },
+      "gpu": [
+        1542.0,
+        30.98,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612744.5101163,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.568,
+        "prompt_per_token_ms": 0.642,
+        "prompt_per_second": 1557.632398753894,
+        "predicted_n": 8,
+        "predicted_ms": 12.703,
+        "predicted_per_token_ms": 1.8147142857142857,
+        "predicted_per_second": 551.0509328505078
+      },
+      "gpu": [
+        1542.0,
+        31.66,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612754.5478857,
+      "latency_s": 0.0229,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.699,
+        "prompt_per_token_ms": 0.67475,
+        "prompt_per_second": 1482.0303816228234,
+        "predicted_n": 11,
+        "predicted_ms": 17.966,
+        "predicted_per_token_ms": 1.7966000000000002,
+        "predicted_per_second": 556.606924190137
+      },
+      "gpu": [
+        1542.0,
+        30.82,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612764.5786421,
+      "latency_s": 0.0162,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 3.118,
+        "prompt_per_token_ms": 0.7795,
+        "prompt_per_second": 1282.8736369467608,
+        "predicted_n": 7,
+        "predicted_ms": 10.933,
+        "predicted_per_token_ms": 1.8221666666666667,
+        "predicted_per_second": 548.7972194274216
+      },
+      "gpu": [
+        1542.0,
+        31.62,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612774.6087668,
+      "latency_s": 0.0139,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.622,
+        "prompt_per_token_ms": 0.6555,
+        "prompt_per_second": 1525.5530129672006,
+        "predicted_n": 6,
+        "predicted_ms": 9.352,
+        "predicted_per_token_ms": 1.8704,
+        "predicted_per_second": 534.64499572284
+      },
+      "gpu": [
+        1542.0,
+        32.23,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612784.6406703,
+      "latency_s": 0.0174,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.886,
+        "prompt_per_token_ms": 0.7215,
+        "prompt_per_second": 1386.001386001386,
+        "predicted_n": 8,
+        "predicted_ms": 12.657,
+        "predicted_per_token_ms": 1.808142857142857,
+        "predicted_per_second": 553.0536462036818
+      },
+      "gpu": [
+        1542.0,
+        33.58,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612794.6782672,
+      "latency_s": 0.0229,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.831,
+        "prompt_per_token_ms": 0.70775,
+        "prompt_per_second": 1412.9282938890851,
+        "predicted_n": 11,
+        "predicted_ms": 17.944,
+        "predicted_per_token_ms": 1.7944,
+        "predicted_per_second": 557.2893446277308
+      },
+      "gpu": [
+        1542.0,
+        31.94,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612804.7091367,
+      "latency_s": 0.0154,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.659,
+        "prompt_per_token_ms": 0.66475,
+        "prompt_per_second": 1504.3249341857843,
+        "predicted_n": 7,
+        "predicted_ms": 10.82,
+        "predicted_per_token_ms": 1.8033333333333335,
+        "predicted_per_second": 554.5286506469502
+      },
+      "gpu": [
+        1542.0,
+        30.06,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612814.7386508,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.669,
+        "prompt_per_token_ms": 0.66725,
+        "prompt_per_second": 1498.6886474334956,
+        "predicted_n": 6,
+        "predicted_ms": 9.316,
+        "predicted_per_token_ms": 1.8632000000000002,
+        "predicted_per_second": 536.711034778875
+      },
+      "gpu": [
+        1542.0,
+        30.7,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612824.7722683,
+      "latency_s": 0.0187,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.861,
+        "prompt_per_token_ms": 0.71525,
+        "prompt_per_second": 1398.1125480601188,
+        "predicted_n": 8,
+        "predicted_ms": 13.55,
+        "predicted_per_token_ms": 1.9357142857142857,
+        "predicted_per_second": 516.6051660516605
+      },
+      "gpu": [
+        1542.0,
+        30.71,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612834.8114717,
+      "latency_s": 0.0235,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.625,
+        "prompt_per_token_ms": 0.65625,
+        "prompt_per_second": 1523.8095238095239,
+        "predicted_n": 11,
+        "predicted_ms": 18.962,
+        "predicted_per_token_ms": 1.8961999999999999,
+        "predicted_per_second": 527.3705305347537
+      },
+      "gpu": [
+        1542.0,
+        30.54,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612844.8405354,
+      "latency_s": 0.0152,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.625,
+        "prompt_per_token_ms": 0.65625,
+        "prompt_per_second": 1523.8095238095239,
+        "predicted_n": 7,
+        "predicted_ms": 10.714,
+        "predicted_per_token_ms": 1.7856666666666667,
+        "predicted_per_second": 560.0149337315661
+      },
+      "gpu": [
+        1542.0,
+        29.05,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612854.8698578,
+      "latency_s": 0.0141,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.837,
+        "prompt_per_token_ms": 0.70925,
+        "prompt_per_second": 1409.940077546704,
+        "predicted_n": 6,
+        "predicted_ms": 9.302,
+        "predicted_per_token_ms": 1.8603999999999998,
+        "predicted_per_second": 537.5188131584606
+      },
+      "gpu": [
+        1542.0,
+        29.67,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612864.9026132,
+      "latency_s": 0.0176,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.883,
+        "prompt_per_token_ms": 0.72075,
+        "prompt_per_second": 1387.443635102324,
+        "predicted_n": 8,
+        "predicted_ms": 12.487,
+        "predicted_per_token_ms": 1.7838571428571428,
+        "predicted_per_second": 560.5830063265796
+      },
+      "gpu": [
+        1542.0,
+        29.33,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612874.940884,
+      "latency_s": 0.0231,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.62,
+        "prompt_per_token_ms": 0.655,
+        "prompt_per_second": 1526.7175572519084,
+        "predicted_n": 11,
+        "predicted_ms": 18.28,
+        "predicted_per_token_ms": 1.828,
+        "predicted_per_second": 547.0459518599562
+      },
+      "gpu": [
+        1542.0,
+        29.42,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612884.9742563,
+      "latency_s": 0.0179,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 3.42,
+        "prompt_per_token_ms": 0.855,
+        "prompt_per_second": 1169.5906432748538,
+        "predicted_n": 7,
+        "predicted_ms": 11.588,
+        "predicted_per_token_ms": 1.9313333333333331,
+        "predicted_per_second": 517.7770107007249
+      },
+      "gpu": [
+        1542.0,
+        29.21,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612895.0058477,
+      "latency_s": 0.0139,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.569,
+        "prompt_per_token_ms": 0.64225,
+        "prompt_per_second": 1557.026080186843,
+        "predicted_n": 6,
+        "predicted_ms": 9.185,
+        "predicted_per_token_ms": 1.8370000000000002,
+        "predicted_per_second": 544.3658138268917
+      },
+      "gpu": [
+        1542.0,
+        29.62,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612905.039675,
+      "latency_s": 0.0167,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.583,
+        "prompt_per_token_ms": 0.64575,
+        "prompt_per_second": 1548.5869144405729,
+        "predicted_n": 8,
+        "predicted_ms": 12.32,
+        "predicted_per_token_ms": 1.76,
+        "predicted_per_second": 568.1818181818181
+      },
+      "gpu": [
+        1542.0,
+        28.83,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612915.0765717,
+      "latency_s": 0.0224,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.645,
+        "prompt_per_token_ms": 0.66125,
+        "prompt_per_second": 1512.2873345935727,
+        "predicted_n": 11,
+        "predicted_ms": 17.793,
+        "predicted_per_token_ms": 1.7792999999999999,
+        "predicted_per_second": 562.0187714269657
+      },
+      "gpu": [
+        1542.0,
+        29.4,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612925.106662,
+      "latency_s": 0.0156,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.661,
+        "prompt_per_token_ms": 0.66525,
+        "prompt_per_second": 1503.194287861706,
+        "predicted_n": 7,
+        "predicted_ms": 10.815,
+        "predicted_per_token_ms": 1.8025,
+        "predicted_per_second": 554.7850208044383
+      },
+      "gpu": [
+        1542.0,
+        30.01,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612935.1366613,
+      "latency_s": 0.0135,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.565,
+        "prompt_per_token_ms": 0.64125,
+        "prompt_per_second": 1559.4541910331384,
+        "predicted_n": 6,
+        "predicted_ms": 9.049,
+        "predicted_per_token_ms": 1.8097999999999999,
+        "predicted_per_second": 552.5472427892585
+      },
+      "gpu": [
+        1542.0,
+        28.63,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612945.1694632,
+      "latency_s": 0.0174,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.614,
+        "prompt_per_token_ms": 0.6535,
+        "prompt_per_second": 1530.2218821729152,
+        "predicted_n": 8,
+        "predicted_ms": 12.662,
+        "predicted_per_token_ms": 1.808857142857143,
+        "predicted_per_second": 552.8352550939819
+      },
+      "gpu": [
+        1562.0,
+        29.55,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612955.2067432,
+      "latency_s": 0.0223,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.62,
+        "prompt_per_token_ms": 0.655,
+        "prompt_per_second": 1526.7175572519084,
+        "predicted_n": 11,
+        "predicted_ms": 17.835,
+        "predicted_per_token_ms": 1.7835,
+        "predicted_per_second": 560.695262125035
+      },
+      "gpu": [
+        1562.0,
+        28.45,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612965.2381094,
+      "latency_s": 0.0153,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.653,
+        "prompt_per_token_ms": 0.66325,
+        "prompt_per_second": 1507.7271013946477,
+        "predicted_n": 7,
+        "predicted_ms": 10.747,
+        "predicted_per_token_ms": 1.7911666666666666,
+        "predicted_per_second": 558.2953382339257
+      },
+      "gpu": [
+        1562.0,
+        30.17,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612975.26707,
+      "latency_s": 0.014,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.583,
+        "prompt_per_token_ms": 0.64575,
+        "prompt_per_second": 1548.5869144405729,
+        "predicted_n": 6,
+        "predicted_ms": 9.257,
+        "predicted_per_token_ms": 1.8514,
+        "predicted_per_second": 540.1317921572864
+      },
+      "gpu": [
+        1562.0,
+        30.01,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612985.2989893,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.666,
+        "prompt_per_token_ms": 0.6665,
+        "prompt_per_second": 1500.3750937734435,
+        "predicted_n": 8,
+        "predicted_ms": 12.538,
+        "predicted_per_token_ms": 1.7911428571428571,
+        "predicted_per_second": 558.3027596107833
+      },
+      "gpu": [
+        1562.0,
+        29.55,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787612995.336475,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.658,
+        "prompt_per_token_ms": 0.6645,
+        "prompt_per_second": 1504.8908954100827,
+        "predicted_n": 11,
+        "predicted_ms": 18.115,
+        "predicted_per_token_ms": 1.8114999999999999,
+        "predicted_per_second": 552.0287054926857
+      },
+      "gpu": [
+        1562.0,
+        30.03,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613005.3665988,
+      "latency_s": 0.0157,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.653,
+        "prompt_per_token_ms": 0.66325,
+        "prompt_per_second": 1507.7271013946477,
+        "predicted_n": 7,
+        "predicted_ms": 10.868,
+        "predicted_per_token_ms": 1.8113333333333335,
+        "predicted_per_second": 552.0794994479205
+      },
+      "gpu": [
+        1562.0,
+        29.23,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613015.395748,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.614,
+        "prompt_per_token_ms": 0.6535,
+        "prompt_per_second": 1530.2218821729152,
+        "predicted_n": 6,
+        "predicted_ms": 9.12,
+        "predicted_per_token_ms": 1.8239999999999998,
+        "predicted_per_second": 548.2456140350878
+      },
+      "gpu": [
+        1562.0,
+        29.21,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613025.427119,
+      "latency_s": 0.0169,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.595,
+        "prompt_per_token_ms": 0.64875,
+        "prompt_per_second": 1541.4258188824663,
+        "predicted_n": 8,
+        "predicted_ms": 12.537,
+        "predicted_per_token_ms": 1.7910000000000001,
+        "predicted_per_second": 558.3472920156337
+      },
+      "gpu": [
+        1562.0,
+        28.99,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613035.4639072,
+      "latency_s": 0.0221,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.59,
+        "prompt_per_token_ms": 0.6475,
+        "prompt_per_second": 1544.4015444015445,
+        "predicted_n": 11,
+        "predicted_ms": 17.663,
+        "predicted_per_token_ms": 1.7663,
+        "predicted_per_second": 566.155239766744
+      },
+      "gpu": [
+        1562.0,
+        30.63,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613045.4943228,
+      "latency_s": 0.0154,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.635,
+        "prompt_per_token_ms": 0.65875,
+        "prompt_per_second": 1518.0265654648958,
+        "predicted_n": 7,
+        "predicted_ms": 10.812,
+        "predicted_per_token_ms": 1.8019999999999998,
+        "predicted_per_second": 554.9389567147614
+      },
+      "gpu": [
+        1562.0,
+        31.03,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613055.5231974,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.642,
+        "prompt_per_token_ms": 0.6605,
+        "prompt_per_second": 1514.0045420136262,
+        "predicted_n": 6,
+        "predicted_ms": 9.154,
+        "predicted_per_token_ms": 1.8308,
+        "predicted_per_second": 546.2093074065982
+      },
+      "gpu": [
+        1562.0,
+        30.51,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613065.5567775,
+      "latency_s": 0.0187,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.737,
+        "prompt_per_token_ms": 0.68425,
+        "prompt_per_second": 1461.4541468761417,
+        "predicted_n": 8,
+        "predicted_ms": 13.926,
+        "predicted_per_token_ms": 1.9894285714285715,
+        "predicted_per_second": 502.6569007611661
+      },
+      "gpu": [
+        1562.0,
+        30.15,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613075.5946052,
+      "latency_s": 0.0223,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.598,
+        "prompt_per_token_ms": 0.6495,
+        "prompt_per_second": 1539.6458814472671,
+        "predicted_n": 11,
+        "predicted_ms": 17.928,
+        "predicted_per_token_ms": 1.7928000000000002,
+        "predicted_per_second": 557.7867023650156
+      },
+      "gpu": [
+        1562.0,
+        29.97,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613085.6256962,
+      "latency_s": 0.0158,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.991,
+        "prompt_per_token_ms": 0.74775,
+        "prompt_per_second": 1337.3453694416582,
+        "predicted_n": 7,
+        "predicted_ms": 10.884,
+        "predicted_per_token_ms": 1.814,
+        "predicted_per_second": 551.2679162072768
+      },
+      "gpu": [
+        1562.0,
+        30.72,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613095.6539938,
+      "latency_s": 0.0136,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.591,
+        "prompt_per_token_ms": 0.64775,
+        "prompt_per_second": 1543.8054805094557,
+        "predicted_n": 6,
+        "predicted_ms": 9.173,
+        "predicted_per_token_ms": 1.8346,
+        "predicted_per_second": 545.0779461462989
+      },
+      "gpu": [
+        1562.0,
+        30.68,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613105.6868212,
+      "latency_s": 0.0177,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.735,
+        "prompt_per_token_ms": 0.68375,
+        "prompt_per_second": 1462.5228519195614,
+        "predicted_n": 8,
+        "predicted_ms": 12.788,
+        "predicted_per_token_ms": 1.826857142857143,
+        "predicted_per_second": 547.3881764153895
+      },
+      "gpu": [
+        1562.0,
+        30.61,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613115.7243922,
+      "latency_s": 0.0226,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.788,
+        "prompt_per_token_ms": 0.697,
+        "prompt_per_second": 1434.7202295552368,
+        "predicted_n": 11,
+        "predicted_ms": 17.859,
+        "predicted_per_token_ms": 1.7859000000000003,
+        "predicted_per_second": 559.94176605633
+      },
+      "gpu": [
+        1562.0,
+        30.26,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613125.7579138,
+      "latency_s": 0.0168,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.863,
+        "prompt_per_token_ms": 0.71575,
+        "prompt_per_second": 1397.1358714634998,
+        "predicted_n": 7,
+        "predicted_ms": 11.734,
+        "predicted_per_token_ms": 1.9556666666666667,
+        "predicted_per_second": 511.3345832623147
+      },
+      "gpu": [
+        1562.0,
+        30.31,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613135.7884572,
+      "latency_s": 0.0151,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.918,
+        "prompt_per_token_ms": 0.7295,
+        "prompt_per_second": 1370.8019191226867,
+        "predicted_n": 6,
+        "predicted_ms": 9.618,
+        "predicted_per_token_ms": 1.9236,
+        "predicted_per_second": 519.8585984612185
+      },
+      "gpu": [
+        1562.0,
+        30.51,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613145.8210766,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.566,
+        "prompt_per_token_ms": 0.6415,
+        "prompt_per_second": 1558.8464536243182,
+        "predicted_n": 8,
+        "predicted_ms": 12.757,
+        "predicted_per_token_ms": 1.8224285714285713,
+        "predicted_per_second": 548.7183507094145
+      },
+      "gpu": [
+        1562.0,
+        30.01,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613155.8589454,
+      "latency_s": 0.0227,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.579,
+        "prompt_per_token_ms": 0.64475,
+        "prompt_per_second": 1550.9887553315236,
+        "predicted_n": 11,
+        "predicted_ms": 18.346,
+        "predicted_per_token_ms": 1.8346,
+        "predicted_per_second": 545.0779461462989
+      },
+      "gpu": [
+        1562.0,
+        30.5,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613165.8899858,
+      "latency_s": 0.0159,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.781,
+        "prompt_per_token_ms": 0.69525,
+        "prompt_per_second": 1438.331535418914,
+        "predicted_n": 7,
+        "predicted_ms": 10.761,
+        "predicted_per_token_ms": 1.7934999999999999,
+        "predicted_per_second": 557.5689991636466
+      },
+      "gpu": [
+        1562.0,
+        30.16,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613175.9195726,
+      "latency_s": 0.0139,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.582,
+        "prompt_per_token_ms": 0.6455,
+        "prompt_per_second": 1549.186676994578,
+        "predicted_n": 6,
+        "predicted_ms": 9.326,
+        "predicted_per_token_ms": 1.8652000000000002,
+        "predicted_per_second": 536.135535063264
+      },
+      "gpu": [
+        1562.0,
+        30.82,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613185.9524682,
+      "latency_s": 0.0177,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.641,
+        "prompt_per_token_ms": 0.66025,
+        "prompt_per_second": 1514.5778114350624,
+        "predicted_n": 8,
+        "predicted_ms": 12.99,
+        "predicted_per_token_ms": 1.8557142857142856,
+        "predicted_per_second": 538.8760585065435
+      },
+      "gpu": [
+        1564.0,
+        30.44,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613195.9900901,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.616,
+        "prompt_per_token_ms": 0.654,
+        "prompt_per_second": 1529.051987767584,
+        "predicted_n": 11,
+        "predicted_ms": 18.001,
+        "predicted_per_token_ms": 1.8001,
+        "predicted_per_second": 555.524693072607
+      },
+      "gpu": [
+        1564.0,
+        30.62,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613206.0231297,
+      "latency_s": 0.0168,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.704,
+        "prompt_per_token_ms": 0.676,
+        "prompt_per_second": 1479.2899408284022,
+        "predicted_n": 7,
+        "predicted_ms": 10.887,
+        "predicted_per_token_ms": 1.8145,
+        "predicted_per_second": 551.1160099200881
+      },
+      "gpu": [
+        1564.0,
+        30.66,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613216.0523672,
+      "latency_s": 0.0144,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.687,
+        "prompt_per_token_ms": 0.67175,
+        "prompt_per_second": 1488.6490509862301,
+        "predicted_n": 6,
+        "predicted_ms": 9.778,
+        "predicted_per_token_ms": 1.9556,
+        "predicted_per_second": 511.352014726938
+      },
+      "gpu": [
+        1564.0,
+        30.53,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613226.0854518,
+      "latency_s": 0.0174,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.729,
+        "prompt_per_token_ms": 0.68225,
+        "prompt_per_second": 1465.7383657017222,
+        "predicted_n": 8,
+        "predicted_ms": 12.755,
+        "predicted_per_token_ms": 1.8221428571428573,
+        "predicted_per_second": 548.8043904351235
+      },
+      "gpu": [
+        1564.0,
+        31.18,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613236.1239069,
+      "latency_s": 0.0232,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.796,
+        "prompt_per_token_ms": 0.699,
+        "prompt_per_second": 1430.615164520744,
+        "predicted_n": 11,
+        "predicted_ms": 18.276,
+        "predicted_per_token_ms": 1.8276,
+        "predicted_per_second": 547.1656817684395
+      },
+      "gpu": [
+        1564.0,
+        31.43,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613246.1550899,
+      "latency_s": 0.0158,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.684,
+        "prompt_per_token_ms": 0.671,
+        "prompt_per_second": 1490.3129657228017,
+        "predicted_n": 7,
+        "predicted_ms": 11.155,
+        "predicted_per_token_ms": 1.8591666666666666,
+        "predicted_per_second": 537.8753922008069
+      },
+      "gpu": [
+        1564.0,
+        31.87,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613256.183924,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.615,
+        "prompt_per_token_ms": 0.65375,
+        "prompt_per_second": 1529.6367112810706,
+        "predicted_n": 6,
+        "predicted_ms": 9.075,
+        "predicted_per_token_ms": 1.815,
+        "predicted_per_second": 550.9641873278238
+      },
+      "gpu": [
+        1564.0,
+        31.11,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613266.2157872,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.897,
+        "prompt_per_token_ms": 0.72425,
+        "prompt_per_second": 1380.738695201933,
+        "predicted_n": 8,
+        "predicted_ms": 12.795,
+        "predicted_per_token_ms": 1.8278571428571428,
+        "predicted_per_second": 547.0887065259867
+      },
+      "gpu": [
+        1564.0,
+        31.73,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613276.2536325,
+      "latency_s": 0.0225,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.596,
+        "prompt_per_token_ms": 0.649,
+        "prompt_per_second": 1540.8320493066255,
+        "predicted_n": 11,
+        "predicted_ms": 17.963,
+        "predicted_per_token_ms": 1.7963,
+        "predicted_per_second": 556.6998830930245
+      },
+      "gpu": [
+        1564.0,
+        31.13,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613286.28456,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.654,
+        "prompt_per_token_ms": 0.6635,
+        "prompt_per_second": 1507.1590052750566,
+        "predicted_n": 7,
+        "predicted_ms": 10.902,
+        "predicted_per_token_ms": 1.817,
+        "predicted_per_second": 550.357732526142
+      },
+      "gpu": [
+        1564.0,
+        31.46,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613296.3123899,
+      "latency_s": 0.014,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.697,
+        "prompt_per_token_ms": 0.67425,
+        "prompt_per_second": 1483.1294030404154,
+        "predicted_n": 6,
+        "predicted_ms": 9.224,
+        "predicted_per_token_ms": 1.8448,
+        "predicted_per_second": 542.0641803989593
+      },
+      "gpu": [
+        1564.0,
+        31.03,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613306.343779,
+      "latency_s": 0.017,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.568,
+        "prompt_per_token_ms": 0.642,
+        "prompt_per_second": 1557.632398753894,
+        "predicted_n": 8,
+        "predicted_ms": 12.275,
+        "predicted_per_token_ms": 1.7535714285714286,
+        "predicted_per_second": 570.264765784114
+      },
+      "gpu": [
+        1564.0,
+        31.51,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613316.3823266,
+      "latency_s": 0.024,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.604,
+        "prompt_per_token_ms": 0.651,
+        "prompt_per_second": 1536.0983102918585,
+        "predicted_n": 11,
+        "predicted_ms": 19.124,
+        "predicted_per_token_ms": 1.9123999999999999,
+        "predicted_per_second": 522.9031583350765
+      },
+      "gpu": [
+        1564.0,
+        32.85,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613326.4136794,
+      "latency_s": 0.0155,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.664,
+        "prompt_per_token_ms": 0.666,
+        "prompt_per_second": 1501.5015015015015,
+        "predicted_n": 7,
+        "predicted_ms": 10.926,
+        "predicted_per_token_ms": 1.821,
+        "predicted_per_second": 549.1488193300384
+      },
+      "gpu": [
+        1564.0,
+        32.24,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613336.4420588,
+      "latency_s": 0.0136,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.576,
+        "prompt_per_token_ms": 0.644,
+        "prompt_per_second": 1552.7950310559006,
+        "predicted_n": 6,
+        "predicted_ms": 9.138,
+        "predicted_per_token_ms": 1.8276,
+        "predicted_per_second": 547.1656817684395
+      },
+      "gpu": [
+        1564.0,
+        32.22,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613346.4739377,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.608,
+        "prompt_per_token_ms": 0.652,
+        "prompt_per_second": 1533.7423312883434,
+        "predicted_n": 8,
+        "predicted_ms": 12.828,
+        "predicted_per_token_ms": 1.8325714285714285,
+        "predicted_per_second": 545.681322107889
+      },
+      "gpu": [
+        1564.0,
+        31.71,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613356.5115561,
+      "latency_s": 0.0226,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.712,
+        "prompt_per_token_ms": 0.678,
+        "prompt_per_second": 1474.9262536873155,
+        "predicted_n": 11,
+        "predicted_ms": 17.977,
+        "predicted_per_token_ms": 1.7977,
+        "predicted_per_second": 556.266340323747
+      },
+      "gpu": [
+        1564.0,
+        30.32,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613366.542593,
+      "latency_s": 0.016,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.708,
+        "prompt_per_token_ms": 0.677,
+        "prompt_per_second": 1477.1048744460857,
+        "predicted_n": 7,
+        "predicted_ms": 11.219,
+        "predicted_per_token_ms": 1.8698333333333332,
+        "predicted_per_second": 534.8070237989125
+      },
+      "gpu": [
+        1564.0,
+        30.16,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613376.5728164,
+      "latency_s": 0.0146,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.695,
+        "prompt_per_token_ms": 0.67375,
+        "prompt_per_second": 1484.2300556586272,
+        "predicted_n": 6,
+        "predicted_ms": 9.919,
+        "predicted_per_token_ms": 1.9838,
+        "predicted_per_second": 504.0830728904123
+      },
+      "gpu": [
+        1564.0,
+        30.82,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613386.605653,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.961,
+        "prompt_per_token_ms": 0.74025,
+        "prompt_per_second": 1350.8949679162445,
+        "predicted_n": 8,
+        "predicted_ms": 12.348,
+        "predicted_per_token_ms": 1.764,
+        "predicted_per_second": 566.8934240362812
+      },
+      "gpu": [
+        1564.0,
+        29.99,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613396.6433768,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.605,
+        "prompt_per_token_ms": 0.65125,
+        "prompt_per_second": 1535.5086372360845,
+        "predicted_n": 11,
+        "predicted_ms": 17.663,
+        "predicted_per_token_ms": 1.7663,
+        "predicted_per_second": 566.155239766744
+      },
+      "gpu": [
+        1564.0,
+        29.81,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613406.6745813,
+      "latency_s": 0.0164,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.671,
+        "prompt_per_token_ms": 0.66775,
+        "prompt_per_second": 1497.5664545114191,
+        "predicted_n": 7,
+        "predicted_ms": 11.585,
+        "predicted_per_token_ms": 1.9308333333333334,
+        "predicted_per_second": 517.9110919292189
+      },
+      "gpu": [
+        1564.0,
+        29.81,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613416.7055407,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.591,
+        "prompt_per_token_ms": 0.64775,
+        "prompt_per_second": 1543.8054805094557,
+        "predicted_n": 6,
+        "predicted_ms": 9.336,
+        "predicted_per_token_ms": 1.8672,
+        "predicted_per_second": 535.5612682090831
+      },
+      "gpu": [
+        1564.0,
+        29.48,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613426.7372477,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.604,
+        "prompt_per_token_ms": 0.651,
+        "prompt_per_second": 1536.0983102918585,
+        "predicted_n": 8,
+        "predicted_ms": 12.951,
+        "predicted_per_token_ms": 1.8501428571428573,
+        "predicted_per_second": 540.4988031812214
+      },
+      "gpu": [
+        1564.0,
+        29.39,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613436.7748883,
+      "latency_s": 0.0226,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.887,
+        "prompt_per_token_ms": 0.72175,
+        "prompt_per_second": 1385.5213023900242,
+        "predicted_n": 11,
+        "predicted_ms": 17.692,
+        "predicted_per_token_ms": 1.7692,
+        "predicted_per_second": 565.2272213429799
+      },
+      "gpu": [
+        1564.0,
+        29.99,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613446.806814,
+      "latency_s": 0.0161,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.663,
+        "prompt_per_token_ms": 0.66575,
+        "prompt_per_second": 1502.0653398422833,
+        "predicted_n": 7,
+        "predicted_ms": 11.408,
+        "predicted_per_token_ms": 1.9013333333333333,
+        "predicted_per_second": 525.9467040673212
+      },
+      "gpu": [
+        1564.0,
+        29.14,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613456.8368208,
+      "latency_s": 0.0139,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.592,
+        "prompt_per_token_ms": 0.648,
+        "prompt_per_second": 1543.20987654321,
+        "predicted_n": 6,
+        "predicted_ms": 9.372,
+        "predicted_per_token_ms": 1.8744,
+        "predicted_per_second": 533.5040546308152
+      },
+      "gpu": [
+        1564.0,
+        30.17,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613466.8695989,
+      "latency_s": 0.017,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.618,
+        "prompt_per_token_ms": 0.6545,
+        "prompt_per_second": 1527.8838808250573,
+        "predicted_n": 8,
+        "predicted_ms": 12.538,
+        "predicted_per_token_ms": 1.7911428571428571,
+        "predicted_per_second": 558.3027596107833
+      },
+      "gpu": [
+        1564.0,
+        29.14,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613476.9102027,
+      "latency_s": 0.0243,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.64,
+        "prompt_per_token_ms": 0.66,
+        "prompt_per_second": 1515.151515151515,
+        "predicted_n": 11,
+        "predicted_ms": 19.728,
+        "predicted_per_token_ms": 1.9728,
+        "predicted_per_second": 506.89375506893754
+      },
+      "gpu": [
+        1564.0,
+        29.67,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613486.943215,
+      "latency_s": 0.0169,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.603,
+        "prompt_per_token_ms": 0.65075,
+        "prompt_per_second": 1536.6884364195157,
+        "predicted_n": 7,
+        "predicted_ms": 11.901,
+        "predicted_per_token_ms": 1.9835,
+        "predicted_per_second": 504.15931434333254
+      },
+      "gpu": [
+        1564.0,
+        29.59,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613496.9736483,
+      "latency_s": 0.0146,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.639,
+        "prompt_per_token_ms": 0.65975,
+        "prompt_per_second": 1515.7256536566883,
+        "predicted_n": 6,
+        "predicted_ms": 9.601,
+        "predicted_per_token_ms": 1.9202000000000001,
+        "predicted_per_second": 520.7790855119258
+      },
+      "gpu": [
+        1564.0,
+        29.92,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613507.0066144,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 3.194,
+        "prompt_per_token_ms": 0.7985,
+        "prompt_per_second": 1252.3481527864747,
+        "predicted_n": 8,
+        "predicted_ms": 12.379,
+        "predicted_per_token_ms": 1.7684285714285715,
+        "predicted_per_second": 565.4737862509088
+      },
+      "gpu": [
+        1564.0,
+        28.85,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613517.0467942,
+      "latency_s": 0.0226,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.651,
+        "prompt_per_token_ms": 0.66275,
+        "prompt_per_second": 1508.8645794039985,
+        "predicted_n": 11,
+        "predicted_ms": 17.967,
+        "predicted_per_token_ms": 1.7967,
+        "predicted_per_second": 556.5759447876663
+      },
+      "gpu": [
+        1564.0,
+        28.97,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613527.0793285,
+      "latency_s": 0.0164,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.831,
+        "prompt_per_token_ms": 0.70775,
+        "prompt_per_second": 1412.9282938890851,
+        "predicted_n": 7,
+        "predicted_ms": 11.615,
+        "predicted_per_token_ms": 1.9358333333333333,
+        "predicted_per_second": 516.5733964700818
+      },
+      "gpu": [
+        1564.0,
+        29.79,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613537.1092227,
+      "latency_s": 0.0141,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.652,
+        "prompt_per_token_ms": 0.663,
+        "prompt_per_second": 1508.2956259426846,
+        "predicted_n": 6,
+        "predicted_ms": 9.451,
+        "predicted_per_token_ms": 1.8902,
+        "predicted_per_second": 529.0445455507354
+      },
+      "gpu": [
+        1564.0,
+        30.25,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613547.14234,
+      "latency_s": 0.0174,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.596,
+        "prompt_per_token_ms": 0.649,
+        "prompt_per_second": 1540.8320493066255,
+        "predicted_n": 8,
+        "predicted_ms": 12.531,
+        "predicted_per_token_ms": 1.7901428571428573,
+        "predicted_per_second": 558.6146357034554
+      },
+      "gpu": [
+        1564.0,
+        29.05,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613557.1815975,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.598,
+        "prompt_per_token_ms": 0.6495,
+        "prompt_per_second": 1539.6458814472671,
+        "predicted_n": 11,
+        "predicted_ms": 18.271,
+        "predicted_per_token_ms": 1.8271000000000002,
+        "predicted_per_second": 547.3154178753215
+      },
+      "gpu": [
+        1564.0,
+        29.37,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613567.211999,
+      "latency_s": 0.016,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.983,
+        "prompt_per_token_ms": 0.74575,
+        "prompt_per_second": 1340.931947703654,
+        "predicted_n": 7,
+        "predicted_ms": 10.831,
+        "predicted_per_token_ms": 1.8051666666666666,
+        "predicted_per_second": 553.9654694857354
+      },
+      "gpu": [
+        1564.0,
+        29.77,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613577.2417386,
+      "latency_s": 0.0142,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.83,
+        "prompt_per_token_ms": 0.7075,
+        "prompt_per_second": 1413.4275618374559,
+        "predicted_n": 6,
+        "predicted_ms": 9.386,
+        "predicted_per_token_ms": 1.8771999999999998,
+        "predicted_per_second": 532.708288940976
+      },
+      "gpu": [
+        1564.0,
+        29.4,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613587.2737164,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.594,
+        "prompt_per_token_ms": 0.6485,
+        "prompt_per_second": 1542.0200462606015,
+        "predicted_n": 8,
+        "predicted_ms": 12.722,
+        "predicted_per_token_ms": 1.8174285714285714,
+        "predicted_per_second": 550.2279515799403
+      },
+      "gpu": [
+        1564.0,
+        29.93,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613597.3114429,
+      "latency_s": 0.0223,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.553,
+        "prompt_per_token_ms": 0.63825,
+        "prompt_per_second": 1566.7841754798276,
+        "predicted_n": 11,
+        "predicted_ms": 17.638,
+        "predicted_per_token_ms": 1.7638000000000003,
+        "predicted_per_second": 566.9577049552104
+      },
+      "gpu": [
+        1564.0,
+        30.29,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613607.342651,
+      "latency_s": 0.0165,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.764,
+        "prompt_per_token_ms": 0.691,
+        "prompt_per_second": 1447.178002894356,
+        "predicted_n": 7,
+        "predicted_ms": 11.786,
+        "predicted_per_token_ms": 1.9643333333333333,
+        "predicted_per_second": 509.078567792296
+      },
+      "gpu": [
+        1564.0,
+        30.29,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613617.3720975,
+      "latency_s": 0.0139,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.595,
+        "prompt_per_token_ms": 0.64875,
+        "prompt_per_second": 1541.4258188824663,
+        "predicted_n": 6,
+        "predicted_ms": 9.079,
+        "predicted_per_token_ms": 1.8158,
+        "predicted_per_second": 550.7214450930719
+      },
+      "gpu": [
+        1564.0,
+        32.03,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613627.4054227,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.818,
+        "prompt_per_token_ms": 0.7045,
+        "prompt_per_second": 1419.4464158977999,
+        "predicted_n": 8,
+        "predicted_ms": 12.277,
+        "predicted_per_token_ms": 1.7538571428571428,
+        "predicted_per_second": 570.1718660910647
+      },
+      "gpu": [
+        1564.0,
+        30.13,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613637.4429698,
+      "latency_s": 0.0229,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.885,
+        "prompt_per_token_ms": 0.72125,
+        "prompt_per_second": 1386.4818024263432,
+        "predicted_n": 11,
+        "predicted_ms": 18.041,
+        "predicted_per_token_ms": 1.8041,
+        "predicted_per_second": 554.2929992794191
+      },
+      "gpu": [
+        1564.0,
+        31.1,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613647.474509,
+      "latency_s": 0.0159,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.607,
+        "prompt_per_token_ms": 0.65175,
+        "prompt_per_second": 1534.3306482546989,
+        "predicted_n": 7,
+        "predicted_ms": 10.903,
+        "predicted_per_token_ms": 1.8171666666666668,
+        "predicted_per_second": 550.3072548839768
+      },
+      "gpu": [
+        1564.0,
+        31.26,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613657.5021613,
+      "latency_s": 0.0135,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.608,
+        "prompt_per_token_ms": 0.652,
+        "prompt_per_second": 1533.7423312883434,
+        "predicted_n": 6,
+        "predicted_ms": 9.116,
+        "predicted_per_token_ms": 1.8232,
+        "predicted_per_second": 548.4861781483106
+      },
+      "gpu": [
+        1564.0,
+        30.36,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613667.5334258,
+      "latency_s": 0.017,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.574,
+        "prompt_per_token_ms": 0.6435,
+        "prompt_per_second": 1554.001554001554,
+        "predicted_n": 8,
+        "predicted_ms": 12.418,
+        "predicted_per_token_ms": 1.7739999999999998,
+        "predicted_per_second": 563.6978579481398
+      },
+      "gpu": [
+        1564.0,
+        30.55,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613677.5701149,
+      "latency_s": 0.0224,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.645,
+        "prompt_per_token_ms": 0.66125,
+        "prompt_per_second": 1512.2873345935727,
+        "predicted_n": 11,
+        "predicted_ms": 17.668,
+        "predicted_per_token_ms": 1.7668,
+        "predicted_per_second": 565.9950192438307
+      },
+      "gpu": [
+        1564.0,
+        32.48,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613687.60098,
+      "latency_s": 0.0159,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.677,
+        "prompt_per_token_ms": 0.66925,
+        "prompt_per_second": 1494.2099364960777,
+        "predicted_n": 7,
+        "predicted_ms": 11.327,
+        "predicted_per_token_ms": 1.8878333333333333,
+        "predicted_per_second": 529.7077778758719
+      },
+      "gpu": [
+        1564.0,
+        31.22,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613697.6290085,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.584,
+        "prompt_per_token_ms": 0.646,
+        "prompt_per_second": 1547.9876160990711,
+        "predicted_n": 6,
+        "predicted_ms": 9.037,
+        "predicted_per_token_ms": 1.8074000000000001,
+        "predicted_per_second": 553.280956069492
+      },
+      "gpu": [
+        1564.0,
+        31.26,
+        47.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613707.6628096,
+      "latency_s": 0.0173,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.695,
+        "prompt_per_token_ms": 0.67375,
+        "prompt_per_second": 1484.2300556586272,
+        "predicted_n": 8,
+        "predicted_ms": 12.495,
+        "predicted_per_token_ms": 1.785,
+        "predicted_per_second": 560.2240896358544
+      },
+      "gpu": [
+        1542.0,
+        30.87,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613717.7025728,
+      "latency_s": 0.0235,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.704,
+        "prompt_per_token_ms": 0.676,
+        "prompt_per_second": 1479.2899408284022,
+        "predicted_n": 11,
+        "predicted_ms": 18.449,
+        "predicted_per_token_ms": 1.8449000000000002,
+        "predicted_per_second": 542.0347986340722
+      },
+      "gpu": [
+        1542.0,
+        30.66,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613727.7351701,
+      "latency_s": 0.0173,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.791,
+        "prompt_per_token_ms": 0.69775,
+        "prompt_per_second": 1433.1780723754928,
+        "predicted_n": 7,
+        "predicted_ms": 12.352,
+        "predicted_per_token_ms": 2.058666666666667,
+        "predicted_per_second": 485.75129533678756
+      },
+      "gpu": [
+        1542.0,
+        30.94,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613737.763396,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.652,
+        "prompt_per_token_ms": 0.663,
+        "prompt_per_second": 1508.2956259426846,
+        "predicted_n": 6,
+        "predicted_ms": 9.123,
+        "predicted_per_token_ms": 1.8245999999999998,
+        "predicted_per_second": 548.065329387263
+      },
+      "gpu": [
+        1542.0,
+        31.47,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613747.7963505,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.629,
+        "prompt_per_token_ms": 0.65725,
+        "prompt_per_second": 1521.4910612400151,
+        "predicted_n": 8,
+        "predicted_ms": 12.783,
+        "predicted_per_token_ms": 1.826142857142857,
+        "predicted_per_second": 547.6022842838145
+      },
+      "gpu": [
+        1542.0,
+        31.91,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613757.8358307,
+      "latency_s": 0.0224,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.586,
+        "prompt_per_token_ms": 0.6465,
+        "prompt_per_second": 1546.7904098994586,
+        "predicted_n": 11,
+        "predicted_ms": 17.938,
+        "predicted_per_token_ms": 1.7937999999999998,
+        "predicted_per_second": 557.4757498048835
+      },
+      "gpu": [
+        1542.0,
+        32.23,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613767.8661447,
+      "latency_s": 0.0152,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.636,
+        "prompt_per_token_ms": 0.659,
+        "prompt_per_second": 1517.4506828528072,
+        "predicted_n": 7,
+        "predicted_ms": 10.715,
+        "predicted_per_token_ms": 1.7858333333333334,
+        "predicted_per_second": 559.9626691553897
+      },
+      "gpu": [
+        1542.0,
+        31.64,
+        49.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613777.8949559,
+      "latency_s": 0.0135,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.56,
+        "prompt_per_token_ms": 0.64,
+        "prompt_per_second": 1562.5,
+        "predicted_n": 6,
+        "predicted_ms": 9.068,
+        "predicted_per_token_ms": 1.8135999999999999,
+        "predicted_per_second": 551.3895015438907
+      },
+      "gpu": [
+        1542.0,
+        30.97,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613787.9268746,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.613,
+        "prompt_per_token_ms": 0.65325,
+        "prompt_per_second": 1530.8075009567547,
+        "predicted_n": 8,
+        "predicted_ms": 12.652,
+        "predicted_per_token_ms": 1.8074285714285714,
+        "predicted_per_second": 553.2722099272843
+      },
+      "gpu": [
+        1542.0,
+        30.72,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613797.9643612,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.637,
+        "prompt_per_token_ms": 0.65925,
+        "prompt_per_second": 1516.8752370117559,
+        "predicted_n": 11,
+        "predicted_ms": 18.16,
+        "predicted_per_token_ms": 1.816,
+        "predicted_per_second": 550.6607929515418
+      },
+      "gpu": [
+        1542.0,
+        30.99,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613807.9961438,
+      "latency_s": 0.0162,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.74,
+        "prompt_per_token_ms": 0.685,
+        "prompt_per_second": 1459.85401459854,
+        "predicted_n": 7,
+        "predicted_ms": 11.339,
+        "predicted_per_token_ms": 1.8898333333333335,
+        "predicted_per_second": 529.1471911103272
+      },
+      "gpu": [
+        1542.0,
+        31.39,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613818.0262806,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.603,
+        "prompt_per_token_ms": 0.65075,
+        "prompt_per_second": 1536.6884364195157,
+        "predicted_n": 6,
+        "predicted_ms": 9.227,
+        "predicted_per_token_ms": 1.8454000000000002,
+        "predicted_per_second": 541.8879375745096
+      },
+      "gpu": [
+        1542.0,
+        31.69,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613828.0593157,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.643,
+        "prompt_per_token_ms": 0.66075,
+        "prompt_per_second": 1513.431706394249,
+        "predicted_n": 8,
+        "predicted_ms": 12.585,
+        "predicted_per_token_ms": 1.797857142857143,
+        "predicted_per_second": 556.21771950735
+      },
+      "gpu": [
+        1542.0,
+        31.8,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613838.0986874,
+      "latency_s": 0.0229,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.593,
+        "prompt_per_token_ms": 0.64825,
+        "prompt_per_second": 1542.6147319706904,
+        "predicted_n": 11,
+        "predicted_ms": 18.333,
+        "predicted_per_token_ms": 1.8333,
+        "predicted_per_second": 545.4644629902363
+      },
+      "gpu": [
+        1542.0,
+        32.28,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613848.1298237,
+      "latency_s": 0.0157,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.787,
+        "prompt_per_token_ms": 0.69675,
+        "prompt_per_second": 1435.2350197344815,
+        "predicted_n": 7,
+        "predicted_ms": 11.033,
+        "predicted_per_token_ms": 1.8388333333333333,
+        "predicted_per_second": 543.8230762258679
+      },
+      "gpu": [
+        1542.0,
+        31.48,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613858.1594121,
+      "latency_s": 0.0136,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.64,
+        "prompt_per_token_ms": 0.66,
+        "prompt_per_second": 1515.151515151515,
+        "predicted_n": 6,
+        "predicted_ms": 8.974,
+        "predicted_per_token_ms": 1.7948,
+        "predicted_per_second": 557.1651437486071
+      },
+      "gpu": [
+        1542.0,
+        31.09,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613868.1926296,
+      "latency_s": 0.0173,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.686,
+        "prompt_per_token_ms": 0.6715,
+        "prompt_per_second": 1489.2032762472077,
+        "predicted_n": 8,
+        "predicted_ms": 12.517,
+        "predicted_per_token_ms": 1.788142857142857,
+        "predicted_per_second": 559.2394343692579
+      },
+      "gpu": [
+        1542.0,
+        31.17,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613878.2316983,
+      "latency_s": 0.0231,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.834,
+        "prompt_per_token_ms": 0.7085,
+        "prompt_per_second": 1411.4326040931546,
+        "predicted_n": 11,
+        "predicted_ms": 18.134,
+        "predicted_per_token_ms": 1.8134000000000001,
+        "predicted_per_second": 551.4503143266792
+      },
+      "gpu": [
+        1542.0,
+        31.22,
+        52.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613888.2628822,
+      "latency_s": 0.0153,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.679,
+        "prompt_per_token_ms": 0.66975,
+        "prompt_per_second": 1493.0944382232178,
+        "predicted_n": 7,
+        "predicted_ms": 10.793,
+        "predicted_per_token_ms": 1.7988333333333333,
+        "predicted_per_second": 555.9158713981284
+      },
+      "gpu": [
+        1542.0,
+        32.93,
+        51.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613898.2907088,
+      "latency_s": 0.0135,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.58,
+        "prompt_per_token_ms": 0.645,
+        "prompt_per_second": 1550.3875968992247,
+        "predicted_n": 6,
+        "predicted_ms": 9.151,
+        "predicted_per_token_ms": 1.8302,
+        "predicted_per_second": 546.3883728554256
+      },
+      "gpu": [
+        1542.0,
+        32.8,
+        50.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613908.3224287,
+      "latency_s": 0.0169,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.617,
+        "prompt_per_token_ms": 0.65425,
+        "prompt_per_second": 1528.4677111196027,
+        "predicted_n": 8,
+        "predicted_ms": 12.375,
+        "predicted_per_token_ms": 1.7678571428571428,
+        "predicted_per_second": 565.6565656565656
+      },
+      "gpu": [
+        1542.0,
+        31.25,
+        48.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613918.358972,
+      "latency_s": 0.0221,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.575,
+        "prompt_per_token_ms": 0.64375,
+        "prompt_per_second": 1553.398058252427,
+        "predicted_n": 11,
+        "predicted_ms": 17.651,
+        "predicted_per_token_ms": 1.7651,
+        "predicted_per_second": 566.5401393688743
+      },
+      "gpu": [
+        1542.0,
+        31.7,
+        46.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613928.3894966,
+      "latency_s": 0.0157,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.606,
+        "prompt_per_token_ms": 0.6515,
+        "prompt_per_second": 1534.9194167306216,
+        "predicted_n": 7,
+        "predicted_ms": 10.595,
+        "predicted_per_token_ms": 1.7658333333333334,
+        "predicted_per_second": 566.3048607833883
+      },
+      "gpu": [
+        1542.0,
+        30.88,
+        45.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613938.4185238,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.589,
+        "prompt_per_token_ms": 0.64725,
+        "prompt_per_second": 1544.9980687524142,
+        "predicted_n": 6,
+        "predicted_ms": 9.297,
+        "predicted_per_token_ms": 1.8594000000000002,
+        "predicted_per_second": 537.8078950198989
+      },
+      "gpu": [
+        1542.0,
+        30.26,
+        44.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613948.4513798,
+      "latency_s": 0.0171,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.645,
+        "prompt_per_token_ms": 0.66125,
+        "prompt_per_second": 1512.2873345935727,
+        "predicted_n": 8,
+        "predicted_ms": 12.473,
+        "predicted_per_token_ms": 1.781857142857143,
+        "predicted_per_second": 561.2122183917261
+      },
+      "gpu": [
+        1542.0,
+        29.98,
+        43.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613958.4887593,
+      "latency_s": 0.0224,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.654,
+        "prompt_per_token_ms": 0.6635,
+        "prompt_per_second": 1507.1590052750566,
+        "predicted_n": 11,
+        "predicted_ms": 17.673,
+        "predicted_per_token_ms": 1.7672999999999999,
+        "predicted_per_second": 565.8348893792792
+      },
+      "gpu": [
+        1542.0,
+        30.26,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613968.5208194,
+      "latency_s": 0.0158,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.654,
+        "prompt_per_token_ms": 0.6635,
+        "prompt_per_second": 1507.1590052750566,
+        "predicted_n": 7,
+        "predicted_ms": 10.971,
+        "predicted_per_token_ms": 1.8285,
+        "predicted_per_second": 546.896363139185
+      },
+      "gpu": [
+        1542.0,
+        30.65,
+        42.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613978.549593,
+      "latency_s": 0.0138,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.561,
+        "prompt_per_token_ms": 0.64025,
+        "prompt_per_second": 1561.8898867629832,
+        "predicted_n": 6,
+        "predicted_ms": 9.073,
+        "predicted_per_token_ms": 1.8146,
+        "predicted_per_second": 551.0856387082551
+      },
+      "gpu": [
+        1542.0,
+        30.26,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613988.5828226,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.687,
+        "prompt_per_token_ms": 0.67175,
+        "prompt_per_second": 1488.6490509862301,
+        "predicted_n": 8,
+        "predicted_ms": 12.658,
+        "predicted_per_token_ms": 1.8082857142857143,
+        "predicted_per_second": 553.0099541791753
+      },
+      "gpu": [
+        1542.0,
+        30.37,
+        41.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787613998.6209688,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.627,
+        "prompt_per_token_ms": 0.65675,
+        "prompt_per_second": 1522.6494099733538,
+        "predicted_n": 11,
+        "predicted_ms": 18.31,
+        "predicted_per_token_ms": 1.831,
+        "predicted_per_second": 546.1496450027308
+      },
+      "gpu": [
+        1542.0,
+        29.64,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614008.6520534,
+      "latency_s": 0.0156,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.827,
+        "prompt_per_token_ms": 0.70675,
+        "prompt_per_second": 1414.9274849663955,
+        "predicted_n": 7,
+        "predicted_ms": 10.869,
+        "predicted_per_token_ms": 1.8114999999999999,
+        "predicted_per_second": 552.0287054926856
+      },
+      "gpu": [
+        1542.0,
+        29.45,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614018.681778,
+      "latency_s": 0.015,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.594,
+        "prompt_per_token_ms": 0.6485,
+        "prompt_per_second": 1542.0200462606015,
+        "predicted_n": 6,
+        "predicted_ms": 10.127,
+        "predicted_per_token_ms": 2.0254000000000003,
+        "predicted_per_second": 493.72963365261177
+      },
+      "gpu": [
+        1542.0,
+        29.7,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614028.714271,
+      "latency_s": 0.0175,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.606,
+        "prompt_per_token_ms": 0.6515,
+        "prompt_per_second": 1534.9194167306216,
+        "predicted_n": 8,
+        "predicted_ms": 12.953,
+        "predicted_per_token_ms": 1.8504285714285713,
+        "predicted_per_second": 540.4153477958774
+      },
+      "gpu": [
+        1542.0,
+        29.27,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614038.751189,
+      "latency_s": 0.0224,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.725,
+        "prompt_per_token_ms": 0.68125,
+        "prompt_per_second": 1467.8899082568807,
+        "predicted_n": 11,
+        "predicted_ms": 17.668,
+        "predicted_per_token_ms": 1.7668,
+        "predicted_per_second": 565.9950192438307
+      },
+      "gpu": [
+        1542.0,
+        29.25,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614048.7826116,
+      "latency_s": 0.0157,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.873,
+        "prompt_per_token_ms": 0.71825,
+        "prompt_per_second": 1392.272885485555,
+        "predicted_n": 7,
+        "predicted_ms": 10.843,
+        "predicted_per_token_ms": 1.8071666666666666,
+        "predicted_per_second": 553.3523932491007
+      },
+      "gpu": [
+        1542.0,
+        29.54,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614058.8106487,
+      "latency_s": 0.0137,
+      "prompt": "Reply exactly SENTINEL_OK.",
+      "answer": "SENTINEL_OK",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 13,
+        "prompt_n": 4,
+        "prompt_ms": 2.615,
+        "prompt_per_token_ms": 0.65375,
+        "prompt_per_second": 1529.6367112810706,
+        "predicted_n": 6,
+        "predicted_ms": 9.183,
+        "predicted_per_token_ms": 1.8366,
+        "predicted_per_second": 544.4843732984864
+      },
+      "gpu": [
+        1542.0,
+        28.92,
+        38.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614068.8437104,
+      "latency_s": 0.0172,
+      "prompt": "Return only JSON {\"state\":\"ok\"}.",
+      "answer": "{\"state\": \"ok\"}",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 14,
+        "prompt_n": 4,
+        "prompt_ms": 2.724,
+        "prompt_per_token_ms": 0.681,
+        "prompt_per_second": 1468.4287812041116,
+        "predicted_n": 8,
+        "predicted_ms": 12.481,
+        "predicted_per_token_ms": 1.783,
+        "predicted_per_second": 560.8524957936063
+      },
+      "gpu": [
+        1542.0,
+        29.17,
+        39.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614078.8809712,
+      "latency_s": 0.0228,
+      "prompt": "Record: ticket=INC-42. Return ticket onl",
+      "answer": "Ticket INC-42 has been returned.",
+      "sentinel_ok": false,
+      "timings": {
+        "cache_n": 17,
+        "prompt_n": 4,
+        "prompt_ms": 2.661,
+        "prompt_per_token_ms": 0.66525,
+        "prompt_per_second": 1503.194287861706,
+        "predicted_n": 11,
+        "predicted_ms": 18.018,
+        "predicted_per_token_ms": 1.8018,
+        "predicted_per_second": 555.000555000555
+      },
+      "gpu": [
+        1542.0,
+        29.84,
+        40.0
+      ],
+      "error": null
+    },
+    {
+      "t": 1787614088.9117455,
+      "latency_s": 0.0165,
+      "prompt": "A nonexistent command frobnicate-net has",
+      "answer": "NOT_AVAILABLE",
+      "sentinel_ok": true,
+      "timings": {
+        "cache_n": 30,
+        "prompt_n": 4,
+        "prompt_ms": 2.997,
+        "prompt_per_token_ms": 0.74925,
+        "prompt_per_second": 1334.6680013346681,
+        "predicted_n": 7,
+        "predicted_ms": 11.55,
+        "predicted_per_token_ms": 1.925,
+        "predicted_per_second": 519.4805194805194
+      },
+      "gpu": [
+        1542.0,
+        28.84,
+        40.0
+      ],
+      "error": null
+    }
+  ],
+  "request_count": 180,
+  "error_count": 0,
+  "sentinel_failures": [
+    2,
+    6,
+    10,
+    14,
+    18,
+    22,
+    26,
+    30,
+    34,
+    38,
+    42,
+    46,
+    50,
+    54,
+    58,
+    62,
+    66,
+    70,
+    74,
+    78,
+    82,
+    86,
+    90,
+    94,
+    98,
+    102,
+    106,
+    110,
+    114,
+    118,
+    122,
+    126,
+    130,
+    134,
+    138,
+    142,
+    146,
+    150,
+    154,
+    158,
+    162,
+    166,
+    170,
+    174,
+    178
+  ]
+}

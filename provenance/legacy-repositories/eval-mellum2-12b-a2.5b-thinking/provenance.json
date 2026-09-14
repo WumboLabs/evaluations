@@ -1,0 +1,71 @@
+{
+  "repository": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_instruct_q4_k_m-agent-backend-64k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_thinking_q4_k_m-agent-backend-64k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_instruct_q4_k_m-agent-backend-ladder",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/research/model-evaluations/mellum2-12b-a2.5b/reviews/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_instruct_q4_k_m-v024-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_thinking_q4_k_m-v025-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-gemma4-mellum2-qwen-family-wumbolabs-practical-v025.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "346e1118920df64b2caaae0bf171df2bd8b6a202ee002411deae841efe05308b",
+      "bytes": 13899
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_instruct_q4_k_m-fake-tool-64k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/mellum2_12b_a25b_thinking_q4_k_m-fake-tool-64k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/mellum2-instruct-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "1aaaf64b1d666416be3c063d8500510e72c952159459aa26e21c195996cbf681",
+      "bytes": 2787
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/mellum2-thinking-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "9a15f3529b766a82c90ee01fa76205b914c4f2fa9147b0deb6af070d4d57e281",
+      "bytes": 2789
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/JetBrains-Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/JetBrains-Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "events/2026-06-17-mellum2-thinking-64k-manual-score.md",
+      "kind": "byte-identical copy of the manual score note (public-safe, relative paths only)",
+      "sha256": "24808f423c412aeef2566aecee6f3494f596ad5b3f653a77248f6e95f8b45e6d",
+      "bytes": 4394
+    }
+  ]
+}

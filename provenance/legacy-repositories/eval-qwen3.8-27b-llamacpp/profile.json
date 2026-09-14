@@ -1,0 +1,17 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen38-27b",
+  "model_display_name": "Qwen3.8-27B",
+  "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
+  "profile_display_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
+  "runtime_family": "llama.cpp",
+  "runtime_version": "b10449 (0d9ceae1e38291035605613ab41a8f5e693d6fcd)",
+  "artifact": "Unsloth Qwen3.8-27B UD-Q2_K_XL GGUF (Unsloth rev 27af057ecb382ddfea5d12837360a8980560e3ed)",
+  "artifact_precision": "UD-Q2_K_XL",
+  "deployment_topology": "Full-GPU llama.cpp CUDA serving on a single-user workstation; quant-matrix and placement evidence in reports/ and manifests/",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB, SM120)",
+  "repository": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+  "first_event": "initial-evaluation-2026-08-21",
+  "current_status": "historical",
+  "notes": "Canonical repository for the historical llama.cpp tested profile, established 2026-09-12 by the WumboLabs model/profile/event publication-identity milestone. Evidence imported byte-identical from WumboLabs/eval-qwen3.8-27b (the original publication repository, retained as a historical archive). Historical model-role findings (hallucination rate, strict interfaces, native tools) live here and are not superseded by the current ExLlamaV3 H1 serving profile."
+}

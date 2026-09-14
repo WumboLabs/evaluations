@@ -1,0 +1,31 @@
+{
+  "repository": "WumboLabs/eval-qwen3-14b",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/qwen3_14b_q4_k_m-v025-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-wumbolabs-practical-v025-plus-grug.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "170a1744c77a7b07eb76163ae9f5f06acbf1154382cdd9cbf2ef8bd01667a648",
+      "bytes": 15825
+    },
+    {
+      "path": "local-llm/llmgauge/results/2026-07-15-fit-ladder-success-fallback-qwen3-14b-001",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/qwen3-14b-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "7783411235cdf4db45653dc7f980624089a11a5a60c601dbe91131cff119f462",
+      "bytes": 2597
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/unsloth-Qwen3-14B-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

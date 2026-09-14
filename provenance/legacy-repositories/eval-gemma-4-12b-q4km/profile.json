@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "gemma-4-12b",
+  "model_display_name": "Gemma 4 12B IT",
+  "profile_id": "gemma-4-12b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M (ggml-org)",
+  "runtime_family": "llama.cpp",
+  "artifact": "ggml-org/gemma-4-12b-it-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-gemma-4-12b-q4km",
+  "first_event": "gemma4-12b-lmx-speed-2026-07-04",
+  "current_status": "benchmark-only"
+}

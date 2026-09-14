@@ -1,0 +1,40 @@
+{
+  "schema": "welp-final-classification/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 10,
+  "contract": {
+    "id": "welp-final-classification",
+    "version": "0.1.0-draft",
+    "sha256": "81f73e61ff017944f94b564a2d970fa42af8c5ba2e062934b54ebde6f2149813"
+  },
+  "engine": {
+    "classify.py": "scripts/phase10/classify.py",
+    "sha256": "e627d89b3b890cb766c0bef2c0f7f66b26074afc7e6c53f4725af3d4f7905fc8",
+    "fixture_checks": "fixture_advancing -> READY PASS; fixture_limited -> READY_WITH_GUARDRAILS [extraction_helper] PASS"
+  },
+  "evidence_bundle": "results/phase10_evidence.json",
+  "engine_output": {
+    "roles": [],
+    "readiness": "NOT_READY",
+    "guardrails": [
+      "scorer-lexicon false-negative risk: exact-string gates understate capability (Phase 4 G6 + Phase 5 linux/rag failure analysis)",
+      "arithmetic/precision errors persist at temp 0.2 (r-arith-3 0.2 vs 2.0)",
+      "FINAL-line discipline unstable across seeds (reasoning-off ESCALATE_TO_5)"
+    ],
+    "not_reached": [],
+    "producer_claims_separate": {
+      "reported_separately": true,
+      "card": "262144 ctx trained; tool-calling supported; vision via mmproj (NOT_EVALUATED here)"
+    }
+  },
+  "interpretation": {
+    "readiness": "NOT_READY is the deterministic mechanical result: Phase 4 gate = DO_NOT_ADVANCE (G6 hallucination rate 1/21 > threshold) and Phase 5 modules carry no PASS classes by frozen decision D4 (characterization-only). No deployment role is earned.",
+    "not_ready_not_equal_worthless": "[INFERENCE-flagged as commentary, not gate] observed evidence: decode 102 t/s, practical viability 0.922 (all G1-G5 PASS), coding 0.867, structured_interfaces 0.875, native_tools 0.80, context useful 24576, soak clean. The blocking finding is reliability G6 + omp_agent auto-path closure, per protocol design (\"Models that fail an early gate stop there\").",
+    "semantics_applied": {
+      "NOT_REACHED_not_equal_PASS": true,
+      "NOT_APPLICABLE_not_equal_FAIL": true,
+      "producer_claims_reported_separately": true
+    }
+  },
+  "decision": "FINAL_CLASSIFICATION: NOT_READY (no roles earned)"
+}

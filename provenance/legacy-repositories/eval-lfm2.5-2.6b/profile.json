@@ -1,0 +1,14 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "lfm2.5-2.6b",
+  "model_display_name": "LFM2.5 2.6B",
+  "profile_id": "lfm2.5-2.6b-llamacpp-qad-q4-0",
+  "profile_display_name": "llama.cpp QAD Q4_0",
+  "runtime_family": "llama.cpp",
+  "artifact": "QAD Q4_0 from LiquidAI/LFM2.5-2.6B-GGUF @ f4a289c8a200a5ca71005ba7abc2dad33058a450",
+  "artifact_precision": "QAD Q4_0",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-lfm2.5-2.6b",
+  "first_event": "initial-evaluation-2026-08-26",
+  "current_status": "current"
+}

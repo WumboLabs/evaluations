@@ -1,0 +1,93 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+  "publication_date": "2026-09-12",
+  "disposition": "WEBSITE_PUBLISHED",
+  "reason": "Campaign complete under current WELP (READY_WITH_GUARDRAILS); publication of the website record and canonical public evidence remains human-gated. Canonical evidence is not yet published.",
+  "model": {
+    "display_name": "Gemma 4 12B IT",
+    "producer": "Google",
+    "official_id": "google/gemma-4-12b-it-qat-q4_0-gguf",
+    "official_revision": "unsloth/gemma-4-12b-it-GGUF fc034cfff751157913579611efad8462ac1be606",
+    "license": "Apache 2.0"
+  },
+  "artifact": {
+    "tested": "unsloth/gemma-4-12b-it-GGUF gemma-4-12b-it-UD-Q4_K_XL.gguf (re-acquired 2026-09-13T01:29:47Z after archive-gap repair authorization)",
+    "precision": "UD-Q4_K_XL (Unsloth Dynamic 2.0 over QAT Q4_0 lineage)",
+    "sha256": "90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e",
+    "source": "huggingface.co/unsloth/gemma-4-12b-it-GGUF"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "b9672 (74ade5274), CUDA SM120"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "PASS — RECHARACTERIZED",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "current"
+  },
+  "context": {
+    "native_maximum_tokens": 262144,
+    "native_maximum_disposition": "FIT_LIMIT — measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 131072,
+    "envelope_complete": true,
+    "notes": "Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED)."
+  },
+  "quality": {
+    "constrained_result": "12/12 frozen mechanical quality screen (frozen scorer, temp 0)",
+    "capability_highlights": [
+      "reasoning (thinking ON) multi-hop syllogism PASS",
+      "coding: generated function executes correctly (mechanical exec check)",
+      "tool calling: valid call + grounded continuation PASS"
+    ],
+    "key_guardrails": [
+      "verbosity: 13-14/20 reliability outputs hit frozen token caps; raise max_tokens or disable thinking for terse duty",
+      "git-safety advisory weakness (amending pushed commits framed as technically possible)",
+      "uncertainty/sycophancy categories 1-2/3",
+      "native 262,144 context is FIT_LIMIT on 12GB; guarded ceiling 131,072",
+      "Multimodal lane (image/audio/video via mmproj) is SUPPORTED_NOT_CHARACTERIZED: this event characterizes the canonical text profile only; no model-wide multimodal claim is made"
+    ],
+    "reliability_summary": "Proven mechanical 20-task corpus, 2 seeds: 11/20 and 10/20 mechanical pass; evidence discipline (3/3, 2/3) and strict interfaces (3/3, 2/3) strong; hallucination 2/4 both seeds; failures concentrated in uncertainty/sycophancy/git-safety with a strong truncation component"
+  },
+  "localmaxxing": {
+    "status": "MEASURED_NOT_SUBMITTED",
+    "verified_run": null,
+    "note": "local canonical-profile benchmark pp512 3201 tok/s / tg128 72.92 tok/s (5 reps); no exact existing service record (historical 2026-07-04 gemma4 LMX record is an unexecuted dry-run); submission requires separate human gate"
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "commit": "a5c9b4333d7f89303a680c8c8139839427230983",
+    "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4",
+    "published_at": "2026-09-13T08:20:00Z",
+    "note": "Append-only publish of the current-WELP recharacterization event into the existing canonical profile repository WumboLabs/eval-gemma-4-12b-qat-q4; all historical events preserved unchanged. The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "identity": {
+    "model_id": "gemma-4-12b",
+    "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+    "profile_status": "current",
+    "event_id": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+    "event_type": "CURRENT_WELP_RECHARACTERIZATION",
+    "event_date": "2026-09-12",
+    "evidence_scope": [
+      "performance",
+      "quality",
+      "capabilities",
+      "reasoning",
+      "coding",
+      "tools",
+      "reliability",
+      "context-envelope",
+      "localmaxxing-measured"
+    ]
+  },
+  "public_summary": "Gemma 4 12B IT (Google; tested as Unsloth UD-Q4_K_XL packaging of the QAT Q4_0 lineage, llama.cpp b9672 CUDA SM120, RTX 5070 12GB) recharacterized under current WELP. READY_WITH_GUARDRAILS: 12/12 frozen quality screen; reasoning, coding, and tool-use probes pass; decode 72.9 tok/s, pp512 3,201 tok/s, full GPU residency. Context envelope COMPLETE: native rungs through 131,072 VALIDATED including two-seed useful-context at 99.5% near-full occupancy; the exact 262,144 card maximum is FIT_LIMIT on 12GB (measured OOM admission + KV-slope accounting); no official extension mechanisms documented. Reliability is the guardrail: 11/20 and 10/20 mechanical pass across two seeds with a verbosity/truncation component and git-safety advisory weakness. Multimodal (image/audio/video via mmproj) is officially supported but NOT characterized (text-only campaign). Historical 2026-06-21 practical-use winner (259.2/300) is directionally confirmed; no protocol score equivalence is claimed.",
+  "notes": "Publication closeout 2026-09-13 COMPLETE: canonical public evidence PUBLISHED (append-only) in WumboLabs/eval-gemma-4-12b-qat-q4 at commit a5c9b43; website record generated by deterministic sync and deployed via Cloudflare Pages. Text profile COMPLETE under current WELP; multimodal lane SUPPORTED_NOT_CHARACTERIZED (scoped optional capability debt); LocalMaxxing MEASURED_NOT_SUBMITTED (submission remains human-gated).",
+  "website_record_slug": "eval-gemma-4-12b-recharacterization-2026-09-12"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "grug-12b",
+  "model_display_name": "Grug 12B",
+  "profile_id": "grug-12b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "kai-os/Grug-12B-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-grug-12b",
+  "first_event": "grug-practical-verdict-2026-07-04",
+  "current_status": "practical-use"
+}

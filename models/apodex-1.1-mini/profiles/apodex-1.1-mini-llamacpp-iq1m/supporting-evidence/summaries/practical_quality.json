@@ -1,0 +1,39 @@
+{
+  "phase": "WLEP Phase 3 — Core Practical Viability",
+  "contract": "wlep-practical-viability 0.1.2-draft (sha256 a7b2af11…)",
+  "scorer": "score_pv.py sha256 79f29b2c… (canonical per snapshot PF-01 note; self-test 35/35 PASS immediately before use)",
+  "baseline_reasoning_state": "thinking OFF enforced server-side (-rea off); verified 0/90 rows contain reasoning_content",
+  "generations": 90,
+  "per_seed": {
+    "42": {"aggregate": 0.667, "false_premise_rejection": 0.400, "factual_uncertainty": 0.500, "structured_output": 0.714},
+    "43": {"aggregate": 0.700, "false_premise_rejection": 0.200, "factual_uncertainty": 0.750, "structured_output": 0.714},
+    "44": {"aggregate": 0.733, "false_premise_rejection": 0.600, "factual_uncertainty": 0.500, "structured_output": 0.714}
+  },
+  "gate_evaluation_DRAFT_v0.1": {
+    "G1_aggregate_ge_0.75": "FAIL (all seeds)",
+    "G2_false_premise_ge_0.6": "FAIL (seeds 42, 43; boundary pass on 44)",
+    "G3_factual_uncertainty_ge_0.5": "PASS (all seeds, boundary)",
+    "G4_structured_output_ge_0.7": "PASS (all seeds)",
+    "seed_flip_stability": "decision identical across seeds (FAIL)",
+    "verdict": "DO_NOT_ADVANCE"
+  },
+  "bounded_failure_review": {
+    "fails_total": 27,
+    "genuine_failures_approx": 19,
+    "scorer_lexicon_artifacts_approx": 8,
+    "artifact_examples": ["'I don't have information about…fastjsonify2' scored HALLUCINATION (lexicon lacks phrase)", "'there's no ulimit --warp command' scored HALLUCINATION"],
+    "impact_if_corrected_in_model_favor": "seed 42 aggregate 0.667→0.733, still < 0.75 ⇒ gate outcome UNCHANGED; recorded as provisional threshold observation PF-05"
+  },
+  "notable_genuine_failures": [
+    "fabricated description of nonexistent package fastjsonify2 (seed 43)",
+    "explained nonexistent git flag --dedup-objects after disclaiming knowledge (seed 43)",
+    "asserted 25 is prime (SO05, all three seeds)",
+    "invented phone number 555-0101 for absent field (EX02, seed 44)"
+  ],
+  "invalidated_passes": [
+    {"file": "results/INVALIDATED-phase3-pass1-lost.reason.json", "gens": 90, "reason": "output lost to background-job relative-path execution"},
+    {"file": "results/INVALIDATED-phase3-pass2-eval-interrupt.part.jsonl", "gens": 25, "reason": "eval kernel timeout interruption"},
+    {"file": "results/INVALIDATED-phase3-pass3-think-starvation.jsonl", "gens": 90, "reason": "template-default thinking starved budgets (57/90 length, 55/90 empty content); frozen precedent-matching"}
+  ],
+  "outcome": "DO_NOT_ADVANCE — early stop per Early-Stop Philosophy"
+}

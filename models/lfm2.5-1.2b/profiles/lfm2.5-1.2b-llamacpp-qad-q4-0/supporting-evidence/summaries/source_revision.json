@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-08-24T17:25:00Z",
+  "repositories": [
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "last_modified_checked": "2026-08-24",
+      "role": "canonical source (BF16, PTQ Q4_0, QAD Q4_0, Q4_K_M, Q5_K_M)"
+    },
+    {
+      "repo": "unsloth/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "b01cc872e5918b0fdec170003cd854851e3ed854",
+      "last_modified": "2026-08-05T14:14:38Z",
+      "role": "external control (UD-Q4_K_XL)"
+    }
+  ],
+  "architecture": {
+    "family": "lfm2",
+    "parameters": 1170000000,
+    "layers": 16,
+    "conv_blocks": 10,
+    "gqa_blocks": 6,
+    "training_tokens": "28T (extended pre-training from 10T + multi-stage RL)",
+    "context_length": 32768
+  },
+  "official_sampling": {
+    "temperature": 0.1,
+    "top_k": 50,
+    "repeat_penalty": 1.05,
+    "source_gguf_card": "--temp 0.1 --top-k 50 --repeat-penalty 1.05",
+    "source_base_card": {"temperature": 0.1, "repetition_penalty": 1.05},
+    "note": "Repeat penalty differs from the 2.6B card (1.1). Verified 2026-08-24."
+  },
+  "qad_release_claims_1_2b": {
+    "url": "https://www.liquid.ai/blog/qad",
+    "published": "2026-08-19",
+    "bf16_retention_percent": 97.4,
+    "ptq_gap_recovered_percent": 65.5,
+    "benchmarks": ["GPQA Diamond", "MMLU-Pro", "IFEval", "IFBench", "Multi-IF", "BFCLv4", "AIME25"],
+    "repeats": 5,
+    "claims": [
+      "QAD substantially improves the Q4_0 checkpoint",
+      "QAD Q4_0 keeps native Q4_0 memory and throughput (same GGUF format/tensor layout/runtime path)",
+      "QAD within half a point of Q5_K_M at 1.2B",
+      "QAD beats Q4_K_M and matches Unsloth UD-Q4_K_XL"
+    ]
+  },
+  "license": {
+    "name": "lfm1.0",
+    "type": "other",
+    "file_preserved": "models/LICENSE"
+  },
+  "llama_cpp_compatibility": "Official GGUF and base cards list llama.cpp as supported backend; runtime build 10449 commit 0d9ceae1 used for all runs.",
+  "unsloth_note": "Unsloth UD-Q4_K_XL.gguf LFS oid 856aeee... is byte-identical to unsloth repo's own LFM2.5-1.2B-Instruct-Q4_K_M.gguf; it is NOT byte-identical to Liquid's Q4_K_M.gguf (oid b1b3de1..., 416 bytes smaller)."
+}

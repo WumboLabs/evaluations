@@ -1,0 +1,82 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "gemma4-e4b-rtx5070-welp-characterization-2026-09-10",
+  "publication_date": "2026-09-11",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "display_name": "Gemma 4 E4B",
+    "producer": "Google",
+    "official_id": "google/gemma-4-E4B-it",
+    "official_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "license": "Apache-2.0 (Gemma license terms apply)"
+  },
+  "artifact": {
+    "tested": "gemma-4-E4B_q4_0-it.gguf + official gemma-4-E4B-it-mmproj.gguf (Google official QAT release)",
+    "precision": "QAT Q4_0 weights, F16 KV cache",
+    "sha256": "676c3507 (weights; matches pinned upstream LFS) / 7498a37c (mmproj; matches pinned upstream LFS)",
+    "source": "google/gemma-4-E4B-it-qat-q4_0-gguf @ 4b4a2c1d584be7264f87aac328a1bc739ce81b6c"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "0.1.0-dev build b10449, commit 0d9ceae1e38291035605613ab41a8f5e693d6fcd (campaign-local CUDA 13.3 build, SM120)",
+    "notes": "All 42 layers + PLE tables + vision/audio encoders GPU-resident; official mmproj loaded for multimodal arms; greedy temperature-0 primary surface"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux 44"
+  },
+  "welp": {
+    "outcome": "PASS \u2014 GEMMA4_E4B_EVIDENCE_COMPLETION_COMPLETE",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "Official Google QAT Q4_0 + official mmproj \u2014 the only official precision that hosts the full card range with reserve on this GPU; community Q4_K_M pair retained as evidence only (provenance unknown)"
+  },
+  "context": {
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 131072,
+    "native_maximum_tokens": 131072,
+    "envelope_complete": true,
+    "native_maximum_disposition": "Exact native 131,072: measured FAILED on the strict aggregate useful-context gate while near-full performance itself was valid (both seeds 99.50% occupancy, TTFT ~38 s, decode ~79 tok/s, zero errors) and five-needle target retrieval stayed perfect (10/10 across ALL rungs including the exact maximum)",
+    "notes": "Strict aggregate gate FAILED at every rung; divergence is explicit \u2014 content retrieval is perfect everywhere (decoy resistance 10/10), while strict output/instruction compliance is the failure surface (absent-field fills a present value instead of NOT_SPECIFIED; JSON tail truncation from 16K upward). No official context extensions exist for E4B (source-backed absence)."
+  },
+  "performance": {
+    "surface_note": "Medians over five measured repetitions per surface; near-full ladder values are medians of two seeds per rung",
+    "short_ttft_s": 0.0225,
+    "short_decode_tps": 150.4,
+    "moderate_input_tokens": 2785,
+    "moderate_ttft_s": 0.504,
+    "moderate_prefill_tps": 7217,
+    "moderate_decode_tps": 145.7
+  },
+  "quality": {
+    "constrained_result": "3/7 strict gates (markdown-fenced JSON plus a real absent-field grounding defect); content-level supplement: 3/3 needle facts exact, decoy absent, checksum correct",
+    "capability_highlights": [
+      "Multimodal on 12 GB: vision TESTED_PASS, multi-image TESTED_PASS, audio ASR TESTED_PASS, audio AST TESTED_PASS, bounded three-frame video TESTED_PASS",
+      "Reasoning (thinking mode), coding (4/4 execution cases), function calling, and bounded tool-result use TESTED_PASS",
+      "Perfect five-needle retrieval through the exact 131,072 maximum; 80 valid scientific requests across 9 supervised arms with zero CUDA/OOM/Xid"
+    ],
+    "key_guardrails": [
+      "Strict-format fragility: fenced JSON when markdown is not explicitly forbidden; schema-tail truncation from 16K upward; absent-field (negative-space) answers unreliable at temperature 0",
+      "OCR/document understanding TESTED_LIMITED (one document ID digit dropped at temperature 0; broader OCR types untested)",
+      "Video evidence bounded to frame-sequence probes (full <=60 s @1fps producer envelope not established); MTP/speculative deferred (distinct serving surface)"
+    ],
+    "reliability_summary": "Canonical 32K profile: 20/20 runtime completion with zero errors; behavioral exactness 14/20 \u2014 all six failures are the known dossier strict-format/absent defect, bit-stable across arms; bounded, not soak/endurance"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 152.7,
+    "ttft_ms": 59.74,
+    "submission_ref": "cmtwgcs7c097sps01sdq9ihbu",
+    "verified_run": null,
+    "note": "SUBMITTED once, origin NEW, service APPROVED (in-campaign, 2026-09-11); verifiedRun null \u2014 the service returned no verification state and the client could not transmit verification fields; recorded honestly, not claimed as verified; actual prompt tokens 77 (endpoint usage); tokSPrefill 1,322.5"
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-gemma4-e4b",
+    "note": "Canonical public evidence published in this repository. The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "website_record_slug": "gemma4-e4b",
+  "public_summary": "Full WELP characterization of Gemma 4 E4B (official Google QAT Q4_0 + official mmproj) on an RTX 5070 12GB under llama.cpp: READY_WITH_GUARDRAILS with the complete 131,072-token model-card envelope dispositioned on a consumer GPU \u2014 32,768 default, exact maximum guarded with ~38 s near-full TTFT. Perfect five-needle retrieval through the exact maximum, but the strict aggregate useful-context gate FAILED at every rung (format and absent-field defects). Vision, multi-image, ASR, AST, and bounded video passed; OCR is TESTED_LIMITED; reliability 20/20 completion with 14/20 behavioral exactness. 80 valid scientific requests across 9 arms; zero CUDA/OOM/Xid.",
+  "record_description": "Official Google QAT Q4_0 + mmproj on llama.cpp, READY_WITH_GUARDRAILS: 32K default / 131K guarded with the full card envelope complete; perfect five-needle retrieval through the exact 131,072 maximum while the strict aggregate gate FAILED at every rung. Vision, multi-image, ASR, AST and bounded video PASS; OCR TESTED_LIMITED; reliability 20/20 completion, 14/20 exactness."
+}

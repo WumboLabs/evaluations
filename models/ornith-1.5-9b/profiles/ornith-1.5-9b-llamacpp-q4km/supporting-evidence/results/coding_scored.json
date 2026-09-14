@@ -1,0 +1,1082 @@
+[
+ {
+  "id": "code-clamp",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-parse_csv",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-unique_sorted",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-chunks",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-deep_get",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-slugify",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-freq",
+  "seed": 42,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 9, in <module>\n    assert count_words('A a\\nB') == {'a':2,'b':1}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-dedupe_dicts",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-roman",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-flatten",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-retry",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-window",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-env",
+  "seed": 42,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 18, in <module>\n    assert parse_env(['A=1',' B=x=y',' # no','']) == {'A':'1','B':'x=y'}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-interval",
+  "seed": 42,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 17, in <module>\n    assert merge_intervals(x) == [(1,7),(10,10)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-topk",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-hex",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-group",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rotate",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-pairs",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-trim",
+  "seed": 42,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 9, in <module>\n    assert trim_lines(' a  \\n b\\t\\n') == ' a\\n b\\n'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-matrix",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-suffix",
+  "seed": 42,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 36, in <module>\n    assert common_suffix('testing','nesting') == 'sting'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-hist",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-url",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-brackets",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rle",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-nearest",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-ini",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-minrefactor",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-errors",
+  "seed": 42,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-clamp",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-parse_csv",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-unique_sorted",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-chunks",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-deep_get",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-slugify",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-freq",
+  "seed": 43,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 9, in <module>\n    assert count_words('A a\\nB') == {'a':2,'b':1}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-dedupe_dicts",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-roman",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-flatten",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-retry",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-window",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-env",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-interval",
+  "seed": 43,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 17, in <module>\n    assert merge_intervals(x) == [(1,7),(10,10)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-topk",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-hex",
+  "seed": 43,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 25, in <module>\n    assert parse_hex('0x10') == 16\n           ~~~~~~~~~^^^^^^^^\n  File \"/work/runner.py\", line 21, in parse_hex\n    raise ValueError(\"Invalid hexadecimal input\")\nValueError: Invalid hexadecimal input\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-group",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rotate",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-pairs",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-trim",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-matrix",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-suffix",
+  "seed": 43,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 37, in <module>\n    assert common_suffix('testing','nesting') == 'sting'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-hist",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-url",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-brackets",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rle",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-nearest",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-ini",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-minrefactor",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-errors",
+  "seed": 43,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-clamp",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-parse_csv",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-unique_sorted",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-chunks",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-deep_get",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-slugify",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-freq",
+  "seed": 44,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 9, in <module>\n    assert count_words('A a\\nB') == {'a':2,'b':1}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-dedupe_dicts",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-roman",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-flatten",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-retry",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-window",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-env",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-interval",
+  "seed": 44,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 17, in <module>\n    assert merge_intervals(x) == [(1,7),(10,10)]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-topk",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-hex",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-group",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rotate",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-pairs",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-trim",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-matrix",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-suffix",
+  "seed": 44,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "executed": true,
+   "returncode": 1,
+   "stdout": "",
+   "stderr": "Traceback (most recent call last):\n  File \"/work/runner.py\", line 34, in <module>\n    assert common_suffix('testing','nesting') == 'sting'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+   "passed": false
+  }
+ },
+ {
+  "id": "code-hist",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-url",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-brackets",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-rle",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-nearest",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-ini",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-minrefactor",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ },
+ {
+  "id": "code-errors",
+  "seed": 44,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "executed": true,
+   "returncode": 0,
+   "stdout": "",
+   "stderr": "",
+   "passed": true
+  }
+ }
+]

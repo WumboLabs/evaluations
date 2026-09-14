@@ -1,0 +1,278 @@
+{
+  "contract_id": "wlep-reasoning",
+  "version": "0.1.0-draft",
+  "status": "DRAFT / PROTOCOL DEVELOPMENT",
+  "created": "2026-08-25",
+  "purpose": "Compare official reasoning OFF vs official reasoning ON using producer-supported mechanisms only. CONDITIONAL module.",
+  "applicability": {
+    "applies_when": [
+      "model has an official reasoning mode/mechanism (template kwarg or dedicated flag)",
+      "producer markets/tests model explicitly as reasoning model",
+      "campaign declared reasoning applicable before Phase 5"
+    ],
+    "never_force_on_models_without_mechanism": true,
+    "no_invented_prompts": "never prompt 'think harder'; mechanism only"
+  },
+  "pins": {
+    "template_kwarg_default": "enable_thinking",
+    "reasoning_effort": "record if supported",
+    "preserve_thinking": false,
+    "sampling_off_on": "identical both sides; recorded per model",
+    "output_cap_per_side_tokens": 400
+  },
+  "metrics": [
+    "final_correctness",
+    "delta_vs_baseline",
+    "completion_tokens",
+    "wall_s",
+    "ttft_ms",
+    "decode_tps",
+    "formatting_impact",
+    "truncation",
+    "failure_behavior"
+  ],
+  "task_count": 10,
+  "tasks": [
+    {
+      "id": "r-arith-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "A warehouse had 42 units, sold 17, then received 2 dozen more. How many units now?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "59"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-arith-2",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "A 250 W GPU runs at full power for 3.5 hours. Energy in watt-hours?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "875"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-arith-3",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "If 7.4 is needed for GREv6 and RTR-A runs 7.2, how many major-minor versions behind is it? Express as X.Y difference in minor versions only."
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "0.2"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-multistep-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "Price: 249 USD, EUR rate 0.92 exactly. What is 249*0.92 in EUR, rounded to whole units?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "229"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-multistep-2",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "Stock 310. Three orders of 5, then one order of the remaining cap of 10. Units sold total?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "25"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-logic-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "All cooling parts are in bay 2. Some items in bay 2 are fans. Can we conclude every item in bay 2 is a fan? YES or NO."
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "NO"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-logic-2",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "If firmware >= 7.4 supports GREv6, and RTR-C runs 8.0, does RTR-C support GREv6? YES or NO."
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "YES"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-code-diag-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "Python: def add(a,b): return a-b ; tests expect add(2,3)==5. One word: which line conceptually is wrong, the return expression or the test?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "RETURN"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-plan-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "You must reboot server A after server B finishes. B finishes at 10:15. A's reboot takes 6 minutes. At what time is A back? Answer HH:MM."
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "10:21"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    },
+    {
+      "id": "r-sym-1",
+      "category": "reasoning",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Solve the problem. End with a line 'FINAL: <answer>'."
+        },
+        {
+          "role": "user",
+          "content": "Sequence: 3, 6, 12, 24, ? Next term?"
+        }
+      ],
+      "max_tokens": 300,
+      "expected": {
+        "kind": "final_line_exact",
+        "value": "48"
+      },
+      "objective_scoring": "mechanical",
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening synthetic (uncontaminated arithmetic/logic)"
+      }
+    }
+  ],
+  "sampling_default": {
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "change_history": [
+    {
+      "version": "0.1.0-draft",
+      "date": "2026-08-25",
+      "note": "initial draft; uncontaminated synthetic tasks"
+    }
+  ]
+}

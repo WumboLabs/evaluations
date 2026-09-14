@@ -1,0 +1,1 @@
+llama-server -m <USER_HOME>/Projects/local-llm/models/ornith-1.5-9b/artifacts/Ornith-1.5-9B-Q4_K_M.gguf --jinja -ngl 99 -c 32768 -np 1 -b 2048 -ub 512 --flash-attn on --fit off --metrics --host 127.0.0.1 --port 8931 --no-ui

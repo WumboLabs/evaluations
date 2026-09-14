@@ -1,0 +1,41 @@
+{
+  "speed_warmups_per_candidate": 1,
+  "speed_measured_repetitions_per_candidate": 5,
+  "speed_candidates": 6,
+  "unique_practical_tasks": 52,
+  "practical_seeds": "1 (seed 42) per task per model",
+  "practical_generations": 312,
+  "hallucination_generations": 72,
+  "structured_output_generations": 72,
+  "tool_generations_v1": 30,
+  "tool_generations_v2": {
+    "main_calls": 60,
+    "followup_calls": 42,
+    "note": "approx: follow-ups issued when a first call occurred"
+  },
+  "coding_executions": {
+    "sandbox_runs": 126,
+    "generations": 126,
+    "per_quant": 21
+  },
+  "variance_generations": 90,
+  "context_probes": {
+    "models": 4,
+    "rungs": [
+      4096,
+      8192,
+      16384,
+      32768
+    ],
+    "retrieval_calls": 16,
+    "absent_probe_calls": 16
+  },
+  "fidelity_runs": 12,
+  "soak_requests": 180,
+  "producer_benchmark_questions": 0,
+  "supervising_agent_review_operations": {
+    "mechanical_scored_generations": "all (612+ model generations scored by scripts)",
+    "manually_inspected": "all failures per lane + bounded samples: hallucination raw answers (12 tasks x 3 models shown), coding failure classes, bool_field correction review, soak sentinel-3 prose case",
+    "corrections_from_review": 1
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "policy": "delete nothing; classification only",
+  "artifacts": [
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "filename": "LFM2.5-1.2B-Instruct-BF16.gguf",
+      "bytes": 2343326528,
+      "sha256": "3d80914b903cd6f3cc041208cf20ec46a3224f840c732e5fd7698832b4743d1b",
+      "local_path": "models/LFM2.5-1.2B-Instruct-BF16.gguf",
+      "classification": "KEEP"
+    },
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "filename": "LFM2.5-1.2B-Instruct-Q4_0.gguf",
+      "bytes": 695751488,
+      "sha256": "2ea801949d760cdf1a2cc04a54262c22c3c0c54f0769d57760c9adeb0e59233f",
+      "local_path": "models/LFM2.5-1.2B-Instruct-Q4_0.gguf",
+      "classification": "KEEP"
+    },
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "filename": "LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf",
+      "bytes": 695755488,
+      "sha256": "bb741ebb106d543e9de114b843a3d3d73d51c74b5801e69da2abde821a0cb3e1",
+      "local_path": "models/LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf",
+      "note": "matches expected campaign hash exactly",
+      "classification": "KEEP"
+    },
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "filename": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+      "bytes": 730895168,
+      "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+      "local_path": "models/LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+      "classification": "KEEP"
+    },
+    {
+      "repo": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "6767265158422fb8a19c62ceb45f16f05363615b",
+      "filename": "LFM2.5-1.2B-Instruct-Q5_K_M.gguf",
+      "bytes": 843354944,
+      "sha256": "fa03f3ac4da941a53a0cd4450aacf6a80804c6a1ff885d2fdcbe9406c03215c4",
+      "local_path": "models/LFM2.5-1.2B-Instruct-Q5_K_M.gguf",
+      "classification": "OPTIONAL"
+    },
+    {
+      "repo": "unsloth/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "b01cc872e5918b0fdec170003cd854851e3ed854",
+      "filename": "LFM2.5-1.2B-Instruct-UD-Q4_K_XL.gguf",
+      "bytes": 730895584,
+      "sha256": "856aeee6d85ac684b1db8dee48795b44fc06731ecda03aee36ece682413a9b9a",
+      "local_path": "models/LFM2.5-1.2B-Instruct-UD-Q4_K_XL.gguf",
+      "classification": "OPTIONAL"
+    }
+  ],
+  "notes": {
+    "UD-Q4_K_XL.gguf": "OPTIONAL after human review - byte-identical to unsloth Q4_K_M; distinct from Liquid Q4_K_M",
+    "Q5_K_M.gguf": "OPTIONAL higher-quality reference"
+  },
+  "potential_recoverable_bytes_after_human_review": 1574250528,
+  "total_acquired_bytes": 6039979200
+}

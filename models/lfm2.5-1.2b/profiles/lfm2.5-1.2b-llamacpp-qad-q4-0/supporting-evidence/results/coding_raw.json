@@ -1,0 +1,1022 @@
+{
+  "BF16": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to the ultrajsonx library.\n         ^\nSyntaxError: unterminated string literal (detected at line 1)\n",
+      "dependency_hallucination": false
+    }
+  ],
+  "PTQ_Q4_0": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to the ultrajsonx library directly. However, I can guide you on how to parse JSON in Python using the built-in `json` module. Would you like me to provide that?\n         ^\nSyntaxError: unterminated string literal (detected at line 1)\n",
+      "dependency_hallucination": false
+    }
+  ],
+  "QAD_Q4_0": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(2,3)==5; assert solve(-2,7)==5\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to the \"ultrajsonx\" library, but I can help you parse JSON using standard Python libraries if needed. Let me know if you'd like assistance with that!\n      ^^^\nSyntaxError: invalid syntax\n",
+      "dependency_hallucination": false
+    }
+  ],
+  "Q4_K_M": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to external libraries or tools beyond my training data.\n         ^\nSyntaxError: unterminated string literal (detected at line 1)\n",
+      "dependency_hallucination": false
+    }
+  ],
+  "UD_Q4_K_XL": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve([1,2,4,7])==2\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to external libraries or tools beyond my training data.\n         ^\nSyntaxError: unterminated string literal (detected at line 1)\n",
+      "dependency_hallucination": false
+    }
+  ],
+  "Q5_K_M": [
+    {
+      "task": "add-0",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-1",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-2",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "even"
+    },
+    {
+      "task": "words-3",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-4",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-5",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-6",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-7",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "even"
+    },
+    {
+      "task": "words-8",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-9",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-10",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-11",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-12",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "even"
+    },
+    {
+      "task": "words-13",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-14",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "add-15",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "add"
+    },
+    {
+      "task": "reverse-16",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\"abc\")==\"cba\"\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "reverse"
+    },
+    {
+      "task": "even-17",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "even"
+    },
+    {
+      "task": "words-18",
+      "parse_success": true,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "Traceback (most recent call last):\n  File \"/work/solution.py\", line 4, in <module>\n    assert solve(\" a  b c \")==3\n           ^^^^^\nNameError: name 'solve' is not defined\n",
+      "name": "words"
+    },
+    {
+      "task": "max-19",
+      "parse_success": true,
+      "execution_success": true,
+      "flagged_unknown": false,
+      "error": "",
+      "name": "max"
+    },
+    {
+      "task": "dep-hallucination",
+      "parse_success": false,
+      "execution_success": false,
+      "flagged_unknown": false,
+      "error": "  File \"/work/solution.py\", line 1\n    I don't have access to the ultrajsonx library.\n         ^\nSyntaxError: unterminated string literal (detected at line 1)\n",
+      "dependency_hallucination": false
+    }
+  ]
+}

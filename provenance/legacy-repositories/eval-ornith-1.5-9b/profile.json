@@ -1,0 +1,15 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "ornith-1.5-9b",
+  "model_display_name": "Ornith 1.5 9B",
+  "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "Ornith-1.5-9B-Q4_K_M.gguf (source rev 489cb97981b8654bcfcf30ce1f94ed1b62e07b53)",
+  "artifact_precision": "Q4_K_M",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-ornith-1.5-9b",
+  "first_event": "initial-evaluation-2026-08-27",
+  "current_status": "current",
+  "notes": "Model-level final classification NOT_READY is a model finding, not a profile-status label."
+}

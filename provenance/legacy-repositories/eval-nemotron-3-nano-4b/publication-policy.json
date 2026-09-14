@@ -1,0 +1,48 @@
+{
+  "future_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+  "evaluation_classification": "READY_WITH_GUARDRAILS",
+  "bounded_conclusion": "Current-WELP recharacterization (2026-09-11, append-only follow-up in reports/): MODEL-CARD CONTEXT ENVELOPE COMPLETE = YES — native maximum 262,144 VALIDATED at both required seeds at >=99.48% near-full occupancy with the strict useful-context aggregate passing at every rung (8K/32K/128K/262K); official context extensions: none (source-backed absence); practical default 32,768 / guarded 131,072; frozen 12-task quality screen 12/12; reliability is the guardrail — transport/runtime behavior strong but behavioral reliability shows measurable hallucination/evidence-discipline defects (clean-pass 0.30/0.25, hallucination 0.20/0.15 across seeds 42/314159 on the 20-request stratified mechanical corpus). Dense hybrid Mamba-2/MLP with 4 attention layers (nemotron_h), not MoE. The preserved 2026-08-25 campaign remains PROTOCOL_BLOCKED (no deterministic Phase-3 advancement threshold existed); the 0.93-vs-0.38 divergence is a methodology surface difference. Results are bounded by the tested artifact, runtime, hardware, configuration, and protocol snapshot; they are not universal model rankings.",
+  "localmaxxing_status": "SUBMITTED (VERIFIED_EXISTING)/cmt86gy1j000eli01ca3cwwn0",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "report.md",
+      "reports/",
+      "website-publication.json",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "WLEP-CONFORMANCE.md",
+      "protocol-findings.md",
+      "protocol-snapshot/",
+      "publication/",
+      "profiles/",
+      "prompts/",
+      "results/",
+      "summaries/",
+      "scripts/"
+    ],
+    "LOCAL_ONLY": [
+      "models/ (symlink -> ../../models/nemotron-3-nano-4b/artifacts, never tracked)",
+      "telemetry/"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/ (EXCLUDED_INITIAL_RELEASE; excluded wholesale; no per-file source review performed)",
+      "omp-evidence/ (OMP internals - review)",
+      "wlep-validation-2/localmaxxing/speed-test.json (host telemetry incl. GPU model/OS) - review"
+    ]
+  },
+  "restricted_default_do_not_publish": [
+    "sources/ (acquisition)",
+    "omp*/, omp-evidence/",
+    "runtime/",
+    "logs/",
+    "telemetry/ raw host paths",
+    "caches/",
+    "private machine identifiers"
+  ],
+  "secret_scan": "CLEAN 2026-08-26; re-scanned CLEAN 2026-09-12 including the recharacterization follow-up files",
+  "initial_source_policy": "EXCLUDED_INITIAL_RELEASE: sources/ is excluded wholesale; no per-file source review was performed.",
+  "policy": "ALLOWLIST_FIRST"
+}

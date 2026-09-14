@@ -1,0 +1,41 @@
+{
+  "publication_layer": "LocalMaxxing.com (community benchmark/report layer; provisional workflow addition per operator handoff §30)",
+  "cli_inspection": {
+    "binary": "lmx (LocalMaxxing CLI), local copy at ~/Projects/local-llm/localmaxxing/tmp/lmx-bin/lmx",
+    "version_banner": "no version subcommand; help inspected 2026-08-25",
+    "report_feature_in_cli": false,
+    "note": "CLI has no 'report' subcommand. Reports exist as API endpoints documented in 'lmx context': GET /api/report-format, POST /api/models/<org>/<name>/reports, PATCH /api/reports/<reportId>.",
+    "cli_update_attempted": "Downloaded current lmx-linux-amd64.tar.gz from localmaxxing.com root path — serves HTML SPA page, not a tarball; no public source repo found in binary strings; docs URL /docs/agent-skill returns 404. No newer CLI build located to install."
+  },
+  "model_identity_resolved": {
+    "hf_id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+    "quantization": "Q4_K_M",
+    "revision": "ba223d14e45525f7fae81db77ea8cabeb2fc6c25"
+  },
+  "speed_submission": {
+    "status": "READY_FOR_API_VALIDATION — blocked by missing credentials",
+    "methodology_compatible": true,
+    "dry_run_first": true,
+    "dry_run_artifact": "~/Projects/local-llm/localmaxxing/runs/nvidia-NVIDIA-Nemotron-3-Nano-4B-GGUF/20260825T015509Z.json",
+    "measured_run": "~/Projects/local-llm/localmaxxing/runs/nvidia-NVIDIA-Nemotron-3-Nano-4B-GGUF/20260825T015538Z.json",
+    "measurement_command": "llama-bench -m <gguf> -p 512 -n 128 -o json (fresh campaign measurement, llama.cpp build 10449)",
+    "headline_metrics": {"tokSOut": 179.867201, "ttftMs": 65},
+    "local_validation": "valid (lmx benchmark validate-local)",
+    "submission_ids": [],
+    "blocker": "No LMX_API_KEY / bhk_... credential available in this environment; account/key creation requires operator action.",
+    "next_command_for_operator": "cd ~/Projects/local-llm/localmaxxing && lmx auth --key bhk_... && lmx benchmark runs submit runs/nvidia-NVIDIA-Nemotron-3-Nano-4B-GGUF/20260825T015538Z.json --api-key bhk_..."
+  },
+  "benchmark_suite_submissions": {
+    "status": "NOT_APPLICABLE",
+    "reason": "Supported eval suites (hellaswag shards etc.) were not part of the reachable WLEP phases; submitting suite results now would be measurements outside the frozen protocol snapshot's campaign scope. No cherry-picking performed."
+  },
+  "report_submission": {
+    "status": "DRAFT_READY — not submitted",
+    "draft_path": "publication/localmaxxing_report_draft.md",
+    "content_format": "gfm (matches GET /api/report-format version 1)",
+    "blocker": "requires authenticated POST with bhk_ API key; also operator authorization for external publication",
+    "x_articles_export": "not attempted; external publication requires explicit operator authorization per handoff §30.7"
+  },
+  "exclusions_verified": ["no model binaries", "no secrets", "no private data", "no copyrighted benchmark material"],
+  "record_updated_at_utc": "2026-08-25T02:20Z"
+}

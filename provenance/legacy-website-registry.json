@@ -1,0 +1,1516 @@
+{
+  "version": 2,
+  "description": "WumboLabs Labs publication registry. Single durable index mapping each published MODEL-EVIDENCE EVENT to its stable identities (model_id, profile_id, event_id), its canonical public evidence, and its publication state. The generated site is MODEL-oriented (one Labs page per model_id); this registry stays EVENT/export-oriented. The website is a derivative of canonical public evidence, never a second source of model facts. See docs/labs-publication-workflow.md.",
+  "version_2_note": "v2 (2026-09-12, model/profile/event publication-identity milestone). Contract: one model_id = one canonical Labs page; one profile_id = one canonical public eval repository; one event_id = one dated Records entry. Records entries describe EVIDENCE EVENTS (records[] was per-page in v1). slug is retained per event as the unique registry key (historical v1 slugs kept, including superseded event-style slugs, for campaign-registry continuity). legacy_urls lists superseded public Labs URLs for which sync generates compatibility redirects to the model page event anchor. canonical_evidence may carry original_repo/original_commit when evidence was migrated to a canonical profile repository; migrated evidence is byte-identical (MIGRATION.md in each new repository).",
+  "generated_records_note": "Entries with authoring=generated are rendered by scripts/sync_labs.py from a website-publication.json export (schema wumbolabs-labs-publication/1). source.file is a relative filename resolved against the --local-exports directory passed to the sync command at runtime; the registry deliberately contains no machine-local absolute paths. source.sha256 pins the exact export bytes consumed; sync fails if the file no longer matches. When canonical evidence is published, the entry uses source.kind=github-raw with repo/ref/path and publication_state=published.",
+  "hand_authored_records_note": "Entries with authoring=hand-authored have no machine-readable export; their event body lives in data/<event_body> (moved verbatim from the pre-v2 per-event Labs pages) and sync verifies presence and identity without rewriting it.",
+  "publication_states": [
+    "published",
+    "evidence-pending-human-gate"
+  ],
+  "models": [
+    {
+      "model_id": "qwen38-27b",
+      "display_name": "Qwen3.8-27B",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 1,
+      "aliases": [
+        "qwen3.8-27b"
+      ]
+    },
+    {
+      "model_id": "nemotron-3-nano-4b",
+      "display_name": "Nemotron 3 Nano 4B",
+      "vendor": "NVIDIA",
+      "weight": 2
+    },
+    {
+      "model_id": "apodex-1.1-mini",
+      "display_name": "Apodex 1.1 mini",
+      "vendor": "Apodex (Qwen3.5-35B-A3B MoE base)",
+      "weight": 3
+    },
+    {
+      "model_id": "lfm2.5-2.6b",
+      "display_name": "LFM2.5 2.6B",
+      "vendor": "Liquid AI",
+      "weight": 4
+    },
+    {
+      "model_id": "lfm2.5-1.2b",
+      "display_name": "LFM2.5 1.2B",
+      "vendor": "Liquid AI",
+      "weight": 5
+    },
+    {
+      "model_id": "ornith-1.5-9b",
+      "display_name": "Ornith 1.5 9B",
+      "vendor": "ornith-ai",
+      "weight": 6
+    },
+    {
+      "model_id": "qwen35-4b",
+      "display_name": "Qwen3.5-4B",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 7
+    },
+    {
+      "model_id": "qwen35-9b",
+      "display_name": "Qwen3.5-9B",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 8
+    },
+    {
+      "model_id": "minicpm5-2b",
+      "display_name": "MiniCPM5-2B",
+      "vendor": "OpenBMB",
+      "weight": 9
+    },
+    {
+      "model_id": "gemma4-e4b",
+      "display_name": "Gemma 4 E4B",
+      "vendor": "Google",
+      "weight": 10
+    },
+    {
+      "model_id": "gemma-4-12b",
+      "display_name": "Gemma 4 12B IT",
+      "vendor": "Google",
+      "weight": 11
+    },
+    {
+      "model_id": "mellum2-12b-a2.5b",
+      "display_name": "Mellum2 12B-A2.5B",
+      "vendor": "JetBrains",
+      "weight": 12
+    },
+    {
+      "model_id": "qwen3-14b",
+      "display_name": "Qwen3-14B",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 13
+    },
+    {
+      "model_id": "qwen3.6-35b-a3b",
+      "display_name": "Qwen3.6-35B-A3B",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 14
+    },
+    {
+      "model_id": "gemmable-4-12b",
+      "display_name": "Gemmable 4 12B MTP",
+      "vendor": "Mia-AiLab (Gemma 4 12B MTP derivative)",
+      "weight": 15
+    },
+    {
+      "model_id": "grug-12b",
+      "display_name": "Grug 12B",
+      "vendor": "kai-os",
+      "weight": 16
+    },
+    {
+      "model_id": "qwen2.5-3b",
+      "display_name": "Qwen2.5-3B Instruct",
+      "vendor": "Alibaba (Qwen team)",
+      "weight": 17
+    },
+    {
+      "model_id": "qwen3.8-2b-empero",
+      "display_name": "Qwen3.8-2B (Empero)",
+      "vendor": "empero-ai (Qwen3.8 derivative)",
+      "weight": 18
+    },
+    {
+      "model_id": "qwen3.8-4b-empero",
+      "display_name": "Qwen3.8-4B (Empero)",
+      "vendor": "empero-ai (Qwen3.8 derivative)",
+      "weight": 19
+    },
+    {
+      "model_id": "qwen3.8-9b-empero",
+      "display_name": "Qwen3.8-9B (Empero)",
+      "vendor": "empero-ai (Qwen3.8 derivative)",
+      "weight": 20
+    },
+    {
+      "model_id": "bonsai-27b",
+      "display_name": "Bonsai 27B (Q1_0)",
+      "vendor": "Upstream identity unresolved (local artifact name)",
+      "weight": 21
+    }
+  ],
+  "profiles_note": "Profile identity (profile_id -> canonical repository, runtime family, artifact, status) is declared canonically in each eval repository's profile.json (schema wumbolabs-eval-profile/1) and mirrored in the registry only as display/routing metadata (profile_name, profile_status, profile_repo) on each event entry. Canonical profile repos: eval-qwen3.8-27b-llamacpp (qwen38-27b-llamacpp-ud-q2-k-xl, historical), eval-qwen3.8-27b-exl3-h1 (qwen38-27b-exl3-h1, current), eval-qwen3.5-4b (qwen35-4b-llamacpp-bf16), eval-qwen3.5-9b (qwen35-9b-llamacpp-q8), eval-nemotron-3-nano-4b (nemotron-3-nano-4b-llamacpp-q4km), eval-gemma4-e4b (gemma4-e4b-llamacpp-qat-q4-0), eval-minicpm5-2b (minicpm5-2b-vllm-bf16), eval-lfm2.5-1.2b (lfm2.5-1.2b-llamacpp-qad-q4-0), eval-lfm2.5-2.6b (lfm2.5-2.6b-llamacpp-qad-q4-0), eval-apodex-1.1-mini (apodex-1.1-mini-llamacpp-iq1m), eval-ornith-1.5-9b (ornith-1.5-9b-llamacpp-q4km). 2026-09-12 census additions: eval-gemma-4-12b-qat-q4 (gemma-4-12b-llamacpp-qat-q4-0), eval-gemma-4-12b-ud-q5 (gemma-4-12b-llamacpp-ud-q5-k-xl), eval-gemma-4-12b-q4km (gemma-4-12b-llamacpp-q4km), eval-gemma-4-12b-ud-q6 (gemma-4-12b-llamacpp-ud-q6-k-xl), eval-gemmable-4-12b (gemmable-4-12b-llamacpp-q4km), eval-grug-12b (grug-12b-llamacpp-q4km), eval-mellum2-12b-a2.5b-instruct (mellum2-12b-a2.5b-llamacpp-q4km-instruct), eval-mellum2-12b-a2.5b-thinking (mellum2-12b-a2.5b-llamacpp-q4km-thinking), eval-qwen3-14b-ollama-q4km (qwen3-14b-ollama-q4km-wumbo), eval-qwen3-14b (qwen3-14b-llamacpp-q4km), eval-qwen3.6-35b-a3b-ud-iq2-m (qwen3.6-35b-a3b-llamacpp-ud-iq2-m), eval-qwen2.5-3b-llamacpp-f16 (qwen2.5-3b-llamacpp-f16), eval-qwen2.5-3b-vllm-bf16 (qwen2.5-3b-vllm-bf16), eval-qwen3.8-2b-empero (qwen3.8-2b-empero-vllm-bf16), eval-qwen3.8-4b-empero (qwen3.8-4b-empero-vendor-battery), eval-qwen3.8-4b-empero-distill-wumboserver (qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver), eval-qwen3.8-9b-empero (qwen3.8-9b-empero-vendor-battery), eval-qwen3.8-9b-empero-distill-wumboserver (qwen3.8-9b-empero-distill-llamacpp-q4q5q6-wumboserver). 2026-09-12 census additions: eval-gemma-4-12b-qat-q4 (gemma-4-12b-llamacpp-qat-q4-0), eval-gemma-4-12b-ud-q5 (gemma-4-12b-llamacpp-ud-q5-k-xl), eval-gemma-4-12b-q4km (gemma-4-12b-llamacpp-q4km), eval-gemma-4-12b-ud-q6 (gemma-4-12b-llamacpp-ud-q6-k-xl), eval-gemmable-4-12b (gemmable-4-12b-llamacpp-q4km), eval-grug-12b (grug-12b-llamacpp-q4km), eval-mellum2-12b-a2.5b-instruct (mellum2-12b-a2.5b-llamacpp-q4km-instruct), eval-mellum2-12b-a2.5b-thinking (mellum2-12b-a2.5b-llamacpp-q4km-thinking), eval-qwen3-14b-ollama-q4km (qwen3-14b-ollama-q4km-wumbo), eval-qwen3-14b (qwen3-14b-llamacpp-q4km), eval-qwen3.6-35b-a3b-ud-iq2-m (qwen3.6-35b-a3b-llamacpp-ud-iq2-m), eval-qwen2.5-3b-llamacpp-f16 (qwen2.5-3b-llamacpp-f16), eval-qwen2.5-3b-vllm-bf16 (qwen2.5-3b-vllm-bf16), eval-qwen3.8-2b-empero (qwen3.8-2b-empero-vllm-bf16), eval-qwen3.8-4b-empero (qwen3.8-4b-empero-vendor-battery), eval-qwen3.8-4b-empero-distill-wumboserver (qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver), eval-qwen3.8-9b-empero (qwen3.8-9b-empero-vendor-battery), eval-qwen3.8-9b-empero-distill-wumboserver (qwen3.8-9b-empero-distill-llamacpp-q4q5q6-wumboserver).",
+  "records": [
+    {
+      "slug": "qwen3.8-27b",
+      "event_id": "initial-evaluation-2026-08-21",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-21",
+      "record_date": "2026-08-21",
+      "model_id": "qwen38-27b",
+      "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
+      "profile_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
+      "profile_status": "historical",
+      "profile_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+      "event_kicker": "Initial Evaluation — Historical llama.cpp",
+      "event_title": "Initial evaluation (deep evaluation, historical llama.cpp)",
+      "welp_status": "COMPLETED_DEEP_EVALUATION",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Strong reviewed local coding/technical assistant. Not recommended as unguarded daily driver or unattended autonomous agent.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-21.md",
+      "legacy_urls": [
+        "/labs/qwen3.8-27b/"
+      ],
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+        "ref": "2f8d9fa9f9433cb64fcd416492e3a73c3a5773c7",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-llamacpp",
+        "original_repo": "WumboLabs/eval-qwen3.8-27b",
+        "original_commit": "54b14b30e3779f15486c3785222647324459dcf5",
+        "note": "Evidence imported byte-identical into the canonical historical-profile repository on 2026-09-12; the original mixed repository is preserved as a historical archive."
+      },
+      "report_page": "records/qwen38-27b-rtx5070-evaluation.md",
+      "report_title": "Qwen3.8-27B on 12GB: How Far Can an RTX 5070 Really Push It?",
+      "evidence_maturity": "HISTORICAL_EVALUATION"
+    },
+    {
+      "slug": "qwen38-27b-h1",
+      "event_id": "h1-canonical-promotion-2026-09-09",
+      "event_type": "profile-canonical-promotion",
+      "event_date": "2026-09-09",
+      "record_date": "2026-09-09",
+      "model_id": "qwen38-27b",
+      "profile_id": "qwen38-27b-exl3-h1",
+      "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "event_kicker": "H1 Canonical Promotion — ExLlamaV3",
+      "event_title": "H1 deployment / canonical promotion",
+      "welp_status": "COMPLETE / CURRENT_CANONICAL_H1_PROFILE",
+      "evidence_scope": [
+        "serving-profile",
+        "performance",
+        "localmaxxing"
+      ],
+      "authoring": "generated",
+      "legacy_urls": [
+        "/labs/qwen38-27b-h1/"
+      ],
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "ref": "4d9d47b98a7538b9eb0f06e1f949ed41e325ea0a",
+        "path": "website-publication.json",
+        "sha256": "dc5d2ca7e8aefe8cec801041aaedc637f88ad9c3c37cf1ac9ddfe80cfcb0248b"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "ref": "4d9d47b98a7538b9eb0f06e1f949ed41e325ea0a",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "original_repo": "WumboLabs/eval-qwen3.8-27b",
+        "original_commit": "cc5a435092c17394b9e29b228a0e8509613f26b3",
+        "note": "Export byte-identical to the original H1 publication; migrated to the canonical profile repository on 2026-09-12."
+      },
+      "evidence_maturity": "CURRENT_WELP"
+    },
+    {
+      "slug": "qwen38-27b-context-envelope",
+      "event_id": "context-envelope-completion-2026-09-12",
+      "event_type": "context-envelope-completion",
+      "event_date": "2026-09-12",
+      "record_date": "2026-09-12",
+      "model_id": "qwen38-27b",
+      "profile_id": "qwen38-27b-exl3-h1",
+      "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+      "event_kicker": "Context Envelope — ExLlamaV3 H1",
+      "event_title": "Context envelope completion",
+      "welp_status": "GUARDED / MODEL-CARD CONTEXT ENVELOPE COMPLETE",
+      "evidence_scope": [
+        "context"
+      ],
+      "authoring": "generated",
+      "legacy_urls": [
+        "/labs/qwen38-27b-context-envelope/"
+      ],
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "ref": "7138cd9f0c73bf306d08ef1a81075eb892f3ae99",
+        "path": "website-publication.json",
+        "sha256": "efbde1adf01c3a57b59d1b51d9234384cd62738de299cbe9c8b6f06f80f8064f"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "ref": "7138cd9f0c73bf306d08ef1a81075eb892f3ae99",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-exl3-h1",
+        "original_repo": "WumboLabs/eval-qwen3.8-27b",
+        "original_commit": "78e8ebf636d33048f1e23b687ed060be9ccc1e97",
+        "note": "Export byte-identical to the original context-envelope publication; migrated to the canonical profile repository on 2026-09-12."
+      },
+      "evidence_maturity": "CONTEXT_COMPLETION"
+    },
+    {
+      "slug": "nemotron-3-nano-4b",
+      "event_id": "initial-evaluation-2026-08-25",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-25",
+      "record_date": "2026-08-25",
+      "model_id": "nemotron-3-nano-4b",
+      "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "event_kicker": "Initial Evaluation — PROTOCOL_BLOCKED (historical, preserved)",
+      "event_title": "Initial evaluation (protocol development, PROTOCOL_BLOCKED)",
+      "welp_status": "PARTIAL_PROTOCOL_DEVELOPMENT",
+      "evidence_scope": [
+        "protocol-development",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Protocol development campaign. Phases 0–2 passed; stopped at Phase 3 gate decision. Not a complete WELP capability review.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-25.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+        "ref": "main",
+        "url": "https://github.com/WumboLabs/eval-nemotron-3-nano-4b"
+      },
+      "evidence_maturity": "PROTOCOL_BLOCKED"
+    },
+    {
+      "slug": "eval-nemotron-3-nano-4b-recharacterization-2026-09-11",
+      "event_id": "welp-recharacterization-2026-09-11",
+      "event_type": "welp-recharacterization",
+      "event_date": "2026-09-11",
+      "record_date": "2026-09-11",
+      "model_id": "nemotron-3-nano-4b",
+      "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M",
+      "event_title": "Current-WELP recharacterization",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "authoring": "generated",
+      "legacy_urls": [
+        "/labs/eval-nemotron-3-nano-4b-recharacterization-2026-09-11/"
+      ],
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+        "ref": "86d615c23bc1422890b32d9c1cf8e7d68b6001c1",
+        "path": "website-publication.json",
+        "sha256": "457ef6f472770425857963f5cb899dc4d7f6dd6ddb0bb12cbe33b54511ae07fa"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-nemotron-3-nano-4b",
+        "ref": "86d615c23bc1422890b32d9c1cf8e7d68b6001c1",
+        "url": "https://github.com/WumboLabs/eval-nemotron-3-nano-4b"
+      },
+      "evidence_maturity": "CURRENT_WELP"
+    },
+    {
+      "slug": "apodex-1.1-mini",
+      "event_id": "initial-evaluation-2026-08-25-apodex",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-25",
+      "record_date": "2026-08-25",
+      "model_id": "apodex-1.1-mini",
+      "profile_id": "apodex-1.1-mini-llamacpp-iq1m",
+      "profile_name": "llama.cpp IQ1_M (community conversion)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-apodex-1.1-mini",
+      "event_kicker": "Initial Evaluation — Early Stop",
+      "event_title": "Initial evaluation (bounded early stop)",
+      "welp_status": "BOUNDED_EARLY_STOP / PHASE_3_DO_NOT_ADVANCE",
+      "evidence_scope": [
+        "model-classification",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Early stop at Phase 3 gate. Model failed the applicable advancement gate; later phases were not run. Bounded result only.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-25-apodex.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-apodex-1.1-mini",
+        "ref": "main",
+        "url": "https://github.com/WumboLabs/eval-apodex-1.1-mini"
+      },
+      "evidence_maturity": "EARLY_STOP"
+    },
+    {
+      "slug": "lfm2.5-1.2b",
+      "event_id": "initial-evaluation-2026-08-26-lfm12",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-26",
+      "record_date": "2026-08-26",
+      "model_id": "lfm2.5-1.2b",
+      "profile_id": "lfm2.5-1.2b-llamacpp-qad-q4-0",
+      "profile_name": "llama.cpp QAD Q4_0",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-lfm2.5-1.2b",
+      "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+      "event_title": "Initial evaluation (small-model evaluation)",
+      "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale — every quant including BF16 fabricates confidently on invented subjects.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-26-lfm12.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-lfm2.5-1.2b",
+        "ref": "main",
+        "url": "https://github.com/WumboLabs/eval-lfm2.5-1.2b"
+      },
+      "evidence_maturity": "FULL_EVALUATION"
+    },
+    {
+      "slug": "lfm2.5-2.6b",
+      "event_id": "initial-evaluation-2026-08-26-lfm26",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-26",
+      "record_date": "2026-08-26",
+      "model_id": "lfm2.5-2.6b",
+      "profile_id": "lfm2.5-2.6b-llamacpp-qad-q4-0",
+      "profile_name": "llama.cpp QAD Q4_0",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-lfm2.5-2.6b",
+      "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+      "event_title": "Initial evaluation (small-model evaluation)",
+      "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "QAD Q4_0 is the rational ultra-fast deployment quant when 1.59 GB is the hard model-size target. No material practical-quality win over PTQ Q4_0 was reproduced.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-26-lfm26.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-lfm2.5-2.6b",
+        "ref": "main",
+        "url": "https://github.com/WumboLabs/eval-lfm2.5-2.6b"
+      },
+      "evidence_maturity": "FULL_EVALUATION"
+    },
+    {
+      "slug": "ornith-1.5-9b",
+      "event_id": "initial-evaluation-2026-08-27",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-08-27",
+      "record_date": "2026-08-27",
+      "model_id": "ornith-1.5-9b",
+      "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-ornith-1.5-9b",
+      "event_kicker": "Initial Evaluation — Full Campaign (NOT_READY)",
+      "event_title": "Initial evaluation (full-lifecycle WELP campaign)",
+      "welp_status": "COMPLETE / FINAL_WELP_READINESS_NOT_READY",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Full WELP campaign completed. Phase 3 practical viability ADVANCE (0.922); Phase 4 reliability gate FAIL (DO_NOT_ADVANCE) closes all deployment roles: FINAL WELP READINESS: NOT_READY. Later-phase evidence is characterization only.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/initial-evaluation-2026-08-27.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-ornith-1.5-9b",
+        "ref": "main",
+        "url": "https://github.com/WumboLabs/eval-ornith-1.5-9b"
+      },
+      "evidence_maturity": "FULL_EVALUATION"
+    },
+    {
+      "slug": "qwen35-4b",
+      "event_id": "context-envelope-completion-2026-09-11-qwen35-4b",
+      "event_type": "context-envelope-completion",
+      "event_date": "2026-09-11",
+      "record_date": "2026-09-09",
+      "model_id": "qwen35-4b",
+      "profile_id": "qwen35-4b-llamacpp-bf16",
+      "profile_name": "llama.cpp BF16 GGUF",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.5-4b",
+      "event_kicker": "Context Envelope — llama.cpp BF16",
+      "event_title": "Context envelope completion",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "context"
+      ],
+      "baseline_event_id": "initial-evaluation-2026-09-09-qwen35-4b",
+      "baseline_note": "Baseline characterization (campaign qwen35-4b-rtx5070-baseline-2026-09-09, event 2026-09-09) is a same-profile event in eval-qwen3.5-4b@c4891275b02d67a2ec9a8aaaf8a51919508f7b8e; the public record was updated in place by the completion export, so record_date 2026-09-09 is preserved for chronology.",
+      "authoring": "generated",
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-qwen3.5-4b",
+        "ref": "cb01b6826c67f8fcb5ce9dfffdb36664c23ee0d0",
+        "path": "website-publication.json",
+        "sha256": "3c8fab5a1dcea73dd57a5296a00fd8238caf1b3eb8dd28be7fb2d5d56ee4bb04"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.5-4b",
+        "ref": "cb01b6826c67f8fcb5ce9dfffdb36664c23ee0d0",
+        "url": "https://github.com/WumboLabs/eval-qwen3.5-4b"
+      },
+      "evidence_maturity": "CONTEXT_COMPLETION"
+    },
+    {
+      "slug": "qwen35-9b",
+      "event_id": "context-envelope-completion-2026-09-11-qwen35-9b",
+      "event_type": "context-envelope-completion",
+      "event_date": "2026-09-11",
+      "record_date": "2026-09-09",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-llamacpp-q8",
+      "profile_name": "llama.cpp Q8_0 GGUF",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.5-9b",
+      "event_kicker": "Context Envelope — llama.cpp Q8_0",
+      "event_title": "Context envelope completion",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "context"
+      ],
+      "baseline_event_id": "initial-evaluation-2026-09-09-qwen35-9b",
+      "baseline_note": "Baseline characterization (campaign qwen35-9b-rtx5070-baseline-2026-09-09, event 2026-09-09) is a same-profile event in eval-qwen3.5-9b@768674f35411eb9917398dca95925aa0d53f381f; the public record was updated in place by the completion export, so record_date 2026-09-09 is preserved for chronology.",
+      "authoring": "generated",
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-qwen3.5-9b",
+        "ref": "7c18920d380378a8e47408fa4c5149f67f28828f",
+        "path": "website-publication.json",
+        "sha256": "b6f98bc724a53b720e2ddab9d5e92a61aa33d565916dffcb654c49c2367c7cd3"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.5-9b",
+        "ref": "7c18920d380378a8e47408fa4c5149f67f28828f",
+        "url": "https://github.com/WumboLabs/eval-qwen3.5-9b"
+      },
+      "evidence_maturity": "CONTEXT_COMPLETION"
+    },
+    {
+      "slug": "minicpm5-2b",
+      "event_id": "initial-evaluation-2026-09-10-minicpm5",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-09-10",
+      "record_date": "2026-09-10",
+      "model_id": "minicpm5-2b",
+      "profile_id": "minicpm5-2b-vllm-bf16",
+      "profile_name": "contained vLLM BF16",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-minicpm5-2b",
+      "event_kicker": "Initial Evaluation — contained vLLM BF16",
+      "event_title": "Initial evaluation (full characterization)",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-minicpm5-2b",
+        "ref": "e4563e2e5f9898b71d0ef2a39d46241112b1146c",
+        "path": "website-publication.json",
+        "sha256": "20f817b5c706f0f68319bebe02e1766510c93a6c5249acb8104a57549eb7f7e1"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-minicpm5-2b",
+        "ref": "e4563e2e5f9898b71d0ef2a39d46241112b1146c",
+        "url": "https://github.com/WumboLabs/eval-minicpm5-2b"
+      },
+      "evidence_maturity": "FULL_EVALUATION"
+    },
+    {
+      "slug": "gemma4-e4b",
+      "event_id": "initial-evaluation-2026-09-10-gemma4",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-09-10",
+      "record_date": "2026-09-10",
+      "model_id": "gemma4-e4b",
+      "profile_id": "gemma4-e4b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma4-e4b",
+      "event_kicker": "Initial Evaluation — official QAT Q4_0",
+      "event_title": "Initial evaluation (full characterization)",
+      "welp_status": "READY_WITH_GUARDRAILS / CLOSED_WELP_CROSS_FAMILY_CONTROL",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-gemma4-e4b",
+        "ref": "336d86a0fefb7c64e3c7c770d4cd41057b98990d",
+        "path": "website-publication.json",
+        "sha256": "45aca9eb0ff421280e04e6137cdcdc8571e40754a89c5f4e705b410ab7a052bb"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma4-e4b",
+        "ref": "336d86a0fefb7c64e3c7c770d4cd41057b98990d",
+        "url": "https://github.com/WumboLabs/eval-gemma4-e4b"
+      },
+      "evidence_maturity": "FULL_EVALUATION"
+    },
+    {
+      "slug": "gemma4-12b-practical-use-family-2026-06-21",
+      "event_id": "gemma4-12b-practical-use-family-2026-06-21",
+      "event_type": "practical-use-comparison",
+      "event_date": "2026-06-21",
+      "record_date": "2026-06-21",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "event_kicker": "Practical Use — LLMGauge wumbolabs-practical-use-v1",
+      "event_title": "12B Gemma practical-use test (QAT vs UD-Q5 vs Gemmable)",
+      "welp_status": "PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)",
+      "evidence_maturity": "PRACTICAL_USE",
+      "evidence_scope": [
+        "practical-use"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "QAT Q4_0 was the strongest 12B Gemma practical variant: 259.2/300 (4.32 avg), ahead of UD-Q5_K_XL (254.0/300) on the same suite.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemma4-12b-practical-use-family-2026-06-21.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "945cc3d549475ca7360781a94460005ab5932926",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+      },
+      "report_page": "records/gemma-12b-practical-use.md",
+      "report_title": "12B Gemma-Based Practical Use Test",
+      "related_model_ids": [
+        "gemmable-4-12b"
+      ],
+      "shared_event_id": "practical-use-comparison-2026-06-21",
+      "shared_model_notes": {
+        "gemmable-4-12b": "Gemmable 4 12B MTP Q4_K_M scored 119.8/300 (2.0 avg) on the same suite"
+      }
+    },
+    {
+      "slug": "gemma4-12b-core-agent-v016-2026-06-16",
+      "event_id": "gemma4-12b-core-agent-v016-2026-06-16",
+      "event_type": "benchmark-only",
+      "event_date": "2026-06-16",
+      "record_date": "2026-06-16",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "event_kicker": "Benchmark Only — LLMGauge v0.16 era",
+      "event_title": "Early core-v1 + agent-backend-v1 scored runs (QAT Q4)",
+      "welp_status": "BENCHMARK_ONLY",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance",
+        "capabilities"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Early LLMGauge v0.16-era core-v1 run (8/8, 308/400 manual) plus agent-backend-v1 on the QAT artifact.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemma4-12b-core-agent-v016-2026-06-16.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "945cc3d549475ca7360781a94460005ab5932926",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+      }
+    },
+    {
+      "slug": "gemma4-12b-honesty-ladder-2026-06-21",
+      "event_id": "gemma4-12b-honesty-ladder-2026-06-21",
+      "event_type": "specialized-test",
+      "event_date": "2026-06-21",
+      "record_date": "2026-06-21",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "event_kicker": "Specialized Test — honesty ladder",
+      "event_title": "Honesty ladder smoke (QAT Q4)",
+      "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "reliability"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Honesty-ladder smoke runs against the QAT Q4 practical profile.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemma4-12b-honesty-ladder-2026-06-21.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "945cc3d549475ca7360781a94460005ab5932926",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+      }
+    },
+    {
+      "slug": "gemma4-12b-practical-pool-v025-2026-07-04",
+      "event_id": "gemma4-12b-practical-pool-v025-2026-07-04",
+      "event_type": "practical-use-comparison",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "event_kicker": "Practical Use — shared comparison (canonical)",
+      "event_title": "12B practical pool comparison v025 + Grug",
+      "welp_status": "PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)",
+      "evidence_maturity": "PRACTICAL_USE",
+      "evidence_scope": [
+        "practical-use"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Shared pool comparison: QAT default (259.2/300) vs five additional tested models; each related model page carries its own score.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemma4-12b-practical-pool-v025-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "945cc3d549475ca7360781a94460005ab5932926",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+      },
+      "related_model_ids": [
+        "grug-12b",
+        "mellum2-12b-a2.5b",
+        "qwen3-14b",
+        "qwen3.6-35b-a3b"
+      ],
+      "shared_event_id": "practical-use-comparison-2026-07-04",
+      "shared_model_notes": {
+        "grug-12b": "Grug-12B scored 243.6/300 (4.06 avg); viable, not a practical-default replacement.",
+        "mellum2-12b-a2.5b": "Instruct 239.9/300 (4.0); Thinking 232.8/300 (3.88).",
+        "qwen3-14b": "Q4_K_M scored 228.4/300 (3.81 avg).",
+        "qwen3.6-35b-a3b": "UD-IQ2_M scored 233.9/300 (3.9 avg); tight 12GB fit (676 MiB minimum headroom)."
+      }
+    },
+    {
+      "slug": "gemma4-12b-lmx-speed-2026-07-04",
+      "event_id": "gemma4-12b-lmx-speed-2026-07-04",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M (ggml-org)",
+      "profile_status": "specialized",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-q4km",
+      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_title": "LMX speed runs across four Gemma 4 12B quants",
+      "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LMX local speed evidence across four quants: Q4_K_M 72.11, UD-Q5_K_XL 62.76, UD-Q6_K_XL 51.26 tok/s out.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemma4-12b-lmx-speed-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-q4km",
+        "ref": "561be30e6f39eefb19fa36844904fb110c6a66a8",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-q4km"
+      },
+      "related_profile_ids": [
+        "gemma-4-12b-llamacpp-qat-q4-0",
+        "gemma-4-12b-llamacpp-ud-q5-k-xl",
+        "gemma-4-12b-llamacpp-ud-q6-k-xl"
+      ]
+    },
+    {
+      "slug": "gemmable-agent-backend-2026-06-21",
+      "event_id": "gemmable-agent-backend-2026-06-21",
+      "event_type": "specialized-test",
+      "event_date": "2026-06-21",
+      "record_date": "2026-06-21",
+      "model_id": "gemmable-4-12b",
+      "profile_id": "gemmable-4-12b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemmable-4-12b",
+      "event_kicker": "Specialized Test — agent backend",
+      "event_title": "Agent-backend + fake-tool runs",
+      "welp_status": "SPECIALIZED_TEST",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "agent-backend"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Agent-backend-v1 and fake-tool answer-only probes for the Gemmable MTP artifact.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemmable-agent-backend-2026-06-21.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemmable-4-12b",
+        "ref": "f307603ad9e1515ff59261d86f842e1cace43980",
+        "url": "https://github.com/WumboLabs/eval-gemmable-4-12b"
+      }
+    },
+    {
+      "slug": "gemmable-lmx-speed-2026-07-04",
+      "event_id": "gemmable-lmx-speed-2026-07-04",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "gemmable-4-12b",
+      "profile_id": "gemmable-4-12b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemmable-4-12b",
+      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_title": "LMX speed run",
+      "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LMX local speed evidence: 71.24 tok/s out (llama.cpp Q4_K_M).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/gemmable-lmx-speed-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemmable-4-12b",
+        "ref": "f307603ad9e1515ff59261d86f842e1cace43980",
+        "url": "https://github.com/WumboLabs/eval-gemmable-4-12b"
+      }
+    },
+    {
+      "slug": "grug-honesty-smoke-2026-07-04",
+      "event_id": "grug-honesty-smoke-2026-07-04",
+      "event_type": "specialized-test",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "grug-12b",
+      "profile_id": "grug-12b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-grug-12b",
+      "event_kicker": "Specialized Test — honesty/provenance",
+      "event_title": "Honesty smoke + provenance refresh",
+      "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Honesty smoke (2026-07-04) and provenance-refresh re-run (2026-07-24) for the Grug practical record.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/grug-honesty-smoke-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-grug-12b",
+        "ref": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+        "url": "https://github.com/WumboLabs/eval-grug-12b"
+      }
+    },
+    {
+      "slug": "grug-lmx-speed-2026-07-04",
+      "event_id": "grug-lmx-speed-2026-07-04",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "grug-12b",
+      "profile_id": "grug-12b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-grug-12b",
+      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_title": "LMX speed run",
+      "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LMX local speed evidence: 69.24 tok/s out (llama.cpp Q4_K_M).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/grug-lmx-speed-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-grug-12b",
+        "ref": "1f10b6b157b79b5077e9d4d540db57de78c697c7",
+        "url": "https://github.com/WumboLabs/eval-grug-12b"
+      }
+    },
+    {
+      "slug": "mellum2-agent-backend-64k-2026-06-17",
+      "event_id": "mellum2-agent-backend-64k-2026-06-17",
+      "event_type": "specialized-test",
+      "event_date": "2026-06-17",
+      "record_date": "2026-06-17",
+      "model_id": "mellum2-12b-a2.5b",
+      "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+      "profile_name": "llama.cpp Q4_K_M (Instruct)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "event_kicker": "Specialized Test — LLMGauge agent-backend-v1",
+      "event_title": "Agent backend fit test (64k, Instruct + Thinking)",
+      "welp_status": "SPECIALIZED_TEST / AGENT_BACKEND_FIT_TEST (not a general quality verdict)",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "agent-backend"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "64k agent-backend fit confirmed (Instruct 5/5 complete, 251.0-257.2 tok/s out, 9203 MiB peak VRAM); Instruct preferred over Thinking; neither unsupervised-shell safe.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/mellum2-agent-backend-64k-2026-06-17.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+        "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+        "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+      },
+      "report_page": "records/mellum2-agent-backend-test.md",
+      "report_title": "Mellum2 Agent Backend Test",
+      "related_profile_ids": [
+        "mellum2-12b-a2.5b-llamacpp-q4km-thinking"
+      ]
+    },
+    {
+      "slug": "mellum2-fake-tool-2026-06-17",
+      "event_id": "mellum2-fake-tool-2026-06-17",
+      "event_type": "specialized-test",
+      "event_date": "2026-06-17",
+      "record_date": "2026-06-17",
+      "model_id": "mellum2-12b-a2.5b",
+      "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+      "profile_name": "llama.cpp Q4_K_M (Instruct)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "event_kicker": "Specialized Test — fake-tool honesty",
+      "event_title": "Fake-tool honesty runs (64k)",
+      "welp_status": "SPECIALIZED_TEST / UNSCORED_PROBES",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "reliability"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Fake-tool honesty probes at 64k for both Mellum2 variants; feeds the agent-backend manual scores.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/mellum2-fake-tool-2026-06-17.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+        "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+        "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+      }
+    },
+    {
+      "slug": "mellum2-lmx-speed-2026-07-04",
+      "event_id": "mellum2-lmx-speed-2026-07-04",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-04",
+      "record_date": "2026-07-04",
+      "model_id": "mellum2-12b-a2.5b",
+      "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+      "profile_name": "llama.cpp Q4_K_M (Instruct)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_title": "LocalMaxxing LMX speed runs (Instruct + Thinking)",
+      "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LMX local speed evidence: Instruct 261.41, Thinking 265.47 tok/s out.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/mellum2-lmx-speed-2026-07-04.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+        "ref": "87d004ee76b6be247308fe69705d8ceb8d12c787",
+        "url": "https://github.com/WumboLabs/eval-mellum2-12b-a2.5b-instruct"
+      }
+    },
+    {
+      "slug": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+      "event_id": "qwen3-14b-wumbo-daily-evaluation-2026-05-07",
+      "event_type": "practical-use-comparison",
+      "event_date": "2026-05-07",
+      "record_date": "2026-05-07",
+      "model_id": "qwen3-14b",
+      "profile_id": "qwen3-14b-ollama-q4km-wumbo",
+      "profile_name": "Ollama Q4_K_M (qwen3-14b-wumbo custom tag, historical daily driver)",
+      "profile_status": "historical",
+      "profile_repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+      "event_kicker": "Practical Use — historical daily driver",
+      "event_title": "Practical daily-driver evaluation (Ollama era, qwen3-14b-wumbo tag)",
+      "welp_status": "PRACTICAL_USE / PRE_WELP_HISTORICAL",
+      "evidence_maturity": "PRACTICAL_USE",
+      "evidence_scope": [
+        "practical-use"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Historical May 2026 daily-driver evaluation: good enough for daily local technical-assistant use with mandatory command review; 4096-context guidance.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen3-14b-wumbo-daily-evaluation-2026-05-07.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+        "ref": "285d06529dab955e9458c646b72493843c8998f0",
+        "url": "https://github.com/WumboLabs/eval-qwen3-14b-ollama-q4km"
+      }
+    },
+    {
+      "slug": "qwen3-14b-lmx-speed-2026-07-05",
+      "event_id": "qwen3-14b-lmx-speed-2026-07-05",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-05",
+      "record_date": "2026-07-05",
+      "model_id": "qwen3-14b",
+      "profile_id": "qwen3-14b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M (unsloth)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3-14b",
+      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_title": "LMX speed run",
+      "welp_status": "BENCHMARK_ONLY (LMX local speed)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LMX local speed evidence: 66.57 tok/s out (llama.cpp Q4_K_M).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen3-14b-lmx-speed-2026-07-05.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3-14b",
+        "ref": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+        "url": "https://github.com/WumboLabs/eval-qwen3-14b"
+      }
+    },
+    {
+      "slug": "qwen3-14b-fit-ladder-2026-07-15",
+      "event_id": "qwen3-14b-fit-ladder-2026-07-15",
+      "event_type": "specialized-test",
+      "event_date": "2026-07-15",
+      "record_date": "2026-07-15",
+      "model_id": "qwen3-14b",
+      "profile_id": "qwen3-14b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M (unsloth)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3-14b",
+      "event_kicker": "Specialized Test — fit ladder",
+      "event_title": "Fit-ladder success-fallback E2E (LLMGauge feature validation)",
+      "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LLMGauge fit-ladder success-fallback E2E payload (32k -> 8k).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen3-14b-fit-ladder-2026-07-15.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3-14b",
+        "ref": "ea855b38294d1c4c13664a45a2911a6de809ca94",
+        "url": "https://github.com/WumboLabs/eval-qwen3-14b"
+      }
+    },
+    {
+      "slug": "qwen36-35b-practical-v071-2026-07-22",
+      "event_id": "qwen36-35b-practical-v071-2026-07-22",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-22",
+      "record_date": "2026-07-22",
+      "model_id": "qwen3.6-35b-a3b",
+      "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+      "profile_name": "llama.cpp Unsloth UD-IQ2_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "event_kicker": "Benchmark Only — tool-version re-run",
+      "event_title": "LLMGauge v0.71 practical re-run",
+      "welp_status": "BENCHMARK_ONLY (TOOL_VERSION_RERUN)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance",
+        "practical-use"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Same artifact/suite re-run under LLMGauge v0.71 for tool-version continuity.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen36-35b-practical-v071-2026-07-22.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+        "ref": "d89df9bc26227247b858033742048bc6ccede901",
+        "url": "https://github.com/WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m"
+      }
+    },
+    {
+      "slug": "qwen36-35b-fit-ladder-e2e-2026-07-15",
+      "event_id": "qwen36-35b-fit-ladder-e2e-2026-07-15",
+      "event_type": "specialized-test",
+      "event_date": "2026-07-15",
+      "record_date": "2026-07-15",
+      "model_id": "qwen3.6-35b-a3b",
+      "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+      "profile_name": "llama.cpp Unsloth UD-IQ2_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+      "event_kicker": "Specialized Test — fit ladder",
+      "event_title": "Fit-ladder E2E (LLMGauge feature validation)",
+      "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Fit-ladder E2E (32k/16k/8k attempts) payload; primary subject is LLMGauge behavior.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen36-35b-fit-ladder-e2e-2026-07-15.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+        "ref": "d89df9bc26227247b858033742048bc6ccede901",
+        "url": "https://github.com/WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m"
+      }
+    },
+    {
+      "slug": "qwen25-3b-cross-runtime-2026-07-15",
+      "event_id": "qwen25-3b-cross-runtime-2026-07-15",
+      "event_type": "benchmark-only",
+      "event_date": "2026-07-15",
+      "record_date": "2026-07-15",
+      "model_id": "qwen2.5-3b",
+      "profile_id": "qwen2.5-3b-llamacpp-f16",
+      "profile_name": "llama.cpp F16 (comparison reference)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
+      "event_kicker": "Benchmark Only — cross-runtime methodology lane",
+      "event_title": "Cross-runtime comparison: llama.cpp F16 vs vLLM BF16",
+      "welp_status": "BENCHMARK_ONLY / CROSS_RUNTIME_METHODOLOGY_LANE",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance",
+        "agent-backend"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Cross-runtime llama.cpp F16 vs vLLM BF16 agent-backend comparison incl. failed-command-recovery probe; methodology-lane benchmark.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen25-3b-cross-runtime-2026-07-15.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
+        "ref": "651bbea8c5d1e9c1c5dfa21a538a6922f2bf60a8",
+        "url": "https://github.com/WumboLabs/eval-qwen2.5-3b-llamacpp-f16"
+      }
+    },
+    {
+      "slug": "qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+      "event_id": "qwen25-3b-vllm-fingerprint-smoke-2026-07-15",
+      "event_type": "specialized-test",
+      "event_date": "2026-07-15",
+      "record_date": "2026-07-15",
+      "model_id": "qwen2.5-3b",
+      "profile_id": "qwen2.5-3b-vllm-bf16",
+      "profile_name": "vLLM BF16 (cross-runtime lane)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+      "event_kicker": "Specialized Test — runtime fingerprint",
+      "event_title": "vLLM fingerprint live smoke",
+      "welp_status": "SPECIALIZED_TEST / RUNTIME_FINGERPRINT",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "vLLM runtime-fingerprint smoke using Qwen2.5-3B as payload.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen25-3b-vllm-fingerprint-smoke-2026-07-15.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+        "ref": "92e975e31a46b1e84e21b838f7a79e5c91cd7e86",
+        "url": "https://github.com/WumboLabs/eval-qwen2.5-3b-vllm-bf16"
+      }
+    },
+    {
+      "slug": "qwen38-empero-2b-vendor-battery-2026-08-18",
+      "event_id": "qwen38-empero-2b-vendor-battery-2026-08-18",
+      "event_type": "specialized-test",
+      "event_date": "2026-08-18",
+      "record_date": "2026-08-18",
+      "model_id": "qwen3.8-2b-empero",
+      "profile_id": "qwen3.8-2b-empero-vllm-bf16",
+      "profile_name": "vLLM BF16 vendor-alignment battery",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.8-2b-empero",
+      "event_kicker": "Specialized Test — vendor alignment",
+      "event_title": "LLMGauge vendor-alignment battery (2B bf16)",
+      "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "performance",
+        "context"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LLMGauge vendor-alignment battery (BF16/GGUF): full suites at vendor 8192 plus configured-context default probing up to 262144.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-empero-2b-vendor-battery-2026-08-18.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-2b-empero",
+        "ref": "e09ed632fe835dac69eb05f9e37f7b57485923fd",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-2b-empero"
+      }
+    },
+    {
+      "slug": "qwen38-empero-4b-vendor-battery-2026-08-18",
+      "event_id": "qwen38-empero-4b-vendor-battery-2026-08-18",
+      "event_type": "specialized-test",
+      "event_date": "2026-08-18",
+      "record_date": "2026-08-18",
+      "model_id": "qwen3.8-4b-empero",
+      "profile_id": "qwen3.8-4b-empero-vendor-battery",
+      "profile_name": "LLMGauge vendor-alignment battery (bf16/q4)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.8-4b-empero",
+      "event_kicker": "Specialized Test — vendor alignment",
+      "event_title": "LLMGauge vendor-alignment battery (4B bf16/q4)",
+      "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LLMGauge vendor-alignment qualification battery on the 4B artifact (BF16 + Q4 lanes).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-empero-4b-vendor-battery-2026-08-18.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-4b-empero",
+        "ref": "891dec8a5bd371cf50660efbbee98924f6d4e768",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-4b-empero"
+      }
+    },
+    {
+      "slug": "qwen38-empero-4b-distill-wumboserver-2026-09-01",
+      "event_id": "qwen38-empero-4b-distill-wumboserver-2026-09-01",
+      "event_type": "benchmark-only",
+      "event_date": "2026-09-01",
+      "record_date": "2026-09-01",
+      "model_id": "qwen3.8-4b-empero",
+      "profile_id": "qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver",
+      "profile_name": "llama.cpp Q4_K_M Distill (WumboServer RTX 2060S lane)",
+      "profile_status": "specialized",
+      "profile_repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_title": "WumboServer RTX 2060S LocalMaxxing 4B Q4_K_M",
+      "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboServer (RTX 2060 SUPER 8GB)",
+      "headline": "RTX 2060S lane: 97.14 tok/s out, 2145.66 tok/s prefill, 3.0 GB peak VRAM, 172 W; LocalMaxxing APPROVED from WumboServer.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-empero-4b-distill-wumboserver-2026-09-01.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+        "ref": "5b942eee8bb028b7a4f154b2aaee3026b57b6671",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver"
+      }
+    },
+    {
+      "slug": "qwen38-empero-9b-vendor-battery-2026-08-18",
+      "event_id": "qwen38-empero-9b-vendor-battery-2026-08-18",
+      "event_type": "specialized-test",
+      "event_date": "2026-08-18",
+      "record_date": "2026-08-18",
+      "model_id": "qwen3.8-9b-empero",
+      "profile_id": "qwen3.8-9b-empero-vendor-battery",
+      "profile_name": "LLMGauge vendor-alignment battery Q8_0",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-qwen3.8-9b-empero",
+      "event_kicker": "Specialized Test — vendor alignment",
+      "event_title": "LLMGauge vendor-alignment battery (9B Q8_0)",
+      "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
+      "evidence_maturity": "SPECIALIZED_TEST",
+      "evidence_scope": [
+        "specialized",
+        "performance"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LLMGauge vendor-alignment battery on the 9B artifact (Q8_0 + base Q4 lanes).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-empero-9b-vendor-battery-2026-08-18.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-9b-empero",
+        "ref": "ca2784b96332038bce2e7b521fe788e86aac6966",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-9b-empero"
+      }
+    },
+    {
+      "slug": "qwen38-empero-9b-distill-wumboserver-2026-09-01",
+      "event_id": "qwen38-empero-9b-distill-wumboserver-2026-09-01",
+      "event_type": "benchmark-only",
+      "event_date": "2026-09-01",
+      "record_date": "2026-09-01",
+      "model_id": "qwen3.8-9b-empero",
+      "profile_id": "qwen3.8-9b-empero-distill-llamacpp-q4q5q6-wumboserver",
+      "profile_name": "llama.cpp Distill Q4_K_M/Q5_K_M/Q6_K (WumboServer RTX 2060S lane)",
+      "profile_status": "specialized",
+      "profile_repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
+      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_title": "WumboServer RTX 2060S admission/boundary + LocalMaxxing (Q4/Q5/Q6)",
+      "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboServer (RTX 2060 SUPER 8GB)",
+      "headline": "RTX 2060S lane quant ladder: admission (Q5), Q6 fit boundary, Q5 serving campaign, LocalMaxxing reconciliation (9b-q4 60.4 tok/s out, 5.37 GB peak VRAM).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-empero-9b-distill-wumboserver-2026-09-01.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
+        "ref": "c8fac91ab8d249b3fcba3512851cda61240868db",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver"
+      }
+    },
+    {
+      "slug": "bonsai-27b-smoke-v070-2026-07-14",
+      "event_id": "bonsai-27b-smoke-v070-2026-07-14",
+      "event_type": "specialized-test",
+      "event_date": "2026-07-14",
+      "record_date": "2026-07-14",
+      "model_id": "bonsai-27b",
+      "profile_id": "bonsai-27b-q1-0-llamacpp",
+      "profile_name": "llama.cpp Q1_0 (unscored smoke payload)",
+      "profile_status": "specialized",
+      "profile_repo": "UNRESOLVED_UPSTREAM_IDENTITY (canonical profile repository blocked; see provenance note)",
+      "event_kicker": "Specialized Test — unscored smoke",
+      "event_title": "LLMGauge v0.70 smoke runs (Q1_0 payload, unscored)",
+      "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE / IDENTITY_UNRESOLVED",
+      "evidence_maturity": "UNRESOLVED_HISTORICAL",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "Three completed unscored 1-prompt smoke runs under LLMGauge v0.70 with a Q1_0 27B artifact locally labeled bonsai_27b_q1_0; upstream artifact identity unresolved.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/bonsai-27b-smoke-v070-2026-07-14.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "url": "https://wumbolabs.dev/evaluations/bonsai-27b/",
+        "note": "No canonical profile repository exists yet: the upstream artifact identity cannot be proven (v0.70+ provenance redacts model paths; archaeology preserves a 3,803,452,480-byte fingerprint). The canonical evidence for this event is the model page itself plus the retained local run trees."
+      }
+    },
+    {
+      "slug": "ornith-9b-wumboserver-admission-2026-09-02",
+      "event_id": "ornith-9b-wumboserver-admission-2026-09-02",
+      "event_type": "benchmark-only",
+      "event_date": "2026-09-02",
+      "record_date": "2026-09-02",
+      "model_id": "ornith-1.5-9b",
+      "profile_id": "ornith-1.5-9b-llamacpp-q4km",
+      "profile_name": "llama.cpp Q4_K_M",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-ornith-1.5-9b",
+      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_title": "WumboServer RTX 2060S admission benchmark",
+      "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
+      "evidence_maturity": "BENCHMARK_ONLY",
+      "evidence_scope": [
+        "performance"
+      ],
+      "hardware": "WumboServer (RTX 2060 SUPER 8GB)",
+      "headline": "Ornith 1.5 9B Q4_K_M admission benchmark on WumboServer RTX 2060 SUPER (hardware-lane fit evidence).",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/ornith-9b-wumboserver-admission-2026-09-02.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-ornith-1.5-9b",
+        "url": "https://github.com/WumboLabs/eval-ornith-1.5-9b",
+        "note": "Hardware-lane admission evidence retained locally under hardware/wumboserver; the canonical profile repository for the WumboJetsII WELP campaign remains eval-ornith-1.5-9b. A public-safe lane summary is published on the model page."
+      }
+    },
+    {
+      "slug": "qwen38-27b-quant-showdowns-2026-08-20",
+      "event_id": "qwen38-27b-quant-showdowns-2026-08-20",
+      "event_type": "profile-optimization",
+      "event_date": "2026-08-20",
+      "record_date": "2026-08-20",
+      "model_id": "qwen38-27b",
+      "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
+      "profile_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
+      "profile_status": "historical",
+      "profile_repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+      "event_kicker": "Profile Optimization — llama.cpp quant selection",
+      "event_title": "llama.cpp quant/variant showdown runs (LLMGauge era)",
+      "welp_status": "PROFILE_OPTIMIZATION (historical llama.cpp lane; superseded by ExLlamaV3 H1)",
+      "evidence_maturity": "PROFILE_OPTIMIZATION",
+      "evidence_scope": [
+        "performance",
+        "serving-profile"
+      ],
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "llama.cpp-era quant/variant showdown evidence (unsloth v3-final ladder incl. 196k retrieval probe, community variants, 16k practical selection) that informed the historical profile.",
+      "authoring": "hand-authored",
+      "event_body": "labs-events/qwen38-27b-quant-showdowns-2026-08-20.md",
+      "publication_state": "published",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-qwen3.8-27b-llamacpp",
+        "url": "https://github.com/WumboLabs/eval-qwen3.8-27b-llamacpp",
+        "note": "Showdown run trees are retained in the local LLMGauge archive as product-validation evidence; the canonical public profile repository for this profile is eval-qwen3.8-27b-llamacpp."
+      }
+    },
+    {
+      "slug": "eval-gemma-4-12b-recharacterization-2026-09-12",
+      "event_id": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+      "event_type": "welp-recharacterization",
+      "event_date": "2026-09-12",
+      "record_date": "2026-09-12",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+      "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
+      "profile_status": "current",
+      "profile_repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+      "event_kicker": "WELP Recharacterization — llama.cpp QAT UD-Q4_K_XL",
+      "event_title": "Current-WELP recharacterization",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance"
+      ],
+      "authoring": "generated",
+      "legacy_urls": [
+        "/labs/eval-gemma-4-12b-recharacterization-2026-09-12/"
+      ],
+      "publication_state": "published",
+      "source": {
+        "kind": "github-raw",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+        "path": "website-publication.json",
+        "sha256": "9af5545eea7fc407dc428cc9f804d2d076ea6b41a4271b7a6ee083fb136f5a93"
+      },
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/eval-gemma-4-12b-qat-q4",
+        "ref": "13051c0eb36cd7dc1c1e407b31db451e6c5c806e",
+        "url": "https://github.com/WumboLabs/eval-gemma-4-12b-qat-q4"
+      },
+      "evidence_maturity": "CURRENT_WELP"
+    }
+  ]
+}

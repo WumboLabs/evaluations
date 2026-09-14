@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "release": "INITIAL_PUBLIC_RELEASE",
+  "future_repo": "WumboLabs/labs",
+  "candidate_root": "labs",
+  "allowlist": "publication-allowlist.json",
+  "included_patterns": [
+    "README.md",
+    "catalog.json",
+    "comparisons/**",
+    "hardware/**",
+    "models/**",
+    "PUBLICATION-MANIFEST.json",
+    "publication-allowlist.json",
+    ".gitignore"
+  ],
+  "excluded_patterns": [
+    "local-inventory.json",
+    ".env",
+    ".env.*",
+    "credentials*",
+    "secrets*",
+    "auth*"
+  ],
+  "excluded_source_policy": "EXCLUDED_INITIAL_RELEASE",
+  "large_file_review_threshold_bytes": 5242880,
+  "human_git_gate_required": true
+}

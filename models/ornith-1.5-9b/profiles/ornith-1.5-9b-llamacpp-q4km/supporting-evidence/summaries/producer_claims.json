@@ -1,0 +1,16 @@
+{
+  "schema": "welp-producer-claims/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "source_of_claims": "HF model card + config @489cb97981b8654bcfcf30ce1f94ed1b62e07b53 (revision pinned in sources/provenance.json)",
+  "campaign_scope_note": "Full campaign reached Phase 10. Classifications: REPRODUCED / PARTIALLY_REPRODUCED / NOT_REPRODUCED / INCONCLUSIVE / RECORDED_VERBATIM / PHYSICALLY_UNTESTABLE. NOT_REACHED/INCONCLUSIVE are not refutations.",
+  "claims": [
+    {"claim": "9B-parameter Ornith-1.5 lineage (ornith-ai/Ornith-1.5-9B)", "classification": "REPRODUCED_IDENTITY", "evidence": "GGUF metadata + config @489cb979; file sha256 70c11219… matches pinned download"},
+    {"claim": "context window 256K (max_position_embeddings 262144)", "classification": "PARTIALLY_REPRODUCED", "evidence": "config value verified; MEASURED useful context = 24576 on this hardware at Q4_K_M (Phase 6: 3/3 at 24576 incl. absent-evidence screening; 32768 rung INCONCLUSIVE due to harness overshoot PF-02, not a behavioral failure). Producer figure is a training/architecture claim; served-context on 12 GB with KV budget is materially lower."},
+    {"claim": "coding-specialist positioning", "classification": "PARTIALLY_REPRODUCED", "evidence": "coding module 78/90 = 0.867 (highest behavioral module; sandbox-executed, returncode-verified); but 3 tasks fail all seeds and Phase 4 reliability gate failed — coding strength is real, specialist-grade deployment is not evidenced"},
+    {"claim": "native tool calling support", "classification": "PARTIALLY_REPRODUCED", "evidence": "native_tools 48/60 = 0.80 with --jinja tool parser functional (real tool calls executed against mock harness); 5 HALLUCINATED_RESULT rows show ungrounded-result failure mode"},
+    {"claim": "reasoning-first behavior (thinking mechanism)", "classification": "PARTIALLY_REPRODUCED", "evidence": "mechanism functional (enable_thinking=true produces reasoning_content, correct answers); but reasoning module off=on=17/30 (Δ0) and thinking ON costs +27% mean wall — reasoning-first positioning NOT supported by measured accuracy gain on this contract"},
+    {"claim": "official sampling recipe temp 1.0 / top_p 1.5-style card settings (coding 0.6)", "classification": "RECORDED_VERBATIM", "evidence": "card generation guidance; campaign scored at contract-frozen temp 0.2 — deviation noted as Phase 7/8 lever, not a contract change"},
+    {"claim": "benchmark scores reported on card", "classification": "PHYSICALLY_UNTESTABLE", "reason": "producer benchmarks are system/harness-level with proprietary tasks; not methodologically comparable to raw-model WELP results at Q4_K_M on consumer GPU"}
+  ],
+  "critical_distinction_enforced": "All producer benchmark claims are reported separately from WELP mechanical results per classification contract semantics; neither implies the other."
+}

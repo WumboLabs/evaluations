@@ -1,0 +1,70 @@
+{
+  "BF16": {
+    "failures": [],
+    "pass": 2,
+    "rate": 1.0,
+    "total": 2
+  },
+  "PTQ_Q4_0": {
+    "failures": [],
+    "pass": 2,
+    "rate": 1.0,
+    "total": 2
+  },
+  "Q4_K_M": {
+    "failures": [
+      {
+        "answer": "{\"name\":\"Ada\",\"active\":true,\"count\":3",
+        "category": "structured",
+        "model": "Q4_K_M",
+        "pass": false,
+        "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}."
+      },
+      {
+        "answer": "",
+        "category": "structured",
+        "model": "Q4_K_M",
+        "pass": false,
+        "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"]."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "Q5_K_M": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "structured",
+        "model": "Q5_K_M",
+        "pass": false,
+        "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}."
+      },
+      {
+        "answer": "",
+        "category": "structured",
+        "model": "Q5_K_M",
+        "pass": false,
+        "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"]."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "QAD_Q4_0": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "structured",
+        "model": "QAD_Q4_0",
+        "pass": false,
+        "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"]."
+      }
+    ],
+    "pass": 1,
+    "rate": 0.5,
+    "total": 2
+  }
+}

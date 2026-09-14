@@ -1,0 +1,19 @@
+{
+  "repository": "WumboLabs/eval-qwen3-14b-ollama-q4km",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/research/model-evaluations/qwen3-14b/reviews/model-eval-2026-05-07.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "5806b771e54fe7931dfa888fbc8a4a29bbdaf1ee9893ceb46afec6f532559653",
+      "bytes": 539
+    },
+    {
+      "path": "events/model-eval-2026-05-07.md",
+      "kind": "byte-identical copy of the historical evaluation note (public-safe)",
+      "sha256": "5806b771e54fe7931dfa888fbc8a4a29bbdaf1ee9893ceb46afec6f532559653",
+      "bytes": 539
+    }
+  ]
+}

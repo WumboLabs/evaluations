@@ -1,0 +1,46 @@
+{
+  "schema": "welp-optimization/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 8,
+  "contract": {
+    "id": "welp-optimization",
+    "version": "0.1.0-draft",
+    "sha256": "a1b0a7d444d07dc4f7c2fc11066815ffdfcdab1f43403058289f8c88bcfaea67"
+  },
+  "rule": "baseline never replaced; ONE declared delta per comparison",
+  "baseline": {
+    "profile": "frozen canonical (speculation none)",
+    "decode_tps": "102.04 \u00b1 0.06 (Phase 2)",
+    "prefill_tps": "4046.67 \u00b1 15.68"
+  },
+  "levers": [
+    {
+      "lever": "MTP speculative decoding (--spec-type draft-mtp, GGUF blk.32.nextn.* tensors discovered in Phase 1)",
+      "declared_delta": "speculation none -> draft-mtp; all other args identical",
+      "measurement": "decode stage re-run under MTP instance (5 reps, seeds 42/52/62/72/82, 200->1024)",
+      "result": {
+        "decode_tps": "112.16 \u00b1 3.71",
+        "delta_pct": "+9.9",
+        "quality_check": "6-prompt determinism probe vs baseline: 5/6 byte-identical; code-prompt diverged -> MTP is NOT output-lossless at temp 0.2 on this build",
+        "finish_mix": "2/5 length (1024) vs baseline 5/5 length-equivalent; early-stop variance up (stdev 3.71 vs 0.06)"
+      },
+      "verdict": "REJECTED_FOR_CANONICAL: +9.9% speed does not justify breaking the identical-decision/lossless-seed property that Phase 3 G5 and Phase 4 G5 depend on; a faster profile that changes outputs is a different role/profile per contract principle",
+      "outcome_code": "OPTIMIZED_PROFILE_FOUND (conditional role: speed-preferring non-gate workloads only)"
+    }
+  ],
+  "not_tested": [
+    {
+      "lever": "producer sampling deviation (card temp=1.0/presence=1.5 vs contract 0.2)",
+      "reason": "sampling is per-request contract authority; changing it violates frozen contract semantics, not a serving-profile lever"
+    },
+    {
+      "lever": "larger ctx allocation (65536)",
+      "reason": "VRAM-bound at 12 GiB with Q4_K_M + 32768 KV; PHYSICALLY_UNTESTABLE on this GPU"
+    },
+    {
+      "lever": "n-cpu/batch tuning",
+      "reason": "GPU-resident workload; batch 2048/ubatch 512 already above prefill saturation point measured in Phase 2"
+    }
+  ],
+  "decision": "OPTIMIZED_PROFILE_FOUND (MTP, conditional) \u2014 CANONICAL BASELINE RETAINED for all gate-bearing evaluation"
+}

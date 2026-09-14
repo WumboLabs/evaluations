@@ -1,0 +1,9 @@
+{
+  "evaluation_classification": "READY_WITH_GUARDRAILS",
+  "bounded_conclusion": "Medium-fit Q8_0 quantized control (BF16 cannot fit), READY_WITH_GUARDRAILS: 32K default / 64K guarded, 66.7 tok/s short decode, 7/7 constrained quality and 20/20 reliability. 2026-09-11 context-envelope completion: MODEL-CARD CONTEXT ENVELOPE COMPLETE = YES; native 262,144 FIT_LIMIT (f16 primary lower bound; q4_0 alternate measured admission failure), YaRN 1,010,000 FIT_LIMIT at every representable KV precision, highest measured/admitted near-full primary context 65,536 (not the absolute runtime maximum; 98,304 projected below the frozen safety floor and not launched); at near-full occupancy planted-target retrieval is perfect while the strict useful-context gate FAILED 0/4 (absent-information value correct but returned under the wrong key name); free-form grounding cautions apply.",
+  "localmaxxing_status": "SUBMITTED/cmtwcn79807eups01faxxmyr1",
+  "policy": "ALLOWLIST_FIRST",
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ]
+}

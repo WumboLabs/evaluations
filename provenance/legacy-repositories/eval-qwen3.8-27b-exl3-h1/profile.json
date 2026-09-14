@@ -1,0 +1,17 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen38-27b",
+  "model_display_name": "Qwen3.8-27B",
+  "profile_id": "qwen38-27b-exl3-h1",
+  "profile_display_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
+  "runtime_family": "ExLlamaV3",
+  "runtime_version": "1.4.6+cu128.torch2.10.0",
+  "artifact": "Qwen3.8-27B-SC_2.20bpw_H3_V3 (EXL3)",
+  "artifact_precision": "2.20 bpw EXL3; q4 target KV; q4 draft KV; MTP width 1",
+  "deployment_topology": "MTP width 1, batch 1, max_chunk 256, recurrent history H1 (max_history 1) with explicit H4 fallback via --max-history 4; CPU embedding lookup (not transformer-layer offload); all 64 transformer blocks GPU-resident",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB, SM120)",
+  "repository": "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+  "first_event": "h1-canonical-promotion-2026-09-09",
+  "current_status": "current",
+  "notes": "Canonical repository for the current canonical Qwen3.8-27B serving profile, established 2026-09-12 by the WumboLabs model/profile/event publication-identity milestone. Two events live here on this one profile: h1-canonical-promotion-2026-09-09 (E18H candidate validation + E18I canonical promotion) and context-envelope-completion-2026-09-12. Evidence imported byte-identical from WumboLabs/eval-qwen3.8-27b (the original publication repository, retained as a historical archive)."
+}

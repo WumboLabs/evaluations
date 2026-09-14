@@ -1,0 +1,52 @@
+{
+  "source_2_6b": "lfm2.5-2.6b-qad/report.md (historical control, unmodified)",
+  "file_size_gguf_bytes": {
+    "2.6B_QAD": 1593894944,
+    "1.2B_QAD": 695755488,
+    "saved_vs_2_6b": 898139456
+  },
+  "peak_vram_mib": {
+    "2.6B_QAD": 2404,
+    "1.2B_QAD": 1534,
+    "saved_mib": 870
+  },
+  "decode_tok_s": {
+    "2.6B_QAD": 282.5,
+    "1.2B_QAD": 585.6,
+    "speedup_x": 2.07
+  },
+  "prompt_tok_s": {
+    "2.6B_QAD": 3221.8,
+    "1.2B_QAD": 6600.0
+  },
+  "sampling_delta": "repeat penalty 1.05 (1.2B card) vs 1.1 (2.6B card)",
+  "practical_exact_match": {
+    "2.6B": "noisy small suite, no aggregate",
+    "1.2B": "31/52 across six-model matrix; best quant"
+  },
+  "hallucination_resistance": {
+    "2.6B": "no QAD improvement shown (tiny suite)",
+    "1.2B": "0/12 for ALL quants incl BF16 on invented subjects - model-level property at this scale"
+  },
+  "structured_output": {
+    "2.6B": "QAD 1/2 vs PTQ 2/2 (no improvement)",
+    "1.2B": "QAD 11/12 vs PTQ 10/12 (small edge)"
+  },
+  "tools": {
+    "2.6B": "5/5 saturated all quants",
+    "1.2B": "v1 saturated 5/5 (UD 4/5); v2 complete sequences 5/10 for QAD=PTQ=Q4_K_M=BF16"
+  },
+  "coding_exec_pass": {
+    "2.6B": "4/20 every primary quant",
+    "1.2B": "QAD 4/20, PTQ 4/20, Q4_K_M 8/20, UD 8/20, Q5 12/20, BF16 8/20 - still poor"
+  },
+  "useful_context": {
+    "2.6B": "<= ~8K established",
+    "1.2B": "<= 8K (all four finalists fail >=16K)"
+  },
+  "fidelity_direction": {
+    "2.6B": "QAD < PTQ PPL on both corpora",
+    "1.2B": "PTQ < QAD natural PPL (inverted); repeated-corpus pathology persists: BF16 worse than most quants"
+  },
+  "verdict_draft": "1.2B QAD doubles decode and saves ~898 MB with no practical-quality loss versus its own 2.6B result class; but absolute capability drops (worse coding than 2.6B-class peers? see report), hallucination resistance absent at this scale."
+}

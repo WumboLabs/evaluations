@@ -1,0 +1,82 @@
+{
+  "schema": "welp-artifact-reconciliation/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "written_utc": "2026-08-27T00:00:00Z",
+  "purpose": "Closeout reconciliation of artifact_index growth (43 -> 54 -> 59), full sha256 re-verification against disk, missing-artifact defect, and self-referential hash policy.",
+  "count_reconciliation": {
+    "at_freeze": 43,
+    "at_freeze_note": "original 43-entry index ended at entry 43 (final_classification); the '43-entry' phrasing in earlier drafts was stale and has been corrected in report.md",
+    "post_freeze_additions_v1": [
+      "conformance",
+      "report",
+      "protocol_findings",
+      "publication_status",
+      "publication_policy",
+      "publication_manifest",
+      "producer_claims",
+      "sanitized_environment",
+      "sanitized_toolchain_inventory",
+      "sanitized_toolchain_preflight",
+      "sanitized_campaign_manifest"
+    ],
+    "after_publication_audit": 54,
+    "closeout_additions_v2": [
+      "phase_status_semantics",
+      "protocol_findings_json",
+      "artifact_reconciliation",
+      "localmaxxing_package_record",
+      "repo_candidate_manifest",
+      "repo_candidate_allowlist",
+      "repo_candidate_policy",
+      "closeout"
+    ],
+    "final": 62,
+    "counts_field": "campaign_manifest.json has no counts field; length is authoritative",
+    "null_hash_policy": "self-referential entries campaign_manifest, sanitized_campaign_manifest, closeout carry sha256=null with per-entry notes; validate_campaign_welp.py does not check artifact_index hashes against disk"
+  },
+  "hash_verification": {
+    "method": "sha256sum of every artifact_index path compared to recorded sha256 (54 entries at verification time)",
+    "verified_match": "50 of 54",
+    "mismatch_stale": {
+      "campaign_manifest": "self-referential; stale by construction after any edit — resolved to null with note (see self_hash_policy)",
+      "conformance": "stale from closeout edits (PF-01…PF-08 line + ruling section); recomputed",
+      "report": "stale from closeout edits (reproduction section + closeout addendum); recomputed",
+      "protocol_findings": "stale from PF-02 gate_effect typo fix (24566->24576); recomputed"
+    },
+    "missing": {
+      "phase2_raw": {
+        "path": "results/phase2_raw.jsonl",
+        "recorded_sha256": "1ab5611e6de358bbaae03f0815bc8786ad6b5925b11a4f27b31f1ee7e1438da8",
+        "finding": "file absent from results/ and from the entire workspace; recorded hash appears nowhere else except campaign_manifest.json and its sanitized copy (no independent evidence of the file's content)"
+      },
+      "phase2_summary": {
+        "path": "results/phase2_summary.json",
+        "recorded_sha256": "3825b5a91baa44af4415e46ee51e70fbbc25e4205eeede106a45ca760940d281",
+        "finding": "same as phase2_raw"
+      },
+      "disposition": "INVALIDATED_RETAINED with sha256 null + note; NOT regenerated or fabricated. scripts/phase2_perf.py (phase2_harness, hash verified) remains the reproducibility path.",
+      "authoritative_survivors": "per-repetition values in summaries/performance.json: decode [102.01,102.12,102.08,102.03,101.97] mean 102.04 stdev 0.06 n=5 n_invalidated=0; prefill [4024.65,4042.17,4051.04,4068.1,4047.41] mean 4046.67 stdev 15.68 (prompt_size_tokens_mean 5578); ttft short_prompt 36.93 ms, first_token_est 46.72 ms. Canonical Phase-2 headline numbers unaffected."
+    }
+  },
+  "self_hash_policy": {
+    "campaign_manifest": "sha256 null with note: self-referential hash is chicken-and-egg (any edit, including recording the hash, invalidates it). validate_campaign_welp.py does not check hashes against disk, so null is validator-safe.",
+    "sanitized_campaign_manifest": "derived copy regenerated after every manifest edit; hash recomputed last so it reflects the final manifest content."
+  },
+  "tree_hash_bookkeeping": "pinned protocol-snapshot tree_sha256 8b68e316… is pre-rename; live welp/ tree and campaign protocol-snapshot/ copy are byte-identical and hash to 83e2a3ec…; all dataset_inventory hashes resolve against campaign/snapshot copies (zero missing). Documented as PF-07 extension (bookkeeping limitation), not a blocker.",
+  "publication_audit": {
+    "leaking_files_found": [
+      "publication-policy.json",
+      "summaries/campaign_manifest.json",
+      "summaries/launch_command.txt",
+      "summaries/environment_identity.json",
+      "summaries/toolchain_inventory.json",
+      "summaries/toolchain_preflight.json",
+      "scripts/soak_sampler.sh",
+      "scripts/freeze_provenance.py",
+      "scripts/phase1_admission.py"
+    ],
+    "remedy": "publication/repo-candidate/ tree: 8 evidence files published as sanitized copies with /home/<user> -> <USER_HOME> and username -> <USER>; campaign originals remain LOCAL_ONLY; candidate root files authored (README.md, MODEL.md, model-manifest.json, PUBLICATION-POLICY.md, publication-policy.json, PUBLICATION-MANIFEST.json, publication-allowlist.json, .gitignore)",
+    "validator": "welp/validators/validate_public_tree.py validate -> PASS, 88 selected files, 0 errors, 0 findings",
+    "exclusions_added": "protocol-snapshot/**, **/*.csv (pid-bearing soak samplers), sources/** wholesale"
+  }
+}

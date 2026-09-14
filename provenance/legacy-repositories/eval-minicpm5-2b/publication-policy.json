@@ -1,0 +1,9 @@
+{
+  "evaluation_classification": "READY_WITH_GUARDRAILS",
+  "bounded_conclusion": "Official BF16 full-precision characterization on a contained vLLM runtime, READY_WITH_GUARDRAILS: 32K default / 64K guarded, complete 131K model-card envelope (98K highest BF16-KV rung; exact 131K FIT_LIMIT on BF16-KV and strict-gate FAILED on the authorized fp8-KV surface), 118.6 tok/s decode, thinking/coding/tools PASS, 20/20 reliability.",
+  "localmaxxing_status": "SUBMITTED/cmtwcna5907f0ps01sfiwd60a",
+  "policy": "ALLOWLIST_FIRST",
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ]
+}

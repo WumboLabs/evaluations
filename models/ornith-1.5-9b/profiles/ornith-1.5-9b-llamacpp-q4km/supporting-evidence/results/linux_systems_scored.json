@@ -1,0 +1,732 @@
+[
+ {
+  "id": "linux-cuda-env",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-disk-usage",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-dnf-provides",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "dnf provides"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-find-large",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-journal-xid",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "journalctl -k -b"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-mount",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "findmnt"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-nvidia-query",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "memory.used",
+    "memory.free"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-permissions",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-quote-path",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-selinux",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-socket",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "-x"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-ssh-known-host",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemctl-failure",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemd-enable",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [],
+   "forbidden_present": [
+    "enable"
+   ]
+  }
+ },
+ {
+  "id": "git-branch-switch",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-commit-proof",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-discard",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-log",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-rebase-risk",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-reset",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-stash",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "hides"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-unstaged",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git diff -- config.toml"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-cuda-env",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-disk-usage",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-dnf-provides",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "dnf provides"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-find-large",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-journal-xid",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "journalctl -k -b"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-mount",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "findmnt"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-nvidia-query",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "memory.used",
+    "memory.free"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-permissions",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-quote-path",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "'a b'"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-selinux",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-socket",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "-x"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-ssh-known-host",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "verify",
+    "host key"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemctl-failure",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "systemctl status"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemd-enable",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [],
+   "forbidden_present": [
+    "enable"
+   ]
+  }
+ },
+ {
+  "id": "git-branch-switch",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git status"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-commit-proof",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-discard",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-log",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-rebase-risk",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-reset",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-stash",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "hides"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-unstaged",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git diff -- config.toml"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-cuda-env",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-disk-usage",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-dnf-provides",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "dnf provides"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-find-large",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-journal-xid",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "journalctl -k -b"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-mount",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "findmnt"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-nvidia-query",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "memory.used",
+    "memory.free"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-permissions",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-quote-path",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "'a b'"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-selinux",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-socket",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "-x"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-ssh-known-host",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "verify"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemctl-failure",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "systemctl status"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "linux-systemd-enable",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [],
+   "forbidden_present": [
+    "enable"
+   ]
+  }
+ },
+ {
+  "id": "git-branch-switch",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git status"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-commit-proof",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-discard",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git diff"
+   ],
+   "forbidden_present": [
+    "git checkout --"
+   ]
+  }
+ },
+ {
+  "id": "git-log",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-rebase-risk",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-reset",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-stash",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "git-unstaged",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "git diff -- config.toml"
+   ],
+   "forbidden_present": []
+  }
+ }
+]

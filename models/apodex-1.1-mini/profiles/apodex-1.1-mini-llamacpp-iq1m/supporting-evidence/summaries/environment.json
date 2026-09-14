@@ -1,0 +1,23 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 (GB205, sm_120)",
+    "vram_total_mib": 12227,
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core",
+    "host": "WumboJetsII (Fedora, kernel 7.1.10-200.fc44.x86_64)"
+  },
+  "software": {
+    "driver": "610.57.04",
+    "cuda_toolkit": "13.3 (V13.3.73)",
+    "os": "Fedora Linux 44"
+  },
+  "runtime": {
+    "llama_cpp_commit": "f280b26983ad0fdb705a0d9ebf0503e76f2899b0",
+    "commit_date": "2026-08-24",
+    "tree": "~/Projects/local-llm/apodex-1.1-mini/runtime/llama.cpp (campaign-pinned; existing trees untouched)",
+    "build": "Release, GGML_CUDA=ON, CMAKE_CUDA_ARCHITECTURES=120, host compiler g++-15 with -allow-unsupported-compiler (CUDA 13.3 rejects gcc>=15 by default)",
+    "build_logs": ["runtime/cmake-configure.log", "runtime/cmake-build.log"],
+    "compatibility_basis": "community GGUF repo requires >= f280b26983ad0fdb705a0d9ebf0503e76f2899b0; existing llama.cpp-current 0d9ceae1 verified 166 commits behind -> separate pinned tree required (recorded as experimental identity difference vs prior campaigns)"
+  },
+  "omp": {"version": "omp/18.0.5", "path": "~/.local/bin/omp"},
+  "localmaxxing_cli": {"path": "/usr/local/sbin/lmx"}
+}

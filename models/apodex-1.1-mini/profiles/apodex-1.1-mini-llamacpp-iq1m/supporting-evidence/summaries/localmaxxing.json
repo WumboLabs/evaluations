@@ -1,0 +1,32 @@
+{
+  "workflow_version": "frozen snapshot LocalMaxxing Publication Workflow (idempotency rules included)",
+  "cli": {"version": "lmx v0.1.33", "commit": "4a36be4871d0bf26960b2868e18771269df4dc8e"},
+  "authentication": "CLI-native saved auth at ~/.config/localmaxxing/config.json (fixed separately 2026-08-25); clean-process whoami PASS",
+  "speed_test": {
+    "status_lifecycle": ["LOCAL_VALIDATION_COMPLETE", "API_DRY_RUN_VALID", "SUBMITTED", "APPROVED"],
+    "run_artifact": "localmaxxing/runs/apodex-Apodex-1.1-mini/20260825T233149Z.json",
+    "methodology": "llama-bench -p 512 -n 128 on canonical IQ1_M artifact via pinned f280b269 campaign build",
+    "metrics": {"tokSOut": 182.31, "tokSPrefill": 1730.93, "ttftMs": 295.8, "ttftSource": "estimated_from_prefill"},
+    "metadata_enrichment": "engineVersion (runtime commit), modelRevision (upstream 62583b46), quant provenance + serving-baseline notes added before submission; all fields truthful, no metric altered",
+    "duplicate_check": "read-only GET /api/speed-tests (limit 100): 0 Apodex records before submission; combined with zero prior recorded POSTs => absence established",
+    "submissions": [
+      {"id": "cmt9ijytg00xali017f46xk25", "createdAt": "2026-08-26T03:07:38.116Z", "status": "APPROVED", "role": "CANONICAL"},
+      {"id": "cmt9imzoz00xfli01g5tzz3kx", "createdAt": "2026-08-26T03:09:59.219Z", "status": "APPROVED", "role": "DUPLICATE_ACCIDENTAL"}
+    ],
+    "duplicate_incident_disclosure": "A second real POST occurred at 03:09:59Z when a --json re-invocation of 'lmx speed-test submit' was used attempting to capture machine-readable output of the first submission; submit is not idempotent. Payloads are byte-identical. Per hardened workflow: LocalMaxxing has NO supersede/delete mechanism for speed tests; no deletion attempted. Canonical record = EARLIER id cmt9ijytg00xali017f46xk25; the later id is marked duplicate in WumboLabs evidence only.",
+    "server_side_verification": "read-only GET confirmed exactly 2 Apodex records, both APPROVED, both owned by this account, identical metrics"
+  },
+  "benchmark_suites": {
+    "status": "NOT_SUBMITTED",
+    "reason": "WLEP early stop at Phase 3; insufficient evaluation depth; out of scope for this milestone"
+  },
+  "report": {
+    "status": "NOT_CREATED",
+    "reason": "Early-stop campaign cannot support a meaningful complete-model report; X export not applicable"
+  },
+  "evidence_files": [
+    "localmaxxing/evidence/dryrun-response.json (sanitized API dry-run acceptance)",
+    "localmaxxing/evidence/submit-response.json (POST response, sanitized)",
+    "localmaxxing/evidence/submission-ids.json"
+  ]
+}

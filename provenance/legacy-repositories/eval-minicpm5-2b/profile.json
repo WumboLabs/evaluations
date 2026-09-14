@@ -1,0 +1,14 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "minicpm5-2b",
+  "model_display_name": "MiniCPM5-2B",
+  "profile_id": "minicpm5-2b-vllm-bf16",
+  "profile_display_name": "contained vLLM BF16",
+  "runtime_family": "vLLM",
+  "artifact": "model-00000-of-00001.safetensors (official BF16; no quantization or conversion)",
+  "artifact_precision": "BF16 weights and BF16 KV (primary surface); fp8(e4m3) KV on the single authorized 131,072 alternate surface",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-minicpm5-2b",
+  "first_event": "initial-evaluation-2026-09-10",
+  "current_status": "current"
+}

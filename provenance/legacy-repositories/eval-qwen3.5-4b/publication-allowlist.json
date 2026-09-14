@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "policy": "ALLOWLIST_FIRST",
+  "default": "DO_NOT_PUBLISH",
+  "allowed": [
+    "README.md",
+    "EVIDENCE-SUMMARY.md",
+    "reports/**",
+    "website-publication.json",
+    "MODEL.md",
+    "model-manifest.json",
+    "PUBLICATION-POLICY.md",
+    "publication-policy.json",
+    "PUBLICATION-MANIFEST.json",
+    "publication-allowlist.json",
+    ".gitignore"
+  ],
+  "excluded": [
+    "sources/**",
+    "runtime/**",
+    "logs/**",
+    "telemetry/**",
+    "models/**",
+    "__pycache__/**",
+    "*.pyc",
+    ".env",
+    ".env.*",
+    "credentials*",
+    "secrets*",
+    "auth*",
+    "**/.cache/**"
+  ],
+  "reason": "Completed WELP campaign public-evidence record; bounded public derivative material only. 2026-09-11: reports/** added for the append-only context-envelope completion follow-up."
+}

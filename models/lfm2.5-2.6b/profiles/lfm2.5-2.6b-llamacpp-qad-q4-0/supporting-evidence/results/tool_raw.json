@@ -1,0 +1,586 @@
+{
+  "BF16": [
+    {
+      "query": "What is weather in Oslo in C?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Oslo with unit \"C\" (Celsius). I need to use the lookup_weather function with city=\"Oslo\" and unit=\"C\".",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Oslo\",\"unit\":\"C\"}"
+            },
+            "id": "pzfFf31cKJYfm7vGOfsQftx06zfzbJ7Y"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum 2, 5, and 9.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum the numbers 2, 5, and 9. I have a tool called `sum_numbers` that can return the sum of integer values. The parameters require an array of integers called \"values\". So I should call this function with [2, 5, 9].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[2, 5, 9]}"
+            },
+            "id": "FfklnpZJNMZCDJAqZDGZ4AoPiv9hgKGs"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Just greet me; do not call a tool.",
+      "expected_tool": null,
+      "expected_arguments": null,
+      "got_tool": null,
+      "got_arguments": null,
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?",
+        "reasoning_content": "The user is asking me to greet them and explicitly says \"do not call a tool.\" This means I should just respond with a greeting without using any of the available tools.\n\nI'll provide a friendly greeting as requested."
+      }
+    },
+    {
+      "query": "What is weather in Lima in F?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Lima with unit \"F\" (Fahrenheit). I need to use the lookup_weather function with city=\"Lima\" and unit=\"F\".",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Lima\",\"unit\":\"F\"}"
+            },
+            "id": "otYw2RiBWbfuIKZInwQ9wKcN7K19XIsi"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum -3 and 8.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum -3 and 8. This is a simple arithmetic operation. I have access to the `sum_numbers` function which takes an array of integers and returns their sum.\n\nLet me call this function with values [-3, 8].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[-3, 8]}"
+            },
+            "id": "65ldVlY8N7mEh954gTiB1RvK53xMt1JE"
+          }
+        ]
+      }
+    }
+  ],
+  "PTQ_Q4_0": [
+    {
+      "query": "What is weather in Oslo in C?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Oslo with unit set to Celsius (C). I need to use the lookup_weather function which requires city and unit parameters. The city should be \"Oslo\" and unit should be \"C\" as specified by the user.\n\nLet me call this function to get the current weather information.",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Oslo\",\"unit\":\"C\"}"
+            },
+            "id": "TBKlysIsio1kJ6JGpo6dU2lrL25fYfoJ"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum 2, 5, and 9.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum the numbers 2, 5, and 9. I have a tool called `sum_numbers` that can calculate the sum of integer values. The parameters require an array of integers called \"values\".\n\nI should call this function with the values [2, 5, 9].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[2, 5, 9]}"
+            },
+            "id": "toDM5i4owQp5WcDMPWdgRwi4LqMIn6Vm"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Just greet me; do not call a tool.",
+      "expected_tool": null,
+      "expected_arguments": null,
+      "got_tool": null,
+      "got_arguments": null,
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?",
+        "reasoning_content": "The user is asking me to greet them and explicitly says \"do not call a tool\". This means I should just respond with a greeting without using any of the provided tools.\n\nI need to be careful - they said \"Just greet me\" which is a simple request for a greeting. The instruction also says \"do not call a tool\", so I should not use any of the available functions (lookup_weather or sum_numbers).\n\nLet me provide a friendly greeting response directly."
+      }
+    },
+    {
+      "query": "What is weather in Lima in F?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Lima (a city) with unit set to Fahrenheit (\"F\"). I need to use the lookup_weather function which requires:\n- city: \"Lima\"\n- unit: \"F\" (since they want it in Fahrenheit)\n\nLet me call this function to get the current weather information.",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Lima\",\"unit\":\"F\"}"
+            },
+            "id": "kgHgme8POEfkFuDRHu5BjzGyh6Vt9xEP"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum -3 and 8.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum -3 and 8. This is a simple arithmetic operation. I have access to the `sum_numbers` function which can return the sum of integer values.\n\nLet me use this function with values [-3, 8] to get the result.",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[-3, 8]}"
+            },
+            "id": "it5rA7u9cHosCoIOM5aolm03TefoQeow"
+          }
+        ]
+      }
+    }
+  ],
+  "QAD_Q4_0": [
+    {
+      "query": "What is weather in Oslo in C?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Oslo with unit \"C\" (which likely means Celsius). I need to use the lookup_weather function with city=\"Oslo\" and unit=\"C\".",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Oslo\",\"unit\":\"C\"}"
+            },
+            "id": "W90XVOYKBxG4Ih5BkZzYFM5olYcoNe31"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum 2, 5, and 9.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum the numbers 2, 5, and 9. I have a tool called `sum_numbers` that can return the sum of integer values. The parameters require an array of integers called \"values\". So I should call this function with [2, 5, 9].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[2, 5, 9]}"
+            },
+            "id": "OVuIdwb6Ag3Zqtv0h9NrB1s89XYJzUIp"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Just greet me; do not call a tool.",
+      "expected_tool": null,
+      "expected_arguments": null,
+      "got_tool": null,
+      "got_arguments": null,
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?",
+        "reasoning_content": "The user is asking me to greet them and explicitly instructs me not to call any tools. This is a simple request that doesn't require any of the available functions (lookup_weather or sum_numbers). I should just respond with a greeting as requested, without using any tools."
+      }
+    },
+    {
+      "query": "What is weather in Lima in F?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Lima with unit \"F\" (Fahrenheit). I need to use the lookup_weather function with city=\"Lima\" and unit=\"F\".",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Lima\",\"unit\":\"F\"}"
+            },
+            "id": "YP16OBF2x2hNw41ycwcQdyWjzFtMYFS4"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum -3 and 8.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum -3 and 8. I have a tool called `sum_numbers` that can return the sum of integer values. The parameters require an array of integers called `values`.\n\nI need to call this function with [-3, 8] as the values parameter.\n\nLet me make the tool call.",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[-3, 8]}"
+            },
+            "id": "KH4C3gC6gSlNnJkAUYMEB8eBOlnmloCW"
+          }
+        ]
+      }
+    }
+  ],
+  "Q4_K_M": [
+    {
+      "query": "What is weather in Oslo in C?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Oslo",
+        "unit": "C"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Oslo with unit \"C\" (Celsius). I need to use the lookup_weather tool with city=\"Oslo\" and unit=\"C\".",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Oslo\",\"unit\":\"C\"}"
+            },
+            "id": "mMFFZMwfhx81rilutWxHB3GHgPcWyco6"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum 2, 5, and 9.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          2,
+          5,
+          9
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum the numbers 2, 5, and 9. I have a tool called `sum_numbers` that can return the sum of integer values. The parameters require an array of integers.\n\nLet me call this function with the values [2, 5, 9].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[2, 5, 9]}"
+            },
+            "id": "bnWiTTTWF2If7VD67UdDQ2o6peEPMJc7"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Just greet me; do not call a tool.",
+      "expected_tool": null,
+      "expected_arguments": null,
+      "got_tool": null,
+      "got_arguments": null,
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "Hello! How can I help you today?",
+        "reasoning_content": "The user is asking me to greet them and explicitly states \"do not call a tool.\" This means I should just respond with a greeting without using any of the available tools.\n\nI need to provide a friendly greeting message. Since no tool calls are needed (and in fact, the instruction says not to call a tool), I'll simply respond naturally."
+      }
+    },
+    {
+      "query": "What is weather in Lima in F?",
+      "expected_tool": "lookup_weather",
+      "expected_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "got_tool": "lookup_weather",
+      "got_arguments": {
+        "city": "Lima",
+        "unit": "F"
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user is asking for the weather in Lima in Fahrenheit (F). I need to use the lookup_weather tool with city=\"Lima\" and unit=\"F\". Let me call this function.",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "lookup_weather",
+              "arguments": "{\"city\":\"Lima\",\"unit\":\"F\"}"
+            },
+            "id": "AZ9Jn90smi6oOMAaVNGWMytkSXes2KBE"
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sum -3 and 8.",
+      "expected_tool": "sum_numbers",
+      "expected_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "got_tool": "sum_numbers",
+      "got_arguments": {
+        "values": [
+          -3,
+          8
+        ]
+      },
+      "schema_valid": true,
+      "pass": true,
+      "raw_message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "The user wants me to sum -3 and 8. This is a simple arithmetic operation. I should use the sum_numbers tool which takes an array of integers and returns their sum.\n\nLet me call sum_numbers with values [-3, 8].",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "sum_numbers",
+              "arguments": "{\"values\":[-3, 8]}"
+            },
+            "id": "M1Co1kiYgjJJRCJZRrVQMOBCShvKw9KJ"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "4096": {
+    "seeds_passed": 3,
+    "verdict": "PASS",
+    "mean_tokens_actual": 4173,
+    "max_token_delta_pct": 2.6
+  },
+  "16384": {
+    "seeds_passed": 3,
+    "verdict": "PASS",
+    "mean_tokens_actual": 16503,
+    "max_token_delta_pct": 1.0
+  },
+  "32768": {
+    "seeds_passed": 0,
+    "verdict": "FAIL_CONFIRMED",
+    "mean_tokens_actual": 32808,
+    "max_token_delta_pct": 0.3
+  }
+}

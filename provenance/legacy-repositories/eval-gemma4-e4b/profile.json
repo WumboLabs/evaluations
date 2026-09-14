@@ -1,0 +1,14 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "gemma4-e4b",
+  "model_display_name": "Gemma 4 E4B",
+  "profile_id": "gemma4-e4b-llamacpp-qat-q4-0",
+  "profile_display_name": "llama.cpp official QAT Q4_0",
+  "runtime_family": "llama.cpp",
+  "artifact": "gemma-4-E4B_q4_0-it.gguf + official gemma-4-E4B-it-mmproj.gguf (Google official QAT release)",
+  "artifact_precision": "QAT Q4_0 weights, F16 KV cache",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-gemma4-e4b",
+  "first_event": "initial-evaluation-2026-09-10",
+  "current_status": "current"
+}

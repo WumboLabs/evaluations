@@ -1,0 +1,8 @@
+{
+  "24576": {
+    "seeds_passed": 3,
+    "verdict": "PASS",
+    "mean_tokens_actual": 24608,
+    "max_token_delta_pct": 0.4
+  }
+}

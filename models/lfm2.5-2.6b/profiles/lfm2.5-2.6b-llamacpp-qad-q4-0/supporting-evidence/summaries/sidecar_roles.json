@@ -1,0 +1,13 @@
+{
+  "fast_extraction":"POSSIBLE_WITH_GUARDRAILS",
+  "router_or_classification":"POSSIBLE_WITH_GUARDRAILS",
+  "rag_helper":"POSSIBLE_WITH_GUARDRAILS",
+  "structured_output":"POSSIBLE_WITH_GUARDRAILS",
+  "native_tool_agent":"GOOD_FIT for the five simple deterministic schemas exercised; broader schema/recovery behavior unverified",
+  "simple_local_assistant":"POSSIBLE_WITH_GUARDRAILS",
+  "always_loaded_sidecar":"GOOD_FIT",
+  "fallback_model":"POSSIBLE_WITH_GUARDRAILS",
+  "daily_primary_assistant":"POOR_FIT",
+  "agentic_coding":"POOR_FIT",
+  "evidence":"QAD occupies 2404 MiB peak at 4K and decodes at 282.5 tok/s, but exact extraction/instruction behavior was brittle and only 4/20 sandbox coding executions passed."
+}

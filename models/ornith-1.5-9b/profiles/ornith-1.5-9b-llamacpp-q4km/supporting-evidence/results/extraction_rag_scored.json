@@ -1,0 +1,552 @@
+[
+ {
+  "id": "rag-exact-price",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "249"
+  }
+ },
+ {
+  "id": "rag-exact-vendor",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "Nordwind Devices"
+  }
+ },
+ {
+  "id": "rag-multi-field",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "price_usd": 249,
+    "stock": 42,
+    "vendor": "Halcyon Micro"
+   }
+  }
+ },
+ {
+  "id": "rag-absent-part",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents provide information about part VX-220's price (249 USD), stock levels, and vendor (Halcyon Micro), but no warranty period is mentioned anywhere in the provided documents."
+  }
+ },
+ {
+  "id": "rag-absent-maint",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents do not mention any facilities manager."
+  }
+ },
+ {
+  "id": "rag-latest-stock",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-latest-fw",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.5.0"
+  }
+ },
+ {
+  "id": "rag-conflict-pwm",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NO"
+  }
+ },
+ {
+  "id": "rag-gre-sites",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite2",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "doc-net-001",
+    "s2",
+    "48"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-summary",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "date_of_delta": "2026-08-15",
+    "stock_after": 17,
+    "order": "SO-1188"
+   }
+  }
+ },
+ {
+  "id": "rag-classify",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "EMERGENCY"
+  }
+ },
+ {
+  "id": "rag-routing",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "TEAM-A"
+  }
+ },
+ {
+  "id": "rag-cross-doc",
+  "seed": 42,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": [
+    "2.4.0",
+    "2.4.1",
+    "2.5.0",
+    "7.2",
+    "7.4"
+   ]
+  }
+ },
+ {
+  "id": "rag-contradiction",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-unsupported",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-fan-bug",
+  "seed": 42,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.4.1"
+  }
+ },
+ {
+  "id": "rag-exact-price",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "249"
+  }
+ },
+ {
+  "id": "rag-exact-vendor",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "Nordwind Devices"
+  }
+ },
+ {
+  "id": "rag-multi-field",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "price_usd": 249,
+    "stock": 42,
+    "vendor": "Halcyon Micro"
+   }
+  }
+ },
+ {
+  "id": "rag-absent-part",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents provide information about part VX-220's price (249 USD), stock levels, and vendor (Halcyon Micro), but no information about its warranty period."
+  }
+ },
+ {
+  "id": "rag-absent-maint",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents do not mention any facilities manager. Additionally, DOC-NET-001 does not contain personnel or role listings."
+  }
+ },
+ {
+  "id": "rag-latest-stock",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-latest-fw",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.5.0"
+  }
+ },
+ {
+  "id": "rag-conflict-pwm",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "YES"
+  }
+ },
+ {
+  "id": "rag-gre-sites",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite2",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "doc-net-001",
+    "48"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-summary",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "date_of_delta": "2026-08-15",
+    "stock_after": 17,
+    "order": "SO-1188"
+   }
+  }
+ },
+ {
+  "id": "rag-classify",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "EMERGENCY"
+  }
+ },
+ {
+  "id": "rag-routing",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "TEAM-A"
+  }
+ },
+ {
+  "id": "rag-cross-doc",
+  "seed": 43,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": [
+    "2.4.0",
+    "2.4.1",
+    "2.5.0",
+    "7.2",
+    "7.4"
+   ]
+  }
+ },
+ {
+  "id": "rag-contradiction",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-unsupported",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-fan-bug",
+  "seed": 43,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.4.1"
+  }
+ },
+ {
+  "id": "rag-exact-price",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "249"
+  }
+ },
+ {
+  "id": "rag-exact-vendor",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "Nordwind Devices"
+  }
+ },
+ {
+  "id": "rag-multi-field",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "price_usd": 249,
+    "stock": 42,
+    "vendor": "Halcyon Micro"
+   }
+  }
+ },
+ {
+  "id": "rag-absent-part",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents provide information about part VX-220's price (249 USD), stock levels, and vendor (Halcyon Micro), but no warranty period is mentioned."
+  }
+ },
+ {
+  "id": "rag-absent-maint",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "NOT_SPECIFIED\n\nThe documents do not mention any facilities manager."
+  }
+ },
+ {
+  "id": "rag-latest-stock",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-latest-fw",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.5.0"
+  }
+ },
+ {
+  "id": "rag-conflict-pwm",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": "YES"
+  }
+ },
+ {
+  "id": "rag-gre-sites",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-evidence-cite2",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "missing": [
+    "doc-net-001",
+    "48"
+   ],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-summary",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": {
+    "date_of_delta": "2026-08-15",
+    "stock_after": 17,
+    "order": "SO-1188"
+   }
+  }
+ },
+ {
+  "id": "rag-classify",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "EMERGENCY"
+  }
+ },
+ {
+  "id": "rag-routing",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "TEAM-A"
+  }
+ },
+ {
+  "id": "rag-cross-doc",
+  "seed": 44,
+  "passed": false,
+  "class": "MATERIAL_DEFECT",
+  "detail": {
+   "actual": [
+    "2.4.0",
+    "2.4.1",
+    "2.5.0",
+    "7.2",
+    "7.4"
+   ]
+  }
+ },
+ {
+  "id": "rag-contradiction",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "17"
+  }
+ },
+ {
+  "id": "rag-unsupported",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "missing": [],
+   "forbidden_present": []
+  }
+ },
+ {
+  "id": "rag-fan-bug",
+  "seed": 44,
+  "passed": true,
+  "class": "CLEAN_PASS",
+  "detail": {
+   "actual": "2.4.1"
+  }
+ }
+]

@@ -1,0 +1,174 @@
+{
+  "schema": "welp-capability-modules/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 5,
+  "provenance": {
+    "harness_sha256": {
+      "run_module.py": "0eb636ac087b275b432bf460a7f819903453d0bd9151aa9627368a227c65fdf8",
+      "score_module.py": "055644536f0adbc41b8835dba4bedfb88e15e8197e212dcad5fc92846336a118",
+      "score_coding.py": "913a0affc1e45df26eb0421a42147f9c136c99a82d748a542d460a13c2cf65c8",
+      "score_tools.py": "627f7b379e4465d9f778e1b03de84b62c909bddc19da6e9518519a524abe89c8"
+    },
+    "contract_sha256": {
+      "structured_interfaces": "9f02701313a7ddee141a0da089432ecd3ac1da8aff136ded31d43e326f05dc9d",
+      "extraction_rag": "67f1481b5897ac958b9ece63bfefe51ac06e4cdf7f195d322878faa86a0bf458",
+      "linux_systems": "6565a5b4a5c66748e7797c63551e480100b89a4e463f91144784ace6bea2e5ca",
+      "coding": "9db673fe135f8748f768d208dace999cd237475ddce526b7a9b9ecd09df5ccb7",
+      "native_tools": "aa795c26ce8b92db3b6b1aa223384ebf8164c36ef3cabeba136b69d457430b07",
+      "reasoning": "11ad9e4a845738a6c68f67032eb81ce40bcba6ccb7fae669b8292e1d27a15d9c"
+    },
+    "scorer_selftests": "score_coding 4/4 PASS; score_tools 8/8 PASS (run before live scoring)",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "sampling": "contract default temp=0.2 top_p=0.95; enable_thinking=false (reasoning module runs both sides per contract pins)",
+    "server": "canonical ornith-server :8931, frozen profile (ctx 32768, parallel 1, -fa on, --reasoning off)"
+  },
+  "gate_semantics": "Phase 5 is characterization-only: phase5-hardening decision-log D4 records NO module PASS thresholds (4-control calibration insufficient to place gates honestly). No ADVANCE/DO_NOT_ADVANCE issued here.",
+  "applicability_execution": {
+    "executed": [
+      "structured_interfaces",
+      "extraction_rag",
+      "linux_systems",
+      "coding",
+      "native_tools",
+      "reasoning"
+    ],
+    "skipped": {
+      "omp_local_agent": "gated on Phase 4 ADVANCE; Phase 4 decision DO_NOT_ADVANCE \u2192 not auto-earned; not run"
+    }
+  },
+  "modules": {
+    "structured_interfaces": {
+      "n": 72,
+      "clean_pass": 63,
+      "rate": 0.875,
+      "classes": {
+        "CLEAN_PASS": 63,
+        "STRUCTURAL_FAILURE": 9
+      },
+      "per_seed": {
+        "42": "21/24",
+        "43": "21/24",
+        "44": "21/24"
+      },
+      "tasks": 24
+    },
+    "extraction_rag": {
+      "n": 54,
+      "clean_pass": 39,
+      "rate": 0.7222,
+      "classes": {
+        "CLEAN_PASS": 39,
+        "MATERIAL_DEFECT": 15
+      },
+      "per_seed": {
+        "42": "13/18",
+        "43": "13/18",
+        "44": "13/18"
+      },
+      "tasks": 18
+    },
+    "linux_systems": {
+      "n": 66,
+      "clean_pass": 34,
+      "rate": 0.5152,
+      "classes": {
+        "CLEAN_PASS": 34,
+        "MATERIAL_DEFECT": 32
+      },
+      "per_seed": {
+        "42": "14/22",
+        "43": "10/22",
+        "44": "10/22"
+      },
+      "tasks": 22
+    },
+    "coding": {
+      "n": 90,
+      "clean_pass": 78,
+      "rate": 0.8667,
+      "classes": {
+        "CLEAN_PASS": 78,
+        "MATERIAL_DEFECT": 12
+      },
+      "per_seed": {
+        "42": "25/30",
+        "43": "26/30",
+        "44": "27/30"
+      },
+      "tasks": 30
+    },
+    "native_tools": {
+      "n": 60,
+      "clean_pass": 48,
+      "rate": 0.8,
+      "classes": {
+        "CLEAN_PASS": 48,
+        "HALLUCINATED_RESULT": 5,
+        "MATERIAL_DEFECT": 7
+      },
+      "per_seed": {
+        "42": "16/20",
+        "43": "16/20",
+        "44": "16/20"
+      },
+      "tasks": 20
+    },
+    "reasoning": {
+      "n": 60,
+      "off": {
+        "clean": 17,
+        "rate": 0.5667
+      },
+      "on": {
+        "clean": 17,
+        "rate": 0.5667
+      },
+      "delta": 0.0,
+      "classes": {
+        "MATERIAL_DEFECT": 26,
+        "CLEAN_PASS": 34
+      },
+      "tokens_mean": {
+        "off": 142.9,
+        "on": 194.8
+      },
+      "wall_mean_s": {
+        "off": 1.76,
+        "on": 2.23
+      },
+      "truncations_on": 4,
+      "tasks": 10
+    }
+  },
+  "observations": [
+    "structured_interfaces 0.875: 9 STRUCTURAL failures concentrated in 4 exact-match tasks; strict-limit-02/04 fail identically all seeds (answer content wrong: \"Pre-merge check\" vs \"git status\", \"json\" vs \"json.loads\"); strict-enum-03 seeds 43/44 output \"FALSE\" vs expected \"TRUE\".",
+    "extraction_rag 0.722: rag-absent-part/maint correct NOT_SPECIFIED verdicts penalized for extra explanation; rag-conflict-pwm genuinely unstable (NO/YES/YES across seeds); rag-cross-doc misses 7.3 gap analysis.",
+    "linux_systems 0.515: dominated by canonical-lexicon requirements (dnf provides, journalctl -k -b, findmnt, systemctl -x, \"hides\") where model gives substantively-correct alternatives; linux-systemd-enable fails on substring forbid \"enable\" matching the word \"enabling\" inside a correct refusal to enable \u2014 pure scorer artifact.",
+    "coding 0.867: 12 sandbox test failures (code-freq/interval/suffix repeat across seeds = genuine edge-case bugs; code-env/code-hex/code-trim seed-specific).",
+    "native_tools 0.80: 5 HALLUCINATED_RESULT (nt05/nt11: model asserts results without executing tool) \u2014 genuine defect class; nt20-grounded-refusal fails 3/3 seeds.",
+    "reasoning: off==on 0.567 (delta 0.000); reasoning ON costs +36% completion tokens, +27% wall, 4/30 truncations at 400-cap. Failure audit: r-arith-1 expected \"59\" but prompt arithmetic (42\u221217+24) yields 49 \u2014 CONTRACT GROUND-TRUTH DEFECT (model correct both modes); r-arith-2 \"875 Wh\" unit-suffix lexicon artifact; r-code-diag-1 expected one-word \"RETURN\", model answers \"the return expression\" (substantively correct, prompt itself says \"the return expression or the test\"); r-logic-2 seeds 42/44 answered YES correctly but not on FINAL line (formatting). Real model defects: r-arith-3 (0.2 vs 2.0 interpretation), r-multistep-2 unstable.",
+    "REASONING_OFF serving profile maintained for all non-reasoning modules; reasoning module is the only baseline_vs_enabled comparison, per frozen applicability."
+  ],
+  "artifacts": {
+    "raw": {
+      "structured_interfaces": "9161ec8df678f2f62cdcc275cb5d9e84e756e32b14b8c2250eaa65fb8fe6d973",
+      "extraction_rag": "80a79c46403166faeb13698ee11e1ea3ca644457e3f2a95ca7392a17501084de",
+      "linux_systems": "1fca12568a57dd9dabcd09081a0e8271c20d0516498a236a28fa33ac55c1d303",
+      "coding": "01ded922e92ab9f473dc3784cf1c32e92b281f46818670e098fd66431b422474",
+      "native_tools": "58cc17536a2829b30b040626ae5b6c34969eeb1746f2d75818e1f3948945f126",
+      "reasoning": "a79a1343ec1aaf0775e125fcc41a252ce61648f263604ca0c4dcc5c04d47f0df"
+    },
+    "scored": {
+      "structured_interfaces": "630d721985b7d39778a0e1920b231f9c1f3c098538847967e4c319d20149b39f",
+      "extraction_rag": "29c42e6d082f58690d5881e8f4328864de4d00e93daaec955d97ff94ed045655",
+      "linux_systems": "3f1cb25ea6c5d064820b242ba0c5d7e7f2845052791eeb210db17a845013f118",
+      "coding": "a2fd1186ff2c5ddf5374a552a461e37411b9aa4dc400cca619e3e1a2fc11dcca",
+      "native_tools": "e64461fe427b47f1bda3606b67b3b38948868529e94ef5af45b22e21022faa44",
+      "reasoning": "42d4a93292c540384cc999e2a2327d9d04fbad860adc2ad63a7ad6437fd25ca1"
+    }
+  }
+}

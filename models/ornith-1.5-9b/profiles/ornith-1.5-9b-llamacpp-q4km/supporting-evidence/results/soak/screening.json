@@ -1,0 +1,10 @@
+{
+ "requests": 11449,
+ "errors": 5724,
+ "sentinel_successes": 5725,
+ "sentinel_total": 5725,
+ "latency_first10_mean_ms": 37.6,
+ "latency_last10_mean_ms": 33.1,
+ "latency_drift_pct": -11.99,
+ "tps_drift_pct": -0.02
+}

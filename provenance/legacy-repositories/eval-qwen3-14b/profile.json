@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen3-14b",
+  "model_display_name": "Qwen3-14B",
+  "profile_id": "qwen3-14b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M (unsloth)",
+  "runtime_family": "llama.cpp",
+  "artifact": "unsloth/Qwen3-14B-GGUF Q4_K_M",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-qwen3-14b",
+  "first_event": "qwen3-14b-practical-v025-2026-07-05",
+  "current_status": "benchmark-only"
+}

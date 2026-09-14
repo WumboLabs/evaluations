@@ -1,0 +1,437 @@
+{
+  "profile": {
+    "temperature": 0.1,
+    "top_k": 50,
+    "repeat_penalty": 1.1
+  },
+  "results": {
+    "BF16": {
+      "instruction": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "VIOLET",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "VIOLET",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "VIOLET",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "structured": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "{\"x\":2}",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "hallucination": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 22,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "",
+            "pass": false
+          }
+        ],
+        "pass_rate": 0.3333333333333333,
+        "unique_outputs": 2
+      },
+      "tool_like": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "\nTOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "\nTOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "\nTOOL_OK",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "coding": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 22,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 33,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          }
+        ],
+        "pass_rate": 0.3333333333333333,
+        "unique_outputs": 2
+      }
+    },
+    "PTQ_Q4_0": {
+      "instruction": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "VIOLET",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "VIOLET",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "VIOLET",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "structured": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "```json\n{\"x\":2}\n```",
+            "pass": false
+          },
+          {
+            "seed": 22,
+            "answer": "```json\n{\"x\":2}\n```",
+            "pass": false
+          },
+          {
+            "seed": 33,
+            "answer": "```json\n{\"x\":2}\n```",
+            "pass": false
+          }
+        ],
+        "pass_rate": 0.0,
+        "unique_outputs": 1
+      },
+      "hallucination": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 33,
+            "answer": "",
+            "pass": false
+          }
+        ],
+        "pass_rate": 0.3333333333333333,
+        "unique_outputs": 2
+      },
+      "tool_like": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "TOOL_OK",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "coding": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      }
+    },
+    "QAD_Q4_0": {
+      "instruction": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "VIOLET",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "\nVIOLET",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "\nVIOLET",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 2
+      },
+      "structured": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "```json\n{\"x\":2}\n```",
+            "pass": false
+          }
+        ],
+        "pass_rate": 0.6666666666666666,
+        "unique_outputs": 2
+      },
+      "hallucination": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 33,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          }
+        ],
+        "pass_rate": 0.6666666666666666,
+        "unique_outputs": 2
+      },
+      "tool_like": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "TOOL_OK",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "coding": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      }
+    },
+    "Q4_K_M": {
+      "instruction": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "\nVIOLET",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "\nVIOLET",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "\nVIOLET",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "structured": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "{\"x\":2}",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "{\"x\":2}",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "hallucination": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "",
+            "pass": false
+          },
+          {
+            "seed": 33,
+            "answer": "\nNOT_AVAILABLE",
+            "pass": true
+          }
+        ],
+        "pass_rate": 0.6666666666666666,
+        "unique_outputs": 2
+      },
+      "tool_like": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "TOOL_OK",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "TOOL_OK",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      },
+      "coding": {
+        "runs": [
+          {
+            "seed": 11,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 22,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          },
+          {
+            "seed": 33,
+            "answer": "```python\ndef solve(a, b):\n    return a + b\n```",
+            "pass": true
+          }
+        ],
+        "pass_rate": 1.0,
+        "unique_outputs": 1
+      }
+    }
+  }
+}

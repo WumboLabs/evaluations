@@ -1,0 +1,13 @@
+{
+  "repository": "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/hardware/wumboserver/rtx2060s-localmaxxing-reconciliation-2026-09-01/payloads/4b-q4.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "7c6bdee60364c84c4f5a6646db3ab0998ca36c240d526b0327876927e35092be",
+      "bytes": 3087
+    }
+  ]
+}

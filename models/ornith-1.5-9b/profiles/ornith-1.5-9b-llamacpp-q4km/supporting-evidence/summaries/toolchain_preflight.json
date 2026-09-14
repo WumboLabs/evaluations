@@ -1,0 +1,67 @@
+{
+  "preflight": "welp-preflight",
+  "version": "0.1.0-draft",
+  "generated_utc": "2026-08-27T20:19:39+00:00",
+  "overall": "GO",
+  "hardware": {
+    "host": "wumbojetsii",
+    "gpu": "NVIDIA GeForce RTX 5070, 12227 MiB",
+    "driver": "610.57.04",
+    "cuda": "CUDA 13.3 (/usr/local/cuda-13.3; llama-server built with GNU 15.3.1)",
+    "vram_gb": 12,
+    "telemetry": "nvidia-smi loop + journal Xid watch during long runs (see safety)",
+    "decision": "REUSE_LOCAL"
+  },
+  "toolchain": {
+    "selected_runtime": {
+      "name": "llama.cpp",
+      "commit": "0d9ceae1e38291035605613ab41a8f5e693d6fcd",
+      "build": "b10449",
+      "binary": "<USER_HOME>/Projects/local-llm/llama.cpp-sm120-upgrade/build-cuda-sm120-new/bin/llama-server",
+      "binary_sha256": "b3a740b8e69f84420cdc7068d48bdc5d3ab3f8ca366e358f5d0d1d75d2daaaf3",
+      "decision": "REUSE_LOCAL",
+      "compatibility_evidence": "admission test PASSED: model loads (qwen35 arch, 33 layers, hybrid SSM + MTP tensor blk.32 present-but-unused without --spec), chat completions OK, reasoning extraction OK, native tool_calls OK"
+    },
+    "localmaxxing": {
+      "cli": "lmx",
+      "auth_status": "READY",
+      "key_source": "~/.config/localmaxxing/config.json",
+      "key_exposed": false
+    },
+    "inventory": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/summaries/toolchain_inventory.json",
+    "inventory_sha256": "5eaaa8d5d9f91a678da8ac32ee16062d127169252790b4e4df637163842857a0",
+    "selection_rule": "DISCOVER FIRST / REUSE WHEN COMPATIBLE / UPDATE OR BUILD ONLY ON PROVEN INCOMPATIBILITY"
+  },
+  "protocol": {
+    "snapshot_id": "welp-next-snapshot-2026-08-26-post-rename",
+    "welp_status": "DRAFT",
+    "manifest_sha256": "32c38e2a247e8b28e5760093215a8a869c6d63b6d7b257947d8c33b688764c49",
+    "tree_sha256": "8b68e31673c96d72318c2f89774ae56d844982051ba1f7421befefaabc933b83",
+    "campaign_copy": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/protocol-snapshot",
+    "copy_verified": "tree sha256 of copy == authoritative tree sha256 (freeze_provenance.py assertion)"
+  },
+  "model": {
+    "repo": "ornith-ai/Ornith-1.5-9B",
+    "revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "artifact_sha256": "70c112196e0b7023803c9762752e46d29e612a92c83f995bc3ba1ceb07e8fab6",
+    "applicability": "general-purpose instruction-tuned text model; thinking model; native tool calling; vision SUPPORTED_BY_SOURCE but NOT_EVALUATED (text+agentic objectives only)",
+    "producer_claims_status": "RECORDED_NOT_ADOPTED (provenance.json benchmark_reference)"
+  },
+  "publication": {
+    "localmaxxing_auth_status": "READY"
+  },
+  "safety": {
+    "gpu_host_rules": "single-model resident; stop-on-Xid (journalctl -k -p err monitored); no destructive ops; server bound to 127.0.0.1 only",
+    "cors_note": "server warns CORS '*' with no API key \u2014 acceptable: loopback-only bind, no other tenants on host during campaign",
+    "secrets": "LocalMaxxing key never written to any campaign artifact; lmx auth status read without printing key material"
+  },
+  "output": {
+    "campaign_workspace_abs": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b",
+    "evidence_path_writable": true,
+    "long_job_paths": [
+      "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/results",
+      "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/calibration"
+    ],
+    "durability_rule": "absolute path declared before run; after exit verify existence + row count + sha256 before marking COMPLETE"
+  }
+}

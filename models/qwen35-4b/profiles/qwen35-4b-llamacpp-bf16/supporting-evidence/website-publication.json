@@ -1,0 +1,98 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "qwen35-4b-rtx5070-context-completion-2026-09-11",
+  "publication_date": "2026-09-11",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "display_name": "Qwen3.5-4B",
+    "producer": "Alibaba (Qwen team); GGUF conversion by Unsloth",
+    "official_id": "Qwen/Qwen3.5-4B",
+    "official_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "Qwen3.5-4B-BF16.gguf (text-only conversion; Unsloth revision e87f176479d0855a907a41277aca2f8ee7a09523)",
+    "precision": "BF16 weights; f16 KV (primary surface); q4_0 KV (one alternate admission surface)",
+    "sha256": "9e6e2841a75f503ccb330831832fd7861266e187e0dbf149a954219ccb8c197a",
+    "source": "unsloth/Qwen3.5-4B-GGUF, hash-matched to upstream LFS"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "0.1.0-dev build b10449, commit 0d9ceae1e38291035605613ab41a8f5e693d6fcd (CUDA 13.3, SM120)",
+    "notes": "All 33/33 runtime layers GPU-resident; non-thinking text-only greedy surface; identical inherited baseline stack"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux"
+  },
+  "welp": {
+    "outcome": "PASS \u2014 QWEN35_4B_CONTEXT_ENVELOPE_COMPLETED",
+    "classification": "READY_WITH_GUARDRAILS (unchanged; new occupancy-dependent instruction-retention guardrail added)",
+    "artifact_classification": "Comfortable-fit high-precision BF16 text control"
+  },
+  "context": {
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 65536,
+    "native_maximum_tokens": 262144,
+    "extension_mechanism": "YaRN factor 4.0 (officially advertised to 1,010,000 tokens)",
+    "envelope_complete": true,
+    "native_maximum_disposition": "FIT_LIMIT - native maximum 262,144 on the BF16/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision",
+    "exact_max_dispositions": {
+      "native_262144_f16_primary": "FIT_LIMIT \u2014 arithmetic lower bound: weights + f16 KV = 16,215.7 MiB > 12,227 MiB total VRAM",
+      "native_262144_q4_0_alternate": "FIT_LIMIT \u2014 measured admission failure (compute buffer 1,330.28 MiB cudaMalloc OOM with weights+KV resident)",
+      "yarn_1010000": "FIT_LIMIT \u2014 exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)"
+    },
+    "highest_measured_admitted": {
+      "primary_f16_tokens": 65536,
+      "note": "highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed"
+    },
+    "useful_context_finding": "At 99.4-99.5% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.092 pp) and resist the decoy, while deterministically dropping the auxiliary synthesis/absent/checksum output instructions; strict useful-context gate FAILED at both rungs, both seeds",
+    "notes": "32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 6.6-6.7 s TTFT / 60.3 tok/s decode; 64K 15.2 s TTFT / 54.1-54.4 tok/s decode"
+  },
+  "performance": {
+    "surface_note": "Near-full context fixture medians per seed pair; client/transport proxies with native timings retained in campaign evidence; short/moderate surfaces inherited unchanged from the baseline campaign (67.9 tok/s short decode, 0.69 s moderate TTFT)",
+    "short_ttft_s": 0.040569,
+    "short_decode_tps": 67.91,
+    "moderate_input_tokens": 3642,
+    "moderate_ttft_s": 0.691319,
+    "moderate_prefill_tps": 5268.19,
+    "moderate_decode_tps": 67.29,
+    "occupied_32k_ttft_s": 6.665,
+    "occupied_32k_decode_tps": 60.36,
+    "occupied_64k_ttft_s": 15.224,
+    "occupied_64k_decode_tps": 54.27
+  },
+  "quality": {
+    "constrained_result": "inherited: 7/7 constrained checks and 20/20 bounded reliability (baseline campaign, unchanged, not rerun)",
+    "capability_highlights": [
+      "Perfect synthetic retrieval (20/20 values) at 99.4-99.5% occupancy through 64K on the primary surface",
+      "Highest measured/admitted near-full primary context 65,536 (guarded profile confirmed); 98,304 projected below the frozen operational safety floor and intentionally not launched; exact ceiling not bracketed",
+      "q4_0-KV alternate surface functionally correct at 32K",
+      "Official YaRN mechanism representable in the pinned runtime"
+    ],
+    "key_guardrails": [
+      "Near-full-occupancy instruction retention defect: auxiliary JSON fields (synthesis/absent/checksum) dropped at both rungs, both seeds; do not place binding output instructions at extreme occupancy",
+      "Inherited free-form grounding cautions unchanged",
+      "Exact native maximum and YaRN maximum are unreachable on 12GB at any representable KV precision; not a model-capability claim on other hardware"
+    ],
+    "reliability_summary": "inherited bounded 20/20 reliability (profile unchanged); no new reliability run required; context-specific observations: zero CUDA/OOM/Xid events across all arms including the measured admission-failure attempt"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 68.0,
+    "ttft_ms": 76.92,
+    "submission_ref": "cmtwcmm3207eqps01w7fubuuw",
+    "verified_run": false,
+    "note": "origin VERIFIED_EXISTING (duplicate audit): canonical practical profile unchanged; no new benchmark, no duplicate submission"
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-qwen3.5-4b",
+    "note": "Canonical public evidence published in this repository (context-completion report: reports/qwen35-4b-context-envelope-completion-2026-09-11.md). The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "website_record_slug": "qwen35-4b",
+  "public_summary": "Context-envelope completion for Qwen3.5-4B BF16 (text-only) on an RTX 5070 12GB under llama.cpp at the corrected WELP near-full occupancy standard. Native maximum 262,144 is a completed FIT_LIMIT on both the f16 primary surface (arithmetic lower bound) and a pre-authorized q4_0-KV alternate surface (measured compute-buffer admission failure); the official YaRN 1,010,000 extension maximum is FIT_LIMIT at every representable KV precision with the mechanism itself confirmed representable. Highest measured/admitted near-full primary context is 65,536 (guarded profile confirmed; 98,304 projected below the frozen operational safety floor and not launched); 32K default confirmed at 99.5% occupancy with 6.7 s TTFT / 60.3 tok/s decode. Retrieval is perfect at near-full occupancy through 64K while auxiliary output instructions are dropped - a new occupancy-dependent guardrail. READY_WITH_GUARDRAILS unchanged; LocalMaxxing record verified existing, not duplicated.",
+  "record_description": "Full model-card context envelope now COMPLETE with evidence-backed dispositions: native 262,144 FIT_LIMIT (f16 lower bound; q4_0 measured admission failure), YaRN 1,010,000 FIT_LIMIT (all representable KV precisions), 32K/64K revalidated at >=99.4% near-full occupancy with perfect retrieval and a measured auxiliary-instruction retention defect. Practical profile unchanged: 32K default, 64K guarded, READY_WITH_GUARDRAILS."
+}

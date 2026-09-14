@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen3.8-9b-empero",
+  "model_display_name": "Qwen3.8-9B (Empero Distill)",
+  "profile_id": "qwen3.8-9b-empero-distill-llamacpp-q4q5q6-wumboserver",
+  "profile_display_name": "llama.cpp Distill Q4_K_M/Q5_K_M/Q6_K (WumboServer RTX 2060S lane)",
+  "runtime_family": "llama.cpp",
+  "artifact": "empero-ai/Qwen3.8-9B-Distill-GGUF Q4_K_M / Q5_K_M / Q6_K",
+  "hardware_scope": "WumboServer (RTX 2060 SUPER 8GB)",
+  "repository": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
+  "first_event": "qwen38-empero-9b-distill-wumboserver-2026-09-01",
+  "current_status": "benchmark-only"
+}

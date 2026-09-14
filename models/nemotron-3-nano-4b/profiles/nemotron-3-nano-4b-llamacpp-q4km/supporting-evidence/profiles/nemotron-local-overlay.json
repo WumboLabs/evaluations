@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "wumbo-local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "WumboLabs Local llama.cpp",
+      "options": { "baseURL": "http://127.0.0.1:8471/v1" },
+      "models": {
+        "nemotron-3-nano-4b-q4km": {
+          "name": "Nemotron 3 Nano 4B Q4_K_M (campaign)"
+        }
+      }
+    }
+  }
+}

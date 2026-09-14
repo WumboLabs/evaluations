@@ -1,0 +1,16 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "nemotron-3-nano-4b",
+  "model_display_name": "Nemotron 3 Nano 4B",
+  "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
+  "profile_display_name": "llama.cpp Q4_K_M",
+  "runtime_family": "llama.cpp",
+  "artifact": "NVIDIA-Nemotron3-Nano-4B-Q4_K_M.gguf (sole official quant; upstream rev ba223d14e45525f7fae81db77ea8cabeb2fc6c25)",
+  "artifact_precision": "Q4_K_M weights; f16 KV cache",
+  "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-nemotron-3-nano-4b",
+  "first_event": "initial-evaluation-2026-08-25",
+  "current_status": "current",
+  "runtime_version": "b10449 (0d9ceae1e38291035605613ab41a8f5e693d6fcd, CUDA SM120)",
+  "notes": "One material profile (identical artifact SHA-256 and runtime across both campaigns); two published events: the 2026-08-25 protocol-development campaign (historical, preserved) and the 2026-09-11 current-WELP recharacterization."
+}

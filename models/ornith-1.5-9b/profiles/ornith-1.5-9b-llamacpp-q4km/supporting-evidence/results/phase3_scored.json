@@ -1,0 +1,966 @@
+[
+  {
+    "id": "IF01",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "IF02",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "IF03",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "IF04",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "sentences": 2
+    },
+    "seed": 42
+  },
+  {
+    "id": "IF05",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "EX01",
+    "category": "extraction",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 42
+  },
+  {
+    "id": "EX02",
+    "category": "extraction",
+    "critical": true,
+    "pass": false,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "EX03",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "EX04",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "EX05",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "SO01",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 42
+  },
+  {
+    "id": "SO02",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 42
+  },
+  {
+    "id": "SO03",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "SO04",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "SO05",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 42
+  },
+  {
+    "id": "SO06",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "SO07",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 42
+  },
+  {
+    "id": "FP01",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 42
+  },
+  {
+    "id": "FP02",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 42
+  },
+  {
+    "id": "FP03",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": false,
+    "label": "HALLUCINATION",
+    "detail": {
+      "premise_rejection": false,
+      "premise_fabrication": true,
+      "global_knowledge_denial": false,
+      "corrective_framing": false,
+      "reason": "false premise described affirmatively"
+    },
+    "seed": 42
+  },
+  {
+    "id": "FP04",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": false,
+      "premise_fabrication": false,
+      "global_knowledge_denial": true,
+      "corrective_framing": true
+    },
+    "seed": 42
+  },
+  {
+    "id": "FP05",
+    "category": "false_premise_rejection",
+    "critical": false,
+    "pass": false,
+    "label": "HALLUCINATION",
+    "detail": {
+      "premise_rejection": false,
+      "premise_fabrication": true,
+      "global_knowledge_denial": false,
+      "corrective_framing": false,
+      "reason": "false premise described affirmatively"
+    },
+    "seed": 42
+  },
+  {
+    "id": "FU01",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "FU02",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "FU03",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "numbers": [
+        100,
+        1,
+        10,
+        110,
+        100,
+        110,
+        2,
+        100,
+        110,
+        2
+      ]
+    },
+    "seed": 42
+  },
+  {
+    "id": "FU04",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "TK01",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "TK02",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "TK03",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "TK04",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 42
+  },
+  {
+    "id": "IF01",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "IF02",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": false,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "IF03",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "IF04",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "sentences": 2
+    },
+    "seed": 43
+  },
+  {
+    "id": "IF05",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "EX01",
+    "category": "extraction",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 43
+  },
+  {
+    "id": "EX02",
+    "category": "extraction",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "EX03",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "EX04",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "EX05",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "SO01",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 43
+  },
+  {
+    "id": "SO02",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 43
+  },
+  {
+    "id": "SO03",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "SO04",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "SO05",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 43
+  },
+  {
+    "id": "SO06",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "SO07",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 43
+  },
+  {
+    "id": "FP01",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 43
+  },
+  {
+    "id": "FP02",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 43
+  },
+  {
+    "id": "FP03",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 43
+  },
+  {
+    "id": "FP04",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 43
+  },
+  {
+    "id": "FP05",
+    "category": "false_premise_rejection",
+    "critical": false,
+    "pass": false,
+    "label": "HALLUCINATION",
+    "detail": {
+      "premise_rejection": false,
+      "premise_fabrication": true,
+      "global_knowledge_denial": false,
+      "corrective_framing": false,
+      "reason": "false premise described affirmatively"
+    },
+    "seed": 43
+  },
+  {
+    "id": "FU01",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "FU02",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "FU03",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "numbers": [
+        100,
+        1,
+        10,
+        110,
+        100,
+        110,
+        2,
+        100,
+        110,
+        2
+      ]
+    },
+    "seed": 43
+  },
+  {
+    "id": "FU04",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "TK01",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "TK02",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "TK03",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "TK04",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 43
+  },
+  {
+    "id": "IF01",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "IF02",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": false,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "IF03",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "IF04",
+    "category": "instruction_following",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "sentences": 2
+    },
+    "seed": 44
+  },
+  {
+    "id": "IF05",
+    "category": "instruction_following",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "EX01",
+    "category": "extraction",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 44
+  },
+  {
+    "id": "EX02",
+    "category": "extraction",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "EX03",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "EX04",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "EX05",
+    "category": "extraction",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "SO01",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 44
+  },
+  {
+    "id": "SO02",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 44
+  },
+  {
+    "id": "SO03",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "SO04",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "SO05",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 44
+  },
+  {
+    "id": "SO06",
+    "category": "structured_output",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "SO07",
+    "category": "structured_output",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "format_only_violation": false
+    },
+    "seed": 44
+  },
+  {
+    "id": "FP01",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 44
+  },
+  {
+    "id": "FP02",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 44
+  },
+  {
+    "id": "FP03",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 44
+  },
+  {
+    "id": "FP04",
+    "category": "false_premise_rejection",
+    "critical": true,
+    "pass": true,
+    "label": "CORRECTION",
+    "detail": {
+      "premise_rejection": true,
+      "premise_fabrication": false,
+      "global_knowledge_denial": false,
+      "corrective_framing": true
+    },
+    "seed": 44
+  },
+  {
+    "id": "FP05",
+    "category": "false_premise_rejection",
+    "critical": false,
+    "pass": false,
+    "label": "HALLUCINATION",
+    "detail": {
+      "premise_rejection": false,
+      "premise_fabrication": true,
+      "global_knowledge_denial": false,
+      "corrective_framing": false,
+      "reason": "false premise described affirmatively"
+    },
+    "seed": 44
+  },
+  {
+    "id": "FU01",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "FU02",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "FU03",
+    "category": "factual_uncertainty",
+    "critical": true,
+    "pass": true,
+    "label": null,
+    "detail": {
+      "numbers": [
+        100,
+        1,
+        10,
+        110,
+        100,
+        110,
+        2,
+        100,
+        110,
+        2
+      ]
+    },
+    "seed": 44
+  },
+  {
+    "id": "FU04",
+    "category": "factual_uncertainty",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "TK01",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "TK02",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "TK03",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  },
+  {
+    "id": "TK04",
+    "category": "basic_technical_knowledge",
+    "critical": false,
+    "pass": true,
+    "label": null,
+    "detail": {},
+    "seed": 44
+  }
+]

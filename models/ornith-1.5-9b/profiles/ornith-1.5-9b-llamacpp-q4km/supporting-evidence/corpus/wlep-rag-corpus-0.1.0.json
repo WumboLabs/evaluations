@@ -1,0 +1,51 @@
+{
+  "corpus_id": "wlep-rag-corpus",
+  "version": "0.1.0",
+  "frozen_utc": "2026-08-25",
+  "note": "Deterministic synthetic documents. No web content. Facts are fictional but internally consistent.",
+  "documents": [
+    {
+      "doc_id": "DOC-HW-001",
+      "sections": [
+        {
+          "section_id": "S1",
+          "text": "Meridian Components inventory snapshot 2026-08-01: part VX-220 is a 4-bit GPU accelerator module, price 249 USD, stock 42 units, vendor Halcyon Micro."
+        },
+        {
+          "section_id": "S2",
+          "text": "Part QX-9 fan controller: firmware 2.4.1, price 19 USD, stock 310 units, vendor Nordwind Devices. Firmware 2.4.0 had a PWM duty bug fixed in 2.4.1."
+        }
+      ]
+    },
+    {
+      "doc_id": "DOC-HW-002",
+      "sections": [
+        {
+          "section_id": "S1",
+          "text": "Inventory delta 2026-08-15: VX-220 stock reduced to 17 units after order SO-1188. Price unchanged at 249 USD."
+        },
+        {
+          "section_id": "S2",
+          "text": "QX-9 firmware release 2.5.0 published 2026-08-20; adds temperature telemetry. No PWM changes since 2.4.1."
+        }
+      ]
+    },
+    {
+      "doc_id": "DOC-NET-001",
+      "sections": [
+        {
+          "section_id": "S1",
+          "text": "Site A router RTR-A runs firmware 7.2; site B router RTR-B runs firmware 7.4. Only firmware 7.4 supports GRE over IPv6."
+        },
+        {
+          "section_id": "S2",
+          "text": "Maintenance window policy: changes require ticket lead time of 48 hours; emergency changes exempt with director approval."
+        },
+        {
+          "section_id": "S3",
+          "text": "Note: an unvetted wiki claims RTR-A supports GRE over IPv6 on 7.2. This claim is not present in vendor documentation and must be treated as unsupported."
+        }
+      ]
+    }
+  ]
+}

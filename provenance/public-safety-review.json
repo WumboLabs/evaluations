@@ -1,0 +1,47 @@
+{
+  "schema": "wumbolabs-public-safety-review/1",
+  "reviewed_files": [
+    {
+      "path": "provenance/legacy-repositories/eval-ornith-1.5-9b/PUBLICATION-POLICY.md",
+      "sha256": "8f782afd17f88f7792b75026743b1cce750f15fe518db281b2244698ad36d9bb",
+      "category": "private_home",
+      "reason": "Previously published generic documentation placeholder; no private identity or credential."
+    },
+    {
+      "path": "models/ornith-1.5-9b/events/initial-evaluation-2026-08-27/REPORT.md",
+      "sha256": "b192728e43a07a3392d649a4cb9f5314b6a91df005086e122bd7bbfaeb740965",
+      "category": "private_home",
+      "reason": "Previously published generic documentation placeholder; no private identity or credential."
+    },
+    {
+      "path": "models/ornith-1.5-9b/profiles/ornith-1.5-9b-llamacpp-q4km/supporting-evidence/results/reliability_raw.jsonl",
+      "sha256": "02b350cd6befeb78421632a8d7fe9fbb871ae40ea3cced9e23208daf4cc3a795",
+      "category": "private_home",
+      "reason": "Frozen model output uses a generic home-directory example with the literal placeholder username, not a host identity. Preserve exact measured model output."
+    },
+    {
+      "path": "provenance/legacy-repositories/eval-qwen3.8-27b/manifests/inventory/native-metadata/README.md",
+      "sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "category": "sensitive_assignment",
+      "reason": "Upstream public model-card example assigns the literal your-api-key placeholder; no credential."
+    },
+    {
+      "path": "models/qwen38-27b/profiles/qwen38-27b-exl3-h1/supporting-evidence/manifests/inventory/native-metadata/README.md",
+      "sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "category": "sensitive_assignment",
+      "reason": "Upstream public model-card example assigns the literal your-api-key placeholder; no credential."
+    },
+    {
+      "path": "models/qwen38-27b/profiles/qwen38-27b-llamacpp-ud-q2-k-xl/supporting-evidence/manifests/inventory/native-metadata/README.md",
+      "sha256": "35678523617298a2226c98bb94e7cdce2b99f76ae98d77c88eb0e25f1db89c5f",
+      "category": "sensitive_assignment",
+      "reason": "Upstream public model-card example assigns the literal your-api-key placeholder; no credential."
+    },
+    {
+      "path": "models/ornith-1.5-9b/profiles/ornith-1.5-9b-llamacpp-q4km/supporting-evidence/summaries/artifact_reconciliation.json",
+      "sha256": "3a89eec4b756a1d208a31a915eb34cf0683551c1c1fb681c2308a315cb89fe40",
+      "category": "private_home",
+      "reason": "Previously published generic documentation placeholder; no private identity or credential."
+    }
+  ]
+}

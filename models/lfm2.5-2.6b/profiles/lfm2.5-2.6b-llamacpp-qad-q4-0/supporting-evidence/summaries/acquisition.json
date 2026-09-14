@@ -1,0 +1,10 @@
+{
+  "repository": "LiquidAI/LFM2.5-2.6B-GGUF",
+  "revision": "f4a289c8a200a5ca71005ba7abc2dad33058a450",
+  "method": "hf download",
+  "client": "huggingface_hub 1.27.0",
+  "local_dir": "models",
+  "completed": true,
+  "verification": "Local SHA-256 exactly matches upstream LFS oid for all seven downloaded GGUFs.",
+  "files": ["LFM2.5-2.6B-BF16.gguf","LFM2.5-2.6B-Q4_0.gguf","LFM2.5-2.6B-QAD-Q4_0.gguf","LFM2.5-2.6B-Q4_K_M.gguf","LFM2.5-2.6B-Q5_K_M.gguf","LFM2.5-2.6B-Q6_K.gguf","LFM2.5-2.6B-Q8_0.gguf"]
+}

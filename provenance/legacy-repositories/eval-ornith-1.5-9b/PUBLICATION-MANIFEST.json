@@ -1,0 +1,57 @@
+{
+  "version": "1.1",
+  "release": "INITIAL_PUBLIC_RELEASE",
+  "candidate_root": "evals/ornith-1.5-9b/publication/repo-candidate",
+  "included_patterns": [
+    "README.md",
+    "MODEL.md",
+    "model-manifest.json",
+    "PUBLICATION-POLICY.md",
+    "publication-policy.json",
+    "PUBLICATION-MANIFEST.json",
+    "publication-allowlist.json",
+    ".gitignore",
+    "report.md",
+    "WELP-CONFORMANCE.md",
+    "protocol-findings.md",
+    "summaries/**",
+    "contracts/**",
+    "scorers/**",
+    "scripts/**",
+    "corpus/**",
+    "harness/**",
+    "results/**",
+    "calibration/**"
+  ],
+  "excluded_patterns": [
+    "**/*.csv",
+    "**/*.pyc",
+    "__pycache__/**",
+    "sources/**",
+    "models/**",
+    "logs/**",
+    "runtime/**",
+    "protocol-snapshot/**",
+    ".env*",
+    "credentials*",
+    "secrets*"
+  ],
+  "excluded_source_policy": "EXCLUDED_INITIAL_RELEASE: sources/ excluded wholesale; no per-file source review performed",
+  "large_file_review_threshold_bytes": 5242880,
+  "human_git_gate_required": true,
+  "sanitization_note": "published copies of 8 evidence files rewrite the absolute user home to <USER_HOME> and username to <USER>; see publication-policy.json sanitization.rewritten_in_place",
+  "validator": {
+    "script": "welp/validators/validate_public_tree.py",
+    "result": "PASS",
+    "selected_files": 88,
+    "errors": 0,
+    "findings": 0,
+    "run_date": "2026-08-27"
+  },
+  "external_posts": {
+    "github": "NOT_AUTHORIZED",
+    "localmaxxing": "NOT_SUBMITTED (package record prepared; submission requires explicit user authorization)",
+    "x": "NOT_AUTHORIZED",
+    "wumbocore": "NOT_APPLICABLE"
+  }
+}

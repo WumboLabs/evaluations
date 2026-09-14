@@ -1,0 +1,6 @@
+{
+  "scope":"Direct local mechanical suites only; not a reproduction of Liquid's seven-task aggregate.",
+  "objective_fidelity": {"natural_ppl":{"BF16":1.0861,"PTQ_Q4_0":1.0882,"QAD_Q4_0":1.0408,"Q4_K_M":1.1085,"Q5_K_M":1.1056},"code_ppl":{"BF16":1.2687,"PTQ_Q4_0":1.1412,"QAD_Q4_0":1.1248,"Q4_K_M":1.2433,"Q5_K_M":1.2604},"interpretation":"QAD has lower perplexity than PTQ on both fixed local corpora. These repeated local corpora are an objective diagnostic, not a calibrated quality-retention percentage; QAD's lower value than BF16 confirms that perplexity is not a valid BF16-retention conversion here."},
+  "mechanical_practical": {"BF16_passes":4,"PTQ_Q4_0_passes":5,"QAD_Q4_0_passes":5,"Q4_K_M_passes":3,"denominator_note":"BF16 did not score above PTQ on this intentionally small exact-match suite, so BF16 retention and PTQ-to-BF16 gap recovery are mathematically undefined. They are not reported as percentages."},
+  "conclusion":"QAD materially improves the narrow perplexity diagnostic versus PTQ, but no material practical-score uplift was demonstrated in this bounded campaign."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "wumbolabs-eval-profile/1",
+  "model_id": "qwen2.5-3b",
+  "model_display_name": "Qwen2.5-3B Instruct",
+  "profile_id": "qwen2.5-3b-vllm-bf16",
+  "profile_display_name": "vLLM BF16 (cross-runtime lane)",
+  "runtime_family": "vLLM",
+  "artifact": "Qwen/Qwen2.5-3B-Instruct BF16",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+  "first_event": "qwen25-3b-cross-runtime-2026-07-15",
+  "current_status": "benchmark-only"
+}

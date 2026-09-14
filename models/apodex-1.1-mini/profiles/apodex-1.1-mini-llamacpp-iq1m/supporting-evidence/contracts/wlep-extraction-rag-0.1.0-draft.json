@@ -1,0 +1,501 @@
+{
+  "contract_id": "wlep-extraction-rag",
+  "version": "0.1.0-draft",
+  "status": "DRAFT / PROTOCOL DEVELOPMENT",
+  "created": "2026-08-25",
+  "purpose": "Evidence-grounded extraction/retrieval capability against a deterministic synthetic corpus.",
+  "sampling_default": {
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "corpus": {
+    "path": "extraction-rag/corpus/wlep-rag-corpus-0.1.0.json",
+    "sha256": "97fba7601fbaeb3e93d2a1e00fa85bcc79d1e77c95cdac3eb79b3c1d3cc385a1"
+  },
+  "task_count": 18,
+  "tasks": [
+    {
+      "id": "rag-exact-price",
+      "category": "exact_extraction",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "From DOC-HW-001 S1: what is the price of part VX-220 in USD? Answer with the number only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "249"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-exact-vendor",
+      "category": "exact_extraction",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Which vendor supplies the QX-9 fan controller per DOC-HW-001 S2? Name only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "Nordwind Devices"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-multi-field",
+      "category": "multi_field",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "From DOC-HW-001 S1, extract VX-220 attributes. Return ONLY JSON: {\"price_usd\": <int>, \"stock\": <int>, \"vendor\": \"...\"} using the 2026-08-01 snapshot."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "price_usd": 249,
+          "stock": 42,
+          "vendor": "Halcyon Micro"
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-absent-part",
+      "category": "absent_answer",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "What is the warranty period for part VX-220 according to the documents?"
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "NOT_SPECIFIED"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "absent"
+      ],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-absent-maint",
+      "category": "absent_answer",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Who is the facilities manager listed in DOC-NET-001?"
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "NOT_SPECIFIED"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "absent"
+      ],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-latest-stock",
+      "category": "latest_record_selection",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "As of the most recent document, how many VX-220 units are in stock? Number only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "17"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-latest-fw",
+      "category": "latest_record_selection",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "What is the newest QX-9 firmware version mentioned across documents? Version string only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "2.5.0"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-conflict-pwm",
+      "category": "conflict_resolution",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Did any QX-9 firmware after 2.4.0 change PWM behavior? Per the documents, yes or no \u2014 one word."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "no"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-gre-sites",
+      "category": "multi_entity",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Which routers support GRE over IPv6 per vendor documentation? Answer with router names only, comma separated."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "contains_all",
+        "need": [
+          "rtr-b"
+        ],
+        "forbid": [
+          "rtr-a"
+        ]
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-evidence-cite",
+      "category": "evidence_citation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "According to DOC-HW-002 S1, which sales order reduced VX-220 stock? Include the section ID in your answer in the form DOC-XXX-NNN S#."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "contains_all",
+        "need": [
+          "so-1188",
+          "doc-hw-002",
+          "s1"
+        ]
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-evidence-cite2",
+      "category": "evidence_citation",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Where is the 48-hour change lead time stated? Cite as DOCUMENT-ID plus SECTION-ID."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "contains_all",
+        "need": [
+          "doc-net-001",
+          "s2",
+          "48"
+        ]
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-summary",
+      "category": "synthesis",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Summarize VX-220 stock movement. Return ONLY JSON: {\"date_of_delta\": \"<YYYY-MM-DD>\", \"stock_after\": <int>, \"order\": \"<order id>\"}"
+        }
+      ],
+      "max_tokens": 180,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "date_of_delta": "2026-08-15",
+          "stock_after": 17,
+          "order": "SO-1188"
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-classify",
+      "category": "classification",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Classify this request as ROUTINE or EMERGENCY: 'Director approved emergency swap of failed PSU tonight.' One word."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "EMERGENCY"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-routing",
+      "category": "routing",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Route to TEAM-A or TEAM-B: hardware stock questions go to TEAM-A, network maintenance to TEAM-B. Request: 'Order ten more VX-220 modules.' One line: TEAM-A or TEAM-B."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "TEAM-A"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-cross-doc",
+      "category": "multi_document_synthesis",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Across all documents, list every distinct firmware version mentioned (any product). Return ONLY a JSON array of version strings."
+        }
+      ],
+      "max_tokens": 200,
+      "expected": {
+        "kind": "json_equal",
+        "value": [
+          "2.4.1",
+          "2.4.0",
+          "2.5.0",
+          "7.2",
+          "7.4"
+        ]
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-contradiction",
+      "category": "contradiction_resolution",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "A teammate says VX-220 stock is still 42 units. What does the most recent record say? Number only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "17"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-unsupported",
+      "category": "unsupported_claim_resistance",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Does RTR-A support GRE over IPv6 on firmware 7.2? The wiki says so. Answer YES, NO, or UNSUPPORTED_PER_DOCUMENTS."
+        }
+      ],
+      "max_tokens": 160,
+      "expected": {
+        "kind": "contains_all",
+        "need": [
+          "unsupported"
+        ],
+        "forbid": [
+          "yes"
+        ]
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    },
+    {
+      "id": "rag-fan-bug",
+      "category": "exact_extraction",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a precise extraction assistant. Answer ONLY from the provided documents. If a fact is absent, say NOT_SPECIFIED."
+        },
+        {
+          "role": "user",
+          "content": "Which QX-9 firmware fixed the PWM duty bug? Version only."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "exact",
+        "value": "2.4.1"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "synthetic wlep-rag-corpus 0.1.0"
+      }
+    }
+  ],
+  "scoring_axes": [
+    "EXTRACTION_CORRECT",
+    "SCHEMA_VALID",
+    "EVIDENCE_ID_CORRECT",
+    "UNSUPPORTED_CLAIM",
+    "ABSENT_HANDLING",
+    "SYNTHESIS_CORRECT"
+  ],
+  "change_history": [
+    {
+      "version": "0.1.0-draft",
+      "date": "2026-08-25",
+      "note": "initial synthetic corpus + contract"
+    }
+  ]
+}

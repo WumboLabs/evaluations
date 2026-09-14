@@ -1,0 +1,54 @@
+{
+  "protocol_snapshot_identity": {
+    "vault": "HiveMindVault",
+    "head_commit": "5db5a637c6bd64dc38f22ac6a00b2a046ee7e333",
+    "status_at_snapshot": "clean",
+    "manifest": "protocol-snapshot/manifest.json"
+  },
+  "phases_entered": ["0 Provenance", "1 Admission", "2 Performance", "3 Practical Viability"],
+  "phases_passed": {"0 Provenance": "PASS (identity fully recorded)", "1 Admission": "PASS (hard gate)", "2 Performance": "PASS (characterization completed; no defined criterion — see finding F-02)"},
+  "phases_failed": [],
+  "phases_blocked": {"3 Practical Viability": "PROTOCOL_BLOCKED — no advancement threshold exists in the frozen protocol (F-01)"},
+  "phases_not_run": ["4 Reliability", "5 Capability Modules", "5R Reasoning comparison (bounded)", "6 Context", "7 Variance", "8 Optimization", "9 Soak", "10 Final Classification", "21B Full OMP agent module"],
+  "phase_where_testing_stopped": "Phase 3 gate decision",
+  "gate_decisions": [
+    {"phase": 0, "decision": "PASS"},
+    {"phase": 1, "decision": "PASS", "type": "hard gate"},
+    {"phase": 2, "decision": "PASS", "caveat": "criterion interpreted as 'completed per standard'"},
+    {"phase": 3, "decision": "PROTOCOL_BLOCKED"}
+  ],
+  "early_stop_behavior": {
+    "triggered_by_model_failure": false,
+    "triggered_by_protocol_insufficiency": true,
+    "worked_as_intended": true,
+    "note": "The early-stop philosophy saved compute exactly as designed: after PROTOCOL_BLOCKED at Phase 3, phases 4-10 and OMP 21B were not run. However the philosophy only covers FAIL gates; it does not define behavior for UNDECIDABLE gates — that gap is itself a finding (F-01)."
+  },
+  "protocol_ambiguities_found": 9,
+  "undocumented_decisions_required": [
+    "Treating Phase 2 PASS as 'characterization completed per Repetition Policy' (no documented criterion)",
+    "Using campaign-local test contract v0 (no canonical contracts exist)",
+    "Choosing unique-per-repetition prefill prompts to defeat llama.cpp KV prefix caching in Phase 2 (methodology detail undocumented in WLEP)",
+    "Selecting enable_thinking=false via --chat-template-kwargs as canonical non-reasoning baseline mapping of producer guidance to llama.cpp"
+  ],
+  "scorer_defects": [],
+  "artifact_schema_deficiencies": [
+    "execution_counts.json has no frozen schema (F-09)",
+    "No canonical artifact schemas for candidate machine-readable set listed in Standard Campaign Artifacts"
+  ],
+  "bespoke_exceptions_required": [
+    "OMP integration stages executed as handoff-level provisional requirement outside WLEP (F-05)"
+  ],
+  "capability_modules_applied": [],
+  "capability_modules_not_applicable_or_unreached": ["Coding", "Native Tools", "Extraction/RAG (deep)", "Structured Output (deep)", "Linux/Systems", "Reasoning", "Agent Behavior", "Vision"],
+  "omp_integration_status": {
+    "stage_21A_connectivity_smoke": "SUCCESS (INTEGRATION result, not model result)",
+    "stage_21B_full_agent_module": "NOT_RUN — precondition 'passed viability/reliability gates' unestablishable due to F-01"
+  },
+  "rules_interpreted": true,
+  "rules_silently_invented": false,
+  "protocol_changed_during_run": false,
+  "llmgauge_invoked": false,
+  "llmgauge_note": "WLEP never mandated LLMGauge for any phase reached; tooling-gap analysis not triggered.",
+  "protocol_verdict": "PROTOCOL BLOCKED BEFORE COMPLETE EVALUATION",
+  "verdict_rationale": "WLEP drove Phases 0-2 without structural change, but its first judgment gate (Phase 3) is undecidable from the documented protocol alone. The model showed no failure that justified stopping; the protocol's missing threshold did. Verdict wording chosen over NEEDS REVISION because the blocker prevented evaluation completion entirely; revision needs are cataloged in protocol-findings.md."
+}

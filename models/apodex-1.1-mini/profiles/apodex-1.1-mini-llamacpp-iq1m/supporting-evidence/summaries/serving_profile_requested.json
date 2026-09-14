@@ -1,0 +1,26 @@
+{
+  "profile_id": "wumbojetsii-canonical-baseline",
+  "requested": {
+    "binary": "runtime/llama.cpp/build-cuda-sm120/bin/llama-server",
+    "runtime_commit": "f280b26983ad0fdb705a0d9ebf0503e76f2899b0",
+    "model": "<canonical quant gguf>",
+    "gpu_layers": "-ngl 999 (full placement)",
+    "cpu_offload_model": "none (full GPU required)",
+    "parallel": "-np 1 (REQUIRED single-user invariant)",
+    "context": "-c 32768 explicit (fit=off so runtime may not shrink)",
+    "fit": "off (REQUIRED invariant)",
+    "flash_attn": "on (explicit)",
+    "kv_unified": true,
+    "batch": 2048,
+    "ubatch": 512,
+    "template": "--chat-template-file models/chat_template.jinja (external, upstream-synced @62583b46)",
+    "jinja": true,
+    "reasoning_mode": "--reasoning-format deepseek; template default thinking behavior; BASELINE measured with enable_thinking=false via chat_template_kwargs; REASONING-ENABLED arm separately",
+    "sampling": {"temperature": 1.0, "top_p": 0.95, "top_k": 20, "seed_per_task": true},
+    "speculation": "OFF (no --spec-* flags; native MTP head present but disabled for baseline)",
+    "endpoint": "http://127.0.0.1:18450",
+    "alias": "<set per quant>",
+    "server_concurrency": 1
+  },
+  "note": "Effective verification (n_slots/n_ctx_slot from startup log, /props, /slots probes, VRAM-vs-RSS residency check, reasoning behavioral probe) recorded in serving_profile_effective.json after admission."
+}

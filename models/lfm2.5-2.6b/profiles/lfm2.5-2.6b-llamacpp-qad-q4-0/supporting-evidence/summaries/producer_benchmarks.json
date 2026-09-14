@@ -1,0 +1,7 @@
+{
+  "producer_methodology": {"suite":["GPQA Diamond","MMLU-Pro","IFEval","IFBench","Multi-IF","BFCLv4","AIME25"],"repeats":5,"reported_2_6b_qad_retention_percent":96.6,"reported_2_6b_gap_recovery_percent":48.4},
+  "reproduction_status":"INCONCLUSIVE",
+  "reason":"The accepted read-only LLMGauge commit 595e177 does not expose faithful public execution contracts for the producer suite. Its own external-benchmark contract explicitly marks MMLU-Pro, GPQA, and IFEval unsupported and prohibits recreating them as native prompts. The campaign did not label proxy prompts as producer-benchmark reproduction.",
+  "product_gap":"Faithful execution/import contracts for the remaining producer suite elements (IFBench, Multi-IF, BFCLv4, AIME25) are unavailable in the accepted LLMGauge installation. No LLMGauge source was modified.",
+  "direct_evidence_used_instead":"Versioned local direct-llama.cpp practical, tool, extraction, coding, and context lanes are reported separately and are not claimed to reproduce producer aggregate scores."
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "policy": "ALLOWLIST_FIRST",
+  "default_public_eligibility": "DO_NOT_PUBLISH",
+  "root": "labs",
+  "future_repo": "WumboLabs/labs",
+  "default": "DO_NOT_PUBLISH",
+  "allowed": [
+    "README.md",
+    "catalog.json",
+    "comparisons/**",
+    "hardware/**",
+    "models/**",
+    "PUBLICATION-MANIFEST.json",
+    "publication-allowlist.json",
+    ".gitignore"
+  ],
+  "excluded": [
+    "local-inventory.json",
+    ".env",
+    ".env.*",
+    "credentials*",
+    "secrets*",
+    "auth*"
+  ],
+  "reason": "Publishable catalog and hardware/methodology references only."
+}

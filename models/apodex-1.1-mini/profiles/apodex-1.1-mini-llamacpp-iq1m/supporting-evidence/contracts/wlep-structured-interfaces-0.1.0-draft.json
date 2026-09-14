@@ -1,0 +1,741 @@
+{
+  "contract_id": "wlep-structured-interfaces",
+  "version": "0.1.0-draft",
+  "status": "DRAFT / PROTOCOL DEVELOPMENT",
+  "created": "2026-08-25",
+  "purpose": "Machine-consumable response-contract compliance: structural validity separated from semantic correctness.",
+  "sampling_default": {
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "task_count": 24,
+  "tasks": [
+    {
+      "id": "strict-csv-02",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly CSV header `id,ok` and one row 7,true. No prose or Markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "exact",
+        "value": "id,ok\n7,true"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "csv"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-csv-02"
+      }
+    },
+    {
+      "id": "strict-csv-04",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly CSV header `port,proto` and rows for 53,udp then 443,tcp. No prose or Markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "exact",
+        "value": "port,proto\n53,udp\n443,tcp"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "csv"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-csv-04"
+      }
+    },
+    {
+      "id": "strict-enum-03",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly one enum token: FALSE if `git diff` publishes a commit, otherwise TRUE."
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "TRUE"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "enum"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-enum-03"
+      }
+    },
+    {
+      "id": "strict-enum-05",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly one enum token: SAFE if a command is read-only, RISKY otherwise: `git status`."
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "SAFE"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "enum"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-enum-05"
+      }
+    },
+    {
+      "id": "strict-enum-08",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly one enum token: UNKNOWN if a file is not supplied, KNOWN otherwise."
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "UNKNOWN"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "enum"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-enum-08"
+      }
+    },
+    {
+      "id": "strict-enum-10",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly one enum token: NONE if no tool is available, CALL otherwise."
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "NONE"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "enum"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-enum-10"
+      }
+    },
+    {
+      "id": "strict-exact-04",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Output exactly this string and nothing else: alpha_BETA"
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "alpha_BETA"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "exact"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-exact-04"
+      }
+    },
+    {
+      "id": "strict-exact-06",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Output exactly this string and nothing else: GPU0"
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "GPU0"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "exact"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-exact-06"
+      }
+    },
+    {
+      "id": "strict-exact-09",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Output exactly this string and nothing else: END"
+        }
+      ],
+      "max_tokens": 20,
+      "expected": {
+        "kind": "exact",
+        "value": "END"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "exact"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-exact-09"
+      }
+    },
+    {
+      "id": "strict-extract-02",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Extract only the requested tokens, one per line, from: ids: ZX-1; ZX-9; ignore ZZ. Return all obvious tokens in their source order. No labels or prose."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "exact",
+        "value": "ZX-1\nZX-9"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "extraction"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-extract-02"
+      }
+    },
+    {
+      "id": "strict-extract-05",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Extract only the requested tokens, one per line, from: hashes aa11 bb22 cc33. Return all obvious tokens in their source order. No labels or prose."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "exact",
+        "value": "aa11\nbb22\ncc33"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "extraction"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-extract-05"
+      }
+    },
+    {
+      "id": "strict-extract-07",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Extract only the requested tokens, one per line, from: codes ERR_A, ERR_B, ERR_C. Return all obvious tokens in their source order. No labels or prose."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "exact",
+        "value": "ERR_A\nERR_B\nERR_C"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "extraction"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-extract-07"
+      }
+    },
+    {
+      "id": "strict-json-01",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON matching exactly this value: {\"name\":\"Ada\",\"count\":3}. No markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "name": "Ada",
+          "count": 3
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "json"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-json-01"
+      }
+    },
+    {
+      "id": "strict-json-03",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON matching exactly this value: {\"mode\":\"q8\",\"enabled\":false}. No markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "mode": "q8",
+          "enabled": false
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "json"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-json-03"
+      }
+    },
+    {
+      "id": "strict-json-06",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON matching exactly this value: {\"ports\":[80,443]}. No markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "ports": [
+            80,
+            443
+          ]
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "json"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-json-06"
+      }
+    },
+    {
+      "id": "strict-json-08",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return only valid JSON matching exactly this value: {\"kind\":\"test\",\"version\":1}. No markdown."
+        }
+      ],
+      "max_tokens": 50,
+      "expected": {
+        "kind": "json_equal",
+        "value": {
+          "kind": "test",
+          "version": 1
+        }
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "json"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-json-08"
+      }
+    },
+    {
+      "id": "strict-limit-02",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "In at most two words, name the Git safety check before a merge."
+        }
+      ],
+      "max_tokens": 30,
+      "expected": {
+        "kind": "exact",
+        "value": "git status"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "limit"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-limit-02"
+      }
+    },
+    {
+      "id": "strict-limit-04",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "In at most two words, name the JSON parser in Python."
+        }
+      ],
+      "max_tokens": 30,
+      "expected": {
+        "kind": "exact",
+        "value": "json.loads"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "strict",
+        "limit"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "strict-limit-04"
+      }
+    },
+    {
+      "id": "si-schema-req-fields",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return ONLY a JSON object (no prose, no code fence) with keys \"name\" (string), \"port\" (integer), \"debug\" (boolean) describing an HTTP service named edge-proxy on port 8443 with debugging disabled."
+        }
+      ],
+      "max_tokens": 120,
+      "expected": {
+        "kind": "schema_check",
+        "schema": {
+          "type": "object",
+          "required": {
+            "name": "str",
+            "port": "int",
+            "debug": "bool"
+          }
+        },
+        "allow_extra": false
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    },
+    {
+      "id": "si-schema-enum-null",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return ONLY a JSON object: {\"level\": <one of \"low\",\"medium\",\"high\">, \"note\": <string or null>}. Set level to high and note to null."
+        }
+      ],
+      "max_tokens": 100,
+      "expected": {
+        "kind": "schema_check",
+        "schema": {
+          "type": "object",
+          "required": {
+            "level": "enum:low|medium|high",
+            "note": "null_or_str"
+          }
+        },
+        "allow_extra": false
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    },
+    {
+      "id": "si-schema-nested-array",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return ONLY a JSON object {\"hosts\": [<array of objects with keys \"host\" (string) and \"up\" (boolean)>]} listing host alpha as up and host beta as down."
+        }
+      ],
+      "max_tokens": 140,
+      "expected": {
+        "kind": "schema_check",
+        "schema": {
+          "type": "object",
+          "required": {
+            "hosts": "array_of_obj:host:str,up:bool"
+          }
+        },
+        "allow_extra": false
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    },
+    {
+      "id": "si-extraction-into-schema",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "From this log line: \"2026-08-25T10:00:00Z WARNING vpn0 tunnel renegotiated, 34 packets requeued\"\nReturn ONLY a JSON object with keys \"severity\" (string), \"interface\" (string), \"requeued\" (integer)."
+        }
+      ],
+      "max_tokens": 110,
+      "expected": {
+        "kind": "schema_check",
+        "schema": {
+          "type": "object",
+          "required": {
+            "severity": "str",
+            "interface": "str",
+            "requeued": "int"
+          }
+        },
+        "allow_extra": false
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    },
+    {
+      "id": "si-numeric-constraint",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Return ONLY a JSON object {\"percent\": <integer between 0 and 100>} giving 75 percent of disk used."
+        }
+      ],
+      "max_tokens": 80,
+      "expected": {
+        "kind": "schema_check",
+        "schema": {
+          "type": "object",
+          "required": {
+            "percent": "int:0..100"
+          }
+        },
+        "allow_extra": false
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    },
+    {
+      "id": "si-code-block-only",
+      "category": "strict_interfaces",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Follow the output contract exactly."
+        },
+        {
+          "role": "user",
+          "content": "Reply with EXACTLY one fenced bash code block and nothing else, containing the single command to list open TCP ports with owning process names."
+        }
+      ],
+      "max_tokens": 90,
+      "expected": {
+        "kind": "code_block_exact",
+        "need": [
+          "ss",
+          "-tlnp"
+        ],
+        "forbid": []
+      },
+      "objective_scoring": "mechanical",
+      "tags": [],
+      "provenance": {
+        "source": "new-v0.1 phase5-hardening"
+      }
+    }
+  ],
+  "change_history": [
+    {
+      "version": "0.1.0-draft",
+      "date": "2026-08-25",
+      "note": "initial draft"
+    }
+  ],
+  "axis_coverage": {
+    "promoted": [
+      "exact string",
+      "JSON object equality"
+    ],
+    "new": [
+      "required fields/types",
+      "enum",
+      "nullability",
+      "nested arrays of objects",
+      "extraction into schema",
+      "numeric constraint",
+      "single-code-block"
+    ]
+  },
+  "known_limitations": [
+    "no-extra-properties and optional-field axes covered only partially",
+    "whitespace differences are not semantic errors unless byte-exactness required"
+  ]
+}

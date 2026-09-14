@@ -1,0 +1,16 @@
+{
+ "campaign": "evals/nemotron-3-nano-4b",
+ "model_store": "models/nemotron-3-nano-4b",
+ "symlink": "evals/nemotron-3-nano-4b/** -> models/nemotron-3-nano-4b/artifacts",
+ "artifacts": [
+  {
+   "filename": "NVIDIA-Nemotron3-Nano-4B-Q4_K_M.gguf",
+   "relpath": "NVIDIA-Nemotron3-Nano-4B-Q4_K_M.gguf",
+   "bytes": 2837072864,
+   "sha256": "be5d9a656a51922f24f1f09a759cebb694e1f5d9728bf0ef9f8c972c5a0b5ef2",
+   "role": "sole evaluated artifact",
+   "documented_sha256_match": null
+  }
+ ],
+ "sidecar_files": []
+}

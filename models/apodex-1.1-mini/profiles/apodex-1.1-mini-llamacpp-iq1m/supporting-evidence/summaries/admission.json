@@ -1,0 +1,32 @@
+{
+  "campaign": "apodex-1.1-mini",
+  "admission_ladder": [
+    {"candidate": "Apodex-1.1-mini-IQ2_M.gguf", "sha256": "450afff9cd60e19ad485b4be4c22adf561df35072e4b4879bcc981e6fad88a8f", "result": "FAIL_FULL_GPU_ADMISSION", "evidence": "CUDA0 alloc failed: 11429724672 bytes weights buffer > 10866 MiB free VRAM; deterministic impossibility before KV/compute", "log": "results/admission_iq2m_server.log"},
+    {"candidate": "Apodex-1.1-mini-IQ1_M.gguf", "sha256": "1e84d8adf7837e96fb18712882a8a114becc7e53554372e2f612c5e0c6276cd4", "result": "PASS"}
+  ],
+  "canonical_quant": {
+    "file": "~/Projects/local-llm/apodex-1.1-mini/models/Apodex-1.1-mini-IQ1_M.gguf",
+    "bytes": 8821221376,
+    "sha256": "1e84d8adf7837e96fb18712882a8a114becc7e53554372e2f612c5e0c6276cd4",
+    "repo": "abenzerps/Apodex-1.1-mini-GGUF@59afa57852525f79a9634d5f80dd639cceee572c",
+    "official_conversion": false,
+    "upstream_source": "apodex/Apodex-1.1-mini@62583b464707ad58848bc2ab066747d8d5b02533",
+    "format_note": "1.75-bpw importance-aware build; embedded MTP layer retained at Q5_K"
+  },
+  "phase1_effective_evidence": {
+    "startup_log": {"n_slots": 1, "n_ctx_slot": 32768, "kv_unified": true},
+    "slots_probe": [{"n_ctx": 32768}],
+    "gpu_residency": {"vram_used_mib_at_idle": 9617, "host_rss_kb": 737604, "verdict": "FULL_GPU_PLACEMENT_CONFIRMED (RSS ~74MB << file size 8.8GB; no hidden CPU model offload)"},
+    "inference_smoke": {"thinking_off": {"output": "37", "finish": "stop"}, "thinking_on": {"content": "391", "reasoning_content_len": 336, "finish": "stop"}},
+    "termination": "clean stop on both probes",
+    "degenerate_output": false,
+    "reasoning_behavioral_probe": "reasoning_content separated from content when template default active; no leakage into content",
+    "xid_or_reset": "none"
+  },
+  "documented_decisions": [
+    {"id": "D1", "decision": "Canonical baseline reasoning state = producer/template default evaluated BOTH ways only inside the Reasoning module; WLEP gates run with enable_thinking=false", "basis": "Frozen precedent: qwen38 campaign invalidated gate runs where reasoning-off was omitted; frozen run_reliability.py hard-codes {enable_thinking: false}; Apodex template defaults to thinking ON, so explicit kwarg is required and applied via frozen runner defaults"},
+    {"id": "D2", "decision": "IQ2_M rejected without hybrid-offload testing", "basis": "Full-GPU placement impossibility is deterministic from allocation arithmetic (weights alone exceed device memory); hybrid offload violates frozen WumboJetsII full-GPU baseline invariant"},
+    {"id": "D3", "decision": "Runtime = new campaign-pinned tree at f280b269 instead of existing 0d9ceae1 builds", "basis": "Community GGUF requires >= f280b269; existing trees 166 commits behind; boundary rules forbid modifying existing trees; runtime change recorded as experimental identity difference"}
+  ],
+  "vision": "SUPPORTED_BY_SOURCE / NOT_EVALUATED (declared objective TEXT+AGENTIC; no projector downloaded)"
+}

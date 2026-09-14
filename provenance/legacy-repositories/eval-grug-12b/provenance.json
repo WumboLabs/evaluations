@@ -1,0 +1,47 @@
+{
+  "repository": "WumboLabs/eval-grug-12b",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/grug_12b_q4_k_m-v025-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-wumbolabs-practical-v025-plus-grug.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "170a1744c77a7b07eb76163ae9f5f06acbf1154382cdd9cbf2ef8bd01667a648",
+      "bytes": 15825
+    },
+    {
+      "path": "local-llm/research/model-evaluations/grug-12b/reviews/2026-07-04-grug-12b-q4-k-m.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "4694482b2fe398cc1e533a0a18dadf308970a4a71f50f17b55aee92185ada5df",
+      "bytes": 2328
+    },
+    {
+      "path": "local-llm/llmgauge/results/grug_12b_q4_k_m-v025-honesty-smoke-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/grug_12b_q4_k_m-provenance-refresh-v1-wumbolabs-practical-use-v1-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/grug-12b-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "180f6f66c12b33201a35960d091bcabc78036497c072fc02cdf8c8010522d297",
+      "bytes": 2598
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/kai-os-Grug-12B-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "events/2026-07-04-grug-12b-q4-k-m-verdict.md",
+      "kind": "byte-identical copy of the manual verdict note (public-safe, relative paths only)",
+      "sha256": "4694482b2fe398cc1e533a0a18dadf308970a4a71f50f17b55aee92185ada5df",
+      "bytes": 2328
+    }
+  ]
+}

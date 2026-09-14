@@ -1,0 +1,49 @@
+{
+  "schema": "welp-model-manifest/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "model": {
+    "hf_repo": "ornith-ai/Ornith-1.5-9B",
+    "revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "license": "mit",
+    "architecture": "qwen3_5",
+    "parameters": "9B dense",
+    "max_position_embeddings": 262144,
+    "mtp_num_hidden_layers": 1
+  },
+  "artifact": {
+    "file": "Ornith-1.5-9B-Q4_K_M.gguf",
+    "bytes": 5780090816,
+    "sha256": "70c112196e0b7023803c9762752e46d29e612a92c83f995bc3ba1ceb07e8fab6",
+    "quant": "Q4_K_M",
+    "chat_template_sha256": "9dd2fbd270feaa1fbef2d4f634d7887c9c506e3bde140f8e7351c8944e8fd235"
+  },
+  "excluded_artifacts": {
+    "mmproj-Ornith-1.5-9B-BF16.gguf": "vision not evaluated (no vision objectives)",
+    "other_quants": "single-artifact rule; Q4_K_M pinned by 12 GB VRAM constraint"
+  },
+  "runtime": {
+    "project": "llama.cpp",
+    "build": "b10449",
+    "commit": "0d9ceae1",
+    "binary_sha256": "b3a740b8",
+    "binary_sha256_note": "full value recorded in summaries/environment_identity.json"
+  },
+  "hardware": {
+    "alias": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12 GB (SM120)",
+    "cpu": "AMD Ryzen 7 9800X3D",
+    "ram_gb": 32,
+    "os": "Fedora 44 (kernel 7.1.10-200.fc44.x86_64)"
+  },
+  "serving_profile": {
+    "context": 32768,
+    "parallel": 1,
+    "n_gpu_layers": 99,
+    "flash_attn": "on",
+    "batch": 2048,
+    "ubatch": 512,
+    "fit": "off",
+    "speculation": "none (canonical); MTP evaluated and rejected for canonical profile",
+    "reasoning": "off (server --reasoning off + per-request enable_thinking=false)"
+  }
+}

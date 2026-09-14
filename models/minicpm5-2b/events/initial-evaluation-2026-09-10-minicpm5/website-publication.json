@@ -1,0 +1,82 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "minicpm5-2b-rtx5070-welp-characterization-2026-09-10",
+  "publication_date": "2026-09-11",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "display_name": "MiniCPM5-2B",
+    "producer": "OpenBMB",
+    "official_id": "openbmb/MiniCPM5-2B",
+    "official_revision": "cd199ce3ee67549c42ef7372f809f2c63599a3e9",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "model-00000-of-00001.safetensors (official BF16; no quantization or conversion)",
+    "precision": "BF16 weights and BF16 KV (primary surface); fp8(e4m3) KV only on the single authorized 131,072 alternate surface",
+    "sha256": "14fb8e7f0a18d53d1f239773758bf581cee7e456a4523a54622c3a245b64402c",
+    "source": "openbmb/MiniCPM5-2B at the pinned revision"
+  },
+  "runtime": {
+    "engine": "vLLM",
+    "version": "0.27.1 (g6e448d0ea), Torch 2.13.0+cu130, Transformers 5.15.0, FlashInfer 0.6.16.post3",
+    "notes": "Qualified contained CUDA 13.0 toolchain (compute_120f/sm_120f); full transformer GPU residency; fresh-cache containment proven; greedy temperature-0 primary surface"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux 44"
+  },
+  "welp": {
+    "outcome": "PASS \u2014 MINICPM5_2B_RTX5070_CHARACTERIZED; MODEL-CARD CONTEXT ENVELOPE COMPLETE = YES",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "Official BF16 full-precision candidate (characterized; not deployed); architecture-diversity control value HIGH"
+  },
+  "context": {
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 65536,
+    "native_maximum_tokens": 131072,
+    "envelope_complete": true,
+    "native_maximum_disposition": "Exact 131,072 carries two completed dispositions: FIT_LIMIT on the BF16-KV surface (1,024 MiB reserve floor caps the pool below the maximum) and measured FAILED (strict useful-context gate) on the authorized fp8-KV alternate surface executed at 99.50% occupancy; the highest admitted BF16-KV rung was 98,304",
+    "notes": "The strict frozen useful-context gate FAILED at every rung (12/12 requests) with exact attribution: markdown-fenced JSON and an omitted absent field cascade the per-field gates. Supplementary content-level analysis (explicitly not a gate) shows 5/5 exact target retrieval at every depth through 65,536 on both seeds and at 131,072 on one of two seeds. A FAILED gate is a completed negative disposition, not VALIDATED; no rung is claimed VALIDATED."
+  },
+  "performance": {
+    "surface_note": "Medians over five measured repetitions per surface at 8,192 baseline context; near-full ladder medians of two seeds per rung retained in campaign evidence",
+    "short_ttft_s": 0.013037,
+    "short_decode_tps": 118.622,
+    "moderate_input_tokens": 2663,
+    "moderate_ttft_s": 0.203597,
+    "moderate_prefill_tps": 13079.8,
+    "moderate_decode_tps": 116.95
+  },
+  "quality": {
+    "constrained_result": "6/7 constrained checks \u2014 one deterministic temperature-0 over-refusal of a benign prime-list prompt failed the repeat-check content scorer; repeat consistency itself held; no repair attempted (frozen contract)",
+    "capability_highlights": [
+      "Thinking/reasoning TESTED_PASS; coding TESTED_PASS (4/4 frozen execution cases); native tool selection and tool-result use TESTED_PASS",
+      "English/Chinese text, instruction following, and structured output TESTED_PASS",
+      "Near-full performance inside practical gates through 98,304 (BF16-KV) with zero errors across 55 scientific requests"
+    ],
+    "key_guardrails": [
+      "Strict long-context output compliance fails at all rungs (format + absent-field), even though content-level retrieval is strong",
+      "Deterministic temperature-0 over-refusal quirk observed on a benign prompt",
+      "fp8-KV scales uncalibrated (kv_scale 1.0); agent benchmarks deferred as out of scope; not autonomous-agent qualification"
+    ],
+    "reliability_summary": "20/20 COMPLETE and passed on a fresh default-context server; zero HTTP/runtime/CUDA/OOM/Xid errors; bounded, not endurance certification"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 118.2,
+    "ttft_ms": 22.7,
+    "submission_ref": "cmtwcna5907f0ps01sfiwd60a",
+    "verified_run": false,
+    "note": "APPROVED, origin NEW (localmaxxing-backfill-2026-09-10); benchmarked on the canonical practical stack (BF16, vLLM contained runtime, 32K default \u2014 not the 131K fp8 boundary); actual prompt tokens 252 (endpoint usage); verifiedRun false reflects a client capture limitation"
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-minicpm5-2b",
+    "note": "Canonical public evidence published in this repository. The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "website_record_slug": "minicpm5-2b",
+  "public_summary": "Full WELP characterization of MiniCPM5-2B official BF16 on an RTX 5070 12GB under a qualified contained vLLM/CUDA 13.0 runtime: READY_WITH_GUARDRAILS with the complete model-card context envelope dispositioned \u2014 32,768 default, 65,536 guarded, 98,304 highest BF16-KV rung, exact 131,072 FIT_LIMIT on BF16-KV with an authorized fp8-KV surface executed at 99.50% occupancy. Measured 118.6 tok/s short decode and 0.20 s moderate TTFT; thinking, coding, and native tools all passed; 20/20 reliability. The strict long-context output gate failed at every rung (format and absent-field attribution) while content-level retrieval stayed strong, and a deterministic temperature-0 over-refusal was retained.",
+  "record_description": "Official BF16 full-precision characterization on a contained vLLM runtime, READY_WITH_GUARDRAILS: 32K default / 64K guarded, complete 131K model-card envelope (98K highest BF16-KV rung; exact 131K FIT_LIMIT on BF16-KV and strict-gate FAILED on the authorized fp8-KV surface), 118.6 tok/s decode, thinking/coding/tools PASS, 20/20 reliability."
+}

@@ -1,0 +1,20 @@
+{
+  "contract": "practical-quality-screen",
+  "version": "campaign-local v0 (WLEP has no migrated canonical prompts; Standard Campaign Artifacts marks contracts TODO)",
+  "sampling": {"temperature": 0.6, "top_p": 0.95, "seed": 42},
+  "note": "Screening uses single fixed seed; not a variance measurement.",
+  "tasks": [
+    {"id": "P01", "category": "instruction_following", "prompt": "Reply with exactly the word BANANA and nothing else.", "check": "exact_stripped", "expected": "BANANA"},
+    {"id": "P02", "category": "instruction_following", "prompt": "List the numbers 1 to 5 inclusive, one per line, with no other text.", "check": "lines_1_to_5", "expected": ["1","2","3","4","5"]},
+    {"id": "P03", "category": "strict_output", "prompt": "Output exactly this line verbatim, including punctuation:\nX-7Q!k", "check": "contains_exact_line", "expected": "X-7Q!k"},
+    {"id": "P04", "category": "extraction", "passage": "The shipment arrived on Tuesday. It contained 14 crates of pears, 6 crates of quinces, and one barrel of honey. The shipper was Marlow & Sons. The invoice total was 2,340 dollars.", "prompt": "From the passage above, return ONLY a JSON object with keys \"pears\" (number of crates), \"shipper\", and \"total_dollars\". No other text.", "check": "json_fields", "expected": {"pears": 14, "shipper": "Marlow & Sons", "total_dollars": 2340}},
+    {"id": "P05", "category": "structured_output", "prompt": "Return ONLY valid JSON matching this schema: {\"label\": string, \"is_prime\": boolean} for the number 17. No markdown fences, no explanation.", "check": "json_schema_prime17", "expected": {"label": "seventeen|17", "is_prime": true}},
+    {"id": "P06", "category": "structured_output", "prompt": "Return ONLY a JSON array of exactly 3 objects, each with keys \"city\" and \"country\": Tokyo, Nairobi, Oslo. No markdown fences.", "check": "json_array_schema", "expected_cities": ["Tokyo", "Nairobi", "Oslo"]},
+    {"id": "P07", "category": "basic_technical_knowledge", "prompt": "What does HTTP status code 404 mean? Answer in one sentence.", "check": "contains_any", "expected_any": ["resource", "found"], "must_contain": ["404"]},
+    {"id": "P08", "category": "false_premise_rejection", "prompt": "The Great Wall of China is visible from the Moon with the naked eye, right? Answer yes or no.", "check": "first_yes_no", "expected": "no"},
+    {"id": "P09", "category": "factual_uncertainty", "prompt": "Who won the Nobel Prize in Physics in 2199?", "check": "uncertainty_markers", "expected_markers": ["no nobel", "not awarded", "hasn't", "has not", "will not", "cannot", "can't", "future", "doesn't exist", "did not", "no prize", "no such"]},
+    {"id": "P10", "category": "simple_reasoning", "prompt": "A bat and a ball cost $1.10 together. The bat costs $1.00 more than the ball. How much does the ball cost, in cents?", "check": "contains_number", "expected_number": 5},
+    {"id": "P11", "category": "simple_reasoning", "prompt": "All bloops are razzies. All razzies are lazzies. Are all bloops definitely lazzies? Answer yes or no.", "check": "first_yes_no", "expected": "yes"},
+    {"id": "P12", "category": "extraction", "passage": "Meeting notes 2026-07-14: Priya will draft the budget by Friday. Tomas raised the vendor risk item; owner is Lena. Next sync is Monday 09:30 UTC.", "prompt": "Who owns the vendor risk item? Reply with only the person's name.", "check": "exact_stripped_contains", "expected": "Lena"}
+  ]
+}

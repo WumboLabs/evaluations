@@ -1,0 +1,43 @@
+{
+  "repository": "WumboLabs/eval-gemma-4-12b-ud-q6",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-12b-it-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "ca60db87c21838077472778b64a6c64971c298c47ba0b6d47f9f6554a509de15",
+      "bytes": 2654
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-qat-q4-test.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "94d57253cf9380c477d5f01a4bb246cca480f9de88dcc1df9de64014325056eb",
+      "bytes": 2400
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-ud-q5-xl.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "19fbe7e58b911b34f580e6271c81d82b5a886645cea5d728c9a9bf8a6d7006b7",
+      "bytes": 2649
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-ud-q6-xl.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "3dcbfecd7dbcda373c576953f4dc71ace6af3689a9555afc35959988c7020b4d",
+      "bytes": 2649
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/ggml-org-gemma-4-12b-it-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/google-gemma-4-12b-it-qat-q4_0-gguf/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/unsloth-gemma-4-12b-it-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

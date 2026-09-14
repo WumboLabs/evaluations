@@ -1,0 +1,744 @@
+{
+  "campaign_id": "ornith-1.5-9b",
+  "created_utc": "2026-08-27T20:19:39+00:00",
+  "protocol_snapshot": {
+    "id": "welp-next-snapshot-2026-08-26-post-rename",
+    "manifest_sha256": "32c38e2a247e8b28e5760093215a8a869c6d63b6d7b257947d8c33b688764c49",
+    "tree_sha256": "8b68e31673c96d72318c2f89774ae56d844982051ba1f7421befefaabc933b83"
+  },
+  "model": {
+    "repo": "ornith-ai/Ornith-1.5-9B",
+    "revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "file": "Ornith-1.5-9B-Q4_K_M.gguf",
+    "sha256": "70c112196e0b7023803c9762752e46d29e612a92c83f995bc3ba1ceb07e8fab6"
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "build": 10449,
+    "commit": "0d9ceae1e38291035605613ab41a8f5e693d6fcd",
+    "binary_sha256": "b3a740b8e69f84420cdc7068d48bdc5d3ab3f8ca366e358f5d0d1d75d2daaaf3"
+  },
+  "hardware_profile": {
+    "host": "wumbojetsii",
+    "gpu": "NVIDIA GeForce RTX 5070, 12227 MiB",
+    "profile_ref": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/hardware/wumbojetsii/profile.json",
+    "profile_sha256": "29fbdc2a0473cd41b3c1cc7bd94efbdb79917ce0e01a65ebe2e2fd3856ed2764"
+  },
+  "serving_profile": {
+    "path": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/summaries/serving_profile.json",
+    "sha256": "dde2493df8e287fec55d888f5c52f5e4b5d0d1940b8237582484575979adea06",
+    "requested": {
+      "parallel": 1,
+      "fit": "off",
+      "flash_attn": "on",
+      "context_total": 32768,
+      "batch": 2048,
+      "ubatch": 512,
+      "template": "embedded GGUF (== chat_template.jinja, sha256-verified)",
+      "reasoning_mode": "REASONING_OFF via chat_template_kwargs.enable_thinking=false (gate baseline)",
+      "sampling": {
+        "temperature": "per-contract",
+        "note": "contract sampling_default governs; server defaults unused"
+      },
+      "speculation": "none"
+    },
+    "effective": {
+      "slot_count": 1,
+      "per_slot_context": 32768,
+      "total_context": 32768,
+      "kv_placement": "GPU (all 33 layers offloaded; -ngl 99 -fit off; RTX 5070 12 GB)",
+      "recurrent_state_placement": "GPU (hybrid SSM layers; qwen35 full_attention_interval=4)",
+      "endpoint_alias": "http://127.0.0.1:8931",
+      "server_concurrency": 1,
+      "gate_baseline_reasoning_state": "REASONING_OFF",
+      "reasoning_requested": "REASONING_OFF",
+      "reasoning_effective": "REASONING_OFF",
+      "evidence": [
+        "log: srv    load_model: initializing, n_slots = 1, n_ctx_slot = 32768, kv_unified = 'false'",
+        "log: srv  llama_server: listening on http://127.0.0.1:8931",
+        "log: chat template supports preserving reasoning (template renders enable_thinking)",
+        "/props: total_slots=1, n_ctx=32768, build_info=b10449-0d9ceae1e",
+        "/props chat_template_caps: supports_tools=true, supports_tool_calls=true, supports_preserve_reasoning=true, supports_reasoning_effort=false",
+        "probe REASONING_OFF: enable_thinking=false -> reasoning_content absent, content='PING'",
+        "probe REASONING_ON: default -> reasoning_content='17 x 23 = ... 391', content='17 x 23 = **391**' (auto-extraction works)",
+        "probe TOOLS: native tool_calls returned: get_weather {\"city\":\"Paris\"} with id; content empty",
+        "nvidia-smi compute-apps: 462397, 6210 MiB",
+        "metrics: llamacpp:prompt_tokens_total excludes cached; prompt_tokens_cached_total present"
+      ]
+    },
+    "gate_baseline_reasoning_state": "REASONING_OFF",
+    "reasoning_requested": "off: server --reasoning off + per-request chat_template_kwargs.enable_thinking=false on every gate-bearing call",
+    "reasoning_effective": "off: 0 reasoning_content fields across Phase 3 (90 rows), Phase 4 (162 rows), Phase 5 (342 rows); behavioral probe clean"
+  },
+  "phase2_harness_version": {
+    "script": "scripts/phase2_perf.py",
+    "sha256": "793c5273f84036e6194c985528fbb356b73d24aea8d5e50a1999c6aa767f87be",
+    "revision": "campaign-fixed (post phase2_perf.py repair; stage-split via WELP_STAGE; no-cache prefill on port 8932)"
+  },
+  "contracts": {
+    "welp-practical-viability": {
+      "version": "0.1.4-draft",
+      "path": "<USER_HOME>/Projects/local-llm/welp/contracts/welp-practical-viability-0.1.3-draft.json",
+      "sha256": "4c5de7fe786f915518b582c5c2000bbeb660c8109ad3d2a67007f402525307cb"
+    },
+    "welp-reliability": {
+      "version": "0.1.0-draft",
+      "path": "<USER_HOME>/Projects/local-llm/welp/contracts/welp-reliability-0.1.0-draft.json",
+      "sha256": "a36189b226b896ec2f4b51e79ad6af3c3b89980e1d5d6a7bbef0385217cff8e4"
+    },
+    "welp-preflight": {
+      "version": "0.1.0-draft",
+      "path": "<USER_HOME>/Projects/local-llm/welp/contracts/welp-preflight-0.1.0-draft.json",
+      "sha256": "85e27605905ef0b34545a5842ada72671bb6bdf922e6095b21571bdaddb103cc"
+    }
+  },
+  "phase5_applicability": null,
+  "generation_evidence": [],
+  "publication_status": {
+    "path": "summaries/publication_status.json",
+    "sha256": "619b19f0c05538edccfb82d90b2cfdff99053c652a75706ed3db7ac119cd7ead",
+    "status": "PUBLICATION_PREPARED_EXTERNAL_POSTS_NOT_AUTHORIZED"
+  },
+  "artifact_index": [
+    {
+      "name": "campaign_manifest",
+      "path": "summaries/campaign_manifest.json",
+      "sha256": null,
+      "type": "manifest",
+      "phase_or_module": "intake",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL",
+      "note": "self-referential hash omitted (any edit invalidates it); validator does not check hashes against disk"
+    },
+    {
+      "name": "serving_profile",
+      "path": "summaries/serving_profile.json",
+      "sha256": "dde2493df8e287fec55d888f5c52f5e4b5d0d1940b8237582484575979adea06",
+      "type": "profile",
+      "phase_or_module": "intake",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "environment_identity",
+      "path": "summaries/environment_identity.json",
+      "sha256": "828cf7b7a3a9834d3dd7898ae5de21e9a730350e66c5c0879227bfed8c78ad15",
+      "type": "identity",
+      "phase_or_module": "intake",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "toolchain_inventory",
+      "path": "summaries/toolchain_inventory.json",
+      "sha256": "5eaaa8d5d9f91a678da8ac32ee16062d127169252790b4e4df637163842857a0",
+      "type": "inventory",
+      "phase_or_module": "intake",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "toolchain_preflight",
+      "path": "summaries/toolchain_preflight.json",
+      "sha256": "5ede87ebf82728b0015d8f5eceafc76a7b9ad7621b99ef10419558eed33e9259",
+      "type": "preflight",
+      "phase_or_module": "admission",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "dataset_inventory",
+      "path": "sources/dataset_inventory.json",
+      "sha256": "6c281fa1f5f13c5e2ecc4dedacac76ce7ee3f2ece40c412b947bc322bb7cea97",
+      "type": "inventory",
+      "phase_or_module": "admission",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "launch_command",
+      "path": "summaries/launch_command.txt",
+      "sha256": "821ec296c21e436833a84a1830e069ef016ad70d83e73926fddd301290a751a0",
+      "type": "command",
+      "phase_or_module": "admission",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "performance_summary",
+      "path": "summaries/performance.json",
+      "sha256": "0ffdc73e69ccf420b3f5f826e281201af8862e9de0d00749eec198d741b2702a",
+      "type": "summary",
+      "phase_or_module": "performance",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase2_raw",
+      "path": "results/phase2_raw.jsonl",
+      "sha256": "1ab5611e6de358bbaae03f0815bc8786ad6b5925b11a4f27b31f1ee7e1438da8",
+      "type": "raw",
+      "phase_or_module": "performance",
+      "public_eligible": false,
+      "required": true,
+      "status": "INVALIDATED_RETAINED",
+      "note": "file missing from results/ at closeout; recorded hash has no independent evidence; per-rep values survive in summaries/performance.json; see summaries/artifact_reconciliation.json"
+    },
+    {
+      "name": "phase2_summary",
+      "path": "results/phase2_summary.json",
+      "sha256": "3825b5a91baa44af4415e46ee51e70fbbc25e4205eeede106a45ca760940d281",
+      "type": "scores",
+      "phase_or_module": "performance",
+      "public_eligible": false,
+      "required": true,
+      "status": "INVALIDATED_RETAINED",
+      "note": "file missing from results/ at closeout; recorded hash has no independent evidence; per-rep values survive in summaries/performance.json; see summaries/artifact_reconciliation.json"
+    },
+    {
+      "name": "practical_quality",
+      "path": "summaries/practical_quality.json",
+      "sha256": "e8244a553639e67e703a28fda736c73821572dbb091caf1c5be355d6c7ff4195",
+      "type": "summary",
+      "phase_or_module": "practical_viability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase3_raw",
+      "path": "results/phase3_raw.jsonl",
+      "sha256": "53749c1bb423f7472144ad9b7c1d79c5b0cc80369d304898c5c2dc118576aeb4",
+      "type": "raw",
+      "phase_or_module": "practical_viability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase3_scored",
+      "path": "results/phase3_scored.json",
+      "sha256": "cd091d82bd95325997650cf88e8c0f4bc6f13de745e0406614ae8b79b6e2c593",
+      "type": "scores",
+      "phase_or_module": "practical_viability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase5_applicability_freeze",
+      "path": "summaries/phase5_applicability.json",
+      "sha256": "b51bb36efb7d5ef8aaaef45815eab54e642501d1d105f37b4991131c677fa256",
+      "type": "freeze",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "reliability_summary",
+      "path": "summaries/reliability.json",
+      "sha256": "38e8a87c28a3c8227fcf1114af434dfc98054d428d5af2b062ba52b9f0e13585",
+      "type": "summary",
+      "phase_or_module": "reliability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "reliability_raw",
+      "path": "results/reliability_raw.jsonl",
+      "sha256": "02b350cd6befeb78421632a8d7fe9fbb871ae40ea3cced9e23208daf4cc3a795",
+      "type": "raw",
+      "phase_or_module": "reliability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "reliability_scored",
+      "path": "results/reliability_scored.json",
+      "sha256": "878e786ce2dd3cd622212fb3471e3433d507372fdf0d482572751983eff05dcb",
+      "type": "scores",
+      "phase_or_module": "reliability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "reliability_contract",
+      "path": "contracts/wlep-reliability-0.1.0-draft.json",
+      "sha256": "cf42d2fa7f9cbe4139966870922d6dc6f8a859f4da7a7e69fb2dcaf99aded24f",
+      "type": "contract",
+      "phase_or_module": "reliability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "reliability_scorer",
+      "path": "scorers/score_reliability.py",
+      "sha256": "07659616c1301a65f3ba8d1cda0e4d80bb38222e4d8d0732b1525fce4a44e034",
+      "type": "scorer",
+      "phase_or_module": "reliability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase3_scorer",
+      "path": "scorers/score_pv.py",
+      "sha256": "d5dedf5b5bae21e3add97a4675b3ba82b5130eaff0ae14c35abe97532b846424",
+      "type": "scorer",
+      "phase_or_module": "practical_viability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase3_runner",
+      "path": "scripts/phase3_run.py",
+      "sha256": "249ca93014e7097a7b8745e2dd53d1c5201c373b0ad9f97ac5dfe17d70e61fe3",
+      "type": "harness",
+      "phase_or_module": "practical_viability",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase2_harness",
+      "path": "scripts/phase2_perf.py",
+      "sha256": "793c5273f84036e6194c985528fbb356b73d24aea8d5e50a1999c6aa767f87be",
+      "type": "harness",
+      "phase_or_module": "performance",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "capability_modules_summary",
+      "path": "summaries/capability_modules.json",
+      "sha256": "37519c1e66bac327ea868940c699c767e7c6f6e03a8f4b032811eefca2b141a8",
+      "type": "summary",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase5_scorer",
+      "path": "scorers/score_module.py",
+      "sha256": "055644536f0adbc41b8835dba4bedfb88e15e8197e212dcad5fc92846336a118",
+      "type": "scorer",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase5_coding_scorer",
+      "path": "scorers/score_coding.py",
+      "sha256": "913a0affc1e45df26eb0421a42147f9c136c99a82d748a542d460a13c2cf65c8",
+      "type": "scorer",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase5_tools_scorer",
+      "path": "scorers/score_tools.py",
+      "sha256": "627f7b379e4465d9f778e1b03de84b62c909bddc19da6e9518519a524abe89c8",
+      "type": "scorer",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase5_runner",
+      "path": "scripts/run_module.py",
+      "sha256": "0eb636ac087b275b432bf460a7f819903453d0bd9151aa9627368a227c65fdf8",
+      "type": "harness",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "rag_corpus",
+      "path": "corpus/wlep-rag-corpus-0.1.0.json",
+      "sha256": "97fba7601fbaeb3e93d2a1e00fa85bcc79d1e77c95cdac3eb79b3c1d3cc385a1",
+      "type": "corpus",
+      "phase_or_module": "capability_modules",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "context_summary",
+      "path": "summaries/context.json",
+      "sha256": "6fc9d6897196c7fec82d08afba545f6d4b67fc20df52e62dc7914992506e227e",
+      "type": "summary",
+      "phase_or_module": "context",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "context_raw",
+      "path": "results/ornith-1.5-9b.raw.jsonl",
+      "sha256": "6d78401821b393d5ea07706d560273de752d2b3913ba50229d88b6809a4647bb",
+      "type": "raw",
+      "phase_or_module": "context",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "context_midpoint_raw",
+      "path": "results/ornith-1.5-9b-midpoint.raw.jsonl",
+      "sha256": "203db036e1527cd247af9c526858c6f8bafaf6d23b27b8d603909e12521ce7a5",
+      "type": "raw",
+      "phase_or_module": "context",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "context_scored",
+      "path": "results/ornith-1.5-9b.scored.json",
+      "sha256": "051e242b978c2b0beb522f1fd8122273d21991a867ca0c42f13b52b385745016",
+      "type": "scores",
+      "phase_or_module": "context",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "variance_summary",
+      "path": "summaries/variance.json",
+      "sha256": "0ee25b3a26eaa0a1ebc87b9149d5d9503230f09695acf6cc58fe0be2e514f0be",
+      "type": "summary",
+      "phase_or_module": "variance",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "optimization_summary",
+      "path": "summaries/optimization.json",
+      "sha256": "6607cb525f38dd58656b1afce1e2935e26acdc2e0a175faeba6215794614a0ef",
+      "type": "summary",
+      "phase_or_module": "optimization",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "opt8_mtp_raw",
+      "path": "results/opt8_mtp_raw.jsonl",
+      "sha256": "693059025171c14e6a2b798346c4ef25d8abb2dc105cb6e63a0b477dcbaeace7",
+      "type": "raw",
+      "phase_or_module": "optimization",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "opt8_baseline_probe",
+      "path": "results/opt8_baseline_probe.json",
+      "sha256": "d00e5f90051dca1183e341f0d748ce00bc8dc4e2f579382823edad593821b247",
+      "type": "raw",
+      "phase_or_module": "optimization",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "soak_summary",
+      "path": "summaries/soak.json",
+      "sha256": "9dcc3a11debb8ba49f50818f9236762ed9a16a6d896038d260e053113433aabc",
+      "type": "summary",
+      "phase_or_module": "soak",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "soak_screening_raw",
+      "path": "results/soak/screening.json",
+      "sha256": "2aacff12d39017cd64c4fe11d9a9f67f10047fa26f3c1647b7f749eb7f21182d",
+      "type": "raw",
+      "phase_or_module": "soak",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "soak_gpu_samples",
+      "path": "results/soak/gpu_sample.csv",
+      "sha256": "7bc85aeda2f8b845f438275c5937b560d3e38a5c2e3d60fc8137da5cd925a61a",
+      "type": "raw",
+      "phase_or_module": "soak",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "soak_rss_samples",
+      "path": "results/soak/rss_sample.csv",
+      "sha256": "723e3755ac380a0534121ab713e15b4b05fb90a9c235905eff41e176819b7b28",
+      "type": "raw",
+      "phase_or_module": "soak",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase10_evidence",
+      "path": "results/phase10_evidence.json",
+      "sha256": "89931e00471ecb0c095cebee2d1068aa41c2bd0bb55c99b36e6ee75751b1a775",
+      "type": "scores",
+      "phase_or_module": "classification",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "phase10_classify",
+      "path": "results/phase10_classify.json",
+      "sha256": "f46b8413e0376189c67f63a7851a13ef025d3bf181506398fcbbc65f049c9e5b",
+      "type": "scores",
+      "phase_or_module": "classification",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "final_classification",
+      "path": "summaries/final_classification.json",
+      "sha256": "8cd9fe901d71e2284690ffbb93720f1682ea10f8cbf02bc0d89a1d43384a6840",
+      "type": "summary",
+      "phase_or_module": "classification",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "conformance",
+      "path": "WELP-CONFORMANCE.md",
+      "sha256": "f8a4eea6ccecf8f7015e5a0a929e46eeffdf3c75af964171fcbeea17d05531c2",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "report",
+      "path": "report.md",
+      "sha256": "b192728e43a07a3392d649a4cb9f5314b6a91df005086e122bd7bbfaeb740965",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "protocol_findings",
+      "path": "protocol-findings.md",
+      "sha256": "475e65993b068195b2c32f452f4861976005fc94f212f59aeb6b87a9d82971af",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "publication_status",
+      "path": "summaries/publication_status.json",
+      "sha256": "7bd95f7b8aa6eeb62c8c005e24f815f3ab182c315a40e72ef35f74262fda8532",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "publication_policy",
+      "path": "publication-policy.json",
+      "sha256": "52099deb8c1893086ca3ad3925ae59aff910f08988ef3df4e2166bb2cd453449",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "publication_manifest",
+      "path": "PUBLICATION-MANIFEST.json",
+      "sha256": "427ee4a467a025ba98511573f10694d381c81fa520c03f24d77cc277ee3f68ce",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "producer_claims",
+      "path": "summaries/producer_claims.json",
+      "sha256": "0572dc6ecd8904a4e21e23198c090580de549a02e07658e48cad4aea43840d77",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "sanitized_environment",
+      "path": "publication/environment_identity.sanitized.json",
+      "sha256": "47e83305177667f96338ea0e5c2d192535b1ee7c027f61cfb98ab68f9643b39f",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "sanitized_toolchain_inventory",
+      "path": "publication/toolchain_inventory.sanitized.json",
+      "sha256": "b59b9b3919eb086ac439eacd022259d92b5d3a9adf24f814b134cbcc3750c468",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "sanitized_toolchain_preflight",
+      "path": "publication/toolchain_preflight.sanitized.json",
+      "sha256": "62300a55b41d58de2849778d5b1dd405b19095f382bf383644e04efe3365da56",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "sanitized_campaign_manifest",
+      "path": "publication/campaign_manifest.sanitized.json",
+      "sha256": null,
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL",
+      "note": "derived copy regenerated from final master; self-referential hash omitted"
+    },
+    {
+      "name": "phase_status_semantics",
+      "path": "summaries/phase_status_semantics.json",
+      "sha256": "0566f9bde6d6bbe0e63fb54c54601fe39dbcea3a09971f0264ea477107c7ca2d",
+      "type": "summary",
+      "phase_or_module": "classification",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "protocol_findings_json",
+      "path": "summaries/protocol_findings.json",
+      "sha256": "a8cc79d6bd325d27288122e3d8467e4ae229b25d02449d5550eb6e0f37f12b66",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "artifact_reconciliation",
+      "path": "summaries/artifact_reconciliation.json",
+      "sha256": "3a89eec4b756a1d208a31a915eb34cf0683551c1c1fb681c2308a315cb89fe40",
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "localmaxxing_package_record",
+      "path": "localmaxxing/package-record.json",
+      "sha256": "ce097ee6ce32d9506acadccd0cb1036a2d813eec2c77abe03d82b90452bcb014",
+      "type": "record",
+      "phase_or_module": "publication",
+      "public_eligible": false,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "repo_candidate_manifest",
+      "path": "publication/repo-candidate/PUBLICATION-MANIFEST.json",
+      "sha256": "f2034cbc2a6eab9e0b594c8db4d71669d69b957b755f3f4a1c2717856e0491d5",
+      "type": "manifest",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "repo_candidate_allowlist",
+      "path": "publication/repo-candidate/publication-allowlist.json",
+      "sha256": "ff0b8d13a866a7ada958da4432e23d9f58eada940488e59ef4c71e479329df3b",
+      "type": "policy",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "repo_candidate_policy",
+      "path": "publication/repo-candidate/publication-policy.json",
+      "sha256": "c31682c1391da5537b32a3c6b144ac58deba163a955a9eae5e6f69ecb321925c",
+      "type": "policy",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL"
+    },
+    {
+      "name": "closeout",
+      "path": "summaries/closeout.json",
+      "sha256": null,
+      "type": "summary",
+      "phase_or_module": "publication",
+      "public_eligible": true,
+      "required": true,
+      "status": "FINAL",
+      "note": "self-referential hash omitted (closeout text describes the manifest itself); same policy as campaign_manifest/sanitized entries"
+    }
+  ],
+  "reproduction": "llama-server -m <USER_HOME>/Projects/local-llm/models/ornith-1.5-9b/artifacts/Ornith-1.5-9B-Q4_K_M.gguf --jinja -ngl 99 -c 32768 -np 1 -b 2048 -ub 512 --flash-attn on --fit off --metrics --host 127.0.0.1 --port 8931 --no-ui",
+  "phase_status": {
+    "intake": "FINAL",
+    "admission": "FINAL",
+    "performance": "FINAL",
+    "practical_viability": "FINAL_ADVANCE",
+    "reliability": "FINAL_DO_NOT_ADVANCE",
+    "capability_modules": "FINAL_CHARACTERIZATION",
+    "context": "FINAL_USEFUL_24576",
+    "variance": "FINAL_CHARACTERIZED",
+    "optimization": "FINAL_OPTIMIZED_PROFILE_FOUND_BASELINE_RETAINED",
+    "soak": "FINAL_SCREENING_PASS",
+    "classification": "FINAL_NOT_READY",
+    "publication": "FINAL_PREPARED_NOT_AUTHORIZED"
+  }
+}

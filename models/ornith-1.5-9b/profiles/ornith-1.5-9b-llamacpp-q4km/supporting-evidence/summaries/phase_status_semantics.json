@@ -1,0 +1,30 @@
+{
+  "schema": "welp-phase-status-semantics/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "written_utc": "2026-08-27T00:00:00Z",
+  "purpose": "Disambiguate the three independent status axes recorded in campaign_manifest.json phase_status, so FINAL_* labels on post-block phases are not misread as advancement.",
+  "axes": {
+    "ADVANCEMENT_STATUS": "Gate outcome for role progression: PASS/ADVANCE, DO_NOT_ADVANCE, NOT_REACHED. Authoritative source: frozen contract advance_if evaluated mechanically. Only Phase 3 and Phase 4 issue gate decisions in this campaign.",
+    "CHARACTERIZATION_STATUS": "Completeness/quality of measurement work (evidence produced, invalidated runs documented, verdicts honest). Applies to every phase. A phase can be FINAL on this axis while ADVANCEMENT_STATUS is blocked — permitted by the pinned Early-Stop Philosophy note (Reliability FAIL -> 'classify limitations / potentially STOP'), ruling B in WELP-CONFORMANCE.md.",
+    "ROLE_ELIGIBILITY": "What roles the model may hold (Phase 10 classify.py output). Closed by the Phase-4 DO_NOT_ADVANCE: omp_local_agent NOT_REACHED; final roles=[]. No characterization result can reopen eligibility."
+  },
+  "phase_axis_map": {
+    "intake": {"advancement": "N/A (freeze)", "characterization": "FINAL", "role_eligibility_effect": "none"},
+    "admission": {"advancement": "PASS (hard gate)", "characterization": "FINAL", "role_eligibility_effect": "hardware viability established"},
+    "performance": {"advancement": "N/A (measurement)", "characterization": "FINAL", "role_eligibility_effect": "none"},
+    "practical_viability": {"advancement": "ADVANCE (G1-G5 PASS, mechanical)", "characterization": "FINAL", "role_eligibility_effect": "required for Phase 4 entry; satisfied"},
+    "reliability": {"advancement": "DO_NOT_ADVANCE (G6 1/21 FAIL, mechanical; scorer-lexicon artifacts documented via manual review but NOT applied per frozen gate-authority rule 5)", "characterization": "FINAL", "role_eligibility_effect": "CLOSES omp_local_agent and any role requiring Phase-4 CLEAN_PASS"},
+    "capability_modules": {"advancement": "NONE ISSUED (all contracts CHARACTERIZATION_ONLY; decision-log D4: no honest thresholds at 4-control calibration)", "characterization": "FINAL_CHARACTERIZATION", "role_eligibility_effect": "cannot open roles; genuine failures recorded as model defects"},
+    "context": {"advancement": "N/A (measurement)", "characterization": "FINAL_USEFUL_24576 (32768 rung INCONCLUSIVE, PF-02)", "role_eligibility_effect": "none"},
+    "variance": {"advancement": "N/A (measurement)", "characterization": "FINAL_CHARACTERIZED", "role_eligibility_effect": "none"},
+    "optimization": {"advancement": "N/A (profile selection)", "characterization": "FINAL_OPTIMIZED_PROFILE_FOUND_BASELINE_RETAINED (MTP +9.9% rejected for canonical use, PF-05)", "role_eligibility_effect": "none"},
+    "context": {"advancement": "N/A (measurement)", "characterization": "FINAL_USEFUL_24576 (32768 rung INCONCLUSIVE, PF-02)", "role_eligibility_effect": "none"},
+    "classification": {"advancement": "NOT_READY", "characterization": "FINAL", "role_eligibility_effect": "roles=[] deterministic"},
+    "publication": {"advancement": "N/A", "characterization": "FINAL_PREPARED_NOT_AUTHORIZED", "role_eligibility_effect": "human git gate required"}
+  },
+  "invariants": [
+    "No post-Phase-4 artifact is cited as grounds to soften, appeal, or reinterpret the Phase-4 DO_NOT_ADVANCE.",
+    "Manual-review reclassifications (MINOR_DEFECT) annotate scorer artifacts only; mechanical gate counts stand everywhere they are reported.",
+    "Invalidated runs are retained and labeled, never deleted (frozen campaign rule)."
+  ]
+}

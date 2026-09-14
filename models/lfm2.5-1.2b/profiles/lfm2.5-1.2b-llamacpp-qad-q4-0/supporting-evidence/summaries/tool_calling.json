@@ -1,0 +1,91 @@
+{
+  "scoring_note": "v1: exact tool+args match (2.6B contract). v2 scored separately on selection/args/interpretation/final/sequence.",
+  "v1_historical_5cases": {
+    "BF16": {
+      "correct_arguments": 5,
+      "correct_tool_selection": 5,
+      "end_to_end_pass": 5,
+      "total": 5
+    },
+    "PTQ_Q4_0": {
+      "correct_arguments": 5,
+      "correct_tool_selection": 5,
+      "end_to_end_pass": 5,
+      "total": 5
+    },
+    "Q4_K_M": {
+      "correct_arguments": 5,
+      "correct_tool_selection": 5,
+      "end_to_end_pass": 5,
+      "total": 5
+    },
+    "Q5_K_M": {
+      "correct_arguments": 5,
+      "correct_tool_selection": 5,
+      "end_to_end_pass": 5,
+      "total": 5
+    },
+    "QAD_Q4_0": {
+      "correct_arguments": 5,
+      "correct_tool_selection": 5,
+      "end_to_end_pass": 5,
+      "total": 5
+    },
+    "UD_Q4_K_XL": {
+      "correct_arguments": 4,
+      "correct_tool_selection": 4,
+      "end_to_end_pass": 4,
+      "total": 5
+    }
+  },
+  "v2_harder_10cases": {
+    "BF16": {
+      "argument_schema_validity": 9,
+      "cases": 10,
+      "complete_sequences": 5,
+      "correct_final_answer": 2,
+      "result_interpretation": 7,
+      "tool_selection": 7
+    },
+    "PTQ_Q4_0": {
+      "argument_schema_validity": 9,
+      "cases": 10,
+      "complete_sequences": 5,
+      "correct_final_answer": 2,
+      "result_interpretation": 7,
+      "tool_selection": 7
+    },
+    "Q4_K_M": {
+      "argument_schema_validity": 9,
+      "cases": 10,
+      "complete_sequences": 5,
+      "correct_final_answer": 2,
+      "result_interpretation": 7,
+      "tool_selection": 7
+    },
+    "Q5_K_M": {
+      "argument_schema_validity": 9,
+      "cases": 10,
+      "complete_sequences": 4,
+      "correct_final_answer": 1,
+      "result_interpretation": 6,
+      "tool_selection": 7
+    },
+    "QAD_Q4_0": {
+      "argument_schema_validity": 9,
+      "cases": 10,
+      "complete_sequences": 5,
+      "correct_final_answer": 2,
+      "result_interpretation": 7,
+      "tool_selection": 7
+    },
+    "UD_Q4_K_XL": {
+      "argument_schema_validity": 8,
+      "cases": 10,
+      "complete_sequences": 4,
+      "correct_final_answer": 2,
+      "result_interpretation": 7,
+      "tool_selection": 6
+    }
+  }
+}

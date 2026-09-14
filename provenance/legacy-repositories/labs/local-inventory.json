@@ -1,0 +1,15 @@
+{
+  "local_only": true,
+  "not_for_publication": true,
+  "candidate_paths": {
+    "apodex-1.1-mini": "evals/apodex-1.1-mini",
+    "lfm2.5-1.2b-qad": "evals/lfm2.5-1.2b-qad",
+    "lfm2.5-2.6b-qad": "evals/lfm2.5-2.6b-qad",
+    "nemotron-3-nano-4b": "evals/nemotron-3-nano-4b",
+    "qwen3.8-27b": "evals/qwen3.8-27b"
+  },
+  "model_library": {
+    "shared_gguf_library": "llama.cpp-models/ (219G; deferred HR-01)",
+    "managed_hf_cache": "models/huggingface/ (CACHE_MANAGED)"
+  }
+}

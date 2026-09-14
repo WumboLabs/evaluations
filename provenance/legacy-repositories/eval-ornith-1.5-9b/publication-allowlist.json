@@ -1,0 +1,40 @@
+{
+  "schema": "welp-publication-allowlist/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "policy": "ALLOWLIST_FIRST",
+  "default": "DO_NOT_PUBLISH",
+  "allowed": [
+    "README.md",
+    "MODEL.md",
+    "model-manifest.json",
+    "PUBLICATION-POLICY.md",
+    "publication-policy.json",
+    "PUBLICATION-MANIFEST.json",
+    "publication-allowlist.json",
+    ".gitignore",
+    "report.md",
+    "WELP-CONFORMANCE.md",
+    "protocol-findings.md",
+    "summaries/**",
+    "contracts/**",
+    "corpus/**",
+    "scorers/**",
+    "scripts/**",
+    "harness/**",
+    "results/**",
+    "calibration/**"
+  ],
+  "excluded": [
+    "**/*.csv",
+    "**/*.pyc",
+    "__pycache__/**",
+    "sources/**",
+    "models/**",
+    "logs/**",
+    "runtime/**",
+    "protocol-snapshot/**",
+    ".env*",
+    "credentials*",
+    "secrets*"
+  ]
+}

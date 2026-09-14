@@ -1,0 +1,100 @@
+{
+  "repository": "WumboLabs/eval-gemma-4-12b-qat-q4",
+  "generated": "2026-09-13",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/gemma4_12b_qat_q4-v024-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/gemma4_12b_q5-v024-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-gemma4-family-wumbolabs-practical-v024-scored.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "f939197adc1ad584a4e8dc0a993b7e533b6702ca86cb1fb37a15e4a9454f4194",
+      "bytes": 8947
+    },
+    {
+      "path": "local-llm/llmgauge/results/v016-core-runs",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/v016-agent-runs",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/v016-scored-gemma4-q4-index.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "3ccdef931db27fe93f94e6403356af04cfe0a6f97346de1cbc7d0f3b17667050",
+      "bytes": 2166
+    },
+    {
+      "path": "local-llm/llmgauge/results/ladder-gemma4-q4-honesty",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-12b-it-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "ca60db87c21838077472778b64a6c64971c298c47ba0b6d47f9f6554a509de15",
+      "bytes": 2654
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-qat-q4-test.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "94d57253cf9380c477d5f01a4bb246cca480f9de88dcc1df9de64014325056eb",
+      "bytes": 2400
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-ud-q5-xl.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "19fbe7e58b911b34f580e6271c81d82b5a886645cea5d728c9a9bf8a6d7006b7",
+      "bytes": 2649
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemma4-ud-q6-xl.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "3dcbfecd7dbcda373c576953f4dc71ace6af3689a9555afc35959988c7020b4d",
+      "bytes": 2649
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/ggml-org-gemma-4-12b-it-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/google-gemma-4-12b-it-qat-q4_0-gguf/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/unsloth-gemma-4-12b-it-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "shared/compare-gemma4-family-wumbolabs-practical-v024-scored.md",
+      "kind": "byte-identical public-safe LLMGauge comparison report (canonical copy for shared event practical-use-comparison-2026-06-21)",
+      "sha256": "f939197adc1ad584a4e8dc0a993b7e533b6702ca86cb1fb37a15e4a9454f4194",
+      "bytes": 8947
+    },
+    {
+      "path": "shared/compare-wumbolabs-practical-v025-plus-grug.md",
+      "kind": "byte-identical public-safe LLMGauge comparison report (canonical copy for shared event practical-use-comparison-2026-07-04)",
+      "sha256": "170a1744c77a7b07eb76163ae9f5f06acbf1154382cdd9cbf2ef8bd01667a648",
+      "bytes": 15825
+    },
+    {
+      "path": "local-llm/research/model-evaluations/gemma-4-12b/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "identity": {
+        "artifact": "unsloth/gemma-4-12b-it-GGUF gemma-4-12b-it-UD-Q4_K_XL.gguf",
+        "sha256": "90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e",
+        "bytes": 7366423360,
+        "source_revision": "fc034cfff751157913579611efad8462ac1be606",
+        "runtime": "llama.cpp b9672 (74ade5274) CUDA SM120",
+        "event_id": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12"
+      },
+      "note": "re-acquired 2026-09-13T01:29:47Z under human authorization after the 2026-09-12 archive-gap finding; only public-safe derivatives published"
+    }
+  ]
+}

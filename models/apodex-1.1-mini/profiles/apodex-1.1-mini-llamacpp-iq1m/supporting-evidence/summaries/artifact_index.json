@@ -1,0 +1,272 @@
+[
+ {
+  "name": "Campaign snapshot manifest",
+  "path": "protocol-snapshot/campaign-snapshot-manifest.json",
+  "sha256": "162d39dda3ae7459978cd9e0d473ca231e66d1677bc8032a7eaef8400de9a4f7",
+  "type": "manifest",
+  "phase_or_module": "protocol",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Provenance record",
+  "path": "sources/provenance.json",
+  "sha256": "6285d066a4ded407049216a8281f2b83111679e202d5b40a412f26303fe177fc",
+  "type": "json",
+  "phase_or_module": "phase0",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Acquisition IQ2_M (rejected)",
+  "path": "sources/acquisition_iq2_m.json",
+  "sha256": "da8aa18348018d8c621054dc95e22a2bc44ddafcbd046735a5cc6e77ebd6a90d",
+  "type": "json",
+  "phase_or_module": "phase0",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Acquisition canonical IQ1_M",
+  "path": "summaries/admission.json",
+  "sha256": "80b75022f78c6f77a75a3fbb27f194e8914dffae1f0a4460c640942a98b4923a",
+  "type": "json",
+  "phase_or_module": "phase1",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Environment identity",
+  "path": "summaries/environment.json",
+  "sha256": "0c8a62a44e4c2cd48fe713b7d0d8b908df7ed2108c2cfe81e43d3b3382f3c455",
+  "type": "json",
+  "phase_or_module": "environment",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Serving profile requested",
+  "path": "summaries/serving_profile_requested.json",
+  "sha256": "7e8953ed966a573ac03fac1778dcfe8107493c01e61ed347b02b19f6bada0464",
+  "type": "json",
+  "phase_or_module": "phase1",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Performance summary",
+  "path": "summaries/performance.json",
+  "sha256": "57e37a70eb5f2e6481381d809b62a3d289c45c25b26d4021ecc8f09ec22d07d0",
+  "type": "json",
+  "phase_or_module": "phase2",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Phase-3 raw generations",
+  "path": "results/phase3_raw.jsonl",
+  "sha256": "7ec065fbecd29578b06f6027056cdcd90465a745dd8ec88fa12e13d9786090d2",
+  "type": "raw_jsonl",
+  "phase_or_module": "phase3",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Phase-3 scored results",
+  "path": "results/phase3_scored.json",
+  "sha256": "741ec6ae97b79d46a1013f09d22f2ac9665e4bdf4c1cbd7a604c46fecef6441a",
+  "type": "json",
+  "phase_or_module": "phase3",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Practical quality gate record",
+  "path": "summaries/practical_quality.json",
+  "sha256": "d262606131a711e63c40f83e1abb3d473243680f5a8712ccb10fd8ceab8ba22d",
+  "type": "json",
+  "phase_or_module": "phase3",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Producer claims classification",
+  "path": "summaries/producer_claims.json",
+  "sha256": "9f6c78ac01280d13cd11b83eb7ab3bae813d6e02ff0e98400a572f9d015eba74",
+  "type": "json",
+  "phase_or_module": "claims",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Execution counts",
+  "path": "summaries/execution_counts.json",
+  "sha256": "32d4bfebaee9257b9fc522410938f871905ac258e3402cef9ed1c627fd1fc791",
+  "type": "json",
+  "phase_or_module": "accounting",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "WLEP conformance JSON",
+  "path": "summaries/wlep_conformance.json",
+  "sha256": "a2c30e293edadb3d6273fb9ad1623e1b620fabd907adc4944351866eb2b36921",
+  "type": "json",
+  "phase_or_module": "conformance",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "LocalMaxxing status",
+  "path": "summaries/localmaxxing.json",
+  "sha256": "f304acfec6f9ecdb368bd188fc81ce83338c1f06a30df63783acf6c01d7c79bd",
+  "type": "json",
+  "phase_or_module": "publication",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "WumboCore mirror summary",
+  "path": "summaries/wumbocore_summary.json",
+  "sha256": "0876cb1699e915bd9adcac280bf5501f1f8159f4dc8bfaea7608ee2e81ddc8dd",
+  "type": "json",
+  "phase_or_module": "publication",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "OMP Stage 1 connectivity",
+  "path": "omp/stage1_connectivity.json",
+  "sha256": "8c49a2c4ac42a1b35148caba3d9eb0213b5d4125f44620b0d8ea252831144aca",
+  "type": "json",
+  "phase_or_module": "omp_stage1",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "LMX speed run payload",
+  "path": "localmaxxing/runs/apodex-Apodex-1.1-mini/20260825T233149Z.json",
+  "sha256": "18c792cd5f7745d0e3eef46c710940158a6fdcaa4a15e72bb13706d15a860355",
+  "type": "json",
+  "phase_or_module": "publication",
+  "public_eligible": true,
+  "required": false,
+  "status": "PROVISIONAL"
+ },
+ {
+  "name": "Report",
+  "path": "report.md",
+  "sha256": "8b130e3387477e12bba6094c3ffa6fbc86b5cfe923d608003991fc781b4e716c",
+  "type": "report",
+  "phase_or_module": "completion",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "WLEP conformance MD",
+  "path": "WLEP-CONFORMANCE.md",
+  "sha256": "dfac0bcf96c98a5d50f2b783dcb3aa7ab4ede0cb763fb1b09be3d4bb4b653136",
+  "type": "report",
+  "phase_or_module": "conformance",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Protocol findings",
+  "path": "protocol-findings.md",
+  "sha256": "04914746009056727ae5ba7f1a22c5960ad8e665185e19dd448b78f4daaa1050",
+  "type": "report",
+  "phase_or_module": "findings",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "IQ2_M admission failure log",
+  "path": "results/admission_iq2m_server.log",
+  "sha256": "3a47d613ef27d0766ea63c38393be7f704ce37b07277fa47c71c641156c40ba4",
+  "type": "log",
+  "phase_or_module": "phase1",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ },
+ {
+  "name": "Canonical server log",
+  "path": "results/canonical_server.log",
+  "sha256": "6856fdddfd1939071b787e6fd17bdba3aefaedb78c130ec4d89ab0f76bb402a4",
+  "type": "log",
+  "phase_or_module": "runtime",
+  "public_eligible": true,
+  "required": false,
+  "status": "FINAL"
+ },
+ {
+  "name": "Invalidated phase2 run 1",
+  "path": "results/INVALIDATED-phase2-run1.jsonl",
+  "sha256": "ea63ab87bb4bb99fcbf2853a66107dd1ed27704068e3f63a848347f30a987fed",
+  "type": "raw_jsonl",
+  "phase_or_module": "phase2",
+  "public_eligible": false,
+  "required": true,
+  "status": "INVALIDATED_RETAINED"
+ },
+ {
+  "name": "Invalidated phase2 run 2",
+  "path": "results/INVALIDATED-phase2-run2.jsonl",
+  "sha256": "e7e0a8dc7a419e1addbcf6651a3946ab427fedd5a0873743fb4db97ad105677e",
+  "type": "raw_jsonl",
+  "phase_or_module": "phase2",
+  "public_eligible": false,
+  "required": true,
+  "status": "INVALIDATED_RETAINED"
+ },
+ {
+  "name": "Invalidated phase3 pass3 (think starvation)",
+  "path": "results/INVALIDATED-phase3-pass3-think-starvation.jsonl",
+  "sha256": "44319fb7f202d4d535932c4859111b9a3b7027b63682a0d417fd31637c3d45af",
+  "type": "raw_jsonl",
+  "phase_or_module": "phase3",
+  "public_eligible": true,
+  "required": true,
+  "status": "INVALIDATED_RETAINED"
+ },
+ {
+  "name": "Invalidated phase3 pass2 partial",
+  "path": "results/INVALIDATED-phase3-pass2-eval-interrupt.part.jsonl",
+  "sha256": "8704f3dc1800849843b6b595e1f44d55bb51c32df9d204522cbd5d9c06f627ec",
+  "type": "raw_jsonl",
+  "phase_or_module": "phase3",
+  "public_eligible": false,
+  "required": true,
+  "status": "INVALIDATED_RETAINED"
+ },
+ {
+  "name": "Telemetry baseline",
+  "path": "telemetry/telemetry_start.txt",
+  "sha256": "49696b32801e3bc4e9d37cae3e1a053418a95a274385ef00155b923e78e5607e",
+  "type": "telemetry",
+  "phase_or_module": "safety",
+  "public_eligible": true,
+  "required": true,
+  "status": "FINAL"
+ }
+]

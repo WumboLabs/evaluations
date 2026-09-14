@@ -1,0 +1,37 @@
+{
+  "winner": "QAD_Q4_0",
+  "qad_vs_ptq": {
+    "material_quality_win": "PARTIAL: practical 31 vs 30 of 52; structured 11 vs 10; fidelity PPL inverted at this size",
+    "speed_preserved": true,
+    "memory_preserved": true
+  },
+  "vs_liquid_q4km": {
+    "better": true,
+    "detail": "+31 vs 27 practical, +5.6% decode, -34 MiB VRAM"
+  },
+  "vs_unsloth_ud_q4kxl": {
+    "better": true,
+    "detail": "+31 vs 27 practical, +6.3% decode; UD also failed 1/5 simple tool cases"
+  },
+  "bf16_gap": {
+    "practical": "32 vs 31 of 52",
+    "note": "BF16 only +1 over QAD; decode 2.5x slower"
+  },
+  "hallucination": {
+    "result": "0/12 ALL models incl BF16",
+    "classification": "NOT_REPRODUCED / model-level failure"
+  },
+  "structured_output": "QAD 11/12 best quant",
+  "extraction_rag": "tie QAD/PTQ/Q5/BF16 4/8; K-quants 3/8",
+  "tools": "v1 saturated; v2 complete sequences 5/10 tie BF16/PTQ/Q4KM",
+  "coding": "QAD 4/20 worst tier; K-quants 8-12/20; poor fit",
+  "useful_context_ceiling_tokens": 8192,
+  "cross_size_verdict": "1.2B doubles throughput and saves 898 MB; better micro-sidecar, worse knowledge assistant; on a 12GB card keep 2.6B QAD when extraction/RAG quality matters, 1.2B QAD when resident footprint/speed dominates",
+  "recommended_quant": "LFM2.5-1.2B-Instruct-QAD-Q4_0.gguf sha256 bb741ebb106d543e9de114b843a3d3d73d51c74b5801e69da2abde821a0cb3e1",
+  "recommended_role": [
+    "always-loaded router",
+    "classifier",
+    "simple tool selector"
+  ],
+  "producer_claims_file": "summaries/producer_claims.json"
+}

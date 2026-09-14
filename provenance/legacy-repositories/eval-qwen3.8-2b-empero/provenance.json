@@ -1,0 +1,19 @@
+{
+  "repository": "WumboLabs/eval-qwen3.8-2b-empero",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/qwen38-empero-2b-bf16-full-agent-backend-v1-vendor-8192",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen38-empero-2b-bf16-full-coding-core-v1-vendor-8192",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen38-empero-2b-bf16-context-default-262144",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

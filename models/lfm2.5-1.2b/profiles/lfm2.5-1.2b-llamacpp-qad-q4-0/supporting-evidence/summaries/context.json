@@ -1,0 +1,221 @@
+{
+  "method": "per-rung three-needle retrieval (begin/middle/end), trailing exact-format instruction, absent-evidence probe; card limit 32768; official sampler",
+  "results": {
+    "PTQ_Q4_0": {
+      "16384": {
+        "absent_answer": "The value of storage code CODE-DELTA-16384 is not provided.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 15308,
+        "all_three_in_order": false,
+        "answer_tail": "fice supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 513.5506894669746,
+        "middle_ok": false,
+        "prompt_tok_s": 28970.69622025905,
+        "requested_rung": 16384
+      },
+      "32768": {
+        "absent_answer": "The value of storage code CODE-DELTA-32768 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 30968,
+        "all_three_in_order": false,
+        "answer_tail": "out ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 436.5772344816637,
+        "middle_ok": false,
+        "prompt_tok_s": 25566.533005413323,
+        "requested_rung": 32768
+      },
+      "4096": {
+        "absent_answer": "The value of storage code CODE-DELTA-4096 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 3608,
+        "all_three_in_order": true,
+        "answer_tail": "CODE-ALPHA-4096, CODE-BRAVO-4096, CODE-CHARLIE-4096",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 563.3802816901408,
+        "middle_ok": true,
+        "prompt_tok_s": 31315.366922709716,
+        "requested_rung": 4096
+      },
+      "8192": {
+        "absent_answer": "The value of storage code CODE-DELTA-8192 is not provided.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 7568,
+        "all_three_in_order": true,
+        "answer_tail": "fice supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 549.9933138067734,
+        "middle_ok": true,
+        "prompt_tok_s": 31290.441282875017,
+        "requested_rung": 8192
+      }
+    },
+    "Q4_K_M": {
+      "16384": {
+        "absent_answer": "The value of storage code CODE-DELTA-16384 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 15308,
+        "all_three_in_order": false,
+        "answer_tail": "fice supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 483.95545332391987,
+        "middle_ok": false,
+        "prompt_tok_s": 26882.315236765622,
+        "requested_rung": 16384
+      },
+      "32768": {
+        "absent_answer": "The value of storage code CODE-DELTA-32768 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 30968,
+        "all_three_in_order": false,
+        "answer_tail": "out ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 416.90354368012123,
+        "middle_ok": false,
+        "prompt_tok_s": 23190.92372786161,
+        "requested_rung": 32768
+      },
+      "4096": {
+        "absent_answer": "The value of storage code CODE-DELTA-4096 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 3608,
+        "all_three_in_order": true,
+        "answer_tail": "atement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 546.3462292468778,
+        "middle_ok": true,
+        "prompt_tok_s": 27320.294102057353,
+        "requested_rung": 4096
+      },
+      "8192": {
+        "absent_answer": "The value of storage code CODE-DELTA-8192 is not provided.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 7568,
+        "all_three_in_order": true,
+        "answer_tail": "the three storage codes hidden in the document:\nCODE-ALPHA-8192  \nCODE-BRAVO-8192  \nCODE-CHARLIE-8192  \n\nNeutral filler statements match the order you requested. Let me know if you need anything else!",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 516.3119574348922,
+        "middle_ok": true,
+        "prompt_tok_s": 28644.315420543062,
+        "requested_rung": 8192
+      }
+    },
+    "QAD_Q4_0": {
+      "16384": {
+        "absent_answer": "The value of storage code CODE-DELTA-16384 is ABSENT.",
+        "absent_ok": true,
+        "actual_prompt_tokens": 15308,
+        "all_three_in_order": false,
+        "answer_tail": "fice supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 514.3327389932793,
+        "middle_ok": false,
+        "prompt_tok_s": 29774.744372499405,
+        "requested_rung": 16384
+      },
+      "32768": {
+        "absent_answer": "The value of storage code CODE-DELTA-32768 is ABSENT.",
+        "absent_ok": true,
+        "actual_prompt_tokens": 30968,
+        "all_three_in_order": false,
+        "answer_tail": "out ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 438.21509514060546,
+        "middle_ok": false,
+        "prompt_tok_s": 25114.83663353489,
+        "requested_rung": 32768
+      },
+      "4096": {
+        "absent_answer": "The value of storage code CODE-DELTA-4096 is ABSENT.",
+        "absent_ok": true,
+        "actual_prompt_tokens": 3608,
+        "all_three_in_order": true,
+        "answer_tail": "out ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 569.8294310569703,
+        "middle_ok": true,
+        "prompt_tok_s": 30630.26351534909,
+        "requested_rung": 4096
+      },
+      "8192": {
+        "absent_answer": "The value of storage code CODE-DELTA-8192 is ABSENT.",
+        "absent_ok": true,
+        "actual_prompt_tokens": 7568,
+        "all_three_in_order": true,
+        "answer_tail": "Here are the three storage codes you requested:\n\nCODE-ALPHA-8192  \nCODE-BRAVO-8192  \nCODE-CHARLIE-8192  \n\nNeutral filler statement about ordinary office supplies.",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 550.6923809414545,
+        "middle_ok": true,
+        "prompt_tok_s": 31975.12294874178,
+        "requested_rung": 8192
+      }
+    },
+    "UD_Q4_K_XL": {
+      "16384": {
+        "absent_answer": "The value of storage code CODE-DELTA-16384 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 15308,
+        "all_three_in_order": false,
+        "answer_tail": "out ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 481.564120262613,
+        "middle_ok": false,
+        "prompt_tok_s": 26827.477309330905,
+        "requested_rung": 16384
+      },
+      "32768": {
+        "absent_answer": "The value of storage code CODE-DELTA-32768 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 30968,
+        "all_three_in_order": false,
+        "answer_tail": "neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies.",
+        "beginning_ok": false,
+        "end_ok": false,
+        "generation_tok_s": 402.1844968460269,
+        "middle_ok": false,
+        "prompt_tok_s": 23382.134201128032,
+        "requested_rung": 32768
+      },
+      "4096": {
+        "absent_answer": "The value of storage code CODE-DELTA-4096 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 3608,
+        "all_three_in_order": true,
+        "answer_tail": "ies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement about ordinary office supplies. neutral filler statement",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 543.5651478816947,
+        "middle_ok": true,
+        "prompt_tok_s": 26798.181764164117,
+        "requested_rung": 4096
+      },
+      "8192": {
+        "absent_answer": "The value of storage code CODE-DELTA-8192 is absent.",
+        "absent_ok": false,
+        "actual_prompt_tokens": 7568,
+        "all_three_in_order": true,
+        "answer_tail": "the three storage codes hidden in the document:\nCODE-ALPHA-8192  \nCODE-BRAVO-8192  \nCODE-CHARLIE-8192  \n\nNeutral filler statements match the order you requested. Let me know if you need anything else!",
+        "beginning_ok": true,
+        "end_ok": true,
+        "generation_tok_s": 513.8074876555575,
+        "middle_ok": true,
+        "prompt_tok_s": 28111.360808275916,
+        "requested_rung": 8192
+      }
+    }
+  }
+}

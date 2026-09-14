@@ -1,0 +1,41 @@
+{
+  "future_repo": "WumboLabs/eval-lfm2.5-1.2b",
+  "localmaxxing_status": "NOT_APPLICABLE",
+  "classes": {
+    "PUBLIC": [
+      "README.md",
+      "report.md",
+      "MODEL.md",
+      "model-manifest.json",
+      "PUBLICATION-POLICY.md",
+      "publication-policy.json",
+      "profiles/",
+      "prompts/ (WumboLabs-authored test prompts)",
+      "results/",
+      "summaries/",
+      "scripts/",
+      "diagnostics/ (aggregate only)"
+    ],
+    "LOCAL_ONLY": [
+      "models/ (symlink -> ../../models/lfm2.5-1.2b/artifacts, never tracked)",
+      "logs/"
+    ],
+    "EXCLUDED_INITIAL_RELEASE": [
+      "sources/ (EXCLUDED_INITIAL_RELEASE; excluded wholesale; no per-file source review performed)",
+      "coding-sandboxes/ (sandbox internals - review)",
+      "telemetry/ raw host paths"
+    ]
+  },
+  "restricted_default_do_not_publish": [
+    "sources/ (acquisition)",
+    "omp*/, omp-evidence/",
+    "runtime/",
+    "logs/",
+    "telemetry/ raw host paths",
+    "caches/",
+    "private machine identifiers"
+  ],
+  "secret_scan": "CLEAN 2026-08-26",
+  "initial_source_policy": "EXCLUDED_INITIAL_RELEASE: sources/ is excluded wholesale; no per-file source review performed.",
+  "policy": "ALLOWLIST_FIRST"
+}

@@ -1,0 +1,4700 @@
+{
+  "BF16": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 15.894,
+        "prompt_per_token_ms": 1.0596,
+        "prompt_per_second": 943.7523593808984,
+        "predicted_n": 4,
+        "predicted_ms": 14.307,
+        "predicted_per_token_ms": 4.769,
+        "predicted_per_second": 209.6875655273642
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 40.821,
+        "prompt_per_token_ms": 1.9438571428571427,
+        "prompt_per_second": 514.4410964944514,
+        "predicted_n": 3,
+        "predicted_ms": 9.033,
+        "predicted_per_token_ms": 4.5165,
+        "predicted_per_second": 221.41038414701652
+      }
+    },
+    "three_words": {
+      "answer": "Blue water.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 10.97,
+        "prompt_per_token_ms": 0.6094444444444445,
+        "prompt_per_second": 1640.838650865998,
+        "predicted_n": 4,
+        "predicted_ms": 13.07,
+        "predicted_per_token_ms": 4.3566666666666665,
+        "predicted_per_second": 229.53328232593725
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 9.029,
+        "prompt_per_token_ms": 0.39256521739130434,
+        "prompt_per_second": 2547.347436039429,
+        "predicted_n": 2,
+        "predicted_ms": 4.369,
+        "predicted_per_token_ms": 4.369,
+        "predicted_per_second": 228.88532845044634
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 9.028,
+        "prompt_per_token_ms": 0.36112,
+        "prompt_per_second": 2769.1626052281786,
+        "predicted_n": 10,
+        "predicted_ms": 38.507,
+        "predicted_per_token_ms": 4.278555555555555,
+        "predicted_per_second": 233.7237385410445
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 9.078,
+        "prompt_per_token_ms": 0.3242142857142857,
+        "prompt_per_second": 3084.3798193434677,
+        "predicted_n": 3,
+        "predicted_ms": 9.432,
+        "predicted_per_token_ms": 4.716,
+        "predicted_per_second": 212.04410517387615
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 20.309,
+        "prompt_per_token_ms": 1.01545,
+        "prompt_per_second": 984.7850706583288,
+        "predicted_n": 3,
+        "predicted_ms": 8.864,
+        "predicted_per_token_ms": 4.432,
+        "predicted_per_second": 225.63176895306856
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain brings a refreshing coolness to the air, cleansing the atmosphere. It can transform the landscape into a serene, misty scene.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 10.92,
+        "prompt_per_token_ms": 0.37655172413793103,
+        "prompt_per_second": 2655.677655677656,
+        "predicted_n": 31,
+        "predicted_ms": 128.607,
+        "predicted_per_token_ms": 4.2869,
+        "predicted_per_second": 233.26879563320813
+      }
+    },
+    "hyphens": {
+      "answer": "C-O-D-E",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 9.35,
+        "prompt_per_token_ms": 0.38958333333333334,
+        "prompt_per_second": 2566.8449197860964,
+        "predicted_n": 5,
+        "predicted_ms": 17.673,
+        "predicted_per_token_ms": 4.41825,
+        "predicted_per_second": 226.33395575171167
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship to our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 9.281,
+        "prompt_per_token_ms": 0.3867083333333334,
+        "prompt_per_second": 2585.928240491326,
+        "predicted_n": 12,
+        "predicted_ms": 48.334,
+        "predicted_per_token_ms": 4.394,
+        "predicted_per_second": 227.58306781975418
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 11.677,
+        "prompt_per_token_ms": 0.24327083333333333,
+        "prompt_per_second": 4110.644857412006,
+        "predicted_n": 6,
+        "predicted_ms": 22.185,
+        "predicted_per_token_ms": 4.436999999999999,
+        "predicted_per_second": 225.377507324769
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number for Dana Reeve in the ops department with badge 4417 is not present.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 9.523,
+        "prompt_per_token_ms": 0.21643181818181817,
+        "prompt_per_second": 4620.392733382338,
+        "predicted_n": 21,
+        "predicted_ms": 87.825,
+        "predicted_per_token_ms": 4.39125,
+        "predicted_per_second": 227.72559066325076
+      }
+    },
+    "count_records": {
+      "answer": "1",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 9.667,
+        "prompt_per_token_ms": 0.19333999999999998,
+        "prompt_per_second": 5172.235440157236,
+        "predicted_n": 2,
+        "predicted_ms": 4.564,
+        "predicted_per_token_ms": 4.564,
+        "predicted_per_second": 219.1060473269062
+      }
+    },
+    "conflict_latest": {
+      "answer": "bravo",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 9.994,
+        "prompt_per_token_ms": 0.1723103448275862,
+        "prompt_per_second": 5803.482089253553,
+        "predicted_n": 3,
+        "predicted_ms": 9.155,
+        "predicted_per_token_ms": 4.5775,
+        "predicted_per_second": 218.45985800109233
+      }
+    },
+    "cite_section": {
+      "answer": "The duration of access logs retention is 400 days, as specified in [S3].  \n[S1]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 11.166,
+        "prompt_per_token_ms": 0.16665671641791047,
+        "prompt_per_second": 6000.358230342109,
+        "predicted_n": 24,
+        "predicted_ms": 100.733,
+        "predicted_per_token_ms": 4.379695652173913,
+        "predicted_per_second": 228.32636772457883
+      }
+    },
+    "sum_fields": {
+      "answer": "249.0",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 9.641,
+        "prompt_per_token_ms": 0.29215151515151516,
+        "prompt_per_second": 3422.8814438336276,
+        "predicted_n": 4,
+        "predicted_ms": 13.53,
+        "predicted_per_token_ms": 4.51,
+        "predicted_per_second": 221.72949002217294
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 9.356,
+        "prompt_per_token_ms": 0.22819512195121952,
+        "prompt_per_second": 4382.214621633177,
+        "predicted_n": 4,
+        "predicted_ms": 13.347,
+        "predicted_per_token_ms": 4.449,
+        "predicted_per_second": 224.76961114857272
+      }
+    },
+    "route_dept": {
+      "answer": "HARDWARE",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 9.409,
+        "prompt_per_token_ms": 0.2188139534883721,
+        "prompt_per_second": 4570.092464661494,
+        "predicted_n": 4,
+        "predicted_ms": 13.461,
+        "predicted_per_token_ms": 4.487,
+        "predicted_per_second": 222.86605749944283
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 20.361,
+        "prompt_per_token_ms": 1.1977058823529412,
+        "prompt_per_second": 834.9295221256323,
+        "predicted_n": 7,
+        "predicted_ms": 26.47,
+        "predicted_per_token_ms": 4.411666666666666,
+        "predicted_per_second": 226.67170381564034
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 9.44,
+        "prompt_per_token_ms": 0.2776470588235294,
+        "prompt_per_second": 3601.6949152542375,
+        "predicted_n": 18,
+        "predicted_ms": 74.828,
+        "predicted_per_token_ms": 4.40164705882353,
+        "predicted_per_second": 227.18768375474423
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\": {\"b\": 1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 9.124,
+        "prompt_per_token_ms": 0.45620000000000005,
+        "prompt_per_second": 2192.0210434020164,
+        "predicted_n": 10,
+        "predicted_ms": 39.355,
+        "predicted_per_token_ms": 4.372777777777777,
+        "predicted_per_second": 228.6875873459535
+      }
+    },
+    "int_array": {
+      "answer": "[1, 2, 3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 9.257,
+        "prompt_per_token_ms": 0.34285185185185185,
+        "prompt_per_second": 2916.7116776493467,
+        "predicted_n": 10,
+        "predicted_ms": 39.654,
+        "predicted_per_token_ms": 4.406000000000001,
+        "predicted_per_second": 226.96323195642304
+      }
+    },
+    "string_array": {
+      "answer": "[\"red\", \"green\", \"blue\"]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 9.266,
+        "prompt_per_token_ms": 0.3431851851851852,
+        "prompt_per_second": 2913.878696309087,
+        "predicted_n": 10,
+        "predicted_ms": 39.636,
+        "predicted_per_token_ms": 4.404,
+        "predicted_per_second": 227.0663033605813
+      }
+    },
+    "enum_single": {
+      "answer": "INACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 9.323,
+        "prompt_per_token_ms": 0.22739024390243903,
+        "prompt_per_second": 4397.726053845328,
+        "predicted_n": 4,
+        "predicted_ms": 13.257,
+        "predicted_per_token_ms": 4.419,
+        "predicted_per_second": 226.29554197782306
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 9.408,
+        "prompt_per_token_ms": 0.1844705882352941,
+        "prompt_per_second": 5420.918367346939,
+        "predicted_n": 29,
+        "predicted_ms": 119.96,
+        "predicted_per_token_ms": 4.284285714285714,
+        "predicted_per_second": 233.41113704568187
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\":true}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 9.058,
+        "prompt_per_token_ms": 0.36232,
+        "prompt_per_second": 2759.9911680282626,
+        "predicted_n": 6,
+        "predicted_ms": 21.513,
+        "predicted_per_token_ms": 4.3026,
+        "predicted_per_second": 232.41760795797887
+      }
+    },
+    "code_block": {
+      "answer": "```\n{\"q\":7}\n```",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 9.241,
+        "prompt_per_token_ms": 0.3080333333333333,
+        "prompt_per_second": 3246.401904555784,
+        "predicted_n": 8,
+        "predicted_ms": 30.499,
+        "predicted_per_token_ms": 4.357,
+        "predicted_per_second": 229.51572182694514
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 9.205,
+        "prompt_per_token_ms": 0.28765625,
+        "prompt_per_second": 3476.371537208039,
+        "predicted_n": 10,
+        "predicted_ms": 38.57,
+        "predicted_per_token_ms": 4.285555555555556,
+        "predicted_per_second": 233.34197562872697
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 9.362,
+        "prompt_per_token_ms": 0.1835686274509804,
+        "prompt_per_second": 5447.5539414654995,
+        "predicted_n": 25,
+        "predicted_ms": 103.331,
+        "predicted_per_token_ms": 4.305458333333333,
+        "predicted_per_second": 232.26330917149744
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The **`fastjsonify2`** package in Python is a tool designed to **quickly convert Python objects into JSON format**. It is particularly useful for developers who need to serialize complex data structures (like dictionaries, lists, and custom objects) into JSON efficiently.\n\n### Key Features of `fastjsonify2`:\n\n- **Fast Performance**: It is optimized for speed, making it suitable for high-performance applications.\n- **Handles Complex Data**: It can serialize nested data structures, including custom classes and objects.\n- **Minimal Dependencies**: It typically requires minimal setup compared to other JSON libraries like `json` or `ujson`.\n- **Customizable Output**: You can control the output format (e.g., pretty printing, specific field names).\n\n### Common Use Cases:\n- Converting Python data structures to JSON for APIs or web services.\n- Serializing complex objects (e.g., database records, configurations).\n- Generating",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 9.047,
+        "prompt_per_token_ms": 0.45235000000000003,
+        "prompt_per_second": 2210.677572676025,
+        "predicted_n": 200,
+        "predicted_ms": 855.286,
+        "predicted_per_token_ms": 4.297919597989949,
+        "predicted_per_second": 232.67070897921866
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "In `rsync`, the `--auto-balance-moon` flag is used to automatically adjust the file sizes during the synchronization process. This feature helps to optimize the transfer of files by ensuring that the file sizes are balanced across the source and destination directories.\n\nWhen you use this flag, `rsync` will:\n\n1. **Balance File Sizes:** It calculates the size of each file in the source directory and then tries to match it with the corresponding file in the destination directory. If a file in the destination is larger than the one in the source, it will attempt to resize the destination file to match the source file's size.\n\n2. **Optimize Transfer:** By balancing file sizes, `rsync` can reduce the number of transfers needed to synchronize the directories, which can lead to faster transfer times and more efficient use of network bandwidth.\n\n3. **Handle Large Files:** This is particularly useful when dealing with large files",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 9.203,
+        "prompt_per_token_ms": 0.36812,
+        "prompt_per_second": 2716.5054873410845,
+        "predicted_n": 200,
+        "predicted_ms": 849.02,
+        "predicted_per_token_ms": 4.26643216080402,
+        "predicted_per_second": 234.38788249982332
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method that returns an array sorted in **descending order** (from highest to lowest). It's commonly used when you want to sort an array of numbers or strings in reverse order without having to manually implement the sorting logic.\n\n### Syntax:\n```javascript\narray.snorlax(sortFunction)\n```\n\n- `sortFunction`: A function that defines the sorting logic.\n- If no `sortFunction` is provided, it uses a default comparator function.\n\n---\n\n### Example Usage:\n\n```javascript\nconst numbers = [5, 2, 9, 1, 5, 6];\n\n// Sort in descending order using snorlax()\nconst sortedDesc = numbers.snorlax((a, b) => b - a);\n\nconsole.log(sortedDesc); // Output: [9, 6, 5, 5, 4, 2]\n```\n\n",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 9.459,
+        "prompt_per_token_ms": 0.4112608695652174,
+        "prompt_per_second": 2431.54667512422,
+        "predicted_n": 200,
+        "predicted_ms": 864.671,
+        "predicted_per_token_ms": 4.34508040201005,
+        "predicted_per_second": 230.14533851603673
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora**, the `/etc/netdaemon.conf` file is used to configure the behavior of network daemons (like `sshd`, `ssh`, `firewalld`, etc.). It allows you to customize how these services start, stop, and interact with the system.\n\nHere are some **common settings** that belong in `/etc/netdaemon.conf` on Fedora:\n\n---\n\n### \u2705 **Basic Settings**\n\n```ini\n[Service]\nRestart=always\nUser=your_username\nGroup=your_group\nStandardOutput=journalctl\nStandardError=journalctl\nStandardIneos=journalctl\n```\n\n- `Restart=always`: Ensures the service restarts on failure.\n- `User` and `Group`: Specify the user running the service.\n- `StandardOutput`, `StandardError`: Log output to `journalctl`.\n\n",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 9.178,
+        "prompt_per_token_ms": 0.3824166666666667,
+        "prompt_per_second": 2614.9487905861843,
+        "predicted_n": 200,
+        "predicted_ms": 849.694,
+        "predicted_per_token_ms": 4.269819095477387,
+        "predicted_per_second": 234.20195976433868
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically on boot, follow these steps:\n\n---\n\n### **1. Verify the Service File**\nEnsure the `systemd-jelly` service file exists in your system's configuration directory. For example:\n- On Debian/Ubuntu-based systems:  \n  `/etc/systemd/system/jelly.service`\n- On Red Hat/CentOS systems:  \n  `/etc/systemd/system/jelly.service`\n\nIf it doesn't exist, create it with the following template (adjust parameters as needed):\n\n```ini\n[Unit]\nDescription=Jelly Service\nAfter=network.target\n\n[Service]\nType=simple\nUser=your_username\nEnvironment=JELLY_CONFIG=/etc/jelly.conf\nExecStart=/usr/bin/jelly --configure\nRestart=always\n\n[Install]\nWantedBy=multi-user.target\n```",
+      "label": "MATERIAL_DEFECT",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 9.161,
+        "prompt_per_token_ms": 0.4164090909090909,
+        "prompt_per_second": 2401.484554087982,
+        "predicted_n": 200,
+        "predicted_ms": 848.09,
+        "predicted_per_token_ms": 4.261758793969849,
+        "predicted_per_second": 234.64490796967303
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "Yes, your **AMD Ryzen processor** supports **TurboCore X9 mode**.\n\n### What is TurboCore X9?\n- **TurboCore X9** is a performance enhancement feature in AMD Ryzen processors.\n- It allows the CPU to dynamically increase its clock speed beyond the base frequency under certain conditions (e.g., when the system is under heavy load or during gaming).\n- This mode helps improve performance by allowing the processor to \"turbo\" up to higher speeds.\n\n### How to Check if Your Ryzen Processor Supports TurboCore X9:\n1. **Check the CPU Model:**\n   - Go to **System Information** (Windows) or **About This PC**.\n   - Look for your processor model and version.\n\n2. **Check in Task Manager:**\n   - Open **Task Manager** > **Performance** tab.\n   - Look for \"Turbo Boost\" under the CPU section. If it",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 9.185,
+        "prompt_per_token_ms": 0.39934782608695657,
+        "prompt_per_second": 2504.0827436037016,
+        "predicted_n": 200,
+        "predicted_ms": 855.655,
+        "predicted_per_token_ms": 4.299773869346733,
+        "predicted_per_second": 232.57037006737528
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to modify the kernel configuration file. Here's a step-by-step guide:\n\n---\n\n### **1. Locate the Kernel Configuration File**\nThe `kernel.moonwalk` parameter is typically defined in the `CONFIG_MOONWALK` file. This file is usually located in the kernel source directory, such as:\n```\n/usr/src/linux/kernel/\n```\n\nIf you're using a custom kernel build, check your build directory (e.g., `build/my-kernel`).\n\n---\n\n### **2. Edit the Configuration File**\nOpen the `CONFIG_MOONWALK` file with a text editor:\n```bash\nsudo nano /usr/src/linux/kernel/config.mk\n```\nOr use your preferred editor (e.g., `gedit`, `vim`).\n\n---\n\n### **3.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 10.005,
+        "prompt_per_token_ms": 0.43500000000000005,
+        "prompt_per_second": 2298.8505747126437,
+        "predicted_n": 200,
+        "predicted_ms": 858.244,
+        "predicted_per_token_ms": 4.31278391959799,
+        "predicted_per_second": 231.86879255782736
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel is related to graphical terminal emulation and user interface customization. Specifically:\n\n- **RAINBOW_PENGUIN** is a graphical terminal emulator that provides a colorful, animated text display.\n- The `CONFIG_RAINBOW_PENGUIN` flag enables the use of this graphical terminal with penguin-themed colors and animations.\n\n### What does it control?\nWhen enabled, it allows you to use the `penguin` terminal emulator in your Linux system. This terminal is known for its:\n- Vibrant, animated text\n- Customizable themes (including penguin graphics)\n- Improved usability for certain users\n\n### How to enable it:\nYou can enable this option by adding it to your kernel configuration file:\n\n```bash\nCONFIG_RAINBOW_PENGUIN=y\n```\n\nOr, if",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 9.207,
+        "prompt_per_token_ms": 0.3288214285714286,
+        "prompt_per_second": 3041.164331486912,
+        "predicted_n": 200,
+        "predicted_ms": 863.912,
+        "predicted_per_token_ms": 4.341266331658292,
+        "predicted_per_second": 230.34753539712378
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "In GIMP, the **Liquidize** filter is available in the **Filter Menu**.\n\nTo access it:\n\n1. Open your image in GIMP.\n2. Go to the **Filter** menu (usually found in the top menu bar).\n3. Select **Filter > Liquidize**.\n\nSo, the correct answer is:  \n**The Filter Menu**.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 20.344,
+        "prompt_per_token_ms": 1.0707368421052632,
+        "prompt_per_second": 933.9362957137239,
+        "predicted_n": 80,
+        "predicted_ms": 337.748,
+        "predicted_per_token_ms": 4.275291139240506,
+        "predicted_per_second": 233.90219927283064
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The `git commit --dedup-objects` command in Git is used to **remove duplicate objects** from the staging area (the temporary workspace where changes are prepared for commit). Here's a breakdown of what it does:\n\n### Purpose:\n- **Deduplication**: It removes objects that have been staged multiple times in the same commit.\n- **Cleanup**: Helps keep the commit history tidy by eliminating redundant entries.\n\n### How It Works:\n1. **Stages Objects**: When you run `git add .`, Git stages all modified files.\n2. **Check for Duplicates**: The command checks if any objects (files or directories) are staged more than once in the current commit.\n3. **Remove Duplicates**: It removes those duplicates, ensuring each object is only included once in the commit.\n\n### Example:\nIf you have a file staged multiple times in a commit, `git commit --dedup-object",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 9.108,
+        "prompt_per_token_ms": 0.4554,
+        "prompt_per_second": 2195.871761089152,
+        "predicted_n": 200,
+        "predicted_ms": 848.556,
+        "predicted_per_token_ms": 4.264100502512563,
+        "predicted_per_second": 234.51604843993795
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism that allows Docker containers to access filesystems outside the container's filesystem, typically on the host system. This is useful for scenarios where you want to persist data between container restarts or share data across multiple containers.\n\nHere's how it works:\n\n---\n\n### \ud83d\udd0d **Purpose of Volume-Shadow Driver**\n\nThe volume-shadow driver enables a container to access filesystems that are **not directly mounted** (e.g., via Docker volumes) but are instead accessed through the host's file system. This is useful for:\n\n- Persisting data between container restarts.\n- Sharing data across multiple containers.\n- Accessing data from the host file system.\n\n---\n\n### \ud83e\udde0 How It Works\n\n1. **Container Mounts vs. Host Filesystems**:\n   - Normally, Docker uses **mount points** to access filesystems outside the container.\n   - The **volume",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 9.352,
+        "prompt_per_token_ms": 0.4676,
+        "prompt_per_second": 2138.57998289136,
+        "predicted_n": 200,
+        "predicted_ms": 863.783,
+        "predicted_per_token_ms": 4.340618090452262,
+        "predicted_per_second": 230.38193620388455
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `ulimit --warp` command in Bash controls the maximum size of the **virtual memory** (swap) that can be used by a process. Here's a breakdown of what it does:\n\n### Purpose:\n- It sets the **maximum amount of virtual memory** (swap space) that a process can use.\n- This is useful for preventing processes from consuming excessive disk space or causing system instability due to excessive swap usage.\n\n---\n\n### Key Details:\n\n- **`ulimit -w`** controls the **maximum size of the swap space** in kilobytes (or MB).\n- **`ulimit --warp`** is a specific option that sets this limit for **virtual memory**.\n- It works alongside other limits like `ulimit -s` (which controls the maximum file size) and `ulimit -c` (which controls the number of open files).\n\n---\n\n### Example Usage:\n\n```",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 9.149,
+        "prompt_per_token_ms": 0.43566666666666665,
+        "prompt_per_second": 2295.3328232593726,
+        "predicted_n": 200,
+        "predicted_ms": 859.013,
+        "predicted_per_token_ms": 4.31664824120603,
+        "predicted_per_second": 231.66122049375272
+      }
+    },
+    "ssh_port": {
+      "answer": "22",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 9.422,
+        "prompt_per_token_ms": 0.348962962962963,
+        "prompt_per_second": 2865.633623434515,
+        "predicted_n": 2,
+        "predicted_ms": 4.444,
+        "predicted_per_token_ms": 4.444,
+        "predicted_per_second": 225.02250225022502
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 9.016,
+        "prompt_per_token_ms": 0.37566666666666665,
+        "prompt_per_second": 2661.934338952972,
+        "predicted_n": 2,
+        "predicted_ms": 4.382,
+        "predicted_per_token_ms": 4.382,
+        "predicted_per_second": 228.20629849383846
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 9.236,
+        "prompt_per_token_ms": 0.3184827586206897,
+        "prompt_per_second": 3139.887397141619,
+        "predicted_n": 2,
+        "predicted_ms": 4.387,
+        "predicted_per_token_ms": 4.387,
+        "predicted_per_second": 227.94620469569185
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 9.205,
+        "prompt_per_token_ms": 0.38354166666666667,
+        "prompt_per_second": 2607.2786529060295,
+        "predicted_n": 5,
+        "predicted_ms": 17.468,
+        "predicted_per_token_ms": 4.367,
+        "predicted_per_second": 228.9901534234028
+      }
+    },
+    "sigterm": {
+      "answer": "Terminal",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 8.977,
+        "prompt_per_token_ms": 0.4274761904761905,
+        "prompt_per_second": 2339.311574022502,
+        "predicted_n": 3,
+        "predicted_ms": 8.904,
+        "predicted_per_token_ms": 4.452,
+        "predicted_per_second": 224.61814914645103
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "DNF",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 8.99,
+        "prompt_per_token_ms": 0.4495,
+        "prompt_per_second": 2224.6941045606227,
+        "predicted_n": 3,
+        "predicted_ms": 8.793,
+        "predicted_per_token_ms": 4.3965,
+        "predicted_per_second": 227.45365631752531
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 9.19,
+        "prompt_per_token_ms": 0.25527777777777777,
+        "prompt_per_second": 3917.3014145810666,
+        "predicted_n": 7,
+        "predicted_ms": 25.886,
+        "predicted_per_token_ms": 4.314333333333333,
+        "predicted_per_second": 231.78552113111334
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 9.32,
+        "prompt_per_token_ms": 0.23897435897435898,
+        "prompt_per_second": 4184.549356223176,
+        "predicted_n": 6,
+        "predicted_ms": 21.768,
+        "predicted_per_token_ms": 4.3536,
+        "predicted_per_second": 229.6949650863653
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 9.185,
+        "prompt_per_token_ms": 0.483421052631579,
+        "prompt_per_second": 2068.5900925421884,
+        "predicted_n": 3,
+        "predicted_ms": 9.121,
+        "predicted_per_token_ms": 4.5605,
+        "predicted_per_second": 219.2742023900888
+      }
+    },
+    "mercury_moons": {
+      "answer": "0",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 9.54,
+        "prompt_per_token_ms": 0.45428571428571424,
+        "prompt_per_second": 2201.2578616352203,
+        "predicted_n": 2,
+        "predicted_ms": 4.407,
+        "predicted_per_token_ms": 4.407,
+        "predicted_per_second": 226.9117313365101
+      }
+    }
+  },
+  "PTQ_Q4_0": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 10.511,
+        "prompt_per_token_ms": 0.7007333333333333,
+        "prompt_per_second": 1427.0763961564076,
+        "predicted_n": 4,
+        "predicted_ms": 6.794,
+        "predicted_per_token_ms": 2.2646666666666664,
+        "predicted_per_second": 441.5660877244628
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.43,
+        "prompt_per_token_ms": 0.21095238095238095,
+        "prompt_per_second": 4740.406320541761,
+        "predicted_n": 3,
+        "predicted_ms": 3.745,
+        "predicted_per_token_ms": 1.8725,
+        "predicted_per_second": 534.045393858478
+      }
+    },
+    "three_words": {
+      "answer": "Blue.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 4.315,
+        "prompt_per_token_ms": 0.23972222222222225,
+        "prompt_per_second": 4171.4947856315175,
+        "predicted_n": 3,
+        "predicted_ms": 3.708,
+        "predicted_per_token_ms": 1.854,
+        "predicted_per_second": 539.3743257820928
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.409,
+        "prompt_per_token_ms": 0.19169565217391304,
+        "prompt_per_second": 5216.602404173283,
+        "predicted_n": 2,
+        "predicted_ms": 1.801,
+        "predicted_per_token_ms": 1.801,
+        "predicted_per_second": 555.247084952804
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.385,
+        "prompt_per_token_ms": 0.1754,
+        "prompt_per_second": 5701.254275940708,
+        "predicted_n": 10,
+        "predicted_ms": 15.769,
+        "predicted_per_token_ms": 1.7521111111111112,
+        "predicted_per_second": 570.7400596106285
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 4.443,
+        "prompt_per_token_ms": 0.15867857142857142,
+        "prompt_per_second": 6302.048165653838,
+        "predicted_n": 3,
+        "predicted_ms": 3.853,
+        "predicted_per_token_ms": 1.9265,
+        "predicted_per_second": 519.0760446405399
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.21,
+        "prompt_per_token_ms": 0.2105,
+        "prompt_per_second": 4750.593824228028,
+        "predicted_n": 3,
+        "predicted_ms": 4.027,
+        "predicted_per_token_ms": 2.0135,
+        "predicted_per_second": 496.64762850757387
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain can transform the atmosphere with its gentle patter or sudden intensity. Rain reminds us of nature's ability to refresh and renew.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 4.951,
+        "prompt_per_token_ms": 0.17072413793103447,
+        "prompt_per_second": 5857.402544940417,
+        "predicted_n": 28,
+        "predicted_ms": 45.753,
+        "predicted_per_token_ms": 1.6945555555555556,
+        "predicted_per_second": 590.1252376893319
+      }
+    },
+    "hyphens": {
+      "answer": "C-O-D-E",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.411,
+        "prompt_per_token_ms": 0.18379166666666666,
+        "prompt_per_second": 5440.943096803447,
+        "predicted_n": 5,
+        "predicted_ms": 7.1,
+        "predicted_per_token_ms": 1.775,
+        "predicted_per_second": 563.3802816901409
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship into our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.368,
+        "prompt_per_token_ms": 0.18200000000000002,
+        "prompt_per_second": 5494.505494505494,
+        "predicted_n": 12,
+        "predicted_ms": 18.827,
+        "predicted_per_token_ms": 1.7115454545454547,
+        "predicted_per_second": 584.2672757210389
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 5.029,
+        "prompt_per_token_ms": 0.10477083333333333,
+        "prompt_per_second": 9544.64108172599,
+        "predicted_n": 6,
+        "predicted_ms": 8.706,
+        "predicted_per_token_ms": 1.7411999999999999,
+        "predicted_per_second": 574.3165632896853
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number for Dana Reeve is not available in the provided records. \n\nNOT_PRESENT",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 4.917,
+        "prompt_per_token_ms": 0.11175,
+        "prompt_per_second": 8948.54586129754,
+        "predicted_n": 22,
+        "predicted_ms": 35.663,
+        "predicted_per_token_ms": 1.698238095238095,
+        "predicted_per_second": 588.8455822561198
+      }
+    },
+    "count_records": {
+      "answer": "2",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 5.061,
+        "prompt_per_token_ms": 0.10122,
+        "prompt_per_second": 9879.470460383323,
+        "predicted_n": 2,
+        "predicted_ms": 1.868,
+        "predicted_per_token_ms": 1.868,
+        "predicted_per_second": 535.3319057815845
+      }
+    },
+    "conflict_latest": {
+      "answer": "alpha",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 14.801,
+        "prompt_per_token_ms": 0.2551896551724138,
+        "prompt_per_second": 3918.654144990203,
+        "predicted_n": 2,
+        "predicted_ms": 1.854,
+        "predicted_per_token_ms": 1.854,
+        "predicted_per_second": 539.3743257820928
+      }
+    },
+    "cite_section": {
+      "answer": "The duration of access logs retention is 400 days, as indicated in [S3].\n\n[S1] The vault door requires two keys.  \n[S2] Backup generator fuel lasts 72 hours.  \n[S3] Access logs are retained for 400 days.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 5.525,
+        "prompt_per_token_ms": 0.08246268656716418,
+        "prompt_per_second": 12126.696832579184,
+        "predicted_n": 59,
+        "predicted_ms": 99.022,
+        "predicted_per_token_ms": 1.7072758620689656,
+        "predicted_per_second": 585.7284239865888
+      }
+    },
+    "sum_fields": {
+      "answer": "The numeric sum is: 45.25 + 60.00 + 139.75 = 245.00",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 4.753,
+        "prompt_per_token_ms": 0.14403030303030304,
+        "prompt_per_second": 6942.983378918578,
+        "predicted_n": 25,
+        "predicted_ms": 41.032,
+        "predicted_per_token_ms": 1.7096666666666664,
+        "predicted_per_second": 584.9093390524469
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 4.82,
+        "prompt_per_token_ms": 0.1175609756097561,
+        "prompt_per_second": 8506.224066390041,
+        "predicted_n": 4,
+        "predicted_ms": 5.401,
+        "predicted_per_token_ms": 1.8003333333333333,
+        "predicted_per_second": 555.4526939455657
+      }
+    },
+    "route_dept": {
+      "answer": "HARDWARE",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 4.852,
+        "prompt_per_token_ms": 0.11283720930232559,
+        "prompt_per_second": 8862.32481450948,
+        "predicted_n": 4,
+        "predicted_ms": 5.377,
+        "predicted_per_token_ms": 1.7923333333333333,
+        "predicted_per_second": 557.9319323042589
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 4.168,
+        "prompt_per_token_ms": 0.2451764705882353,
+        "prompt_per_second": 4078.694817658349,
+        "predicted_n": 7,
+        "predicted_ms": 10.304,
+        "predicted_per_token_ms": 1.7173333333333334,
+        "predicted_per_second": 582.2981366459627
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 4.615,
+        "prompt_per_token_ms": 0.13573529411764707,
+        "prompt_per_second": 7367.280606717226,
+        "predicted_n": 18,
+        "predicted_ms": 29.158,
+        "predicted_per_token_ms": 1.7151764705882353,
+        "predicted_per_second": 583.030386171891
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\": {\"b\": 1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.211,
+        "prompt_per_token_ms": 0.21055000000000001,
+        "prompt_per_second": 4749.465685110425,
+        "predicted_n": 10,
+        "predicted_ms": 15.397,
+        "predicted_per_token_ms": 1.7107777777777777,
+        "predicted_per_second": 584.5294537896993
+      }
+    },
+    "int_array": {
+      "answer": "[1, 2, 3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.383,
+        "prompt_per_token_ms": 0.16233333333333333,
+        "prompt_per_second": 6160.164271047228,
+        "predicted_n": 10,
+        "predicted_ms": 15.529,
+        "predicted_per_token_ms": 1.7254444444444443,
+        "predicted_per_second": 579.5608216884539
+      }
+    },
+    "string_array": {
+      "answer": "[\n  \"red\",\n  \"green\",\n  \"blue\"\n]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.475,
+        "prompt_per_token_ms": 0.16574074074074072,
+        "prompt_per_second": 6033.519553072626,
+        "predicted_n": 15,
+        "predicted_ms": 23.98,
+        "predicted_per_token_ms": 1.7128571428571429,
+        "predicted_per_second": 583.8198498748957
+      }
+    },
+    "enum_single": {
+      "answer": "INACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 4.905,
+        "prompt_per_token_ms": 0.11963414634146342,
+        "prompt_per_second": 8358.817533129459,
+        "predicted_n": 4,
+        "predicted_ms": 5.71,
+        "predicted_per_token_ms": 1.9033333333333333,
+        "predicted_per_second": 525.3940455341507
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 4.953,
+        "prompt_per_token_ms": 0.09711764705882353,
+        "prompt_per_second": 10296.789824348878,
+        "predicted_n": 29,
+        "predicted_ms": 46.893,
+        "predicted_per_token_ms": 1.67475,
+        "predicted_per_second": 597.1040453799075
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\": true}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.398,
+        "prompt_per_token_ms": 0.17592,
+        "prompt_per_second": 5684.402000909505,
+        "predicted_n": 6,
+        "predicted_ms": 9.017,
+        "predicted_per_token_ms": 1.8034,
+        "predicted_per_second": 554.5081512698237
+      }
+    },
+    "code_block": {
+      "answer": "{\"q\":7}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 4.548,
+        "prompt_per_token_ms": 0.1516,
+        "prompt_per_second": 6596.306068601582,
+        "predicted_n": 6,
+        "predicted_ms": 8.81,
+        "predicted_per_token_ms": 1.762,
+        "predicted_per_second": 567.5368898978433
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 4.568,
+        "prompt_per_token_ms": 0.14275,
+        "prompt_per_second": 7005.253940455342,
+        "predicted_n": 10,
+        "predicted_ms": 15.214,
+        "predicted_per_token_ms": 1.6904444444444444,
+        "predicted_per_second": 591.5604048902327
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 4.98,
+        "prompt_per_token_ms": 0.09764705882352942,
+        "prompt_per_second": 10240.963855421687,
+        "predicted_n": 25,
+        "predicted_ms": 41.254,
+        "predicted_per_token_ms": 1.7189166666666666,
+        "predicted_per_second": 581.7617685557765
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The Python package **fastjsonify2** is a library designed to efficiently convert data structures (such as dictionaries, lists, etc.) into JSON format. It aims to be faster and more memory-efficient than standard JSON libraries like `json` or `marshmallow`.\n\n### Key Features of fastjsonify2:\n- **Fast JSON Conversion**: Optimized for speed, especially useful when working with large datasets.\n- **Memory Efficiency**: Uses less memory compared to some other JSON libraries.\n- **Customizable Output**: Allows customization of the JSON output format (e.g., indentation, field names).\n- **Supports Complex Data Structures**: Handles nested data structures effectively.\n\n### Example Usage:\n```python\nfrom fastjsonify2 import jsonify\n\ndata = {\n    \"name\": \"Alice\",\n    \"age\": 30,\n    \"skills\": [\"Python\", \"Data Analysis\"],\n    \"address\": {\"",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.21,
+        "prompt_per_token_ms": 0.2105,
+        "prompt_per_second": 4750.593824228028,
+        "predicted_n": 200,
+        "predicted_ms": 335.502,
+        "predicted_per_token_ms": 1.6859396984924624,
+        "predicted_per_second": 593.1410244946379
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "The `--auto-balance-moon` flag in `rsync` is used to automatically adjust the size of files being transferred when they exceed a certain limit. Here's a detailed breakdown:\n\n### **Purpose**\n- **Automatic File Size Adjustment**: When a file's size exceeds a specified threshold (default is 4MB), `rsync` automatically splits it into smaller chunks that fit within the limit, ensuring efficient transfer without manual intervention.\n- **Balancing Load**: It helps maintain optimal performance by preventing large files from causing bottlenecks during transfers.\n\n### **How It Works**\n1. **Threshold Check**: If a file's size exceeds the specified limit (default: 4MB), `rsync` splits it into smaller pieces.\n2. **File Splitting**: The files are divided into chunks that fit within the limit, and `rsync` transfers them sequentially.\n3. **Automatic Adjustment**: This",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.536,
+        "prompt_per_token_ms": 0.18144,
+        "prompt_per_second": 5511.463844797178,
+        "predicted_n": 200,
+        "predicted_ms": 333.588,
+        "predicted_per_token_ms": 1.676321608040201,
+        "predicted_per_second": 596.5442402004868
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method in JavaScript that returns an array containing the last `n` elements from the original array, where `n` is a number provided as an argument.\n\n### Syntax:\n```javascript\narray.snorlax(n)\n```\n\n- `array`: The original array.\n- `n`: The number of elements to include from the end of the array.\n\n### Behavior:\n- It returns a **new array** containing the last `n` elements from the original array.\n- If `n` is greater than the length of the array, it returns all elements of the array.\n\n### Example:\n```javascript\nconst arr = [1, 2, 3, 4, 5];\nconsole.log(arr.snorlax(2)); // Output: [4, 5]\nconsole.log(arr.snorlax(0)); // Output: [5, 4, 3,",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.578,
+        "prompt_per_token_ms": 0.19904347826086957,
+        "prompt_per_second": 5024.027959807776,
+        "predicted_n": 200,
+        "predicted_ms": 333.169,
+        "predicted_per_token_ms": 1.6742160804020099,
+        "predicted_per_second": 597.2944661718227
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora**, the `/etc/netd` file (often referred to as `/etc/netdaemon.conf`) is used to configure network services and their behavior. This file is managed by the system's networking tools, such as `systemd` or `NetworkManager`.\n\n### What Settings Belong in `/etc/netd` on Fedora:\n\nThe `/etc/netd` file contains **service configuration files** for various network protocols (e.g., TCP, UDP, IP, DNS, etc.). These files are typically named with the protocol type as their base name.\n\nHere are some common sections in `/etc/netd` and what they configure:\n\n---\n\n### 1. **TCP**\n- **File:** `tcp.conf`\n- **Purpose:** Configures TCP settings for services like SSH, HTTP, FTP, etc.\n- **Example entries:**\n  ```",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.487,
+        "prompt_per_token_ms": 0.18695833333333334,
+        "prompt_per_second": 5348.785379986628,
+        "predicted_n": 200,
+        "predicted_ms": 334.808,
+        "predicted_per_token_ms": 1.6824522613065327,
+        "predicted_per_second": 594.3705048863826
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically at boot, follow these steps:\n\n### 1. **Check if `systemd-jelly` is already enabled**\n   - Use the following command to verify its current status:\n     ```bash\n     systemctl status systemd-jelly\n     ```\n   - If it's not running, proceed with enabling it.\n\n---\n\n### 2. **Enable the service**\n   - Enable the service using `systemctl`:\n     ```bash\n     sudo systemctl enable systemd-jelly\n     ```\n   - This command ensures the service starts automatically at boot.\n\n---\n\n### 3. **Verify the service is running**\n   - Check the status of the service after enabling it:\n     ```bash\n     sudo systemctl status systemd-jelly\n     ```\n   - Confirm it's active and running:\n     `",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 4.497,
+        "prompt_per_token_ms": 0.2044090909090909,
+        "prompt_per_second": 4892.15032243718,
+        "predicted_n": 200,
+        "predicted_ms": 333.115,
+        "predicted_per_token_ms": 1.6739447236180904,
+        "predicted_per_second": 597.3912912957987
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "As of my knowledge cutoff in October 2023, **AMD Ryzen processors do not officially support \"TurboCore X9 mode\"**. Here's a breakdown:\n\n1. **Turbo Core Technology**:  \n   - AMD's Turbo Core technology (e.g., in Ryzen 5000 series) allows the CPU to dynamically adjust its frequency based on workload, improving efficiency and performance. However, this is distinct from \"X9 mode,\" which is a specific feature in older Intel CPUs (like the Xeon Gold X9 processors).\n\n2. **AMD's Turbo Features**:  \n   - AMD offers features like **Turbo Boost** (for boosting performance) and **Turbo Cache** (for faster memory access), but these are not labeled as \"X9 mode.\"  \n   - The term \"X9 mode\" is not part of AMD's official documentation or product lineup.\n\n3. **Check Specific Models",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.511,
+        "prompt_per_token_ms": 0.1961304347826087,
+        "prompt_per_second": 5098.64774994458,
+        "predicted_n": 200,
+        "predicted_ms": 332.37,
+        "predicted_per_token_ms": 1.6702010050251257,
+        "predicted_per_second": 598.7303306555947
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to adjust the value in your Linux kernel's configuration files. Here's a step-by-step guide:\n\n---\n\n### **1. Locate the Configuration File**\nThe `moonwalk` parameter is typically set in the kernel module that handles the Moonwalk daemon (used for disk space monitoring). The relevant file is usually:\n\n```\n/etc/moonwalk.conf\n```\n\nIf you're using a custom configuration, check your system's documentation or logs.\n\n---\n\n### **2. Edit the Configuration File**\nOpen the file with a text editor:\n\n```bash\nsudo nano /etc/moonwalk.conf\n```\n\nLook for the line that starts with `moonwalk` and modify the value. For example:\n\n```conf\nmoonwalk=<value>\n```\n\nReplace `<value>` with your desired value (e.g., `1`, `0",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.572,
+        "prompt_per_token_ms": 0.19878260869565217,
+        "prompt_per_second": 5030.621172353456,
+        "predicted_n": 200,
+        "predicted_ms": 337.802,
+        "predicted_per_token_ms": 1.697497487437186,
+        "predicted_per_second": 589.1024919923506
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel controls the display of a rainbow-colored penguin animation during terminal output. Here's a breakdown:\n\n### Purpose:\n- **Visual Effect**: It enables a playful, animated penguin graphic that appears in the terminal window when running certain commands (e.g., `echo`, `printf`, or specific text-based programs).\n- **Customization**: It allows users to toggle this effect on or off via configuration files.\n\n### How It Works:\n1. **Display Animation**: When enabled, the kernel renders a looping animation of a penguin in a rainbow color scheme.\n2. **Terminal Compatibility**: The effect is typically visible in terminal emulators (e.g., `xterm`, `gnome-terminal`) or text-based applications that support it.\n3. **Customization**: Users can adjust the speed, color palette, or other parameters",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 4.608,
+        "prompt_per_token_ms": 0.16457142857142856,
+        "prompt_per_second": 6076.38888888889,
+        "predicted_n": 200,
+        "predicted_ms": 339.554,
+        "predicted_per_token_ms": 1.7063015075376884,
+        "predicted_per_second": 586.0628942671858
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "The **Liquidize** filter in GIMP is found in the **Filter** menu.\n\nTo access it:\n\n1. Open your GIMP project.\n2. Go to the **Filter** menu (usually represented by a gear icon).\n3. Select **Liquidize** from the list of filters.\n\nOnce selected, you can adjust its intensity using the sliders in the filter panel.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.432,
+        "prompt_per_token_ms": 0.23326315789473687,
+        "prompt_per_second": 4287.003610108302,
+        "predicted_n": 85,
+        "predicted_ms": 141.113,
+        "predicted_per_token_ms": 1.6799166666666667,
+        "predicted_per_second": 595.2676224019049
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The `git commit --dedup-objects` command in Git is used to **remove duplicate objects** from the staging area (the temporary workspace where changes are staged before committing). Here's a breakdown of what it does:\n\n### Purpose:\n- **Deduplication**: It removes objects that have the same content but different identifiers (e.g., different commit hashes or tags).\n- **Cleaning up**: This is often used to reduce the size of your working directory by eliminating redundant files.\n\n### How it works:\n- Git checks for objects in the staging area that are identical to others.\n- It removes these duplicates, leaving only unique objects.\n- The command is typically used when you want to **keep only the latest version** of a file or set of files.\n\n### Example:\nSuppose you have multiple commits with the same file content but different hashes. `git commit --dedup-objects` will merge these into a single commit,",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.354,
+        "prompt_per_token_ms": 0.2177,
+        "prompt_per_second": 4593.477262287552,
+        "predicted_n": 200,
+        "predicted_ms": 330.07,
+        "predicted_per_token_ms": 1.6586432160804019,
+        "predicted_per_second": 602.902414639319
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism that allows you to mount filesystems in Docker containers using the **shadow filesystem**. This is particularly useful when you want to persist data between container runs or share data across multiple containers.\n\nHere's how it works:\n\n---\n\n### \ud83d\udd0d **Overview of Volume-Shadow Driver**\n\n- **Purpose**: To mount a host directory as a volume in a Docker container using the shadow filesystem.\n- **Use Case**: Persisting data, sharing files between containers, or mounting external data sources (like databases, logs, etc.).\n\n---\n\n### \ud83e\udde0 How It Works\n\n1. **Shadow Filesystem Concept**:\n   - The shadow filesystem is a copy of the host's filesystem.\n   - When you mount a volume using the shadow driver, Docker creates a new filesystem inside the container that mirrors the host's filesystem.\n\n2. **Mount",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.32,
+        "prompt_per_token_ms": 0.21600000000000003,
+        "prompt_per_second": 4629.62962962963,
+        "predicted_n": 200,
+        "predicted_ms": 334.933,
+        "predicted_per_token_ms": 1.6830804020100503,
+        "predicted_per_second": 594.1486804823652
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `umask` parameter in the `umask` command is related to controlling access permissions, but it's not directly controlled by the `umlimit` command. However, you might be referring to the `umap` or `umap_` command, which is used to set the umask value.\n\nThe `umap` command sets the umask value, which controls the number of permissions that a user has on a file or directory. The default value for `umask` is 400, which means that the first three permissions (read, write, execute) are set to 0. This effectively limits the permissions to the root user only.\n\nTo control the umask in bash, you can use the following command:\n\n```bash\numask 400\n```\n\nThis sets the umask to 400, which means that the first three permissions (read, write, execute) are set to 0.\n\nIf you want to set",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.594,
+        "prompt_per_token_ms": 0.21876190476190477,
+        "prompt_per_second": 4571.179799738789,
+        "predicted_n": 200,
+        "predicted_ms": 334.32,
+        "predicted_per_token_ms": 1.68,
+        "predicted_per_second": 595.2380952380953
+      }
+    },
+    "ssh_port": {
+      "answer": "22",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.58,
+        "prompt_per_token_ms": 0.16962962962962963,
+        "prompt_per_second": 5895.196506550218,
+        "predicted_n": 2,
+        "predicted_ms": 1.839,
+        "predicted_per_token_ms": 1.839,
+        "predicted_per_second": 543.7737901033171
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.388,
+        "prompt_per_token_ms": 0.18283333333333332,
+        "prompt_per_second": 5469.462169553328,
+        "predicted_n": 2,
+        "predicted_ms": 1.886,
+        "predicted_per_token_ms": 1.886,
+        "predicted_per_second": 530.2226935312832
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 4.554,
+        "prompt_per_token_ms": 0.1570344827586207,
+        "prompt_per_second": 6368.028107158541,
+        "predicted_n": 2,
+        "predicted_ms": 1.889,
+        "predicted_per_token_ms": 1.889,
+        "predicted_per_second": 529.3806246691371
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.37,
+        "prompt_per_token_ms": 0.18208333333333335,
+        "prompt_per_second": 5491.9908466819215,
+        "predicted_n": 5,
+        "predicted_ms": 7.188,
+        "predicted_per_token_ms": 1.797,
+        "predicted_per_second": 556.4830272676684
+      }
+    },
+    "sigterm": {
+      "answer": "Connection",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.395,
+        "prompt_per_token_ms": 0.20928571428571427,
+        "prompt_per_second": 4778.156996587031,
+        "predicted_n": 2,
+        "predicted_ms": 1.808,
+        "predicted_per_token_ms": 1.808,
+        "predicted_per_second": 553.0973451327434
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "Fedora uses DNF.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.186,
+        "prompt_per_token_ms": 0.20929999999999999,
+        "prompt_per_second": 4777.830864787386,
+        "predicted_n": 8,
+        "predicted_ms": 12.117,
+        "predicted_per_token_ms": 1.731,
+        "predicted_per_second": 577.7007510109763
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 4.585,
+        "prompt_per_token_ms": 0.12736111111111112,
+        "prompt_per_second": 7851.690294438386,
+        "predicted_n": 7,
+        "predicted_ms": 10.375,
+        "predicted_per_token_ms": 1.7291666666666667,
+        "predicted_per_second": 578.3132530120482
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 4.741,
+        "prompt_per_token_ms": 0.12156410256410255,
+        "prompt_per_second": 8226.112634465304,
+        "predicted_n": 6,
+        "predicted_ms": 8.68,
+        "predicted_per_token_ms": 1.736,
+        "predicted_per_second": 576.036866359447
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.246,
+        "prompt_per_token_ms": 0.22347368421052635,
+        "prompt_per_second": 4474.799811587376,
+        "predicted_n": 3,
+        "predicted_ms": 3.69,
+        "predicted_per_token_ms": 1.845,
+        "predicted_per_second": 542.0054200542005
+      }
+    },
+    "mercury_moons": {
+      "answer": "0",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.342,
+        "prompt_per_token_ms": 0.20676190476190476,
+        "prompt_per_second": 4836.480884385077,
+        "predicted_n": 2,
+        "predicted_ms": 1.827,
+        "predicted_per_token_ms": 1.827,
+        "predicted_per_second": 547.3453749315819
+      }
+    }
+  },
+  "QAD_Q4_0": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 11.44,
+        "prompt_per_token_ms": 0.7626666666666666,
+        "prompt_per_second": 1311.188811188811,
+        "predicted_n": 4,
+        "predicted_ms": 6.884,
+        "predicted_per_token_ms": 2.2946666666666666,
+        "predicted_per_second": 435.79314352120855
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.703,
+        "prompt_per_token_ms": 0.22395238095238096,
+        "prompt_per_second": 4465.234956410802,
+        "predicted_n": 3,
+        "predicted_ms": 3.701,
+        "predicted_per_token_ms": 1.8505,
+        "predicted_per_second": 540.3944879762226
+      }
+    },
+    "three_words": {
+      "answer": "Blue and vast.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 4.179,
+        "prompt_per_token_ms": 0.2321666666666667,
+        "prompt_per_second": 4307.250538406317,
+        "predicted_n": 5,
+        "predicted_ms": 7.065,
+        "predicted_per_token_ms": 1.76625,
+        "predicted_per_second": 566.1712668082095
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.37,
+        "prompt_per_token_ms": 0.19,
+        "prompt_per_second": 5263.157894736842,
+        "predicted_n": 2,
+        "predicted_ms": 1.825,
+        "predicted_per_token_ms": 1.825,
+        "predicted_per_second": 547.945205479452
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.386,
+        "prompt_per_token_ms": 0.17544,
+        "prompt_per_second": 5699.954400364797,
+        "predicted_n": 10,
+        "predicted_ms": 15.424,
+        "predicted_per_token_ms": 1.7137777777777776,
+        "predicted_per_second": 583.50622406639
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 4.418,
+        "prompt_per_token_ms": 0.15778571428571428,
+        "prompt_per_second": 6337.709370755998,
+        "predicted_n": 3,
+        "predicted_ms": 3.751,
+        "predicted_per_token_ms": 1.8755,
+        "predicted_per_second": 533.1911490269262
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.162,
+        "prompt_per_token_ms": 0.2081,
+        "prompt_per_second": 4805.3820278712155,
+        "predicted_n": 3,
+        "predicted_ms": 3.66,
+        "predicted_per_token_ms": 1.83,
+        "predicted_per_second": 546.4480874316939
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain can transform the landscape with its gentle patter or intense downpour. Rain is a natural force that refreshes the earth and refreshes our spirits.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 4.742,
+        "prompt_per_token_ms": 0.16351724137931034,
+        "prompt_per_second": 6115.5630535638975,
+        "predicted_n": 33,
+        "predicted_ms": 54.379,
+        "predicted_per_token_ms": 1.69934375,
+        "predicted_per_second": 588.462457934129
+      }
+    },
+    "hyphens": {
+      "answer": "CODE-",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.483,
+        "prompt_per_token_ms": 0.18679166666666666,
+        "prompt_per_second": 5353.557885344636,
+        "predicted_n": 3,
+        "predicted_ms": 3.711,
+        "predicted_per_token_ms": 1.8555,
+        "predicted_per_second": 538.9382915656157
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship into our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.37,
+        "prompt_per_token_ms": 0.18208333333333335,
+        "prompt_per_second": 5491.9908466819215,
+        "predicted_n": 12,
+        "predicted_ms": 18.942,
+        "predicted_per_token_ms": 1.722,
+        "predicted_per_second": 580.7200929152149
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 5.146,
+        "prompt_per_token_ms": 0.10720833333333334,
+        "prompt_per_second": 9327.633113097552,
+        "predicted_n": 6,
+        "predicted_ms": 8.731,
+        "predicted_per_token_ms": 1.7462,
+        "predicted_per_second": 572.6720879624328
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number for Dana Reeve in the ops department with badge 4417 is not available.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 4.97,
+        "prompt_per_token_ms": 0.11295454545454545,
+        "prompt_per_second": 8853.118712273643,
+        "predicted_n": 21,
+        "predicted_ms": 33.84,
+        "predicted_per_token_ms": 1.6920000000000002,
+        "predicted_per_second": 591.0165484633569
+      }
+    },
+    "count_records": {
+      "answer": "1",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 5.079,
+        "prompt_per_token_ms": 0.10157999999999999,
+        "prompt_per_second": 9844.457570387873,
+        "predicted_n": 2,
+        "predicted_ms": 1.793,
+        "predicted_per_token_ms": 1.793,
+        "predicted_per_second": 557.7244841048522
+      }
+    },
+    "conflict_latest": {
+      "answer": "bravo",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 5.817,
+        "prompt_per_token_ms": 0.10029310344827587,
+        "prompt_per_second": 9970.775313735601,
+        "predicted_n": 3,
+        "predicted_ms": 3.682,
+        "predicted_per_token_ms": 1.841,
+        "predicted_per_second": 543.1830526887561
+      }
+    },
+    "cite_section": {
+      "answer": "The duration of access logs retention is 400 days, as specified in [S3].  \n[S1]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 5.46,
+        "prompt_per_token_ms": 0.08149253731343284,
+        "prompt_per_second": 12271.062271062272,
+        "predicted_n": 24,
+        "predicted_ms": 39.155,
+        "predicted_per_token_ms": 1.702391304347826,
+        "predicted_per_second": 587.409015451411
+      }
+    },
+    "sum_fields": {
+      "answer": "45.25 + 60.00 + 139.75 = 235.00",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 4.842,
+        "prompt_per_token_ms": 0.1467272727272727,
+        "prompt_per_second": 6815.365551425031,
+        "predicted_n": 19,
+        "predicted_ms": 30.679,
+        "predicted_per_token_ms": 1.7043888888888887,
+        "predicted_per_second": 586.7205580364418
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.028,
+        "prompt_per_token_ms": 0.1226341463414634,
+        "prompt_per_second": 8154.335719968179,
+        "predicted_n": 4,
+        "predicted_ms": 5.494,
+        "predicted_per_token_ms": 1.8313333333333333,
+        "predicted_per_second": 546.0502366217693
+      }
+    },
+    "route_dept": {
+      "answer": "NETWORK",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 4.826,
+        "prompt_per_token_ms": 0.11223255813953488,
+        "prompt_per_second": 8910.070451719852,
+        "predicted_n": 4,
+        "predicted_ms": 5.539,
+        "predicted_per_token_ms": 1.8463333333333332,
+        "predicted_per_second": 541.6140097490522
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 4.377,
+        "prompt_per_token_ms": 0.2574705882352941,
+        "prompt_per_second": 3883.938770847613,
+        "predicted_n": 7,
+        "predicted_ms": 10.429,
+        "predicted_per_token_ms": 1.7381666666666666,
+        "predicted_per_second": 575.3188225141432
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 4.588,
+        "prompt_per_token_ms": 0.13494117647058823,
+        "prompt_per_second": 7410.636442894507,
+        "predicted_n": 18,
+        "predicted_ms": 29.29,
+        "predicted_per_token_ms": 1.7229411764705882,
+        "predicted_per_second": 580.4028678729942
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\":{\"b\":1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.193,
+        "prompt_per_token_ms": 0.20964999999999998,
+        "prompt_per_second": 4769.854519437157,
+        "predicted_n": 9,
+        "predicted_ms": 13.664,
+        "predicted_per_token_ms": 1.708,
+        "predicted_per_second": 585.480093676815
+      }
+    },
+    "int_array": {
+      "answer": "[1, 2, 3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.396,
+        "prompt_per_token_ms": 0.1628148148148148,
+        "prompt_per_second": 6141.947224749772,
+        "predicted_n": 10,
+        "predicted_ms": 15.463,
+        "predicted_per_token_ms": 1.718111111111111,
+        "predicted_per_second": 582.0345340490203
+      }
+    },
+    "string_array": {
+      "answer": "[\n  \"red\",\n  \"green\",\n  \"blue\"\n]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.474,
+        "prompt_per_token_ms": 0.16570370370370371,
+        "prompt_per_second": 6034.868126955744,
+        "predicted_n": 15,
+        "predicted_ms": 23.941,
+        "predicted_per_token_ms": 1.7100714285714285,
+        "predicted_per_second": 584.770895117163
+      }
+    },
+    "enum_single": {
+      "answer": "ACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 4.846,
+        "prompt_per_token_ms": 0.11819512195121952,
+        "prompt_per_second": 8460.586050350805,
+        "predicted_n": 3,
+        "predicted_ms": 3.688,
+        "predicted_per_token_ms": 1.844,
+        "predicted_per_second": 542.2993492407809
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 4.918,
+        "prompt_per_token_ms": 0.09643137254901961,
+        "prompt_per_second": 10370.069133794224,
+        "predicted_n": 29,
+        "predicted_ms": 47.074,
+        "predicted_per_token_ms": 1.6812142857142856,
+        "predicted_per_second": 594.8081743637676
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\":true}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.431,
+        "prompt_per_token_ms": 0.17724,
+        "prompt_per_second": 5642.067253441661,
+        "predicted_n": 6,
+        "predicted_ms": 8.702,
+        "predicted_per_token_ms": 1.7404,
+        "predicted_per_second": 574.5805561939784
+      }
+    },
+    "code_block": {
+      "answer": "{\"q\":7}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 4.822,
+        "prompt_per_token_ms": 0.16073333333333334,
+        "prompt_per_second": 6221.484861053505,
+        "predicted_n": 6,
+        "predicted_ms": 8.815,
+        "predicted_per_token_ms": 1.763,
+        "predicted_per_second": 567.2149744753262
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 5.278,
+        "prompt_per_token_ms": 0.1649375,
+        "prompt_per_second": 6062.902614626753,
+        "predicted_n": 10,
+        "predicted_ms": 15.384,
+        "predicted_per_token_ms": 1.7093333333333334,
+        "predicted_per_second": 585.0234009360374
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 4.916,
+        "prompt_per_token_ms": 0.0963921568627451,
+        "prompt_per_second": 10374.288039056142,
+        "predicted_n": 25,
+        "predicted_ms": 40.379,
+        "predicted_per_token_ms": 1.6824583333333332,
+        "predicted_per_second": 594.3683597909805
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The **Python package `fastjsonify2`** is a lightweight and efficient library designed to convert Python objects into JSON format. It is particularly useful for developers who need fast and memory-efficient JSON serialization, especially when working with large datasets or performance-critical applications.\n\n### Key Features of `fastjsonify2`:\n\n- **Fast Serialization**: It is optimized for speed, making it suitable for high-performance applications.\n- **Memory Efficiency**: Compared to standard JSON libraries like `json`, it uses less memory.\n- **Customizable Output**: Allows control over the output format (e.g., pretty printing).\n- **Supports Complex Data Structures**: Can handle nested objects, lists, and custom data types.\n\n### Common Use Cases:\n- Converting Python dictionaries or objects to JSON for web APIs or data export.\n- Optimizing performance in applications where speed is critical (e.g., real-time systems, high-frequency trading).\n-",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.23,
+        "prompt_per_token_ms": 0.21150000000000002,
+        "prompt_per_second": 4728.132387706855,
+        "predicted_n": 200,
+        "predicted_ms": 329.946,
+        "predicted_per_token_ms": 1.6580201005025128,
+        "predicted_per_second": 603.1289968661538
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "The `--auto-balance-moon` flag in **rsync** is used to automatically adjust the size of files being transferred during a synchronization process.\n\n### What it does:\n- **Balances file sizes**: When you're copying files from one location to another, rsync may encounter files with different sizes.\n- **Automatically resizes**: It will resize the source file to match the destination file size, ensuring that the destination file is the correct size without manual intervention.\n\n### Example:\nSuppose you have a file `large_file.txt` in your source directory and you're copying it to another location. If `large_file.txt` is larger than the destination directory's maximum file size, rsync will automatically resize it to fit the destination.\n\n### Usage:\nYou can use this flag in your rsync command like this:\n\n```bash\nrsync --auto-balance-moon /source/dir/ /destination/dir/\n```",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.525,
+        "prompt_per_token_ms": 0.18100000000000002,
+        "prompt_per_second": 5524.861878453038,
+        "predicted_n": 200,
+        "predicted_ms": 329.524,
+        "predicted_per_token_ms": 1.6558994974874373,
+        "predicted_per_second": 603.9013850281011
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method that returns an array sorted in reverse order (descending) based on the values of its elements. It is commonly used to sort arrays in descending order without needing to manually implement sorting logic.\n\n### Syntax:\n```javascript\narray.snorlax()\n```\n\n### Example:\n```javascript\nconst numbers = [3, 1, 4, 1, 5];\nconsole.log(array.snorlax(numbers)); // Output: [5, 4, 3, 1, 1]\n```\n\n### Explanation:\n- The method takes an array as input.\n- It sorts the elements in **descending order** (from highest to lowest).\n- It returns a **new sorted array**; the original array remains unchanged.\n\n### Use Cases:\n- Sorting data in reverse order.\n- Preparing data for display or further processing where descending order is required.\n\n### Notes:\n-",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.481,
+        "prompt_per_token_ms": 0.19482608695652173,
+        "prompt_per_second": 5132.782860968534,
+        "predicted_n": 200,
+        "predicted_ms": 337.042,
+        "predicted_per_token_ms": 1.6936783919597989,
+        "predicted_per_second": 590.4308661828496
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora Linux**, the `/etc/netdaemon.conf` file is used to configure the behavior of network daemons such as `ssh`, `scp`, `sftp`, and others. It allows you to customize how these services start, stop, restart, and behave under different network conditions.\n\nHere are some **common settings** that belong in `/etc/netdaemon.conf` on Fedora:\n\n---\n\n### \u2705 **Basic Settings**\n\n```ini\n[network]\ndefault-ssh-port = 22\ndefault-ssh-auth-file = /etc/ssh/sshd_config\ndefault-ssh-port-forwarding = off\n```\n\n- `default-ssh-port`: The default SSH port (usually 22).\n- `default-ssh-auth-file`: Path to the SSH authentication file.\n- `default-ssh-port",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.577,
+        "prompt_per_token_ms": 0.19070833333333334,
+        "prompt_per_second": 5243.609351103343,
+        "predicted_n": 200,
+        "predicted_ms": 335.644,
+        "predicted_per_token_ms": 1.6866532663316582,
+        "predicted_per_second": 592.8900859243722
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically on boot, follow these steps:\n\n---\n\n### **1. Verify the Service File**\nEnsure the `systemd-jelly` service file exists in your system's configuration directory. For example:\n- On **Debian/Ubuntu**:  \n  ```bash\n  sudo nano /etc/systemd/jobs/jelly.job\n  ```\n- On **Red Hat/CentOS/Fedora**:  \n  ```bash\n  sudo nano /etc/systemd/jobs/jelly.job\n  ```\n\nIf the file doesn't exist, create it:\n```bash\nsudo systemctl daemon-reload\nsudo systemctl enable jelly\nsudo systemctl start jelly\n```\n\n---\n\n### **2. Configure the Service**\nEdit the service configuration to set the desired mode (e.g., `restart",
+      "label": "MATERIAL_DEFECT",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 4.531,
+        "prompt_per_token_ms": 0.20595454545454545,
+        "prompt_per_second": 4855.4403001544915,
+        "predicted_n": 200,
+        "predicted_ms": 334.873,
+        "predicted_per_token_ms": 1.6827788944723618,
+        "predicted_per_second": 594.2551355289916
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "Yes, your **AMD Ryzen processor** supports **TurboCore X9 mode**.\n\n### Here's a bit more detail:\n\n- **TurboCore X9** is a feature introduced in AMD Ryzen 5000 series processors (like the Ryzen 5000, Ryzen 7000, etc.).\n- It allows your CPU to dynamically adjust its performance and power consumption based on workload.\n- This mode is particularly useful for gaming, content creation, and other demanding tasks.\n\n### How to Check if Your Ryzen Processor Supports TurboCore X9:\n\n1. **Check the CPU Model**:\n   - Look at your processor's name in BIOS/UEFI or through AMD's official website.\n   - For example, Ryzen 7000 series CPUs (like Ryzen 7 7700X, Ryzen 9 5900X) support TurboCore X9.\n\n2. **Check the CPU",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.499,
+        "prompt_per_token_ms": 0.1956086956521739,
+        "prompt_per_second": 5112.247166036897,
+        "predicted_n": 200,
+        "predicted_ms": 331.779,
+        "predicted_per_token_ms": 1.6672311557788944,
+        "predicted_per_second": 599.7968527242532
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to modify the kernel configuration file. Here's a step-by-step guide:\n\n---\n\n### **1. Locate the Kernel Configuration File**\nThe `kernel.moonwalk` parameter is typically defined in the `CONFIG_MOONWALK` file. This file is usually located in the kernel source directory, such as:\n```\n/usr/src/kernel/config\n```\nor\n```\n/etc/default/kernel\n```\n\n---\n\n### **2. Modify the Configuration File**\nOpen the `CONFIG_MOONWALK` file with a text editor (e.g., `gedit`, `nano`, or `vi`). Look for the line that defines `moonwalk`. For example:\n\n```bash\nCONFIG_MOONWALK=0\n```\n\nIf you're using a custom kernel, replace this line with your",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.487,
+        "prompt_per_token_ms": 0.19508695652173913,
+        "prompt_per_second": 5125.919322487185,
+        "predicted_n": 200,
+        "predicted_ms": 336.426,
+        "predicted_per_token_ms": 1.6905829145728644,
+        "predicted_per_second": 591.5119521083388
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel controls whether the **Penguin** graphical terminal emulator is enabled in the kernel.\n\n### What does it do?\n- **Penguin** is a lightweight, fast, and modern terminal emulator that provides a more user-friendly interface compared to older options like `xterm`.\n- When this option is enabled (`CONFIG_RAINBOW_PENGUIN = 1`), the kernel will use Penguin as the default terminal emulator.\n- When disabled (`CONFIG_RAINBOW_PENGUIN = 0`), the kernel will fall back to a different terminal emulator (typically `xterm` or another standard one).\n\n### Use cases\n- **Development environments**: Penguin is often preferred for its speed and modern interface.\n- **Portability**: Penguin is designed to work well on various platforms, including embedded systems.\n\n### How",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 4.615,
+        "prompt_per_token_ms": 0.1648214285714286,
+        "prompt_per_second": 6067.172264355363,
+        "predicted_n": 200,
+        "predicted_ms": 333.388,
+        "predicted_per_token_ms": 1.6753165829145726,
+        "predicted_per_second": 596.9021080542791
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "The **Liquidize** filter in GIMP is found in the **Filter** menu.\n\nTo access it:\n\n1. Open your GIMP project.\n2. Go to the **Filter** menu (top menu bar).\n3. Select **Liquidize** from the list of filters.\n\nThis will apply the Liquidize effect to selected layers or selections.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.337,
+        "prompt_per_token_ms": 0.22826315789473683,
+        "prompt_per_second": 4380.908462070556,
+        "predicted_n": 78,
+        "predicted_ms": 130.043,
+        "predicted_per_token_ms": 1.6888701298701299,
+        "predicted_per_second": 592.1118399298693
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The `git commit --dedup-objects` command in Git is used to **remove duplicate objects** from the staging area (the temporary workspace where changes are staged before committing). Here's a breakdown of what it does:\n\n### Purpose:\n- **Deduplication**: It removes any duplicate files or directories that appear multiple times in the staging area.\n- **Cleaner Commit**: This helps keep your commit history cleaner and more efficient, especially when working with large repositories.\n\n### How It Works:\n- When you run `git commit --dedup-objects`, Git scans the staging area and identifies files or directories that have been staged multiple times.\n- These duplicates are removed, and the commit is updated to reflect only unique items.\n\n### Example:\nSuppose you have a file `file.txt` that was staged twice in your working directory. Without `--dedup-objects`, both instances would be included in the commit. With this command,",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.312,
+        "prompt_per_token_ms": 0.2156,
+        "prompt_per_second": 4638.218923933209,
+        "predicted_n": 200,
+        "predicted_ms": 330.584,
+        "predicted_per_token_ms": 1.6612261306532663,
+        "predicted_per_second": 601.9650073808774
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism used to manage volumes in Docker containers, particularly when dealing with **persistent storage** or **shared data** between containers. It works by using a **shadow volume** that is mounted into the container and mapped to a file system location within the container.\n\nHere's how it works in detail:\n\n---\n\n### \ud83d\udd39 What is a Volume-Shadow Driver?\n\nThe **volume-shadow driver** is part of Docker's internal storage management system. It allows you to:\n\n- Create a **shadow volume** (a temporary, ephemeral volume)\n- Mount it into a container\n- Use the shadow volume as a **persistent storage** for data that should survive container restarts or be shared between containers\n\nThis is especially useful for:\n\n- Storing application data\n- Logs\n- Configuration files\n- Shared resources between containers\n\n---\n\n### \ud83d\udd39 How It",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.333,
+        "prompt_per_token_ms": 0.21665,
+        "prompt_per_second": 4615.739672282483,
+        "predicted_n": 200,
+        "predicted_ms": 334.844,
+        "predicted_per_token_ms": 1.6826331658291458,
+        "predicted_per_second": 594.3066024775717
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `ulimit --warp` command in Bash is used to control the **maximum number of simultaneous connections** (or \"warps\") that a process can handle.\n\n### What does `ulimit --warp` do?\n\n- **`ulimit`** is a utility in Bash that sets limits on various system resources.\n- **`--warp`** specifically sets the maximum number of warps (connections) that a process can manage at once.\n\n### Example usage:\n\n```bash\nulimit -w 1000 --warp\n```\n\nThis command sets the maximum number of simultaneous connections to **1,000**.\n\n### Common uses:\n- Preventing a script from overwhelming the server with too many connections.\n- Managing resources in web servers or services that handle multiple requests.\n- Controlling how many processes can connect at once.\n\n### Notes:\n- The value is usually set in the shell's environment (e.g., `",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.498,
+        "prompt_per_token_ms": 0.2141904761904762,
+        "prompt_per_second": 4668.741662961316,
+        "predicted_n": 200,
+        "predicted_ms": 335.161,
+        "predicted_per_token_ms": 1.6842261306532664,
+        "predicted_per_second": 593.744498912463
+      }
+    },
+    "ssh_port": {
+      "answer": "22",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.597,
+        "prompt_per_token_ms": 0.17025925925925928,
+        "prompt_per_second": 5873.395692843158,
+        "predicted_n": 2,
+        "predicted_ms": 1.887,
+        "predicted_per_token_ms": 1.887,
+        "predicted_per_second": 529.9417064122946
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.386,
+        "prompt_per_token_ms": 0.18275,
+        "prompt_per_second": 5471.956224350205,
+        "predicted_n": 2,
+        "predicted_ms": 1.827,
+        "predicted_per_token_ms": 1.827,
+        "predicted_per_second": 547.3453749315819
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 4.594,
+        "prompt_per_token_ms": 0.15841379310344827,
+        "prompt_per_second": 6312.581628210709,
+        "predicted_n": 2,
+        "predicted_ms": 1.812,
+        "predicted_per_token_ms": 1.812,
+        "predicted_per_second": 551.8763796909492
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.396,
+        "prompt_per_token_ms": 0.18316666666666667,
+        "prompt_per_second": 5459.50864422202,
+        "predicted_n": 5,
+        "predicted_ms": 7.206,
+        "predicted_per_token_ms": 1.8015,
+        "predicted_per_second": 555.0929780738273
+      }
+    },
+    "sigterm": {
+      "answer": "Termination signal",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.337,
+        "prompt_per_token_ms": 0.2065238095238095,
+        "prompt_per_second": 4842.056721235877,
+        "predicted_n": 4,
+        "predicted_ms": 5.458,
+        "predicted_per_token_ms": 1.8193333333333335,
+        "predicted_per_second": 549.6518871381459
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "Fedora uses DNF.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.179,
+        "prompt_per_token_ms": 0.20895000000000002,
+        "prompt_per_second": 4785.833931562574,
+        "predicted_n": 8,
+        "predicted_ms": 12.115,
+        "predicted_per_token_ms": 1.7307142857142856,
+        "predicted_per_second": 577.7961205117623
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 4.579,
+        "prompt_per_token_ms": 0.12719444444444444,
+        "prompt_per_second": 7861.978597947151,
+        "predicted_n": 7,
+        "predicted_ms": 10.42,
+        "predicted_per_token_ms": 1.7366666666666666,
+        "predicted_per_second": 575.8157389635317
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 4.76,
+        "prompt_per_token_ms": 0.12205128205128205,
+        "prompt_per_second": 8193.27731092437,
+        "predicted_n": 6,
+        "predicted_ms": 8.688,
+        "predicted_per_token_ms": 1.7376,
+        "predicted_per_second": 575.5064456721915
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.247,
+        "prompt_per_token_ms": 0.22352631578947368,
+        "prompt_per_second": 4473.74617376972,
+        "predicted_n": 3,
+        "predicted_ms": 3.66,
+        "predicted_per_token_ms": 1.83,
+        "predicted_per_second": 546.4480874316939
+      }
+    },
+    "mercury_moons": {
+      "answer": "0",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.364,
+        "prompt_per_token_ms": 0.2078095238095238,
+        "prompt_per_second": 4812.098991750688,
+        "predicted_n": 2,
+        "predicted_ms": 1.808,
+        "predicted_per_token_ms": 1.808,
+        "predicted_per_second": 553.0973451327434
+      }
+    }
+  },
+  "Q4_K_M": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 13.473,
+        "prompt_per_token_ms": 0.8982,
+        "prompt_per_second": 1113.33778668448,
+        "predicted_n": 4,
+        "predicted_ms": 7.128,
+        "predicted_per_token_ms": 2.376,
+        "predicted_per_second": 420.87542087542084
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.076,
+        "prompt_per_token_ms": 0.2417142857142857,
+        "prompt_per_second": 4137.115839243499,
+        "predicted_n": 3,
+        "predicted_ms": 3.9,
+        "predicted_per_token_ms": 1.95,
+        "predicted_per_second": 512.8205128205128
+      }
+    },
+    "three_words": {
+      "answer": "Blue water.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 4.705,
+        "prompt_per_token_ms": 0.2613888888888889,
+        "prompt_per_second": 3825.7173219978745,
+        "predicted_n": 4,
+        "predicted_ms": 5.662,
+        "predicted_per_token_ms": 1.8873333333333333,
+        "predicted_per_second": 529.848110208407
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.893,
+        "prompt_per_token_ms": 0.2127391304347826,
+        "prompt_per_second": 4700.592683425301,
+        "predicted_n": 2,
+        "predicted_ms": 1.919,
+        "predicted_per_token_ms": 1.919,
+        "predicted_per_second": 521.1047420531527
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.925,
+        "prompt_per_token_ms": 0.19699999999999998,
+        "prompt_per_second": 5076.1421319796955,
+        "predicted_n": 10,
+        "predicted_ms": 16.536,
+        "predicted_per_token_ms": 1.8373333333333335,
+        "predicted_per_second": 544.2670537010159
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 5.014,
+        "prompt_per_token_ms": 0.17907142857142858,
+        "prompt_per_second": 5584.363781412047,
+        "predicted_n": 3,
+        "predicted_ms": 3.942,
+        "predicted_per_token_ms": 1.971,
+        "predicted_per_second": 507.35667174023337
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.762,
+        "prompt_per_token_ms": 0.23809999999999998,
+        "prompt_per_second": 4199.916001679967,
+        "predicted_n": 3,
+        "predicted_ms": 3.944,
+        "predicted_per_token_ms": 1.972,
+        "predicted_per_second": 507.0993914807302
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain brings a refreshing coolness to the air, cleansing the world around us. Rain can transform landscapes, turning dry paths into shimmering streams.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.641,
+        "prompt_per_token_ms": 0.19451724137931034,
+        "prompt_per_second": 5140.932458783904,
+        "predicted_n": 33,
+        "predicted_ms": 58.224,
+        "predicted_per_token_ms": 1.8195,
+        "predicted_per_second": 549.6015388843089
+      }
+    },
+    "hyphens": {
+      "answer": "C-O-D-E",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.113,
+        "prompt_per_token_ms": 0.21304166666666668,
+        "prompt_per_second": 4693.917465284569,
+        "predicted_n": 5,
+        "predicted_ms": 7.596,
+        "predicted_per_token_ms": 1.899,
+        "predicted_per_second": 526.592943654555
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship into our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.957,
+        "prompt_per_token_ms": 0.20654166666666665,
+        "prompt_per_second": 4841.638087552956,
+        "predicted_n": 12,
+        "predicted_ms": 20.42,
+        "predicted_per_token_ms": 1.8563636363636364,
+        "predicted_per_second": 538.6875612144955
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 6.043,
+        "prompt_per_token_ms": 0.12589583333333335,
+        "prompt_per_second": 7943.074631805394,
+        "predicted_n": 6,
+        "predicted_ms": 9.403,
+        "predicted_per_token_ms": 1.8806,
+        "predicted_per_second": 531.7451877060513
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number is NOT_PRESENT.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 5.541,
+        "prompt_per_token_ms": 0.1259318181818182,
+        "prompt_per_second": 7940.804908861215,
+        "predicted_n": 10,
+        "predicted_ms": 16.577,
+        "predicted_per_token_ms": 1.8418888888888891,
+        "predicted_per_second": 542.9209145201182
+      }
+    },
+    "count_records": {
+      "answer": "1",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 5.582,
+        "prompt_per_token_ms": 0.11164,
+        "prompt_per_second": 8957.36295234683,
+        "predicted_n": 2,
+        "predicted_ms": 1.966,
+        "predicted_per_token_ms": 1.966,
+        "predicted_per_second": 508.646998982706
+      }
+    },
+    "conflict_latest": {
+      "answer": "Alpha",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 6.247,
+        "prompt_per_token_ms": 0.10770689655172414,
+        "prompt_per_second": 9284.456539138788,
+        "predicted_n": 2,
+        "predicted_ms": 1.916,
+        "predicted_per_token_ms": 1.916,
+        "predicted_per_second": 521.9206680584551
+      }
+    },
+    "cite_section": {
+      "answer": "The duration of access logs retention is 400 days, as specified in [S3].  \n[S1]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 6.301,
+        "prompt_per_token_ms": 0.09404477611940298,
+        "prompt_per_second": 10633.232820187271,
+        "predicted_n": 24,
+        "predicted_ms": 41.884,
+        "predicted_per_token_ms": 1.8210434782608695,
+        "predicted_per_second": 549.1357081463088
+      }
+    },
+    "sum_fields": {
+      "answer": "454.25",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 5.223,
+        "prompt_per_token_ms": 0.15827272727272726,
+        "prompt_per_second": 6318.207926479035,
+        "predicted_n": 4,
+        "predicted_ms": 5.789,
+        "predicted_per_token_ms": 1.9296666666666666,
+        "predicted_per_second": 518.2242183451374
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.411,
+        "prompt_per_token_ms": 0.13197560975609754,
+        "prompt_per_second": 7577.157641840696,
+        "predicted_n": 4,
+        "predicted_ms": 5.749,
+        "predicted_per_token_ms": 1.9163333333333332,
+        "predicted_per_second": 521.8298834579928
+      }
+    },
+    "route_dept": {
+      "answer": "HARDWARE",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 5.565,
+        "prompt_per_token_ms": 0.1294186046511628,
+        "prompt_per_second": 7726.864330637915,
+        "predicted_n": 4,
+        "predicted_ms": 5.773,
+        "predicted_per_token_ms": 1.9243333333333332,
+        "predicted_per_second": 519.6604884808592
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 4.732,
+        "prompt_per_token_ms": 0.2783529411764706,
+        "prompt_per_second": 3592.561284868977,
+        "predicted_n": 7,
+        "predicted_ms": 10.978,
+        "predicted_per_token_ms": 1.8296666666666666,
+        "predicted_per_second": 546.5476407360176
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 5.251,
+        "prompt_per_token_ms": 0.15444117647058825,
+        "prompt_per_second": 6474.957151018853,
+        "predicted_n": 18,
+        "predicted_ms": 31.196,
+        "predicted_per_token_ms": 1.8350588235294119,
+        "predicted_per_second": 544.9416591870753
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\": {\"b\": 1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.736,
+        "prompt_per_token_ms": 0.23679999999999998,
+        "prompt_per_second": 4222.972972972973,
+        "predicted_n": 10,
+        "predicted_ms": 16.348,
+        "predicted_per_token_ms": 1.8164444444444443,
+        "predicted_per_second": 550.5260582334231
+      }
+    },
+    "int_array": {
+      "answer": "[1, 2, 3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.112,
+        "prompt_per_token_ms": 0.18933333333333333,
+        "prompt_per_second": 5281.69014084507,
+        "predicted_n": 10,
+        "predicted_ms": 16.571,
+        "predicted_per_token_ms": 1.8412222222222223,
+        "predicted_per_second": 543.117494417959
+      }
+    },
+    "string_array": {
+      "answer": "[\"red\", \"green\", \"blue\"]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.044,
+        "prompt_per_token_ms": 0.1868148148148148,
+        "prompt_per_second": 5352.89452815226,
+        "predicted_n": 10,
+        "predicted_ms": 17.089,
+        "predicted_per_token_ms": 1.8987777777777777,
+        "predicted_per_second": 526.65457311721
+      }
+    },
+    "enum_single": {
+      "answer": "INACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.481,
+        "prompt_per_token_ms": 0.1336829268292683,
+        "prompt_per_second": 7480.386790731619,
+        "predicted_n": 4,
+        "predicted_ms": 5.886,
+        "predicted_per_token_ms": 1.962,
+        "predicted_per_second": 509.683995922528
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 5.684,
+        "prompt_per_token_ms": 0.11145098039215687,
+        "prompt_per_second": 8972.554539057002,
+        "predicted_n": 29,
+        "predicted_ms": 50.744,
+        "predicted_per_token_ms": 1.8122857142857143,
+        "predicted_per_second": 551.7893741131957
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\": true}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 4.982,
+        "prompt_per_token_ms": 0.19928,
+        "prompt_per_second": 5018.065034122842,
+        "predicted_n": 6,
+        "predicted_ms": 9.435,
+        "predicted_per_token_ms": 1.887,
+        "predicted_per_second": 529.9417064122946
+      }
+    },
+    "code_block": {
+      "answer": "{\"q\":7}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 5.205,
+        "prompt_per_token_ms": 0.17350000000000002,
+        "prompt_per_second": 5763.688760806916,
+        "predicted_n": 6,
+        "predicted_ms": 9.531,
+        "predicted_per_token_ms": 1.9062000000000001,
+        "predicted_per_second": 524.6039240373518
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 5.261,
+        "prompt_per_token_ms": 0.16440625,
+        "prompt_per_second": 6082.493822467211,
+        "predicted_n": 10,
+        "predicted_ms": 16.492,
+        "predicted_per_token_ms": 1.8324444444444445,
+        "predicted_per_second": 545.719136551055
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 5.695,
+        "prompt_per_token_ms": 0.11166666666666668,
+        "prompt_per_second": 8955.223880597014,
+        "predicted_n": 25,
+        "predicted_ms": 43.529,
+        "predicted_per_token_ms": 1.8137083333333335,
+        "predicted_per_second": 551.3565668864435
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The **`fastjsonify2`** package is a Python library designed to provide **fast JSON serialization and deserialization**. It is built on top of the popular `fastjson` library but includes improvements for performance, especially in handling large datasets or complex data structures.\n\n### Key Features of `fastjsonify2`:\n\n- **Fast JSON Serialization/Deserialization**: Optimized for speed, making it suitable for high-performance applications.\n- **Supports Complex Data Structures**: Handles nested objects, lists, and other complex Python data types efficiently.\n- **Memory Efficiency**: Designed to minimize memory usage during serialization/deserialization.\n- **Customizable Serialization Options**: Allows users to customize how data is converted to JSON (e.g., setting field names, handling missing values, etc.).\n\n### Use Cases:\n- Converting Python objects (like dictionaries and lists) into JSON strings quickly.\n- Des",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.819,
+        "prompt_per_token_ms": 0.24095,
+        "prompt_per_second": 4150.238638721727,
+        "predicted_n": 200,
+        "predicted_ms": 360.078,
+        "predicted_per_token_ms": 1.809437185929648,
+        "predicted_per_second": 552.6580352034838
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "The `--auto-balance-moon` flag in `rsync` is used to automatically adjust the file sizes during the copying process.\n\n### What it does:\n- **Balances file sizes** between the source and destination.\n- When a file in the destination is larger than the corresponding file in the source, `rsync` will copy the smaller file to the destination.\n- This helps avoid large file transfers and ensures that the destination files are as close in size as possible.\n\n### Example:\nIf you have a file in the source that's 10MB and a file in the destination is 5MB, `rsync --auto-balance-moon` will copy the 5MB file to the destination, even if it means copying multiple smaller files.\n\n### Use case:\nThis is particularly useful when transferring large files or when you want to optimize network bandwidth or disk space usage.\n\nLet me know if you want an example command!",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.3,
+        "prompt_per_token_ms": 0.212,
+        "prompt_per_second": 4716.981132075472,
+        "predicted_n": 196,
+        "predicted_ms": 350.215,
+        "predicted_per_token_ms": 1.7959743589743589,
+        "predicted_per_second": 556.8008223519838
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method that was introduced in **ES2019** (ECMAScript 2019) in the JavaScript standard. It's used to **remove duplicates from an array**, while preserving the order of elements.\n\n### Purpose:\n- It removes duplicate values from an array.\n- It returns a new array with unique values, maintaining the original order.\n\n### Syntax:\n```javascript\nArray.prototype.snorlax(iterable)\n```\n\n### Example:\n```javascript\nconst arr = [1, 2, 2, 3, 4, 4, 5];\nconst uniqueArr = arr.snorlax(arr);\nconsole.log(uniqueArr); // Output: [1, 2, 3, 4, 5]\n```\n\n### Notes:\n- It only removes **value duplicates** (i.e., values that are the same).\n- It does **not**",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.044,
+        "prompt_per_token_ms": 0.21930434782608693,
+        "prompt_per_second": 4559.873116574147,
+        "predicted_n": 200,
+        "predicted_ms": 357.57,
+        "predicted_per_token_ms": 1.7968341708542712,
+        "predicted_per_second": 556.5343848756887
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora**, the `/etc/netdaemon.conf` file is used to configure the NetDaemon service. This file determines how NetDaemon starts, what services it listens for, and other network-related settings.\n\nHere are some **common settings** you might want to include in `/etc/netdaemon.conf`:\n\n---\n\n### \u2705 Basic Settings\n\n```ini\n[global]\nnet.daemon = true\nnet.interface = eth0  # or your interface name\nnet.ipv4.ip_forward = yes\nnet.ipv6.ip_forward = yes\nnet.ipv6.no_ip = no\nnet.ipv6.loopback = yes\n\n[services]\n# Start NetDaemon service\nnet.daemon_service = net.daemon\n\n# Enable or disable services\nnet.daemon_net = yes  # Enables NetDaemon\n",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.143,
+        "prompt_per_token_ms": 0.21429166666666666,
+        "prompt_per_second": 4666.537040637761,
+        "predicted_n": 200,
+        "predicted_ms": 355.96,
+        "predicted_per_token_ms": 1.7887437185929647,
+        "predicted_per_second": 559.051578829082
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically at boot, follow these steps:\n\n---\n\n### **1. Install the Jelly Service**\nFirst, ensure you have the Jelly package installed. If not, install it using your package manager:\n\n- **Debian/Ubuntu-based systems**:\n  ```bash\n  sudo apt update\n  sudo apt install jelly\n  ```\n\n- **Red Hat/CentOS/Fedora-based systems**:\n  ```bash\n  sudo dnf install jelly\n  ```\n\n---\n\n### **2. Configure the Service File**\nEdit the service file to enable Jelly. For example, if you're using a custom configuration:\n\n- **For Debian/Ubuntu**:\n  Create or edit the service file:\n  ```bash\n  sudo nano /etc/systemd/system/jelly.service\n  ```\n",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 5.072,
+        "prompt_per_token_ms": 0.23054545454545455,
+        "prompt_per_second": 4337.539432176656,
+        "predicted_n": 200,
+        "predicted_ms": 357.807,
+        "predicted_per_token_ms": 1.7980251256281408,
+        "predicted_per_second": 556.1657541635575
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "Yes, your **AMD Ryzen processor** supports **TurboCore X9 mode**.\n\n### Here's a breakdown:\n\n- **TurboCore X9** is a feature introduced in AMD Ryzen 5000 series processors (like the Ryzen 5000, Ryzen 7000, etc.).\n- It allows the CPU to dynamically adjust its performance based on workload, improving efficiency and performance under certain conditions.\n- This mode is available on **Ryzen 5000 series** processors (e.g., Ryzen 5000, Ryzen 7000, Ryzen 9000, etc.).\n\n### How to Check:\nYou can check if your processor supports TurboCore X9 by running a command in the terminal or command prompt:\n\n```bash\ncat /sys/class/thermal/thermal_zone_maps.txt | grep -i \"TurboCore\"\n```\n\nOr use AMD's built-in tools like **AMD Ry",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.07,
+        "prompt_per_token_ms": 0.22043478260869567,
+        "prompt_per_second": 4536.489151873767,
+        "predicted_n": 200,
+        "predicted_ms": 358.558,
+        "predicted_per_token_ms": 1.8017989949748743,
+        "predicted_per_second": 555.0008645742112
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to modify the kernel configuration file. Here's a step-by-step guide:\n\n### 1. **Understand the Parameter**\n- `kernel.moonwalk` is used for **moonwalking**, which is a feature in some Linux kernels (like those from the OpenWrt or certain embedded systems) that allows the kernel to dynamically adjust its behavior during runtime.\n- It's typically set via the `CONFIG_MOONWALK` parameter.\n\n### 2. **Edit the Kernel Configuration**\nYou can edit the configuration file using a text editor. The exact file depends on your Linux distribution and kernel version.\n\n#### For Debian/Ubuntu-based systems:\n- Locate the kernel config file:  \n  `/etc/default/kernel`\n- Edit it with `sudo nano /etc/default/kernel` or similar.\n- Add",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.075,
+        "prompt_per_token_ms": 0.22065217391304348,
+        "prompt_per_second": 4532.019704433497,
+        "predicted_n": 200,
+        "predicted_ms": 357.405,
+        "predicted_per_token_ms": 1.796005025125628,
+        "predicted_per_second": 556.7913151746619
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel controls whether the PENGUIN rainbow effect is enabled in the terminal.\n\n### Details:\n\n- **PENGUIN** is a terminal colorizer that displays text in rainbow colors.\n- The `CONFIG_RAINBOW_PENGUIN` option enables this feature when used with the `penguin` command.\n- When set, it will display terminal output in rainbow colors, which can be useful for debugging or enhancing readability.\n\n### Usage:\n\nTo enable PENGUIN:\n```bash\necho \"Hello World\" | penguin -R\n```\n\nTo disable it:\n```bash\nCONFIG_RAINBOW_PENGUIN = 0\n```\n\n### Summary:\n- **Controls:** Terminal colorization (rainbow effect).\n- **Purpose:** Enhances readability of text in the terminal by displaying it in",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 5.089,
+        "prompt_per_token_ms": 0.18175000000000002,
+        "prompt_per_second": 5502.063273727647,
+        "predicted_n": 200,
+        "predicted_ms": 358.597,
+        "predicted_per_token_ms": 1.8019949748743718,
+        "predicted_per_second": 554.9405042429246
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "In **GIMP**, the **Liquidize** filter is available in the **\"Effects\"** panel. Specifically, it can be found under:\n\n- **Filter > Liquify**\n\nThis effect allows you to manipulate the shape of an image by stretching, compressing, or deforming it in various ways.\n\nLet me know if you need help with using it!",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.986,
+        "prompt_per_token_ms": 0.26242105263157894,
+        "prompt_per_second": 3810.6698756518254,
+        "predicted_n": 81,
+        "predicted_ms": 146.314,
+        "predicted_per_token_ms": 1.828925,
+        "predicted_per_second": 546.7692770343235
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The `git commit --dedup-objects` command in Git is used to **remove duplicate commit objects** from the staging area (the temporary workspace where changes are staged before committing). Here's a breakdown of what it does:\n\n### Purpose:\n- **Deduplicate commits** that have the same content but different hashes.\n- This helps avoid unnecessary commits and keeps the commit history clean.\n\n### How it works:\n- When you run `git commit --dedup-objects`, Git compares the contents of each commit object.\n- If two commits have identical content (but different hashes), they are considered duplicates.\n- The command removes these duplicate objects from the staging area, ensuring that only unique commits are committed.\n\n### Example:\nSuppose you have a commit with hash `abc123` and another with the same content but a different hash `abc123`. If you run:\n```bash\ngit commit --dedup-objects\n```\nG",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.954,
+        "prompt_per_token_ms": 0.24769999999999998,
+        "prompt_per_second": 4037.141703673799,
+        "predicted_n": 200,
+        "predicted_ms": 356.249,
+        "predicted_per_token_ms": 1.7901959798994975,
+        "predicted_per_second": 558.5980592226224
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism that allows Docker to manage volumes in a way that abstracts the underlying storage system, providing a consistent interface for developers and users. Here's a breakdown of how it works:\n\n---\n\n### \ud83d\udd0d What is the Volume-Shadow Driver?\n\nThe **Volume-Shadow driver** is part of Docker's internal storage abstraction layer. It acts as a **bridge between Docker's volume management system and the underlying filesystem or storage engine** (like NFS, local mounts, etc.).\n\n- It allows Docker to **abstract away the details** of how volumes are stored.\n- It enables **portability** across different storage backends (e.g., local drives, cloud storage, network shares).\n- It helps in managing **volumes in a way that's independent of the underlying filesystem**.\n\n---\n\n### \ud83e\udde0 How It Works\n\n1. **Volume Creation and Mounting:",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.074,
+        "prompt_per_token_ms": 0.2537,
+        "prompt_per_second": 3941.663381947182,
+        "predicted_n": 200,
+        "predicted_ms": 358.955,
+        "predicted_per_token_ms": 1.8037939698492462,
+        "predicted_per_second": 554.3870401582371
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `ulimit --warp` command in Bash controls the maximum size of the process's address space (memory) that can be allocated by a running shell process.\n\n### What does `ulimit --warp` do?\n\n- **Warp** refers to the maximum amount of memory a process can use.\n- The `--warp` option sets this limit for the current shell session.\n- It is useful when you want to prevent a shell from consuming too much memory, especially in environments with limited resources.\n\n### Example usage:\n\n```bash\nulimit --warp 4096\n```\n\nThis sets the maximum address space (memory) to **4096 KB** (4 MB).\n\n### Default behavior\n\nBy default, Bash limits the warp size to a smaller value (often around 2048 KB or 2 MB), depending on your shell configuration.\n\n### Example:\n\nIf you run:\n\n```bash\nulimit",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.02,
+        "prompt_per_token_ms": 0.23904761904761904,
+        "prompt_per_second": 4183.266932270916,
+        "predicted_n": 200,
+        "predicted_ms": 359.117,
+        "predicted_per_token_ms": 1.8046080402010052,
+        "predicted_per_second": 554.1369525809138
+      }
+    },
+    "ssh_port": {
+      "answer": "2",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.136,
+        "prompt_per_token_ms": 0.19022222222222224,
+        "prompt_per_second": 5257.009345794392,
+        "predicted_n": 2,
+        "predicted_ms": 1.99,
+        "predicted_per_token_ms": 1.99,
+        "predicted_per_second": 502.51256281407035
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.192,
+        "prompt_per_token_ms": 0.21633333333333335,
+        "prompt_per_second": 4622.496147919876,
+        "predicted_n": 2,
+        "predicted_ms": 1.972,
+        "predicted_per_token_ms": 1.972,
+        "predicted_per_second": 507.0993914807302
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.241,
+        "prompt_per_token_ms": 0.18072413793103448,
+        "prompt_per_second": 5533.295172676971,
+        "predicted_n": 2,
+        "predicted_ms": 1.953,
+        "predicted_per_token_ms": 1.953,
+        "predicted_per_second": 512.0327700972862
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.995,
+        "prompt_per_token_ms": 0.208125,
+        "prompt_per_second": 4804.804804804804,
+        "predicted_n": 5,
+        "predicted_ms": 8.127,
+        "predicted_per_token_ms": 2.03175,
+        "predicted_per_second": 492.18653869816654
+      }
+    },
+    "sigterm": {
+      "answer": "Terminal",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.868,
+        "prompt_per_token_ms": 0.23180952380952383,
+        "prompt_per_second": 4313.886606409203,
+        "predicted_n": 3,
+        "predicted_ms": 4.038,
+        "predicted_per_token_ms": 2.019,
+        "predicted_per_second": 495.29470034670624
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "DNF",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.773,
+        "prompt_per_token_ms": 0.23864999999999997,
+        "prompt_per_second": 4190.236748376284,
+        "predicted_n": 3,
+        "predicted_ms": 3.941,
+        "predicted_per_token_ms": 1.9705,
+        "predicted_per_second": 507.4854097944684
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 5.28,
+        "prompt_per_token_ms": 0.14666666666666667,
+        "prompt_per_second": 6818.181818181818,
+        "predicted_n": 7,
+        "predicted_ms": 11.063,
+        "predicted_per_token_ms": 1.8438333333333334,
+        "predicted_per_second": 542.3483684353249
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 5.634,
+        "prompt_per_token_ms": 0.14446153846153847,
+        "prompt_per_second": 6922.2577209797655,
+        "predicted_n": 6,
+        "predicted_ms": 9.238,
+        "predicted_per_token_ms": 1.8476,
+        "predicted_per_second": 541.2426932236415
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.741,
+        "prompt_per_token_ms": 0.24952631578947368,
+        "prompt_per_second": 4007.593334739507,
+        "predicted_n": 3,
+        "predicted_ms": 3.94,
+        "predicted_per_token_ms": 1.97,
+        "predicted_per_second": 507.61421319796955
+      }
+    },
+    "mercury_moons": {
+      "answer": "Zero.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.87,
+        "prompt_per_token_ms": 0.23190476190476192,
+        "prompt_per_second": 4312.11498973306,
+        "predicted_n": 3,
+        "predicted_ms": 3.884,
+        "predicted_per_token_ms": 1.942,
+        "predicted_per_second": 514.9330587023687
+      }
+    }
+  },
+  "UD_Q4_K_XL": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 13.897,
+        "prompt_per_token_ms": 0.9264666666666667,
+        "prompt_per_second": 1079.3696481254947,
+        "predicted_n": 4,
+        "predicted_ms": 7.434,
+        "predicted_per_token_ms": 2.478,
+        "predicted_per_second": 403.5512510088781
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.068,
+        "prompt_per_token_ms": 0.24133333333333332,
+        "prompt_per_second": 4143.64640883978,
+        "predicted_n": 3,
+        "predicted_ms": 3.904,
+        "predicted_per_token_ms": 1.952,
+        "predicted_per_second": 512.2950819672132
+      }
+    },
+    "three_words": {
+      "answer": "Blue water.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 4.71,
+        "prompt_per_token_ms": 0.26166666666666666,
+        "prompt_per_second": 3821.6560509554142,
+        "predicted_n": 4,
+        "predicted_ms": 5.664,
+        "predicted_per_token_ms": 1.888,
+        "predicted_per_second": 529.6610169491526
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 4.898,
+        "prompt_per_token_ms": 0.21295652173913043,
+        "prompt_per_second": 4695.794201714986,
+        "predicted_n": 2,
+        "predicted_ms": 1.935,
+        "predicted_per_token_ms": 1.935,
+        "predicted_per_second": 516.7958656330749
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.051,
+        "prompt_per_token_ms": 0.20204,
+        "prompt_per_second": 4949.514947535141,
+        "predicted_n": 10,
+        "predicted_ms": 16.572,
+        "predicted_per_token_ms": 1.8413333333333333,
+        "predicted_per_second": 543.0847212165098
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 4.958,
+        "prompt_per_token_ms": 0.17707142857142857,
+        "prompt_per_second": 5647.438483259379,
+        "predicted_n": 3,
+        "predicted_ms": 3.937,
+        "predicted_per_token_ms": 1.9685,
+        "predicted_per_second": 508.00101600203203
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.772,
+        "prompt_per_token_ms": 0.2386,
+        "prompt_per_second": 4191.114836546521,
+        "predicted_n": 3,
+        "predicted_ms": 3.896,
+        "predicted_per_token_ms": 1.948,
+        "predicted_per_second": 513.347022587269
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain brings a refreshing coolness to the air, cleansing the world around us. Rain can transform landscapes, turning dry paths into shimmering streams.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.452,
+        "prompt_per_token_ms": 0.188,
+        "prompt_per_second": 5319.148936170213,
+        "predicted_n": 33,
+        "predicted_ms": 58.087,
+        "predicted_per_token_ms": 1.81521875,
+        "predicted_per_second": 550.8977912441682
+      }
+    },
+    "hyphens": {
+      "answer": "C-O-D-E",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.973,
+        "prompt_per_token_ms": 0.20720833333333333,
+        "prompt_per_second": 4826.060727930826,
+        "predicted_n": 5,
+        "predicted_ms": 7.729,
+        "predicted_per_token_ms": 1.93225,
+        "predicted_per_second": 517.5313753396299
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship into our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.028,
+        "prompt_per_token_ms": 0.2095,
+        "prompt_per_second": 4773.269689737471,
+        "predicted_n": 12,
+        "predicted_ms": 20.403,
+        "predicted_per_token_ms": 1.8548181818181817,
+        "predicted_per_second": 539.1364015095819
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 5.964,
+        "prompt_per_token_ms": 0.12425000000000001,
+        "prompt_per_second": 8048.289738430583,
+        "predicted_n": 6,
+        "predicted_ms": 9.29,
+        "predicted_per_token_ms": 1.8579999999999999,
+        "predicted_per_second": 538.2131324004306
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number is NOT_PRESENT.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 5.677,
+        "prompt_per_token_ms": 0.12902272727272726,
+        "prompt_per_second": 7750.572485467677,
+        "predicted_n": 10,
+        "predicted_ms": 16.455,
+        "predicted_per_token_ms": 1.8283333333333331,
+        "predicted_per_second": 546.9462169553328
+      }
+    },
+    "count_records": {
+      "answer": "1",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 5.549,
+        "prompt_per_token_ms": 0.11098000000000001,
+        "prompt_per_second": 9010.632546404757,
+        "predicted_n": 2,
+        "predicted_ms": 1.965,
+        "predicted_per_token_ms": 1.965,
+        "predicted_per_second": 508.90585241730275
+      }
+    },
+    "conflict_latest": {
+      "answer": "Bravo",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 6.226,
+        "prompt_per_token_ms": 0.10734482758620689,
+        "prompt_per_second": 9315.77256665596,
+        "predicted_n": 3,
+        "predicted_ms": 4.301,
+        "predicted_per_token_ms": 2.1505,
+        "predicted_per_second": 465.0081376424087
+      }
+    },
+    "cite_section": {
+      "answer": "The access logs are retained for 400 days, as specified in [S3].  \n[S1]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 6.177,
+        "prompt_per_token_ms": 0.09219402985074626,
+        "prompt_per_second": 10846.689331390642,
+        "predicted_n": 23,
+        "predicted_ms": 40.628,
+        "predicted_per_token_ms": 1.8467272727272728,
+        "predicted_per_second": 541.4984739588461
+      }
+    },
+    "sum_fields": {
+      "answer": "245.25",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 5.449,
+        "prompt_per_token_ms": 0.1651212121212121,
+        "prompt_per_second": 6056.157093044596,
+        "predicted_n": 4,
+        "predicted_ms": 5.876,
+        "predicted_per_token_ms": 1.9586666666666668,
+        "predicted_per_second": 510.5513955071477
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.413,
+        "prompt_per_token_ms": 0.13202439024390245,
+        "prompt_per_second": 7574.358026972103,
+        "predicted_n": 4,
+        "predicted_ms": 5.767,
+        "predicted_per_token_ms": 1.9223333333333334,
+        "predicted_per_second": 520.2011444425177
+      }
+    },
+    "route_dept": {
+      "answer": "HARDWARE",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 5.596,
+        "prompt_per_token_ms": 0.13013953488372093,
+        "prompt_per_second": 7684.060042887777,
+        "predicted_n": 4,
+        "predicted_ms": 5.953,
+        "predicted_per_token_ms": 1.9843333333333335,
+        "predicted_per_second": 503.94758945069714
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 4.737,
+        "prompt_per_token_ms": 0.2786470588235294,
+        "prompt_per_second": 3588.7692632467806,
+        "predicted_n": 7,
+        "predicted_ms": 11.174,
+        "predicted_per_token_ms": 1.8623333333333332,
+        "predicted_per_second": 536.9608018614642
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 5.306,
+        "prompt_per_token_ms": 0.15605882352941178,
+        "prompt_per_second": 6407.840180927253,
+        "predicted_n": 18,
+        "predicted_ms": 31.308,
+        "predicted_per_token_ms": 1.8416470588235294,
+        "predicted_per_second": 542.9922064648014
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\": {\"b\": 1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.751,
+        "prompt_per_token_ms": 0.23755,
+        "prompt_per_second": 4209.640075773521,
+        "predicted_n": 10,
+        "predicted_ms": 16.482,
+        "predicted_per_token_ms": 1.8313333333333333,
+        "predicted_per_second": 546.0502366217693
+      }
+    },
+    "int_array": {
+      "answer": "[1, 2, 3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.217,
+        "prompt_per_token_ms": 0.1932222222222222,
+        "prompt_per_second": 5175.388154111559,
+        "predicted_n": 10,
+        "predicted_ms": 16.7,
+        "predicted_per_token_ms": 1.8555555555555554,
+        "predicted_per_second": 538.9221556886228
+      }
+    },
+    "string_array": {
+      "answer": "[\"red\", \"green\", \"blue\"]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 4.978,
+        "prompt_per_token_ms": 0.18437037037037035,
+        "prompt_per_second": 5423.865006026517,
+        "predicted_n": 10,
+        "predicted_ms": 16.626,
+        "predicted_per_token_ms": 1.8473333333333335,
+        "predicted_per_second": 541.3208228076506
+      }
+    },
+    "enum_single": {
+      "answer": "INACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.424,
+        "prompt_per_token_ms": 0.13229268292682927,
+        "prompt_per_second": 7558.997050147492,
+        "predicted_n": 4,
+        "predicted_ms": 5.811,
+        "predicted_per_token_ms": 1.937,
+        "predicted_per_second": 516.2622612287042
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 5.774,
+        "prompt_per_token_ms": 0.1132156862745098,
+        "prompt_per_second": 8832.698302736404,
+        "predicted_n": 29,
+        "predicted_ms": 50.539,
+        "predicted_per_token_ms": 1.8049642857142858,
+        "predicted_per_second": 554.0275826589367
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\": true}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.164,
+        "prompt_per_token_ms": 0.20656,
+        "prompt_per_second": 4841.208365608056,
+        "predicted_n": 6,
+        "predicted_ms": 9.412,
+        "predicted_per_token_ms": 1.8824,
+        "predicted_per_second": 531.2367190820229
+      }
+    },
+    "code_block": {
+      "answer": "{\"q\":7}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 5.206,
+        "prompt_per_token_ms": 0.17353333333333334,
+        "prompt_per_second": 5762.581636573184,
+        "predicted_n": 6,
+        "predicted_ms": 9.471,
+        "predicted_per_token_ms": 1.8942,
+        "predicted_per_second": 527.9273571956498
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 5.177,
+        "prompt_per_token_ms": 0.16178125,
+        "prompt_per_second": 6181.186015066642,
+        "predicted_n": 10,
+        "predicted_ms": 16.425,
+        "predicted_per_token_ms": 1.8250000000000002,
+        "predicted_per_second": 547.945205479452
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 5.63,
+        "prompt_per_token_ms": 0.1103921568627451,
+        "prompt_per_second": 9058.614564831261,
+        "predicted_n": 25,
+        "predicted_ms": 43.386,
+        "predicted_per_token_ms": 1.8077500000000002,
+        "predicted_per_second": 553.1738348776103
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The **`fastjsonify2`** package is a Python library designed to provide **fast JSON serialization and deserialization**. It is built on top of the popular `fastjson` library but includes improvements for performance, especially when dealing with large datasets or high-throughput applications.\n\n### Key Features of `fastjsonify2`:\n\n- **Fast JSON Serialization/Deserialization**: Optimized for speed, making it suitable for applications that require high-performance data handling.\n- **Supports Complex Data Structures**: Handles nested objects, lists, and other complex Python data structures efficiently.\n- **Integration with FastJSON**: Built on top of the `fastjson` library, which is known for its speed and efficiency.\n- **Customizable Serialization**: Allows customization of how data is serialized to JSON, including support for custom encoders.\n\n### Common Use Cases:\n- Converting Python objects (like dictionaries or",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.794,
+        "prompt_per_token_ms": 0.23969999999999997,
+        "prompt_per_second": 4171.881518564873,
+        "predicted_n": 200,
+        "predicted_ms": 359.686,
+        "predicted_per_token_ms": 1.807467336683417,
+        "predicted_per_second": 553.2603437442659
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "In `rsync`, the `--auto-balance-moon` flag is used to automatically adjust the file sizes during the synchronization process. This feature helps to ensure that the files being synced are of consistent size, which can be particularly useful when dealing with large files or when you want to avoid potential issues related to file size mismatches.\n\nWhen `--auto-balance-moon` is enabled, `rsync` will:\n\n1. **Balance File Sizes:** It will adjust the sizes of files being transferred so that the total size of the files being synced remains consistent with the expected size. This means that if a file is larger than the expected size, it will be adjusted to fit within the expected size, and vice versa.\n\n2. **Improve Efficiency:** By balancing file sizes, `rsync` can optimize the transfer process, potentially reducing the number of transfers needed and improving overall performance.\n\n3. **Maintain Consistency",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.171,
+        "prompt_per_token_ms": 0.20684000000000002,
+        "prompt_per_second": 4834.654805646876,
+        "predicted_n": 200,
+        "predicted_ms": 358.319,
+        "predicted_per_token_ms": 1.8005979899497488,
+        "predicted_per_second": 555.3710520513844
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method that returns the **last element** of an array, but with a twist: it **returns the last element as a string** if the array is empty or has only one element.\n\n### Syntax:\n```javascript\nArray.prototype.snorlax(arr)\n```\n\n### Behavior:\n- If the array is **empty** (`[]`), it returns `\"\"`.\n- If the array has **one element**, it returns that element as a string.\n- Otherwise, it returns the last element as a string.\n\n### Example:\n\n```javascript\nconst arr = [1, 2, 3];\nconsole.log(arr.snorlax(arr)); // Output: \"3\"\n\nconst emptyArr = [];\nconsole.log(emptyArr.snorlax(emptyArr)); // Output: \"\"\n\nconst singleElementArr = [42];\nconsole.log(snorlax(singleElementArr)); //",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.06,
+        "prompt_per_token_ms": 0.21999999999999997,
+        "prompt_per_second": 4545.454545454546,
+        "predicted_n": 200,
+        "predicted_ms": 357.446,
+        "predicted_per_token_ms": 1.7962110552763821,
+        "predicted_per_second": 556.7274497406601
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora**, the `/etc/netdaemon.conf` file is used to configure the behavior of network daemons (like `ss`, `netstat`, `ip`, etc.). It allows you to customize how these services start, what ports they listen on, and other network-related settings.\n\nHere are some **common settings** that belong in `/etc/netdaemon.conf` on Fedora:\n\n---\n\n### \u2705 Basic Settings\n\n```ini\n[global]\n# General settings for all network daemons\nlisten-address = 0.0.0.0\nlog-format = \"%n %s\"\n```\n\n---\n\n### \ud83d\udd27 Port Configuration\n\n```ini\n[ss]\n# SS daemon configuration\nport = 80\n# or any other port you want to use\n```\n\n```ini\n[netstat]\n# Netstat daemon settings\n# You can change the default port it listens",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.128,
+        "prompt_per_token_ms": 0.21366666666666667,
+        "prompt_per_second": 4680.1872074882995,
+        "predicted_n": 200,
+        "predicted_ms": 360.19,
+        "predicted_per_token_ms": 1.81,
+        "predicted_per_second": 552.4861878453039
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically at boot, follow these steps:\n\n---\n\n### **1. Install the Jelly Service**\nFirst, ensure you have the Jelly package installed. If it's not already installed, run:\n\n```bash\nsudo apt update\nsudo apt install jelly\n```\n\n---\n\n### **2. Configure the Service File**\nEdit the service file to enable Jelly. By default, systemd may not recognize Jelly as a service. You can either:\n\n#### **Option A: Use `systemctl` to enable Jelly**\nIf you want to enable Jelly immediately (without waiting for boot), use:\n\n```bash\nsudo systemctl enable jelly\n```\n\nThis will start the Jelly service at boot.\n\n#### **Option B: Edit the Service File Manually**\nEdit the `/etc/systemd/system/jelly.service` file:\n\n```b",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 5.116,
+        "prompt_per_token_ms": 0.23254545454545453,
+        "prompt_per_second": 4300.234558248631,
+        "predicted_n": 200,
+        "predicted_ms": 357.508,
+        "predicted_per_token_ms": 1.7965226130653265,
+        "predicted_per_second": 556.6309005672601
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "Yes, your **AMD Ryzen processor** supports **TurboCore X9 mode**.\n\n### Details:\n- **TurboCore X9** is a feature available on certain AMD Ryzen processors (such as the Ryzen 5000 series and some Ryzen 7000 series models) that allows the CPU to dynamically adjust its performance based on workload.\n- This mode can help improve performance in specific scenarios, such as gaming or multitasking.\n\n### How to Check:\nYou can check if your processor supports TurboCore X9 by running a command in your system settings or using a tool like **AMD Ryzen Master** or **Intel Performance Monitor** (if available).\n\nLet me know if you need help checking your specific model!",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.104,
+        "prompt_per_token_ms": 0.22191304347826088,
+        "prompt_per_second": 4506.2695924764885,
+        "predicted_n": 159,
+        "predicted_ms": 283.887,
+        "predicted_per_token_ms": 1.796753164556962,
+        "predicted_per_second": 556.5594761295868
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to adjust the value in your system's configuration file. Here's how you can do it:\n\n### 1. **Understand the Parameter**\n- `kernel.moonwalk` is a kernel parameter that controls whether the kernel should attempt to \"walk\" into a process's memory space (similar to what happens during a kill or kill-on-signal).\n- It is typically used in systems with certain security or privilege requirements, such as in some Linux distributions or when dealing with specific kernel modules.\n\n### 2. **Locate the Configuration File**\nThe location of the configuration file depends on your system:\n\n#### On **Ubuntu/Debian-based systems**:\n- The file is usually located at:\n  ```\n  /etc/sysctl.conf\n  ```\n- Or in some distributions, it might be in `/etc/sysconfig.conf`.\n\n#### On",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.096,
+        "prompt_per_token_ms": 0.22156521739130436,
+        "prompt_per_second": 4513.343799058084,
+        "predicted_n": 200,
+        "predicted_ms": 358.734,
+        "predicted_per_token_ms": 1.8026834170854271,
+        "predicted_per_second": 554.7285732604103
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel controls whether the PENGUIN rainbow effect is enabled in the terminal.\n\n### Details:\n\n- **PENGUIN** is a terminal colorization feature that displays terminal colors (like rainbow) when running in certain modes.\n- **RAINBOW** is a specific variant of PENGUIN that uses a more complex color palette, often with gradients and transitions.\n- The `CONFIG_RAINBOW_PENGUIN` option enables this advanced colorization mode.\n\n### Usage:\nYou can enable it by adding the following to your kernel configuration:\n\n```bash\nCONFIG_RAINBOW_PENGUIN=y\n```\n\nOr, if you're using a package manager like `apt`, you can install it with:\n\n```bash\nsudo apt install penguin-pipe\n```\n\n### Summary:\n- **Purpose:**",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 5.149,
+        "prompt_per_token_ms": 0.18389285714285714,
+        "prompt_per_second": 5437.949116333269,
+        "predicted_n": 200,
+        "predicted_ms": 359.52,
+        "predicted_per_token_ms": 1.8066331658291457,
+        "predicted_per_second": 553.5157988429017
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "In **GIMP**, the **Liquidize** filter is part of the **Image Processing** menu. Specifically, it can be accessed under:\n\n- **Filter > Liquify**\n\nThis is the main menu that includes the Liquidize filter among other popular filters like \"Perspective,\" \"Crop,\" and more.\n\nLet me know if you need help with any specific steps using Liquidize!",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.927,
+        "prompt_per_token_ms": 0.25931578947368417,
+        "prompt_per_second": 3856.30200933631,
+        "predicted_n": 85,
+        "predicted_ms": 152.879,
+        "predicted_per_token_ms": 1.8199880952380951,
+        "predicted_per_second": 549.4541434729426
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The command `git commit --dedup-objects` is used in Git to **remove duplicate commit objects** from the staging area (the temporary workspace where changes are prepared for commit).\n\n### What does it do?\n\n- **Deduping objects** means removing any commit objects that have been staged multiple times.\n- This is useful when you want to ensure that each commit in your history is unique, especially if you're working with a large number of commits or trying to keep your commit history clean.\n\n### Example:\n\nSuppose you have a commit that was staged multiple times (e.g., `git add -m \"message\"`), and you run:\n\n```bash\ngit commit --dedup-objects\n```\n\nThis will remove any duplicate commit objects from the staging area, so only the last version of each commit is kept.\n\n### Use Cases:\n- Clean up your working directory before committing.\n- Avoid having multiple identical commits in your history",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.171,
+        "prompt_per_token_ms": 0.25855,
+        "prompt_per_second": 3867.7238445175008,
+        "predicted_n": 200,
+        "predicted_ms": 361.849,
+        "predicted_per_token_ms": 1.8183366834170853,
+        "predicted_per_second": 549.9531572562036
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism used to manage volumes in Docker containers, particularly when dealing with **persistent storage** or **networked storage**. It works by **shadowing** the container's filesystem, allowing data to be stored outside the container's filesystem and accessed via a named volume.\n\nHere's how it works:\n\n---\n\n### \ud83d\udd0d Overview of Volume-Shadow Driver\n\nThe **volume-shadow driver** is part of Docker's internal storage abstraction layer. It allows containers to access filesystems that are not directly mounted or created by the container's filesystem. Instead, it uses a **shadow volume** that maps to an actual storage location (like a network share or local disk).\n\n---\n\n### \ud83e\udde0 How It Works\n\n1. **Container Mounts and Filesystems:**\n   - When you mount a directory in a container using `docker mount`, Docker creates a filesystem inside",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.89,
+        "prompt_per_token_ms": 0.2445,
+        "prompt_per_second": 4089.97955010225,
+        "predicted_n": 200,
+        "predicted_ms": 357.906,
+        "predicted_per_token_ms": 1.7985226130653267,
+        "predicted_per_second": 556.0119137427146
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `ulimit --warp` command in Bash controls the maximum size of the process's address space (memory) that can be allocated by a running shell process.\n\n### What is `ulimit --warp`?\n\n- **`ulimit`** is a built-in utility in Bash that sets various limits on shell behavior.\n- **`--warp`** specifically sets the maximum amount of memory (in kilobytes) that a shell process can use for its address space.\n\n### Example Usage\n\n```bash\nulimit --warp 4096\n```\n\nThis sets the maximum address space to **4096 KB** (4 MB).\n\n### How it works\n\n- When you run a shell process, it will check `ulimit --warp`.\n- If the requested memory exceeds this limit, the shell will refuse to allocate more memory.\n- This is useful for preventing processes from consuming too much memory.\n\n### Common Use Cases\n\n-",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.993,
+        "prompt_per_token_ms": 0.23776190476190479,
+        "prompt_per_second": 4205.888243540957,
+        "predicted_n": 200,
+        "predicted_ms": 357.759,
+        "predicted_per_token_ms": 1.79778391959799,
+        "predicted_per_second": 556.2403741065913
+      }
+    },
+    "ssh_port": {
+      "answer": "2",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.091,
+        "prompt_per_token_ms": 0.18855555555555556,
+        "prompt_per_second": 5303.476723629935,
+        "predicted_n": 2,
+        "predicted_ms": 1.954,
+        "predicted_per_token_ms": 1.954,
+        "predicted_per_second": 511.77072671443193
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.889,
+        "prompt_per_token_ms": 0.20370833333333335,
+        "prompt_per_second": 4908.979341378605,
+        "predicted_n": 2,
+        "predicted_ms": 1.932,
+        "predicted_per_token_ms": 1.932,
+        "predicted_per_second": 517.5983436853003
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.105,
+        "prompt_per_token_ms": 0.17603448275862071,
+        "prompt_per_second": 5680.705190989226,
+        "predicted_n": 2,
+        "predicted_ms": 1.946,
+        "predicted_per_token_ms": 1.946,
+        "predicted_per_second": 513.874614594039
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 4.9,
+        "prompt_per_token_ms": 0.2041666666666667,
+        "prompt_per_second": 4897.959183673469,
+        "predicted_n": 5,
+        "predicted_ms": 7.701,
+        "predicted_per_token_ms": 1.92525,
+        "predicted_per_second": 519.4130632385405
+      }
+    },
+    "sigterm": {
+      "answer": "Terminal",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.906,
+        "prompt_per_token_ms": 0.23361904761904762,
+        "prompt_per_second": 4280.472890338362,
+        "predicted_n": 3,
+        "predicted_ms": 3.985,
+        "predicted_per_token_ms": 1.9925,
+        "predicted_per_second": 501.88205771643663
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "DNF",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 4.728,
+        "prompt_per_token_ms": 0.2364,
+        "prompt_per_second": 4230.1184433164135,
+        "predicted_n": 3,
+        "predicted_ms": 3.952,
+        "predicted_per_token_ms": 1.976,
+        "predicted_per_second": 506.07287449392715
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 5.221,
+        "prompt_per_token_ms": 0.14502777777777778,
+        "prompt_per_second": 6895.2307986975675,
+        "predicted_n": 7,
+        "predicted_ms": 11.085,
+        "predicted_per_token_ms": 1.8475000000000001,
+        "predicted_per_second": 541.2719891745602
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 5.395,
+        "prompt_per_token_ms": 0.13833333333333334,
+        "prompt_per_second": 7228.915662650603,
+        "predicted_n": 6,
+        "predicted_ms": 9.295,
+        "predicted_per_token_ms": 1.859,
+        "predicted_per_second": 537.9236148466917
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 4.731,
+        "prompt_per_token_ms": 0.249,
+        "prompt_per_second": 4016.0642570281125,
+        "predicted_n": 3,
+        "predicted_ms": 3.928,
+        "predicted_per_token_ms": 1.964,
+        "predicted_per_second": 509.16496945010186
+      }
+    },
+    "mercury_moons": {
+      "answer": "Zero.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 4.881,
+        "prompt_per_token_ms": 0.23242857142857143,
+        "prompt_per_second": 4302.3970497848795,
+        "predicted_n": 3,
+        "predicted_ms": 3.923,
+        "predicted_per_token_ms": 1.9615,
+        "predicted_per_second": 509.81391791995924
+      }
+    }
+  },
+  "Q5_K_M": {
+    "exact_violet": {
+      "answer": "VIOLET",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 15,
+        "prompt_ms": 14.04,
+        "prompt_per_token_ms": 0.9359999999999999,
+        "prompt_per_second": 1068.3760683760686,
+        "predicted_n": 4,
+        "predicted_ms": 7.501,
+        "predicted_per_token_ms": 2.5003333333333333,
+        "predicted_per_second": 399.9466737768297
+      }
+    },
+    "lowercase_word": {
+      "answer": "pineapple",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.285,
+        "prompt_per_token_ms": 0.25166666666666665,
+        "prompt_per_second": 3973.5099337748343,
+        "predicted_n": 3,
+        "predicted_ms": 4.214,
+        "predicted_per_token_ms": 2.107,
+        "predicted_per_second": 474.6084480303749
+      }
+    },
+    "three_words": {
+      "answer": "Blue water.",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 18,
+        "prompt_ms": 4.953,
+        "prompt_per_token_ms": 0.27516666666666667,
+        "prompt_per_second": 3634.1611144760745,
+        "predicted_n": 4,
+        "predicted_ms": 6.129,
+        "predicted_per_token_ms": 2.0429999999999997,
+        "predicted_per_second": 489.47626040137055
+      }
+    },
+    "single_digit": {
+      "answer": "3",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.427,
+        "prompt_per_token_ms": 0.23595652173913043,
+        "prompt_per_second": 4238.06891468583,
+        "predicted_n": 2,
+        "predicted_ms": 2.092,
+        "predicted_per_token_ms": 2.092,
+        "predicted_per_second": 478.0114722753346
+      }
+    },
+    "comma_list": {
+      "answer": "1,2,3,4,5",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.368,
+        "prompt_per_token_ms": 0.21472000000000002,
+        "prompt_per_second": 4657.2280178837555,
+        "predicted_n": 10,
+        "predicted_ms": 18.014,
+        "predicted_per_token_ms": 2.0015555555555555,
+        "predicted_per_second": 499.611413345176
+      }
+    },
+    "yes_no": {
+      "answer": "YES",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 5.286,
+        "prompt_per_token_ms": 0.18878571428571428,
+        "prompt_per_second": 5297.010972379871,
+        "predicted_n": 3,
+        "predicted_ms": 4.377,
+        "predicted_per_token_ms": 2.1885,
+        "predicted_per_second": 456.93397304089564
+      }
+    },
+    "backwards": {
+      "answer": "ananab",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.014,
+        "prompt_per_token_ms": 0.25070000000000003,
+        "prompt_per_second": 3988.831272437176,
+        "predicted_n": 3,
+        "predicted_ms": 4.175,
+        "predicted_per_token_ms": 2.0875,
+        "predicted_per_second": 479.0419161676647
+      }
+    },
+    "two_sentences": {
+      "answer": "Rain brings a refreshing change to the atmosphere, cleansing the air and refreshing the earth. It can be both soothing and invigorating, depending on the intensity of the downpour.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.847,
+        "prompt_per_token_ms": 0.20162068965517244,
+        "prompt_per_second": 4959.80844877715,
+        "predicted_n": 41,
+        "predicted_ms": 78.641,
+        "predicted_per_token_ms": 1.9660250000000001,
+        "predicted_per_second": 508.6405310207144
+      }
+    },
+    "hyphens": {
+      "answer": "C-O-D-E",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.323,
+        "prompt_per_token_ms": 0.2217916666666667,
+        "prompt_per_second": 4508.735675371031,
+        "predicted_n": 5,
+        "predicted_ms": 8.285,
+        "predicted_per_token_ms": 2.07125,
+        "predicted_per_second": 482.8002414001207
+      }
+    },
+    "avoid_word": {
+      "answer": "Pets bring joy and companionship to our lives.",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.254,
+        "prompt_per_token_ms": 0.21891666666666665,
+        "prompt_per_second": 4567.948229920062,
+        "predicted_n": 12,
+        "predicted_ms": 22.023,
+        "predicted_per_token_ms": 2.002090909090909,
+        "predicted_per_second": 499.4778186441448
+      }
+    },
+    "field_exact": {
+      "answer": "INV-7734",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 48,
+        "prompt_ms": 6.175,
+        "prompt_per_token_ms": 0.12864583333333332,
+        "prompt_per_second": 7773.27935222672,
+        "predicted_n": 6,
+        "predicted_ms": 10.126,
+        "predicted_per_token_ms": 2.0252,
+        "predicted_per_second": 493.77839225755486
+      }
+    },
+    "absent_field": {
+      "answer": "The phone number for Dana Reeve is not available in the provided record. \n\nNOT_PRESENT",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 44,
+        "prompt_ms": 5.944,
+        "prompt_per_token_ms": 0.1350909090909091,
+        "prompt_per_second": 7402.42261103634,
+        "predicted_n": 22,
+        "predicted_ms": 41.178,
+        "predicted_per_token_ms": 1.9608571428571426,
+        "predicted_per_second": 509.9810578464229
+      }
+    },
+    "count_records": {
+      "answer": "1",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 50,
+        "prompt_ms": 6.08,
+        "prompt_per_token_ms": 0.1216,
+        "prompt_per_second": 8223.684210526315,
+        "predicted_n": 2,
+        "predicted_ms": 2.072,
+        "predicted_per_token_ms": 2.072,
+        "predicted_per_second": 482.6254826254826
+      }
+    },
+    "conflict_latest": {
+      "answer": "bravo",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 58,
+        "prompt_ms": 6.634,
+        "prompt_per_token_ms": 0.1143793103448276,
+        "prompt_per_second": 8742.839915586374,
+        "predicted_n": 3,
+        "predicted_ms": 4.198,
+        "predicted_per_token_ms": 2.099,
+        "predicted_per_second": 476.4173415912339
+      }
+    },
+    "cite_section": {
+      "answer": "[S1] The access logs are retained for 400 days. [S3]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 67,
+        "prompt_ms": 6.587,
+        "prompt_per_token_ms": 0.09831343283582089,
+        "prompt_per_second": 10171.550022772128,
+        "predicted_n": 19,
+        "predicted_ms": 35.209,
+        "predicted_per_token_ms": 1.9560555555555557,
+        "predicted_per_second": 511.23292340026694
+      }
+    },
+    "sum_fields": {
+      "answer": "454.50",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 33,
+        "prompt_ms": 5.505,
+        "prompt_per_token_ms": 0.1668181818181818,
+        "prompt_per_second": 5994.550408719346,
+        "predicted_n": 4,
+        "predicted_ms": 6.26,
+        "predicted_per_token_ms": 2.0866666666666664,
+        "predicted_per_second": 479.23322683706067
+      }
+    },
+    "classify_label": {
+      "answer": "BILLING",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.723,
+        "prompt_per_token_ms": 0.13958536585365852,
+        "prompt_per_second": 7164.074785951425,
+        "predicted_n": 4,
+        "predicted_ms": 6.109,
+        "predicted_per_token_ms": 2.0363333333333333,
+        "predicted_per_second": 491.07873629071867
+      }
+    },
+    "route_dept": {
+      "answer": "HARDWARE",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 43,
+        "prompt_ms": 5.721,
+        "prompt_per_token_ms": 0.13304651162790698,
+        "prompt_per_second": 7516.168502010139,
+        "predicted_n": 4,
+        "predicted_ms": 6.164,
+        "predicted_per_token_ms": 2.0546666666666664,
+        "predicted_per_second": 486.6969500324465
+      }
+    },
+    "exact_json": {
+      "answer": "{\"x\": 2}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 17,
+        "prompt_ms": 5.153,
+        "prompt_per_token_ms": 0.3031176470588235,
+        "prompt_per_second": 3299.0490976130413,
+        "predicted_n": 7,
+        "predicted_ms": 11.991,
+        "predicted_per_token_ms": 1.9985,
+        "predicted_per_second": 500.3752814610958
+      }
+    },
+    "kv_json": {
+      "answer": "{\n  \"name\": \"Mira\",\n  \"age\": 30\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 34,
+        "prompt_ms": 5.541,
+        "prompt_per_token_ms": 0.16297058823529412,
+        "prompt_per_second": 6136.076520483666,
+        "predicted_n": 18,
+        "predicted_ms": 33.835,
+        "predicted_per_token_ms": 1.9902941176470588,
+        "predicted_per_second": 502.4383035318457
+      }
+    },
+    "nested_json": {
+      "answer": "{\"a\": {\"b\": 1}}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.195,
+        "prompt_per_token_ms": 0.25975000000000004,
+        "prompt_per_second": 3849.855630413859,
+        "predicted_n": 10,
+        "predicted_ms": 17.721,
+        "predicted_per_token_ms": 1.969,
+        "predicted_per_second": 507.8720162519045
+      }
+    },
+    "int_array": {
+      "answer": "[\"1\", \"2\", \"3\"]",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.386,
+        "prompt_per_token_ms": 0.19948148148148148,
+        "prompt_per_second": 5012.996658002228,
+        "predicted_n": 10,
+        "predicted_ms": 18.232,
+        "predicted_per_token_ms": 2.025777777777778,
+        "predicted_per_second": 493.6375603334796
+      }
+    },
+    "string_array": {
+      "answer": "[\n  \"red\",\n  \"green\",\n  \"blue\"\n]",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.38,
+        "prompt_per_token_ms": 0.19925925925925925,
+        "prompt_per_second": 5018.587360594795,
+        "predicted_n": 15,
+        "predicted_ms": 27.634,
+        "predicted_per_token_ms": 1.973857142857143,
+        "predicted_per_second": 506.6222769052617
+      }
+    },
+    "enum_single": {
+      "answer": "INACTIVE",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 41,
+        "prompt_ms": 5.937,
+        "prompt_per_token_ms": 0.1448048780487805,
+        "prompt_per_second": 6905.844702711807,
+        "predicted_n": 4,
+        "predicted_ms": 6.237,
+        "predicted_per_token_ms": 2.079,
+        "predicted_per_second": 481.000481000481
+      }
+    },
+    "schema_types": {
+      "answer": "{\n  \"city\": \"Paris\",\n  \"pop_millions\": 2.1,\n  \"capital\": true\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 6.044,
+        "prompt_per_token_ms": 0.11850980392156862,
+        "prompt_per_second": 8438.120450033091,
+        "predicted_n": 29,
+        "predicted_ms": 54.429,
+        "predicted_per_token_ms": 1.9438928571428573,
+        "predicted_per_second": 514.4316448951845
+      }
+    },
+    "no_prose": {
+      "answer": "{\"ok\":true}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.238,
+        "prompt_per_token_ms": 0.20952,
+        "prompt_per_second": 4772.814051164566,
+        "predicted_n": 6,
+        "predicted_ms": 10.094,
+        "predicted_per_token_ms": 2.0187999999999997,
+        "predicted_per_second": 495.3437685753914
+      }
+    },
+    "code_block": {
+      "answer": "{\"q\":7}",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 30,
+        "prompt_ms": 5.532,
+        "prompt_per_token_ms": 0.1844,
+        "prompt_per_second": 5422.99349240781,
+        "predicted_n": 6,
+        "predicted_ms": 10.171,
+        "predicted_per_token_ms": 2.0342,
+        "predicted_per_second": 491.59374692753914
+      }
+    },
+    "bool_field": {
+      "answer": "{\"prime\":false}",
+      "pass": true
+    },
+    "null_field": {
+      "answer": "{\n  \"middle_name\": null\n}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 32,
+        "prompt_ms": 5.462,
+        "prompt_per_token_ms": 0.1706875,
+        "prompt_per_second": 5858.65983156353,
+        "predicted_n": 10,
+        "predicted_ms": 17.728,
+        "predicted_per_token_ms": 1.9697777777777778,
+        "predicted_per_second": 507.67148014440426
+      }
+    },
+    "extract_to_schema": {
+      "answer": "{\"name\": \"Ada Lovelace\", \"age\": 36, \"role\": \"analyst\"}",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 51,
+        "prompt_ms": 5.956,
+        "prompt_per_token_ms": 0.11678431372549021,
+        "prompt_per_second": 8562.793821356616,
+        "predicted_n": 25,
+        "predicted_ms": 46.898,
+        "predicted_per_token_ms": 1.9540833333333334,
+        "predicted_per_second": 511.748901872148
+      }
+    },
+    "package_fastjsonify2": {
+      "answer": "The **`fastjsonify2`** package in Python is a lightweight and efficient library designed to convert Python objects into JSON strings. It is particularly useful for generating human-readable or formatted JSON data, especially when you need to serialize complex Python structures (like dictionaries, lists, and custom objects) into JSON format.\n\n### Key Features of `fastjsonify2`:\n\n- **Fast Performance**: Optimized for speed, making it suitable for high-performance applications.\n- **Human-Readable Output**: Produces JSON strings that are easy to read and understand.\n- **Supports Complex Data Structures**: Can handle nested dictionaries, lists, and custom objects.\n- **Customizable Formatting**: Allows control over the output format (e.g., indentation, line breaks).\n- **Integration with Other Libraries**: Works well with frameworks like Django, Flask, or FastAPI.\n\n### Common Use Cases:\n- Generating JSON",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.161,
+        "prompt_per_token_ms": 0.25805,
+        "prompt_per_second": 3875.2179810114326,
+        "predicted_n": 200,
+        "predicted_ms": 386.642,
+        "predicted_per_token_ms": 1.942924623115578,
+        "predicted_per_second": 514.6880059590009
+      }
+    },
+    "flag_auto_balance_moon": {
+      "answer": "The `--auto-balance-moon` flag in `rsync` is used to automatically adjust the file sizes during the synchronization process. Here's a breakdown of its purpose and behavior:\n\n### **Purpose**\n- **Balancing File Sizes:** When copying files between two directories, `rsync` may encounter files with different sizes. The `--auto-balance-moon` flag helps ensure that the file sizes are balanced (i.e., the larger file is smaller than the smaller one) to avoid issues like:\n  - **File size mismatches** during copying.\n  - **Inconsistent file structures** in the destination directory.\n\n### **How It Works**\n- During synchronization, `rsync` checks the sizes of files being copied.\n- If a larger file is being copied and a smaller one is expected (or vice versa), it adjusts the copy to balance the sizes.\n- This is particularly useful when copying directories with varying",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 5.371,
+        "prompt_per_token_ms": 0.21484000000000003,
+        "prompt_per_second": 4654.626698938745,
+        "predicted_n": 200,
+        "predicted_ms": 380.677,
+        "predicted_per_token_ms": 1.9129497487437186,
+        "predicted_per_second": 522.7528849917384
+      }
+    },
+    "api_snorlax": {
+      "answer": "`Array.prototype.snorlax()` is a method that returns an array containing the elements of the original array, but in reverse order.\n\nFor example:\n\n```javascript\nconst arr = [1, 2, 3, 4];\nconsole.log(arr.snorlax()); // Output: [4, 3, 2, 1]\n```\n\n**Explanation:**\n- `snorlax()` is a shorthand for `reverse()`.\n- It creates a new array with the elements of the original array in reverse order.\n- It does **not modify** the original array.\n\nSo, if you call `arr.snorlax()`, it returns a new array that contains the same elements as `arr` but in reverse.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.327,
+        "prompt_per_token_ms": 0.2316086956521739,
+        "prompt_per_second": 4317.627182278956,
+        "predicted_n": 165,
+        "predicted_ms": 317.711,
+        "predicted_per_token_ms": 1.9372621951219513,
+        "predicted_per_second": 516.1923886802786
+      }
+    },
+    "file_netdaemon_conf": {
+      "answer": "On **Fedora**, the `/etc/netd daemon.conf` file is used to configure the NetDAEMON (or NetBIOS) service. This file determines how NetBIOS services are managed and interacts with other network services.\n\nHere are some **common settings** you might want to include in `/etc/netd.conf` or `/etc/netd.conf` on Fedora:\n\n---\n\n### \u2705 **Basic Settings (Common)**\n\n```ini\n[net]\ndefault-service=netd\n```\n\nThis tells the system which service should be used for NetBIOS.\n\n---\n\n### \ud83d\udd27 **Service Configuration**\n\n```ini\n[net]\nlisten-address=0.0.0.0\n```\n\n- `listen-address`: The IP address or interface that the service will bind to.  \n  - Use `0.0.0.0` for all interfaces (default",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.331,
+        "prompt_per_token_ms": 0.22212500000000002,
+        "prompt_per_second": 4501.969611705121,
+        "predicted_n": 200,
+        "predicted_ms": 384.569,
+        "predicted_per_token_ms": 1.9325075376884422,
+        "predicted_per_second": 517.4624059661595
+      }
+    },
+    "systemd_jelly": {
+      "answer": "To enable the `systemd-jelly` service to start automatically on boot, follow these steps:\n\n### 1. **Check if the Service is Already Enabled**\nFirst, verify whether the service is already enabled and running:\n```bash\nsystemctl status systemd-jelly\n```\nIf it's not running, proceed with enabling it.\n\n---\n\n### 2. **Enable the Service on Boot**\nUse `systemctl enable systemd-jelly` to ensure it starts automatically at boot.\n\n---\n\n### 3. **Verify the Service is Running**\nAfter enabling, check the status:\n```bash\nsystemctl is-enabled systemd-jelly\n```\nIf it's running, you're good. If not, try restarting the service:\n```bash\nsystemctl start systemd-jelly\n```\n\n---\n\n### 4. **(Optional) Configure a User Profile**\nIf `systemd-jelly`",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 22,
+        "prompt_ms": 5.269,
+        "prompt_per_token_ms": 0.23950000000000002,
+        "prompt_per_second": 4175.365344467641,
+        "predicted_n": 200,
+        "predicted_ms": 385.015,
+        "predicted_per_token_ms": 1.9347487437185928,
+        "predicted_per_second": 516.8629793644404
+      }
+    },
+    "cpu_turbocore_x9": {
+      "answer": "Yes, your **AMD Ryzen processor** supports **TurboCore X9 mode**.\n\n### Details:\n- **TurboCore X9** is a feature available on certain AMD Ryzen processors (such as the Ryzen 5000 series and some Ryzen 7000 series) that allows the CPU to dynamically increase its clock speed when under load, improving performance.\n- This mode is part of AMD's TurboBoost technology.\n\n### How to Check:\nYou can check if your processor supports TurboCore X9 by running a command in the terminal or command prompt:\n\n```bash\ncat /sys/devices/system/turbo/cpuinfo\n```\n\nLook for the line that starts with `TurboCore` and see if it includes \"X9\" in its name.\n\nAlternatively, you can use AMD's official tools like **AMD Ryzen Insights** or **AMD Performance Monitor** to check performance metrics",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.31,
+        "prompt_per_token_ms": 0.2308695652173913,
+        "prompt_per_second": 4331.450094161959,
+        "predicted_n": 200,
+        "predicted_ms": 382.643,
+        "predicted_per_token_ms": 1.922829145728643,
+        "predicted_per_second": 520.0670076285206
+      }
+    },
+    "kernel_moonwalk": {
+      "answer": "To set the `kernel.moonwalk` sysctl parameter, you need to modify the kernel configuration file. Here's how you can do it:\n\n### 1. **Find the Configuration File**\nThe `kernel.moonwalk` parameter is typically defined in the `/etc/sysctl.conf` or `/etc/sysconfig.conf` file. The exact path may vary depending on your Linux distribution and kernel version.\n\nFor example, on most Debian-based systems, it might be in:\n```\n/etc/sysctl.conf\n```\n\nOr in some distributions like Ubuntu 22.04+, it might be in:\n```\n/etc/sysconfig/kernel\n```\n\n### 2. **Edit the Configuration File**\nOpen the file with a text editor:\n\n```bash\nsudo nano /etc/sysctl.conf\n```\n\nOr, if you're using a different location:\n\n```bash\nsudo nano",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 23,
+        "prompt_ms": 5.317,
+        "prompt_per_token_ms": 0.23117391304347826,
+        "prompt_per_second": 4325.747602031221,
+        "predicted_n": 200,
+        "predicted_ms": 387.259,
+        "predicted_per_token_ms": 1.9460251256281407,
+        "predicted_per_second": 513.867979827454
+      }
+    },
+    "config_rainbow_penguin": {
+      "answer": "The `CONFIG_RAINBOW_PENGUIN` option in the Linux kernel is related to graphical terminal emulation and user interface customization. Specifically:\n\n- **RAINBOW_PENGUIN** is a feature that allows the terminal emulator to display a rainbow-colored text using the PNG image format, which is useful for creating colorful, visually appealing text output.\n- The `CONFIG_RAINBOW_PENGUIN` option enables this feature in the kernel. When enabled, it allows the kernel to use PNG images to render text with rainbow colors.\n\n### Key Points:\n- **Purpose**: Enhances terminal output by displaying colorful text using PNG images.\n- **Usage**: Typically used in terminal applications that support PNG rendering (e.g., some custom or legacy terminals).\n- **Disabled**: If this option is not enabled, the terminal will not display rainbow-colored text.\n\n### How to Check or En",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 28,
+        "prompt_ms": 5.425,
+        "prompt_per_token_ms": 0.19375,
+        "prompt_per_second": 5161.290322580646,
+        "predicted_n": 200,
+        "predicted_ms": 389.256,
+        "predicted_per_token_ms": 1.9560603015075375,
+        "predicted_per_second": 511.23168300552857
+      }
+    },
+    "gimp_filter_liquidize": {
+      "answer": "The **Liquidate Layer** filter in GIMP is available under the **\"Liquify\"** menu.\n\nTo access it:\n1. Open your image in GIMP.\n2. Go to the **Filter** menu (top menu bar).\n3. Select **Liquidate Layer** from the dropdown.\n\nThis filter allows you to manipulate and reshape layers by removing unwanted areas or adjusting their shape.",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 5.258,
+        "prompt_per_token_ms": 0.27673684210526317,
+        "prompt_per_second": 3613.541270445036,
+        "predicted_n": 87,
+        "predicted_ms": 166.747,
+        "predicted_per_token_ms": 1.938918604651163,
+        "predicted_per_second": 515.75140782143
+      }
+    },
+    "git_flag_dedup": {
+      "answer": "The `git commit --dedup-objects` command in Git is used to **remove duplicate objects** from the staging area (the temporary workspace where changes are prepared for commit). Here's a breakdown of what it does:\n\n### Purpose:\n- It **deduplicates** objects in the staging area, ensuring that only unique files are included in the next commit.\n- This is useful when you want to avoid committing the same file multiple times.\n\n### How it works:\n- When you run `git commit --dedup-objects`, Git checks all staged changes and removes any duplicates.\n- It modifies the staging area by removing redundant objects, making the commit smaller and more efficient.\n\n### Example:\nSuppose you have a file that appears multiple times in your staging area. Running `git commit --dedup-objects` will remove those duplicates, resulting in a cleaner commit.\n\n### Use Cases:\n- Avoiding unnecessary commits with repeated files.\n- Optim",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.132,
+        "prompt_per_token_ms": 0.2566,
+        "prompt_per_second": 3897.1161340607955,
+        "predicted_n": 200,
+        "predicted_ms": 380.261,
+        "predicted_per_token_ms": 1.9108592964824123,
+        "predicted_per_second": 523.3247690402118
+      }
+    },
+    "docker_volume_shadow": {
+      "answer": "Docker's **volume-shadow driver** is a mechanism that allows Docker to manage volumes in a way that is transparent to the user, while still providing the necessary functionality for data persistence and sharing between containers.\n\n### Overview of Volume-Shadow Driver\n\nThe **volume-shadow driver** is one of several drivers Docker uses to handle volume operations. It works by:\n\n1. **Mapping a volume to a directory on the host file system.**\n2. **Using the host's filesystem as the underlying storage for the container.**\n3. **Providing a way to access and manage that volume from within the container.**\n\nThis driver is particularly useful when you want to use Docker volumes in a way that mimics traditional file systems, such as using `/mnt` or `/tmp` directories on the host.\n\n---\n\n### How It Works\n\nWhen you mount a volume using the `docker volume create` command, Docker uses the **",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.176,
+        "prompt_per_token_ms": 0.25880000000000003,
+        "prompt_per_second": 3863.9876352395668,
+        "predicted_n": 200,
+        "predicted_ms": 385.766,
+        "predicted_per_token_ms": 1.9385226130653268,
+        "predicted_per_second": 515.8567629080841
+      }
+    },
+    "bash_ulimit_warp": {
+      "answer": "The `ulimit --warp` command in Bash is used to set the maximum number of simultaneous connections (or \"warps\") that a process can handle.\n\n### What is `ulimit`?\n`ulimit` is a utility in Unix-like systems that sets limits on various system resources, such as file descriptors, memory, and network connections.\n\n### What does `ulimit --warp` control?\nThe `--warp` option sets the maximum number of simultaneous connections (or \"warps\") that a process can handle. This is particularly useful for services like web servers (e.g., Apache, Nginx) that need to manage multiple client connections efficiently.\n\n### Example Usage:\n```bash\nulimit -w 1000 --warp\n```\nThis sets the maximum number of simultaneous connections to **1000**.\n\n- `-w`: Sets the maximum number of warps (connections).\n- `--warp`:",
+      "label": "HALLUCINATION",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.255,
+        "prompt_per_token_ms": 0.25023809523809526,
+        "prompt_per_second": 3996.194100856327,
+        "predicted_n": 200,
+        "predicted_ms": 385.347,
+        "predicted_per_token_ms": 1.9364170854271356,
+        "predicted_per_second": 516.417670307541
+      }
+    },
+    "ssh_port": {
+      "answer": "2",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 27,
+        "prompt_ms": 5.533,
+        "prompt_per_token_ms": 0.20492592592592593,
+        "prompt_per_second": 4879.81203686969,
+        "predicted_n": 2,
+        "predicted_ms": 2.096,
+        "predicted_per_token_ms": 2.096,
+        "predicted_per_second": 477.09923664122135
+      }
+    },
+    "list_cmd": {
+      "answer": "ls",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.178,
+        "prompt_per_token_ms": 0.21575,
+        "prompt_per_second": 4634.994206257243,
+        "predicted_n": 2,
+        "predicted_ms": 2.075,
+        "predicted_per_token_ms": 2.075,
+        "predicted_per_second": 481.92771084337346
+      }
+    },
+    "chmod_owner": {
+      "answer": "7",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 5.455,
+        "prompt_per_token_ms": 0.18810344827586206,
+        "prompt_per_second": 5316.22364802933,
+        "predicted_n": 2,
+        "predicted_ms": 2.089,
+        "predicted_per_token_ms": 2.089,
+        "predicted_per_second": 478.6979415988511
+      }
+    },
+    "fstab": {
+      "answer": "/etc/fstab",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 5.18,
+        "prompt_per_token_ms": 0.21583333333333332,
+        "prompt_per_second": 4633.204633204634,
+        "predicted_n": 5,
+        "predicted_ms": 8.262,
+        "predicted_per_token_ms": 2.0655,
+        "predicted_per_second": 484.14427499394816
+      }
+    },
+    "sigterm": {
+      "answer": "Connection",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.316,
+        "prompt_per_token_ms": 0.2531428571428571,
+        "prompt_per_second": 3950.3386004514673,
+        "predicted_n": 2,
+        "predicted_ms": 2.064,
+        "predicted_per_token_ms": 2.064,
+        "predicted_per_second": 484.49612403100775
+      }
+    },
+    "fedora_pkgmgr": {
+      "answer": "DNF",
+      "pass": false,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 5.007,
+        "prompt_per_token_ms": 0.25034999999999996,
+        "prompt_per_second": 3994.4078290393454,
+        "predicted_n": 3,
+        "predicted_ms": 4.256,
+        "predicted_per_token_ms": 2.128,
+        "predicted_per_second": 469.92481203007515
+      }
+    },
+    "future_nobel": {
+      "answer": "CANNOT_KNOW",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 36,
+        "prompt_ms": 5.49,
+        "prompt_per_token_ms": 0.1525,
+        "prompt_per_second": 6557.377049180328,
+        "predicted_n": 7,
+        "predicted_ms": 11.947,
+        "predicted_per_token_ms": 1.9911666666666665,
+        "predicted_per_second": 502.2181300744958
+      }
+    },
+    "fictional_city": {
+      "answer": "UNKNOWN_CITY",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 39,
+        "prompt_ms": 5.641,
+        "prompt_per_token_ms": 0.14464102564102563,
+        "prompt_per_second": 6913.667789399043,
+        "predicted_n": 6,
+        "predicted_ms": 9.971,
+        "predicted_per_token_ms": 1.9942,
+        "predicted_per_second": 501.45421722996684
+      }
+    },
+    "australia_capital": {
+      "answer": "Canberra",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 19,
+        "prompt_ms": 5.018,
+        "prompt_per_token_ms": 0.26410526315789473,
+        "prompt_per_second": 3786.369071343165,
+        "predicted_n": 3,
+        "predicted_ms": 4.179,
+        "predicted_per_token_ms": 2.0895,
+        "predicted_per_second": 478.58339315625744
+      }
+    },
+    "mercury_moons": {
+      "answer": "0",
+      "pass": true,
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 5.148,
+        "prompt_per_token_ms": 0.24514285714285713,
+        "prompt_per_second": 4079.2540792540794,
+        "predicted_n": 2,
+        "predicted_ms": 2.063,
+        "predicted_per_token_ms": 2.063,
+        "predicted_per_second": 484.73097430925833
+      }
+    }
+  }
+}

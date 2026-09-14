@@ -1,0 +1,35 @@
+{
+  "repository": "WumboLabs/eval-gemmable-4-12b",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/gemmable_4_12b_mtp_q4_k_m-v024-wumbolabs-practical-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-gemma4-family-wumbolabs-practical-v024-scored.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "f939197adc1ad584a4e8dc0a993b7e533b6702ca86cb1fb37a15e4a9454f4194",
+      "bytes": 8947
+    },
+    {
+      "path": "local-llm/llmgauge/results/gemmable_4_12b_mtp_q4_k_m-v024-agent-backend-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/gemmable_4_12b_mtp_q4_k_m-v024-fake-tool-answer-only-1200",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/gemmable-4-12b-q4km.json",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "1d3ff7e3c6e8cd25a515e4794a54a4ee08719219ef2e22ca8117ecf769d9faea",
+      "bytes": 2693
+    },
+    {
+      "path": "local-llm/localmaxxing/runs/Mia-AiLab-Gemmable-4-12B-MTP-GGUF/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

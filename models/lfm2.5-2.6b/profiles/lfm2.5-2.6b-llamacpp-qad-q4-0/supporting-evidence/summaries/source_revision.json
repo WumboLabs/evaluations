@@ -1,0 +1,24 @@
+{
+  "repository": "LiquidAI/LFM2.5-2.6B-GGUF",
+  "revision": "f4a289c8a200a5ca71005ba7abc2dad33058a450",
+  "last_modified": "2026-08-19T13:59:28Z",
+  "retrieved_at": "2026-08-24T06:39:00Z",
+  "architecture": "lfm2",
+  "context_length": 131072,
+  "model_card_verified": {
+    "parameters": 2690000000,
+    "layers": 30,
+    "double_gated_short_convolution_blocks": 22,
+    "gqa_blocks": 8,
+    "training_tokens": "34T",
+    "agentic_post_training": true,
+    "official_sampling": {"temperature": 0.1, "top_k": 50, "repetition_penalty": 1.1}
+  },
+  "qad_release_notes": {
+    "url": "https://www.liquid.ai/blog/qad",
+    "published": "2026-08-19",
+    "producer_claims_2_6b": {"bf16_average_retention_percent": 96.6, "ptq_gap_recovered_percent": 48.4, "format": "Q4_0 GGUF"},
+    "method": "Quantization-Aware Distillation: a high-precision teacher is distilled into a quantized student."
+  },
+  "llama_cpp_guidance": "Official GGUF card gives llama-cli with --temp 0.1 --top-k 50 --repeat-penalty 1.1. Base model card lists llama.cpp as a supported backend."
+}

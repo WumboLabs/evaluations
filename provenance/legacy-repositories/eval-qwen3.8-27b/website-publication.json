@@ -1,0 +1,88 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "qwen38-27b-rtx5070-context-completion-2026-09-12",
+  "publication_date": "2026-09-12",
+  "disposition": "WEBSITE_READY",
+  "website_record_slug": "qwen38-27b-context-envelope",
+  "model": {
+    "display_name": "Qwen3.8-27B",
+    "producer": "Alibaba (Qwen team); EXL3 quant by turboderp",
+    "official_id": "Qwen/Qwen3.8-27B",
+    "official_revision": "card lastModified 2026-08-14 (native 262,144; YaRN factor 4.0 advertised to 1,000,000)",
+    "license": "Apache-2.0 (Qwen3.8 family)"
+  },
+  "artifact": {
+    "tested": "Qwen3.8-27B-SC_2.20bpw_H3_V3 (EXL3)",
+    "precision": "2.20 bpw EXL3; q4 target KV; q4 draft KV; MTP width 1",
+    "source": "local models/exl3 store; the exact accepted H1 artifact, freshly hash-verified"
+  },
+  "runtime": {
+    "engine": "ExLlamaV3",
+    "version": "1.4.6+cu128.torch2.10.0 (torch 2.10.0+cu128, CUDA 12.8)",
+    "notes": "Canonical H1 surface unchanged: MTP width 1, batch 1, max_chunk 256, recurrent history H1, CPU embedding lookup, all 64 transformer blocks GPU-resident; only serving context varies per arm"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux 44; displays on iGPU"
+  },
+  "welp": {
+    "outcome": "PASS — QWEN38_27B_CONTEXT_ENVELOPE_COMPLETED",
+    "classification": "MODEL-CARD CONTEXT ENVELOPE COMPLETE at the inherited guarded deployment classification; practical default unchanged"
+  },
+  "context": {
+    "practical_default_tokens": 65536,
+    "envelope_complete": true,
+    "native_maximum_disposition": "FIT_LIMIT - exact native maximum 262,144 on the accepted H1 ExLlamaV3 surface: requires 12,530 MiB at ready (8,178 MiB context-independent + 262,144 x 17,408 B/token KV) versus 12,227 MiB total card VRAM; nearest measured boundary 98,304 VALIDATED. Official YaRN 1,000,000 extension INTEGRATION_BLOCKED on the accepted surface (runtime 1.4.6 has the YaRN implementation but exposes no supported activation without editing the protected artifact config) and independently FIT_LIMIT (cache alone ~16.6 GiB, ~1.36x total card VRAM)",
+    "tested_surfaces": [
+      "65,536 near-full VALIDATED (2 seeds, 99.5% occupancy, strict useful-context 2/2)",
+      "98,304 near-full VALIDATED (2 seeds, 99.49-99.52% occupancy, strict useful-context 2/2)",
+      "131,072 / 196,608 / 262,144 FIT_LIMIT by frozen fit accounting",
+      "official YaRN extension maximum 1,000,000 INTEGRATION_BLOCKED (no supported activation on the accepted surface without editing the protected artifact config; independently impossible: ~16.6 GiB cache alone)"
+    ],
+    "headline_performance": "near-full prefill 606 tok/s at 65,536 and 537 tok/s at 98,304; full-occupancy decode 56-62 tok/s; near-full TTFT 107 s (65,536) and 181 s (98,304)",
+    "guarded_tokens": 98304,
+    "native_maximum_tokens": 262144,
+    "extension_mechanism": "YaRN factor 4.0 (officially advertised to 1,000,000 tokens)",
+    "exact_max_dispositions": {
+      "native_262144": "FIT_LIMIT - hard lower-bound accounting under the frozen H1 profile (required-at-ready 12,530 MiB > 12,227 MiB total); nearest measured boundary 98,304 VALIDATED; rungs 131,072 and 196,608 FIT_LIMIT by the same accounting",
+      "yarn_1000000": "INTEGRATION_BLOCKED on the accepted surface (no supported faithful activation path for the required rope_parameters on the pinned artifact/runtime); independently FIT_LIMIT (cache alone ~16.6 GiB)"
+    },
+    "highest_measured_admitted": {
+      "tokens": 98304,
+      "note": "highest measured/admitted near-full rung (= guarded boundary); 65,536 anchor also revalidated; above 98,304 the accepted H1 profile is FIT_LIMIT on this 12 GB card"
+    },
+    "useful_context_finding": "Strict useful-context aggregate 4/4 requests (2 rungs x 2 seeds) at >=99.4% occupancy: exact retrieval 5/5, synthesis, decoy resistance, absent-information grounding, and instruction compliance all 4/4 per rung; all 20 target-field observations at 2/25/50/75/95% depths within +/-0.036 pp",
+    "notes": "near-full performance (client streaming proxies): 65,536 anchor ~606 tok/s prefill, 61-62 tok/s decode, ~107 s TTFT; 98,304 ~537 tok/s prefill, 56-57 tok/s decode, ~181 s TTFT"
+  },
+  "quality": {
+    "constrained_result": "useful-context strict aggregate 4/4 requests (2 rungs x 2 seeds) at >=99.4% occupancy: exact retrieval 5/5, synthesis, decoy resistance, absent-information grounding, instruction compliance all 4/4; measured depths 2/25/50/75/95% within +/-0.036 pp",
+    "capability_highlights": [
+      "first near-full context evidence above 65,536 on the ExLlamaV3 2.20bpw Qwen3.8 surface",
+      "frozen fit model validated at both measured rungs (conservative by 28-80 MiB)",
+      "prefill degradation curve characterized: ~790 tok/s at 3.5K -> 606 at 64.7K -> 537 at 97.3K"
+    ],
+    "key_guardrails": [
+      "retrieval-quality evidence is bounded to the tested fixture style and depths; it is not a general long-context quality claim",
+      "reliability and role classification remain the inherited historical model-level findings; practical default unchanged",
+      "the 98,304 operating point is guarded: ~181 s near-full TTFT and a ~300 MiB floor margin"
+    ],
+    "reliability_summary": "no CUDA/OOM/Xid events in the campaign; both arms torn down to verified idle; cold-cache enforced per request (verified cached_tokens 0 in all four retained terminal events)"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "canonical_context_tokens": 65536,
+    "tok_s_out": 75.4,
+    "submission_ref": "cmtwcncwr07f4ps01ef75q6ne",
+    "verified_run": false,
+    "note": "existing authorized submission on the identical canonical practical profile (VERIFIED_EXISTING); no new benchmark or submission in this campaign",
+    "ttft_ms": 71.35
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-qwen3.8-27b",
+    "note": "Canonical public evidence published in this repository (context-envelope completion report: reports/qwen38-27b-context-envelope-completion-2026-09-12.md). The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "public_summary": "Qwen3.8-27B model-card context envelope completed on the RTX 5070 (12 GB) canonical ExLlamaV3 H1 profile: 65,536 and 98,304 near-full contexts VALIDATED (>=99.4% occupancy, two seeds each, strict useful-context passes at all five depths), the exact native maximum 262,144 disposed FIT_LIMIT by rigorous VRAM accounting with 98,304 as the nearest measured boundary, and the official YaRN 1,000,000 extension disposed INTEGRATION_BLOCKED on the accepted surface (independently impossible on 12 GB). Practical default unchanged at 65,536; 98,304 documented as the guarded boundary.",
+  "record_description": "Model-card context envelope COMPLETE on the canonical ExLlamaV3 H1 surface: 65,536 default revalidated and 98,304 guarded boundary VALIDATED at >=99.4% near-full occupancy with strict useful-context 4/4; native 262,144 FIT_LIMIT on this 12 GB H1 surface (nearest measured boundary 98,304); official YaRN 1,000,000 INTEGRATION_BLOCKED on the accepted surface and independently FIT_LIMIT. Default unchanged at 65,536; inherited guarded/limited classification carries; LocalMaxxing VERIFIED_EXISTING, no new submission."
+}

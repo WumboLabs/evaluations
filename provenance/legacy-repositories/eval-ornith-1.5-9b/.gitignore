@@ -1,0 +1,13 @@
+# Allowlist-first: anything not explicitly committed stays out.
+__pycache__/
+*.pyc
+*.log
+*.csv
+.env*
+credentials*
+secrets*
+sources/
+models/
+runtime/
+logs/
+protocol-snapshot/

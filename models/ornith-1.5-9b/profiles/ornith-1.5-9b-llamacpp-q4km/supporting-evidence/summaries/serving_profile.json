@@ -1,0 +1,70 @@
+{
+  "model": {
+    "repo": "ornith-ai/Ornith-1.5-9B",
+    "revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "file": "Ornith-1.5-9B-Q4_K_M.gguf",
+    "sha256": "70c112196e0b7023803c9762752e46d29e612a92c83f995bc3ba1ceb07e8fab6"
+  },
+  "runtime": {
+    "name": "llama.cpp (llama-server)",
+    "build": 10449,
+    "commit": "0d9ceae1e38291035605613ab41a8f5e693d6fcd"
+  },
+  "placement": {
+    "gpu_layers": 99,
+    "cpu_offload": false
+  },
+  "requested": {
+    "parallel": 1,
+    "fit": "off",
+    "flash_attn": "on",
+    "context_total": 32768,
+    "batch": 2048,
+    "ubatch": 512,
+    "template": "embedded GGUF (== chat_template.jinja, sha256-verified)",
+    "reasoning_mode": "REASONING_OFF via chat_template_kwargs.enable_thinking=false (gate baseline)",
+    "sampling": {
+      "temperature": "per-contract",
+      "note": "contract sampling_default governs; server defaults unused"
+    },
+    "speculation": "none"
+  },
+  "effective": {
+    "slot_count": 1,
+    "per_slot_context": 32768,
+    "total_context": 32768,
+    "kv_placement": "GPU (all 33 layers offloaded; -ngl 99 -fit off; RTX 5070 12 GB)",
+    "recurrent_state_placement": "GPU (hybrid SSM layers; qwen35 full_attention_interval=4)",
+    "endpoint_alias": "http://127.0.0.1:8931",
+    "server_concurrency": 1,
+    "gate_baseline_reasoning_state": "REASONING_OFF",
+    "reasoning_requested": "REASONING_OFF",
+    "reasoning_effective": "REASONING_OFF",
+    "evidence": [
+      "log: srv    load_model: initializing, n_slots = 1, n_ctx_slot = 32768, kv_unified = 'false'",
+      "log: srv  llama_server: listening on http://127.0.0.1:8931",
+      "log: chat template supports preserving reasoning (template renders enable_thinking)",
+      "/props: total_slots=1, n_ctx=32768, build_info=b10449-0d9ceae1e",
+      "/props chat_template_caps: supports_tools=true, supports_tool_calls=true, supports_preserve_reasoning=true, supports_reasoning_effort=false",
+      "probe REASONING_OFF: enable_thinking=false -> reasoning_content absent, content='PING'",
+      "probe REASONING_ON: default -> reasoning_content='17 x 23 = ... 391', content='17 x 23 = **391**' (auto-extraction works)",
+      "probe TOOLS: native tool_calls returned: get_weather {\"city\":\"Paris\"} with id; content empty",
+      "nvidia-smi compute-apps: 462397, 6210 MiB",
+      "metrics: llamacpp:prompt_tokens_total excludes cached; prompt_tokens_cached_total present"
+    ]
+  },
+  "delta": [
+    {
+      "field": "context_total",
+      "requested": 32768,
+      "effective": 32768,
+      "note": "model supports 262144; campaign caps at 32768 for Phase 6 headroom on 12 GB VRAM"
+    },
+    {
+      "field": "reasoning",
+      "requested": "REASONING_OFF",
+      "effective": "REASONING_OFF",
+      "note": "verified per-request via reasoning_content absence; template default is thinking-ON, so every gate request MUST send enable_thinking=false"
+    }
+  ]
+}

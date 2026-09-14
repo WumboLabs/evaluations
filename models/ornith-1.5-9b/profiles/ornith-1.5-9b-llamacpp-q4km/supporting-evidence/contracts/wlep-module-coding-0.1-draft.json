@@ -1,0 +1,898 @@
+{
+  "contract_id": "wlep-module-coding",
+  "version": "0.1.0-draft",
+  "status": "DRAFT / PROTOCOL DEVELOPMENT",
+  "created": "2026-08-25",
+  "purpose": "Executable coding reliability under isolation: parse, execute, pass tests; separate dependency/API hallucination and instruction compliance.",
+  "applicability": "all instruct models",
+  "sampling_default": {
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "note": "canonical default; per-model validated sampler recorded at execution"
+  },
+  "selection_rule": "verbatim promotion of proven mechanically-scored tasks from qwen38 final-lock-in corpus v1",
+  "task_count": 30,
+  "tasks": [
+    {
+      "id": "code-clamp",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining clamp(value, low, high). Raise ValueError if low > high. Return low if value is below low, high if above high, otherwise value."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "clamp",
+        "test_program": "assert clamp(3, 1, 5) == 3\nassert clamp(-1, 1, 5) == 1\nassert clamp(9, 1, 5) == 5\ntry:\n    clamp(1, 5, 1)\n    raise AssertionError('missing ValueError')\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-clamp"
+      }
+    },
+    {
+      "id": "code-parse_csv",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining parse_csv_ints(text). Accept comma-separated decimal integers with optional surrounding whitespace. Reject empty fields and non-integers with ValueError. Do not use third-party packages."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "parse_csv_ints",
+        "test_program": "assert parse_csv_ints('1, 2,-3') == [1,2,-3]\nfor s in ['', '1,', 'a']:\n    try:\n        parse_csv_ints(s)\n        raise AssertionError(s)\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-parse_csv"
+      }
+    },
+    {
+      "id": "code-unique_sorted",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining unique_sorted(values). It accepts integers but rejects bool and non-integers with ValueError, then returns unique values sorted ascending."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "unique_sorted",
+        "test_program": "assert unique_sorted([3,1,3,2]) == [1,2,3]\nfor v in ([True], ['1']):\n    try:\n        unique_sorted(v)\n        raise AssertionError(v)\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-unique_sorted"
+      }
+    },
+    {
+      "id": "code-chunks",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining chunks(items, size) returning a list of lists of at most size items. Raise ValueError for size <= 0. Preserve input order."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "chunks",
+        "test_program": "assert chunks([1,2,3,4,5],2) == [[1,2],[3,4],[5]]\nassert chunks([],3) == []\ntry:\n    chunks([1],0)\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-chunks"
+      }
+    },
+    {
+      "id": "code-deep_get",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining deep_get(mapping, path, default=None), where path is a dot-separated sequence of dictionary keys. Return default if any key is absent; do not mutate mapping."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "deep_get",
+        "test_program": "d={'a':{'b':3}}\nassert deep_get(d,'a.b') == 3\nassert deep_get(d,'a.x','z') == 'z'\nassert deep_get(d,'') is None\nassert d == {'a':{'b':3}}"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-deep_get"
+      }
+    },
+    {
+      "id": "code-slugify",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining slugify(text). Lowercase text, convert each maximal run of non-alphanumeric characters to one hyphen, strip leading/trailing hyphens. Use standard library only."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "slugify",
+        "test_program": "assert slugify(' Hello, WORLD!! ') == 'hello-world'\nassert slugify('A__B') == 'a-b'\nassert slugify('') == ''"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-slugify"
+      }
+    },
+    {
+      "id": "code-freq",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining count_words(text). Split on arbitrary whitespace, lowercase words, and return a dictionary of counts. Empty text returns {}."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "count_words",
+        "test_program": "assert count_words('A a\\nB') == {'a':2,'b':1}\nassert count_words('') == {}"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-freq"
+      }
+    },
+    {
+      "id": "code-dedupe_dicts",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining dedupe_by_id(rows). Each row is a dict with an `id`; retain the first row for each id in original order. Do not mutate rows."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "dedupe_by_id",
+        "test_program": "rows=[{'id':1,'x':'a'},{'id':1,'x':'b'},{'id':2,'x':'c'}]\nassert dedupe_by_id(rows) == [{'id':1,'x':'a'},{'id':2,'x':'c'}]\nassert rows[1]['x'] == 'b'"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-dedupe_dicts"
+      }
+    },
+    {
+      "id": "code-roman",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining roman_to_int(text) for canonical uppercase Roman numerals I,V,X,L,C,D,M. Raise ValueError for empty text or invalid characters."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "roman_to_int",
+        "test_program": "assert roman_to_int('III') == 3\nassert roman_to_int('IV') == 4\nassert roman_to_int('MCM') == 1900\nfor s in ['', 'AX']:\n    try:\n        roman_to_int(s)\n        raise AssertionError(s)\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-roman"
+      }
+    },
+    {
+      "id": "code-flatten",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining flatten_once(values), which concatenates one level of lists and tuples but leaves non-list/tuple elements unchanged."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "flatten_once",
+        "test_program": "assert flatten_once([1,[2,3],(4,5),'ab']) == [1,2,3,4,5,'ab']"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-flatten"
+      }
+    },
+    {
+      "id": "code-retry",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining retry_delays(count, base). Return `[base * 2**i for i in range(count)]`; reject count < 0 or base <= 0 with ValueError."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "retry_delays",
+        "test_program": "assert retry_delays(4,0.5) == [0.5,1.0,2.0,4.0]\nfor a,b in [(-1,1),(1,0)]:\n    try:\n        retry_delays(a,b)\n        raise AssertionError()\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-retry"
+      }
+    },
+    {
+      "id": "code-window",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining moving_average(values, width). Return averages of complete contiguous windows. Raise ValueError if width <= 0; return [] if fewer than width values."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "moving_average",
+        "test_program": "assert moving_average([1,2,3,4],2) == [1.5,2.5,3.5]\nassert moving_average([1],2) == []\ntry:\n    moving_average([1],0)\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-window"
+      }
+    },
+    {
+      "id": "code-env",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining parse_env(lines). Parse `KEY=VALUE` lines; ignore blank lines and lines beginning after whitespace with `#`; reject a nonempty noncomment line without `=`. Split only on first `=`."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "parse_env",
+        "test_program": "assert parse_env(['A=1',' B=x=y',' # no','']) == {'A':'1','B':'x=y'}\ntry:\n    parse_env(['BAD'])\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-env"
+      }
+    },
+    {
+      "id": "code-interval",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining merge_intervals(intervals), merging overlapping or touching inclusive integer pairs. Return sorted merged pairs and do not mutate input."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "merge_intervals",
+        "test_program": "x=[(5,7),(1,3),(3,4),(10,10)]\nassert merge_intervals(x) == [(1,7),(10,10)]\nassert x == [(5,7),(1,3),(3,4),(10,10)]"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-interval"
+      }
+    },
+    {
+      "id": "code-topk",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining top_k_frequent(values, k). Return up to k distinct values ordered by descending count then ascending value. Raise ValueError for k < 0."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "top_k_frequent",
+        "test_program": "assert top_k_frequent([2,1,2,3,1,2],2) == [2,1]\nassert top_k_frequent([3,1,2],3) == [1,2,3]\ntry:\n    top_k_frequent([1],-1)\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-topk"
+      }
+    },
+    {
+      "id": "code-hex",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining parse_hex(text), accepting optional `0x`/`0X` prefix and hexadecimal digits only. Raise ValueError for empty, sign, or invalid input."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "parse_hex",
+        "test_program": "assert parse_hex('0x10') == 16\nassert parse_hex('ff') == 255\nfor s in ['', '-1', '0xGG']:\n    try:\n        parse_hex(s)\n        raise AssertionError(s)\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-hex"
+      }
+    },
+    {
+      "id": "code-group",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining group_by(rows, key). Return a dict from each row[key] to rows in original order. Raise KeyError if a row lacks key."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "group_by",
+        "test_program": "assert group_by([{'k':'a','v':1},{'k':'b','v':2},{'k':'a','v':3}],'k') == {'a':[{'k':'a','v':1},{'k':'a','v':3}],'b':[{'k':'b','v':2}]}\ntry:\n    group_by([{}],'k')\n    raise AssertionError()\nexcept KeyError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-group"
+      }
+    },
+    {
+      "id": "code-rotate",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining rotate_left(values, n). Return a new list rotated left by n, including negative n; empty input returns []."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "rotate_left",
+        "test_program": "assert rotate_left([1,2,3,4],1) == [2,3,4,1]\nassert rotate_left([1,2,3],-1) == [3,1,2]\nassert rotate_left([],5) == []"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-rotate"
+      }
+    },
+    {
+      "id": "code-pairs",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining pairs_to_dict(pairs). Convert two-item pairs to a dict, but raise ValueError if any item does not have exactly two values."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "pairs_to_dict",
+        "test_program": "assert pairs_to_dict([('a',1),('b',2)]) == {'a':1,'b':2}\ntry:\n    pairs_to_dict([('a',1,2)])\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-pairs"
+      }
+    },
+    {
+      "id": "code-trim",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining trim_lines(text). Strip trailing whitespace from every line, preserve leading whitespace and final newline status."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "trim_lines",
+        "test_program": "assert trim_lines(' a  \\n b\\t\\n') == ' a\\n b\\n'\nassert trim_lines(' x ') == ' x'"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-trim"
+      }
+    },
+    {
+      "id": "code-matrix",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining transpose(rows). Transpose a rectangular list of lists; return [] for []; raise ValueError for ragged rows."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "transpose",
+        "test_program": "assert transpose([[1,2,3],[4,5,6]]) == [[1,4],[2,5],[3,6]]\nassert transpose([]) == []\ntry:\n    transpose([[1],[2,3]])\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-matrix"
+      }
+    },
+    {
+      "id": "code-suffix",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining common_suffix(a, b) returning the longest common string suffix."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "common_suffix",
+        "test_program": "assert common_suffix('testing','nesting') == 'sting'\nassert common_suffix('abc','xyz') == ''"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-suffix"
+      }
+    },
+    {
+      "id": "code-hist",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining histogram(values, bins). `bins` is a sorted list of upper inclusive bounds. Return counts for each bin and one overflow bin. Raise ValueError if bounds are not strictly increasing."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "histogram",
+        "test_program": "assert histogram([1,2,5,8],[2,5]) == [2,1,1]\ntry:\n    histogram([1],[2,2])\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-hist"
+      }
+    },
+    {
+      "id": "code-url",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining split_query(query). Parse `a=1&b=two` into a dict, reject duplicate keys and fields lacking `=`. Do not percent-decode."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "split_query",
+        "test_program": "assert split_query('a=1&b=two') == {'a':'1','b':'two'}\ntry:\n    split_query('a=1&a=2')\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-url"
+      }
+    },
+    {
+      "id": "code-brackets",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining balanced_brackets(text), checking only (), [], {} and ignoring all other characters."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "balanced_brackets",
+        "test_program": "assert balanced_brackets('a([{}])') is True\nassert balanced_brackets('([)]') is False\nassert balanced_brackets('') is True"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-brackets"
+      }
+    },
+    {
+      "id": "code-rle",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining rle_encode(values) returning `(value, count)` pairs for consecutive equal values."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "rle_encode",
+        "test_program": "assert rle_encode([1,1,2,2,2,1]) == [(1,2),(2,3),(1,1)]\nassert rle_encode([]) == []"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-rle"
+      }
+    },
+    {
+      "id": "code-nearest",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining nearest_index(values, target), returning the index of the numerically closest element; break ties toward the lower index; raise ValueError for empty values."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "nearest_index",
+        "test_program": "assert nearest_index([1,4,8],6) == 1\nassert nearest_index([1,5],3) == 0\ntry:\n    nearest_index([],1)\n    raise AssertionError()\nexcept ValueError:\n    pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-nearest"
+      }
+    },
+    {
+      "id": "code-ini",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining parse_ini(lines). Support `[section]` headers and `key=value` entries; return nested dict. Reject key-value before a section and duplicate keys within a section."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "parse_ini",
+        "test_program": "assert parse_ini(['[a]','x=1','[b]','y=2']) == {'a':{'x':'1'},'b':{'y':'2'}}\nfor x in (['x=1'], ['[a]','x=1','x=2']):\n    try:\n        parse_ini(x)\n        raise AssertionError()\n    except ValueError:\n        pass"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-ini"
+      }
+    },
+    {
+      "id": "code-minrefactor",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only the minimal Python code line that corrects `def first(xs): return xs[1]` so it returns the first item. Do not rename or redesign the function."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "first",
+        "test_program": "assert first(['a','b']) == 'a'"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-minrefactor"
+      }
+    },
+    {
+      "id": "code-errors",
+      "category": "coding",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Return only code when asked for code."
+        },
+        {
+          "role": "user",
+          "content": "Return only Python code defining require_keys(mapping, keys). Return None if all named keys exist, otherwise raise KeyError naming the first missing key in keys order."
+        }
+      ],
+      "max_tokens": 360,
+      "expected": {
+        "kind": "python_execution",
+        "function": "require_keys",
+        "test_program": "assert require_keys({'a':1,'b':2},['b','a']) is None\ntry:\n    require_keys({'a':1},['b','c'])\n    raise AssertionError()\nexcept KeyError as e:\n    assert e.args[0] == 'b'"
+      },
+      "objective_scoring": "mechanical",
+      "tags": [
+        "coding",
+        "sandbox"
+      ],
+      "provenance": {
+        "source": "qwen38 final-lock-in corpus v1",
+        "original_id": "code-errors"
+      }
+    }
+  ],
+  "scoring_semantics": {
+    "parse": "code block extraction failure = STRUCTURAL_FAILURE",
+    "execution": "sandboxed run (bwrap --unshare-all, RLIMIT_CPU 3s, RLIMIT_AS 256MiB, timeout 8s, no network)",
+    "tests": "embedded test program must exit 0",
+    "dependency_hallucination": "ImportError/ModuleNotFoundError or invented API in traceback => HALLUCINATION class",
+    "instruction_compliance": "wrong function signature/format despite passing tests => MATERIAL_DEFECT"
+  },
+  "known_limitations": [
+    "python-only tonight",
+    "sandbox requires bwrap"
+  ]
+}

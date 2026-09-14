@@ -1,0 +1,33 @@
+{
+  "schema": "welp-closeout/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "written_utc": "2026-08-27T00:00:00Z",
+  "verdict": "READY_FOR_PUBLICATION",
+  "verdict_basis": "All 11 phases FINAL; conformance audit resolved (answer B, PF-08 filed); artifact reconciliation complete (62 entries, hashes converged); publication repo-candidate passes validate_public_tree.py (88 files, 0 errors, 0 findings); campaign tree passes validate_campaign_welp.py (valid, 0 errors/warnings); leak scan clean on candidate; shutdown evidence verified (ports closed, GPU 570 MiB, 0 Xid).",
+  "human_gate": "GitHub repo creation, git init/stage/commit/push, and all external posts remain NOT_AUTHORIZED pending explicit user action.",
+  "stages": {
+    "1_shutdown_evidence": "PASS — canonical server stopped; port 8931/8932 closed; GPU idle 570 MiB; no NVRM Xid (Realtek XID noise filtered).",
+    "2_conformance": "RESOLVED B — post-Phase-4-block characterization is conformant under frozen gate-flow, CHARACTERIZATION_ONLY module contracts, applicability freeze, and roles=[] classification semantics; WELP.md line-11 'stop there' prose ambiguity -> PF-08 (OPEN).",
+    "3_reconciliation": "DONE — summaries/artifact_reconciliation.json: 43 -> 54 -> 61 entry growth; 50/54 hash matches at verification; 4 stale hashes refreshed; phase2_raw/phase2_summary missing -> INVALIDATED_RETAINED + null sha256 (performance.json per-rep values authoritative); three self-referential entries (campaign_manifest, sanitized_campaign_manifest, closeout) carry null sha256 by documented policy.",
+    "4_producer_claims": "INTEGRATED — summaries/producer_claims.json: 7 claims vs @489cb979; PARTIALLY_REPRODUCED (context/coding/tools/reasoning), PHYSICALLY_UNTESTABLE (vendor benchmark tables).",
+    "5_findings": "CLASSIFIED — PF-01 SCORER_DEFECT (OPEN; results held as mechanical-gate authoritative); PF-02/PF-03 HARNESS_DEFECT (OPEN; PF-02 mitigated by conservative 24576 ceiling, PF-03 effective 0 errors); PF-04 CONTRACT_DEFECT (OPEN); PF-05 OPTIMIZATION_TRADEOFF (OPEN; MTP rejected for canonical); PF-06 RUNTIME_BEHAVIOR (workaround applied); PF-07 OPERATIONAL_PROCESS_DEFECT (MITIGATED in-campaign); PF-08 PROTOCOL_TEXT_AMBIGUITY (OPEN, upstream proposal). Genuine Phase-4 model failures remain model findings, not protocol findings.",
+    "6_publication_audit": "PASS — repo-candidate self-contained: root files authored; 9 leaking campaign files handled (8 published sanitized in-place under summaries/scripts paths; publication-policy.json rewritten; launch_command.txt sanitized); protocol-snapshot/**, sources/**, *.csv excluded; validator PASS 88 files.",
+    "7_package_records": "DONE (no submissions) — localmaxxing/package-record.json NOT_SUBMITTED (payload ready, 3 disclosure caveats); labs/catalog.json ornith entry (COMPLETED_FULL_PROTOCOL_CHARACTERIZATION, no internal campaign IDs); migration/localmaxxing_representation.json + wumbocore_routing_readiness.json entries (NOT_SUBMITTED / NOT_READY)."
+  },
+  "final_validation_sweep": {
+    "validate_public_tree.py": "PASS — 88 selected files, 0 errors, 0 findings (2026-08-27)",
+    "validate_campaign_welp.py": "valid=true — 0 errors, 0 warnings (info findings only)",
+    "leak_scan_candidate": "0 real hits; remaining matches are the literal placeholder tokens and a task-usage word fragment in pinned linux-systems artifacts",
+    "json_parse_all_edited": "OK (catalog, routing, representation, policy, manifests, publication_status, package-record, reconciliation)"
+  },
+  "canonical_results_unchanged": {
+    "phase3": "0.922 ADVANCE",
+    "phase4": "DO_NOT_ADVANCE (G6 1/21)",
+    "useful_context": 24576,
+    "decode_tps": 102.04,
+    "prefill_tps": 4046.67,
+    "mtp": "+9.9% divergent -> REJECTED_FOR_CANONICAL",
+    "soak": "screening clean; LOCKIN NOT_REACHED",
+    "classification": "roles=[] NOT_READY"
+  }
+}

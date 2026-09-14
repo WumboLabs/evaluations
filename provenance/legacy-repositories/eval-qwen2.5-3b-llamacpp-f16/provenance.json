@@ -1,0 +1,35 @@
+{
+  "repository": "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/llmgauge/results/qwen25-3b-llamacpp-f16-cross-runtime-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen25-3b-vllm-bf16-cross-runtime-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen25-3b-llamacpp-f16-cross-runtime-second-failed-command-recovery-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/qwen25-3b-vllm-bf16-cross-runtime-second-failed-command-recovery-8k",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/llmgauge/results/compare-qwen25-3b-f16-vs-vllm-bf16-8k.md",
+      "kind": "retained-evidence-source (identity only; not published)",
+      "sha256": "2b3bfe98f16d62974142e47f07c58a9df4bb2035073e15f5951c1a1670ae2699",
+      "bytes": 9877
+    },
+    {
+      "path": "shared/compare-qwen25-3b-f16-vs-vllm-bf16-8k.md",
+      "kind": "byte-identical public-safe LLMGauge cross-runtime comparison report (canonical copy)",
+      "sha256": "2b3bfe98f16d62974142e47f07c58a9df4bb2035073e15f5951c1a1670ae2699",
+      "bytes": 9877
+    }
+  ]
+}

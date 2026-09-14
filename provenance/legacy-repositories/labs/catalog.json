@@ -1,0 +1,90 @@
+{
+  "generated": "2026-08-27",
+  "description": "WumboLabs local lab index: evaluations, hardware baselines, methodology, model stores.",
+  "evaluations": [
+    {
+      "slug": "apodex-1.1-mini",
+      "display": "Apodex 1.1 mini",
+      "evaluation_classification": "BOUNDED_EARLY_STOP / PHASE_3_DO_NOT_ADVANCE",
+      "proposed_repo": "WumboLabs/eval-apodex-1.1-mini",
+      "current_campaign": "WELP",
+      "hardware": "WumboJetsII RTX 5070 12GB SM120",
+      "outcome": "DO_NOT_ADVANCE @ WELP Phase 3",
+      "localmaxxing_status": "APPROVED (speed 182.31 t/s; benchmark suites NOT_SUBMITTED - early Phase-3 stop)",
+      "wumbocore_readiness": "READY"
+    },
+    {
+      "slug": "lfm2.5-1.2b-qad",
+      "display": "Liquid LFM2.5 1.2B",
+      "evaluation_classification": "QAD_EVALUATION",
+      "proposed_repo": "WumboLabs/eval-lfm2.5-1.2b",
+      "current_campaign": "QAD campaign",
+      "hardware": "WumboJetsII",
+      "outcome": "QAD Q4_0 best quant; hallucination 0/12 all quants",
+      "localmaxxing_status": "NOT_APPLICABLE (no speed-test submission)",
+      "wumbocore_readiness": "PARTIAL"
+    },
+    {
+      "slug": "lfm2.5-2.6b-qad",
+      "display": "Liquid LFM2.5 2.6B",
+      "evaluation_classification": "QAD_EVALUATION",
+      "proposed_repo": "WumboLabs/eval-lfm2.5-2.6b",
+      "current_campaign": "QAD campaign",
+      "hardware": "WumboJetsII",
+      "outcome": "QAD Q4_0 ultra-fast quant; no material practical win reproduced",
+      "localmaxxing_status": "NOT_APPLICABLE",
+      "wumbocore_readiness": "PARTIAL"
+    },
+    {
+      "slug": "nemotron-3-nano-4b",
+      "display": "NVIDIA Nemotron 3 Nano 4B",
+      "evaluation_classification": "PARTIAL_PROTOCOL_DEVELOPMENT",
+      "proposed_repo": "WumboLabs/eval-nemotron-3-nano-4b",
+      "current_campaign": "WELP",
+      "hardware": "WumboJetsII",
+      "outcome": "PROTOCOL_BLOCKED @ Phase 3 gate (F-01); phases 0-2 clean",
+      "localmaxxing_status": "APPROVED (182.2 t/s, cmt84q6zw)",
+      "wumbocore_readiness": "PARTIAL"
+    },
+    {
+      "slug": "qwen3.8-27b",
+      "display": "Qwen 3.8 27B",
+      "evaluation_classification": "COMPLETED_DEEP_EVALUATION",
+      "proposed_repo": "WumboLabs/eval-qwen3.8-27b",
+      "current_campaign": "final-lock-in / sharp-dflash / localmaxxing",
+      "hardware": "WumboJetsII",
+      "outcome": "Guarded/limited deployment suitability: strong reviewed local coding/technical-assistant evidence under tested configuration; not recommended as an unguarded daily driver or unattended autonomous agent",
+      "localmaxxing_status": "APPROVED (speed x2: cmt3jngz, cmt3jp2c; benchmark suite APPROVED/PUBLIC)",
+      "wumbocore_readiness": "READY"
+    },
+    {
+      "slug": "ornith-1.5-9b",
+      "display": "Ornith 1.5 9B",
+      "evaluation_classification": "COMPLETED_FULL_PROTOCOL_CHARACTERIZATION",
+      "proposed_repo": "WumboLabs/eval-ornith-1.5-9b",
+      "current_campaign": "WELP",
+      "hardware": "WumboJetsII",
+      "outcome": "NOT_READY for role assignment: Phase 3 ADVANCE (0.922) but Phase 4 reliability gate FAIL (mechanical 1/21; dominated by scorer-lexicon false negatives, genuine failures remain). Useful context 24576 under 12GB profile; decode 102.04 t/s; screening soak clean.",
+      "localmaxxing_status": "APPROVED (speed cmtc6sopl0007o601d7hqrj1z; 102.04 t/s decode)",
+      "wumbocore_readiness": "READY"
+    }
+  ],
+  "hardware": [
+    {
+      "name": "wumbojetsii",
+      "status": "BASELINED",
+      "profile": "hardware/wumbojetsii/profile.json",
+      "summary": "AMD Ryzen 7 9800X3D / RTX 5070 12GB (SM120) / 32GB RAM / Fedora 44"
+    },
+    {
+      "name": "wumboserver",
+      "status": "PLANNED/NOT_BASELINED",
+      "profile": "hardware/wumboserver/profile.json",
+      "summary": "RTX 2060 SUPER 8GB remote lane; separate future milestone"
+    }
+  ],
+  "local_inventory": "LOCAL_ONLY; excluded from public release (see publication-allowlist.json)",
+  "methodology": {
+    "welp": "welp/ (WumboLabs Evaluation Lifecycle Protocol; future WumboLabs/welp)"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "campaign_id": "apodex-1.1-mini",
+  "generated_at_utc": "2026-08-25T23:45:00Z",
+  "protocol_identity": {
+    "snapshot_id": "wlep-next-snapshot-2026-08-25-end-to-end",
+    "manifest_sha256_of_note_hashes": "27/27 verified",
+    "executable_artifacts": "29/29 SHA-256 verified"
+  },
+  "model_identity": {
+    "canonical_quant": "Apodex-1.1-mini-IQ1_M.gguf sha256 1e84d8adf7837e96fb18712882a8a114becc7e53554372e2f612c5e0c6276cd4",
+    "upstream": "apodex/Apodex-1.1-mini @ 62583b464707ad58848bc2ab066747d8d5b02533",
+    "conversion_repo": "abenzerps/Apodex-1.1-mini-GGUF @ 59afa57852525f79a9634d5f80dd639cceee572c (community, not official)"
+  },
+  "phases_reached": [0, 1, 2, 3],
+  "counts": {
+    "phase0_provenance": {
+      "hf_api_queries": 8,
+      "gguf_downloads": {"IQ2_M": 1, "IQ1_M": 1, "chat_template": 1}
+    },
+    "phase1_admission": {
+      "server_launch_attempts": {"IQ2_M_full_gpu": 1, "IQ1_M_full_gpu": 1},
+      "behavioral_probes": 2,
+      "slots_props_probes": 3
+    },
+    "phase2_performance": {
+      "warmups": 3,
+      "measured_decode_reps_valid": 5,
+      "measured_prefill_reps_valid": 5,
+      "cache_probe_generations": 3
+    },
+    "phase3_practical_viability": {
+      "unique_tasks": 30,
+      "seeds": [42, 43, 44],
+      "valid_generations_scored": 90,
+      "scorer_selftest_runs": 2,
+      "bounded_failure_review_rows_inspected": 27
+    },
+    "omp_stage1_smoke": {"model_turns": 1},
+    "localmaxxing_speed": {"llama_bench_runs": 1},
+    "total_approximate_local_model_generations": 106
+  },
+  "invalidated_runs": [
+    {"count": 90, "reason": "Phase-3 pass 1: output lost to background-job relative-path execution; file unrecoverable"},
+    {"count": 25, "reason": "Phase-3 pass 2: eval-kernel timeout interruption at partial completion (partial file retained)"},
+    {"count": 90, "reason": "Phase-3 pass 3: template-default thinking starved token budgets (57/90 length-truncated, 55/90 empty content); frozen think-budget-starvation precedent; D1 baseline enforcement moved server-side"},
+    {"count": 10, "reason": "Phase-2 run 1: decode workload permitted 2-token early termination; contamination audit mis-triggered by constant cached_tokens=74 telemetry artifact (PF-04)"},
+    {"count": 10, "reason": "Phase-2 run 2: counting decode prompt induced refusal on 2/5 seeds; audit artifact persisted"},
+    {"count": 5, "reason": "Phase-2 run 3 prefill reps: real prompt-cache contamination (cached_tokens up to 5643/5695); replaced with --no-cache-prompt methodology"}
+  ],
+  "totals": {
+    "valid_measured_generations_or_reps": 106,
+    "invalidated_discarded": 230,
+    "note": "invalidated runs retained on disk under results/INVALIDATED-*; excluded from all statistics"
+  }
+}

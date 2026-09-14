@@ -1,0 +1,77 @@
+{
+  "campaign": "apodex-1.1-mini",
+  "protocol_identity": {
+    "snapshot_id": "wlep-next-snapshot-2026-08-25-end-to-end",
+    "wlep_status": "DRAFT — NOT v1.0",
+    "verification": {
+      "vault_note_hashes": "27/27 matched frozen manifest at campaign start",
+      "executable_artifact_hashes": "29/29 SHA-256 verified",
+      "vault_head_at_start": "010b693673c6a4e0300844ef498db562d93af668 (2026-08-25 18:11:45 -0400)",
+      "vault_head_drift_during_campaign": "none observed; campaign used its own immutable snapshot copy regardless"
+    },
+    "campaign_snapshot": "protocol-snapshot/campaign-snapshot-manifest.json (303 files hashed)"
+  },
+  "phases": {
+    "entered": [0, 1, 2, 3],
+    "passed": {"phase1_admission": true},
+    "completed_as_characterization": {"phase2_performance": "COMPLETE"},
+    "failed_gates": {
+      "phase3_practical_viability": {
+        "verdict": "DO_NOT_ADVANCE",
+        "gates_failed": ["G1_aggregate>=0.75 (all seeds: 0.667/0.700/0.733)", "G2_false_premise>=0.6 (seeds 42: 0.400, 43: 0.200)"],
+        "decision_stability": "identical FAIL decision on all three canonical seeds"
+      }
+    },
+    "stop_phase": 3,
+    "stop_reason": "Early-Stop Philosophy: Phase-3 gate failure mandates bounded report and STOP",
+    "not_reached": ["Phase 4 Reliability", "Phase 5 all modules", "Phase 6 Context", "Phase 7 Variance", "Phase 8 Optimization", "Phase 9 Stability", "Phase 10 Final Classification engine input bundle"],
+    "omp_stage1_integration_smoke": "PASS (permitted post-admission regardless of gate outcomes)",
+    "omp_stage2_agent_module": "NOT_REACHED (gated on Phase 4 ADVANCE)"
+  },
+  "gate_decisions_log": [
+    {"gate": "Phase1 admission IQ2_M full-GPU", "decision": "FAIL", "reason": "weights buffer 11429724672 B > free VRAM; deterministic impossibility"},
+    {"gate": "Phase1 admission IQ1_M full-GPU", "decision": "PASS", "reason": "full placement verified via VRAM-vs-RSS + startup log + smoke probes"},
+    {"gate": "Canonical quant selection", "decision": "IQ1_M frozen", "reason": "IQ2_M rejected deterministically; ladder rule applied without hybrid offload (D2)"},
+    {"gate": "Phase2 outcome semantics", "decision": "COMPLETE", "reason": "valid reproducible measurements after two invalidated methodology passes; contamination handled by explicit --no-cache-prompt technique"},
+    {"gate": "Phase3 DRAFT v0.1", "decision": "DO_NOT_ADVANCE", "reason": "G1+G2 failed; bounded failure review confirmed verdict robust to known scorer lexicon artifacts"}
+  ],
+  "protocol_ambiguities_found": [
+    {"id": "AMB-01", "observation": "Baseline reasoning state for gate phases is implied by precedent (qwen38 --reasoning-off invalidation note) rather than stated as a rule; PV runner does not pin enable_thinking while reliability runner hard-codes false.", "impact": "first valid-looking PV pass was silently think-budget-starved; required server-side enforcement decision (D1)"},
+    {"id": "AMB-02", "observation": "Serving Profile Identity requires fit=off but no note states whether measurement-only flags (--no-cache-prompt) may be toggled between phases.", "impact": "resolved conservatively: profile delta documented (D4), canonical cached profile restored after Phase 2"}
+  ],
+  "undocumented_decisions_required": [
+    {"id": "D1", "decision": "gate baseline = thinking OFF enforced server-side (-rea off)"},
+    {"id": "D2", "decision": "IQ2_M rejected without hybrid-offload testing based on deterministic allocation arithmetic"},
+    {"id": "D3", "decision": "new campaign-pinned runtime tree at f280b269 instead of existing 0d9ceae1 builds"},
+    {"id": "D4", "decision": "Phase-2 prefill measured on dedicated --no-cache-prompt instance; canonical profile restored afterward"},
+    {"id": "D5", "decision": "OMP Stage-1 smoke executed post-admission despite early stop (Stage-1 has no viability-gate prerequisite in the frozen OMP note)"}
+  ],
+  "scorer_defects": [
+    {"id": "SC-01", "scorer": "score_pv.py 79f29b2c…", "defect": "rejection-marker lexicon misses common correct-rejection phrasings ('don't have information', 'there's no X', \"isn't a real\"); len>40 fallback misclassifies as HALLUCINATION", "evidence": "8 of 27 Phase-3 fails reviewed as artifacts", "impact": "G2 rates understated; gate outcome unchanged under favorable correction", "disposition": "recorded only; scorer untouched mid-campaign per Scoring Bug & Correction Policy"}
+  ],
+  "harness_defects": [
+    {"id": "HF-01", "item": "frozen phase2_perf.py decode workload allows compliant models to terminate after ~2 tokens", "impact": "invalidated run 1"},
+    {"id": "HF-02", "item": "frozen phase2_perf.py contamination audit treats ANY nonzero cached_tokens as contamination; runtime reports a constant artifact value 74 (PF-04)", "impact": "runs 1-2 fully invalidated"},
+    {"id": "HF-03", "item": "run_calibration.py assumes pre-existing output directory; fails with FileNotFoundError otherwise", "impact": "cosmetic; worked around"},
+    {"id": "HF-04", "item": "run_reliability.py references sys.argv[4] before checking len(sys.argv) > 4 (latent crash if invoked with sampling override absent but 4 args malformed)", "impact": "not triggered this campaign (NOT_REACHED)"}
+  ],
+  "schema_artifact_deficiencies": [],
+  "bespoke_exceptions_required": [
+    "campaign-local phase2_perf_v3.py / phase2_prefill_nocache.py harness revisions (documented deltas, hashes recorded); frozen WLEP contracts/scorers/schemas themselves untouched"
+  ],
+  "structural_blockers": [],
+  "provisional_threshold_observations": [
+    {"id": "PF-05", "note": "correcting all 8 lexicon-artifact FP fails in the model's favor still leaves seed-42 aggregate at 0.733 < 0.75 ⇒ Phase-3 verdict robust to SC-01"}
+  ],
+  "protocol_changes_during_run": false,
+  "early_stop_behavior": "triggered exactly where protocol required; no softened gates",
+  "operator_directive_recorded": "user directive post-build: future campaigns must first diff existing runtimes against newer requirements and build only on affirmative evidence of incompatibility",
+  "publication_status": {
+    "localmaxxing_speed": "LOCAL_VALIDATION_COMPLETE / SUBMISSION_BLOCKED (no credential)",
+    "localmaxxing_benchmarks": "NOT_SUBMITTED",
+    "localmaxxing_report": "NOT_CREATED",
+    "github_lab_record": "prepared (publication/repo-candidate)",
+    "wumbocore_mirror": "ready flag set in summaries/wumbocore_summary.json"
+  },
+  "final_protocol_verdict": "The end-to-end frozen WLEP ran this fresh MoE model through Phases 0-3 without any structural change to the protocol. All required decisions were resolvable from frozen material plus documented operator decisions; one scorer defect and three harness defects found, none structural. Protocol convergence evidence continues to accumulate."
+}

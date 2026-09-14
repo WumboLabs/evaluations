@@ -1,0 +1,26 @@
+[
+ {
+  "prompt": "Reply with exactly the JSON object {\"status\":\"ok\",\"count\":3} and nothing else.",
+  "text": "{\"status\":\"ok\",\"count\":3}"
+ },
+ {
+  "prompt": "What is 17*23? End with FINAL: <number>",
+  "text": "17 \u00d7 23 = 391\n\nLet me verify:\n- 17 \u00d7 20 = 340\n- 17 \u00d7 3 = 51\n- 340 + 51 = 391\n\nFINAL: 391"
+ },
+ {
+  "prompt": "List three prime numbers, one per line.",
+  "text": "2\n3\n5"
+ },
+ {
+  "prompt": "Translate to French: The server is restarting tonight.",
+  "text": "Le serveur red\u00e9marre ce soir."
+ },
+ {
+  "prompt": "Write a Python function is_palindrome(s) returning bool.",
+  "text": "Here's a Python function that checks if a string is a palindrome:\n\n```python\ndef is_palindrome(s):\n    \"\"\"Return True if s is a palindrome, False otherwise.\"\"\"\n    return s == s[::-1]\n```\n\nThis works by comparing the string to its reverse. The `[::-1]` slice notation reverses the string, and `==` checks if they're equal.\n\n**Example usage:**\n\n```python\nprint(is_palindrome"
+ },
+ {
+  "prompt": "Capital of Australia? One word only.",
+  "text": "Canberra"
+ }
+]

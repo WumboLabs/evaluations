@@ -1,0 +1,23 @@
+{
+  "repository": "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver",
+  "generated": "2026-09-12",
+  "transformation": "public-safe derivative of retained local evidence; no raw internal bundles",
+  "sources": [
+    {
+      "path": "local-llm/hardware/wumboserver/rtx2060s-qwen38-9b-q5-admission-2026-09-01",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/hardware/wumboserver/rtx2060s-qwen38-9b-q6-boundary-2026-09-01",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/hardware/wumboserver/rtx2060s-localmaxxing-reconciliation-2026-09-01/payloads/",
+      "kind": "retained-evidence-source (identity only; not published)"
+    },
+    {
+      "path": "local-llm/hardware/wumboserver/rtx2060s-q5-welp-campaign-2026-09-01",
+      "kind": "retained-evidence-source (identity only; not published)"
+    }
+  ]
+}

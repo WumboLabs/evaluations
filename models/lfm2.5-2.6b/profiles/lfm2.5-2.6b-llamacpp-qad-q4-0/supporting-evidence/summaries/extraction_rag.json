@@ -1,0 +1,100 @@
+{
+  "BF16": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "BF16",
+        "pass": false,
+        "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}."
+      },
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "BF16",
+        "pass": false,
+        "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "PTQ_Q4_0": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "PTQ_Q4_0",
+        "pass": false,
+        "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}."
+      },
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "PTQ_Q4_0",
+        "pass": false,
+        "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "Q4_K_M": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "Q4_K_M",
+        "pass": false,
+        "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}."
+      },
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "Q4_K_M",
+        "pass": false,
+        "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "Q5_K_M": {
+    "failures": [
+      {
+        "answer": "```json\n{\n  \"owner\": \"Rina\",\n  \"ticket\": \"INC-42\"\n}\n```",
+        "category": "extraction",
+        "model": "Q5_K_M",
+        "pass": false,
+        "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}."
+      },
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "Q5_K_M",
+        "pass": false,
+        "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT."
+      }
+    ],
+    "pass": 0,
+    "rate": 0.0,
+    "total": 2
+  },
+  "QAD_Q4_0": {
+    "failures": [
+      {
+        "answer": "",
+        "category": "extraction",
+        "model": "QAD_Q4_0",
+        "pass": false,
+        "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}."
+      }
+    ],
+    "pass": 1,
+    "rate": 0.5,
+    "total": 2
+  }
+}

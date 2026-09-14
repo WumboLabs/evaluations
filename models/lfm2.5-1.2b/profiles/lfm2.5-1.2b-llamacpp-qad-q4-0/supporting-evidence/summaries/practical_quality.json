@@ -1,0 +1,217 @@
+{
+  "method": "52 unique tasks; mechanical scoring; official sampler temp .1/top-k 50/rp 1.05 seed 42; bool_field corrected after review (25 is composite); all other results unchanged",
+  "per_model": {
+    "BF16": {
+      "extraction": {
+        "passes": 4,
+        "rate": 0.5,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 4,
+        "rate": 1.0,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 11,
+          "MATERIAL_DEFECT": 1
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 4,
+        "rate": 0.6667,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 12,
+        "rate": 1.0,
+        "tasks": 12
+      }
+    },
+    "PTQ_Q4_0": {
+      "extraction": {
+        "passes": 4,
+        "rate": 0.5,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 4,
+        "rate": 1.0,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 12
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 4,
+        "rate": 0.6667,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 10,
+        "rate": 0.8333,
+        "tasks": 12
+      }
+    },
+    "Q4_K_M": {
+      "extraction": {
+        "passes": 3,
+        "rate": 0.375,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 3,
+        "rate": 0.75,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 12
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 3,
+        "rate": 0.5,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 10,
+        "rate": 0.8333,
+        "tasks": 12
+      }
+    },
+    "Q5_K_M": {
+      "extraction": {
+        "passes": 4,
+        "rate": 0.5,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 4,
+        "rate": 1.0,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 12
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 3,
+        "rate": 0.5,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 10,
+        "rate": 0.8333,
+        "tasks": 12
+      }
+    },
+    "QAD_Q4_0": {
+      "extraction": {
+        "passes": 4,
+        "rate": 0.5,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 4,
+        "rate": 1.0,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 11,
+          "MATERIAL_DEFECT": 1
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 4,
+        "rate": 0.6667,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 11,
+        "rate": 0.9167,
+        "tasks": 12
+      }
+    },
+    "UD_Q4_K_XL": {
+      "extraction": {
+        "passes": 3,
+        "rate": 0.375,
+        "tasks": 8
+      },
+      "factual_uncertainty": {
+        "passes": 3,
+        "rate": 0.75,
+        "tasks": 4
+      },
+      "hallucination": {
+        "labels": {
+          "HALLUCINATION": 12
+        },
+        "passes": 0,
+        "rate": 0.0,
+        "tasks": 12
+      },
+      "instruction": {
+        "passes": 8,
+        "rate": 0.8,
+        "tasks": 10
+      },
+      "linux_knowledge": {
+        "passes": 3,
+        "rate": 0.5,
+        "tasks": 6
+      },
+      "structured": {
+        "passes": 10,
+        "rate": 0.8333,
+        "tasks": 12
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "campaign": "qwen35-4b-rtx5070-baseline-2026-09-09",
+ "artifacts": [
+  {
+   "description": "Qwen3.5-4B-BF16.gguf (text-only conversion; Unsloth revision e87f176479d0855a907a41277aca2f8ee7a09523)",
+   "precision": "BF16 weights, F16 KV cache, F32 recurrent state",
+   "sha256": "9e6e2841a75f503ccb330831832fd7861266e187e0dbf149a954219ccb8c197a",
+   "source": "unsloth/Qwen3.5-4B-GGUF, hash-matched to upstream LFS",
+   "role": "tested evaluation artifact (identity provenance only; binary not stored in this repository)"
+  }
+ ]
+}

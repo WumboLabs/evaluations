@@ -1,0 +1,40 @@
+{
+  "schema": "welp-practical-viability-result/0.1.0-draft",
+  "phase": "WELP Phase 3 — Core Practical Viability",
+  "campaign_id": "ornith-1.5-9b-welp-2026-08-27",
+  "contract": "welp-practical-viability 0.1.4-draft (file welp-practical-viability-0.1.3-draft.json, sha256 4c5de7fe786f9155…)",
+  "scorer": "pf01 revision 2 score_pv.py sha256 d5dedf5b5bae21e3…; selftest 60/60 PASS immediately before use",
+  "baseline_reasoning_state": "REASONING_OFF — server --reasoning off + per-request enable_thinking=false; 0/90 rows carry reasoning_content",
+  "generations": 90,
+  "per_seed": {
+    "42": {"aggregate": 0.9, "false_premise_rejection": 0.6, "factual_uncertainty": 1.0, "structured_output": 1.0,
+            "by_category": {"basic_technical_knowledge": 1.0, "extraction": 0.8, "factual_uncertainty": 1.0, "false_premise_rejection": 0.6, "instruction_following": 1.0, "structured_output": 1.0}},
+    "43": {"aggregate": 0.933, "false_premise_rejection": 0.8, "factual_uncertainty": 1.0, "structured_output": 1.0,
+            "by_category": {"basic_technical_knowledge": 1.0, "extraction": 1.0, "factual_uncertainty": 1.0, "false_premise_rejection": 0.8, "instruction_following": 0.8, "structured_output": 1.0}},
+    "44": {"aggregate": 0.933, "false_premise_rejection": 0.8, "factual_uncertainty": 1.0, "structured_output": 1.0,
+            "by_category": {"basic_technical_knowledge": 1.0, "extraction": 1.0, "factual_uncertainty": 1.0, "false_premise_rejection": 0.8, "instruction_following": 0.8, "structured_output": 1.0}}
+  },
+  "gate_evaluation_DRAFT_v0.1": {
+    "G1_aggregate_ge_0.75": "PASS (0.900 / 0.933 / 0.933)",
+    "G2_false_premise_ge_0.6": "PASS (0.600 boundary / 0.800 / 0.800)",
+    "G3_factual_uncertainty_ge_0.5": "PASS (1.000 all seeds)",
+    "G4_structured_output_ge_0.7": "PASS (1.000 all seeds)",
+    "G5_seed_flip_stability": "PASS (identical ADVANCE decision on all three seeds)",
+    "verdict": "ADVANCE"
+  },
+  "failure_review": {
+    "fails_total": 7,
+    "genuine_failures": [
+      "FP03 seed42: fabricated complete documentation for nonexistent kernel.moonwalk sysctl (HALLUCINATION)",
+      "FP05 seeds 42/43/44: fabricated meaning of nonexistent 'ulimit -w' option (HALLUCINATION, consistent false memory)",
+      "IF02 seeds 43/44: 'BANANA' backwards rendered 'ANNABAN' (transposition error, not ANANAB)"
+    ],
+    "format_failures": [
+      "EX02 seed42: correct final answer NOT_PRESENT preceded by literal <think>…</think> block inside content; exact_stripped check fails on shape"
+    ],
+    "protocol_finding_PF-O1": "with enable_thinking=false the template suppresses server-side reasoning extraction, but the model can still emit literal <think> spans into content; downstream strict-format consumers must strip or reject. Not a scorer artifact — genuine output-shape behavior.",
+    "scorer_lexicon_artifacts": 0
+  },
+  "invalidated_passes": [],
+  "outcome": "ADVANCE — Phase 4 Reliability authorized"
+}

@@ -1,0 +1,30 @@
+{
+ "campaign": "evals/qwen3.8-27b",
+ "model_store": "models/qwen3.8-27b",
+ "symlink": "evals/qwen3.8-27b/** -> models/qwen3.8-27b/artifacts",
+ "artifacts": [
+  {
+   "filename": "Qwen3.8-27B-AD-IQ2_XS.gguf",
+   "relpath": "atomic-ad-iq2-xs-model/Qwen3.8-27B-AD-IQ2_XS.gguf",
+   "bytes": 9889846752,
+   "sha256": "a437190b719a4f1498cb54120d73a97b595fcfa0c263bc0753cc9c19942e82c5",
+   "role": "atomic-decomposition IQ2_XS evidence artifact",
+   "documented_sha256_match": null
+  },
+  {
+   "filename": "Qwen3.8-27B-DFlash2-Q4_K_M.gguf",
+   "relpath": "sharp-dflash-dflash2-q4/Qwen3.8-27B-DFlash2-Q4_K_M.gguf",
+   "bytes": 1143006752,
+   "sha256": "18a380efc9b7ed8d88677fc895f5c11ae170653434ee378f7348f715c14d0594",
+   "role": "DFlash2 Q4_K_M sharp-dflash evaluation artifact",
+   "documented_sha256_match": null
+  }
+ ],
+ "sidecar_files": [
+  "atomic-ad-iq2-xs-model/AtomicChat-Qwen3.8-27B-GGUF-README.md",
+  "atomic-ad-iq2-xs-model/kld-neutral-AD-IQ2_XS.log",
+  "atomic-ad-iq2-xs-model/kld-neutral-UD-IQ2_M.log",
+  "atomic-ad-iq2-xs-model/kld-neutral-UD-IQ2_XXS.log",
+  "atomic-ad-iq2-xs-model/quantize-AD-IQ2_XS.log"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "artifacts":[
+    {"id":"QAD_Q4_0","classification":"KEEP — QAD primary","bytes":1593894944},
+    {"id":"BF16","classification":"KEEP — BF16 control","bytes":5403158528},
+    {"id":"PTQ_Q4_0","classification":"KEEP — PTQ control","bytes":1593894912},
+    {"id":"Q4_K_M","classification":"KEEP — quality reference","bytes":1674455040},
+    {"id":"Q5_K_M","classification":"KEEP — quality reference","bytes":1939744768},
+    {"id":"Q6_K","classification":"OPTIONAL","bytes":2221615104},
+    {"id":"Q8_0","classification":"OPTIONAL","bytes":2874779648}
+  ],
+  "recoverable_bytes_after_human_review":5096394752,
+  "deleted":false
+}

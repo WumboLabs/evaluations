@@ -1,0 +1,1465 @@
+{
+  "v1": {
+    "BF16": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "PTQ_Q4_0": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "QAD_Q4_0": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "Q4_K_M": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "pass": true
+      }
+    ],
+    "UD_Q4_K_XL": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": false
+      }
+    ],
+    "Q5_K_M": [
+      {
+        "query": "What is weather in Oslo in C?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum 2, 5, and 9.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            2,
+            5,
+            9
+          ]
+        },
+        "pass": true
+      },
+      {
+        "query": "Just greet me; do not call a tool.",
+        "expected_tool": null,
+        "expected_arguments": null,
+        "got_tool": null,
+        "got_arguments": null,
+        "pass": true
+      },
+      {
+        "query": "What is weather in Lima in F?",
+        "expected_tool": "lookup_weather",
+        "expected_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "got_tool": "lookup_weather",
+        "got_arguments": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "pass": true
+      },
+      {
+        "query": "Sum -3 and 8.",
+        "expected_tool": "sum_numbers",
+        "expected_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "got_tool": "sum_numbers",
+        "got_arguments": {
+          "values": [
+            -3,
+            8
+          ]
+        },
+        "pass": true
+      }
+    ]
+  },
+  "v2": {
+    "BF16": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "monitoring"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17,
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "disk almost full",
+          "priority": "medium",
+          "retries": 8,
+          "tags": [
+            "spider"
+          ],
+          "assignee": {
+            "team": "support",
+            "level": 1
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "The actual stock price for AAPL is **142.50 USD**, which is below your initial assumption of over $500. Therefore, the answer is **NO**. \n\nLet me know if you need further clarification!",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ],
+    "PTQ_Q4_0": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "GPU",
+            "alarm"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "disk almost full",
+          "priority": "medium",
+          "retries": 8,
+          "tags": [
+            "storage",
+            "alert"
+          ],
+          "assignee": {
+            "team": "engineering",
+            "level": 2
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "The actual stock price for AAPL is **142.50 USD**, which is below your assumed threshold of 500 dollars. Therefore, your assumption was incorrect. \n\nAnswer: **NO** (the current price is 142.50).",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ],
+    "QAD_Q4_0": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "infrastructure"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "disk almost full",
+          "priority": "medium",
+          "retries": 8,
+          "tags": [
+            "spider"
+          ],
+          "assignee": {
+            "team": "IT",
+            "level": 1
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "The actual stock price provided is $142.50, which is below your assumption of over $500. Therefore, your assumption was incorrect. \n\nAnswer: NO",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ],
+    "Q4_K_M": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "infrastructure"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "typo in docs",
+          "priority": "low",
+          "tags": [
+            "urgent"
+          ],
+          "assignee": {
+            "team": "general",
+            "level": 1
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO. The function `get_stock_price` requires a valid ticker symbol to retrieve a stock price, and the current result indicates an error due to an unknown ticker. Therefore, the lookup did not succeed in this case.",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "The actual current stock price for AAPL is **142.50 USD**, which is indeed below your initial assumption of over 500 dollars. Your conclusion is correct. \n\nLet me know if you need further clarification!",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ],
+    "UD_Q4_K_XL": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "infrastructure"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO. The function `get_stock_price` requires a valid stock ticker symbol (e.g., AAPL for Apple), but no ticker was provided in the query.",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "The actual current stock price for AAPL is **142.50 USD**, which is indeed below your initial assumption of over 500 dollars. So, your assumption was incorrect. \n\nAnswer: **NO** (the correct price is 142.50).",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ],
+    "Q5_K_M": [
+      {
+        "id": "v2_nested_object",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "GPU fan alarm",
+          "priority": "high",
+          "tags": [
+            "monitoring"
+          ],
+          "assignee": {
+            "team": "infra",
+            "level": 3
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "lookup_weather",
+        "followup_args": {
+          "city": "Oslo",
+          "unit": "C"
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiple_possible",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            4,
+            17,
+            4,
+            17
+          ]
+        },
+        "second_tool": "sum_numbers",
+        "second_args": {
+          "values": [
+            4,
+            17
+          ]
+        },
+        "selection_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_irrelevant_tool",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_int_constraint",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "disk almost full",
+          "priority": "medium",
+          "retries": 8,
+          "tags": [
+            "storage"
+          ],
+          "assignee": {
+            "team": "support",
+            "level": 1
+          }
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_enum_invalid_then_fix",
+        "got_tool": null,
+        "got_args": null,
+        "selection_ok": false,
+        "schema_ok": false,
+        "interpretation_ok": true,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_error_retry",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "ZZZZZ"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "NO",
+        "final_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      },
+      {
+        "id": "v2_contradiction",
+        "got_tool": "get_stock_price",
+        "got_args": {
+          "ticker": "AAPL"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": null,
+        "followup_args": null,
+        "followup_text": "Yes, your assumption is correct. The current stock price for AAPL is $142.50, which is above $500.",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_no_tool_case",
+        "got_tool": "sum_numbers",
+        "got_args": {
+          "values": [
+            12,
+            11
+          ]
+        },
+        "selection_ok": false,
+        "final_ok": false,
+        "schema_ok": true,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_multiturn_seq",
+        "got_tool": "lookup_weather",
+        "got_args": {
+          "city": "Lima",
+          "unit": "F"
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "followup_tool": "sum_numbers",
+        "followup_args": {
+          "values": [
+            12,
+            8
+          ]
+        },
+        "followup_text": "",
+        "final_ok": false,
+        "interpretation_ok": false,
+        "complete_sequence_ok": false
+      },
+      {
+        "id": "v2_array_of_strings",
+        "got_tool": "create_ticket",
+        "got_args": {
+          "title": "audit",
+          "priority": "high",
+          "tags": [
+            "security",
+            "q3"
+          ]
+        },
+        "selection_ok": true,
+        "schema_ok": true,
+        "interpretation_ok": true,
+        "complete_sequence_ok": true
+      }
+    ]
+  }
+}

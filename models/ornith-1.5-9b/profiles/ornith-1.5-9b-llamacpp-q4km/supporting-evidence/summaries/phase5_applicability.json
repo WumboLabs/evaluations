@@ -1,0 +1,69 @@
+{
+  "schema": "welp-phase5-applicability-freeze/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "frozen_before_phase5_execution": true,
+  "frozen_at_utc": "2026-08-27",
+  "derived_from": {
+    "architecture_modalities": [
+      "text",
+      "multimodal-capable-source (HF tags: image-text-to-text; mmproj-Ornith-1.5-9B-BF16.gguf present)"
+    ],
+    "producer_claims": "ornith-ai/Ornith-1.5-9B model card @ 489cb979: reasoning model (assistant turn opens with a think trace, exposed via reasoning_content); native tool calling parsed to OpenAI tool_calls (qwen3_xml / qwen3_coder parsers); optimized for terminal-based coding agents (Terminal-Bench, SWE-bench, OpenCode/Claude Code recipes); 262144-token native context; end-to-end self-improvement training",
+    "declared_campaign_objective": "TEXT + REASONING + CODING + TOOLS + AGENTIC USE"
+  },
+  "applicability": {
+    "structured_interfaces": {
+      "class": "UNIVERSAL_CORE",
+      "required_for_roles": ["primary_assistant"]
+    },
+    "extraction_rag": {
+      "class": "UNIVERSAL_CORE",
+      "required_for_roles": ["extraction_helper"]
+    },
+    "linux_systems": {
+      "class": "UNIVERSAL_CORE",
+      "required_for_roles": []
+    },
+    "coding": {
+      "class": "CONDITIONAL_APPLICABLE_REQUIRED_FOR_CLAIMED_ROLE",
+      "rationale": "Producer explicitly positions model for terminal-based coding agents and reports SWE-bench/Terminal-Bench results; campaign objective includes CODING",
+      "required_for_roles": ["coding_specialist"],
+      "constrains_classification": true
+    },
+    "native_tools": {
+      "class": "CONDITIONAL_APPLICABLE_REQUIRED_FOR_CLAIMED_ROLE",
+      "rationale": "Native function calling is an explicit producer claim (tool_calls via qwen3 parsers); campaign objective includes TOOLS/AGENTIC",
+      "required_for_roles": ["tool_agent"],
+      "constrains_classification": true
+    },
+    "reasoning": {
+      "class": "CONDITIONAL_APPLICABLE",
+      "rationale": "Producer states model is reasoning-first; official mechanism is a think block surfaced as reasoning_content per model card and serving recipes",
+      "baseline_vs_enabled": true,
+      "official_mechanism_only": true
+    },
+    "omp_local_agent": {
+      "class": "CONDITIONAL_APPLICABLE_GATED",
+      "gate": "Phase 3 PASS + Phase 4 ADVANCE + Coding module prerequisite per frozen execution order",
+      "result_class": "SYSTEM_LEVEL_ONLY"
+    },
+    "vision": {
+      "class": "NOT_APPLICABLE",
+      "rationale": "Declared objective is TEXT+AGENTIC; no vision testing authorized by frozen policy; recorded SUPPORTED_BY_SOURCE / NOT_EVALUATED"
+    }
+  },
+  "execution_order_frozen": [
+    "structured_interfaces",
+    "extraction_rag",
+    "linux_systems",
+    "coding",
+    "native_tools",
+    "reasoning",
+    "omp_local_agent"
+  ],
+  "notes": [
+    "Reasoning module runs in BOTH states: canonical REASONING_OFF baseline vs REASONING_ON (server --reasoning enabled + enable_thinking=true), official mechanism only; no third-party prompt-scaffolding variants.",
+    "Phase 4 ADVANCE (pending scoring) is prerequisite for omp_local_agent only; universal-core modules proceed regardless.",
+    "Module task/scorer hashes pinned at execution time from welp-modules.json index + frozen repo-candidate contracts."
+  ]
+}

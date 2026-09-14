@@ -1,0 +1,327 @@
+{
+  "BF16": [
+    {
+      "model": "BF16",
+      "category": "instruction",
+      "prompt": "Return exactly the string RED-BLUE-GREEN.",
+      "answer": "RED-BLUE-GREEN",
+      "pass": true
+    },
+    {
+      "model": "BF16",
+      "category": "instruction",
+      "prompt": "Convert the string Ab9! to uppercase and append exactly one exclamation mark. Return only the result.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "BF16",
+      "category": "instruction",
+      "prompt": "From priorities P0, P2, P1, return the highest priority label only.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "BF16",
+      "category": "structured",
+      "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}.",
+      "answer": "{\"name\":\"Ada\",\"active\":true,\"count\":3}",
+      "pass": true
+    },
+    {
+      "model": "BF16",
+      "category": "structured",
+      "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"].",
+      "answer": "[\"alpha\",\"beta\",\"gamma\"]",
+      "pass": true
+    },
+    {
+      "model": "BF16",
+      "category": "hallucination",
+      "prompt": "A fictional Linux command named frobnicate-net is not installed and you have no evidence it exists. Reply exactly NOT_AVAILABLE; do not invent usage.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "BF16",
+      "category": "hallucination",
+      "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "BF16",
+      "category": "extraction",
+      "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "BF16",
+      "category": "extraction",
+      "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT.",
+      "answer": "",
+      "pass": false
+    }
+  ],
+  "PTQ_Q4_0": [
+    {
+      "model": "PTQ_Q4_0",
+      "category": "instruction",
+      "prompt": "Return exactly the string RED-BLUE-GREEN.",
+      "answer": "RED-BLUE-GREEN",
+      "pass": true
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "instruction",
+      "prompt": "Convert the string Ab9! to uppercase and append exactly one exclamation mark. Return only the result.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "instruction",
+      "prompt": "From priorities P0, P2, P1, return the highest priority label only.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "structured",
+      "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}.",
+      "answer": "{\"name\":\"Ada\",\"active\":true,\"count\":3}",
+      "pass": true
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "structured",
+      "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"].",
+      "answer": "[\"alpha\",\"beta\",\"gamma\"]",
+      "pass": true
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "hallucination",
+      "prompt": "A fictional Linux command named frobnicate-net is not installed and you have no evidence it exists. Reply exactly NOT_AVAILABLE; do not invent usage.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "hallucination",
+      "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "extraction",
+      "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "PTQ_Q4_0",
+      "category": "extraction",
+      "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT.",
+      "answer": "",
+      "pass": false
+    }
+  ],
+  "QAD_Q4_0": [
+    {
+      "model": "QAD_Q4_0",
+      "category": "instruction",
+      "prompt": "Return exactly the string RED-BLUE-GREEN.",
+      "answer": "RED-BLUE-GREEN",
+      "pass": true
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "instruction",
+      "prompt": "Convert the string Ab9! to uppercase and append exactly one exclamation mark. Return only the result.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "instruction",
+      "prompt": "From priorities P0, P2, P1, return the highest priority label only.",
+      "answer": "P0",
+      "pass": true
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "structured",
+      "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}.",
+      "answer": "{\"name\":\"Ada\",\"active\":true,\"count\":3}",
+      "pass": true
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "structured",
+      "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"].",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "hallucination",
+      "prompt": "A fictional Linux command named frobnicate-net is not installed and you have no evidence it exists. Reply exactly NOT_AVAILABLE; do not invent usage.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "hallucination",
+      "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "extraction",
+      "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "QAD_Q4_0",
+      "category": "extraction",
+      "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT.",
+      "answer": "NOT_PRESENT",
+      "pass": true
+    }
+  ],
+  "Q4_K_M": [
+    {
+      "model": "Q4_K_M",
+      "category": "instruction",
+      "prompt": "Return exactly the string RED-BLUE-GREEN.",
+      "answer": "RED-BLUE-GREEN",
+      "pass": true
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "instruction",
+      "prompt": "Convert the string Ab9! to uppercase and append exactly one exclamation mark. Return only the result.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "instruction",
+      "prompt": "From priorities P0, P2, P1, return the highest priority label only.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "structured",
+      "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}.",
+      "answer": "{\"name\":\"Ada\",\"active\":true,\"count\":3",
+      "pass": false
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "structured",
+      "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"].",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "hallucination",
+      "prompt": "A fictional Linux command named frobnicate-net is not installed and you have no evidence it exists. Reply exactly NOT_AVAILABLE; do not invent usage.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "hallucination",
+      "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "extraction",
+      "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q4_K_M",
+      "category": "extraction",
+      "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT.",
+      "answer": "",
+      "pass": false
+    }
+  ],
+  "Q5_K_M": [
+    {
+      "model": "Q5_K_M",
+      "category": "instruction",
+      "prompt": "Return exactly the string RED-BLUE-GREEN.",
+      "answer": "RED-BLUE-GREEN",
+      "pass": true
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "instruction",
+      "prompt": "Convert the string Ab9! to uppercase and append exactly one exclamation mark. Return only the result.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "instruction",
+      "prompt": "From priorities P0, P2, P1, return the highest priority label only.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "structured",
+      "prompt": "Return only valid JSON exactly matching {\"name\":\"Ada\",\"active\":true,\"count\":3}.",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "structured",
+      "prompt": "Return only valid JSON array [\"alpha\",\"beta\",\"gamma\"].",
+      "answer": "",
+      "pass": false
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "hallucination",
+      "prompt": "A fictional Linux command named frobnicate-net is not installed and you have no evidence it exists. Reply exactly NOT_AVAILABLE; do not invent usage.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "hallucination",
+      "prompt": "The API field imaginaryTurboMode is not documented in the supplied information. Reply exactly NOT_AVAILABLE.",
+      "answer": "NOT_AVAILABLE",
+      "pass": true
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "extraction",
+      "prompt": "Document [A]: owner=Rina; status=blocked; ticket=INC-42. Return only JSON {\"owner\":\"Rina\",\"ticket\":\"INC-42\"}.",
+      "answer": "```json\n{\n  \"owner\": \"Rina\",\n  \"ticket\": \"INC-42\"\n}\n```",
+      "pass": false
+    },
+    {
+      "model": "Q5_K_M",
+      "category": "extraction",
+      "prompt": "Document [B]: The supplied record has no serial number. What is its serial? Reply exactly NOT_PRESENT.",
+      "answer": "",
+      "pass": false
+    }
+  ]
+}

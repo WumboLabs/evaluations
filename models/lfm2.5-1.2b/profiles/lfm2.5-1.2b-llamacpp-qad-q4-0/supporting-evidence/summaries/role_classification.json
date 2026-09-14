@@ -1,0 +1,42 @@
+{
+  "always_loaded_router": [
+    "GOOD FIT",
+    "fast decode ~586 tok/s, 958 MiB resident"
+  ],
+  "classifier": [
+    "GOOD FIT",
+    "deterministic outputs, enum tasks clean"
+  ],
+  "extraction_helper": [
+    "USABLE WITH GUARDRAILS",
+    "4/8 strict extraction; safe absent-evidence behavior; schema-validate outputs"
+  ],
+  "rag_helper": [
+    "USABLE WITH GUARDRAILS",
+    "solid to 8K context; collapses at >=16K"
+  ],
+  "structured_formatter": [
+    "USABLE WITH GUARDRAILS",
+    "11/12 with schema validation loop recommended"
+  ],
+  "simple_tool_selector": [
+    "GOOD FIT",
+    "v1 5/5; v2 selection 7/10 but only 5/10 full sequences"
+  ],
+  "conversational_sidecar": [
+    "USABLE WITH GUARDRAILS",
+    "coherent short answers; hallucinates on unknown topics"
+  ],
+  "coding_helper": [
+    "POOR FIT",
+    "4/20 executable"
+  ],
+  "primary_assistant": [
+    "POOR FIT",
+    "0/12 hallucination resistance on invented subjects"
+  ],
+  "autonomous_agent": [
+    "POOR FIT",
+    "fabricates tool-free answers and invented APIs confidently"
+  ]
+}

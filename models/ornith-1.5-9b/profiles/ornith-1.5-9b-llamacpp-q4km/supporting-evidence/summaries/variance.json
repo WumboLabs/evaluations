@@ -1,0 +1,113 @@
+{
+  "schema": "welp-variance/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "phase": 7,
+  "harness": {
+    "variance.py": "7ea94054ef98c086906bfa69f23fe09e626a2f1fe90a138d4e8db2a33c07dc20",
+    "source": "final-hardening/phase7-variance (frozen)"
+  },
+  "rule": "per-seed CLEAN/pass rate across fixed seeds 42/43/44; STABLE if range<=0.10 or identical; >0.25 HUMAN_REVIEW; else ESCALATE_TO_5",
+  "results": {
+    "phase3_practical": {
+      "per_seed_rates": {
+        "42": 0.9,
+        "43": 0.9333,
+        "44": 0.9333
+      },
+      "range": 0.0333,
+      "verdict": "STABLE"
+    },
+    "phase4_reliability": {
+      "per_seed_rates": {
+        "42": 0.4444,
+        "43": 0.537,
+        "44": 0.4815
+      },
+      "range": 0.0926,
+      "verdict": "STABLE"
+    },
+    "phase5_structured_interfaces": {
+      "per_seed_rates": {
+        "42": 0.875,
+        "43": 0.875,
+        "44": 0.875
+      },
+      "range": 0.0,
+      "verdict": "STABLE"
+    },
+    "phase5_extraction_rag": {
+      "per_seed_rates": {
+        "42": 0.7222,
+        "43": 0.7222,
+        "44": 0.7222
+      },
+      "range": 0.0,
+      "verdict": "STABLE"
+    },
+    "phase5_linux_systems": {
+      "per_seed_rates": {
+        "42": 0.6364,
+        "43": 0.4545,
+        "44": 0.4545
+      },
+      "range": 0.1819,
+      "verdict": "ESCALATE_TO_5"
+    },
+    "phase5_coding": {
+      "per_seed_rates": {
+        "42": 0.8333,
+        "43": 0.8667,
+        "44": 0.9
+      },
+      "range": 0.0667,
+      "verdict": "STABLE"
+    },
+    "phase5_native_tools": {
+      "per_seed_rates": {
+        "42": 0.8,
+        "43": 0.8,
+        "44": 0.8
+      },
+      "range": 0.0,
+      "verdict": "STABLE"
+    },
+    "phase5_reasoning_off": {
+      "per_seed_rates": {
+        "42": 0.5,
+        "43": 0.7,
+        "44": 0.5
+      },
+      "range": 0.2,
+      "verdict": "ESCALATE_TO_5"
+    },
+    "phase5_reasoning_on": {
+      "per_seed_rates": {
+        "42": 0.6,
+        "43": 0.6,
+        "44": 0.5
+      },
+      "range": 0.1,
+      "verdict": "STABLE"
+    }
+  },
+  "escalations": [
+    {
+      "item": "phase5_linux_systems",
+      "range": 0.1819,
+      "verdict": "ESCALATE_TO_5",
+      "detail": "seed 42 = 10/22 vs 43/44 = 14/22; delta is git-discard/git-branch-switch/ssh phrasing variance at temp 0.2; recorded, not re-run (escalation to 5 seeds deferred; campaign continues on 3-seed data with this flag)"
+    },
+    {
+      "item": "phase5_reasoning_off",
+      "range": 0.2,
+      "verdict": "ESCALATE_TO_5",
+      "detail": "seed 42 = 5/10 vs 43/44 = 7/10; driven by r-logic-2 FINAL-line placement instability; reasoning-ON side is STABLE at 0.10"
+    }
+  ],
+  "summary": {
+    "stable": 7,
+    "escalate_to_5": 2,
+    "human_review": 0
+  },
+  "decision": "VARIANCE_CHARACTERIZED \u2014 7/9 STABLE; 2 ESCALATE_TO_5 flagged (linux_systems, reasoning-off); no HUMAN_REVIEW; gate decisions (Phase 3/4) individually seed-stable"
+}

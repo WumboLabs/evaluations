@@ -1,0 +1,97 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "nemotron3-nano-4b-rtx5070-welp-recharacterization-2026-09-11",
+  "publication_date": "2026-09-12",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "display_name": "Nemotron 3 Nano 4B",
+    "producer": "NVIDIA",
+    "official_id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF (GGUF) / nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 (BF16 weights)",
+    "official_revision": "ba223d14e45525f7fae81db77ea8cabeb2fc6c25",
+    "license": "NVIDIA Nemotron Open Model License"
+  },
+  "artifact": {
+    "tested": "NVIDIA-Nemotron3-Nano-4B-Q4_K_M.gguf — the only official llama.cpp quant NVIDIA publishes for this model",
+    "precision": "Q4_K_M weights; f16 KV cache; dense hybrid (no MoE)",
+    "sha256": "be5d9a656a51922f24f1f09a759cebb694e1f5d9728bf0ef9f8c972c5a0b5ef2",
+    "source": "official nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF repository, pinned revision ba223d14e45525f7fae81db77ea8cabeb2fc6c25"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "build b10449, commit 0d9ceae1e38291035605613ab41a8f5e693d6fcd (CUDA SM120)",
+    "notes": "Full GPU residency (-ngl 999), parallel=1, FlashAttention on, f16 KV, reasoning-off baseline via the official enable_thinking template kwarg"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux"
+  },
+  "welp": {
+    "outcome": "PASS — NEMOTRON3_NANO_4B_RTX5070_RECHARACTERIZED",
+    "classification": "READY_WITH_GUARDRAILS (reliability is the guardrail)",
+    "artifact_classification": "Canonical official llama.cpp deployment surface (sole official quant); BF16 fit-limited on this GPU at the tested context targets; Q4_K_M quality confound disclosed"
+  },
+  "context": {
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 131072,
+    "native_maximum_tokens": 262144,
+    "extension_mechanism": "none — source-backed absence on both official model cards (the family 1M claim belongs to the 30B-A3B MoE sibling; the GGUF header value 1,048,576 is converter metadata, not a card claim)",
+    "envelope_complete": true,
+    "native_maximum_disposition": "VALIDATED — capacity admitted, near-full performance measured (uncached prefill ~2,877 tok/s, decode ~79-81 tok/s, 7,268 MiB VRAM), strict useful-context PASS at both required seeds (42, 314159)",
+    "exact_max_dispositions": {
+      "native_262144": "VALIDATED at both seeds at >=99.48% near-full occupancy with depth-placement errors <= 0.21 pp",
+      "official_extensions": "NONE exist (source-backed absence); nothing to disposition beyond the native maximum"
+    },
+    "useful_context_finding": "All five useful-context fields (exact retrieval, synthesis, decoy resistance, absent-information grounding, instruction/output compliance) passed the strict aggregate at every tested rung — 8,192 / 32,768 / 131,072 / 262,144 — including both native-maximum seeds. The tested frozen near-full context fixture passes strictly; this is not proof of universal long-document reasoning on arbitrary material",
+    "notes": "Hybrid Mamba-2 memory model measured: 4 attention layers carry context-linear KV (~16 KiB/token f16); the 38 Mamba-2 layers carry a fixed context-independent recurrent state (~100-300 MiB). The full 262,144 slot fits in 7,268 MiB with 4,546 MiB free"
+  },
+  "performance": {
+    "surface_note": "Short/moderate values are campaign-measured streaming surfaces; context-rung values are near-full occupancy measurements with unique prompts (cached tokens 0 at the native-maximum rungs)",
+    "short_ttft_s": 0.046,
+    "short_decode_tps": 186.6,
+    "moderate_input_tokens": 3880,
+    "moderate_ttft_s": 0.507,
+    "moderate_prefill_tps": 7498,
+    "moderate_decode_tps": 182.9,
+    "occupied_32k_ttft_s": 4.73,
+    "occupied_32k_decode_tps": 152.8,
+    "occupied_128k_ttft_s": 29.845,
+    "occupied_128k_decode_tps": 112.4,
+    "occupied_262k_ttft_s": 90.44,
+    "occupied_262k_decode_tps": 79.0
+  },
+  "quality": {
+    "constrained_result": "frozen 12-task model-neutral screen 12/12 PASS (mechanical scorer frozen before outputs; temp 0, seed 42)",
+    "capability_highlights": [
+      "Reasoning TESTED_PASS in the official thinking mode; coding TESTED_PASS on executable frozen cases; tool calling TESTED_PASS (structural validity + grounded continuation, bounded — not autonomous-agent qualification)",
+      "Strongest near-full strict-compliance context result in the current control set: strict useful-context aggregate PASS at every rung through 99.49% of the native 262,144-token maximum",
+      "First hybrid Mamba-2 model characterized under current WELP on this host; measured allocation confirms fixed recurrent state plus 4-layer context-linear KV",
+      "Zero OOM, zero CUDA errors, zero Xid; peak 247-249 W within the stock 250 W envelope"
+    ],
+    "key_guardrails": [
+      "Behavioral reliability has measurable hallucination/evidence-discipline defects under the adversarial corpus: clean-pass 0.30/0.25 and hallucination 0.20/0.15 across seeds 42/314159 on a 20-request stratified sample of the proven mechanical reliability corpus (transport success 40/40)",
+      "The model confidently fabricated a nonexistent CUDA API and capitulated to a false user assertion; independently verify technical/factual claims in adversarial or evidence-discipline-sensitive contexts",
+      "The 12/12 bounded quality screen is not evidence of universal reliability; the strict near-full context PASS is not proof of universal long-document reasoning",
+      "Q4_K_M quantization confound disclosed, not measured against BF16"
+    ],
+    "reliability_summary": "Transport/runtime reliability strong; bounded quality/structured behavior clean; adversarial behavioral reliability materially weaker — the historical Phase-4 weakness is reproduced on the current instrument and remains the mandatory guardrail"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "VERIFIED_EXISTING",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 185.8,
+    "ttft_ms": 125.1,
+    "submission_ref": "cmt86gy1j000eli01ca3cwwn0",
+    "verified_run": false,
+    "note": "Exact canonical practical profile (Q4_K_M, llama.cpp b10449, 32,768 context, f16 KV, full GPU, RTX 5070) already submitted and approved 2026-08-25; per the never-duplicate rule zero new submissions were created. A fresh 5-rep local benchmark (tg128 191.0 tok/s, pp512 8,275 tok/s) reproduces the submitted result."
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-nemotron-3-nano-4b",
+    "note": "Canonical public evidence published in this repository (recharacterization report: reports/nemotron3-nano-4b-welp-recharacterization-2026-09-11.md, appended alongside the preserved historical 2026-08-25 PROTOCOL_BLOCKED record). The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "website_record_slug": "eval-nemotron-3-nano-4b-recharacterization-2026-09-11",
+  "public_summary": "Full current-WELP recharacterization of NVIDIA Nemotron 3 Nano 4B (Q4_K_M, llama.cpp b10449 SM120, RTX 5070 12GB), executed 2026-09-11, appending the preserved 2026-08-25 PROTOCOL_BLOCKED historical record. The old blockage was a missing deterministic protocol gate, not a model failure. Current result: context envelope COMPLETE with the exact native maximum 262,144 VALIDATED at 99.49% near-full occupancy with all five useful-context fields passing strictly at both seeds and no official extension mechanism existing (source-backed absence); practical default 32,768, guarded 131,072. Quality screen 12/12; decode ~186.6 tok/s short. Reliability is the guardrail: transport/runtime behavior is strong but behavioral reliability shows measurable hallucination/evidence-discipline defects (clean-pass 0.30/0.25, hallucination 0.20/0.15 across two seeds on the stratified mechanical corpus), reproducing the historical Phase-4 weakness; the historical 0.93-vs-0.38 divergence is a methodology surface difference (triage screen vs reliability corpus). Dense hybrid Mamba-2 architecture (not MoE) with only 4 context-linear KV layers. READY_WITH_GUARDRAILS; LocalMaxxing VERIFIED_EXISTING with zero new submissions.",
+  "record_description": "Append-only dated recharacterization under the current WELP protocol: the historical PROTOCOL_BLOCKED record is preserved unchanged, and this campaign completes the model-card context envelope (native 262,144 VALIDATED at both seeds; extensions source-backed absent), reproduces the reliability weakness as a measurable guardrail (clean-pass 0.30/0.25; hallucination 0.20/0.15), and confirms the dense hybrid Mamba-2/4-attention-layer architecture. Classification READY_WITH_GUARDRAILS; practical profile 32K default / 131K guarded; LocalMaxxing VERIFIED_EXISTING."
+}

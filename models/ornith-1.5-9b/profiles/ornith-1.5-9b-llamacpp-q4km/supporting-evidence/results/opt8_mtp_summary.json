@@ -1,0 +1,27 @@
+{
+ "decode_tps": {
+  "n_valid": 5,
+  "values": [
+   111.78,
+   109.16,
+   112.31,
+   109.26,
+   118.27
+  ],
+  "mean": 112.16,
+  "median": 111.78,
+  "stdev": 3.71
+ },
+ "prefill_4k": {
+  "n_valid": 0,
+  "values": [],
+  "mean": null,
+  "median": null,
+  "stdev": null
+ },
+ "ttft_decode_ms": {
+  "prompt_ms_mean": 42.82,
+  "first_token_est_ms": 51.73,
+  "note": "prompt_ms from server timings; first-token estimate = prompt_ms + mean inter-token time"
+ }
+}

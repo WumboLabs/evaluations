@@ -1,0 +1,27 @@
+{
+  "status": "MEASURED_NOT_SUBMITTED",
+  "reason": "A valid local benchmark of the canonical practical profile completed (llama-bench pp512 3201.02 \u00b139.27 tok/s, tg128 72.92 \u00b10.04 tok/s, 5 reps). No live submission occurred: submission is human-gated for this campaign. No exact existing service record for this profile exists \u2014 the only historical gemma4 LMX record (2026-07-04) is an unexecuted planned dry-run, so VERIFIED_EXISTING does not apply.",
+  "eligible_stack": "canonical practical profile: unsloth gemma-4-12b-it-UD-Q4_K_XL.gguf, llama.cpp b9672 CUDA SM120, full GPU residency, RTX 5070 12GB",
+  "actual_prompt_tokens": {
+    "llama_bench_pp512": 512,
+    "method": "llama-bench pp512/tg128 deterministic bench prompt construction (tokenized bench bytes), not a nominal --prompt-tokens flag; server-side usage-verified prompts throughout the campaign"
+  },
+  "current_local_benchmark": {
+    "file": "runs/localmaxxing-local-bench.txt",
+    "pp512_tps": 3201.02,
+    "tg128_tps": 72.92,
+    "reps": 5
+  },
+  "verifiedRun": "not fabricated; no submission created; local benchmark is the only measured artifact",
+  "canonical_profile": {
+    "artifact": "gemma-4-12b-it-UD-Q4_K_XL.gguf (sha256 90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e)",
+    "quant": "UD-Q4_K_XL",
+    "engine": "llama.cpp b9672 commit 74ade5274, CUDA SM120",
+    "configured_context": 32768,
+    "kv_dtype": "f16",
+    "speculation": "none",
+    "geometry": "parallel=1, full GPU residency (-ngl 999), FA auto",
+    "hardware": "RTX 5070 12GB, Ryzen host, WumboJetsII"
+  },
+  "submissions_created": 0
+}

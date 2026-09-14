@@ -1,0 +1,30 @@
+{
+  "BF16": {
+    "correct_arguments": 5,
+    "correct_tool_selection": 5,
+    "end_to_end_pass": 5,
+    "rate": 1.0,
+    "total": 5
+  },
+  "PTQ_Q4_0": {
+    "correct_arguments": 5,
+    "correct_tool_selection": 5,
+    "end_to_end_pass": 5,
+    "rate": 1.0,
+    "total": 5
+  },
+  "Q4_K_M": {
+    "correct_arguments": 5,
+    "correct_tool_selection": 5,
+    "end_to_end_pass": 5,
+    "rate": 1.0,
+    "total": 5
+  },
+  "QAD_Q4_0": {
+    "correct_arguments": 5,
+    "correct_tool_selection": 5,
+    "end_to_end_pass": 5,
+    "rate": 1.0,
+    "total": 5
+  }
+}

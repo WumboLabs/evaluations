@@ -1,0 +1,96 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "qwen35-9b-rtx5070-context-completion-2026-09-11",
+  "publication_date": "2026-09-11",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "display_name": "Qwen3.5-9B",
+    "producer": "Alibaba (Qwen team); GGUF conversion by Unsloth",
+    "official_id": "Qwen/Qwen3.5-9B",
+    "official_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "Qwen3.5-9B-Q8_0.gguf (text-only conversion; Unsloth revision 3885219b6810b007914f3a7950a8d1b469d598a5)",
+    "precision": "Q8_0 weights; f16 KV (primary surface); q4_0 KV (one alternate admission surface)",
+    "sha256": "809626574d0cb43d4becfa56169980da2bb448f2299270f7be443cb89d0a6ae4",
+    "source": "unsloth/Qwen3.5-9B-GGUF, hash-matched to upstream LFS"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "0.1.0-dev build b10449, commit 0d9ceae1e38291035605613ab41a8f5e693d6fcd (CUDA 13.3, SM120)",
+    "notes": "All 33/33 runtime layers GPU-resident (untied input embedding lookup on CPU, disclosed); non-thinking text-only greedy surface; identical inherited baseline stack"
+  },
+  "hardware": {
+    "machine": "WumboJetsII",
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "notes": "Single-user workstation; AMD Ryzen 7 9800X3D; Fedora Linux"
+  },
+  "welp": {
+    "outcome": "PASS — QWEN35_9B_CONTEXT_ENVELOPE_COMPLETED",
+    "classification": "READY_WITH_GUARDRAILS (unchanged; new occupancy guardrail: at >=99.4% occupancy the model returns the absent-information value NOT_SPECIFIED under the literal key name 'zeta' instead of the required 'absent' key)",
+    "artifact_classification": "High-quality quantized medium-fit text control (unchanged)"
+  },
+  "context": {
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 65536,
+    "native_maximum_tokens": 262144,
+    "extension_mechanism": "YaRN factor 4.0 (officially advertised to 1,010,000 tokens)",
+    "envelope_complete": true,
+    "native_maximum_disposition": "FIT_LIMIT - native maximum 262,144 on the Q8_0/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision",
+    "exact_max_dispositions": {
+      "native_262144_f16_primary": "FIT_LIMIT — arithmetic lower bound: weights + f16 KV = 16,237.0 MiB > 12,227 MiB total VRAM",
+      "native_262144_q4_0_alternate": "FIT_LIMIT — measured admission failure (compute buffer 1,336.28 MiB cudaMalloc OOM with weights + 2,304.00 MiB q4_0 KV resident)",
+      "yarn_1010000": "FIT_LIMIT — exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)"
+    },
+    "highest_measured_admitted": {
+      "primary_f16_tokens": 65536,
+      "note": "highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed"
+    },
+    "useful_context_finding": "At 99.49-99.56% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.104 pp), resist the decoy, retain synthesis and the checksum instruction, but emit the absent-information value under the wrong key name; strict useful-context gate FAILED at both rungs, both seeds. Compared with the same-family 4B control (which dropped synthesis/absent/checksum entirely), 9B retains more auxiliary instructions at the same occupancy; two model sizes do not establish causality",
+    "notes": "32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 7.8 s TTFT / 60.0 tok/s decode; 64K 17.5 s TTFT / 54.1 tok/s decode"
+  },
+  "performance": {
+    "surface_note": "Near-full context fixture per-seed values; client/transport proxies with native timings retained in campaign evidence; short/moderate surfaces inherited unchanged from the baseline campaign (66.7 tok/s short decode, 0.83 s moderate TTFT)",
+    "short_ttft_s": 0.043883,
+    "short_decode_tps": 66.66,
+    "moderate_input_tokens": 3642,
+    "moderate_ttft_s": 0.831738,
+    "moderate_prefill_tps": 4378.79,
+    "moderate_decode_tps": 64.84,
+    "occupied_32k_ttft_s": 7.818,
+    "occupied_32k_decode_tps": 59.99,
+    "occupied_64k_ttft_s": 17.532,
+    "occupied_64k_decode_tps": 54.14
+  },
+  "quality": {
+    "constrained_result": "inherited: 7/7 constrained checks and 20/20 bounded reliability (baseline campaign, unchanged, not rerun)",
+    "capability_highlights": [
+      "Perfect synthetic retrieval (20/20 values) at 99.49-99.56% occupancy through 64K on the primary surface",
+      "Synthesis and checksum instructions retained at near-full occupancy (unlike the 4B same-family control)",
+      "Highest measured/admitted near-full primary context 65,536 (guarded profile confirmed); 98,304 projected below the frozen operational safety floor and intentionally not launched; exact ceiling not bracketed",
+      "q4_0-KV alternate surface functionally correct at 32K",
+      "Official YaRN mechanism representable in the pinned runtime"
+    ],
+    "key_guardrails": [
+      "At >=99.4% near-full occupancy the absent-information value is returned under the wrong key name (deterministic at both rungs and both seeds); strict useful-context gate FAILED",
+      "Inherited free-form cautions from the baseline: unsupported provenance/checksum attribution in open-ended answers; human verification required",
+      "Not agent-qualified; no coding/tool/autonomous testing"
+    ]
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "VERIFIED_EXISTING",
+    "submission_ref": "cmtwcn79807eups01faxxmyr1",
+    "verifiedRun": false,
+    "note": "existing canonical submission audited for exact duplication; no new benchmark or submission performed"
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "url": "https://github.com/WumboLabs/eval-qwen3.5-9b",
+    "note": "Canonical public evidence published in this repository (context-completion report: reports/qwen35-9b-context-envelope-completion-2026-09-11.md). The WumboLabs website record is a derivative; the local WELP campaign REPORT.md governs on any conflict."
+  },
+  "website_record_slug": "qwen35-9b",
+  "public_summary": "Context-envelope completion for Qwen3.5-9B Q8_0 (text-only) on an RTX 5070 12GB under llama.cpp at the corrected WELP near-full occupancy standard. Native maximum 262,144 is a completed FIT_LIMIT on both the f16 primary surface (arithmetic lower bound) and a pre-authorized q4_0-KV alternate surface (measured compute-buffer admission failure); the official YaRN 1,010,000 extension maximum is FIT_LIMIT at every representable KV precision with the mechanism representation confirmed. Highest measured/admitted near-full primary context is 65,536 (98,304 projected below the frozen safety floor and not launched). At 99.49-99.56% occupancy the planted-target retrieval is perfect (20/20 values, 4 requests, 20 observations) and synthesis/checksum instructions are retained (unlike the same-family 4B control), but the strict useful-context gate FAILED 0/4: the absent-information value (correct) is emitted under the wrong key name. Practical profile unchanged: 32K default, 64K guarded; READY_WITH_GUARDRAILS; LocalMaxxing record VERIFIED_EXISTING with no new benchmark or submission.",
+  "record_description": "Full model-card context envelope now COMPLETE with evidence-backed dispositions: native 262,144 FIT_LIMIT (f16 primary lower bound; q4_0 alternate measured admission failure), YaRN 1,010,000 FIT_LIMIT (all representable KV precisions; mechanism confirmed), 32K/64K revalidated at >=99.4% near-full occupancy with perfect retrieval and a measured strict useful-context gate failure (absent-field key-name deviation). Classification READY_WITH_GUARDRAILS unchanged; practical profile 32K default / 64K guarded confirmed."
+}

@@ -1,0 +1,9 @@
+{
+  "evaluation_classification": "READY_WITH_GUARDRAILS",
+  "bounded_conclusion": "Official Google QAT Q4_0 + mmproj on llama.cpp, READY_WITH_GUARDRAILS: 32K default / 131K guarded with the full card envelope complete; perfect five-needle retrieval through the exact 131,072 maximum while the strict aggregate gate FAILED at every rung. Vision, multi-image, ASR, AST and bounded video PASS; OCR TESTED_LIMITED; reliability 20/20 completion, 14/20 exactness.",
+  "localmaxxing_status": "SUBMITTED/cmtwgcs7c097sps01sdq9ihbu",
+  "policy": "ALLOWLIST_FIRST",
+  "restricted_default_do_not_publish": [
+    "anything not explicitly in publication-allowlist.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-08-27T20:19:30+00:00",
+  "host": "wumbojetsii",
+  "os": "Fedora Linux (kernel 7.1.10-200.fc44.x86_64, SMP PREEMPT_DYNAMIC Sun Aug 23 2026)",
+  "cpu": "AMD Ryzen 7 9800X3D 8-Core",
+  "gpu": "NVIDIA GeForce RTX 5070, 12227 MiB",
+  "driver": "610.57.04",
+  "cuda": "CUDA 13.3 (/usr/local/cuda-13.3; llama-server built with GNU 15.3.1)",
+  "python": "Python 3.14.7",
+  "vram_policy": "single-model resident; no co-tenant GPUs during campaign runs",
+  "profile_ref": "<USER_HOME>/Projects/local-llm/evals/ornith-1.5-9b/hardware/wumbojetsii/profile.json",
+  "profile_sha256": "29fbdc2a0473cd41b3c1cc7bd94efbdb79917ce0e01a65ebe2e2fd3856ed2764"
+}

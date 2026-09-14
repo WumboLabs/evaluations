@@ -1,0 +1,37 @@
+{
+  "phase": "WLEP Phase 2 — Performance & Resource Characterization",
+  "outcome": "COMPLETE",
+  "canonical_profile": {"model": "Apodex-1.1-mini-IQ1_M.gguf", "runtime": "f280b26983ad0fdb705a0d9ebf0503e76f2899b0", "ngl": 999, "np": 1, "ctx": 32768, "fit": "off", "fa": "on", "kv_unified": true, "ubatch": 512, "speculation": "off"},
+  "decode_tps": {
+    "method": "5 measured reps after 2 warmups; long-form story task (~1024 max tokens); unique [tag-seed] prompts; thinking disabled",
+    "values": [171.86, 168.75, 167.16, 169.46, 169.57],
+    "mean": 169.36, "median": 169.46, "stdev": 1.7,
+    "raw": "results/phase2_raw.jsonl"
+  },
+  "prefill_tps_4k": {
+    "method": "dedicated --no-cache-prompt instance (frozen Invalid Run Handling technique); 1 warmup + 5 measured reps; unique [tag-seed] content; processed-token cross-check exact match",
+    "prompt_size_tokens": 5643,
+    "values": [1804.85, 1793.65, 1798.12, 1813.38, 1783.82],
+    "mean": 1798.76, "median": 1798.12, "stdev": 11.19,
+    "raw": "results/phase2_prefill_nocache_raw.jsonl"
+  },
+  "ttft": {
+    "short_prompt_mean_ms": 124.81,
+    "prefill_5643tok_ms_mean_approx": 3140,
+    "note": "TTFT dominated by prefill; short-prompt TTFT ~125ms at temperature 0.2"
+  },
+  "load_time_s": null,
+  "load_time_note": "server log records 'model loaded' at uptime 2.6s on no-cache instance; cold-cache disk variance not separately measured (recorded as measurement limitation)",
+  "vram_idle_mib": 9711,
+  "power_temp_at_idle": {"watts": 29.85, "celsius": 42},
+  "invalidated_runs": [
+    {"file": "results/INVALIDATED-phase2-run1.jsonl", "reason": "frozen harness decode workload allowed 2-token early termination; contamination audit mis-triggered by constant cached_tokens=74 telemetry artifact (PF-04)"},
+    {"file": "results/INVALIDATED-phase2-run2.jsonl", "reason": "counting decode prompt induced refusal on 2/5 seeds; audit still mis-triggered by PF-04 artifact"},
+    {"file": "results/phase2_raw.jsonl prefill reps (run3)", "reason": "real prompt-cache contamination detected (cached_tokens up to 5643/5695; 31ms for 5647 tokens physically impossible as processing); replaced by explicit --no-cache-prompt methodology"}
+  ],
+  "harness_revisions": [
+    {"script": "scripts/phase2_perf_v3.py", "delta": "unique tag at prompt start; natural long-form decode task; processed-token cross-check audit"},
+    {"script": "scripts/phase2_prefill_nocache.py", "delta": "explicit --no-cache-prompt instance per frozen cache rule"}
+  ],
+  "repetition_policy_note": "5 measured reps everywhere; all reps reported; never fastest-only"
+}

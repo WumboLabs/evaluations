@@ -1,0 +1,12 @@
+{
+ "campaign": "gemma4-e4b-rtx5070-welp-characterization-2026-09-10",
+ "artifacts": [
+  {
+   "description": "gemma-4-E4B_q4_0-it.gguf + official gemma-4-E4B-it-mmproj.gguf (Google official QAT release)",
+   "precision": "QAT Q4_0 weights, F16 KV cache",
+   "sha256": "676c3507 (weights; matches pinned upstream LFS) / 7498a37c (mmproj; matches pinned upstream LFS)",
+   "source": "google/gemma-4-E4B-it-qat-q4_0-gguf @ 4b4a2c1d584be7264f87aac328a1bc739ce81b6c",
+   "role": "tested evaluation artifact (identity provenance only; binary not stored in this repository)"
+  }
+ ]
+}

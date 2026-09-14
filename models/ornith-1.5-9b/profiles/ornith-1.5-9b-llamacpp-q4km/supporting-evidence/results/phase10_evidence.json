@@ -1,0 +1,44 @@
+{
+ "phase4_gate_decision": "DO_NOT_ADVANCE",
+ "modules": {
+  "structured_interfaces": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.875
+  },
+  "extraction_rag": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.7222
+  },
+  "linux_systems": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.5152
+  },
+  "coding": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.8667
+  },
+  "native_tools": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.8
+  },
+  "reasoning": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": 0.5667
+  },
+  "omp_local_agent": {
+   "class": "CHARACTERIZED_ONLY",
+   "rate": "NOT_REACHED (blocked by Phase 4)"
+  }
+ },
+ "context_useful_ceiling": 24576,
+ "guardrails": [
+  "scorer-lexicon false-negative risk: exact-string gates understate capability (Phase 4 G6 + Phase 5 linux/rag failure analysis)",
+  "arithmetic/precision errors persist at temp 0.2 (r-arith-3 0.2 vs 2.0)",
+  "FINAL-line discipline unstable across seeds (reasoning-off ESCALATE_TO_5)"
+ ],
+ "producer_claims": {
+  "reported_separately": true,
+  "card": "262144 ctx trained; tool-calling supported; vision via mmproj (NOT_EVALUATED here)"
+ },
+ "observed_rates_note": "coding 0.867 / structured_interfaces 0.875 / native_tools 0.80 are strong; linux_systems 0.515 / extraction_rag 0.722 dominated by phrasing-exactness; reasoning 0.567 includes one contract ground-truth defect (r-arith-1)"
+}

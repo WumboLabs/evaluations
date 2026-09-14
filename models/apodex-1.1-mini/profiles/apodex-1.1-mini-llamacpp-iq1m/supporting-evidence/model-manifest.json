@@ -1,0 +1,26 @@
+{
+ "campaign": "evals/apodex-1.1-mini",
+ "model_store": "models/apodex-1.1-mini",
+ "symlink": "evals/apodex-1.1-mini/** -> models/apodex-1.1-mini/artifacts",
+ "artifacts": [
+  {
+   "filename": "Apodex-1.1-mini-IQ1_M.gguf",
+   "relpath": "Apodex-1.1-mini-IQ1_M.gguf",
+   "bytes": 8821679936,
+   "sha256": "1e84d8adf7837e96fb18712882a8a114becc7e53554372e2f612c5e0c6276cd4",
+   "role": "canonical evaluated artifact (1.75 bpw; only quant admitting full-GPU placement)",
+   "documented_sha256_match": true
+  },
+  {
+   "filename": "Apodex-1.1-mini-IQ2_M.gguf",
+   "relpath": "Apodex-1.1-mini-IQ2_M.gguf",
+   "bytes": 12241706816,
+   "sha256": "450afff9cd60e19ad485b4be4c22adf561df35072e4b4879bcc981e6fad88a8f",
+   "role": "rejected admission candidate (12.24 GB weights vs 10.87 GB free VRAM)",
+   "documented_sha256_match": null
+  }
+ ],
+ "sidecar_files": [
+  "chat_template.jinja"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "welp-publication-status/0.1.0-draft",
+  "campaign": "ornith-1.5-9b-welp-2026-08-27",
+  "github": {
+    "status": "NOT_AUTHORIZED",
+    "reason": "no publication target repo authorized by user in this session; campaign evidence complete and validator-clean, ready for authorized push"
+  },
+  "localmaxxing": {
+    "status": "NOT_SUBMITTED",
+    "package_record": "localmaxxing/package-record.json",
+    "submissions": [],
+    "superseded_local_ids": [],
+    "report_id": null,
+    "reason": "speed-test candidate exists and is truthful (decode 102.04 t/s, prefill 4046.67 t/s, llama-bench-equivalent method, pinned b10449 build, canonical Q4_K_M sha 70c11219…); submission is an external side effect requiring explicit user authorization (single-runtime campaign also closed all server holds)"
+  },
+  "wumbocore": {
+    "status": "NOT_APPLICABLE",
+    "reason": "model not deployed to WumboCore rotation: Phase 10 classification NOT_READY; no role qualifies for serving"
+  },
+  "x": {
+    "status": "NOT_AUTHORIZED",
+    "reason": "posting requires explicit user authorization"
+  }
+}

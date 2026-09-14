@@ -1,0 +1,221 @@
+{
+  "method": "Direct llama-server, 131072-token context allocation, beginning-needle exact retrieval. Actual prompt token count is runtime reported.",
+  "results": {
+    "PTQ_Q4_0": {
+      "4096": {
+        "requested_rung": 4096,
+        "actual_prompt_tokens": 3877,
+        "answer": "ORCHID-4096",
+        "exact_retrieval": true,
+        "prompt_tok_s": 14489.124747738995,
+        "generation_tok_s": 274.47420555817934,
+        "elapsed_s": 0.9227606779968482,
+        "error": null
+      },
+      "8192": {
+        "requested_rung": 8192,
+        "actual_prompt_tokens": 7972,
+        "answer": "ORCHID-8192",
+        "exact_retrieval": true,
+        "prompt_tok_s": 14669.323779503797,
+        "generation_tok_s": 266.84532055503826,
+        "elapsed_s": 0.9117426989978412,
+        "error": null
+      },
+      "16384": {
+        "requested_rung": 16384,
+        "actual_prompt_tokens": 16162,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 13987.684398651603,
+        "generation_tok_s": 250.95510560781324,
+        "elapsed_s": 2.2024457910010824,
+        "error": null
+      },
+      "32768": {
+        "requested_rung": 32768,
+        "actual_prompt_tokens": 32547,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 12692.733822292366,
+        "generation_tok_s": 226.66445039204064,
+        "elapsed_s": 3.7500692950052326,
+        "error": null
+      },
+      "65536": {
+        "requested_rung": 65536,
+        "actual_prompt_tokens": 65317,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 10595.240779470503,
+        "generation_tok_s": 188.72714273766854,
+        "elapsed_s": 7.634593914997822,
+        "error": null
+      },
+      "98304": {
+        "requested_rung": 98304,
+        "actual_prompt_tokens": 98082,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 9119.92983896883,
+        "generation_tok_s": 161.76169267435213,
+        "elapsed_s": 12.551148358994396,
+        "error": null
+      },
+      "128000": {
+        "requested_rung": 128000,
+        "actual_prompt_tokens": 127777,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 8068.333277345774,
+        "generation_tok_s": 143.30479975542647,
+        "elapsed_s": 17.931437241000822,
+        "error": null
+      }
+    },
+    "QAD_Q4_0": {
+      "4096": {
+        "requested_rung": 4096,
+        "actual_prompt_tokens": 3877,
+        "answer": "ORCHID-4096",
+        "exact_retrieval": true,
+        "prompt_tok_s": 14523.101358286445,
+        "generation_tok_s": 274.33529514968814,
+        "elapsed_s": 0.5836771710019093,
+        "error": null
+      },
+      "8192": {
+        "requested_rung": 8192,
+        "actual_prompt_tokens": 7972,
+        "answer": "ORCHID-8192",
+        "exact_retrieval": true,
+        "prompt_tok_s": 14692.574647015133,
+        "generation_tok_s": 267.28725542211293,
+        "elapsed_s": 1.0561787799961166,
+        "error": null
+      },
+      "16384": {
+        "requested_rung": 16384,
+        "actual_prompt_tokens": 16162,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 13971.74702164575,
+        "generation_tok_s": 251.44804491749548,
+        "elapsed_s": 2.2019399519995204,
+        "error": null
+      },
+      "32768": {
+        "requested_rung": 32768,
+        "actual_prompt_tokens": 32547,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 12650.950832824137,
+        "generation_tok_s": 226.22908933476228,
+        "elapsed_s": 3.761251504998654,
+        "error": null
+      },
+      "65536": {
+        "requested_rung": 65536,
+        "actual_prompt_tokens": 65317,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 10566.137726192786,
+        "generation_tok_s": 189.19496429779733,
+        "elapsed_s": 7.647684645999107,
+        "error": null
+      },
+      "98304": {
+        "requested_rung": 98304,
+        "actual_prompt_tokens": 98082,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 9105.370982457664,
+        "generation_tok_s": 161.8688938133709,
+        "elapsed_s": 12.567717783000262,
+        "error": null
+      },
+      "128000": {
+        "requested_rung": 128000,
+        "actual_prompt_tokens": 127777,
+        "answer": "The string \"NEUTRAL 128000\" does not appear anywhere in the provided text, so the count is **0**.",
+        "exact_retrieval": false,
+        "prompt_tok_s": 8060.510889925141,
+        "generation_tok_s": 143.44454425905283,
+        "elapsed_s": 17.41599851399951,
+        "error": null
+      }
+    },
+    "Q4_K_M": {
+      "4096": {
+        "requested_rung": 4096,
+        "actual_prompt_tokens": 3877,
+        "answer": "ORCHID-4096",
+        "exact_retrieval": true,
+        "prompt_tok_s": 12758.24168591756,
+        "generation_tok_s": 255.75738286311864,
+        "elapsed_s": 1.0112581290013622,
+        "error": null
+      },
+      "8192": {
+        "requested_rung": 8192,
+        "actual_prompt_tokens": 7972,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 13014.447800179578,
+        "generation_tok_s": 248.6468249750622,
+        "elapsed_s": 1.6551993859975482,
+        "error": null
+      },
+      "16384": {
+        "requested_rung": 16384,
+        "actual_prompt_tokens": 16162,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 12548.672497661004,
+        "generation_tok_s": 235.40685227804596,
+        "elapsed_s": 2.4033477709963336,
+        "error": null
+      },
+      "32768": {
+        "requested_rung": 32768,
+        "actual_prompt_tokens": 32547,
+        "answer": "ORCHID-32768",
+        "exact_retrieval": true,
+        "prompt_tok_s": 11470.635813744817,
+        "generation_tok_s": 213.3327345046049,
+        "elapsed_s": 3.6113459629996214,
+        "error": null
+      },
+      "65536": {
+        "requested_rung": 65536,
+        "actual_prompt_tokens": 65317,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 9742.641931470522,
+        "generation_tok_s": 179.24346604847588,
+        "elapsed_s": 8.244829121002113,
+        "error": null
+      },
+      "98304": {
+        "requested_rung": 98304,
+        "actual_prompt_tokens": 98082,
+        "answer": "",
+        "exact_retrieval": false,
+        "prompt_tok_s": 8505.486872393849,
+        "generation_tok_s": 154.3292999925559,
+        "elapsed_s": 13.402975550998235,
+        "error": null
+      },
+      "128000": {
+        "requested_rung": 128000,
+        "actual_prompt_tokens": 127777,
+        "answer": "0",
+        "exact_retrieval": false,
+        "prompt_tok_s": 7597.4306548719205,
+        "generation_tok_s": 137.99791610486324,
+        "elapsed_s": 17.92726988499635,
+        "error": null
+      }
+    }
+  }
+}
