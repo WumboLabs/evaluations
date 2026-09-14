@@ -18,6 +18,7 @@
 
 - 2026-06-21 — [Agent-backend + fake-tool runs](../../../../models/gemmable-4-12b/events/gemmable-agent-backend-2026-06-21/)
 - 2026-07-04 — [LMX speed run](../../../../models/gemmable-4-12b/events/gemmable-lmx-speed-2026-07-04/)
+- 2026-06-21 — [12B Gemma practical-use test (QAT vs UD-Q5 vs Gemmable)](../../../../shared-events/practical-use-comparison-2026-06-21/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

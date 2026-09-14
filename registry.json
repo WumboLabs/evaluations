@@ -888,7 +888,8 @@
       "profile_path": "models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
       "event_ids": [
         "qwen36-35b-practical-v071-2026-07-22",
-        "qwen36-35b-fit-ladder-e2e-2026-07-15"
+        "qwen36-35b-fit-ladder-e2e-2026-07-15",
+        "gemma4-12b-practical-pool-v025-2026-07-04"
       ],
       "legacy_first_event": "qwen36-35b-practical-v025-2026-07-05"
     },
@@ -913,7 +914,8 @@
       "profile_path": "models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km",
       "event_ids": [
         "qwen3-14b-lmx-speed-2026-07-05",
-        "qwen3-14b-fit-ladder-2026-07-15"
+        "qwen3-14b-fit-ladder-2026-07-15",
+        "gemma4-12b-practical-pool-v025-2026-07-04"
       ],
       "legacy_first_event": "qwen3-14b-practical-v025-2026-07-05"
     },
@@ -961,7 +963,8 @@
       ],
       "profile_path": "models/mellum2-12b-a2.5b/profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking",
       "event_ids": [
-        "mellum2-agent-backend-64k-2026-06-17"
+        "mellum2-agent-backend-64k-2026-06-17",
+        "gemma4-12b-practical-pool-v025-2026-07-04"
       ],
       "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
     },
@@ -987,7 +990,8 @@
       "event_ids": [
         "mellum2-agent-backend-64k-2026-06-17",
         "mellum2-fake-tool-2026-06-17",
-        "mellum2-lmx-speed-2026-07-04"
+        "mellum2-lmx-speed-2026-07-04",
+        "gemma4-12b-practical-pool-v025-2026-07-04"
       ],
       "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
     },
@@ -1012,7 +1016,8 @@
       "profile_path": "models/grug-12b/profiles/grug-12b-llamacpp-q4km",
       "event_ids": [
         "grug-honesty-smoke-2026-07-04",
-        "grug-lmx-speed-2026-07-04"
+        "grug-lmx-speed-2026-07-04",
+        "gemma4-12b-practical-pool-v025-2026-07-04"
       ],
       "legacy_first_event": "grug-practical-verdict-2026-07-04"
     },
@@ -1037,7 +1042,8 @@
       "profile_path": "models/gemmable-4-12b/profiles/gemmable-4-12b-llamacpp-q4km",
       "event_ids": [
         "gemmable-agent-backend-2026-06-21",
-        "gemmable-lmx-speed-2026-07-04"
+        "gemmable-lmx-speed-2026-07-04",
+        "gemma4-12b-practical-use-family-2026-06-21"
       ],
       "legacy_first_event": "gemmable-practical-use-2026-06-21"
     },
@@ -1109,7 +1115,8 @@
       ],
       "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-llamacpp-ud-q5-k-xl",
       "event_ids": [
-        "gemma4-12b-lmx-speed-2026-07-04"
+        "gemma4-12b-lmx-speed-2026-07-04",
+        "gemma4-12b-practical-use-family-2026-06-21"
       ],
       "legacy_first_event": "gemma4-12b-practical-use-family-2026-06-21"
     },
@@ -3567,11 +3574,21 @@
       },
       "website_attribution": {
         "model_id": "gemma-4-12b",
-        "profile_id": "gemma-4-12b-llamacpp-qat-q4-0"
+        "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+        "related_profile_ids": []
       },
       "related_profile_ids": [
-        "gemma-4-12b-llamacpp-qat-q4-0"
-      ]
+        "gemma-4-12b-llamacpp-qat-q4-0",
+        "gemma-4-12b-llamacpp-ud-q5-k-xl",
+        "gemmable-4-12b-llamacpp-q4km"
+      ],
+      "profile_relationship_provenance": {
+        "evidence_class": "DERIVED",
+        "repo": "WumboLabs/evaluations",
+        "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652",
+        "path": "shared-events/practical-use-comparison-2026-06-21/REPORT.md",
+        "basis": "Published Runs and Runtime tables identify the named artifacts and llama.cpp surface; mapped to existing profile IDs without changing measurements or display precedence."
+      }
     },
     {
       "slug": "gemma4-12b-practical-pool-v025-2026-07-04",
@@ -3636,11 +3653,24 @@
       },
       "website_attribution": {
         "model_id": "gemma-4-12b",
-        "profile_id": "gemma-4-12b-llamacpp-qat-q4-0"
+        "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+        "related_profile_ids": []
       },
       "related_profile_ids": [
-        "gemma-4-12b-llamacpp-qat-q4-0"
-      ]
+        "gemma-4-12b-llamacpp-qat-q4-0",
+        "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+        "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+        "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+        "qwen3-14b-llamacpp-q4km",
+        "grug-12b-llamacpp-q4km"
+      ],
+      "profile_relationship_provenance": {
+        "evidence_class": "DERIVED",
+        "repo": "WumboLabs/evaluations",
+        "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652",
+        "path": "shared-events/practical-use-comparison-2026-07-04/REPORT.md",
+        "basis": "Published Runs and Runtime tables identify the named artifacts and llama.cpp surface; mapped to existing profile IDs without changing measurements or display precedence."
+      }
     }
   ],
   "legacy_sources": [

@@ -17,6 +17,7 @@
 ## Events
 
 - 2026-07-04 — [LMX speed runs across four Gemma 4 12B quants](../../../../models/gemma-4-12b/events/gemma4-12b-lmx-speed-2026-07-04/)
+- 2026-06-21 — [12B Gemma practical-use test (QAT vs UD-Q5 vs Gemmable)](../../../../shared-events/practical-use-comparison-2026-06-21/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

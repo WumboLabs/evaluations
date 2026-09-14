@@ -18,6 +18,7 @@
 
 - 2026-07-04 — [Honesty smoke + provenance refresh](../../../../models/grug-12b/events/grug-honesty-smoke-2026-07-04/)
 - 2026-07-04 — [LMX speed run](../../../../models/grug-12b/events/grug-lmx-speed-2026-07-04/)
+- 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

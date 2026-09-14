@@ -20,7 +20,8 @@
   "event_ids": [
     "mellum2-agent-backend-64k-2026-06-17",
     "mellum2-fake-tool-2026-06-17",
-    "mellum2-lmx-speed-2026-07-04"
+    "mellum2-lmx-speed-2026-07-04",
+    "gemma4-12b-practical-pool-v025-2026-07-04"
   ],
   "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
 }

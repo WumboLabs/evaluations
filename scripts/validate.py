@@ -207,7 +207,20 @@ def generated(registry, models, profiles, events):
         es = [e for e in events.values() if mid in event_models(e)]
         classification = state["classification"] or "No model-level classification published"
         model_rows.append(f"| {link(mp+'/', model['display_name'])} | {classification} | {len(ps)} | {len(es)} | {link(model['website_url'], 'Evaluation')} |")
-        lines = [f"# {model['display_name']}", "", f"**Classification:** {classification}", "", f"**Recommended profile:** `{state['recommended_profile_id']}`", "", f"**Context:** {model['context_summary']}", "", f"[Human-facing Evaluation]({model['website_url']})", "", "## Profiles", ""]
+        context_event = events.get(state.get("context"))
+        context = load(context_event["source"]["path"]).get("context", {}) if context_event and context_event.get("source") else {}
+        summary_parts = [
+            f"{label}: {context[key]:,} tokens"
+            for key, label in (("practical_default_tokens", "Practical default"),
+                               ("guarded_tokens", "Guarded boundary"),
+                               ("native_maximum_tokens", "Model-card native maximum"))
+            if isinstance(context.get(key), int)
+        ]
+        context_summary = "; ".join(summary_parts) or model["context_summary"]
+        lines = [f"# {model['display_name']}", "", f"**Classification:** {classification}", "", f"**Recommended profile:** `{state['recommended_profile_id']}`", "", f"**Context:** {context_summary}", ""]
+        if summary_parts:
+            lines += ["Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.", "", "<details>", "<summary>Published context findings and limitations</summary>", "", model["context_summary"], "", "</details>", ""]
+        lines += [f"[Human-facing Evaluation]({model['website_url']})", "", "## Profiles", ""]
         for p in ps:
             lines.append(f"- [{p['profile_id']}](profiles/{p['profile_id']}/) — {p['current_status']}; {p['runtime_family']}; {p['artifact']}")
         lines += ["", "## Testing history", ""]

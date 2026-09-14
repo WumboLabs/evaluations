@@ -18,6 +18,7 @@
 
 - 2026-07-22 — [LLMGauge v0.71 practical re-run](../../../../models/qwen3.6-35b-a3b/events/qwen36-35b-practical-v071-2026-07-22/)
 - 2026-07-15 — [Fit-ladder E2E (LLMGauge feature validation)](../../../../models/qwen3.6-35b-a3b/events/qwen36-35b-fit-ladder-e2e-2026-07-15/)
+- 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

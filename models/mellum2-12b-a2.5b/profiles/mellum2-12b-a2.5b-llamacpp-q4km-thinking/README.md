@@ -17,6 +17,7 @@
 ## Events
 
 - 2026-06-17 — [Agent backend fit test (64k, Instruct + Thinking)](../../../../models/mellum2-12b-a2.5b/events/mellum2-agent-backend-64k-2026-06-17/)
+- 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

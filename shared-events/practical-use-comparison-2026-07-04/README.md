@@ -5,7 +5,7 @@
 - **Event ID:** `gemma4-12b-practical-pool-v025-2026-07-04`
 - **Date:** 2026-07-04
 - **Models:** Gemma 4 12B IT, Grug 12B, Mellum2 12B-A2.5B, Qwen3-14B, Qwen3.6-35B-A3B
-- **Profiles:** `gemma-4-12b-llamacpp-qat-q4-0`
+- **Profiles:** `gemma-4-12b-llamacpp-qat-q4-0`, `mellum2-12b-a2.5b-llamacpp-q4km-instruct`, `qwen3.6-35b-a3b-llamacpp-ud-iq2-m`, `mellum2-12b-a2.5b-llamacpp-q4km-thinking`, `qwen3-14b-llamacpp-q4km`, `grug-12b-llamacpp-q4km`
 - **Type:** practical-use-comparison
 - **Status:** PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)
 - **Evidence maturity:** PRACTICAL_USE

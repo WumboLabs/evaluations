@@ -6,7 +6,16 @@
 
 **Recommended profile:** `gemma-4-12b-llamacpp-qat-q4-0`
 
-**Context:** native_maximum_tokens: 262144; native_maximum_disposition: "FIT_LIMIT — measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: "Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED)."
+**Context:** Practical default: 32,768 tokens; Guarded boundary: 131,072 tokens; Model-card native maximum: 262,144 tokens
+
+Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
+
+<details>
+<summary>Published context findings and limitations</summary>
+
+native_maximum_tokens: 262144; native_maximum_disposition: "FIT_LIMIT — measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: "Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED)."
+
+</details>
 
 [Human-facing Evaluation](https://wumbolabs.dev/evaluations/gemma-4-12b/)
 

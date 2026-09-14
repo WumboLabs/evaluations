@@ -19,7 +19,8 @@
   "profile_path": "models/grug-12b/profiles/grug-12b-llamacpp-q4km",
   "event_ids": [
     "grug-honesty-smoke-2026-07-04",
-    "grug-lmx-speed-2026-07-04"
+    "grug-lmx-speed-2026-07-04",
+    "gemma4-12b-practical-pool-v025-2026-07-04"
   ],
   "legacy_first_event": "grug-practical-verdict-2026-07-04"
 }

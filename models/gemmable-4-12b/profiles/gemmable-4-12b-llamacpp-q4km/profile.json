@@ -19,7 +19,8 @@
   "profile_path": "models/gemmable-4-12b/profiles/gemmable-4-12b-llamacpp-q4km",
   "event_ids": [
     "gemmable-agent-backend-2026-06-21",
-    "gemmable-lmx-speed-2026-07-04"
+    "gemmable-lmx-speed-2026-07-04",
+    "gemma4-12b-practical-use-family-2026-06-21"
   ],
   "legacy_first_event": "gemmable-practical-use-2026-06-21"
 }

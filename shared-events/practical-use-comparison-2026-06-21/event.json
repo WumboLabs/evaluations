@@ -57,9 +57,19 @@
   },
   "website_attribution": {
     "model_id": "gemma-4-12b",
-    "profile_id": "gemma-4-12b-llamacpp-qat-q4-0"
+    "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
+    "related_profile_ids": []
   },
   "related_profile_ids": [
-    "gemma-4-12b-llamacpp-qat-q4-0"
-  ]
+    "gemma-4-12b-llamacpp-qat-q4-0",
+    "gemma-4-12b-llamacpp-ud-q5-k-xl",
+    "gemmable-4-12b-llamacpp-q4km"
+  ],
+  "profile_relationship_provenance": {
+    "evidence_class": "DERIVED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "479cb50c197f8ea0dd905a68ffd61f632f49c652",
+    "path": "shared-events/practical-use-comparison-2026-06-21/REPORT.md",
+    "basis": "Published Runs and Runtime tables identify the named artifacts and llama.cpp surface; mapped to existing profile IDs without changing measurements or display precedence."
+  }
 }

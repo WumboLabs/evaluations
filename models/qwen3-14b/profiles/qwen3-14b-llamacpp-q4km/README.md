@@ -18,6 +18,7 @@
 
 - 2026-07-05 — [LMX speed run](../../../../models/qwen3-14b/events/qwen3-14b-lmx-speed-2026-07-05/)
 - 2026-07-15 — [Fit-ladder success-fallback E2E (LLMGauge feature validation)](../../../../models/qwen3-14b/events/qwen3-14b-fit-ladder-2026-07-15/)
+- 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

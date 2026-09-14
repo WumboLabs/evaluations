@@ -5,7 +5,7 @@
 - **Event ID:** `gemma4-12b-practical-use-family-2026-06-21`
 - **Date:** 2026-06-21
 - **Models:** Gemma 4 12B IT, Gemmable 4 12B MTP
-- **Profiles:** `gemma-4-12b-llamacpp-qat-q4-0`
+- **Profiles:** `gemma-4-12b-llamacpp-qat-q4-0`, `gemma-4-12b-llamacpp-ud-q5-k-xl`, `gemmable-4-12b-llamacpp-q4km`
 - **Type:** practical-use-comparison
 - **Status:** PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)
 - **Evidence maturity:** PRACTICAL_USE

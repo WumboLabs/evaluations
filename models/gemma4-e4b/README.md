@@ -6,7 +6,16 @@
 
 **Recommended profile:** `gemma4-e4b-llamacpp-qat-q4-0`
 
-**Context:** practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: "Exact native 131,072: measured FAILED on the strict aggregate useful-context gate while near-full performance itself was valid (both seeds 99.50% occupancy, TTFT ~38 s, decode ~79 tok/s, zero errors) and five-needle target retrieval stayed perfect (10/10 across ALL rungs including the exact maximum)"; notes: "Strict aggregate gate FAILED at every rung; divergence is explicit — content retrieval is perfect everywhere (decoy resistance 10/10), while strict output/instruction compliance is the failure surface (absent-field fills a present value instead of NOT_SPECIFIED; JSON tail truncation from 16K upward). No official context extensions exist for E4B (source-backed absence)."
+**Context:** Practical default: 32,768 tokens; Guarded boundary: 131,072 tokens; Model-card native maximum: 131,072 tokens
+
+Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
+
+<details>
+<summary>Published context findings and limitations</summary>
+
+practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: "Exact native 131,072: measured FAILED on the strict aggregate useful-context gate while near-full performance itself was valid (both seeds 99.50% occupancy, TTFT ~38 s, decode ~79 tok/s, zero errors) and five-needle target retrieval stayed perfect (10/10 across ALL rungs including the exact maximum)"; notes: "Strict aggregate gate FAILED at every rung; divergence is explicit — content retrieval is perfect everywhere (decoy resistance 10/10), while strict output/instruction compliance is the failure surface (absent-field fills a present value instead of NOT_SPECIFIED; JSON tail truncation from 16K upward). No official context extensions exist for E4B (source-backed absence)."
+
+</details>
 
 [Human-facing Evaluation](https://wumbolabs.dev/evaluations/gemma4-e4b/)
 

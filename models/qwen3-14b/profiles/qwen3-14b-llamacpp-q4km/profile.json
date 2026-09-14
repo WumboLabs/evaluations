@@ -19,7 +19,8 @@
   "profile_path": "models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km",
   "event_ids": [
     "qwen3-14b-lmx-speed-2026-07-05",
-    "qwen3-14b-fit-ladder-2026-07-15"
+    "qwen3-14b-fit-ladder-2026-07-15",
+    "gemma4-12b-practical-pool-v025-2026-07-04"
   ],
   "legacy_first_event": "qwen3-14b-practical-v025-2026-07-05"
 }

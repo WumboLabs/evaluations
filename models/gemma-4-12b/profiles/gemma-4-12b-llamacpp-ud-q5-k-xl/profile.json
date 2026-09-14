@@ -18,7 +18,8 @@
   ],
   "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-llamacpp-ud-q5-k-xl",
   "event_ids": [
-    "gemma4-12b-lmx-speed-2026-07-04"
+    "gemma4-12b-lmx-speed-2026-07-04",
+    "gemma4-12b-practical-use-family-2026-06-21"
   ],
   "legacy_first_event": "gemma4-12b-practical-use-family-2026-06-21"
 }
