@@ -45,7 +45,7 @@ For a scientific citation, use the exact repository, **full commit SHA**, and pa
 https://github.com/WumboLabs/evaluations/blob/<full-commit-sha>/models/<model-id>/events/<event-id>/REPORT.md
 ```
 
-Each event README provides a real immutable citation. Event-introduction commits may differ from the website's registry snapshot commit. Do not replace event pins with `main`, `HEAD`, or `latest`. Archived `eval-*` URLs remain legacy provenance only.
+Each event README provides a real immutable citation. Event-introduction commits may differ from the website's registry snapshot commit. Do not replace event pins with `main`, `HEAD`, or `latest`. Legacy `eval-*` repositories were deleted on 2026-09-14 after verified consolidation into this repository; their identifiers remain historical provenance only and their URLs no longer resolve (`provenance/legacy-repository-retirement.json`).
 
 ## Publish and validate
 

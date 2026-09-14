@@ -1,0 +1,50 @@
+{
+  "schema": "wumbolabs-legacy-repository-retirement/1",
+  "recorded_at": "2026-09-14T12:00:00Z",
+  "summary": "All 30 legacy WumboLabs/eval-* repositories were deleted from GitHub on 2026-09-14 after verified consolidation into WumboLabs/evaluations. Their repository/commit/path/sha256 identities remain valid scientific provenance. Full Git histories are preserved as verified Git bundles in the WumboServer offline archive (manifest with per-bundle SHA-256; restore instructions included). Legacy eval-* URLs are retired identifiers, not live sources.",
+  "legacy_repository_state": "DELETED_AFTER_CONSOLIDATION",
+  "offline_git_archive": {
+    "host": "WumboServer",
+    "root": "ai/git-archive/wumbolabs-evaluations-legacy/",
+    "manifest": "legacy-eval-repository-archive.json",
+    "unit": "one git bundle (--all refs) per repository",
+    "verification": "git bundle verify OK for all 30; bundle refs/heads/main equals each repository's final GitHub HEAD; SHA-256 recorded per bundle"
+  },
+  "not_deleted": {
+    "WumboLabs/labs": "out of scope; remains archived",
+    "WumboLabs/evaluations": "canonical central repository"
+  },
+  "canonical_current_evidence": "WumboLabs/evaluations (repository + full commit SHA + relative path)",
+  "retired_repositories": [
+    "WumboLabs/eval-apodex-1.1-mini",
+    "WumboLabs/eval-gemma-4-12b-q4km",
+    "WumboLabs/eval-gemma-4-12b-qat-q4",
+    "WumboLabs/eval-gemma-4-12b-ud-q5",
+    "WumboLabs/eval-gemma-4-12b-ud-q6",
+    "WumboLabs/eval-gemma4-e4b",
+    "WumboLabs/eval-gemmable-4-12b",
+    "WumboLabs/eval-grug-12b",
+    "WumboLabs/eval-lfm2.5-1.2b",
+    "WumboLabs/eval-lfm2.5-2.6b",
+    "WumboLabs/eval-mellum2-12b-a2.5b-instruct",
+    "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
+    "WumboLabs/eval-minicpm5-2b",
+    "WumboLabs/eval-nemotron-3-nano-4b",
+    "WumboLabs/eval-ornith-1.5-9b",
+    "WumboLabs/eval-qwen2.5-3b-llamacpp-f16",
+    "WumboLabs/eval-qwen2.5-3b-vllm-bf16",
+    "WumboLabs/eval-qwen3-14b",
+    "WumboLabs/eval-qwen3-14b-ollama-q4km",
+    "WumboLabs/eval-qwen3.5-4b",
+    "WumboLabs/eval-qwen3.5-9b",
+    "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
+    "WumboLabs/eval-qwen3.8-27b",
+    "WumboLabs/eval-qwen3.8-27b-exl3-h1",
+    "WumboLabs/eval-qwen3.8-27b-llamacpp",
+    "WumboLabs/eval-qwen3.8-2b-empero",
+    "WumboLabs/eval-qwen3.8-4b-empero",
+    "WumboLabs/eval-qwen3.8-4b-empero-distill-wumboserver",
+    "WumboLabs/eval-qwen3.8-9b-empero",
+    "WumboLabs/eval-qwen3.8-9b-empero-distill-wumboserver"
+  ]
+}
