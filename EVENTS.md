@@ -6,6 +6,7 @@ One row per immutable event; shared reports are stored once. Newest first.
 
 | Date | Model(s) | Event type | Profile(s) | Report | Website |
 |---|---|---|---|---|---|
+| 2026-09-14 | Qwen3-14B | welp-recharacterization | `qwen3-14b-llamacpp-q4km-q8kv` | [qwen3-14b-rtx5070-welp-recharacterization-2026-09-14](models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/REPORT.md) | [Qwen3-14B](https://wumbolabs.dev/evaluations/qwen3-14b/) |
 | 2026-09-12 | Gemma 4 12B IT | welp-recharacterization | `gemma-4-12b-llamacpp-qat-q4-0` | [gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12](models/gemma-4-12b/events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12/REPORT.md) | [Gemma 4 12B IT](https://wumbolabs.dev/evaluations/gemma-4-12b/) |
 | 2026-09-12 | Qwen3.8-27B | context-envelope-completion | `qwen38-27b-exl3-h1` | [context-envelope-completion-2026-09-12](models/qwen38-27b/events/context-envelope-completion-2026-09-12/REPORT.md) | [Qwen3.8-27B](https://wumbolabs.dev/evaluations/qwen38-27b/) |
 | 2026-09-11 | Nemotron 3 Nano 4B | welp-recharacterization | `nemotron-3-nano-4b-llamacpp-q4km` | [welp-recharacterization-2026-09-11](models/nemotron-3-nano-4b/events/welp-recharacterization-2026-09-11/REPORT.md) | [Nemotron 3 Nano 4B](https://wumbolabs.dev/evaluations/nemotron-3-nano-4b/) |

@@ -1,0 +1,47 @@
+{
+  "slug": "eval-qwen3-14b-recharacterization-2026-09-14",
+  "event_id": "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+  "event_type": "welp-recharacterization",
+  "event_date": "2026-09-14",
+  "record_date": "2026-09-15",
+  "model_id": "qwen3-14b",
+  "profile_id": "qwen3-14b-llamacpp-q4km-q8kv",
+  "profile_name": "llama.cpp Q4_K_M q8_0 KV (unsloth artifact, native-max 32K surface)",
+  "profile_status": "current",
+  "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M q8_0 KV",
+  "event_title": "Current-WELP recharacterization",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "READY_WITH_GUARDRAILS: native 32,768 VALIDATED with two-seed five-depth useful-context; YaRN 131,072 FIT_LIMIT on 12GB",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/REPORT.md",
+    "commit": "3330db39e23d8a3a02b3d627a895af4b8ae5e4b1"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+    "source_bundle": "research/model-evaluations/qwen3-14b/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_report_sha256": "6ad0e911bf6e6586dec5adeff921fcce94bba74327ddf44330552fcb7534955b",
+    "published_date": "2026-09-15",
+    "note": "First native event publication under the consolidated architecture; no legacy repository exists for this campaign."
+  },
+  "source": {
+    "path": "models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/website-publication.json",
+    "sha256": "bc102550a29106b0755f179fbb40fa71aa9d246b30eb934a0d4fd18b5a4136f1",
+    "commit": "2950a5eacd376c4df28b4bf33b96cae0b3db397a"
+  }
+}

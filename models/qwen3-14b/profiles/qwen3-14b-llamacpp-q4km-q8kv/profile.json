@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3-14b",
+  "model_display_name": "Qwen3-14B",
+  "profile_id": "qwen3-14b-llamacpp-q4km-q8kv",
+  "profile_display_name": "llama.cpp Q4_K_M q8_0 KV (unsloth artifact, native-max 32K surface)",
+  "runtime_family": "llama.cpp",
+  "runtime_version": "b9672 (74ade5274), CUDA SM120",
+  "artifact": "unsloth/Qwen3-14B-GGUF Q4_K_M (9,001,753,376-byte Q4_K_M; sha256 712c0791d5124d3dd6d1e4968de1201207afeae49c6e10fbeb9c58fe00c58555)",
+  "artifact_precision": "Q4_K_M weights; q8_0 K/V cache (FA)",
+  "deployment_topology": "Full-GPU llama.cpp CUDA serving on RTX 5070 12GB: -ngl 999 full residency (40/40 transformer layers), -c 32768 native maximum, -np 1, flash attention, server-side non-thinking baseline",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km-q8kv",
+  "event_ids": [
+    "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-15",
+    "note": "New current profile registered at the 2026-09-15 human-authorized closeout boundary decision: the q8_0 K/V cache at the native 32,768 maximum is material to the tested surface identity (f16 KV cannot reach 32,768 on 12GB). The historical qwen3-14b-llamacpp-q4km descriptor records no cache/topology, remains unchanged, and keeps its events."
+  }
+}

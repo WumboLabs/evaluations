@@ -34,3 +34,4 @@
 | [qwen38-27b-exl3-h1](models/qwen38-27b/profiles/qwen38-27b-exl3-h1/) | Qwen3.8-27B | current | ExLlamaV3 / Qwen3.8-27B-SC_2.20bpw_H3_V3 (EXL3) |
 | [qwen38-27b-llamacpp-ud-q2-k-xl](models/qwen38-27b/profiles/qwen38-27b-llamacpp-ud-q2-k-xl/) | Qwen3.8-27B | historical | llama.cpp / Unsloth Qwen3.8-27B UD-Q2_K_XL GGUF (Unsloth rev 27af057ecb382ddfea5d12837360a8980560e3ed) |
 | [bonsai-27b-q1-0-llamacpp](models/bonsai-27b/profiles/bonsai-27b-q1-0-llamacpp/) | Bonsai 27B (Q1_0) | specialized | llama.cpp / Upstream identity unresolved; retained public evidence describes a 3,803,452,480-byte Q1_0 artifact fingerprint. |
+| [qwen3-14b-llamacpp-q4km-q8kv](models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km-q8kv/) | Qwen3-14B | current | llama.cpp / unsloth/Qwen3-14B-GGUF Q4_K_M (9,001,753,376-byte Q4_K_M; sha256 712c0791d5124d3dd6d1e4968de1201207afeae49c6e10fbeb9c58fe00c58555) |
