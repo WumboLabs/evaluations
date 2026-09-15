@@ -16,7 +16,8 @@
     "reliability",
     "capabilities",
     "context",
-    "performance"
+    "performance",
+    "serving-profile"
   ],
   "authoring": "generated",
   "publication_state": "published",
