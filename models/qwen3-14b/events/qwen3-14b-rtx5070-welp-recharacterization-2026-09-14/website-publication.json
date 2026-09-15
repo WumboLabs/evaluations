@@ -1,0 +1,99 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+  "publication_date": "2026-09-14",
+  "disposition": "WEBSITE_READY",
+  "reason": "Campaign complete under current WELP; scientific session closed with public-safe material sufficient to publish. All publication actions remain human-gated.",
+  "model": {
+    "display_name": "Qwen3-14B",
+    "producer": "Alibaba (Qwen team)",
+    "official_id": "Qwen/Qwen3-14B",
+    "official_revision": "unsloth/Qwen3-14B-GGUF lineage artifact (see artifact)",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "Qwen3-14B-Q4_K_M.gguf (local canonical copy, downloaded 2026-05-08T22:13:02Z; byte fingerprint matches the central registry historical profile record)",
+    "precision": "Q4_K_M",
+    "sha256": "712c0791d5124d3dd6d1e4968de1201207afeae49c6e10fbeb9c58fe00c58555",
+    "source": "huggingface.co/unsloth/Qwen3-14B-GGUF (recorded lineage; current upstream HEAD a04a82c4 carries a regenerated Q4_K_M that differs from this historical artifact)"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "b9672 (74ade5274), CUDA SM120"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency; KV q8_0; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "PASS — RECHARACTERIZED",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "current"
+  },
+  "context": {
+    "native_maximum_tokens": 32768,
+    "native_maximum_disposition": "VALIDATED - near-full performance (99.2-99.6% occupancy, 2 reps) and useful-context PASS at 2 seeds (99.47% occupancy) on the canonical q8_0-KV surface; 2026-09-15 append-only completion added the contract-required 95% depth placement: all five contract depths (2/25/50/75/95) x 2 seeds within the preferred 0.25pp placement bound (max error 0.160/0.087 pp), all gates PASS (99.49% occupancy).",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 32768,
+    "envelope_complete": true,
+    "notes": "Native rungs 8K/16K/32K VALIDATED. Official YaRN extension (factor 4.0, exact max 131,072) is FIT_LIMIT on 12GB: measured cudaMalloc OOM at q8_0 KV (10,880 MiB request) and at the lowest dtype q4_0 (5,760 MiB request); nearest measured boundary 32,768. Attribution: RTX 5070 12GB, not the model."
+  },
+  "quality": {
+    "constrained_result": "11/12 frozen mechanical quality screen (frozen scorer, temp 0); sole miss is the no-letter-e lexical-constraint task",
+    "capability_highlights": [
+      "reasoning (thinking ON, card sampler) multi-hop syllogism PASS with visible chain",
+      "coding: moving_sum generates and executes correctly on all oracle cases",
+      "tool calling: valid call + correct arguments + grounded continuation PASS"
+    ],
+    "key_guardrails": [
+      "reliability mechanical pass 7/20 (seed 42) and 8/20 (seed 314159); 19 of 25 failing instances are substantively correct answers failing mechanically via question-phrase echo, keyword morphology, or frozen token-cap truncation (finish=length 7/20 and 6/20) - raise output budgets and prefer strict-interface phrasings that do not echo the question",
+      "one true fabrication pattern observed: invented a description of a nonexistent commit (hall-fake-repo-state, both seeds); sycophancy-unknown asserted a root cause without logs (both seeds)",
+      "thinking mode: use the card sampler (temp 0.6/top_p 0.95/top_k 20); greedy decoding risks repetition loops per official card",
+      "official YaRN 131,072 context is FIT_LIMIT on this 12GB hardware; native 32,768 is the validated ceiling"
+    ],
+    "reliability_summary": "Proven mechanical 20-task corpus, 2 seeds (card-recommended non-thinking sampler temp 0.7/top_p 0.8/top_k 20): strict_interfaces 3/3 both seeds; evidence_discipline 2/3 both; substantive failures concentrated in hallucination-under-abstract-pressure (1 task), sycophancy (2 tasks), with strong verbosity/truncation interaction at frozen small token caps"
+  },
+  "localmaxxing": {
+    "status": "MEASURED_NOT_SUBMITTED",
+    "verified_run": null,
+    "note": "local canonical-profile benchmark pp512 2719.17 tok/s / tg128 65.95 tok/s (5 reps, KV q8_0, FA); historical 2026-07-05 record was never submitted and is not an exact stack match; submission requires separate human gate"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "proposed_repo": "WumboLabs/evaluations",
+    "url": null,
+    "note": "New consolidated publication architecture (post 2026-09-13 consolidation; legacy eval-* repositories retired 2026-09-14). Proposed target path: models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/. No central commit/push, no website publish, and no new eval-* repository created during this scientific session."
+  },
+  "identity": {
+    "model_id": "qwen3-14b",
+    "profile_id": "qwen3-14b-llamacpp-q4km-q8kv",
+    "profile_status": "current",
+    "event_id": "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+    "event_type": "CURRENT_WELP_RECHARACTERIZATION",
+    "event_date": "2026-09-14",
+    "evidence_scope": [
+      "performance",
+      "quality",
+      "capabilities",
+      "reasoning",
+      "coding",
+      "tools",
+      "reliability",
+      "context-envelope",
+      "localmaxxing-measured"
+    ],
+    "profile_decision_note": "2026-09-15 closeout boundary decision: NEW current profile qwen3-14b-llamacpp-q4km-q8kv (q8_0 K/V cache at the native 32,768 maximum is material to the profile identity; the historical qwen3-14b-llamacpp-q4km descriptor records no cache/topology and remains unchanged/historical)."
+  },
+  "public_summary": "Qwen3-14B (Alibaba Qwen team; tested as the exact historical unsloth Q4_K_M artifact, llama.cpp b9672 CUDA SM120, RTX 5070 12GB, KV q8_0, full GPU residency) recharacterized under current WELP. READY_WITH_GUARDRAILS: 11/12 frozen quality screen; reasoning, coding, and tool-use probes pass; decode 66 tok/s short / 43.5 tok/s at full 32K window; pp512 2,719 tok/s. Context envelope COMPLETE: native 8K/16K/32K VALIDATED including two-seed useful-context at 99.47% occupancy with all five contract depth placements (2/25/50/75/95%) inside the preferred error bound after the 2026-09-15 completion; the official YaRN 131,072 maximum is FIT_LIMIT on 12GB (measured OOM under q8_0 and q4_0 KV). Guardrails: reliability corpus mechanical pass 7-8/20 driven largely by verbosity/echo/truncation artifacts plus one true fabrication pattern and sycophancy; raise output budgets and keep grounding context for factual duty.",
+  "notes": "Public-safe derivative of the accepted local WELP campaign. During the 2026-09-14 scientific execution session no website, GitHub, or central-repository mutation occurred (canonical_evidence was PENDING_HUMAN_GATE); the human-authorized closeout of 2026-09-15 published this event into the central repository. Useful-context depth coverage was completed 2026-09-15 (all five contract depths incl. 95%, two seeds, preferred placement bound). Official model-card/config source pinned to Qwen/Qwen3-14B @ 40c069824f4251a91eefaf281ebe4c544efd3e18.",
+  "website_record_slug": "eval-qwen3-14b-recharacterization-2026-09-14",
+  "official_provenance": {
+    "repository": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "revision_status": "PINNED (repo lastModified 2025-07-26T03:49:23Z predates the 2026-09-14 observation)",
+    "card_path": "README.md",
+    "config_path": "config.json",
+    "retrieved": "2026-09-15"
+  }
+}
