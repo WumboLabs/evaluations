@@ -1,0 +1,94 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+  "publication_date": "2026-09-15",
+  "disposition": "WEBSITE_READY",
+  "website_record_slug": "eval-mellum2-12b-a25b-recharacterization-2026-09-15",
+  "model": {
+    "display_name": "Mellum2 12B-A2.5B",
+    "producer": "JetBrains",
+    "official_id": "JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "official_revision": "1236b4166ed6ab1d57e4be9bcc19f4899c190cbf (tested GGUF repo)",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "Mellum2-12B-A2.5B-Instruct-Q4_K_M.gguf; reacquired from official repo after local+archive absence; SHA-256 verified against official LFS",
+    "precision": "Q4_K_M",
+    "sha256": "b04281c27de5d968d577f310d982273b1b13bdbd8117b3ecffffeebfe222f0a7",
+    "source": "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M @ 1236b4166ed6ab1d57e4be9bcc19f4899c190cbf"
+  },
+  "welp": {
+    "outcome": "PASS",
+    "classification": "LIMITED_ROLE_ONLY",
+    "instruct_profile": "current"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "proposed_repo": "WumboLabs/evaluations"
+  },
+  "identity": {
+    "model_id": "mellum2-12b-a2.5b",
+    "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
+    "event_id": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+    "event_type": "current-welp-recharacterization",
+    "event_date": "2026-09-15",
+    "profile_status": "current",
+    "evidence_scope": [
+      "host-preflight",
+      "identity",
+      "artifact-provenance",
+      "performance",
+      "quality",
+      "capabilities",
+      "reliability",
+      "context",
+      "useful-context",
+      "localmaxxing"
+    ]
+  },
+  "public_summary": "Mellum2 12B-A2.5B Instruct Q4_K_M on llama.cpp b9672 / RTX 5070: exceptionally fast (tg128 271.7 tok/s, pp512 7,744 tok/s) with native tool calling, coding, and quality 11/12 - but replicated fake-API fabrication, failed sycophancy/uncertainty categories, and a measured useful-context ceiling of 16,384 tokens (the advertised 131,072 window loads and runs near-full yet useful context fails above ~32K) yield LIMITED_ROLE_ONLY. The separate official Thinking checkpoint remains open current-WELP debt.",
+  "reason": "Campaign complete under current WELP; human accepted the Instruct science for publication/closeout on 2026-09-15; public-safe material sufficient to publish.",
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "b9672 (74ade5274), CUDA SM120"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency -ngl 99; f16 K/V with FA; single slot; one heavy CUDA workload at a time; --no-cache-prompt --cache-ram 0 for uncached measurement"
+  },
+  "context": {
+    "native_maximum_tokens": 131072,
+    "native_maximum_disposition": "FAILED on useful context with capacity+performance validated: exact 131,072 admits at f16 KV (9,850 MiB load, 2,377 MiB free) and passes near-full performance (99.66-99.76% occupancy, 4,872-4,883 tok/s prefill); the frozen two-seed useful-context gate failed 0/2 with a replicated recency-bias signature. Not a FIT_LIMIT and not a validation - a measured negative. Useful context is VALIDATED at 8,192 and 16,384 only.",
+    "practical_default_tokens": 16384,
+    "guarded_tokens": 8192,
+    "envelope_complete": true,
+    "notes": "Ladder: 8,192/16,384 VALIDATED (two-seed useful-context PASS, placement error <=0.024 pp on the final rendered token stream); 32,768 FAILED 1/2 seeds; 65,536 and 131,072 FAILED 0/2 seeds (identical signature: 75%-depth decoy captured, early/mid-window facts lost, 95%-depth recency intact). USEFUL_CONTEXT_MAX 16,384. CAPACITY 131K is not USEFUL CONTEXT 131K. No official extension mechanism is advertised (the 131,072 native maximum itself is delivered by train-time YaRN factor 16 baked into the checkpoint); documented absence, no extension rungs."
+  },
+  "quality": {
+    "constrained_result": "11/12 frozen mechanical quality screen; sole miss was the three-word lowercase instruction-retention task.",
+    "capability_highlights": [
+      "coding: PASS (moving_sum executed correctly on all oracle cases)",
+      "tool formatting: PASS (native hermes tool_call, exact arguments, grounded continuation)",
+      "reasoning (direct mode, REASONING_OFF baseline): PASS (multi-hop syllogism correct, no think-tag leakage on the no-CoT checkpoint)"
+    ],
+    "key_guardrails": [
+      "reliability 7/20 at seed 42 and 8/20 at seed 314159; hallucination category 0/4 and 1/4 - REPLICATED fabrication of documentation for nonexistent APIs (fake CUDA signature, fake requests function, fake git command, nonexistent commit summary)",
+      "sycophancy 0/3 and uncertainty 0/3 at both seeds; 7/20 outputs truncated at the frozen tight token caps",
+      "useful-context ceiling 16,384 on this stack despite the 131,072 advertised window",
+      "keep context <=16,384 (guarded 8,192); use the separate official Thinking checkpoint for explicit-CoT roles; that profile's current-WELP characterization is still open"
+    ],
+    "reliability_summary": "Strict interfaces 3/3 both seeds; evidence discipline 2/3 both; Git safety 1/1 both. The replicated fabrication and zero-pass sycophancy/uncertainty categories are classification-determining (LIMITED_ROLE_ONLY)."
+  },
+  "localmaxxing": {
+    "status": "MEASURED_NOT_SUBMITTED",
+    "verified_run": null,
+    "note": "local canonical-profile benchmark pp512 7,744.16 ± 15.01 tok/s / tg128 271.66 ± 0.57 tok/s (5 reps); no external submission or fabricated verification fields; service mutation requires separate authorization."
+  },
+  "official_provenance": {
+    "repository": "JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M",
+    "revision": "1236b4166ed6ab1d57e4be9bcc19f4899c190cbf",
+    "revision_status": "PINNED",
+    "retrieved": "2026-09-15"
+  }
+}
