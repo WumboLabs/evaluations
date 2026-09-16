@@ -3658,8 +3658,8 @@
       },
       "source": {
         "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
-        "sha256": "f4a6ba0e65865ac0dc7d18dbfa09312a47e990490e931a07bf8e81d4698845ed",
-        "commit": "767432c3c28a331f1e6d6eab03b811964db4e790"
+        "sha256": "e64576175af95d0c5459787401ef1431686b26b08e56436189151ea2fd61cafc",
+        "commit": "5d9918bf6fbdc8d6cbb4bfa1ad48a4316b035620"
       }
     }
   ],

@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/767432c3c28a331f1e6d6eab03b811964db4e790/models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/5d9918bf6fbdc8d6cbb4bfa1ad48a4316b035620/models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json)
