@@ -13,7 +13,7 @@
     "performance": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
     "capabilities": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
     "serving-profile": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
-    "specialized": "mellum2-fake-tool-2026-06-17",
+    "specialized": "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
     "practical-use": null,
     "context": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
     "reliability": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
@@ -27,7 +27,8 @@
       "mellum2-agent-backend-64k-2026-06-17",
       "mellum2-fake-tool-2026-06-17",
       "mellum2-lmx-speed-2026-07-04",
-      "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
+      "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+      "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
     ]
   },
   "context_summary": "practical_default_tokens: 16384; guarded_tokens: 8192; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: \"FAILED on useful context with capacity+performance validated: exact 131,072 admits at f16 KV (9,850 MiB, 2,377 MiB free) and passes near-full performance; frozen two-seed useful-context gate failed 0/2 (replicated recency-bias). Not FIT_LIMIT, not validated.\"; exact_max_dispositions: {\"native_131072\": \"FAILED useful-context (capacity + near-full performance validated)\", \"official_extension\": \"none advertised (documented absence; native 131,072 is train-time YaRN x16 baked in checkpoint)\"}; highest_measured_admitted: {\"tokens\": 131072, \"note\": \"99.66-99.76% occupancy; 4,872-4,883 tok/s prefill; peak 9,930 MiB; 2,297 MiB free floor\"}; useful_context_finding: \"USEFUL_CONTEXT_MAX 16,384: two seeds pass depths 2/25/50/75/95% at 8K and 16K (max placement error 0.024 pp); 32,768 fails 1/2 seeds; 64,536 and 131,072 fail 0/2 with identical decoy-capture/early-window-loss signature.\""

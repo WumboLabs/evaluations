@@ -365,7 +365,7 @@
         "performance": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
         "capabilities": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
         "serving-profile": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
-        "specialized": "mellum2-fake-tool-2026-06-17",
+        "specialized": "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
         "practical-use": null,
         "context": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
         "reliability": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
@@ -379,7 +379,8 @@
           "mellum2-agent-backend-64k-2026-06-17",
           "mellum2-fake-tool-2026-06-17",
           "mellum2-lmx-speed-2026-07-04",
-          "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
+          "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+          "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
         ]
       },
       "context_summary": "practical_default_tokens: 16384; guarded_tokens: 8192; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: \"FAILED on useful context with capacity+performance validated: exact 131,072 admits at f16 KV (9,850 MiB, 2,377 MiB free) and passes near-full performance; frozen two-seed useful-context gate failed 0/2 (replicated recency-bias). Not FIT_LIMIT, not validated.\"; exact_max_dispositions: {\"native_131072\": \"FAILED useful-context (capacity + near-full performance validated)\", \"official_extension\": \"none advertised (documented absence; native 131,072 is train-time YaRN x16 baked in checkpoint)\"}; highest_measured_admitted: {\"tokens\": 131072, \"note\": \"99.66-99.76% occupancy; 4,872-4,883 tok/s prefill; peak 9,930 MiB; 2,297 MiB free floor\"}; useful_context_finding: \"USEFUL_CONTEXT_MAX 16,384: two seeds pass depths 2/25/50/75/95% at 8K and 16K (max placement error 0.024 pp); 32,768 fails 1/2 seeds; 64,536 and 131,072 fail 0/2 with identical decoy-capture/early-window-loss signature.\""
@@ -958,7 +959,7 @@
       "artifact": "JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M",
       "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
       "repository": "WumboLabs/evaluations",
-      "current_status": "specialized-test",
+      "current_status": "current-alternate",
       "legacy_sources": [
         {
           "repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -969,9 +970,18 @@
       "profile_path": "models/mellum2-12b-a2.5b/profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking",
       "event_ids": [
         "mellum2-agent-backend-64k-2026-06-17",
-        "gemma4-12b-practical-pool-v025-2026-07-04"
+        "gemma4-12b-practical-pool-v025-2026-07-04",
+        "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
       ],
-      "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
+      "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17",
+      "runtime_version": "b9672 (74ade5274), CUDA SM120",
+      "artifact_precision": "Q4_K_M weights; f16 K/V cache (FA on)",
+      "deployment_topology": "Full-GPU llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (28/28 layers GPU-resident, no offload), -np 1, --no-cache-prompt --cache-ram 0 for uncached measurement; reasoning ON (Thinking is the official explicit-CoT checkpoint; reasoning_content emitted by the native template)",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-16",
+        "note": "Existing historical profile REUSED at the 2026-09-16 current-WELP recharacterization: identical official Thinking artifact lineage, Q4_K_M quantization, llama.cpp b9672 build family, and f16-KV cache class; descriptor enriched with the now-recorded runtime/KV/topology fields rather than creating a new profile. Status current-alternate: a validated official current-WELP surface distinct from the recommended Instruct profile. Historical descriptor meaning and events are unmodified."
+      }
     },
     {
       "schema": "wumbolabs-eval-profile/2",
@@ -3720,6 +3730,49 @@
         "sha256": "9164e6b671b3de817f699b7e3f944516e11fe85825428dcfb9ec84a5cd408a6a",
         "commit": "adad9217547bf22cea9f2bd27e79a929374a20a9"
       }
+    },
+    {
+      "slug": "eval-mellum2-12b-a25b-thinking-recharacterization-2026-09-16",
+      "event_id": "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+      "event_type": "welp-recharacterization",
+      "event_date": "2026-09-16",
+      "record_date": "2026-09-16",
+      "model_id": "mellum2-12b-a2.5b",
+      "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+      "profile_name": "llama.cpp Q4_K_M (Thinking)",
+      "profile_status": "current-alternate",
+      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M (Thinking)",
+      "event_title": "Current-WELP recharacterization",
+      "welp_status": "NOT_READY",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "NOT_READY: frozen reliability 3/20 and 3/20 with 20/20 finish=length explicit-CoT truncation per seed; USEFUL_CONTEXT_MAX NONE_VALIDATED (8k and 131k fail both seeds — reasoning exhausts the 512-token reserve) while exact native 131,072 CAPACITY is VALIDATED (99.66-99.76% occupancy, cache-free); quality 11/12; reasoning/coding/tools PASS; pp512 7,710.53 and tg128 270.75 tok/s; the separately published Instruct LIMITED_ROLE_ONLY result is unchanged",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/REPORT.md",
+        "commit": "a0ed8d8218d000c40fb2be157f4377d73c67af45"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "mellum2-12b-a2.5b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+        "source_bundle": "research/model-evaluations/mellum2-12b-a2.5b/mellum2-12b-a2.5b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_report_sha256": "8d1ddef15d7b5d5f1425b89eafbb603e2254096c1a12e4c9c606b9f1aeadf85f",
+        "published_date": "2026-09-16",
+        "note": "Native current-WELP event under the consolidated architecture; the existing Thinking profile ID was reused (same official Thinking artifact lineage/quant/runtime family/f16 KV). evidence_scope is scoped to the specialized registry lane: this is the second current-WELP profile on one model, and the event must not supersede the model-level canonical lanes (classification/reliability/context/serving-profile) attributed to the separately published Instruct event; per-profile Thinking facts render on the profile section and event section. Historical events retained unchanged; no eval-* repository created."
+      },
+      "source": {
+        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/website-publication.json",
+        "sha256": "fd4a2322ce7c0bae4b17a6447a94cda696d18e1b99d5e874a40e73b77b91001d",
+        "commit": "a0ed8d8218d000c40fb2be157f4377d73c67af45"
+      }
     }
   ],
   "shared_events": [
@@ -4672,6 +4725,7 @@
     "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
     "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
     "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
-    "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
+    "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+    "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
   ]
 }

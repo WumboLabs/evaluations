@@ -6,6 +6,7 @@ One row per immutable event; shared reports are stored once. Newest first.
 
 | Date | Model(s) | Event type | Profile(s) | Report | Website |
 |---|---|---|---|---|---|
+| 2026-09-16 | Mellum2 12B-A2.5B | welp-recharacterization | `mellum2-12b-a2.5b-llamacpp-q4km-thinking` | [mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16](models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/REPORT.md) | [Mellum2 12B-A2.5B](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/) |
 | 2026-09-15 | Qwen3.6-35B-A3B | welp-recharacterization | `qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv` | [qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15](models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md) | [Qwen3.6-35B-A3B](https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/) |
 | 2026-09-15 | Mellum2 12B-A2.5B | welp-recharacterization | `mellum2-12b-a2.5b-llamacpp-q4km-instruct` | [mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15](models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md) | [Mellum2 12B-A2.5B](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/) |
 | 2026-09-14 | Qwen3-14B | welp-recharacterization | `qwen3-14b-llamacpp-q4km-q8kv` | [qwen3-14b-rtx5070-welp-recharacterization-2026-09-14](models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/REPORT.md) | [Qwen3-14B](https://wumbolabs.dev/evaluations/qwen3-14b/) |

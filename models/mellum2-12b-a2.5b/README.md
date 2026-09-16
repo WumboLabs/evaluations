@@ -21,11 +21,12 @@ practical_default_tokens: 16384; guarded_tokens: 8192; native_maximum_tokens: 13
 
 ## Profiles
 
-- [mellum2-12b-a2.5b-llamacpp-q4km-thinking](profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking/) — specialized-test; llama.cpp; JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M
+- [mellum2-12b-a2.5b-llamacpp-q4km-thinking](profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking/) — current-alternate; llama.cpp; JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M
 - [mellum2-12b-a2.5b-llamacpp-q4km-instruct](profiles/mellum2-12b-a2.5b-llamacpp-q4km-instruct/) — current; llama.cpp; Mellum2-12B-A2.5B-Instruct-Q4_K_M.gguf (8,071,293,600-byte Q4_K_M; sha256 b04281c27de5d968d577f310d982273b1b13bdbd8117b3ecffffeebfe222f0a7; official JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M @ 1236b4166ed6ab1d57e4be9bcc19f4899c190cbf, reacquired 2026-09-15 after local+archive absence, byte-verified against official LFS SHA-256)
 
 ## Testing history
 
+- 2026-09-16 — [Current-WELP recharacterization](events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/) — NOT_READY; [mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16](events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/REPORT.md)
 - 2026-09-15 — [Current-WELP recharacterization](events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/) — LIMITED_ROLE_ONLY; [mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15](events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md)
 - 2026-07-04 — [LocalMaxxing LMX speed runs (Instruct + Thinking)](events/mellum2-lmx-speed-2026-07-04/) — BENCHMARK_ONLY (LMX local speed); [mellum2-lmx-speed-2026-07-04](events/mellum2-lmx-speed-2026-07-04/REPORT.md)
 - 2026-07-04 — [12B practical pool comparison v025 + Grug](../../shared-events/practical-use-comparison-2026-07-04/) — PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical); [gemma4-12b-practical-pool-v025-2026-07-04](../../shared-events/practical-use-comparison-2026-07-04/REPORT.md)

@@ -8,7 +8,7 @@
   "artifact": "JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M",
   "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
   "repository": "WumboLabs/evaluations",
-  "current_status": "specialized-test",
+  "current_status": "current-alternate",
   "legacy_sources": [
     {
       "repo": "WumboLabs/eval-mellum2-12b-a2.5b-thinking",
@@ -19,7 +19,16 @@
   "profile_path": "models/mellum2-12b-a2.5b/profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking",
   "event_ids": [
     "mellum2-agent-backend-64k-2026-06-17",
-    "gemma4-12b-practical-pool-v025-2026-07-04"
+    "gemma4-12b-practical-pool-v025-2026-07-04",
+    "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
   ],
-  "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17"
+  "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17",
+  "runtime_version": "b9672 (74ade5274), CUDA SM120",
+  "artifact_precision": "Q4_K_M weights; f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (28/28 layers GPU-resident, no offload), -np 1, --no-cache-prompt --cache-ram 0 for uncached measurement; reasoning ON (Thinking is the official explicit-CoT checkpoint; reasoning_content emitted by the native template)",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-16",
+    "note": "Existing historical profile REUSED at the 2026-09-16 current-WELP recharacterization: identical official Thinking artifact lineage, Q4_K_M quantization, llama.cpp b9672 build family, and f16-KV cache class; descriptor enriched with the now-recorded runtime/KV/topology fields rather than creating a new profile. Status current-alternate: a validated official current-WELP surface distinct from the recommended Instruct profile. Historical descriptor meaning and events are unmodified."
+  }
 }

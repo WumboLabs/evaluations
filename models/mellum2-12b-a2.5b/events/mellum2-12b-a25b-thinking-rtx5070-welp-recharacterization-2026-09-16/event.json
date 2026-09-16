@@ -1,0 +1,43 @@
+{
+  "slug": "eval-mellum2-12b-a25b-thinking-recharacterization-2026-09-16",
+  "event_id": "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+  "event_type": "welp-recharacterization",
+  "event_date": "2026-09-16",
+  "record_date": "2026-09-16",
+  "model_id": "mellum2-12b-a2.5b",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+  "profile_name": "llama.cpp Q4_K_M (Thinking)",
+  "profile_status": "current-alternate",
+  "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M (Thinking)",
+  "event_title": "Current-WELP recharacterization",
+  "welp_status": "NOT_READY",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "NOT_READY: frozen reliability 3/20 and 3/20 with 20/20 finish=length explicit-CoT truncation per seed; USEFUL_CONTEXT_MAX NONE_VALIDATED (8k and 131k fail both seeds — reasoning exhausts the 512-token reserve) while exact native 131,072 CAPACITY is VALIDATED (99.66-99.76% occupancy, cache-free); quality 11/12; reasoning/coding/tools PASS; pp512 7,710.53 and tg128 270.75 tok/s; the separately published Instruct LIMITED_ROLE_ONLY result is unchanged",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/REPORT.md",
+    "commit": "a0ed8d8218d000c40fb2be157f4377d73c67af45"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "mellum2-12b-a2.5b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+    "source_bundle": "research/model-evaluations/mellum2-12b-a2.5b/mellum2-12b-a2.5b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_report_sha256": "8d1ddef15d7b5d5f1425b89eafbb603e2254096c1a12e4c9c606b9f1aeadf85f",
+    "published_date": "2026-09-16",
+    "note": "Native current-WELP event under the consolidated architecture; the existing Thinking profile ID was reused (same official Thinking artifact lineage/quant/runtime family/f16 KV). evidence_scope is scoped to the specialized registry lane: this is the second current-WELP profile on one model, and the event must not supersede the model-level canonical lanes (classification/reliability/context/serving-profile) attributed to the separately published Instruct event; per-profile Thinking facts render on the profile section and event section. Historical events retained unchanged; no eval-* repository created."
+  },
+  "source": {
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/website-publication.json",
+    "sha256": "fd4a2322ce7c0bae4b17a6447a94cda696d18e1b99d5e874a40e73b77b91001d",
+    "commit": "a0ed8d8218d000c40fb2be157f4377d73c67af45"
+  }
+}
