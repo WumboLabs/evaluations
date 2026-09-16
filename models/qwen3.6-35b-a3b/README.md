@@ -6,7 +6,16 @@
 
 **Recommended profile:** `qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv`
 
-**Context:** practical_default_tokens: 32768; guarded_tokens: 16384; native_maximum_tokens: 262144; envelope_complete: true; native_maximum_disposition: "FIT_LIMIT on the current RTX 5070 12GB/q8_0-KV text profile: measured ~12.9 KiB/token KV growth and 512 MiB reserve make 262,144 exceed available VRAM; nearest measured boundary 32,768 VALIDATED"; exact_max_dispositions: {"native_262144": "FIT_LIMIT on this hardware/profile", "yarn_1010000": "FIT_LIMIT on this hardware/profile"}; highest_measured_admitted: {"tokens": 32768, "note": "tight-fit only; 433 MiB remaining after near-full request; no concurrent GPU workload"}; useful_context_finding: "Two 32K seeds pass all required 2/25/50/75/95% depths at 99.48-99.49% usable occupancy (31,961-31,964 tokens)"; notes: "Canonical validated maximum is 32K; guarded practical limit is 16K. Official model is multimodal, but current --no-mmproj text profile is SUPPORTED_NOT_CHARACTERIZED for vision. Reliability is 9/20 in each seed including Git safety 0/1."
+**Context:** Practical default: 32,768 tokens; Guarded boundary: 16,384 tokens; Model-card native maximum: 262,144 tokens
+
+Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
+
+<details>
+<summary>Published context findings and limitations</summary>
+
+practical_default_tokens: 32768; guarded_tokens: 16384; native_maximum_tokens: 262144; envelope_complete: true; native_maximum_disposition: "FIT_LIMIT on the current RTX 5070 12GB/q8_0-KV text profile: measured ~12.9 KiB/token KV growth and 512 MiB reserve make 262,144 exceed available VRAM; nearest measured boundary 32,768 VALIDATED"; exact_max_dispositions: {"native_262144": "FIT_LIMIT on this hardware/profile", "yarn_1010000": "FIT_LIMIT on this hardware/profile"}; highest_measured_admitted: {"tokens": 32768, "note": "tight-fit only; 433 MiB remaining after near-full request; no concurrent GPU workload"}; useful_context_finding: "Two 32K seeds pass all required 2/25/50/75/95% depths at 99.48-99.49% usable occupancy (31,961-31,964 tokens)"; notes: "Canonical validated maximum is 32K; guarded practical limit is 16K. Official model is multimodal, but current --no-mmproj text profile is SUPPORTED_NOT_CHARACTERIZED for vision. Reliability is 9/20 in each seed including Git safety 0/1."
+
+</details>
 
 [Human-facing Evaluation](https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/)
 
