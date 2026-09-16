@@ -7,14 +7,14 @@
   "display_name": "Mellum2 12B-A2.5B (Thinking)",
   "producer": "JetBrains",
   "official_id": "JetBrains/Mellum2-12B-A2.5B-Thinking",
-  "official_revision": "GGUF repo JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M @ 71a489e7b95efacf89feaaa6fe3b2995f3542409",
+  "official_revision": "71a489e7b95efacf89feaaa6fe3b2995f3542409 (tested GGUF repo JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M)",
   "license": "Apache-2.0"
  },
  "artifact": {
-  "tested": "Mellum2-12B-A2.5B-Thinking-Q4_K_M.gguf; locally reacquired and SHA-256 verified against the pinned official LFS object; lifecycle LOCAL pending human review",
+  "tested": "Mellum2-12B-A2.5B-Thinking-Q4_K_M.gguf; locally reacquired and SHA-256 verified against the pinned official LFS object",
   "precision": "Q4_K_M",
   "sha256": "489cf0d7ca86ef4683e34e2efe8a46a9b52573bfe994a6ad9c86bf57c7173ccb",
-  "source": "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M"
+  "source": "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M @ 71a489e7b95efacf89feaaa6fe3b2995f3542409"
  },
  "runtime": {
   "engine": "llama.cpp",
@@ -53,17 +53,25 @@
   "reliability_summary": "Frozen 20-task corpus, official sampler, seeds 42 and 314159: 3/20 each; strict interfaces 3/3 only; all 40 requests length-truncated."
  },
  "performance": {
+  "short_ttft_s": 0.043,
+  "short_decode_tps": 267.9,
+  "moderate_input_tokens": 4438,
+  "moderate_ttft_s": 0.574,
+  "moderate_prefill_tps": 7830.6,
+  "moderate_decode_tps": 245.4,
   "prefill_pp512_tok_s": 7710.53,
+  "pp512_stdev": 18.61,
   "decode_tg128_tok_s": 270.75,
-  "ttft_short_ms": 43,
-  "ttft_nearfull_16k_s": 1.91,
+  "tg128_stdev": 0.66,
   "vram_mib_at_profile": null,
-  "notes": "Cache-free practical short decode 267.8–268.3 tok/s; moderate 245.4–246.9 tok/s. llama-bench canonical p512/tg128."
+  "surface_note": "cache-free (--no-cache-prompt --cache-ram 0, cached_tokens 0 verified); short decode 267.8-268.3 tok/s across 5 reps, moderate 245.4-246.9; llama-bench canonical pp512 7,710.53 ± 18.61 / tg128 270.75 ± 0.66 tok/s.",
+  "notes": "Cache-free practical short decode 267.8-268.3 tok/s; moderate 245.4-246.9 tok/s. llama-bench canonical pp512/tg128."
  },
  "localmaxxing": {
   "status": "MEASURED_NOT_SUBMITTED",
   "verified_run": null,
-  "note": "Local canonical benchmark only; service not contacted or submitted."
+  "note": "Local canonical llama-bench benchmark (pp512 7,710.53 ± 18.61 / tg128 270.75 ± 0.66 tok/s, evidence runs/llama-bench-canonical.txt); no LocalMaxxing service contact or submission occurred.",
+  "tok_s_out": 270.75
  },
  "canonical_evidence": {
   "state": "PENDING_HUMAN_GATE",

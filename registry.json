@@ -3770,8 +3770,8 @@
       },
       "source": {
         "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/website-publication.json",
-        "sha256": "fd4a2322ce7c0bae4b17a6447a94cda696d18e1b99d5e874a40e73b77b91001d",
-        "commit": "a0ed8d8218d000c40fb2be157f4377d73c67af45"
+        "sha256": "afce840b738dd8e8aa48642f1d77a263fe57cbe4e332cc7bafc73e1f51df8f92",
+        "commit": "a41814a5d22286da63e39941fa69d502eaec9103"
       }
     }
   ],
