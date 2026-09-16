@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/a41814a5d22286da63e39941fa69d502eaec9103/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/5e3bc1d441a90047d5c0cad324469758e96104a6/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/website-publication.json)
