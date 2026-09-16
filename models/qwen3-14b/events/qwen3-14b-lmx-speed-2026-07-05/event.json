@@ -7,7 +7,7 @@
   "model_id": "qwen3-14b",
   "profile_id": "qwen3-14b-llamacpp-q4km",
   "profile_name": "llama.cpp Q4_K_M (unsloth)",
-  "profile_status": "current",
+  "profile_status": "historical",
   "event_kicker": "Benchmark Only — LMX local speed",
   "event_title": "LMX speed run",
   "welp_status": "BENCHMARK_ONLY (LMX local speed)",

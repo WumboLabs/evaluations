@@ -7,7 +7,7 @@
   "model_id": "qwen3-14b",
   "profile_id": "qwen3-14b-llamacpp-q4km",
   "profile_name": "llama.cpp Q4_K_M (unsloth)",
-  "profile_status": "current",
+  "profile_status": "historical",
   "event_kicker": "Specialized Test — fit ladder",
   "event_title": "Fit-ladder success-fallback E2E (LLMGauge feature validation)",
   "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
