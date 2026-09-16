@@ -1,0 +1,92 @@
+{
+ "schema": "wumbolabs-labs-publication/1",
+ "campaign": "mellum2-12b-a2.5b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+ "publication_date": "2026-09-16",
+ "disposition": "WEBSITE_READY",
+ "model": {
+  "display_name": "Mellum2 12B-A2.5B (Thinking)",
+  "producer": "JetBrains",
+  "official_id": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+  "official_revision": "GGUF repo JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M @ 71a489e7b95efacf89feaaa6fe3b2995f3542409",
+  "license": "Apache-2.0"
+ },
+ "artifact": {
+  "tested": "Mellum2-12B-A2.5B-Thinking-Q4_K_M.gguf; locally reacquired and SHA-256 verified against the pinned official LFS object; lifecycle LOCAL pending human review",
+  "precision": "Q4_K_M",
+  "sha256": "489cf0d7ca86ef4683e34e2efe8a46a9b52573bfe994a6ad9c86bf57c7173ccb",
+  "source": "huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M"
+ },
+ "runtime": {
+  "engine": "llama.cpp",
+  "version": "b9672 (74ade5274), CUDA SM120"
+ },
+ "hardware": {
+  "gpu": "NVIDIA GeForce RTX 5070 12GB",
+  "machine": "WumboJetsII",
+  "notes": "full GPU residency; f16 KV; FA; single slot; one heavy CUDA workload at a time"
+ },
+ "welp": {
+  "outcome": "PASS — RECHARACTERIZED (Thinking profile)",
+  "classification": "NOT_READY",
+  "artifact_classification": "current"
+ },
+ "context": {
+  "native_maximum_tokens": 131072,
+  "native_maximum_disposition": "VALIDATED capacity: exact native 131,072 at 99.660–99.758% near-full occupancy, two reps, cache-free; useful-context gates fail under frozen 512-token reserve.",
+  "practical_default_tokens": null,
+  "guarded_tokens": null,
+  "envelope_complete": true,
+  "notes": "Capacity ladder 8,192/16,384/32,768/65,536/131,072 all PASS. USEFUL_CONTEXT_MAX NONE_VALIDATED: both seeds fail at 8,192 and 131,072 because reasoning exhausts the 512-token reserve before final content. No extension mechanism advertised."
+ },
+ "quality": {
+  "constrained_result": "11/12 frozen mechanical quality screen; Q12 empty at fixed cap",
+  "capability_highlights": [
+   "reasoning: explicit-CoT syllogism PASS",
+   "coding: moving_sum executable oracle PASS",
+   "native tools: exact call/arguments and grounded continuation PASS"
+  ],
+  "key_guardrails": [
+   "Reliability 3/20 for both required seeds; every request reaches the fixed completion limit in reasoning.",
+   "No useful-context maximum validates under the frozen 512-token completion reserve; do not infer usefulness from 131,072 capacity.",
+   "NOT_READY for a current-WELP agent role (human-accepted 2026-09-16); narrow capability successes are not role qualification."
+  ],
+  "reliability_summary": "Frozen 20-task corpus, official sampler, seeds 42 and 314159: 3/20 each; strict interfaces 3/3 only; all 40 requests length-truncated."
+ },
+ "performance": {
+  "prefill_pp512_tok_s": 7710.53,
+  "decode_tg128_tok_s": 270.75,
+  "ttft_short_ms": 43,
+  "ttft_nearfull_16k_s": 1.91,
+  "vram_mib_at_profile": null,
+  "notes": "Cache-free practical short decode 267.8–268.3 tok/s; moderate 245.4–246.9 tok/s. llama-bench canonical p512/tg128."
+ },
+ "localmaxxing": {
+  "status": "MEASURED_NOT_SUBMITTED",
+  "verified_run": null,
+  "note": "Local canonical benchmark only; service not contacted or submitted."
+ },
+ "canonical_evidence": {
+  "state": "PENDING_HUMAN_GATE",
+  "proposed_repo": "WumboLabs/evaluations",
+  "note": "Publication awaits human scientific review; no commit, path, or URL is claimed."
+ },
+ "identity": {
+  "model_id": "mellum2-12b-a2.5b",
+  "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
+  "profile_status": "current",
+  "event_id": "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+  "event_type": "CURRENT_WELP_RECHARACTERIZATION",
+  "event_date": "2026-09-16",
+  "evidence_scope": [
+   "performance",
+   "quality",
+   "capabilities",
+   "reliability",
+   "context-envelope",
+   "localmaxxing",
+   "artifact-provenance"
+  ]
+ },
+ "website_record_slug": "eval-mellum2-12b-a25b-thinking-recharacterization-2026-09-16",
+ "public_summary": "Current-WELP recharacterization of the official JetBrains Mellum2 Thinking Q4_K_M artifact on llama.cpp b9672 / RTX 5070 12GB. Native capacity is validated through 131,072 tokens and narrow quality/capability probes pass (reasoning, coding, native tools), but both frozen reliability seeds score 3/20 with universal explicit-CoT length truncation and no useful-context depth validates at 8k or 131k under the frozen completion reserve. Campaign PASS with model classification NOT_READY for a current-WELP agent role."
+}
