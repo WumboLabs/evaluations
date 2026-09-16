@@ -1,6 +1,6 @@
 {
   "schema": "wumbolabs-labs-publication/1",
-  "campaign": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+  "campaign": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
   "publication_date": "2026-09-15",
   "disposition": "WEBSITE_READY",
   "website_record_slug": "eval-mellum2-12b-a25b-recharacterization-2026-09-15",
