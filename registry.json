@@ -360,15 +360,15 @@
       "current_state": {
         "agent-backend": "mellum2-agent-backend-64k-2026-06-17",
         "protocol-development": null,
-        "model-classification": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
-        "localmaxxing": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
-        "performance": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
-        "capabilities": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
-        "serving-profile": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+        "model-classification": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+        "localmaxxing": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+        "performance": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+        "capabilities": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+        "serving-profile": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
         "specialized": "mellum2-fake-tool-2026-06-17",
         "practical-use": null,
-        "context": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
-        "reliability": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+        "context": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
+        "reliability": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
         "recommended_profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
         "classification": "LIMITED_ROLE_ONLY",
         "profile_ids": [
@@ -379,7 +379,7 @@
           "mellum2-agent-backend-64k-2026-06-17",
           "mellum2-fake-tool-2026-06-17",
           "mellum2-lmx-speed-2026-07-04",
-          "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15"
+          "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
         ]
       },
       "context_summary": "practical_default_tokens: 16384; guarded_tokens: 8192; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: \"FAILED on useful context with capacity+performance validated: exact 131,072 admits at f16 KV (9,850 MiB, 2,377 MiB free) and passes near-full performance; frozen two-seed useful-context gate failed 0/2 (replicated recency-bias). Not FIT_LIMIT, not validated.\"; exact_max_dispositions: {\"native_131072\": \"FAILED useful-context (capacity + near-full performance validated)\", \"official_extension\": \"none advertised (documented absence; native 131,072 is train-time YaRN x16 baked in checkpoint)\"}; highest_measured_admitted: {\"tokens\": 131072, \"note\": \"99.66-99.76% occupancy; 4,872-4,883 tok/s prefill; peak 9,930 MiB; 2,297 MiB free floor\"}; useful_context_finding: \"USEFUL_CONTEXT_MAX 16,384: two seeds pass depths 2/25/50/75/95% at 8K and 16K (max placement error 0.024 pp); 32,768 fails 1/2 seeds; 64,536 and 131,072 fail 0/2 with identical decoy-capture/early-window-loss signature.\""
@@ -997,7 +997,7 @@
         "mellum2-fake-tool-2026-06-17",
         "mellum2-lmx-speed-2026-07-04",
         "gemma4-12b-practical-pool-v025-2026-07-04",
-        "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15"
+        "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
       ],
       "legacy_first_event": "mellum2-agent-backend-64k-2026-06-17",
       "runtime_version": "b9672 (74ade5274), CUDA SM120",
@@ -3674,7 +3674,7 @@
     },
     {
       "slug": "eval-mellum2-12b-a25b-recharacterization-2026-09-15",
-      "event_id": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+      "event_id": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
       "event_type": "welp-recharacterization",
       "event_date": "2026-09-15",
       "record_date": "2026-09-15",
@@ -3698,28 +3698,28 @@
       "authoring": "generated",
       "publication_state": "published",
       "evidence_maturity": "CURRENT_WELP",
-      "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+      "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
       "hardware": "WumboJetsII (RTX 5070 12GB)",
       "headline": "LIMITED_ROLE_ONLY: 16,384 useful-context VALIDATED (two-seed five-depth); 32K/64K/131K useful-context FAILED with a replicated recency-bias signature; exact native 131,072 capacity and near-full performance validated; quality 11/12; reliability 7/20 and 8/20 with replicated fake-API fabrication; Thinking remains separate open debt",
       "canonical_evidence": {
         "state": "published",
         "repo": "WumboLabs/evaluations",
-        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
-        "commit": "eaf500b5853b46f586eac897181365ed67deeb55"
+        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
+        "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
       },
       "publication_provenance": {
         "kind": "native",
         "campaign": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
         "source_bundle": "research/model-evaluations/mellum2-12b-a2.5b/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
         "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
-        "published_report_sha256": "0aa03e2c56e7189a8c2bf2bf9bb8535cbf8c6418a1de6ae6529eab0b8bb89dc2",
+        "published_report_sha256": "145841d37a139d781c4d85f39b6b8454cae1350a98d8737f6ef446a35bc647cd",
         "published_date": "2026-09-15",
         "note": "Native current-WELP event under the consolidated architecture; the existing Instruct profile ID was reused (same artifact lineage/quant/runtime family/f16 KV); historical events and the separate Thinking profile retained unchanged; no eval-* repository created."
       },
       "source": {
-        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
-        "sha256": "d286073a3284e2c9c17b9ad6b8ea9abd7c301089d21f9c1165ccba0ffd0c662c",
-        "commit": "eaf500b5853b46f586eac897181365ed67deeb55"
+        "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
+        "sha256": "b2d01fbc97a8fae686a1c1799c346a124d892551d99caaa08a23e19807210a95",
+        "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
       }
     }
   ],
@@ -4673,6 +4673,6 @@
     "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
     "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
     "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
-    "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15"
+    "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15"
   ]
 }

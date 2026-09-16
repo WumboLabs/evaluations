@@ -20,7 +20,7 @@
 - 2026-06-17 — [Fake-tool honesty runs (64k)](../../../../models/mellum2-12b-a2.5b/events/mellum2-fake-tool-2026-06-17/)
 - 2026-07-04 — [LocalMaxxing LMX speed runs (Instruct + Thinking)](../../../../models/mellum2-12b-a2.5b/events/mellum2-lmx-speed-2026-07-04/)
 - 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
-- 2026-09-15 — [Current-WELP recharacterization](../../../../models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/)
+- 2026-09-15 — [Current-WELP recharacterization](../../../../models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 

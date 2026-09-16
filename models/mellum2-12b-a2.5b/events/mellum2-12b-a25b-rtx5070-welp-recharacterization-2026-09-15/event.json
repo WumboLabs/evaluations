@@ -1,6 +1,6 @@
 {
   "slug": "eval-mellum2-12b-a25b-recharacterization-2026-09-15",
-  "event_id": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+  "event_id": "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
   "event_type": "welp-recharacterization",
   "event_date": "2026-09-15",
   "record_date": "2026-09-15",
@@ -24,27 +24,27 @@
   "authoring": "generated",
   "publication_state": "published",
   "evidence_maturity": "CURRENT_WELP",
-  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
+  "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
   "hardware": "WumboJetsII (RTX 5070 12GB)",
   "headline": "LIMITED_ROLE_ONLY: 16,384 useful-context VALIDATED (two-seed five-depth); 32K/64K/131K useful-context FAILED with a replicated recency-bias signature; exact native 131,072 capacity and near-full performance validated; quality 11/12; reliability 7/20 and 8/20 with replicated fake-API fabrication; Thinking remains separate open debt",
   "canonical_evidence": {
     "state": "published",
     "repo": "WumboLabs/evaluations",
-    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
-    "commit": "eaf500b5853b46f586eac897181365ed67deeb55"
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
+    "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
   },
   "publication_provenance": {
     "kind": "native",
     "campaign": "mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
     "source_bundle": "research/model-evaluations/mellum2-12b-a2.5b/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15",
     "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
-    "published_report_sha256": "0aa03e2c56e7189a8c2bf2bf9bb8535cbf8c6418a1de6ae6529eab0b8bb89dc2",
+    "published_report_sha256": "145841d37a139d781c4d85f39b6b8454cae1350a98d8737f6ef446a35bc647cd",
     "published_date": "2026-09-15",
     "note": "Native current-WELP event under the consolidated architecture; the existing Instruct profile ID was reused (same artifact lineage/quant/runtime family/f16 KV); historical events and the separate Thinking profile retained unchanged; no eval-* repository created."
   },
   "source": {
-    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
-    "sha256": "d286073a3284e2c9c17b9ad6b8ea9abd7c301089d21f9c1165ccba0ffd0c662c",
-    "commit": "eaf500b5853b46f586eac897181365ed67deeb55"
+    "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
+    "sha256": "b2d01fbc97a8fae686a1c1799c346a124d892551d99caaa08a23e19807210a95",
+    "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
   }
 }
