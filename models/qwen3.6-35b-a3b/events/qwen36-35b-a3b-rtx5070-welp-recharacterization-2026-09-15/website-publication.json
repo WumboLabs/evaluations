@@ -3,7 +3,7 @@
   "campaign": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
   "publication_date": "2026-09-15",
   "disposition": "WEBSITE_READY",
-  "website_record_slug": "qwen3-6-35b-a3b",
+  "website_record_slug": "eval-qwen36-35b-a3b-recharacterization-2026-09-15",
   "model": {
     "display_name": "Qwen3.6-35B-A3B",
     "producer": "Alibaba Qwen team",
