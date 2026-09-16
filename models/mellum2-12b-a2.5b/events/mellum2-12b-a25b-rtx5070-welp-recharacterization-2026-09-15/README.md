@@ -12,7 +12,7 @@
 
 [Public scientific report](REPORT.md) · [Event metadata](event.json)
 
-**Exact citation:** https://github.com/WumboLabs/evaluations/blob/e3ae8b539be41a75a3f70550509cae8c25a5ae57/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md
+**Exact citation:** https://github.com/WumboLabs/evaluations/blob/adad9217547bf22cea9f2bd27e79a929374a20a9/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md
 
 **Browse results:** [Mellum2 12B-A2.5B](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/)
 
@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/e3ae8b539be41a75a3f70550509cae8c25a5ae57/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/adad9217547bf22cea9f2bd27e79a929374a20a9/models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json)

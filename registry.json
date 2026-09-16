@@ -3704,7 +3704,7 @@
         "state": "published",
         "repo": "WumboLabs/evaluations",
         "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
-        "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
+        "commit": "adad9217547bf22cea9f2bd27e79a929374a20a9"
       },
       "publication_provenance": {
         "kind": "native",
@@ -3718,7 +3718,7 @@
       "source": {
         "path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
         "sha256": "9164e6b671b3de817f699b7e3f944516e11fe85825428dcfb9ec84a5cd408a6a",
-        "commit": "e3ae8b539be41a75a3f70550509cae8c25a5ae57"
+        "commit": "adad9217547bf22cea9f2bd27e79a929374a20a9"
       }
     }
   ],
