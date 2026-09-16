@@ -1,6 +1,6 @@
 # Mellum2 12B-A2.5B (Instruct) — current-WELP recharacterization on RTX 5070 12 GB (llama.cpp, Q4_K_M)
 
-- **Event ID:** `mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15`
+- **Event ID:** `mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15`
 - **Event date / closeout date:** 2026-09-15
 - **Model:** Mellum2 12B-A2.5B Instruct (`JetBrains/Mellum2-12B-A2.5B-Instruct`, JetBrains)
 - **Profile:** `mellum2-12b-a2.5b-llamacpp-q4km-instruct` (current)
