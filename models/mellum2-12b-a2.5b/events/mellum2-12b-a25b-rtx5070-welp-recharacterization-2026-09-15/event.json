@@ -13,7 +13,6 @@
   "welp_status": "LIMITED_ROLE_ONLY",
   "evidence_scope": [
     "model-classification",
-    "quality",
     "reliability",
     "capabilities",
     "context",
