@@ -17,7 +17,7 @@
 | [Gemma 4 12B IT](models/gemma-4-12b/) | READY_WITH_GUARDRAILS | 4 | 6 | [Evaluation](https://wumbolabs.dev/evaluations/gemma-4-12b/) |
 | [Mellum2 12B-A2.5B](models/mellum2-12b-a2.5b/) | No model-level classification published | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/) |
 | [Qwen3-14B](models/qwen3-14b/) | READY_WITH_GUARDRAILS | 3 | 5 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-14b/) |
-| [Qwen3.6-35B-A3B](models/qwen3.6-35b-a3b/) | No model-level classification published | 1 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/) |
+| [Qwen3.6-35B-A3B](models/qwen3.6-35b-a3b/) | LIMITED_ROLE_ONLY | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/) |
 | [Gemmable 4 12B MTP](models/gemmable-4-12b/) | No model-level classification published | 1 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/gemmable-4-12b/) |
 | [Grug 12B](models/grug-12b/) | No model-level classification published | 1 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/grug-12b/) |
 | [Qwen2.5-3B Instruct](models/qwen2.5-3b/) | No model-level classification published | 2 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/qwen2-5-3b/) |

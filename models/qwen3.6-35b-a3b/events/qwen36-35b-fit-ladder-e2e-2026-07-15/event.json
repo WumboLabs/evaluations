@@ -7,7 +7,7 @@
   "model_id": "qwen3.6-35b-a3b",
   "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
   "profile_name": "llama.cpp Unsloth UD-IQ2_M",
-  "profile_status": "current",
+  "profile_status": "historical",
   "event_kicker": "Specialized Test — fit ladder",
   "event_title": "Fit-ladder E2E (LLMGauge feature validation)",
   "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",

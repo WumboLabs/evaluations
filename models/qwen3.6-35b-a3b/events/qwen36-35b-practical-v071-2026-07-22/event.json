@@ -7,7 +7,7 @@
   "model_id": "qwen3.6-35b-a3b",
   "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
   "profile_name": "llama.cpp Unsloth UD-IQ2_M",
-  "profile_status": "current",
+  "profile_status": "historical",
   "event_kicker": "Benchmark Only — tool-version re-run",
   "event_title": "LLMGauge v0.71 practical re-run",
   "welp_status": "BENCHMARK_ONLY (TOOL_VERSION_RERUN)",

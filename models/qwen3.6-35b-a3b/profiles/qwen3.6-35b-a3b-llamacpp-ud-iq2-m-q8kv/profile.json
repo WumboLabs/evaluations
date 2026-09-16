@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3.6-35b-a3b",
+  "model_display_name": "Qwen3.6-35B-A3B",
+  "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+  "profile_display_name": "llama.cpp UD-IQ2_M q8_0 KV (32K text-generation profile)",
+  "runtime_family": "llama.cpp",
+  "runtime_version": "0.1.0-dev build 10449 (0d9ceae1e), CUDA",
+  "artifact": "Qwen3.6-35B-A3B-UD-IQ2_M.gguf (11,522,702,304-byte UD-IQ2_M; sha256 2be7ef1ed7e1af8b10d3829102cf9a6c2bd5ddb64d675b4ece23a60799403d43)",
+  "artifact_precision": "UD-IQ2_M weights; q8_0 K/V cache (FA auto)",
+  "deployment_topology": "Full-GPU llama.cpp CUDA text-generation serving on RTX 5070 12GB: -ngl 99, -c 32768, -np 1, q8_0 K/V, batch 256/64, --no-cache-prompt, reasoning off, --no-mmproj, --jinja",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+  "event_ids": [
+    "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-15",
+    "note": "New current profile registered at human-authorized closeout: q8_0 K/V cache, uncached prompt control, and 32K geometry materially define the tested text-generation surface. The historical UD-IQ2_M profile and its events remain unchanged in scientific meaning and are marked historical."
+  }
+}

@@ -8,24 +8,26 @@
   "current_state": {
     "agent-backend": null,
     "protocol-development": null,
-    "model-classification": null,
-    "localmaxxing": null,
-    "performance": "qwen36-35b-practical-v071-2026-07-22",
-    "capabilities": null,
-    "serving-profile": null,
+    "model-classification": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "localmaxxing": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "performance": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "capabilities": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "serving-profile": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
     "specialized": "qwen36-35b-fit-ladder-e2e-2026-07-15",
     "practical-use": "qwen36-35b-practical-v071-2026-07-22",
-    "context": null,
-    "reliability": null,
-    "recommended_profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
-    "classification": null,
+    "context": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "reliability": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "recommended_profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+    "classification": "LIMITED_ROLE_ONLY",
     "profile_ids": [
-      "qwen3.6-35b-a3b-llamacpp-ud-iq2-m"
+      "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+      "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv"
     ],
     "event_ids": [
       "qwen36-35b-practical-v071-2026-07-22",
-      "qwen36-35b-fit-ladder-e2e-2026-07-15"
+      "qwen36-35b-fit-ladder-e2e-2026-07-15",
+      "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15"
     ]
   },
-  "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+  "context_summary": "practical_default_tokens: 32768; guarded_tokens: 16384; native_maximum_tokens: 262144; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT on the current RTX 5070 12GB/q8_0-KV text profile: measured ~12.9 KiB/token KV growth and 512 MiB reserve make 262,144 exceed available VRAM; nearest measured boundary 32,768 VALIDATED\"; exact_max_dispositions: {\"native_262144\": \"FIT_LIMIT on this hardware/profile\", \"yarn_1010000\": \"FIT_LIMIT on this hardware/profile\"}; highest_measured_admitted: {\"tokens\": 32768, \"note\": \"tight-fit only; 433 MiB remaining after near-full request; no concurrent GPU workload\"}; useful_context_finding: \"Two 32K seeds pass all required 2/25/50/75/95% depths at 99.48-99.49% usable occupancy (31,961-31,964 tokens)\"; notes: \"Canonical validated maximum is 32K; guarded practical limit is 16K. Official model is multimodal, but current --no-mmproj text profile is SUPPORTED_NOT_CHARACTERIZED for vision. Reliability is 9/20 in each seed including Git safety 0/1.\""
 }

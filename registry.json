@@ -428,26 +428,28 @@
       "current_state": {
         "agent-backend": null,
         "protocol-development": null,
-        "model-classification": null,
-        "localmaxxing": null,
-        "performance": "qwen36-35b-practical-v071-2026-07-22",
-        "capabilities": null,
-        "serving-profile": null,
+        "model-classification": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "localmaxxing": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "performance": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "capabilities": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "serving-profile": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
         "specialized": "qwen36-35b-fit-ladder-e2e-2026-07-15",
         "practical-use": "qwen36-35b-practical-v071-2026-07-22",
-        "context": null,
-        "reliability": null,
-        "recommended_profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
-        "classification": null,
+        "context": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "reliability": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "recommended_profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+        "classification": "LIMITED_ROLE_ONLY",
         "profile_ids": [
-          "qwen3.6-35b-a3b-llamacpp-ud-iq2-m"
+          "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
+          "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv"
         ],
         "event_ids": [
           "qwen36-35b-practical-v071-2026-07-22",
-          "qwen36-35b-fit-ladder-e2e-2026-07-15"
+          "qwen36-35b-fit-ladder-e2e-2026-07-15",
+          "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15"
         ]
       },
-      "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 16384; native_maximum_tokens: 262144; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT on the current RTX 5070 12GB/q8_0-KV text profile: measured ~12.9 KiB/token KV growth and 512 MiB reserve make 262,144 exceed available VRAM; nearest measured boundary 32,768 VALIDATED\"; exact_max_dispositions: {\"native_262144\": \"FIT_LIMIT on this hardware/profile\", \"yarn_1010000\": \"FIT_LIMIT on this hardware/profile\"}; highest_measured_admitted: {\"tokens\": 32768, \"note\": \"tight-fit only; 433 MiB remaining after near-full request; no concurrent GPU workload\"}; useful_context_finding: \"Two 32K seeds pass all required 2/25/50/75/95% depths at 99.48-99.49% usable occupancy (31,961-31,964 tokens)\"; notes: \"Canonical validated maximum is 32K; guarded practical limit is 16K. Official model is multimodal, but current --no-mmproj text profile is SUPPORTED_NOT_CHARACTERIZED for vision. Reliability is 9/20 in each seed including Git safety 0/1.\""
     },
     {
       "model_id": "gemmable-4-12b",
@@ -879,7 +881,7 @@
       "artifact": "unsloth Qwen3.6-35B-A3B UD-IQ2_M GGUF (11,522,702,304-byte fingerprint)",
       "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
       "repository": "WumboLabs/evaluations",
-      "current_status": "practical-use",
+      "current_status": "historical",
       "legacy_sources": [
         {
           "repo": "WumboLabs/eval-qwen3.6-35b-a3b-ud-iq2-m",
@@ -1458,6 +1460,30 @@
         "kind": "native",
         "published_date": "2026-09-15",
         "note": "New current profile registered at the 2026-09-15 human-authorized closeout boundary decision: the q8_0 K/V cache at the native 32,768 maximum is material to the tested surface identity (f16 KV cannot reach 32,768 on 12GB). The historical qwen3-14b-llamacpp-q4km descriptor records no cache/topology, remains unchanged, and keeps its events."
+      }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "qwen3.6-35b-a3b",
+      "model_display_name": "Qwen3.6-35B-A3B",
+      "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+      "profile_display_name": "llama.cpp UD-IQ2_M q8_0 KV (32K text-generation profile)",
+      "runtime_family": "llama.cpp",
+      "runtime_version": "0.1.0-dev build 10449 (0d9ceae1e), CUDA",
+      "artifact": "Qwen3.6-35B-A3B-UD-IQ2_M.gguf (11,522,702,304-byte UD-IQ2_M; sha256 2be7ef1ed7e1af8b10d3829102cf9a6c2bd5ddb64d675b4ece23a60799403d43)",
+      "artifact_precision": "UD-IQ2_M weights; q8_0 K/V cache (FA auto)",
+      "deployment_topology": "Full-GPU llama.cpp CUDA text-generation serving on RTX 5070 12GB: -ngl 99, -c 32768, -np 1, q8_0 K/V, batch 256/64, --no-cache-prompt, reasoning off, --no-mmproj, --jinja",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+      "event_ids": [
+        "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15"
+      ],
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-15",
+        "note": "New current profile registered at human-authorized closeout: q8_0 K/V cache, uncached prompt control, and 32K geometry materially define the tested text-generation surface. The historical UD-IQ2_M profile and its events remain unchanged in scientific meaning and are marked historical."
       }
     }
   ],
@@ -2880,7 +2906,7 @@
       "model_id": "qwen3.6-35b-a3b",
       "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
       "profile_name": "llama.cpp Unsloth UD-IQ2_M",
-      "profile_status": "current",
+      "profile_status": "historical",
       "event_kicker": "Benchmark Only — tool-version re-run",
       "event_title": "LLMGauge v0.71 practical re-run",
       "welp_status": "BENCHMARK_ONLY (TOOL_VERSION_RERUN)",
@@ -2931,7 +2957,7 @@
       "model_id": "qwen3.6-35b-a3b",
       "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
       "profile_name": "llama.cpp Unsloth UD-IQ2_M",
-      "profile_status": "current",
+      "profile_status": "historical",
       "event_kicker": "Specialized Test — fit ladder",
       "event_title": "Fit-ladder E2E (LLMGauge feature validation)",
       "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
@@ -3585,6 +3611,55 @@
         "path": "models/qwen3-14b/events/qwen3-14b-rtx5070-welp-recharacterization-2026-09-14/website-publication.json",
         "sha256": "bc102550a29106b0755f179fbb40fa71aa9d246b30eb934a0d4fd18b5a4136f1",
         "commit": "2950a5eacd376c4df28b4bf33b96cae0b3db397a"
+      }
+    },
+    {
+      "slug": "eval-qwen36-35b-a3b-recharacterization-2026-09-15",
+      "event_id": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+      "event_type": "welp-recharacterization",
+      "event_date": "2026-09-15",
+      "record_date": "2026-09-15",
+      "model_id": "qwen3.6-35b-a3b",
+      "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+      "profile_name": "llama.cpp UD-IQ2_M q8_0 KV (32K text-generation profile)",
+      "profile_status": "current",
+      "event_kicker": "WELP Recharacterization — llama.cpp UD-IQ2_M q8_0 KV",
+      "event_title": "Current-WELP recharacterization",
+      "welp_status": "LIMITED_ROLE_ONLY",
+      "evidence_scope": [
+        "model-classification",
+        "reliability",
+        "capabilities",
+        "context",
+        "performance",
+        "serving-profile",
+        "localmaxxing"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "LIMITED_ROLE_ONLY: 32,768 text context VALIDATED with two-seed five-depth useful-context; 16K guarded limit; native 262K and YaRN 1.01M FIT_LIMIT on this 12GB profile",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
+        "commit": "7009751ff83088b435eba61730e94b511f1103c4"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "source_bundle": "research/model-evaluations/qwen3.6-35b-a3b/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_report_sha256": "8d23e41227f35e363cf7cd20883847e702155d896781e60ecb93b900e8383032",
+        "published_date": "2026-09-15",
+        "note": "Native current-WELP event under the consolidated architecture; historical profile/events retained and no eval-* repository created."
+      },
+      "source": {
+        "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
+        "sha256": "10ee7b4906817460e2cad8940e5ed49dc96ddaa7e13e386d229766e7e7d9eb40",
+        "commit": "592404e812f414b448069e59ec73c7f07382c5da"
       }
     }
   ],
@@ -4536,6 +4611,7 @@
     "ornith-9b-wumboserver-admission-2026-09-02",
     "qwen38-27b-quant-showdowns-2026-08-20",
     "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
-    "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14"
+    "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
+    "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15"
   ]
 }

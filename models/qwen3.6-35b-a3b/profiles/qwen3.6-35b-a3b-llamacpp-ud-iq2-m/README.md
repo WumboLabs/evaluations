@@ -4,7 +4,7 @@
 
 - **Profile ID:** `qwen3.6-35b-a3b-llamacpp-ud-iq2-m`
 - **Model ID:** `qwen3.6-35b-a3b`
-- **Status:** practical-use
+- **Status:** historical
 - **Artifact identity:** unsloth Qwen3.6-35B-A3B UD-IQ2_M GGUF (11,522,702,304-byte fingerprint)
 - **Runtime family:** llama.cpp
 - **Runtime revision:** Not recorded in legacy descriptor

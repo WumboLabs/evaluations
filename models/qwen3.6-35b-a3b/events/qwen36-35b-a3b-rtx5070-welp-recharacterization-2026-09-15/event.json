@@ -1,0 +1,49 @@
+{
+  "slug": "eval-qwen36-35b-a3b-recharacterization-2026-09-15",
+  "event_id": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+  "event_type": "welp-recharacterization",
+  "event_date": "2026-09-15",
+  "record_date": "2026-09-15",
+  "model_id": "qwen3.6-35b-a3b",
+  "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+  "profile_name": "llama.cpp UD-IQ2_M q8_0 KV (32K text-generation profile)",
+  "profile_status": "current",
+  "event_kicker": "WELP Recharacterization — llama.cpp UD-IQ2_M q8_0 KV",
+  "event_title": "Current-WELP recharacterization",
+  "welp_status": "LIMITED_ROLE_ONLY",
+  "evidence_scope": [
+    "model-classification",
+    "reliability",
+    "capabilities",
+    "context",
+    "performance",
+    "serving-profile",
+    "localmaxxing"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "LIMITED_ROLE_ONLY: 32,768 text context VALIDATED with two-seed five-depth useful-context; 16K guarded limit; native 262K and YaRN 1.01M FIT_LIMIT on this 12GB profile",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/REPORT.md",
+    "commit": "7009751ff83088b435eba61730e94b511f1103c4"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "source_bundle": "research/model-evaluations/qwen3.6-35b-a3b/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_report_sha256": "8d23e41227f35e363cf7cd20883847e702155d896781e60ecb93b900e8383032",
+    "published_date": "2026-09-15",
+    "note": "Native current-WELP event under the consolidated architecture; historical profile/events retained and no eval-* repository created."
+  },
+  "source": {
+    "path": "models/qwen3.6-35b-a3b/events/qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15/website-publication.json",
+    "sha256": "10ee7b4906817460e2cad8940e5ed49dc96ddaa7e13e386d229766e7e7d9eb40",
+    "commit": "592404e812f414b448069e59ec73c7f07382c5da"
+  }
+}

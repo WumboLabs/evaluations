@@ -12,7 +12,7 @@
 | [qwen3.8-2b-empero-vllm-bf16](models/qwen3.8-2b-empero/profiles/qwen3.8-2b-empero-vllm-bf16/) | Qwen3.8-2B (Empero) | specialized-test | vLLM/llama.cpp / empero-ai/Qwen3.8-2B-GGUF (+ BF16) |
 | [qwen2.5-3b-vllm-bf16](models/qwen2.5-3b/profiles/qwen2.5-3b-vllm-bf16/) | Qwen2.5-3B Instruct | benchmark-only | vLLM / Qwen/Qwen2.5-3B-Instruct BF16 |
 | [qwen2.5-3b-llamacpp-f16](models/qwen2.5-3b/profiles/qwen2.5-3b-llamacpp-f16/) | Qwen2.5-3B Instruct | benchmark-only | llama.cpp / Qwen2.5-3B-Instruct F16 GGUF (6,178,317,312-byte fingerprint) |
-| [qwen3.6-35b-a3b-llamacpp-ud-iq2-m](models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m/) | Qwen3.6-35B-A3B | practical-use | llama.cpp / unsloth Qwen3.6-35B-A3B UD-IQ2_M GGUF (11,522,702,304-byte fingerprint) |
+| [qwen3.6-35b-a3b-llamacpp-ud-iq2-m](models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m/) | Qwen3.6-35B-A3B | historical | llama.cpp / unsloth Qwen3.6-35B-A3B UD-IQ2_M GGUF (11,522,702,304-byte fingerprint) |
 | [qwen3-14b-llamacpp-q4km](models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km/) | Qwen3-14B | benchmark-only | llama.cpp / unsloth/Qwen3-14B-GGUF Q4_K_M |
 | [qwen3-14b-ollama-q4km-wumbo](models/qwen3-14b/profiles/qwen3-14b-ollama-q4km-wumbo/) | Qwen3-14B | practical-use | Ollama / unsloth/Qwen3-14B-GGUF Q4_K_M (custom qwen3-14b-wumbo Ollama tag; 9,001,753,376-byte weights fingerprint) |
 | [mellum2-12b-a2.5b-llamacpp-q4km-thinking](models/mellum2-12b-a2.5b/profiles/mellum2-12b-a2.5b-llamacpp-q4km-thinking/) | Mellum2 12B-A2.5B (Thinking) | specialized-test | llama.cpp / JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-Q4_K_M |
@@ -35,3 +35,4 @@
 | [qwen38-27b-llamacpp-ud-q2-k-xl](models/qwen38-27b/profiles/qwen38-27b-llamacpp-ud-q2-k-xl/) | Qwen3.8-27B | historical | llama.cpp / Unsloth Qwen3.8-27B UD-Q2_K_XL GGUF (Unsloth rev 27af057ecb382ddfea5d12837360a8980560e3ed) |
 | [bonsai-27b-q1-0-llamacpp](models/bonsai-27b/profiles/bonsai-27b-q1-0-llamacpp/) | Bonsai 27B (Q1_0) | specialized | llama.cpp / Upstream identity unresolved; retained public evidence describes a 3,803,452,480-byte Q1_0 artifact fingerprint. |
 | [qwen3-14b-llamacpp-q4km-q8kv](models/qwen3-14b/profiles/qwen3-14b-llamacpp-q4km-q8kv/) | Qwen3-14B | current | llama.cpp / unsloth/Qwen3-14B-GGUF Q4_K_M (9,001,753,376-byte Q4_K_M; sha256 712c0791d5124d3dd6d1e4968de1201207afeae49c6e10fbeb9c58fe00c58555) |
+| [qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv](models/qwen3.6-35b-a3b/profiles/qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv/) | Qwen3.6-35B-A3B | current | llama.cpp / Qwen3.6-35B-A3B-UD-IQ2_M.gguf (11,522,702,304-byte UD-IQ2_M; sha256 2be7ef1ed7e1af8b10d3829102cf9a6c2bd5ddb64d675b4ece23a60799403d43) |
