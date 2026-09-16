@@ -1,1 +1,93 @@
-{"schema":"wumbolabs-labs-publication/1","campaign":"qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15","publication_date":"2026-09-15","disposition":"WEBSITE_READY","website_record_slug":"qwen3.6-35b-a3b-ud-iq2-m-rtx5070","model":{"display_name":"Qwen3.6-35B-A3B","producer":"Alibaba Qwen team","official_id":"Qwen/Qwen3.6-35B-A3B","official_revision":"995ad96eacd98c81ed38be0c5b274b04031597b0","license":"Apache-2.0"},"artifact":{"tested":"UD-IQ2_M local GGUF; SHA-256 verified","precision":"UD-IQ2_M","sha256":"2be7ef1ed7e1af8b10d3829102cf9a6c2bd5ddb64d675b4ece23a60799403d43","source":"historical Unsloth GGUF lineage"},"welp":{"outcome":"PASS","classification":"LIMITED_ROLE_ONLY","text_profile":"current"},"canonical_evidence":{"state":"PENDING_HUMAN_GATE","proposed_repo":"WumboLabs/evaluations"},"identity":{"model_id":"qwen3.6-35b-a3b","profile_id":"qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv","event_id":"qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15","event_type":"current-welp-recharacterization","event_date":"2026-09-15","profile_status":"current","evidence_scope":["host-preflight","identity","artifact-provenance","performance","quality","capabilities","reliability","context","useful-context"]},"public_summary":"Current RTX 5070 text profile: 32K default, 16K guarded; 146.8–153.5 decode tok/s; quality 11/12; replicated reliability 9/20. Classified LIMITED_ROLE_ONLY. Vision is supported but not characterized."}
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+  "publication_date": "2026-09-15",
+  "disposition": "WEBSITE_READY",
+  "website_record_slug": "qwen3.6-35b-a3b-ud-iq2-m-rtx5070",
+  "model": {
+    "display_name": "Qwen3.6-35B-A3B",
+    "producer": "Alibaba Qwen team",
+    "official_id": "Qwen/Qwen3.6-35B-A3B",
+    "official_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "license": "Apache-2.0"
+  },
+  "artifact": {
+    "tested": "UD-IQ2_M local GGUF; SHA-256 verified",
+    "precision": "UD-IQ2_M",
+    "sha256": "2be7ef1ed7e1af8b10d3829102cf9a6c2bd5ddb64d675b4ece23a60799403d43",
+    "source": "historical Unsloth GGUF lineage"
+  },
+  "welp": {
+    "outcome": "PASS",
+    "classification": "LIMITED_ROLE_ONLY",
+    "text_profile": "current"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "proposed_repo": "WumboLabs/evaluations"
+  },
+  "identity": {
+    "model_id": "qwen3.6-35b-a3b",
+    "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
+    "event_id": "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
+    "event_type": "current-welp-recharacterization",
+    "event_date": "2026-09-15",
+    "profile_status": "current",
+    "evidence_scope": [
+      "host-preflight",
+      "identity",
+      "artifact-provenance",
+      "performance",
+      "quality",
+      "capabilities",
+      "reliability",
+      "context",
+      "useful-context"
+    ]
+  },
+  "public_summary": "Current RTX 5070 text profile: 32K default, 16K guarded; 146.8–153.5 decode tok/s; quality 11/12; replicated reliability 9/20. Classified LIMITED_ROLE_ONLY. Vision is supported but not characterized.",
+  "reason": "Campaign complete under current WELP; scientific session closed with public-safe material sufficient to publish. Publication followed during the authorized closeout.",
+  "runtime": {
+    "engine": "llama.cpp",
+    "version": "0.1.0-dev build 10449 (0d9ceae1e), CUDA"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "requested full GPU placement -ngl 99; q8_0 K/V; one heavy CUDA workload at a time; --no-cache-prompt; --no-mmproj"
+  },
+  "context": {
+    "native_maximum_tokens": 262144,
+    "native_maximum_disposition": "FIT_LIMIT on this RTX 5070 12GB/current q8_0-KV text profile: measured ~12.9 KiB/token KV growth and frozen 512 MiB reserve exceed available VRAM; nearest measured validated boundary is 32,768. This is profile/hardware scoped, not a universal model limit.",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 16384,
+    "envelope_complete": true,
+    "notes": "8K, 16K, and 32K are VALIDATED. Canonical measured maximum 32K is tight-fit only (about 433 MiB remaining after near-full request; no concurrent GPU workload). Two required 32K seeds pass useful-context depths 2/25/50/75/95%, with 31,961-31,964 usable tokens (99.48-99.49%). Official static-YaRN 1,010,000 is FIT_LIMIT on this hardware/profile."
+  },
+  "quality": {
+    "constrained_result": "11/12 frozen mechanical quality screen; sole miss was the lexical no-letter-e constraint.",
+    "capability_highlights": [
+      "coding: PASS",
+      "tool formatting: PASS",
+      "reasoning: frozen 1,500-token probe did not finalize; a separate 4,096-token operational probe correctly completed 17 × 23 = 391 with coherent reasoning"
+    ],
+    "key_guardrails": [
+      "reliability 9/20 at seed 42 and 9/20 at seed 314159",
+      "Git safety 0/1 at both seeds",
+      "substantive factual errors, hallucination-related failures, sycophancy and uncertainty weaknesses, plus repeated length truncation constrain use to LIMITED_ROLE_ONLY",
+      "official model is multimodal but this --no-mmproj text profile is SUPPORTED_NOT_CHARACTERIZED for vision"
+    ],
+    "reliability_summary": "Strict interfaces 3/3 at both seeds; the replicated 9/20 reliability result is classification-determining. Reasoning is operational with sufficient output budget, not an unconditional frozen-cap PASS."
+  },
+  "localmaxxing": {
+    "status": "MEASURED_NOT_SUBMITTED",
+    "verified_run": null,
+    "note": "local canonical-profile benchmark pp512 3571.96 ± 151.06 tok/s / tg128 157.62 ± 0.43 tok/s; no external submission or fabricated verification fields; service mutation requires separate authorization."
+  },
+  "official_provenance": {
+    "repository": "Qwen/Qwen3.6-35B-A3B",
+    "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "revision_status": "PINNED",
+    "retrieved": "2026-09-15"
+  }
+}
