@@ -4,12 +4,12 @@
 
 - **Profile ID:** `mellum2-12b-a2.5b-llamacpp-q4km-instruct`
 - **Model ID:** `mellum2-12b-a2.5b`
-- **Status:** specialized-test
-- **Artifact identity:** JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M
+- **Status:** current
+- **Artifact identity:** Mellum2-12B-A2.5B-Instruct-Q4_K_M.gguf (8,071,293,600-byte Q4_K_M; sha256 b04281c27de5d968d577f310d982273b1b13bdbd8117b3ecffffeebfe222f0a7; official JetBrains/Mellum2-12B-A2.5B-Instruct-GGUF-Q4_K_M @ 1236b4166ed6ab1d57e4be9bcc19f4899c190cbf, reacquired 2026-09-15 after local+archive absence, byte-verified against official LFS SHA-256)
 - **Runtime family:** llama.cpp
-- **Runtime revision:** Not recorded in legacy descriptor
-- **Quantization / precision:** See artifact identity; no separate legacy precision field
-- **Deployment topology:** Not separately recorded in legacy descriptor
+- **Runtime revision:** b9672 (74ade5274), CUDA SM120
+- **Quantization / precision:** Q4_K_M weights; f16 K/V cache (FA on)
+- **Deployment topology:** Full-GPU llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (28/28 layers GPU-resident, no offload), -np 1, context default 16384 / guarded 8192, --no-cache-prompt --cache-ram 0 for uncached measurement; REASONING_OFF (Instruct is the no-CoT checkpoint; explicit CoT is the separate Thinking artifact)
 - **Hardware:** WumboJetsII (RTX 5070 12GB)
 
 [Model index](../../) · [Profile metadata](profile.json)
@@ -20,6 +20,7 @@
 - 2026-06-17 — [Fake-tool honesty runs (64k)](../../../../models/mellum2-12b-a2.5b/events/mellum2-fake-tool-2026-06-17/)
 - 2026-07-04 — [LocalMaxxing LMX speed runs (Instruct + Thinking)](../../../../models/mellum2-12b-a2.5b/events/mellum2-lmx-speed-2026-07-04/)
 - 2026-07-04 — [12B practical pool comparison v025 + Grug](../../../../shared-events/practical-use-comparison-2026-07-04/)
+- 2026-09-15 — [Current-WELP recharacterization](../../../../models/mellum2-12b-a2.5b/events/mellum2-12b-a2.5b-rtx5070-welp-recharacterization-2026-09-15/)
 
 [Supporting public evidence](supporting-evidence/) retains unindexed historical reports and reproduction artifacts without inventing new event identities.
 
