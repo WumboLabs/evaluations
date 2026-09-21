@@ -1,81 +1,93 @@
 {
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "bonsai-2-27b-rtx5070-welp-characterization-2026-09-18",
-  "disposition": "WEBSITE_READY",
+  "disposition": "WEBSITE_PUBLISHED",
+  "model": {
+    "producer": "PrismML",
+    "official_id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "official_revision": "6ed5e12bf84b7a63069882c91dd9e9218647d17b",
+    "license": "Apache-2.0",
+    "display_name": "Ternary Bonsai 2 27B (reasoning-on)"
+  },
+  "artifact": {
+    "tested": "Ternary-Bonsai-2-27B-PTQ1_0.gguf; 5,946,648,928 bytes; SHA-256 verified exact official LFS identity",
+    "precision": "PTQ1_0 (1.75 bpw ternary group 128, Hadamard-rotated basis)",
+    "sha256": "53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3",
+    "source": "huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf @ 6ed5e12bf84b7a63069882c91dd9e9218647d17b"
+  },
+  "runtime": {
+    "engine": "llama.cpp (PrismML-Eng fork)",
+    "version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+    "notes": "Stock llama.cpp never executed PTQ1_0 science; ENHANCED_SEMANTIC admission passed (fork-quant battery)"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency (-ngl 99); f16 K/V; FA on; -np 1; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "PASS - characterization complete (verdict binds the reasoning-on profile)",
+    "classification": "NOT_READY",
+    "artifact_classification": "historical"
+  },
+  "context": {
+    "native_maximum_tokens": 262144,
+    "native_maximum_disposition": "FIT_LIMIT: f16 KV + weights exceed 12,227 MiB card memory at the exact native maximum (measured-anchored accounting; no launch). Official extension: none advertised (documented absence).",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 65536,
+    "envelope_complete": true,
+    "notes": "USEFUL_CONTEXT_MAX = 32,768 on this profile (2/2 seeds). 65K useful-context FAILED 1/2 (frozen 512-token reserve exhausted in reasoning; correct facts visible in the trace; thinking-off diagnostic passed in 40 tokens). Capacity and retrieval were intact; the budget interaction was the blocker - precisely attributed by the follow-up event."
+  },
+  "quality": {
+    "constrained_result": "12/12 frozen mechanical quality screen (temp 0)",
+    "capability_highlights": [
+      "reasoning probe: PASS (syllogism, coherent answer)",
+      "coding: budget-bound at canonical cap; thinking-off 400-cap PASS and 1500-cap thinking-on PASS (executable oracle 3/3)",
+      "native tools: exact call + args + grounded continuation PASS",
+      "structured interfaces: JSON object/array exact PASS"
+    ],
+    "key_guardrails": [
+      "Reliability 4/20 + 3/20 (seeds 42/314159) under default xhigh thinking; finish=length 19/20, 20/20 - budget exhaustion, not fabrication; 0 UNSAFE.",
+      "Per-request reasoning budget/effort kwargs are ignored by the pinned runtime; only enable_thinking=false changes behavior.",
+      "Never trust strict one-shot outputs or nonexistent-API/package/commit claims without verification."
+    ],
+    "reliability_summary": "Frozen 20-task corpus, vendor-default thinking, seeds 42 and 314159: 4/20 and 3/20; failure mode replicated across five bounded re-configurations (budget-vs-reasoning interaction)."
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "submission_ref": "cmuajqjjd09y4lq01wrf8ht0j",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 59.22,
+    "ttft_ms": 872.92,
+    "verified_run": false,
+    "note": "Terminal closeout 2026-09-21 (origin NEW, APPROVED): the canonical llama-bench arm (pp512 586.54 / tg128 59.22 tok/s, 5 reps) submitted verbatim; duplicate audit NO_EXACT_MATCH (all pre-existing service entries are PQ2_0 on other hardware). verifiedRun=false recorded honestly: llama-bench local mode cannot supply prompt/output/engine-timing capture. TTFT is estimated from prefill."
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "190498671d69583af3202c7f4860531f24c5960c",
+    "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/REPORT.md",
+    "note": "Published 2026-09-21; campaign snapshot welp-next-snapshot-2026-09-18-bonsai-2-27b-rtx5070-welp-characterization (WELP 9e3f0afbdfb767148f1612e307bb0150dbe23302)."
+  },
   "identity": {
     "model_id": "bonsai-2-27b",
     "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
     "event_id": "bonsai2-27b-rtx5070-welp-20260918",
-    "publisher": "PrismML",
-    "model_name": "Ternary Bonsai 2 27B",
-    "license": "Apache-2.0",
-    "event_type": "welp_characterization",
-    "event_date": "2026-09-18",
-    "evidence_scope": [
-      "performance",
-      "quality",
-      "reasoning",
-      "coding",
-      "native_tools",
-      "reliability",
-      "context",
-      "useful_context",
-      "compression_retention_supplemental",
-      "rtx2060super_portability_supplemental",
-      "localmaxxing",
-      "final_classification"
-    ]
-  },
-  "tested_artifact": {
-    "repository": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12bf84b7a63069882c91dd9e9218647d17b",
-    "file": "Ternary-Bonsai-2-27B-PTQ1_0.gguf",
-    "quant": "PTQ1_0 (1.75 bpw ternary group 128, Hadamard-rotated basis)",
-    "bytes": 5946648928,
-    "sha256": "53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3"
-  },
-  "runtime_hardware": {
-    "engine": "PrismML-Eng/llama.cpp 9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a)",
-    "primary_host": "WumboJetsII, RTX 5070 12 GB (SM120), driver 615.71.09",
-    "secondary_host": "WumboServer, RTX 2060 SUPER 8 GB (Turing), driver 580.173.02"
-  },
-  "welp_outcome": {
-    "classification": "NOT_READY",
-    "headline": "high surface quality and strong useful-context behavior at 32K, but frozen reliability gates fail under default reasoning budgets; supplementation study shows near-parity with a practical Qwen3.8 reference with a narrow fabrication tail"
-  },
-  "context": {
-    "native_max_tokens": 262144,
-    "default_context": 32768,
-    "guarded_context": 65536,
-    "useful_context_max": 32768,
-    "dispositions": "8K-64K measured; 98K+ FIT_LIMIT; no official extension advertised"
-  },
-  "headline_performance": {
-    "pp512_tok_s": 586.54,
-    "tg128_tok_s": 59.22,
-    "short_ttft_ms": 278.7,
-    "host": "RTX 5070"
-  },
-  "quality_guardrails_reliability": {
-    "quality_screen": "12/12",
-    "reliability_20task": "4/20 (seed 42), 3/20 (seed 314159), truncation-dominated under default xhigh thinking at frozen caps",
-    "thinking_off_arm": "8/20",
-    "guardrails": "bound reasoning budget or disable thinking for strict/bounded surfaces; verify all strict outputs; treat nonexistent-API/package/git claims as unverified"
-  },
-  "localmaxxing": {
-    "status": "SUBMITTED",
-    "origin": "NEW",
-    "submission_ref": "cmuajqjjd09y4lq01wrf8ht0j",
-    "submission_url": "https://www.localmaxxing.com/api/speed-tests/cmuajqjjd09y4lq01wrf8ht0j",
-    "service_status": "APPROVED",
-    "submitted_utc": "2026-09-21T01:08:13.033Z",
-    "verifiedRun": false,
-    "note": "Campaign close (2026-09-18): MEASURED_NOT_SUBMITTED (no service contact, campaign boundary). Terminal closeout (2026-09-21): canonical measured arm (pp512 586.54 / tg128 59.22 tok/s, 5 reps) submitted once under human authorization; duplicate audit NO_EXACT_MATCH (all pre-existing service entries are PQ2_0 on other hardware). Full record: summaries/localmaxxing.json."
-  },
-  "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE",
-    "target": "WumboLabs/evaluations"
+    "event_type": "initial-evaluation"
   },
   "website_record_slug": "bonsai2-27b",
-  "public_summary": "PrismML's ternary Bonsai 2 27B packs a 27B-class hybrid-attention reasoning model into 5.95 GB (PTQ1_0, 1.75 bpw) and requires PrismML's llama.cpp fork. On an RTX 5070 it decodes at ~59 tok/s with a fully GPU-resident profile and validates useful context at 32K, but fails frozen reliability gates under its default xhigh thinking mode (budget exhaustion, not fabrication). A paired study against a practical Qwen3.8-27B reference finds near-parity on 48 mechanically-scored tasks with a narrow fluent-fabrication tail. The same artifact also runs on an 8 GB RTX 2060 SUPER via the same pinned fork source.",
-  "notes": "No credentials, local absolute paths, private usernames, raw prompt logs, telemetry dumps, or internal debug state in this export."
+  "publication_date": "2026-09-21",
+  "public_summary": "PrismML's ternary Bonsai 2 27B packs a 27B-class hybrid-attention model into 5.95 GB (PTQ1_0, 1.75 bpw) and requires PrismML's llama.cpp fork. On an RTX 5070 it decodes at ~59 tok/s fully GPU-resident and validates useful context at 32K, but fails frozen reliability gates under its default xhigh thinking (budget exhaustion, not fabrication) - NOT_READY on this reasoning-on profile. A paired study against a practical Qwen3.8-27B reference finds near-parity on 48 mechanically-scored tasks with a narrow fluent-fabrication tail; the same artifact also runs on an 8 GB RTX 2060 SUPER at 8K context (19.9 tok/s decode). Configuration is part of the result: the separately profiled thinking-off configuration classifies READY_WITH_GUARDRAILS in the follow-up event.",
+  "performance": {
+    "short_ttft_s": 0.2787,
+    "moderate_input_tokens": 3600,
+    "moderate_ttft_s": 6.366,
+    "moderate_prefill_tps": 568.7,
+    "prefill_pp512_tok_s": 586.54,
+    "pp512_stdev": 2.52,
+    "decode_tg128_tok_s": 59.22,
+    "tg128_stdev": 0.1,
+    "surface_note": "llama-bench canonical arm (5 reps), uncached; near-full prefill 575 to 520 tok/s (8K to 64K); full-occupancy decode 55 to 42 tok/s; prefill is the practical bottleneck on Blackwell for PTQ1_0.",
+    "notes": "Vendor 5090 throughput claims remain EXTERNAL_REPORTED anchors."
+  }
 }

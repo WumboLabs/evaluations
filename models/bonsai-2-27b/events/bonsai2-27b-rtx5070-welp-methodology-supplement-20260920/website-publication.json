@@ -1,60 +1,78 @@
 {
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "bonsai-2-27b-welp-methodology-supplement-2026-09-20",
-  "disposition": "WEBSITE_READY",
-  "publication_proposal_state": "PENDING_HUMAN_GATE — proposal only; NOTHING published in this session",
+  "disposition": "WEBSITE_PUBLISHED",
+  "model": {
+    "producer": "PrismML",
+    "official_id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "official_revision": "6ed5e12bf84b7a63069882c91dd9e9218647d17b",
+    "license": "Apache-2.0",
+    "display_name": "Ternary Bonsai 2 27B (thinking-off)"
+  },
+  "artifact": {
+    "tested": "Ternary-Bonsai-2-27B-PTQ1_0.gguf; 5,946,648,928 bytes; SHA-256 verified exact official LFS identity",
+    "precision": "PTQ1_0 (1.75 bpw ternary group 128, Hadamard-rotated basis)",
+    "sha256": "53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3",
+    "source": "huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf @ 6ed5e12bf84b7a63069882c91dd9e9218647d17b"
+  },
+  "runtime": {
+    "engine": "llama.cpp (PrismML-Eng fork)",
+    "version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+    "notes": "Stock llama.cpp never executed PTQ1_0 science; ENHANCED_SEMANTIC admission passed (fork-quant battery)"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency (-ngl 99); f16 K/V; FA on; -np 1; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "PASS - COMPLETE_PASS (bounded WELP methodology-revision supplement)",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "current"
+  },
+  "context": {
+    "native_maximum_tokens": 262144,
+    "native_maximum_disposition": "FIT_LIMIT (unchanged); 65,536 serves at ~99.6% occupancy on this profile; 98,304+ exceeds card memory.",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 65536,
+    "envelope_complete": true,
+    "notes": "Thinking-off profile: USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2 seeds; all six gates; the 512-token reserve is the rung output budget; finished stop at 40/512 tokens). The reasoning-on profile keeps 32,768 operational (its 65K run is 1/2 BUDGET_LIMITED; its 65K semantic lane was never measured). No retroactive improvement across profiles."
+  },
+  "quality": {
+    "constrained_result": "Semantic lane (ceiling 2048): 18/20 + 18/20 PASS (seeds 42/314159), completion 40/40, 0 truncation, 0 NOT_EVALUABLE, 0 UNSAFE",
+    "capability_highlights": [
+      "hallucination 4/4 + 4/4; uncertainty 3/3 + 3/3; strict interfaces 2/3 + 2/3 (load-bearing: real exact-format defect caught both seeds); sycophancy 2/3 + 2/3",
+      "profile-pure operational-ceiling audit (DERIVED, 0 new requests): completion 0.55/0.65 at legacy caps, EXHAUSTED_IN_ANSWER only - verbosity vs cap sizing, never reasoning starvation"
+    ],
+    "key_guardrails": [
+      "Pin enable_thinking=false (the only effective reasoning control on the pinned runtime) and size generation ceilings to the measured verbosity; legacy 20-140-token caps truncate 35-45% of tasks on answer length alone.",
+      "BUDGET_DISCIPLINE POOR from this profile's own audit; READY_WITH_GUARDRAILS derived by the frozen harness (R-C5) via the declared non-starving 2048 lane (40/40 completion at 0.90 semantics).",
+      "The reasoning-on profile keeps its historical NOT_READY and remains operationally budget-hostile (completion 1/20 at legacy caps); neither profile represents Bonsai 2 universally."
+    ],
+    "reliability_summary": "WELP scorer v2 / gate_v2, frozen 20-task fixture v2, seeds 42 and 314159: 18/20 semantic each; four genuine semantic FAILs (strict-extract-09 x2, sycophancy-unknown, sycophancy-systemd); adaptive third seed not triggered."
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "submission_ref": "cmuajqjjd09y4lq01wrf8ht0j",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 59.22,
+    "verified_run": false,
+    "note": "Carried terminal disposition (no re-benchmark by design): the thinking-off delta changes declared reasoning state only, which is not a LocalMaxxing benchmark identity field. Owning record: the characterization event's campaign. verifiedRun=false recorded honestly."
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "190498671d69583af3202c7f4860531f24c5960c",
+    "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/REPORT.md",
+    "note": "Correction chronology: HUMAN-GATE-CORRECTION.md retained in the campaign bundle; prior event unchanged."
+  },
   "identity": {
     "model_id": "bonsai-2-27b",
     "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
     "event_id": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
-    "prior_event_id": "bonsai2-27b-rtx5070-welp-20260918",
-    "publisher": "PrismML",
-    "model_name": "Ternary Bonsai 2 27B",
-    "license": "Apache-2.0",
-    "event_type": "welp_methodology_revision_supplement",
-    "event_date": "2026-09-20",
-    "evidence_scope": [
-      "reliability_semantic_lane_thinking_off",
-      "reliability_operational_lane_reasoning_on",
-      "useful_context_65536_semantic_and_operational",
-      "methodology_revision_outcome_semantics",
-      "profile_boundary_decision",
-      "final_classification_supplement"
-    ]
-  },
-  "linkage": {
-    "methodology_snapshot": "welp-next-snapshot-2026-09-19-methodology-revision",
-    "original_event": "bonsai-2-27b-rtx5070-welp-characterization-2026-09-18 (PASS / NOT_READY under its recorded snapshot, unchanged)",
-    "original_profile": "bonsai2-27b-ptq1-0-prism-llamacpp (reasoning-on; historical NOT_READY retained)",
-    "supplemental_profile": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off (READY_WITH_GUARDRAILS under revised WELP R-C5)"
-  },
-  "correct_framing": "The prior result is valid under the prior methodology and default reasoning-on profile; this supplemental event adds evidence under the revised methodology with an explicit thinking-off profile. Old and new aggregate scores are NOT directly equivalent across methodologies.",
-  "welp_outcome": {
-    "classification_new_profile": "READY_WITH_GUARDRAILS (profile-pure recomputation, 2026-09-20)",
-    "dimensions": {"SEMANTIC_CAPABILITY": "ACCEPTABLE", "BUDGET_DISCIPLINE": "POOR", "CONTEXT_USABILITY": "VALIDATED", "INTEGRATION_QUALITY": "CLEAN"},
-    "dimension_basis": "all dimensions from thinking-off-profile evidence: BUDGET_DISCIPLINE from the profile's own operational-ceiling audit (derived completion 0.55/0.65, truncation 0.45/0.35, EXHAUSTED_IN_ANSWER only); CONTEXT_USABILITY from the two thinking-off 65K requests (both lanes VALIDATED within the 512 reserve)",
-    "reasoning_on_profile_separate": "bonsai2-27b-ptq1-0-prism-llamacpp: operationally budget-hostile (Lane B: completion 1/20, 19/20 truncation, EXHAUSTED_IN_REASONING-dominant); historical NOT_READY (prior snapshot) unchanged; USEFUL_CONTEXT_MAX_OPERATIONAL = 32,768 on that profile",
-    "headline": "configuration is part of the result: neither profile represents 'Bonsai 2' universally - the thinking-off profile is semantically strong with a verbosity-vs-legacy-caps guardrail and 65K useful context in both lanes; the default reasoning-on profile remains operationally budget-hostile"
+    "event_type": "follow-up"
   },
   "website_record_slug": "bonsai2-27b",
-  "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE",
-    "target": "WumboLabs/evaluations"
-  },
-  "publication_actions_this_session": {
-    "central_push": false,
-    "website_mutation": false,
-    "localmaxxing_submission": false
-  },
-  "localmaxxing": {
-    "status": "SUBMITTED",
-    "origin": "NEW",
-    "submission_ref": "cmuajqjjd09y4lq01wrf8ht0j",
-    "service_status": "APPROVED",
-    "submitted_utc": "2026-09-21T01:08:13.033Z",
-    "verifiedRun": false,
-    "note": "Campaign close (2026-09-20): MEASURED_NOT_SUBMITTED carried forward (no re-benchmark by design; canonical practical profile unchanged). Terminal closeout (2026-09-21): the prior event's canonical measured arm was submitted once under human authorization; reasoning state is not a LocalMaxxing benchmark identity field, so no thinking-off re-benchmark was required or performed. Owning record: bonsai-2-27b-rtx5070-welp-characterization-2026-09-18/summaries/localmaxxing.json."
-  },
-  "closeout_update_2026-09-21": "Terminal LocalMaxxing disposition established at final closeout (human-authorized submission); canonical evidence remains PENDING_HUMAN_GATE pending the WELP public methodology commit and central publication gates.",
-  "notes": "Public-safe: no credentials, local absolute paths, private usernames, raw prompt logs, telemetry dumps, or internal debug state."
+  "publication_date": "2026-09-21",
+  "public_summary": "A bounded supplement executed the revised WELP methodology (snapshot welp-next-snapshot-2026-09-19-methodology-revision, DRAFT - NOT v1.0, public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028) on a new declared thinking-off profile. Semantic reliability 18/20 + 18/20 (40/40 completion at ceiling 2048), 65K useful context VALIDATED in both lanes, and READY_WITH_GUARDRAILS derived profile-purely after a same-day human-gate correction (CASE 1 campaign/report invocation misuse; no WELP protocol defect; 0 additional inference). Configuration is part of the result: old and new aggregates are not equivalent across methodologies, and the reasoning-on profile's historical NOT_READY is unchanged."
 }
