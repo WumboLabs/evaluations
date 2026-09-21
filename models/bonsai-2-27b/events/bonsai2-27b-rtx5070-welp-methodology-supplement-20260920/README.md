@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/190498671d69583af3202c7f4860531f24c5960c/models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/fa5f3a421f1c5273802c83963f5d2248363c85de/models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/website-publication.json)
