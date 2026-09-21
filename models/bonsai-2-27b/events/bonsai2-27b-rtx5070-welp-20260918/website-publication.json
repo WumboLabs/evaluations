@@ -1,0 +1,81 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "bonsai-2-27b-rtx5070-welp-characterization-2026-09-18",
+  "disposition": "WEBSITE_READY",
+  "identity": {
+    "model_id": "bonsai-2-27b",
+    "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
+    "event_id": "bonsai2-27b-rtx5070-welp-20260918",
+    "publisher": "PrismML",
+    "model_name": "Ternary Bonsai 2 27B",
+    "license": "Apache-2.0",
+    "event_type": "welp_characterization",
+    "event_date": "2026-09-18",
+    "evidence_scope": [
+      "performance",
+      "quality",
+      "reasoning",
+      "coding",
+      "native_tools",
+      "reliability",
+      "context",
+      "useful_context",
+      "compression_retention_supplemental",
+      "rtx2060super_portability_supplemental",
+      "localmaxxing",
+      "final_classification"
+    ]
+  },
+  "tested_artifact": {
+    "repository": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12bf84b7a63069882c91dd9e9218647d17b",
+    "file": "Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+    "quant": "PTQ1_0 (1.75 bpw ternary group 128, Hadamard-rotated basis)",
+    "bytes": 5946648928,
+    "sha256": "53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3"
+  },
+  "runtime_hardware": {
+    "engine": "PrismML-Eng/llama.cpp 9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a)",
+    "primary_host": "WumboJetsII, RTX 5070 12 GB (SM120), driver 615.71.09",
+    "secondary_host": "WumboServer, RTX 2060 SUPER 8 GB (Turing), driver 580.173.02"
+  },
+  "welp_outcome": {
+    "classification": "NOT_READY",
+    "headline": "high surface quality and strong useful-context behavior at 32K, but frozen reliability gates fail under default reasoning budgets; supplementation study shows near-parity with a practical Qwen3.8 reference with a narrow fabrication tail"
+  },
+  "context": {
+    "native_max_tokens": 262144,
+    "default_context": 32768,
+    "guarded_context": 65536,
+    "useful_context_max": 32768,
+    "dispositions": "8K-64K measured; 98K+ FIT_LIMIT; no official extension advertised"
+  },
+  "headline_performance": {
+    "pp512_tok_s": 586.54,
+    "tg128_tok_s": 59.22,
+    "short_ttft_ms": 278.7,
+    "host": "RTX 5070"
+  },
+  "quality_guardrails_reliability": {
+    "quality_screen": "12/12",
+    "reliability_20task": "4/20 (seed 42), 3/20 (seed 314159), truncation-dominated under default xhigh thinking at frozen caps",
+    "thinking_off_arm": "8/20",
+    "guardrails": "bound reasoning budget or disable thinking for strict/bounded surfaces; verify all strict outputs; treat nonexistent-API/package/git claims as unverified"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "submission_ref": "cmuajqjjd09y4lq01wrf8ht0j",
+    "submission_url": "https://www.localmaxxing.com/api/speed-tests/cmuajqjjd09y4lq01wrf8ht0j",
+    "service_status": "APPROVED",
+    "submitted_utc": "2026-09-21T01:08:13.033Z",
+    "verifiedRun": false,
+    "note": "Campaign close (2026-09-18): MEASURED_NOT_SUBMITTED (no service contact, campaign boundary). Terminal closeout (2026-09-21): canonical measured arm (pp512 586.54 / tg128 59.22 tok/s, 5 reps) submitted once under human authorization; duplicate audit NO_EXACT_MATCH (all pre-existing service entries are PQ2_0 on other hardware). Full record: summaries/localmaxxing.json."
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "target": "WumboLabs/evaluations"
+  },
+  "website_record_slug": "bonsai2-27b",
+  "public_summary": "PrismML's ternary Bonsai 2 27B packs a 27B-class hybrid-attention reasoning model into 5.95 GB (PTQ1_0, 1.75 bpw) and requires PrismML's llama.cpp fork. On an RTX 5070 it decodes at ~59 tok/s with a fully GPU-resident profile and validates useful context at 32K, but fails frozen reliability gates under its default xhigh thinking mode (budget exhaustion, not fabrication). A paired study against a practical Qwen3.8-27B reference finds near-parity on 48 mechanically-scored tasks with a narrow fluent-fabrication tail. The same artifact also runs on an 8 GB RTX 2060 SUPER via the same pinned fork source.",
+  "notes": "No credentials, local absolute paths, private usernames, raw prompt logs, telemetry dumps, or internal debug state in this export."
+}
