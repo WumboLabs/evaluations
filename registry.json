@@ -680,8 +680,8 @@
         "bonsai-2-27b",
         "bonsai2-27b"
       ],
-      "website_slug": "bonsai2-27b",
-      "website_url": "https://wumbolabs.dev/evaluations/bonsai2-27b/",
+      "website_slug": "bonsai-2-27b",
+      "website_url": "https://wumbolabs.dev/evaluations/bonsai-2-27b/",
       "current_state": {
         "agent-backend": null,
         "protocol-development": null,

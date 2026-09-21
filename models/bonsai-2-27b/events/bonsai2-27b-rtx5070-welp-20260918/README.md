@@ -14,7 +14,7 @@
 
 **Exact citation:** https://github.com/WumboLabs/evaluations/blob/190498671d69583af3202c7f4860531f24c5960c/models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/REPORT.md
 
-**Browse results:** [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai2-27b/)
+**Browse results:** [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai-2-27b/)
 
 The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
 

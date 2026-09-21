@@ -17,7 +17,7 @@ practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 2
 
 </details>
 
-[Human-facing Evaluation](https://wumbolabs.dev/evaluations/bonsai2-27b/)
+[Human-facing Evaluation](https://wumbolabs.dev/evaluations/bonsai-2-27b/)
 
 ## Profiles
 
