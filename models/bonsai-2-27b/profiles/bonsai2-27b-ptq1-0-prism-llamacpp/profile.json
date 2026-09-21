@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "bonsai-2-27b",
+  "model_display_name": "Ternary Bonsai 2 27B (reasoning-on)",
+  "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
+  "profile_display_name": "llama.cpp PTQ1_0 (reasoning-on, vendor default)",
+  "runtime_family": "llama.cpp (PrismML-Eng fork)",
+  "artifact": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12b :: Ternary-Bonsai-2-27B-PTQ1_0.gguf (sha256 53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "historical",
+  "profile_path": "models/bonsai-2-27b/profiles/bonsai2-27b-ptq1-0-prism-llamacpp",
+  "event_ids": [
+    "bonsai2-27b-rtx5070-welp-20260918"
+  ],
+  "runtime_version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+  "artifact_precision": "PTQ1_0 ternary 1.75 bpw group 128 (Hadamard-rotated basis); f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU PrismML-Eng/llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99, -fa on, f16 KV, -np 1, vendor instruct sampler; REASONING_ON vendor xhigh default (the pinned runtime ignores per-request reasoning budget/effort kwargs; template enable_thinking=false is the only effective control). Second hardware observation: same artifact/source on RTX 2060 SUPER 8GB (SM75 build), practical at 8K.",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-21",
+    "note": "Native profile created at first publication of event bonsai2-27b-rtx5070-welp-20260918. Executed under per-campaign snapshot welp-next-snapshot-2026-09-18-bonsai-2-27b-rtx5070-welp-characterization (WELP 9e3f0afbdfb767148f1612e307bb0150dbe23302, public as an ancestor of the methodology commit). Historical verdict NOT_READY for this profile: frozen reliability 4/20 + 3/20 under default reasoning (budget exhaustion, not fabrication); operationally budget-hostile (supplement Lane B: completion 1/20, 17/20 EXHAUSTED_IN_REASONING). Status historical: the reasoning-state delta is a material declared profile dimension, so the thinking-off profile is a separate scientific surface, not a replacement; this profile's event and verdict are immutable."
+  }
+}

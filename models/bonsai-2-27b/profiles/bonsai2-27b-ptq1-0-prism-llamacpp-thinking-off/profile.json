@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "bonsai-2-27b",
+  "model_display_name": "Ternary Bonsai 2 27B (thinking-off)",
+  "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+  "profile_display_name": "llama.cpp PTQ1_0 (thinking-off)",
+  "runtime_family": "llama.cpp (PrismML-Eng fork)",
+  "artifact": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12b :: Ternary-Bonsai-2-27B-PTQ1_0.gguf (sha256 53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/bonsai-2-27b/profiles/bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+  "event_ids": [
+    "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920"
+  ],
+  "runtime_version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+  "artifact_precision": "PTQ1_0 ternary 1.75 bpw group 128 (Hadamard-rotated basis); f16 K/V cache (FA on)",
+  "deployment_topology": "Identical serving geometry to the reasoning-on profile (-ngl 99 full GPU, -fa on, f16 KV, -np 1, vendor instruct sampler) with the single declared delta: reasoning OFF via chat_template_kwargs enable_thinking=false - the only reasoning control proven effective on the pinned runtime. Recommended bounded deployment profile (READY_WITH_GUARDRAILS): pin enable_thinking=false and size generation ceilings to the profile's measured verbosity; verify strict one-shot outputs.",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-21",
+    "note": "Native profile created for the declared reasoning-state delta (WELP generation-budget contract makes reasoning mode a material profile dimension). Characterized by event bonsai2-27b-rtx5070-welp-methodology-supplement-20260920 under WELP snapshot welp-next-snapshot-2026-09-19-methodology-revision (DRAFT - NOT v1.0), public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028. READY_WITH_GUARDRAILS derived by the frozen harness (R-C5) from profile-pure dimensions after the 2026-09-20 HUMAN-GATE-CORRECTION pass (CASE 1 campaign/report invocation misuse; no WELP protocol defect; 0 additional inference). Semantic reliability 18/20 + 18/20 at ceiling 2048; USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2). Does not retroactively improve the reasoning-on profile."
+  }
+}

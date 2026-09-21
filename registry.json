@@ -670,6 +670,42 @@
         ]
       },
       "context_summary": "No separate current context characterization is published; consult the bounded event reports."
+    },
+    {
+      "model_id": "bonsai-2-27b",
+      "display_name": "Ternary Bonsai 2 27B",
+      "vendor": "PrismML",
+      "weight": 22,
+      "aliases": [
+        "bonsai-2-27b",
+        "bonsai2-27b"
+      ],
+      "website_slug": "bonsai2-27b",
+      "website_url": "https://wumbolabs.dev/evaluations/bonsai2-27b/",
+      "current_state": {
+        "agent-backend": null,
+        "protocol-development": null,
+        "model-classification": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+        "localmaxxing": "bonsai2-27b-rtx5070-welp-20260918",
+        "performance": "bonsai2-27b-rtx5070-welp-20260918",
+        "capabilities": "bonsai2-27b-rtx5070-welp-20260918",
+        "serving-profile": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+        "specialized": null,
+        "practical-use": null,
+        "context": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+        "reliability": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+        "recommended_profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+        "classification": "READY_WITH_GUARDRAILS / PROFILE-SCOPED (thinking-off recommended; reasoning-on historical NOT_READY)",
+        "profile_ids": [
+          "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+          "bonsai2-27b-ptq1-0-prism-llamacpp"
+        ],
+        "event_ids": [
+          "bonsai2-27b-rtx5070-welp-20260918",
+          "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920"
+        ]
+      },
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144 (FIT_LIMIT: f16 KV + weights exceed 12 GB card memory at the exact native maximum); envelope_complete: true; useful context is PROFILE-SCOPED: thinking-off USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2 seeds, 512-token reserve); reasoning-on operational = 32,768 (VALIDATED 2/2) with 65K BUDGET_LIMITED (1/2 seeds, EXHAUSTED_IN_REASONING) and no 65K semantic measurement. Capacity and retrieval were intact at 65K on both profiles; the reasoning-on budget interaction was the blocker."
     }
   ],
   "profiles": [
@@ -1504,6 +1540,54 @@
         "kind": "native",
         "published_date": "2026-09-15",
         "note": "New current profile registered at human-authorized closeout: q8_0 K/V cache, uncached prompt control, and 32K geometry materially define the tested text-generation surface. The historical UD-IQ2_M profile and its events remain unchanged in scientific meaning and are marked historical."
+      }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "bonsai-2-27b",
+      "model_display_name": "Ternary Bonsai 2 27B (reasoning-on)",
+      "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
+      "profile_display_name": "llama.cpp PTQ1_0 (reasoning-on, vendor default)",
+      "runtime_family": "llama.cpp (PrismML-Eng fork)",
+      "artifact": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12b :: Ternary-Bonsai-2-27B-PTQ1_0.gguf (sha256 53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3)",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "historical",
+      "profile_path": "models/bonsai-2-27b/profiles/bonsai2-27b-ptq1-0-prism-llamacpp",
+      "event_ids": [
+        "bonsai2-27b-rtx5070-welp-20260918"
+      ],
+      "runtime_version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+      "artifact_precision": "PTQ1_0 ternary 1.75 bpw group 128 (Hadamard-rotated basis); f16 K/V cache (FA on)",
+      "deployment_topology": "Full-GPU PrismML-Eng/llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99, -fa on, f16 KV, -np 1, vendor instruct sampler; REASONING_ON vendor xhigh default (the pinned runtime ignores per-request reasoning budget/effort kwargs; template enable_thinking=false is the only effective control). Second hardware observation: same artifact/source on RTX 2060 SUPER 8GB (SM75 build), practical at 8K.",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-21",
+        "note": "Native profile created at first publication of event bonsai2-27b-rtx5070-welp-20260918. Executed under per-campaign snapshot welp-next-snapshot-2026-09-18-bonsai-2-27b-rtx5070-welp-characterization (WELP 9e3f0afbdfb767148f1612e307bb0150dbe23302, public as an ancestor of the methodology commit). Historical verdict NOT_READY for this profile: frozen reliability 4/20 + 3/20 under default reasoning (budget exhaustion, not fabrication); operationally budget-hostile (supplement Lane B: completion 1/20, 17/20 EXHAUSTED_IN_REASONING). Status historical: the reasoning-state delta is a material declared profile dimension, so the thinking-off profile is a separate scientific surface, not a replacement; this profile's event and verdict are immutable."
+      }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "bonsai-2-27b",
+      "model_display_name": "Ternary Bonsai 2 27B (thinking-off)",
+      "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+      "profile_display_name": "llama.cpp PTQ1_0 (thinking-off)",
+      "runtime_family": "llama.cpp (PrismML-Eng fork)",
+      "artifact": "prism-ml/Ternary-Bonsai-2-27B-gguf@6ed5e12b :: Ternary-Bonsai-2-27B-PTQ1_0.gguf (sha256 53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3)",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/bonsai-2-27b/profiles/bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+      "event_ids": [
+        "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920"
+      ],
+      "runtime_version": "9a9394a895b96003ca842a6041cb28ac49a108f7 (prism-b10709-9a9394a, build 10709), CUDA SM120",
+      "artifact_precision": "PTQ1_0 ternary 1.75 bpw group 128 (Hadamard-rotated basis); f16 K/V cache (FA on)",
+      "deployment_topology": "Identical serving geometry to the reasoning-on profile (-ngl 99 full GPU, -fa on, f16 KV, -np 1, vendor instruct sampler) with the single declared delta: reasoning OFF via chat_template_kwargs enable_thinking=false - the only reasoning control proven effective on the pinned runtime. Recommended bounded deployment profile (READY_WITH_GUARDRAILS): pin enable_thinking=false and size generation ceilings to the profile's measured verbosity; verify strict one-shot outputs.",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-21",
+        "note": "Native profile created for the declared reasoning-state delta (WELP generation-budget contract makes reasoning mode a material profile dimension). Characterized by event bonsai2-27b-rtx5070-welp-methodology-supplement-20260920 under WELP snapshot welp-next-snapshot-2026-09-19-methodology-revision (DRAFT - NOT v1.0), public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028. READY_WITH_GUARDRAILS derived by the frozen harness (R-C5) from profile-pure dimensions after the 2026-09-20 HUMAN-GATE-CORRECTION pass (CASE 1 campaign/report invocation misuse; no WELP protocol defect; 0 additional inference). Semantic reliability 18/20 + 18/20 at ceiling 2048; USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2). Does not retroactively improve the reasoning-on profile."
       }
     }
   ],
@@ -3773,6 +3857,100 @@
         "sha256": "afce840b738dd8e8aa48642f1d77a263fe57cbe4e332cc7bafc73e1f51df8f92",
         "commit": "5e3bc1d441a90047d5c0cad324469758e96104a6"
       }
+    },
+    {
+      "slug": "eval-bonsai2-27b-welp-characterization-2026-09-18",
+      "event_id": "bonsai2-27b-rtx5070-welp-20260918",
+      "event_type": "welp-characterization",
+      "event_date": "2026-09-18",
+      "record_date": "2026-09-21",
+      "model_id": "bonsai-2-27b",
+      "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
+      "profile_name": "llama.cpp PTQ1_0 (reasoning-on, vendor default)",
+      "profile_status": "historical",
+      "event_kicker": "WELP Characterization — PrismML PTQ1_0 ternary (reasoning-on)",
+      "event_title": "Current-WELP characterization + compression-retention + RTX 2060 SUPER portability",
+      "welp_status": "NOT_READY",
+      "evidence_scope": [
+        "performance",
+        "capabilities",
+        "reliability",
+        "context",
+        "localmaxxing",
+        "model-classification"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918",
+      "hardware": "WumboJetsII (RTX 5070 12GB); RTX 2060 SUPER 8GB portability supplement",
+      "headline": "NOT_READY (reasoning-on profile, immutable): quality 12/12 and useful context 32K validated, but frozen reliability 4/20 + 3/20 under default xhigh thinking (finish=length 19/20, 20/20 - budget exhaustion, not fabrication); useful context 65K FAILED 1/2 on this profile (reserve exhausted in reasoning); pp512 586.54 / tg128 59.22 tok/s; 5.95 GB PTQ1_0 artifact; compression-retention near-parity with a practical Qwen3.8-27B reference; same artifact practical at 8K on RTX 2060 SUPER 8GB (tg128 19.9). LocalMaxxing SUBMITTED (cmuajqjjd09y4lq01wrf8ht0j, APPROVED, verifiedRun false).",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/REPORT.md",
+        "commit": "190498671d69583af3202c7f4860531f24c5960c"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "bonsai-2-27b-rtx5070-welp-characterization-2026-09-18",
+        "source_bundle": "research/model-evaluations/bonsai-2-27b/bonsai-2-27b-rtx5070-welp-characterization-2026-09-18",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_report_sha256": "3836f0732c0c72eefcfd06f286ea271e8275905234be5aed42ea6e24ec10f114",
+        "published_date": "2026-09-21",
+        "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign snapshot welp-next-snapshot-2026-09-18-bonsai-2-27b-rtx5070-welp-characterization (WELP 9e3f0afbdfb767148f1612e307bb0150dbe23302). The methodology-revision supplement (separate event) later re-scoped this profile's 64K useful-context failure to reasoning starvation and added the thinking-off profile; this event's verdict and bytes are unchanged. LocalMaxxing terminal disposition recorded 2026-09-21: SUBMITTED origin NEW, id cmuajqjjd09y4lq01wrf8ht0j, APPROVED, verifiedRun false (honest; llama-bench local mode cannot supply prompt/output/engine-timing capture)."
+      },
+      "source": {
+        "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/website-publication.json",
+        "sha256": "a45ca923d677a0cd9ccb08ead6a45bb92b0bd0e7b5b6e54f2ce5e1585dbf19b6",
+        "commit": "190498671d69583af3202c7f4860531f24c5960c"
+      }
+    },
+    {
+      "slug": "eval-bonsai2-27b-welp-methodology-supplement-2026-09-20",
+      "event_id": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+      "event_type": "welp-methodology-revision-supplement",
+      "event_date": "2026-09-20",
+      "record_date": "2026-09-21",
+      "model_id": "bonsai-2-27b",
+      "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+      "profile_name": "llama.cpp PTQ1_0 (thinking-off)",
+      "profile_status": "current",
+      "event_kicker": "WELP Methodology-Revision Supplement — PrismML PTQ1_0 (thinking-off)",
+      "event_title": "Methodology-revision supplement (thinking-off profile)",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "reliability",
+        "context",
+        "serving-profile",
+        "model-classification"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "READY_WITH_GUARDRAILS (thinking-off profile only; R-C5, profile-pure): semantic reliability 18/20 + 18/20 at ceiling 2048 (completion 40/40, 0 truncation, 0 UNSAFE); USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2, 512-token reserve); BUDGET_DISCIPLINE POOR from the profile's own operational-ceiling audit (verbosity vs legacy caps, EXHAUSTED_IN_ANSWER only). The reasoning-on profile keeps its historical NOT_READY and 32K operational context; old/new aggregates are NOT equivalent across methodologies; neither profile represents Bonsai 2 universally.",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/REPORT.md",
+        "commit": "190498671d69583af3202c7f4860531f24c5960c"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "bonsai-2-27b-welp-methodology-supplement-2026-09-20",
+        "source_bundle": "research/model-evaluations/bonsai-2-27b/bonsai-2-27b-welp-methodology-supplement-2026-09-20",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md (correction chronology: HUMAN-GATE-CORRECTION.md retained in the campaign bundle)",
+        "published_report_sha256": "9ce35ffd0e74c34334053e4177082a5cf819ec9abf9becb14e36b47033a0f2ca",
+        "published_date": "2026-09-21",
+        "note": "Native event under WELP snapshot welp-next-snapshot-2026-09-19-methodology-revision, DRAFT - NOT v1.0, public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028. Correction chronology represented: the same-day human-gate pass diagnosed (A) a prose-only aggregate transcription error (raw outcomes were always 36 PASS / 4 FAIL / 0 NOT_EVALUABLE, 40/40 COMPLETE) and (B) CASE 1 campaign/report invocation misuse - the reasoning-on Lane B completion had been fed to this profile's BUDGET_DISCIPLINE; no WELP protocol defect; classification recomputed profile-pure by the frozen harness with 0 additional inference requests. Prior event unchanged. LocalMaxxing: the canonical practical profile's measured arm (unchanged by the reasoning-state delta) is SUBMITTED via the prior event's record."
+      },
+      "source": {
+        "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/website-publication.json",
+        "sha256": "66b1f935b6a4a79978dc85fd3d4660b2b9eeeb8162bc35b1b4936618ea9a62be",
+        "commit": "190498671d69583af3202c7f4860531f24c5960c"
+      }
     }
   ],
   "shared_events": [
@@ -4726,6 +4904,8 @@
     "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14",
     "qwen36-35b-a3b-rtx5070-welp-recharacterization-2026-09-15",
     "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
-    "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16"
+    "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
+    "bonsai2-27b-rtx5070-welp-20260918",
+    "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920"
   ]
 }

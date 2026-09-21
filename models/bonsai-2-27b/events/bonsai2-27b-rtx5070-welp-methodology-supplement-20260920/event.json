@@ -1,0 +1,46 @@
+{
+  "slug": "eval-bonsai2-27b-welp-methodology-supplement-2026-09-20",
+  "event_id": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+  "event_type": "welp-methodology-revision-supplement",
+  "event_date": "2026-09-20",
+  "record_date": "2026-09-21",
+  "model_id": "bonsai-2-27b",
+  "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
+  "profile_name": "llama.cpp PTQ1_0 (thinking-off)",
+  "profile_status": "current",
+  "event_kicker": "WELP Methodology-Revision Supplement — PrismML PTQ1_0 (thinking-off)",
+  "event_title": "Methodology-revision supplement (thinking-off profile)",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "reliability",
+    "context",
+    "serving-profile",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "READY_WITH_GUARDRAILS (thinking-off profile only; R-C5, profile-pure): semantic reliability 18/20 + 18/20 at ceiling 2048 (completion 40/40, 0 truncation, 0 UNSAFE); USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2, 512-token reserve); BUDGET_DISCIPLINE POOR from the profile's own operational-ceiling audit (verbosity vs legacy caps, EXHAUSTED_IN_ANSWER only). The reasoning-on profile keeps its historical NOT_READY and 32K operational context; old/new aggregates are NOT equivalent across methodologies; neither profile represents Bonsai 2 universally.",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/REPORT.md",
+    "commit": "190498671d69583af3202c7f4860531f24c5960c"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "bonsai-2-27b-welp-methodology-supplement-2026-09-20",
+    "source_bundle": "research/model-evaluations/bonsai-2-27b/bonsai-2-27b-welp-methodology-supplement-2026-09-20",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md (correction chronology: HUMAN-GATE-CORRECTION.md retained in the campaign bundle)",
+    "published_report_sha256": "9ce35ffd0e74c34334053e4177082a5cf819ec9abf9becb14e36b47033a0f2ca",
+    "published_date": "2026-09-21",
+    "note": "Native event under WELP snapshot welp-next-snapshot-2026-09-19-methodology-revision, DRAFT - NOT v1.0, public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028. Correction chronology represented: the same-day human-gate pass diagnosed (A) a prose-only aggregate transcription error (raw outcomes were always 36 PASS / 4 FAIL / 0 NOT_EVALUABLE, 40/40 COMPLETE) and (B) CASE 1 campaign/report invocation misuse - the reasoning-on Lane B completion had been fed to this profile's BUDGET_DISCIPLINE; no WELP protocol defect; classification recomputed profile-pure by the frozen harness with 0 additional inference requests. Prior event unchanged. LocalMaxxing: the canonical practical profile's measured arm (unchanged by the reasoning-state delta) is SUBMITTED via the prior event's record."
+  },
+  "source": {
+    "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/website-publication.json",
+    "sha256": "66b1f935b6a4a79978dc85fd3d4660b2b9eeeb8162bc35b1b4936618ea9a62be",
+    "commit": "190498671d69583af3202c7f4860531f24c5960c"
+  }
+}

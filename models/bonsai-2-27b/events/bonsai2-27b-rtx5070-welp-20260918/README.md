@@ -1,0 +1,23 @@
+<!-- Generated from registry metadata — do not hand-edit. -->
+
+# Current-WELP characterization + compression-retention + RTX 2060 SUPER portability
+
+- **Event ID:** `bonsai2-27b-rtx5070-welp-20260918`
+- **Date:** 2026-09-18
+- **Models:** Ternary Bonsai 2 27B
+- **Profiles:** `bonsai2-27b-ptq1-0-prism-llamacpp`
+- **Type:** welp-characterization
+- **Status:** NOT_READY
+- **Evidence maturity:** CURRENT_WELP
+
+[Public scientific report](REPORT.md) · [Event metadata](event.json)
+
+**Exact citation:** https://github.com/WumboLabs/evaluations/blob/190498671d69583af3202c7f4860531f24c5960c/models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/REPORT.md
+
+**Browse results:** [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai2-27b/)
+
+The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
+
+## Provenance
+
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/190498671d69583af3202c7f4860531f24c5960c/models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/website-publication.json)
