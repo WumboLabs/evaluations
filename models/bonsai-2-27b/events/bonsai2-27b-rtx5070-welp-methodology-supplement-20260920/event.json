@@ -40,7 +40,7 @@
   },
   "source": {
     "path": "models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/website-publication.json",
-    "sha256": "3d1718d8c2800448cf5d056095b51ab3005816e059654f3980296e9f65e4b32d",
-    "commit": "fa5f3a421f1c5273802c83963f5d2248363c85de"
+    "sha256": "4a5c4013173c00d2ef74378279b187ef3876f6ca3a6550a6d73c981284a8d715",
+    "commit": "ea0bfa374bc22787357615d4fc2b8ff6883bccd7"
   }
 }
