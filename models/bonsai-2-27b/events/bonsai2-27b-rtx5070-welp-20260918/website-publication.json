@@ -75,7 +75,7 @@
     "event_id": "bonsai2-27b-rtx5070-welp-20260918",
     "event_type": "initial-evaluation"
   },
-  "website_record_slug": "bonsai2-27b",
+  "website_record_slug": "eval-bonsai2-27b-welp-characterization-2026-09-18",
   "publication_date": "2026-09-21",
   "public_summary": "PrismML's ternary Bonsai 2 27B packs a 27B-class hybrid-attention model into 5.95 GB (PTQ1_0, 1.75 bpw) and requires PrismML's llama.cpp fork. On an RTX 5070 it decodes at ~59 tok/s fully GPU-resident and validates useful context at 32K, but fails frozen reliability gates under its default xhigh thinking (budget exhaustion, not fabrication) - NOT_READY on this reasoning-on profile. A paired study against a practical Qwen3.8-27B reference finds near-parity on 48 mechanically-scored tasks with a narrow fluent-fabrication tail; the same artifact also runs on an 8 GB RTX 2060 SUPER at 8K context (19.9 tok/s decode). Configuration is part of the result: the separately profiled thinking-off configuration classifies READY_WITH_GUARDRAILS in the follow-up event.",
   "performance": {

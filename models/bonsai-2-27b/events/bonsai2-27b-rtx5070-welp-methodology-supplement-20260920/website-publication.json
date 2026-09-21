@@ -72,7 +72,7 @@
     "event_id": "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
     "event_type": "follow-up"
   },
-  "website_record_slug": "bonsai2-27b",
+  "website_record_slug": "eval-bonsai2-27b-welp-methodology-supplement-2026-09-20",
   "publication_date": "2026-09-21",
   "public_summary": "A bounded supplement executed the revised WELP methodology (snapshot welp-next-snapshot-2026-09-19-methodology-revision, DRAFT - NOT v1.0, public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028) on a new declared thinking-off profile. Semantic reliability 18/20 + 18/20 (40/40 completion at ceiling 2048), 65K useful context VALIDATED in both lanes, and READY_WITH_GUARDRAILS derived profile-purely after a same-day human-gate correction (CASE 1 campaign/report invocation misuse; no WELP protocol defect; 0 additional inference). Configuration is part of the result: old and new aggregates are not equivalent across methodologies, and the reasoning-on profile's historical NOT_READY is unchanged."
 }
