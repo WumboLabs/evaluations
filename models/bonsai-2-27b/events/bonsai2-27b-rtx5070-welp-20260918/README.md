@@ -6,7 +6,7 @@
 - **Date:** 2026-09-18
 - **Models:** Ternary Bonsai 2 27B
 - **Profiles:** `bonsai2-27b-ptq1-0-prism-llamacpp`
-- **Type:** welp-characterization
+- **Type:** initial-evaluation
 - **Status:** NOT_READY
 - **Evidence maturity:** CURRENT_WELP
 

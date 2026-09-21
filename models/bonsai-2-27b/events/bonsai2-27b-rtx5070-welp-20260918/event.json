@@ -1,7 +1,7 @@
 {
   "slug": "eval-bonsai2-27b-welp-characterization-2026-09-18",
   "event_id": "bonsai2-27b-rtx5070-welp-20260918",
-  "event_type": "welp-characterization",
+  "event_type": "initial-evaluation",
   "event_date": "2026-09-18",
   "record_date": "2026-09-21",
   "model_id": "bonsai-2-27b",

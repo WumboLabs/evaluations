@@ -6,7 +6,7 @@
 - **Date:** 2026-09-20
 - **Models:** Ternary Bonsai 2 27B
 - **Profiles:** `bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off`
-- **Type:** welp-methodology-revision-supplement
+- **Type:** follow-up
 - **Status:** READY_WITH_GUARDRAILS
 - **Evidence maturity:** CURRENT_WELP
 
