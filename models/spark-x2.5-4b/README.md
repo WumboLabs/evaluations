@@ -6,7 +6,16 @@
 
 **Recommended profile:** `spark25-4b-q8-0-llamacpp`
 
-**Context:** practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 1048576 (FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum - 3.16x the 12,227 MiB card; no official extension mechanism documented); envelope_complete: true; useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (VALIDATED 2/2 seeds, 512-token reserve, >=99% occupancy); canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (reserve consumed by thinking); retrieval capability intact.
+**Context:** Practical default: 32,768 tokens; Guarded boundary: 131,072 tokens; Model-card native maximum: 1,048,576 tokens
+
+Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
+
+<details>
+<summary>Published context findings and limitations</summary>
+
+practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 1048576 (FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum - 3.16x the 12,227 MiB card; no official extension mechanism documented); envelope_complete: true; useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (VALIDATED 2/2 seeds, 512-token reserve, >=99% occupancy); canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (reserve consumed by thinking); retrieval capability intact.
+
+</details>
 
 [Human-facing Evaluation](https://wumbolabs.dev/evaluations/spark-x2-5-4b/)
 

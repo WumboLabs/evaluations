@@ -19,3 +19,5 @@
 The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
 
 ## Provenance
+
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/e9f57ce2e21cb8ff5d3abd0f7851f4dcacf62efc/models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/website-publication.json)

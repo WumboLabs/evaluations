@@ -39,5 +39,10 @@
     "published_report_sha256": "3f675ad57b6b396b1f4a310d624289953675ea624694de75e4cf8f2e46aa458d",
     "published_date": "2026-09-22",
     "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028); the science closed 2026-09-20/21 under the then-applicable two-stage human-acceptance gate, superseded before terminal closeout by the 2026-09-22 execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO) - historical evidence states preserved unchanged. LocalMaxxing terminal disposition recorded 2026-09-22: SUBMITTED origin NEW, id cmudarhyh0aw9lq018zug8yna, APPROVED, verifiedRun false (honest; llama-bench local mode cannot supply prompt/output/engine-timing capture); duplicate audit NO_EXACT_MATCH."
+  },
+  "source": {
+    "path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/website-publication.json",
+    "sha256": "5fef38c991821ff800bb82cd10468f1f8f04fbffd3d797fdef8a1c90d03e844b",
+    "commit": "e9f57ce2e21cb8ff5d3abd0f7851f4dcacf62efc"
   }
 }
