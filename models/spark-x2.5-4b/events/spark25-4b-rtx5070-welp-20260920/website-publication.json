@@ -65,7 +65,8 @@
     "tok_s_out": 126.14,
     "pp512_tok_s": 9275.99,
     "verified_run": false,
-    "note": "Terminal closeout 2026-09-22: the canonical llama-bench arm (pp512 9,275.99 / tg128 126.14 tok/s, 5 reps) submitted verbatim; duplicate audit NO_EXACT_MATCH (exhaustive authenticated history of 35 user submissions with a control record verified present; zero Spark entries locally, in history, or in the public listing). verifiedRun=false recorded honestly: llama-bench local mode cannot supply prompt/output/engine-timing capture. Campaign close (2026-09-20) was MEASURED_NOT_SUBMITTED per the Stage-A boundary."
+    "note": "Terminal closeout 2026-09-22: the canonical llama-bench arm (pp512 9,275.99 / tg128 126.14 tok/s, 5 reps) submitted verbatim; duplicate audit NO_EXACT_MATCH (exhaustive authenticated history of 35 user submissions with a control record verified present; zero Spark entries locally, in history, or in the public listing). verifiedRun=false recorded honestly: llama-bench local mode cannot supply prompt/output/engine-timing capture. Campaign close (2026-09-20) was MEASURED_NOT_SUBMITTED per the Stage-A boundary.",
+    "ttft_ms": 55.2
   },
   "canonical_evidence": {
     "state": "PUBLISHED",
@@ -81,21 +82,31 @@
     "event_type": "initial-evaluation",
     "event_date": "2026-09-20",
     "profile_status": "current",
-    "evidence_scope": ["performance", "reliability", "quality", "capability-probes", "context-envelope", "useful-context", "localmaxxing", "model-classification"]
+    "evidence_scope": [
+      "performance",
+      "reliability",
+      "quality",
+      "capability-probes",
+      "context-envelope",
+      "useful-context",
+      "localmaxxing",
+      "model-classification"
+    ]
   },
   "website_record_slug": "eval-spark25-4b-rtx5070-welp-20260920",
   "publication_date": "2026-09-22",
   "public_summary": "iFlytek's SparkLLM Spark-X2.5-4B is a 4.1B hybrid-attention model (3:1 sliding-window:full attention, 512-token window) advertising a native 1M-token context. On an RTX 5070 with the official Q8_0 GGUF under upstream llama.cpp b10999 it decodes at ~126 tok/s and prefills a 128K window at ~4,300 tok/s; 131,072 tokens is the measured fit ceiling (f16 KV at 36,864 B/token; the advertised 1M maximum needs ~38.7 GB of KV alone - FIT_LIMIT). Useful context validates at 32K/64K/128K in the declared thinking-off lane, but the vendor-default thinking mode consumes the standardized 512-token output reserve at every rung and 0/20 frozen reliability tasks complete on either seed - budget starvation, not fabrication (0 UNSAFE; semantic capability 30/33 clean on the non-starving lane). Campaign execution is COMPLETE_PASS; the model classifies READY_WITH_GUARDRAILS: vendor-default reasoning behavior is budget-sensitive, thinking-off is a materially different practical surface, and the measured useful-context envelope on this hardware is not the model-card native maximum.",
   "performance": {
-    "short_ttft_ms": 26.6,
     "moderate_input_tokens": 4114,
-    "moderate_ttft_ms": 494.6,
     "moderate_prefill_tps": 8318.3,
     "prefill_pp512_tok_s": 9275.99,
     "pp512_stdev": 239.14,
     "decode_tg128_tok_s": 126.14,
     "tg128_stdev": 0.07,
     "surface_note": "llama-bench canonical arm (5 reps), uncached; near-full prefill 8,329 tok/s (8K) to 4,318 tok/s (128K); full-occupancy decode ~59 tok/s at 128K vs 122 tok/s short-prompt; SWA hybrid keeps prefill fast through 128K.",
-    "notes": "No vendor per-GPU numbers published for comparison; card benchmark-table claims remain EXTERNAL_REPORTED."
+    "notes": "No vendor per-GPU numbers published for comparison; card benchmark-table claims remain EXTERNAL_REPORTED.",
+    "short_ttft_s": 0.0266,
+    "short_decode_tps": 122.1,
+    "moderate_ttft_s": 0.4946
   }
 }
