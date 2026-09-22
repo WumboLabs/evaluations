@@ -10,6 +10,6 @@ This repository is the canonical public scientific evidence registry. The websit
 - Store genuine multi-model reports once under shared-events/. Do not manufacture owner models or duplicate reports.
 - Legacy eval-* repositories and provenance/legacy-repositories/ are historical provenance, not active publication configuration. Do not execute imported historical scripts as migration validation.
 - Never publish weights, secrets, private prompts, raw LocalMaxxing payloads, large telemetry, caches, or Nsight Systems traces.
-- Validate registry, public safety, provenance, and generated-index idempotence before publication. Human authorization remains required for commits, pushes, deployment, and external changes.
+- Validate registry, public safety, provenance, and generated-index idempotence before publication. Human authorization remains required for commits, pushes, deployment, and external changes, except for the standing automatic-closeout authorization of a clean COMPLETE_PASS WELP campaign (workspace `AGENTS.md`, "Model campaign lifecycle"), bounded to the publication/closeout operations that campaign requires.
 
 Detailed publication contract: WumboLabs/welp docs/publication.md. Scientific methodology is unchanged.
