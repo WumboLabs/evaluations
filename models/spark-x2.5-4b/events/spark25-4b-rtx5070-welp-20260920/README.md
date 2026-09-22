@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/e9f57ce2e21cb8ff5d3abd0f7851f4dcacf62efc/models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/3fe25165969c303ad32dd5002943f17e368993e0/models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/website-publication.json)
