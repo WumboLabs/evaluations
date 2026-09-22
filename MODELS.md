@@ -26,3 +26,4 @@
 | [Qwen3.8-9B (Empero)](models/qwen3.8-9b-empero/) | No model-level classification published | 2 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-8-9b-empero/) |
 | [Bonsai 27B (Q1_0)](models/bonsai-27b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-27b/) |
 | [Ternary Bonsai 2 27B](models/bonsai-2-27b/) | READY_WITH_GUARDRAILS / PROFILE-SCOPED (thinking-off recommended; reasoning-on historical NOT_READY) | 2 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
+| [Spark-X2.5-4B](models/spark-x2.5-4b/) | READY_WITH_GUARDRAILS | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/spark-x2-5-4b/) |

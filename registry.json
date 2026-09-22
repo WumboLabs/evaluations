@@ -706,6 +706,40 @@
         ]
       },
       "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144 (FIT_LIMIT: f16 KV + weights exceed 12 GB card memory at the exact native maximum); envelope_complete: true; useful context is PROFILE-SCOPED: thinking-off USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2 seeds, 512-token reserve); reasoning-on operational = 32,768 (VALIDATED 2/2) with 65K BUDGET_LIMITED (1/2 seeds, EXHAUSTED_IN_REASONING) and no 65K semantic measurement. Capacity and retrieval were intact at 65K on both profiles; the reasoning-on budget interaction was the blocker."
+    },
+    {
+      "model_id": "spark-x2.5-4b",
+      "display_name": "Spark-X2.5-4B",
+      "vendor": "XHToken (SparkLLM Team, iFlytek)",
+      "weight": 23,
+      "aliases": [
+        "spark25-4b",
+        "spark-x25-4b"
+      ],
+      "website_slug": "spark-x2-5-4b",
+      "website_url": "https://wumbolabs.dev/evaluations/spark-x2-5-4b/",
+      "current_state": {
+        "agent-backend": null,
+        "protocol-development": null,
+        "model-classification": "spark25-4b-rtx5070-welp-20260920",
+        "localmaxxing": "spark25-4b-rtx5070-welp-20260920",
+        "performance": "spark25-4b-rtx5070-welp-20260920",
+        "capabilities": "spark25-4b-rtx5070-welp-20260920",
+        "serving-profile": "spark25-4b-rtx5070-welp-20260920",
+        "specialized": null,
+        "practical-use": null,
+        "context": "spark25-4b-rtx5070-welp-20260920",
+        "reliability": "spark25-4b-rtx5070-welp-20260920",
+        "recommended_profile_id": "spark25-4b-q8-0-llamacpp",
+        "classification": "READY_WITH_GUARDRAILS",
+        "profile_ids": [
+          "spark25-4b-q8-0-llamacpp"
+        ],
+        "event_ids": [
+          "spark25-4b-rtx5070-welp-20260920"
+        ]
+      },
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 1048576 (FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum - 3.16x the 12,227 MiB card; no official extension mechanism documented); envelope_complete: true; useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (VALIDATED 2/2 seeds, 512-token reserve, >=99% occupancy); canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (reserve consumed by thinking); retrieval capability intact."
     }
   ],
   "profiles": [
@@ -1588,6 +1622,30 @@
         "kind": "native",
         "published_date": "2026-09-21",
         "note": "Native profile created for the declared reasoning-state delta (WELP generation-budget contract makes reasoning mode a material profile dimension). Characterized by event bonsai2-27b-rtx5070-welp-methodology-supplement-20260920 under WELP snapshot welp-next-snapshot-2026-09-19-methodology-revision (DRAFT - NOT v1.0), public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028. READY_WITH_GUARDRAILS derived by the frozen harness (R-C5) from profile-pure dimensions after the 2026-09-20 HUMAN-GATE-CORRECTION pass (CASE 1 campaign/report invocation misuse; no WELP protocol defect; 0 additional inference). Semantic reliability 18/20 + 18/20 at ceiling 2048; USEFUL_CONTEXT_MAX_SEMANTIC = USEFUL_CONTEXT_MAX_OPERATIONAL = 65,536 (VALIDATED 2/2). Does not retroactively improve the reasoning-on profile."
+      }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "spark-x2.5-4b",
+      "model_display_name": "Spark-X2.5-4B (reasoning-on canonical)",
+      "profile_id": "spark25-4b-q8-0-llamacpp",
+      "profile_display_name": "llama.cpp upstream official Q8_0 (reasoning-on, vendor default)",
+      "runtime_family": "llama.cpp (upstream)",
+      "artifact": "XHToken/Spark-X2.5-4B-GGUF@9826e0be :: Spark-X2.5-4B-Q8_0.gguf (sha256 5c2c3c190e4337e1016b8593ca8e26e8b18c972200b107385d4ec61a25d9dea2)",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/spark-x2.5-4b/profiles/spark25-4b-q8-0-llamacpp",
+      "event_ids": [
+        "spark25-4b-rtx5070-welp-20260920"
+      ],
+      "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+      "artifact_precision": "Q8_0 official publisher GGUF (8.50 BPW); f16 K/V cache (FA on)",
+      "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (36/36 layers), -fa on, f16 KV, -np 1 (verified via /slots), embedded Jinja template, vendor sampler (temp 1.0 / top_p 0.95 / top_k -1); REASONING_ON vendor default with enable_thinking=false as the only effective control (no effort-level control exists). Default context 32,768 / guarded fit ceiling 131,072; standardized 512-token output reserve.",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-22",
+        "note": "Native profile created at first publication of event spark25-4b-rtx5070-welp-20260920. Executed under measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028, DRAFT - NOT v1.0); terminal closeout under the campaign execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO). Verdict READY_WITH_GUARDRAILS binds this reasoning-on canonical profile: semantics acceptable on the predeclared non-starving lane, budget discipline poor on the vendor default (0/20 frozen reliability completions on both seeds; 512-token reserve consumed at every rung). The thinking-off lane is a declared alternative lane preserved as a distinct practical surface, not a separately fully characterized profile."
       }
     }
   ],
@@ -3951,6 +4009,49 @@
         "sha256": "4a5c4013173c00d2ef74378279b187ef3876f6ca3a6550a6d73c981284a8d715",
         "commit": "ea0bfa374bc22787357615d4fc2b8ff6883bccd7"
       }
+    },
+    {
+      "slug": "eval-spark25-4b-rtx5070-welp-20260920",
+      "event_id": "spark25-4b-rtx5070-welp-20260920",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-09-20",
+      "record_date": "2026-09-22",
+      "model_id": "spark-x2.5-4b",
+      "profile_id": "spark25-4b-q8-0-llamacpp",
+      "profile_name": "llama.cpp upstream official Q8_0 (reasoning-on, vendor default)",
+      "profile_status": "current",
+      "event_kicker": "WELP Characterization — iFlytek Spark-X2.5-4B (reasoning-on)",
+      "event_title": "Current-WELP characterization (official Q8_0, upstream llama.cpp b10999)",
+      "welp_status": "READY_WITH_GUARDRAILS",
+      "evidence_scope": [
+        "performance",
+        "capabilities",
+        "reliability",
+        "context",
+        "localmaxxing",
+        "model-classification"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "READY_WITH_GUARDRAILS (R-C5) on the canonical reasoning-on profile: semantics ACCEPTABLE on the predeclared non-starving lane (30/33 evaluable clean at ceiling 2048), but BUDGET_DISCIPLINE POOR - thinking consumes the frozen 20-256 token ceilings entirely (0/20 reliability completions on BOTH seeds) and the standardized 512-token context reserve at every rung. Useful context VALIDATED to 131,072 tokens on the declared thinking-off lane (2/2 seeds, >=99% occupancy); 131,072 is the measured fit ceiling (f16 KV 36,864 B/token; the advertised 1M native maximum is FIT_LIMIT at 3.16x card KV). pp512 9,275.99 / tg128 126.14 tok/s; 26.6 ms short TTFT; ~4,318 tok/s prefill at 128K. Campaign execution COMPLETE_PASS. LocalMaxxing SUBMITTED (cmudarhyh0aw9lq018zug8yna, APPROVED, verifiedRun false).",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/REPORT.md",
+        "commit": "51a5ad2b0af17dff7502f1f55f94262ee1e67245"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "spark-x2.5-4b-rtx5070-welp-characterization-2026-09-20",
+        "source_bundle": "research/model-evaluations/spark-x2.5-4b/spark-x2.5-4b-rtx5070-welp-characterization-2026-09-20",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_report_sha256": "3f675ad57b6b396b1f4a310d624289953675ea624694de75e4cf8f2e46aa458d",
+        "published_date": "2026-09-22",
+        "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028); the science closed 2026-09-20/21 under the then-applicable two-stage human-acceptance gate, superseded before terminal closeout by the 2026-09-22 execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO) - historical evidence states preserved unchanged. LocalMaxxing terminal disposition recorded 2026-09-22: SUBMITTED origin NEW, id cmudarhyh0aw9lq018zug8yna, APPROVED, verifiedRun false (honest; llama-bench local mode cannot supply prompt/output/engine-timing capture); duplicate audit NO_EXACT_MATCH."
+      }
     }
   ],
   "shared_events": [
@@ -4906,6 +5007,7 @@
     "mellum2-12b-a25b-rtx5070-welp-recharacterization-2026-09-15",
     "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
     "bonsai2-27b-rtx5070-welp-20260918",
-    "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920"
+    "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
+    "spark25-4b-rtx5070-welp-20260920"
   ]
 }

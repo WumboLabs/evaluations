@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "spark-x2.5-4b",
+  "model_display_name": "Spark-X2.5-4B (reasoning-on canonical)",
+  "profile_id": "spark25-4b-q8-0-llamacpp",
+  "profile_display_name": "llama.cpp upstream official Q8_0 (reasoning-on, vendor default)",
+  "runtime_family": "llama.cpp (upstream)",
+  "artifact": "XHToken/Spark-X2.5-4B-GGUF@9826e0be :: Spark-X2.5-4B-Q8_0.gguf (sha256 5c2c3c190e4337e1016b8593ca8e26e8b18c972200b107385d4ec61a25d9dea2)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/spark-x2.5-4b/profiles/spark25-4b-q8-0-llamacpp",
+  "event_ids": [
+    "spark25-4b-rtx5070-welp-20260920"
+  ],
+  "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+  "artifact_precision": "Q8_0 official publisher GGUF (8.50 BPW); f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (36/36 layers), -fa on, f16 KV, -np 1 (verified via /slots), embedded Jinja template, vendor sampler (temp 1.0 / top_p 0.95 / top_k -1); REASONING_ON vendor default with enable_thinking=false as the only effective control (no effort-level control exists). Default context 32,768 / guarded fit ceiling 131,072; standardized 512-token output reserve.",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-22",
+    "note": "Native profile created at first publication of event spark25-4b-rtx5070-welp-20260920. Executed under measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028, DRAFT - NOT v1.0); terminal closeout under the campaign execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO). Verdict READY_WITH_GUARDRAILS binds this reasoning-on canonical profile: semantics acceptable on the predeclared non-starving lane, budget discipline poor on the vendor default (0/20 frozen reliability completions on both seeds; 512-token reserve consumed at every rung). The thinking-off lane is a declared alternative lane preserved as a distinct practical surface, not a separately fully characterized profile."
+  }
+}

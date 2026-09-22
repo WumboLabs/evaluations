@@ -1,0 +1,34 @@
+{
+  "model_id": "spark-x2.5-4b",
+  "display_name": "Spark-X2.5-4B",
+  "vendor": "XHToken (SparkLLM Team, iFlytek)",
+  "weight": 23,
+  "aliases": [
+    "spark25-4b",
+    "spark-x25-4b"
+  ],
+  "website_slug": "spark-x2-5-4b",
+  "website_url": "https://wumbolabs.dev/evaluations/spark-x2-5-4b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "spark25-4b-rtx5070-welp-20260920",
+    "localmaxxing": "spark25-4b-rtx5070-welp-20260920",
+    "performance": "spark25-4b-rtx5070-welp-20260920",
+    "capabilities": "spark25-4b-rtx5070-welp-20260920",
+    "serving-profile": "spark25-4b-rtx5070-welp-20260920",
+    "specialized": null,
+    "practical-use": null,
+    "context": "spark25-4b-rtx5070-welp-20260920",
+    "reliability": "spark25-4b-rtx5070-welp-20260920",
+    "recommended_profile_id": "spark25-4b-q8-0-llamacpp",
+    "classification": "READY_WITH_GUARDRAILS",
+    "profile_ids": [
+      "spark25-4b-q8-0-llamacpp"
+    ],
+    "event_ids": [
+      "spark25-4b-rtx5070-welp-20260920"
+    ]
+  },
+  "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 1048576 (FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum - 3.16x the 12,227 MiB card; no official extension mechanism documented); envelope_complete: true; useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (VALIDATED 2/2 seeds, 512-token reserve, >=99% occupancy); canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (reserve consumed by thinking); retrieval capability intact."
+}

@@ -6,6 +6,7 @@ One row per immutable event; shared reports are stored once. Newest first.
 
 | Date | Model(s) | Event type | Profile(s) | Report | Website |
 |---|---|---|---|---|---|
+| 2026-09-20 | Spark-X2.5-4B | initial-evaluation | `spark25-4b-q8-0-llamacpp` | [spark25-4b-rtx5070-welp-20260920](models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/REPORT.md) | [Spark-X2.5-4B](https://wumbolabs.dev/evaluations/spark-x2-5-4b/) |
 | 2026-09-20 | Ternary Bonsai 2 27B | follow-up | `bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off` | [bonsai2-27b-rtx5070-welp-methodology-supplement-20260920](models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/REPORT.md) | [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
 | 2026-09-18 | Ternary Bonsai 2 27B | initial-evaluation | `bonsai2-27b-ptq1-0-prism-llamacpp` | [bonsai2-27b-rtx5070-welp-20260918](models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-20260918/REPORT.md) | [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
 | 2026-09-16 | Mellum2 12B-A2.5B | welp-recharacterization | `mellum2-12b-a2.5b-llamacpp-q4km-thinking` | [mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16](models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16/REPORT.md) | [Mellum2 12B-A2.5B](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/) |

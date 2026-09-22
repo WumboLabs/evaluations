@@ -1,0 +1,101 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "spark-x2.5-4b-rtx5070-welp-characterization-2026-09-20",
+  "disposition": "WEBSITE_PUBLISHED",
+  "model": {
+    "producer": "XHToken (SparkLLM Team, iFlytek)",
+    "official_id": "XHToken/Spark-X2.5-4B",
+    "official_revision": "0bcb35678590218655dff3765b9e61c83b35e9c4",
+    "license": "Apache-2.0",
+    "display_name": "Spark-X2.5-4B"
+  },
+  "artifact": {
+    "tested": "Spark-X2.5-4B-Q8_0.gguf; 4,375,021,152 bytes; SHA-256 verified exact official LFS identity",
+    "precision": "Q8_0 (official publisher GGUF, 8.50 BPW)",
+    "sha256": "5c2c3c190e4337e1016b8593ca8e26e8b18c972200b107385d4ec61a25d9dea2",
+    "source": "huggingface.co/XHToken/Spark-X2.5-4B-GGUF @ 9826e0be84e6e6e8b9668abc91421109a1df1e2d"
+  },
+  "runtime": {
+    "engine": "llama.cpp (upstream)",
+    "version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+    "notes": "Native spark2_5 support (first release b10828, PR #27868); ENHANCED_SEMANTIC admission passed (new-architecture battery)"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency (-ngl 99); f16 K/V; FA on; -np 1; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS - characterization complete (all planned surfaces executed with valid evidence, including negatives)",
+    "classification": "READY_WITH_GUARDRAILS",
+    "artifact_classification": "current"
+  },
+  "context": {
+    "native_maximum_tokens": 1048576,
+    "native_maximum_disposition": "FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum (36,864 B/token measured) - 3.16x the 12,227 MiB card; bounded admission attempt failed cleanly. Official extension: none advertised (documented absence).",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 131072,
+    "envelope_complete": true,
+    "notes": "Useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (2/2 seeds, all gates PASS at >=99% occupancy). The canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (the standardized 512-token output reserve is consumed by thinking); retrieval capability is intact - the reserve-vs-thinking interaction is the blocker, not retrieval failure. The thinking-off lane is a declared alternative lane, not a separately fully characterized profile."
+  },
+  "quality": {
+    "constrained_result": "10/12 frozen quality screen (temp 0, thinking-off diagnostic lane); canonical thinking-on lane 1/12 with 11/12 budget-starved to NOT_EVALUABLE",
+    "capability_highlights": [
+      "reasoning probe: PASS at frozen 1500 and operational 4096 ceilings (exact 'TOTAL HOURS: 4')",
+      "coding: executable-oracle PASS at 400 (thinking-off canonical) and 1500 (thinking-on diagnostic)",
+      "native tools: exact call + args + grounded continuation PASS",
+      "structured interfaces: PASS (both lanes)"
+    ],
+    "key_guardrails": [
+      "BUDGET_DISCIPLINE POOR on the canonical thinking-on profile: 0/20 operational-lane completions on BOTH reliability seeds - thinking consumes the frozen 20-256 token ceilings entirely.",
+      "Semantic capability intact (30/33 evaluable clean on the predeclared 2048 lane); one fabricated 'git timewarp --undo' command instance observed in a truncated channel (not replicated across seeds).",
+      "Greedy (temp 0) thinking can degenerate into repetition loops on absent-evidence probes; vendor sampling (1.0/0.95/-1) is the intended regime.",
+      "No effort-level reasoning control exists on the pinned runtime; only enable_thinking=false changes behavior (requested=effective proven in both states)."
+    ],
+    "reliability_summary": "Frozen 20-task corpus, canonical vendor profile (thinking-on), seeds 42 and 314159: gate DO_NOT_ADVANCE - 0/20 completions on both seeds (budget exhaustion, 0 UNSAFE; adaptive third seed not triggered). Predeclared semantic lane (2048): 15/15 and 15/18 evaluable clean. Thinking-off diagnostic at the same tiny ceilings: 9/20 COMPLETE, 7/10 evaluable clean."
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "submission_ref": "cmudarhyh0aw9lq018zug8yna",
+    "submission_url": "https://www.localmaxxing.com/api/speed-tests/cmudarhyh0aw9lq018zug8yna",
+    "service_status": "APPROVED",
+    "submitted_utc": "2026-09-22T23:20:19.625Z",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 126.14,
+    "pp512_tok_s": 9275.99,
+    "verified_run": false,
+    "note": "Terminal closeout 2026-09-22: the canonical llama-bench arm (pp512 9,275.99 / tg128 126.14 tok/s, 5 reps) submitted verbatim; duplicate audit NO_EXACT_MATCH (exhaustive authenticated history of 35 user submissions with a control record verified present; zero Spark entries locally, in history, or in the public listing). verifiedRun=false recorded honestly: llama-bench local mode cannot supply prompt/output/engine-timing capture. Campaign close (2026-09-20) was MEASURED_NOT_SUBMITTED per the Stage-A boundary."
+  },
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "51a5ad2b0af17dff7502f1f55f94262ee1e67245",
+    "path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/REPORT.md",
+    "note": "Published 2026-09-22 at terminal closeout; campaign measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (public WELP commit 79f9de13de04325e50e05b0eed28b56471a19028, DRAFT - NOT v1.0); closeout executed under the campaign execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO)."
+  },
+  "identity": {
+    "model_id": "spark-x2.5-4b",
+    "profile_id": "spark25-4b-q8-0-llamacpp",
+    "event_id": "spark25-4b-rtx5070-welp-20260920",
+    "event_type": "initial-evaluation",
+    "event_date": "2026-09-20",
+    "profile_status": "current",
+    "evidence_scope": ["performance", "reliability", "quality", "capability-probes", "context-envelope", "useful-context", "localmaxxing", "model-classification"]
+  },
+  "website_record_slug": "eval-spark25-4b-rtx5070-welp-20260920",
+  "publication_date": "2026-09-22",
+  "public_summary": "iFlytek's SparkLLM Spark-X2.5-4B is a 4.1B hybrid-attention model (3:1 sliding-window:full attention, 512-token window) advertising a native 1M-token context. On an RTX 5070 with the official Q8_0 GGUF under upstream llama.cpp b10999 it decodes at ~126 tok/s and prefills a 128K window at ~4,300 tok/s; 131,072 tokens is the measured fit ceiling (f16 KV at 36,864 B/token; the advertised 1M maximum needs ~38.7 GB of KV alone - FIT_LIMIT). Useful context validates at 32K/64K/128K in the declared thinking-off lane, but the vendor-default thinking mode consumes the standardized 512-token output reserve at every rung and 0/20 frozen reliability tasks complete on either seed - budget starvation, not fabrication (0 UNSAFE; semantic capability 30/33 clean on the non-starving lane). Campaign execution is COMPLETE_PASS; the model classifies READY_WITH_GUARDRAILS: vendor-default reasoning behavior is budget-sensitive, thinking-off is a materially different practical surface, and the measured useful-context envelope on this hardware is not the model-card native maximum.",
+  "performance": {
+    "short_ttft_ms": 26.6,
+    "moderate_input_tokens": 4114,
+    "moderate_ttft_ms": 494.6,
+    "moderate_prefill_tps": 8318.3,
+    "prefill_pp512_tok_s": 9275.99,
+    "pp512_stdev": 239.14,
+    "decode_tg128_tok_s": 126.14,
+    "tg128_stdev": 0.07,
+    "surface_note": "llama-bench canonical arm (5 reps), uncached; near-full prefill 8,329 tok/s (8K) to 4,318 tok/s (128K); full-occupancy decode ~59 tok/s at 128K vs 122 tok/s short-prompt; SWA hybrid keeps prefill fast through 128K.",
+    "notes": "No vendor per-GPU numbers published for comparison; card benchmark-table claims remain EXTERNAL_REPORTED."
+  }
+}

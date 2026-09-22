@@ -1,0 +1,43 @@
+{
+  "slug": "eval-spark25-4b-rtx5070-welp-20260920",
+  "event_id": "spark25-4b-rtx5070-welp-20260920",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-20",
+  "record_date": "2026-09-22",
+  "model_id": "spark-x2.5-4b",
+  "profile_id": "spark25-4b-q8-0-llamacpp",
+  "profile_name": "llama.cpp upstream official Q8_0 (reasoning-on, vendor default)",
+  "profile_status": "current",
+  "event_kicker": "WELP Characterization — iFlytek Spark-X2.5-4B (reasoning-on)",
+  "event_title": "Current-WELP characterization (official Q8_0, upstream llama.cpp b10999)",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "READY_WITH_GUARDRAILS (R-C5) on the canonical reasoning-on profile: semantics ACCEPTABLE on the predeclared non-starving lane (30/33 evaluable clean at ceiling 2048), but BUDGET_DISCIPLINE POOR - thinking consumes the frozen 20-256 token ceilings entirely (0/20 reliability completions on BOTH seeds) and the standardized 512-token context reserve at every rung. Useful context VALIDATED to 131,072 tokens on the declared thinking-off lane (2/2 seeds, >=99% occupancy); 131,072 is the measured fit ceiling (f16 KV 36,864 B/token; the advertised 1M native maximum is FIT_LIMIT at 3.16x card KV). pp512 9,275.99 / tg128 126.14 tok/s; 26.6 ms short TTFT; ~4,318 tok/s prefill at 128K. Campaign execution COMPLETE_PASS. LocalMaxxing SUBMITTED (cmudarhyh0aw9lq018zug8yna, APPROVED, verifiedRun false).",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/REPORT.md",
+    "commit": "51a5ad2b0af17dff7502f1f55f94262ee1e67245"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "spark-x2.5-4b-rtx5070-welp-characterization-2026-09-20",
+    "source_bundle": "research/model-evaluations/spark-x2.5-4b/spark-x2.5-4b-rtx5070-welp-characterization-2026-09-20",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_report_sha256": "3f675ad57b6b396b1f4a310d624289953675ea624694de75e4cf8f2e46aa458d",
+    "published_date": "2026-09-22",
+    "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028); the science closed 2026-09-20/21 under the then-applicable two-stage human-acceptance gate, superseded before terminal closeout by the 2026-09-22 execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO) - historical evidence states preserved unchanged. LocalMaxxing terminal disposition recorded 2026-09-22: SUBMITTED origin NEW, id cmudarhyh0aw9lq018zug8yna, APPROVED, verifiedRun false (honest; llama-bench local mode cannot supply prompt/output/engine-timing capture); duplicate audit NO_EXACT_MATCH."
+  }
+}
