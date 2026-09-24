@@ -1,7 +1,7 @@
 {
   "slug": "eval-lfm25-8b-a1b-rtx5070-welp-20260923",
   "event_id": "lfm25-8b-a1b-rtx5070-welp-20260923",
-  "event_type": "recharacterization",
+  "event_type": "welp-recharacterization",
   "event_date": "2026-09-23",
   "record_date": "2026-09-24",
   "model_id": "lfm2.5-8b-a1b",

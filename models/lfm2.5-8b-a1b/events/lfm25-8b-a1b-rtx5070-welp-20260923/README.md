@@ -6,7 +6,7 @@
 - **Date:** 2026-09-23
 - **Models:** LFM2.5-8B-A1B
 - **Profiles:** `lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment`
-- **Type:** recharacterization
+- **Type:** welp-recharacterization
 - **Status:** NOT_READY
 - **Evidence maturity:** CURRENT_WELP
 
