@@ -24,27 +24,12 @@
   "evidence_maturity": "CURRENT_WELP",
   "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
   "hardware": "WumboJetsII (RTX 5070 12GB)",
-  "headline": "NOT_READY (R-C3, semantic WEAK) unchanged and now terminal: this linked completion event resolves the predecessor's single verdict-blocking gap — the 1-1 blinded document-synthesis disagreement — under the new frozen welp-review-adjudication rule (one blinded tie-break reviewer, 2-of-3): the tie-break review FAILed the citation criterion, so document synthesis is FAIL. All raw model evidence is reused byte-identically; no inference was rerun. The retained setup revalidates under the new welp-setup 0.2.0 mechanical calibration sanity layer with zero blockers (every ceiling satisfies its declared expected answer geometry). Reliability re-derivation is unchanged: DO_NOT_ADVANCE (R7 hallucination, R8 strict); useful context 8,192 tokens both lanes with capability PARTIAL and coverage COMPLETE; pp512 9,807.23 / tg128 348.38 tok/s. LocalMaxxing SUBMITTED origin VERIFIED_EXISTING (cmuesvedt0blllq01g15im5np, verified live; no duplicate submission). Reviewer provenance limitation: isolated blinded agent adjudications, not independent human review.",
-  "welp": {
-    "outcome": "COMPLETE_PASS",
-    "classification": "NOT_READY",
-    "rule": "R-C3 (semantic WEAK)",
-    "contract": "welp-final-classification-0.4.0-draft",
-    "snapshot": "welp-next-snapshot-2026-09-24-review-and-setup-hardening (WELP commit c7b5c92b1f22f5b34d65d688e517d7812df0c37c, DRAFT / NOT v1.0)",
-    "review_adjudication": "welp-review-adjudication-0.1.0-draft: base reviews FAIL/PASS retained unchanged; one blinded tie-break (role tie_break, previous_reviews_visible false) FAIL; 2-of-3 resolution FAIL; RUBRIC_AMBIGUITY not invoked; all three reviews retained",
-    "setup_revalidation": "welp-setup 0.2.0-draft mechanical calibration sanity layer: zero check_setup blockers; identical frozen lanes/tasks/calibration/ceilings as the retained freeze; only geometry declarations added; no inference rerun"
-  },
-  "dimensions": {
-    "SEMANTIC_CAPABILITY": "WEAK",
-    "BUDGET_DISCIPLINE": "GOOD",
-    "CONTEXT_USABILITY": "PARTIAL",
-    "INTEGRATION_QUALITY": "CLEAN"
-  },
+  "headline": "NOT_READY (R-C3, semantic WEAK) made terminal: the predecessor hardening-validation event's single verdict-blocking gap — a 1-1 blinded document-synthesis disagreement — is resolved under the frozen welp-review-adjudication rule (one blinded tie-break reviewer, 2-of-3): the tie-break FAILs the citation criterion, so document synthesis is FAIL. Raw model evidence reused byte-identically; no inference rerun. Setup revalidates under welp-setup 0.2.0 with zero blockers. Reliability DO_NOT_ADVANCE (R7 hallucination, R8 strict); useful context 8,192 tokens both lanes, capability PARTIAL, coverage COMPLETE; pp512 9,807.23 / tg128 348.38 tok/s. LocalMaxxing SUBMITTED VERIFIED_EXISTING (cmuesvedt0blllq01g15im5np). Isolated blinded agent adjudications, not independent human review.",
   "canonical_evidence": {
     "state": "published",
     "repo": "WumboLabs/evaluations",
     "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/REPORT.md",
-    "commit": "PENDING_EVIDENCE_COMMIT"
+    "commit": "2d84b324f62ffb6376267f5c011c94e89f58e52e"
   },
   "publication_provenance": {
     "kind": "native",
@@ -52,12 +37,12 @@
     "source_bundle": "research/model-evaluations/lfm2.5-8b-a1b/lfm2.5-8b-a1b-rtx5070-welp-review-adjudication-2026-09-24",
     "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
     "published_date": "2026-09-24",
-    "note": "Native current-WELP linked completion event. Predecessor event lfm25-8b-a1b-rtx5070-welp-20260923 (published NOT_READY) and the unpublished hardening-validation event are preserved unchanged; raw model outputs reused byte-identically (162 files, size + SHA-256 verified). Reviewer provenance limitation preserved: isolated blinded agent adjudications, not independent human review."
+    "note": "Native current-WELP linked completion event under the consolidated architecture. Predecessor published event and the unpublished hardening-validation campaign are preserved unchanged; 162 raw evidence files reused byte-identically (size + SHA-256 verified)."
   },
   "localmaxxing": {
     "status": "SUBMITTED",
     "origin": "VERIFIED_EXISTING",
     "submission_ref": "cmuesvedt0blllq01g15im5np",
-    "service_status": "record present (verified live this campaign; no duplicate submission)"
+    "service_status": "record present (verified live; no duplicate submission)"
   }
 }

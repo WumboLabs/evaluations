@@ -27,4 +27,4 @@
 | [Bonsai 27B (Q1_0)](models/bonsai-27b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-27b/) |
 | [Ternary Bonsai 2 27B](models/bonsai-2-27b/) | READY_WITH_GUARDRAILS / PROFILE-SCOPED (thinking-off recommended; reasoning-on historical NOT_READY) | 2 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
 | [Spark-X2.5-4B](models/spark-x2.5-4b/) | READY_WITH_GUARDRAILS | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/spark-x2-5-4b/) |
-| [LFM2.5-8B-A1B](models/lfm2.5-8b-a1b/) | NOT_READY | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
+| [LFM2.5-8B-A1B](models/lfm2.5-8b-a1b/) | NOT_READY | 1 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |

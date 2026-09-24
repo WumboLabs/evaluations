@@ -12,7 +12,11 @@
     "setup_revalidation": "welp-setup 0.2.0-draft mechanical calibration sanity layer: zero check_setup blockers; identical frozen lanes/tasks/calibration/ceilings as the retained freeze; only geometry declarations added; no inference rerun"
   },
   "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE"
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "2d84b324f62ffb6376267f5c011c94e89f58e52e",
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/2d84b324f62ffb6376267f5c011c94e89f58e52e/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/REPORT.md"
   },
   "identity": {
     "model_id": "lfm2.5-8b-a1b",

@@ -17,6 +17,7 @@
 ## Events
 
 - 2026-09-23 — [Prospective retest with reliability-class calibration and proven uncached timing (official Q6_K, upstream llama.cpp b10999)](../../../../models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/)
+- 2026-09-24 — [Blinded tie-break adjudication and calibration sanity completion of the hardening-validation event (official Q6_K, upstream llama.cpp b10999)](../../../../models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/)
 
 ## Provenance
 

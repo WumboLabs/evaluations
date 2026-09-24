@@ -12,23 +12,24 @@
   "current_state": {
     "agent-backend": null,
     "protocol-development": null,
-    "model-classification": "lfm25-8b-a1b-rtx5070-welp-20260923",
-    "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-20260923",
-    "performance": "lfm25-8b-a1b-rtx5070-welp-20260923",
-    "capabilities": "lfm25-8b-a1b-rtx5070-welp-20260923",
-    "serving-profile": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "model-classification": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "performance": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "capabilities": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "serving-profile": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
     "specialized": null,
     "practical-use": null,
-    "context": "lfm25-8b-a1b-rtx5070-welp-20260923",
-    "reliability": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "context": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "reliability": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
     "recommended_profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
     "classification": "NOT_READY",
     "profile_ids": [
       "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment"
     ],
     "event_ids": [
-      "lfm25-8b-a1b-rtx5070-welp-20260923"
+      "lfm25-8b-a1b-rtx5070-welp-20260923",
+      "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924"
     ]
   },
-  "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Family A 1.2 placement preflight passed at all executed rungs (max depth error 0.464 pp, >=99% occupancy) but every completed answer failed at least one useful-context gate - synthesis fails at all rungs and retrieval degrades with depth. Disposition FAILED (valid near-full measurements failing frozen useful-context gates); no useful-context maximum; envelope_complete: false."
+  "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Controlled Context fixture 1.3 (canonical answer oracle, hardened snapshots): coverage COMPLETE (20/20 valid near-full cells, max placement error 0.23 pp), capability PARTIAL with USEFUL_CONTEXT_MAX 8,192 tokens on both lanes; seed 314159 validates 16K and 32K via oracle-reviewed cells; seed 42 and the 64K/128K rungs fail on synthesis and retrieval errors. The 2026-09-24 adjudication event supersedes current-state attribution only: raw evidence reused byte-identically from the hardening-validation campaign, whose 1-1 blinded document-synthesis disagreement resolved FAIL (2-of-3 with one blinded tie-break). Classification NOT_READY (R-C3, semantic WEAK) is terminal on this profile."
 }

@@ -11,7 +11,8 @@
   "current_status": "current",
   "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
   "event_ids": [
-    "lfm25-8b-a1b-rtx5070-welp-20260923"
+    "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924"
   ],
   "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
   "artifact_precision": "Q6_K official publisher GGUF; f16 K/V cache (FA on)",

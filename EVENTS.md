@@ -6,6 +6,7 @@ One row per immutable event; shared reports are stored once. Newest first.
 
 | Date | Model(s) | Event type | Profile(s) | Report | Website |
 |---|---|---|---|---|---|
+| 2026-09-24 | LFM2.5-8B-A1B | welp-recharacterization | `lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment` | [lfm25-8b-a1b-rtx5070-welp-adjudication-20260924](models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/REPORT.md) | [LFM2.5-8B-A1B](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | 2026-09-23 | LFM2.5-8B-A1B | welp-recharacterization | `lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment` | [lfm25-8b-a1b-rtx5070-welp-20260923](models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/REPORT.md) | [LFM2.5-8B-A1B](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | 2026-09-20 | Spark-X2.5-4B | initial-evaluation | `spark25-4b-q8-0-llamacpp` | [spark25-4b-rtx5070-welp-20260920](models/spark-x2.5-4b/events/spark25-4b-rtx5070-welp-20260920/REPORT.md) | [Spark-X2.5-4B](https://wumbolabs.dev/evaluations/spark-x2-5-4b/) |
 | 2026-09-20 | Ternary Bonsai 2 27B | follow-up | `bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off` | [bonsai2-27b-rtx5070-welp-methodology-supplement-20260920](models/bonsai-2-27b/events/bonsai2-27b-rtx5070-welp-methodology-supplement-20260920/REPORT.md) | [Ternary Bonsai 2 27B](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
