@@ -1,0 +1,48 @@
+{
+  "slug": "eval-lfm25-8b-a1b-rtx5070-welp-20260923",
+  "event_id": "lfm25-8b-a1b-rtx5070-welp-20260923",
+  "event_type": "recharacterization",
+  "event_date": "2026-09-23",
+  "record_date": "2026-09-24",
+  "model_id": "lfm2.5-8b-a1b",
+  "profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+  "profile_name": "llama.cpp upstream official Q6_K (reasoning-on, publisher sampler)",
+  "profile_status": "current",
+  "event_kicker": "WELP Prospective Retest — Liquid AI LFM2.5-8B-A1B (reasoning-on)",
+  "event_title": "Prospective retest with reliability-class calibration and proven uncached timing (official Q6_K, upstream llama.cpp b10999)",
+  "welp_status": "NOT_READY",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "NOT_READY (R-C3) on the canonical reasoning-on profile: budget discipline is GOOD (60/60 reliability completions inside the 2048-token operational SLO) but the reliability gate does not advance - seed-42 uncertainty 1/3, hallucination 2/4, strict 1/3, instability range 5, plus a git-safety UNSAFE under the frozen rule. Family A 1.2 placement preflight passed everywhere (max error 0.464 pp, >=99% occupancy) and every completed answer failed at least one useful-context gate (disposition FAILED). pp512 9,069.65 / tg128 350.39 tok/s; near-full 128K prefill 8,854 tok/s at 99.94% occupancy; LocalMaxxing SUBMITTED NEW (cmuesvedt0blllq01g15im5np, 349.51 tok/s out, service-unverified as served). Campaign execution COMPLETE_PASS; two prior events stopped on campaign-application defects and are retained unchanged.",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/REPORT.md",
+    "commit": "PENDING_EVIDENCE_COMMIT"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
+    "source_bundle": "research/model-evaluations/lfm2.5-8b-a1b/lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_report_sha256": "PENDING_EVIDENCE_COMMIT",
+    "published_date": "2026-09-24",
+    "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign measurement snapshot welp-next-snapshot-2026-09-23-profile-identity-clarification (WELP commit 2a3bdbb283158e863d3e38125fffa7d1e205fbec, DRAFT - NOT v1.0); classification contract welp-final-classification-0.3.1-draft. Third linked event: characterization 2026-09-22 (BLOCKED, fixture-limited) and prospective 2026-09-23 (BLOCKED, short-class calibration stop) retained unchanged and unpublished."
+  },
+  "source": {
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/website-publication.json",
+    "sha256": "PENDING_EVIDENCE_COMMIT",
+    "commit": "PENDING_EVIDENCE_COMMIT"
+  }
+}

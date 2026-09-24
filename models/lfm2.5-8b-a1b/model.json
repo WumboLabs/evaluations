@@ -1,0 +1,34 @@
+{
+  "model_id": "lfm2.5-8b-a1b",
+  "display_name": "LFM2.5-8B-A1B",
+  "vendor": "Liquid AI",
+  "weight": 24,
+  "aliases": [
+    "lfm25-8b-a1b",
+    "lfm2-5-8b-a1b"
+  ],
+  "website_slug": "lfm2-5-8b-a1b",
+  "website_url": "https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "performance": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "capabilities": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "serving-profile": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "specialized": null,
+    "practical-use": null,
+    "context": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "reliability": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "recommended_profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+    "classification": "NOT_READY",
+    "profile_ids": [
+      "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment"
+    ],
+    "event_ids": [
+      "lfm25-8b-a1b-rtx5070-welp-20260923"
+    ]
+  },
+  "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Family A 1.2 placement preflight passed at all executed rungs (max depth error 0.464 pp, >=99% occupancy) but every completed answer failed at least one useful-context gate - synthesis fails at all rungs and retrieval degrades with depth. Disposition FAILED (valid near-full measurements failing frozen useful-context gates); no useful-context maximum; envelope_complete: false."
+}

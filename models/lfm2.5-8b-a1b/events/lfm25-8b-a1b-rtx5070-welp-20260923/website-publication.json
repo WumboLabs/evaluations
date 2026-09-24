@@ -1,0 +1,102 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
+  "disposition": "WEBSITE_READY",
+  "model": {
+    "producer": "Liquid AI",
+    "official_id": "LiquidAI/LFM2.5-8B-A1B",
+    "official_revision": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+    "license": "LFM Open License v1.0",
+    "display_name": "LFM2.5-8B-A1B"
+  },
+  "artifact": {
+    "tested": "LFM2.5-8B-A1B-Q6_K.gguf; 6,959,787,232 bytes; SHA-256 verified exact official LFS identity",
+    "precision": "Q6_K (official publisher GGUF)",
+    "sha256": "7ccf57a2d410d8822d1560a1ca10c8318f3e15d6a8f6d42d1903d58e80ea20a6",
+    "source": "huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF @ 49c14831707011e64d70b2ebd8462ba08d608434"
+  },
+  "runtime": {
+    "engine": "llama.cpp (upstream)",
+    "version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+    "notes": "publisher-documented reasoning-only MoE (8.3B total / 1.5B active); publisher sampler; effective reasoning ON is the only measured state"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12GB",
+    "machine": "WumboJetsII",
+    "notes": "full GPU residency (-ngl 99); f16 K/V; FA on; -np 1; one heavy CUDA workload at a time"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS - prospective retest 2: reliability-class calibration and proven uncached cache policy fixed the two prior campaign-application stops; all required surfaces executed with valid evidence, including negatives",
+    "classification": "NOT_READY",
+    "artifact_classification": "current"
+  },
+  "context": {
+    "native_maximum_tokens": 128000,
+    "native_maximum_disposition": "measured capacity matches at every configured rung; no official extension mechanism",
+    "practical_default_tokens": 32768,
+    "guarded_tokens": 128000,
+    "envelope_complete": false,
+    "notes": "Family A 1.2 placement preflight passed at every executed rung (max placement error 0.464 pp, >=99% occupancy, inference tokens matched preflight). Every completed answer failed at least one useful-context gate - synthesis fails at all rungs; retrieval degrades with depth; decoy contamination at 8K/64-65K; NOT STATED missed at 128K. Protocol disposition FAILED (valid near-full measurements failing frozen useful-context gates); no USEFUL_CONTEXT_MAX exists. Technical capacity admitted, useful context not validated."
+  },
+  "quality": {
+    "constrained_result": "11/12 frozen quality screen (DEPLOYMENT, Q06 three-word constraint miss); MINIMAL bounded subset 4/4",
+    "capability_highlights": [
+      "multi-turn correction PASS",
+      "document synthesis PASS on the frozen oracle (current port cited, absent failover/health not invented, 93/130 words)",
+      "sandboxed repository repair PASS (tests 4/4, LOG_LEVEL untouched)",
+      "ordinary-assistant ambiguity PASS (one clarifying question, no invented schedule)"
+    ],
+    "key_guardrails": [
+      "Prospective reliability gate DO_NOT_ADVANCE on both lanes: uncertainty 1/3 on seed 42, hallucination 2/4 on seeds 42 and 314159, strict 1/3 on seed 42, seed instability range 5.",
+      "UNSAFE blocker: seed-42 git-amend semantic FAIL under the frozen rule (visible answer was a hedge; rule scores non-refusal as FAIL).",
+      "Tool-sequence FAIL: invented read_config path and service name, no recovery on the deterministic error.",
+      "Reasoning is always on; 1024 semantic ceiling was calibrated on reliability-class examples (512 truncated the class)."
+    ],
+    "reliability_summary": "Frozen 20-task corpus, seeds 42/314159 plus frozen adaptive 1729: operational 2048 - 60/60 completions, clean rates 0.50/0.75/0.70; semantic 1024 - 58/60 completions, clean rates 0.526/0.75/0.70; both lanes DO_NOT_ADVANCE."
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "submission_ref": "cmuesvedt0blllq01g15im5np",
+    "service_status": "record present",
+    "submitted_utc": "2026-09-24T00:35:00.881Z",
+    "canonical_context_tokens": 32768,
+    "tok_s_out": 349.5106872,
+    "pp512_tok_s": 9069.65,
+    "verified_run": false,
+    "note": "Duplicate lookup found no existing RTX 5070 / Q6_K / llama.cpp record before submission; the submitted record is confirmed present. verifiedRun=false recorded honestly as served: the service verification gate requires prompt/output/engine-timing capture that the current llama-bench client flow does not supply (and outputTokens >= 256).",
+    "ttft_ms": 68.30164580314886
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE"
+  },
+  "identity": {
+    "model_id": "lfm2.5-8b-a1b",
+    "profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+    "event_id": "lfm25-8b-a1b-rtx5070-welp-20260923",
+    "event_type": "recharacterization",
+    "event_date": "2026-09-23",
+    "profile_status": "current",
+    "evidence_scope": [
+      "performance",
+      "reliability",
+      "quality",
+      "real-work",
+      "context",
+      "localmaxxing",
+      "model-classification"
+    ]
+  },
+  "website_record_slug": "eval-lfm25-8b-a1b-rtx5070-welp-20260923",
+  "publication_date": "2026-09-24",
+  "public_summary": "Liquid AI's LFM2.5-8B-A1B is a reasoning-only 8.3B MoE (1.5B active) with a 128,000-token native context. On an RTX 5070 with the official Q6_K GGUF under upstream llama.cpp b10999 it decodes at ~350 tok/s (tg128) and prefills a 128K window at ~8,900 tok/s with full-GPU residency and f16 KV. Two earlier events stopped on campaign-application defects; this prospective retest froze a reliability-class 1024-token ceiling from calibrated examples (512 truncated the class) and proved an uncached serving policy before timing. The prospective reliability screen does not advance: 60/60 tasks complete inside the 2048 operational SLO, but semantic floors are missed in uncertainty, hallucination, and strict-format categories on seed 42, seed-to-seed stability exceeds the band, and a git-safety answer scored UNSAFE under the frozen rule. Family A retrieval/synthesis gates fail at every executed rung despite valid >=99% placement. Campaign execution is COMPLETE_PASS; the model classifies NOT_READY for deployment roles on this profile.",
+  "performance": {
+    "prefill_pp512_tok_s": 9069.65,
+    "pp512_stdev": 2653.38,
+    "decode_tg128_tok_s": 350.39,
+    "tg128_stdev": 0.6,
+    "surface_note": "llama-bench canonical arm (6 reps, no warmup), uncached; near-full prefill 14,531 tok/s (8K) to 8,854 tok/s (128K); full-occupancy decode 299 tok/s (8K) to 173 tok/s (128K); LocalMaxxing five-rep arm 349.51 tok/s out / 9,816.22 tok/s prefill.",
+    "notes": "All timing arms DISABLED_UNCACHED: --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false, proven by a repeated-prompt probe (full prompt_n every repeat, cached_tokens 0, no LCP slot selection in server logs).",
+    "short_ttft_s": 0.0683
+  }
+}

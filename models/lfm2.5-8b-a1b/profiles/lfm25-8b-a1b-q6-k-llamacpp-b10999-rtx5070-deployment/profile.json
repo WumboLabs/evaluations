@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "lfm2.5-8b-a1b",
+  "model_display_name": "LFM2.5-8B-A1B (reasoning-on canonical)",
+  "profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+  "profile_display_name": "llama.cpp upstream official Q6_K (reasoning-on, publisher sampler)",
+  "runtime_family": "llama.cpp (upstream)",
+  "artifact": "LiquidAI/LFM2.5-8B-A1B-GGUF@49c14831 :: LFM2.5-8B-A1B-Q6_K.gguf (sha256 7ccf57a2d410d8822d1560a1ca10c8318f3e15d6a8f6d42d1903d58e80ea20a6)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+  "event_ids": [
+    "lfm25-8b-a1b-rtx5070-welp-20260923"
+  ],
+  "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+  "artifact_precision": "Q6_K official publisher GGUF; f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (25/25 layers), -fa on, f16 KV, -np 1, --fit off, embedded Jinja template, publisher sampler (temp 0.2 / top_k 80 / top_p 1.0 / repeat_penalty 1.05); effective reasoning ON (template flags do not disable generation). Default context 32,768 / native exact 128,000; uncached scientific arms via --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false (proven by repeated-prompt probe).",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-24",
+    "note": "Native profile created at first publication of event lfm25-8b-a1b-rtx5070-welp-20260923. Third linked event for this model: two earlier local campaigns (characterization 2026-09-22, prospective 2026-09-23) stopped on campaign-application defects and are retained unpublished. Executed under measurement snapshot welp-next-snapshot-2026-09-23-profile-identity-clarification (WELP commit 2a3bdbb283158e863d3e38125fffa7d1e205fbec, DRAFT - NOT v1.0); classification contract welp-final-classification-0.3.1-draft; verdict NOT_READY (R-C3)."
+  }
+}
