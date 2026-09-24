@@ -4212,6 +4212,11 @@
         "origin": "VERIFIED_EXISTING",
         "submission_ref": "cmuesvedt0blllq01g15im5np",
         "service_status": "record present (verified live; no duplicate submission)"
+      },
+      "source": {
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/website-publication.json",
+        "sha256": "2853078c539c751ca6de068ec6588e688bae8aa7d8aa0eaee01eb19ca43df54c",
+        "commit": "8087803f58258efbbadf4551fc84cbeeeff795b0"
       }
     }
   ],

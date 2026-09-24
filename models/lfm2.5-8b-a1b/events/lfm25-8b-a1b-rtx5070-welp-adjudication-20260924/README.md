@@ -19,3 +19,5 @@
 The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
 
 ## Provenance
+
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/8087803f58258efbbadf4551fc84cbeeeff795b0/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-adjudication-20260924/website-publication.json)

@@ -6,7 +6,16 @@
 
 **Recommended profile:** `lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment`
 
-**Context:** Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Controlled Context fixture 1.3 (canonical answer oracle, hardened snapshots): coverage COMPLETE (20/20 valid near-full cells, max placement error 0.23 pp), capability PARTIAL with USEFUL_CONTEXT_MAX 8,192 tokens on both lanes; seed 314159 validates 16K and 32K via oracle-reviewed cells; seed 42 and the 64K/128K rungs fail on synthesis and retrieval errors. The 2026-09-24 adjudication event supersedes current-state attribution only: raw evidence reused byte-identically from the hardening-validation campaign, whose 1-1 blinded document-synthesis disagreement resolved FAIL (2-of-3 with one blinded tie-break). Classification NOT_READY (R-C3, semantic WEAK) is terminal on this profile.
+**Context:** Practical default: 32,768 tokens; Guarded boundary: 128,000 tokens; Model-card native maximum: 128,000 tokens
+
+Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
+
+<details>
+<summary>Published context findings and limitations</summary>
+
+Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Controlled Context fixture 1.3 (canonical answer oracle, hardened snapshots): coverage COMPLETE (20/20 valid near-full cells, max placement error 0.23 pp), capability PARTIAL with USEFUL_CONTEXT_MAX 8,192 tokens on both lanes; seed 314159 validates 16K and 32K via oracle-reviewed cells; seed 42 and the 64K/128K rungs fail on synthesis and retrieval errors. The 2026-09-24 adjudication event supersedes current-state attribution only: raw evidence reused byte-identically from the hardening-validation campaign, whose 1-1 blinded document-synthesis disagreement resolved FAIL (2-of-3 with one blinded tie-break). Classification NOT_READY (R-C3, semantic WEAK) is terminal on this profile.
+
+</details>
 
 [Human-facing Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/)
 
