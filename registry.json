@@ -69,7 +69,7 @@
           "welp-recharacterization-2026-09-11"
         ]
       },
-      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 262144; extension_mechanism: \"none — source-backed absence on both official model cards (the family 1M claim belongs to the 30B-A3B MoE sibling; the GGUF header value 1,048,576 is converter metadata, not a card claim)\"; envelope_complete: true; native_maximum_disposition: \"VALIDATED — capacity admitted, near-full performance measured (uncached prefill ~2,877 tok/s, decode ~79-81 tok/s, 7,268 MiB VRAM), strict useful-context PASS at both required seeds (42, 314159)\"; exact_max_dispositions: {\"native_262144\": \"VALIDATED at both seeds at >=99.48% near-full occupancy with depth-placement errors <= 0.21 pp\", \"official_extensions\": \"NONE exist (source-backed absence); nothing to disposition beyond the native maximum\"}; useful_context_finding: \"All five useful-context fields (exact retrieval, synthesis, decoy resistance, absent-information grounding, instruction/output compliance) passed the strict aggregate at every tested rung — 8,192 / 32,768 / 131,072 / 262,144 — including both native-maximum seeds. The tested frozen near-full context fixture passes strictly; this is not proof of universal long-document reasoning on arbitrary material\"; notes: \"Hybrid Mamba-2 memory model measured: 4 attention layers carry context-linear KV (~16 KiB/token f16); the 38 Mamba-2 layers carry a fixed context-independent recurrent state (~100-300 MiB). The full 262,144 slot fits in 7,268 MiB with 4,546 MiB free\""
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 262144; extension_mechanism: \"none \u2014 source-backed absence on both official model cards (the family 1M claim belongs to the 30B-A3B MoE sibling; the GGUF header value 1,048,576 is converter metadata, not a card claim)\"; envelope_complete: true; native_maximum_disposition: \"VALIDATED \u2014 capacity admitted, near-full performance measured (uncached prefill ~2,877 tok/s, decode ~79-81 tok/s, 7,268 MiB VRAM), strict useful-context PASS at both required seeds (42, 314159)\"; exact_max_dispositions: {\"native_262144\": \"VALIDATED at both seeds at >=99.48% near-full occupancy with depth-placement errors <= 0.21 pp\", \"official_extensions\": \"NONE exist (source-backed absence); nothing to disposition beyond the native maximum\"}; useful_context_finding: \"All five useful-context fields (exact retrieval, synthesis, decoy resistance, absent-information grounding, instruction/output compliance) passed the strict aggregate at every tested rung \u2014 8,192 / 32,768 / 131,072 / 262,144 \u2014 including both native-maximum seeds. The tested frozen near-full context fixture passes strictly; this is not proof of universal long-document reasoning on arbitrary material\"; notes: \"Hybrid Mamba-2 memory model measured: 4 attention layers carry context-linear KV (~16 KiB/token f16); the 38 Mamba-2 layers carry a fixed context-independent recurrent state (~100-300 MiB). The full 262,144 slot fits in 7,268 MiB with 4,546 MiB free\""
     },
     {
       "model_id": "apodex-1.1-mini",
@@ -159,7 +159,7 @@
           "initial-evaluation-2026-08-26-lfm12"
         ]
       },
-      "context_summary": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale — every quant including BF16 fabricates confidently on invented subjects."
+      "context_summary": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale \u2014 every quant including BF16 fabricates confidently on invented subjects."
     },
     {
       "model_id": "ornith-1.5-9b",
@@ -220,7 +220,7 @@
           "context-envelope-completion-2026-09-11-qwen35-4b"
         ]
       },
-      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144; extension_mechanism: \"YaRN factor 4.0 (officially advertised to 1,010,000 tokens)\"; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT - native maximum 262,144 on the BF16/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision\"; exact_max_dispositions: {\"native_262144_f16_primary\": \"FIT_LIMIT — arithmetic lower bound: weights + f16 KV = 16,215.7 MiB > 12,227 MiB total VRAM\", \"native_262144_q4_0_alternate\": \"FIT_LIMIT — measured admission failure (compute buffer 1,330.28 MiB cudaMalloc OOM with weights+KV resident)\", \"yarn_1010000\": \"FIT_LIMIT — exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)\"}; highest_measured_admitted: {\"primary_f16_tokens\": 65536, \"note\": \"highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed\"}; useful_context_finding: \"At 99.4-99.5% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.092 pp) and resist the decoy, while deterministically dropping the auxiliary synthesis/absent/checksum output instructions; strict useful-context gate FAILED at both rungs, both seeds\"; notes: \"32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 6.6-6.7 s TTFT / 60.3 tok/s decode; 64K 15.2 s TTFT / 54.1-54.4 tok/s decode\""
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144; extension_mechanism: \"YaRN factor 4.0 (officially advertised to 1,010,000 tokens)\"; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT - native maximum 262,144 on the BF16/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision\"; exact_max_dispositions: {\"native_262144_f16_primary\": \"FIT_LIMIT \u2014 arithmetic lower bound: weights + f16 KV = 16,215.7 MiB > 12,227 MiB total VRAM\", \"native_262144_q4_0_alternate\": \"FIT_LIMIT \u2014 measured admission failure (compute buffer 1,330.28 MiB cudaMalloc OOM with weights+KV resident)\", \"yarn_1010000\": \"FIT_LIMIT \u2014 exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)\"}; highest_measured_admitted: {\"primary_f16_tokens\": 65536, \"note\": \"highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed\"}; useful_context_finding: \"At 99.4-99.5% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.092 pp) and resist the decoy, while deterministically dropping the auxiliary synthesis/absent/checksum output instructions; strict useful-context gate FAILED at both rungs, both seeds\"; notes: \"32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 6.6-6.7 s TTFT / 60.3 tok/s decode; 64K 15.2 s TTFT / 54.1-54.4 tok/s decode\""
     },
     {
       "model_id": "qwen35-9b",
@@ -250,7 +250,7 @@
           "context-envelope-completion-2026-09-11-qwen35-9b"
         ]
       },
-      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144; extension_mechanism: \"YaRN factor 4.0 (officially advertised to 1,010,000 tokens)\"; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT - native maximum 262,144 on the Q8_0/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision\"; exact_max_dispositions: {\"native_262144_f16_primary\": \"FIT_LIMIT — arithmetic lower bound: weights + f16 KV = 16,237.0 MiB > 12,227 MiB total VRAM\", \"native_262144_q4_0_alternate\": \"FIT_LIMIT — measured admission failure (compute buffer 1,336.28 MiB cudaMalloc OOM with weights + 2,304.00 MiB q4_0 KV resident)\", \"yarn_1010000\": \"FIT_LIMIT — exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)\"}; highest_measured_admitted: {\"primary_f16_tokens\": 65536, \"note\": \"highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed\"}; useful_context_finding: \"At 99.49-99.56% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.104 pp), resist the decoy, retain synthesis and the checksum instruction, but emit the absent-information value under the wrong key name; strict useful-context gate FAILED at both rungs, both seeds. Compared with the same-family 4B control (which dropped synthesis/absent/checksum entirely), 9B retains more auxiliary instructions at the same occupancy; two model sizes do not establish causality\"; notes: \"32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 7.8 s TTFT / 60.0 tok/s decode; 64K 17.5 s TTFT / 54.1 tok/s decode\""
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144; extension_mechanism: \"YaRN factor 4.0 (officially advertised to 1,010,000 tokens)\"; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT - native maximum 262,144 on the Q8_0/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision\"; exact_max_dispositions: {\"native_262144_f16_primary\": \"FIT_LIMIT \u2014 arithmetic lower bound: weights + f16 KV = 16,237.0 MiB > 12,227 MiB total VRAM\", \"native_262144_q4_0_alternate\": \"FIT_LIMIT \u2014 measured admission failure (compute buffer 1,336.28 MiB cudaMalloc OOM with weights + 2,304.00 MiB q4_0 KV resident)\", \"yarn_1010000\": \"FIT_LIMIT \u2014 exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)\"}; highest_measured_admitted: {\"primary_f16_tokens\": 65536, \"note\": \"highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed\"}; useful_context_finding: \"At 99.49-99.56% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.104 pp), resist the decoy, retain synthesis and the checksum instruction, but emit the absent-information value under the wrong key name; strict useful-context gate FAILED at both rungs, both seeds. Compared with the same-family 4B control (which dropped synthesis/absent/checksum entirely), 9B retains more auxiliary instructions at the same occupancy; two model sizes do not establish causality\"; notes: \"32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 7.8 s TTFT / 60.0 tok/s decode; 64K 17.5 s TTFT / 54.1 tok/s decode\""
     },
     {
       "model_id": "minicpm5-2b",
@@ -310,7 +310,7 @@
           "initial-evaluation-2026-09-10-gemma4"
         ]
       },
-      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: \"Exact native 131,072: measured FAILED on the strict aggregate useful-context gate while near-full performance itself was valid (both seeds 99.50% occupancy, TTFT ~38 s, decode ~79 tok/s, zero errors) and five-needle target retrieval stayed perfect (10/10 across ALL rungs including the exact maximum)\"; notes: \"Strict aggregate gate FAILED at every rung; divergence is explicit — content retrieval is perfect everywhere (decoy resistance 10/10), while strict output/instruction compliance is the failure surface (absent-field fills a present value instead of NOT_SPECIFIED; JSON tail truncation from 16K upward). No official context extensions exist for E4B (source-backed absence).\""
+      "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 131072; envelope_complete: true; native_maximum_disposition: \"Exact native 131,072: measured FAILED on the strict aggregate useful-context gate while near-full performance itself was valid (both seeds 99.50% occupancy, TTFT ~38 s, decode ~79 tok/s, zero errors) and five-needle target retrieval stayed perfect (10/10 across ALL rungs including the exact maximum)\"; notes: \"Strict aggregate gate FAILED at every rung; divergence is explicit \u2014 content retrieval is perfect everywhere (decoy resistance 10/10), while strict output/instruction compliance is the failure surface (absent-field fills a present value instead of NOT_SPECIFIED; JSON tail truncation from 16K upward). No official context extensions exist for E4B (source-backed absence).\""
     },
     {
       "model_id": "gemma-4-12b",
@@ -348,7 +348,7 @@
           "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12"
         ]
       },
-      "context_summary": "native_maximum_tokens: 262144; native_maximum_disposition: \"FIT_LIMIT — measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072\"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: \"Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED).\""
+      "context_summary": "native_maximum_tokens: 262144; native_maximum_disposition: \"FIT_LIMIT \u2014 measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072\"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: \"Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED).\""
     },
     {
       "model_id": "mellum2-12b-a2.5b",
@@ -418,7 +418,7 @@
           "qwen3-14b-rtx5070-welp-recharacterization-2026-09-14"
         ]
       },
-      "context_summary": "native_maximum_tokens: 32768; native_maximum_disposition: \"VALIDATED — near-full performance (99.2-99.6% occupancy, 2 reps) and useful-context PASS at two seeds (99.47% occupancy) plus the 2026-09-15 five-depth completion (2/25/50/75/95% placements inside the preferred 0.25pp bound, max error 0.160/0.087 pp) on the canonical q8_0-KV surface\"; practical_default_tokens: 32768; guarded_tokens: 32768; envelope_complete: true; notes: \"Native rungs 8K/16K/32K VALIDATED. Official YaRN extension (factor 4.0, exact max 131,072) is FIT_LIMIT on 12GB: measured cudaMalloc OOM at q8_0 KV (10,880 MiB request) and at the lowest dtype q4_0 (5,760 MiB request); nearest measured boundary 32,768. Attribution: RTX 5070 12GB, not the model.\""
+      "context_summary": "native_maximum_tokens: 32768; native_maximum_disposition: \"VALIDATED \u2014 near-full performance (99.2-99.6% occupancy, 2 reps) and useful-context PASS at two seeds (99.47% occupancy) plus the 2026-09-15 five-depth completion (2/25/50/75/95% placements inside the preferred 0.25pp bound, max error 0.160/0.087 pp) on the canonical q8_0-KV surface\"; practical_default_tokens: 32768; guarded_tokens: 32768; envelope_complete: true; notes: \"Native rungs 8K/16K/32K VALIDATED. Official YaRN extension (factor 4.0, exact max 131,072) is FIT_LIMIT on 12GB: measured cudaMalloc OOM at q8_0 KV (10,880 MiB request) and at the lowest dtype q4_0 (5,760 MiB request); nearest measured boundary 32,768. Attribution: RTX 5070 12GB, not the model.\""
     },
     {
       "model_id": "qwen3.6-35b-a3b",
@@ -740,6 +740,40 @@
         ]
       },
       "context_summary": "practical_default_tokens: 32768; guarded_tokens: 131072; native_maximum_tokens: 1048576 (FIT_LIMIT: f16 KV alone requires 38,654,705,664 bytes at the exact native maximum - 3.16x the 12,227 MiB card; no official extension mechanism documented); envelope_complete: true; useful context is PROFILE-SCOPED: USEFUL_CONTEXT_MAX_SEMANTIC = 131,072 on the predeclared thinking-off non-starving lane (VALIDATED 2/2 seeds, 512-token reserve, >=99% occupancy); canonical vendor-default thinking-on lane is BUDGET_LIMITED at every tested rung (reserve consumed by thinking); retrieval capability intact."
+    },
+    {
+      "model_id": "lfm2.5-8b-a1b",
+      "display_name": "LFM2.5-8B-A1B",
+      "vendor": "Liquid AI",
+      "weight": 24,
+      "aliases": [
+        "lfm25-8b-a1b",
+        "lfm2-5-8b-a1b"
+      ],
+      "website_slug": "lfm2-5-8b-a1b",
+      "website_url": "https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/",
+      "current_state": {
+        "agent-backend": null,
+        "protocol-development": null,
+        "model-classification": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "performance": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "capabilities": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "serving-profile": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "specialized": null,
+        "practical-use": null,
+        "context": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "reliability": "lfm25-8b-a1b-rtx5070-welp-20260923",
+        "recommended_profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+        "classification": "NOT_READY",
+        "profile_ids": [
+          "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment"
+        ],
+        "event_ids": [
+          "lfm25-8b-a1b-rtx5070-welp-20260923"
+        ]
+      },
+      "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Family A 1.2 placement preflight passed at all executed rungs (max depth error 0.464 pp, >=99% occupancy) but every completed answer failed at least one useful-context gate - synthesis fails at all rungs and retrieval degrades with depth. Disposition FAILED (valid near-full measurements failing frozen useful-context gates); no useful-context maximum; envelope_complete: false."
     }
   ],
   "profiles": [
@@ -1246,7 +1280,7 @@
       "profile_id": "lfm2.5-1.2b-llamacpp-qad-q4-0",
       "profile_display_name": "llama.cpp QAD Q4_0",
       "runtime_family": "llama.cpp",
-      "artifact": "QAD Q4_0 from LiquidAI/LFM2.5-1.2B-Instruct-GGUF @ 67672651…3615b",
+      "artifact": "QAD Q4_0 from LiquidAI/LFM2.5-1.2B-Instruct-GGUF @ 67672651\u20263615b",
       "artifact_precision": "QAD Q4_0",
       "hardware_scope": "WumboJetsII (NVIDIA GeForce RTX 5070 12GB)",
       "repository": "WumboLabs/evaluations",
@@ -1647,6 +1681,30 @@
         "published_date": "2026-09-22",
         "note": "Native profile created at first publication of event spark25-4b-rtx5070-welp-20260920. Executed under measurement snapshot welp-next-snapshot-2026-09-19-methodology-revision (WELP commit 79f9de13de04325e50e05b0eed28b56471a19028, DRAFT - NOT v1.0); terminal closeout under the campaign execution-state lifecycle (welp-next-snapshot-2026-09-22-automatic-closeout-lifecycle, methodology_changed: NO). Verdict READY_WITH_GUARDRAILS binds this reasoning-on canonical profile: semantics acceptable on the predeclared non-starving lane, budget discipline poor on the vendor default (0/20 frozen reliability completions on both seeds; 512-token reserve consumed at every rung). The thinking-off lane is a declared alternative lane preserved as a distinct practical surface, not a separately fully characterized profile."
       }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "lfm2.5-8b-a1b",
+      "model_display_name": "LFM2.5-8B-A1B (reasoning-on canonical)",
+      "profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+      "profile_display_name": "llama.cpp upstream official Q6_K (reasoning-on, publisher sampler)",
+      "runtime_family": "llama.cpp (upstream)",
+      "artifact": "LiquidAI/LFM2.5-8B-A1B-GGUF@49c14831 :: LFM2.5-8B-A1B-Q6_K.gguf (sha256 7ccf57a2d410d8822d1560a1ca10c8318f3e15d6a8f6d42d1903d58e80ea20a6)",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+      "event_ids": [
+        "lfm25-8b-a1b-rtx5070-welp-20260923"
+      ],
+      "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+      "artifact_precision": "Q6_K official publisher GGUF; f16 K/V cache (FA on)",
+      "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (25/25 layers), -fa on, f16 KV, -np 1, --fit off, embedded Jinja template, publisher sampler (temp 0.2 / top_k 80 / top_p 1.0 / repeat_penalty 1.05); effective reasoning ON (template flags do not disable generation). Default context 32,768 / native exact 128,000; uncached scientific arms via --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false (proven by repeated-prompt probe).",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-24",
+        "note": "Native profile created at first publication of event lfm25-8b-a1b-rtx5070-welp-20260923. Third linked event for this model: two earlier local campaigns (characterization 2026-09-22, prospective 2026-09-23) stopped on campaign-application defects and are retained unpublished. Executed under measurement snapshot welp-next-snapshot-2026-09-23-profile-identity-clarification (WELP commit 2a3bdbb283158e863d3e38125fffa7d1e205fbec, DRAFT - NOT v1.0); classification contract welp-final-classification-0.3.1-draft; verdict NOT_READY (R-C3)."
+      }
     }
   ],
   "records": [
@@ -1660,7 +1718,7 @@
       "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
       "profile_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
       "profile_status": "historical",
-      "event_kicker": "Initial Evaluation — Historical llama.cpp",
+      "event_kicker": "Initial Evaluation \u2014 Historical llama.cpp",
       "event_title": "Initial evaluation (deep evaluation, historical llama.cpp)",
       "welp_status": "COMPLETED_DEEP_EVALUATION",
       "evidence_scope": [
@@ -1722,7 +1780,7 @@
       "profile_id": "qwen38-27b-exl3-h1",
       "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
       "profile_status": "current",
-      "event_kicker": "H1 Canonical Promotion — ExLlamaV3",
+      "event_kicker": "H1 Canonical Promotion \u2014 ExLlamaV3",
       "event_title": "H1 deployment / canonical promotion",
       "welp_status": "COMPLETE / CURRENT_CANONICAL_H1_PROFILE",
       "evidence_scope": [
@@ -1785,7 +1843,7 @@
       "profile_id": "qwen38-27b-exl3-h1",
       "profile_name": "ExLlamaV3 H1 (SC_2.20bpw_H3_V3)",
       "profile_status": "current",
-      "event_kicker": "Context Envelope — ExLlamaV3 H1",
+      "event_kicker": "Context Envelope \u2014 ExLlamaV3 H1",
       "event_title": "Context envelope completion",
       "welp_status": "GUARDED / MODEL-CARD CONTEXT ENVELOPE COMPLETE",
       "evidence_scope": [
@@ -1846,7 +1904,7 @@
       "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — PROTOCOL_BLOCKED (historical, preserved)",
+      "event_kicker": "Initial Evaluation \u2014 PROTOCOL_BLOCKED (historical, preserved)",
       "event_title": "Initial evaluation (protocol development, PROTOCOL_BLOCKED)",
       "welp_status": "PARTIAL_PROTOCOL_DEVELOPMENT",
       "evidence_scope": [
@@ -1854,7 +1912,7 @@
         "performance"
       ],
       "hardware": "WumboJetsII (RTX 5070 12GB)",
-      "headline": "Protocol development campaign. Phases 0–2 passed; stopped at Phase 3 gate decision. Not a complete WELP capability review.",
+      "headline": "Protocol development campaign. Phases 0\u20132 passed; stopped at Phase 3 gate decision. Not a complete WELP capability review.",
       "authoring": "hand-authored",
       "publication_state": "published",
       "evidence_maturity": "PROTOCOL_BLOCKED",
@@ -1897,7 +1955,7 @@
       "profile_id": "nemotron-3-nano-4b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp Q4_K_M",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -1959,7 +2017,7 @@
       "profile_id": "apodex-1.1-mini-llamacpp-iq1m",
       "profile_name": "llama.cpp IQ1_M (community conversion)",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — Early Stop",
+      "event_kicker": "Initial Evaluation \u2014 Early Stop",
       "event_title": "Initial evaluation (bounded early stop)",
       "welp_status": "BOUNDED_EARLY_STOP / PHASE_3_DO_NOT_ADVANCE",
       "evidence_scope": [
@@ -2010,7 +2068,7 @@
       "profile_id": "lfm2.5-1.2b-llamacpp-qad-q4-0",
       "profile_name": "llama.cpp QAD Q4_0",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+      "event_kicker": "Initial Evaluation \u2014 llama.cpp QAD Q4_0",
       "event_title": "Initial evaluation (small-model evaluation)",
       "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
       "evidence_scope": [
@@ -2021,7 +2079,7 @@
         "performance"
       ],
       "hardware": "WumboJetsII (RTX 5070 12GB)",
-      "headline": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale — every quant including BF16 fabricates confidently on invented subjects.",
+      "headline": "Best always-resident micro-sidecar candidate in the family. Hallucination resistance absent at 1.2B scale \u2014 every quant including BF16 fabricates confidently on invented subjects.",
       "authoring": "hand-authored",
       "publication_state": "published",
       "evidence_maturity": "FULL_EVALUATION",
@@ -2064,7 +2122,7 @@
       "profile_id": "lfm2.5-2.6b-llamacpp-qad-q4-0",
       "profile_name": "llama.cpp QAD Q4_0",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — llama.cpp QAD Q4_0",
+      "event_kicker": "Initial Evaluation \u2014 llama.cpp QAD Q4_0",
       "event_title": "Initial evaluation (small-model evaluation)",
       "welp_status": "COMPLETE_SMALL_MODEL_EVALUATION",
       "evidence_scope": [
@@ -2118,7 +2176,7 @@
       "profile_id": "ornith-1.5-9b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — Full Campaign (NOT_READY)",
+      "event_kicker": "Initial Evaluation \u2014 Full Campaign (NOT_READY)",
       "event_title": "Initial evaluation (full-lifecycle WELP campaign)",
       "welp_status": "COMPLETE / FINAL_WELP_READINESS_NOT_READY",
       "evidence_scope": [
@@ -2172,7 +2230,7 @@
       "profile_id": "qwen35-4b-llamacpp-bf16",
       "profile_name": "llama.cpp BF16 GGUF",
       "profile_status": "current",
-      "event_kicker": "Context Envelope — llama.cpp BF16",
+      "event_kicker": "Context Envelope \u2014 llama.cpp BF16",
       "event_title": "Context envelope completion",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -2229,7 +2287,7 @@
       "profile_id": "qwen35-9b-llamacpp-q8",
       "profile_name": "llama.cpp Q8_0 GGUF",
       "profile_status": "current",
-      "event_kicker": "Context Envelope — llama.cpp Q8_0",
+      "event_kicker": "Context Envelope \u2014 llama.cpp Q8_0",
       "event_title": "Context envelope completion",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -2286,7 +2344,7 @@
       "profile_id": "minicpm5-2b-vllm-bf16",
       "profile_name": "contained vLLM BF16",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — contained vLLM BF16",
+      "event_kicker": "Initial Evaluation \u2014 contained vLLM BF16",
       "event_title": "Initial evaluation (full characterization)",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -2345,7 +2403,7 @@
       "profile_id": "gemma4-e4b-llamacpp-qat-q4-0",
       "profile_name": "llama.cpp official QAT Q4_0",
       "profile_status": "current",
-      "event_kicker": "Initial Evaluation — official QAT Q4_0",
+      "event_kicker": "Initial Evaluation \u2014 official QAT Q4_0",
       "event_title": "Initial evaluation (full characterization)",
       "welp_status": "READY_WITH_GUARDRAILS / CLOSED_WELP_CROSS_FAMILY_CONTROL",
       "evidence_scope": [
@@ -2404,7 +2462,7 @@
       "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
       "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — LLMGauge v0.16 era",
+      "event_kicker": "Benchmark Only \u2014 LLMGauge v0.16 era",
       "event_title": "Early core-v1 + agent-backend-v1 scored runs (QAT Q4)",
       "welp_status": "BENCHMARK_ONLY",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -2455,7 +2513,7 @@
       "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
       "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — honesty ladder",
+      "event_kicker": "Specialized Test \u2014 honesty ladder",
       "event_title": "Honesty ladder smoke (QAT Q4)",
       "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -2506,7 +2564,7 @@
       "profile_id": "gemma-4-12b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M (ggml-org)",
       "profile_status": "specialized",
-      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_kicker": "Benchmark Only \u2014 LMX local speed",
       "event_title": "LMX speed runs across four Gemma 4 12B quants",
       "welp_status": "BENCHMARK_ONLY (LMX local speed)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -2561,7 +2619,7 @@
       "profile_id": "gemmable-4-12b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — agent backend",
+      "event_kicker": "Specialized Test \u2014 agent backend",
       "event_title": "Agent-backend + fake-tool runs",
       "welp_status": "SPECIALIZED_TEST",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -2612,7 +2670,7 @@
       "profile_id": "gemmable-4-12b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_kicker": "Benchmark Only \u2014 LMX local speed",
       "event_title": "LMX speed run",
       "welp_status": "BENCHMARK_ONLY (LMX local speed)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -2662,7 +2720,7 @@
       "profile_id": "grug-12b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — honesty/provenance",
+      "event_kicker": "Specialized Test \u2014 honesty/provenance",
       "event_title": "Honesty smoke + provenance refresh",
       "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -2712,7 +2770,7 @@
       "profile_id": "grug-12b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_kicker": "Benchmark Only \u2014 LMX local speed",
       "event_title": "LMX speed run",
       "welp_status": "BENCHMARK_ONLY (LMX local speed)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -2762,7 +2820,7 @@
       "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
       "profile_name": "llama.cpp Q4_K_M (Instruct)",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — LLMGauge agent-backend-v1",
+      "event_kicker": "Specialized Test \u2014 LLMGauge agent-backend-v1",
       "event_title": "Agent backend fit test (64k, Instruct + Thinking)",
       "welp_status": "SPECIALIZED_TEST / AGENT_BACKEND_FIT_TEST (not a general quality verdict)",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -2818,7 +2876,7 @@
       "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
       "profile_name": "llama.cpp Q4_K_M (Instruct)",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — fake-tool honesty",
+      "event_kicker": "Specialized Test \u2014 fake-tool honesty",
       "event_title": "Fake-tool honesty runs (64k)",
       "welp_status": "SPECIALIZED_TEST / UNSCORED_PROBES",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -2869,7 +2927,7 @@
       "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
       "profile_name": "llama.cpp Q4_K_M (Instruct)",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_kicker": "Benchmark Only \u2014 LMX local speed",
       "event_title": "LocalMaxxing LMX speed runs (Instruct + Thinking)",
       "welp_status": "BENCHMARK_ONLY (LMX local speed)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -2919,7 +2977,7 @@
       "profile_id": "qwen3-14b-ollama-q4km-wumbo",
       "profile_name": "Ollama Q4_K_M (qwen3-14b-wumbo custom tag, historical daily driver)",
       "profile_status": "historical",
-      "event_kicker": "Practical Use — historical daily driver",
+      "event_kicker": "Practical Use \u2014 historical daily driver",
       "event_title": "Practical daily-driver evaluation (Ollama era, qwen3-14b-wumbo tag)",
       "welp_status": "PRACTICAL_USE / PRE_WELP_HISTORICAL",
       "evidence_maturity": "PRACTICAL_USE",
@@ -2969,7 +3027,7 @@
       "profile_id": "qwen3-14b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M (unsloth)",
       "profile_status": "historical",
-      "event_kicker": "Benchmark Only — LMX local speed",
+      "event_kicker": "Benchmark Only \u2014 LMX local speed",
       "event_title": "LMX speed run",
       "welp_status": "BENCHMARK_ONLY (LMX local speed)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3019,7 +3077,7 @@
       "profile_id": "qwen3-14b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M (unsloth)",
       "profile_status": "historical",
-      "event_kicker": "Specialized Test — fit ladder",
+      "event_kicker": "Specialized Test \u2014 fit ladder",
       "event_title": "Fit-ladder success-fallback E2E (LLMGauge feature validation)",
       "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3069,7 +3127,7 @@
       "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
       "profile_name": "llama.cpp Unsloth UD-IQ2_M",
       "profile_status": "historical",
-      "event_kicker": "Benchmark Only — tool-version re-run",
+      "event_kicker": "Benchmark Only \u2014 tool-version re-run",
       "event_title": "LLMGauge v0.71 practical re-run",
       "welp_status": "BENCHMARK_ONLY (TOOL_VERSION_RERUN)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3120,7 +3178,7 @@
       "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m",
       "profile_name": "llama.cpp Unsloth UD-IQ2_M",
       "profile_status": "historical",
-      "event_kicker": "Specialized Test — fit ladder",
+      "event_kicker": "Specialized Test \u2014 fit ladder",
       "event_title": "Fit-ladder E2E (LLMGauge feature validation)",
       "welp_status": "SPECIALIZED_TEST / TOOL_FEATURE_VALIDATION",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3170,7 +3228,7 @@
       "profile_id": "qwen2.5-3b-llamacpp-f16",
       "profile_name": "llama.cpp F16 (comparison reference)",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — cross-runtime methodology lane",
+      "event_kicker": "Benchmark Only \u2014 cross-runtime methodology lane",
       "event_title": "Cross-runtime comparison: llama.cpp F16 vs vLLM BF16",
       "welp_status": "BENCHMARK_ONLY / CROSS_RUNTIME_METHODOLOGY_LANE",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3221,7 +3279,7 @@
       "profile_id": "qwen2.5-3b-vllm-bf16",
       "profile_name": "vLLM BF16 (cross-runtime lane)",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — runtime fingerprint",
+      "event_kicker": "Specialized Test \u2014 runtime fingerprint",
       "event_title": "vLLM fingerprint live smoke",
       "welp_status": "SPECIALIZED_TEST / RUNTIME_FINGERPRINT",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3271,7 +3329,7 @@
       "profile_id": "qwen3.8-2b-empero-vllm-bf16",
       "profile_name": "vLLM BF16 vendor-alignment battery",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — vendor alignment",
+      "event_kicker": "Specialized Test \u2014 vendor alignment",
       "event_title": "LLMGauge vendor-alignment battery (2B bf16)",
       "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3323,7 +3381,7 @@
       "profile_id": "qwen3.8-4b-empero-vendor-battery",
       "profile_name": "LLMGauge vendor-alignment battery (bf16/q4)",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — vendor alignment",
+      "event_kicker": "Specialized Test \u2014 vendor alignment",
       "event_title": "LLMGauge vendor-alignment battery (4B bf16/q4)",
       "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3374,7 +3432,7 @@
       "profile_id": "qwen3.8-4b-empero-distill-llamacpp-q4km-wumboserver",
       "profile_name": "llama.cpp Q4_K_M Distill (WumboServer RTX 2060S lane)",
       "profile_status": "specialized",
-      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_kicker": "Benchmark Only \u2014 WumboServer hardware lane",
       "event_title": "WumboServer RTX 2060S LocalMaxxing 4B Q4_K_M",
       "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3424,7 +3482,7 @@
       "profile_id": "qwen3.8-9b-empero-vendor-battery",
       "profile_name": "LLMGauge vendor-alignment battery Q8_0",
       "profile_status": "current",
-      "event_kicker": "Specialized Test — vendor alignment",
+      "event_kicker": "Specialized Test \u2014 vendor alignment",
       "event_title": "LLMGauge vendor-alignment battery (9B Q8_0)",
       "welp_status": "SPECIALIZED_TEST / VENDOR_ALIGNMENT_BATTERY",
       "evidence_maturity": "SPECIALIZED_TEST",
@@ -3475,7 +3533,7 @@
       "profile_id": "qwen3.8-9b-empero-distill-llamacpp-q4q5q6-wumboserver",
       "profile_name": "llama.cpp Distill Q4_K_M/Q5_K_M/Q6_K (WumboServer RTX 2060S lane)",
       "profile_status": "specialized",
-      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_kicker": "Benchmark Only \u2014 WumboServer hardware lane",
       "event_title": "WumboServer RTX 2060S admission/boundary + LocalMaxxing (Q4/Q5/Q6)",
       "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3525,7 +3583,7 @@
       "profile_id": "bonsai-27b-q1-0-llamacpp",
       "profile_name": "llama.cpp Q1_0 (unscored smoke payload)",
       "profile_status": "specialized",
-      "event_kicker": "Specialized Test — unscored smoke",
+      "event_kicker": "Specialized Test \u2014 unscored smoke",
       "event_title": "LLMGauge v0.70 smoke runs (Q1_0 payload, unscored)",
       "welp_status": "SPECIALIZED_TEST / UNSCORED_SMOKE / IDENTITY_UNRESOLVED",
       "evidence_maturity": "UNRESOLVED_HISTORICAL",
@@ -3574,7 +3632,7 @@
       "profile_id": "ornith-1.5-9b-llamacpp-q4km",
       "profile_name": "llama.cpp Q4_K_M",
       "profile_status": "current",
-      "event_kicker": "Benchmark Only — WumboServer hardware lane",
+      "event_kicker": "Benchmark Only \u2014 WumboServer hardware lane",
       "event_title": "WumboServer RTX 2060S admission benchmark",
       "welp_status": "BENCHMARK_ONLY / HARDWARE_LANE (not a WumboJetsII result)",
       "evidence_maturity": "BENCHMARK_ONLY",
@@ -3624,7 +3682,7 @@
       "profile_id": "qwen38-27b-llamacpp-ud-q2-k-xl",
       "profile_name": "Historical llama.cpp (Unsloth UD-Q2_K_XL GGUF)",
       "profile_status": "historical",
-      "event_kicker": "Profile Optimization — llama.cpp quant selection",
+      "event_kicker": "Profile Optimization \u2014 llama.cpp quant selection",
       "event_title": "llama.cpp quant/variant showdown runs (LLMGauge era)",
       "welp_status": "PROFILE_OPTIMIZATION (historical llama.cpp lane; superseded by ExLlamaV3 H1)",
       "evidence_maturity": "PROFILE_OPTIMIZATION",
@@ -3675,7 +3733,7 @@
       "profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
       "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
       "profile_status": "current",
-      "event_kicker": "WELP Recharacterization — llama.cpp QAT UD-Q4_K_XL",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp QAT UD-Q4_K_XL",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -3737,7 +3795,7 @@
       "profile_id": "qwen3-14b-llamacpp-q4km-q8kv",
       "profile_name": "llama.cpp Q4_K_M q8_0 KV (unsloth artifact, native-max 32K surface)",
       "profile_status": "current",
-      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M q8_0 KV",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp Q4_K_M q8_0 KV",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -3785,7 +3843,7 @@
       "profile_id": "qwen3.6-35b-a3b-llamacpp-ud-iq2-m-q8kv",
       "profile_name": "llama.cpp UD-IQ2_M q8_0 KV (32K text-generation profile)",
       "profile_status": "current",
-      "event_kicker": "WELP Recharacterization — llama.cpp UD-IQ2_M q8_0 KV",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp UD-IQ2_M q8_0 KV",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "LIMITED_ROLE_ONLY",
       "evidence_scope": [
@@ -3834,7 +3892,7 @@
       "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-instruct",
       "profile_name": "llama.cpp Q4_K_M (Instruct)",
       "profile_status": "current",
-      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M (Instruct)",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp Q4_K_M (Instruct)",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "LIMITED_ROLE_ONLY",
       "evidence_scope": [
@@ -3883,7 +3941,7 @@
       "profile_id": "mellum2-12b-a2.5b-llamacpp-q4km-thinking",
       "profile_name": "llama.cpp Q4_K_M (Thinking)",
       "profile_status": "current-alternate",
-      "event_kicker": "WELP Recharacterization — llama.cpp Q4_K_M (Thinking)",
+      "event_kicker": "WELP Recharacterization \u2014 llama.cpp Q4_K_M (Thinking)",
       "event_title": "Current-WELP recharacterization",
       "welp_status": "NOT_READY",
       "evidence_scope": [
@@ -3894,7 +3952,7 @@
       "evidence_maturity": "CURRENT_WELP",
       "event_path": "models/mellum2-12b-a2.5b/events/mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
       "hardware": "WumboJetsII (RTX 5070 12GB)",
-      "headline": "NOT_READY: frozen reliability 3/20 and 3/20 with 20/20 finish=length explicit-CoT truncation per seed; USEFUL_CONTEXT_MAX NONE_VALIDATED (8k and 131k fail both seeds — reasoning exhausts the 512-token reserve) while exact native 131,072 CAPACITY is VALIDATED (99.66-99.76% occupancy, cache-free); quality 11/12; reasoning/coding/tools PASS; pp512 7,710.53 and tg128 270.75 tok/s; the separately published Instruct LIMITED_ROLE_ONLY result is unchanged",
+      "headline": "NOT_READY: frozen reliability 3/20 and 3/20 with 20/20 finish=length explicit-CoT truncation per seed; USEFUL_CONTEXT_MAX NONE_VALIDATED (8k and 131k fail both seeds \u2014 reasoning exhausts the 512-token reserve) while exact native 131,072 CAPACITY is VALIDATED (99.66-99.76% occupancy, cache-free); quality 11/12; reasoning/coding/tools PASS; pp512 7,710.53 and tg128 270.75 tok/s; the separately published Instruct LIMITED_ROLE_ONLY result is unchanged",
       "canonical_evidence": {
         "state": "published",
         "repo": "WumboLabs/evaluations",
@@ -3926,7 +3984,7 @@
       "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp",
       "profile_name": "llama.cpp PTQ1_0 (reasoning-on, vendor default)",
       "profile_status": "historical",
-      "event_kicker": "WELP Characterization — PrismML PTQ1_0 ternary (reasoning-on)",
+      "event_kicker": "WELP Characterization \u2014 PrismML PTQ1_0 ternary (reasoning-on)",
       "event_title": "Current-WELP characterization + compression-retention + RTX 2060 SUPER portability",
       "welp_status": "NOT_READY",
       "evidence_scope": [
@@ -3974,7 +4032,7 @@
       "profile_id": "bonsai2-27b-ptq1-0-prism-llamacpp-thinking-off",
       "profile_name": "llama.cpp PTQ1_0 (thinking-off)",
       "profile_status": "current",
-      "event_kicker": "WELP Methodology-Revision Supplement — PrismML PTQ1_0 (thinking-off)",
+      "event_kicker": "WELP Methodology-Revision Supplement \u2014 PrismML PTQ1_0 (thinking-off)",
       "event_title": "Methodology-revision supplement (thinking-off profile)",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -4020,7 +4078,7 @@
       "profile_id": "spark25-4b-q8-0-llamacpp",
       "profile_name": "llama.cpp upstream official Q8_0 (reasoning-on, vendor default)",
       "profile_status": "current",
-      "event_kicker": "WELP Characterization — iFlytek Spark-X2.5-4B (reasoning-on)",
+      "event_kicker": "WELP Characterization \u2014 iFlytek Spark-X2.5-4B (reasoning-on)",
       "event_title": "Current-WELP characterization (official Q8_0, upstream llama.cpp b10999)",
       "welp_status": "READY_WITH_GUARDRAILS",
       "evidence_scope": [
@@ -4057,6 +4115,54 @@
         "sha256": "a93b2c8c3d9049e9007aa70c7a7bb29b5f0687ad3e566c5ab3559ef92ad01d09",
         "commit": "3fe25165969c303ad32dd5002943f17e368993e0"
       }
+    },
+    {
+      "slug": "eval-lfm25-8b-a1b-rtx5070-welp-20260923",
+      "event_id": "lfm25-8b-a1b-rtx5070-welp-20260923",
+      "event_type": "recharacterization",
+      "event_date": "2026-09-23",
+      "record_date": "2026-09-24",
+      "model_id": "lfm2.5-8b-a1b",
+      "profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+      "profile_name": "llama.cpp upstream official Q6_K (reasoning-on, publisher sampler)",
+      "profile_status": "current",
+      "event_kicker": "WELP Prospective Retest \u2014 Liquid AI LFM2.5-8B-A1B (reasoning-on)",
+      "event_title": "Prospective retest with reliability-class calibration and proven uncached timing (official Q6_K, upstream llama.cpp b10999)",
+      "welp_status": "NOT_READY",
+      "evidence_scope": [
+        "performance",
+        "capabilities",
+        "reliability",
+        "context",
+        "localmaxxing",
+        "model-classification"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "NOT_READY (R-C3) on the canonical reasoning-on profile: budget discipline is GOOD (60/60 reliability completions inside the 2048-token operational SLO) but the reliability gate does not advance - seed-42 uncertainty 1/3, hallucination 2/4, strict 1/3, instability range 5, plus a git-safety UNSAFE under the frozen rule. Family A 1.2 placement preflight passed everywhere (max error 0.464 pp, >=99% occupancy) and every completed answer failed at least one useful-context gate (disposition FAILED). pp512 9,069.65 / tg128 350.39 tok/s; near-full 128K prefill 8,854 tok/s at 99.94% occupancy; LocalMaxxing SUBMITTED NEW (cmuesvedt0blllq01g15im5np, 349.51 tok/s out, service-unverified as served). Campaign execution COMPLETE_PASS; two prior events stopped on campaign-application defects and are retained unchanged.",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/REPORT.md",
+        "commit": "e7ea77de15f214d2ba84b5a182e07ecbb45ba1ce"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
+        "source_bundle": "research/model-evaluations/lfm2.5-8b-a1b/lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_report_sha256": "7000242c4d9badf09a77ea4b260987fb8284d97f139eafe53478e9a101e7585c",
+        "published_date": "2026-09-24",
+        "note": "Native current-WELP event under the consolidated architecture; no eval-* repository. Campaign measurement snapshot welp-next-snapshot-2026-09-23-profile-identity-clarification (WELP commit 2a3bdbb283158e863d3e38125fffa7d1e205fbec, DRAFT - NOT v1.0); classification contract welp-final-classification-0.3.1-draft. Third linked event: characterization 2026-09-22 (BLOCKED, fixture-limited) and prospective 2026-09-23 (BLOCKED, short-class calibration stop) retained unchanged and unpublished."
+      },
+      "source": {
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/website-publication.json",
+        "sha256": "7650c3ec23302eb186340eed315dc13d37ca1051dbec66a88f498ae5dbf3ccd2",
+        "commit": "e7ea77de15f214d2ba84b5a182e07ecbb45ba1ce"
+      }
     }
   ],
   "shared_events": [
@@ -4068,7 +4174,7 @@
       "record_date": "2026-06-21",
       "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
       "profile_status": "current",
-      "event_kicker": "Practical Use — LLMGauge wumbolabs-practical-use-v1",
+      "event_kicker": "Practical Use \u2014 LLMGauge wumbolabs-practical-use-v1",
       "event_title": "12B Gemma practical-use test (QAT vs UD-Q5 vs Gemmable)",
       "welp_status": "PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)",
       "evidence_maturity": "PRACTICAL_USE",
@@ -4143,7 +4249,7 @@
       "record_date": "2026-07-04",
       "profile_name": "llama.cpp official QAT Q4_0 (google GGUF, UD-Q4_K_XL packaging)",
       "profile_status": "current",
-      "event_kicker": "Practical Use — shared comparison (canonical)",
+      "event_kicker": "Practical Use \u2014 shared comparison (canonical)",
       "event_title": "12B practical pool comparison v025 + Grug",
       "welp_status": "PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical)",
       "evidence_maturity": "PRACTICAL_USE",
@@ -5013,6 +5119,7 @@
     "mellum2-12b-a25b-thinking-rtx5070-welp-recharacterization-2026-09-16",
     "bonsai2-27b-rtx5070-welp-20260918",
     "bonsai2-27b-rtx5070-welp-methodology-supplement-20260920",
-    "spark25-4b-rtx5070-welp-20260920"
+    "spark25-4b-rtx5070-welp-20260920",
+    "lfm25-8b-a1b-rtx5070-welp-20260923"
   ]
 }

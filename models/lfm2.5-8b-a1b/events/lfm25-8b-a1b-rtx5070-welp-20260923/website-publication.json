@@ -1,7 +1,7 @@
 {
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "lfm2.5-8b-a1b-rtx5070-welp-prospective-retest-2-2026-09-23",
-  "disposition": "WEBSITE_READY",
+  "disposition": "WEBSITE_PUBLISHED",
   "model": {
     "producer": "Liquid AI",
     "official_id": "LiquidAI/LFM2.5-8B-A1B",
@@ -68,7 +68,11 @@
     "ttft_ms": 68.30164580314886
   },
   "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE"
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "commit": "e7ea77de15f214d2ba84b5a182e07ecbb45ba1ce",
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/e7ea77de15f214d2ba84b5a182e07ecbb45ba1ce/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-welp-20260923/REPORT.md"
   },
   "identity": {
     "model_id": "lfm2.5-8b-a1b",
