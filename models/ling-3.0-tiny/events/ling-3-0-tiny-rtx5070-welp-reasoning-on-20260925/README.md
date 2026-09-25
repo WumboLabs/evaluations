@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/31005a04b7058ab81b403d948019c2fc2bf83ae8/models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/2f482001371973fd3a4cbde2c9a3c4973979e0a6/models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925/website-publication.json)
