@@ -1,8 +1,8 @@
 {
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-off-2026-09-25",
-  "disposition": "WEBSITE_READY",
-  "reason": "Success-branch event under the standing automatic-closeout authorization; central evidence published and pinned, website sync follows. Intermediate WEBSITE_READY driven to WEBSITE_PUBLISHED at terminal closeout after live verification.",
+  "disposition": "WEBSITE_PUBLISHED",
+  "reason": "Terminal disposition: success-branch campaign (COMPLETE_PASS, zero methodology defects); central evidence published and pinned (evaluations commit e0a8e71ebd2c), website synced/built/deployed, live model page verified 2026-09-25 rendering both reasoning profiles with independent verdicts (never averaged).",
   "publication_date": "2026-09-25",
   "model": {
     "display_name": "Ling 3.0 Tiny",
@@ -49,8 +49,11 @@
     "note": "this profile's own bench re-measurement; consistent with the existing service record (benchmark does not exercise the reasoning control; no duplicate submitted)"
   },
   "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE",
-    "proposed_repo": "WumboLabs/evaluations"
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/REPORT.md",
+    "commit": "e0a8e71ebd2c966a9cd145257025c7bf78fbf094",
+    "url": "https://github.com/WumboLabs/evaluations/blob/e0a8e71ebd2c966a9cd145257025c7bf78fbf094/models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/REPORT.md"
   },
   "website_record_slug": "eval-ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
   "identity": {
