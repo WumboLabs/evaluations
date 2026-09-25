@@ -52,5 +52,14 @@
     "commit": "adcfa178b6dd9b52eede2c433ffc691dbcd26941",
     "url": "https://github.com/WumboLabs/evaluations/blob/adcfa178b6dd9b52eede2c433ffc691dbcd26941/models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/REPORT.md"
   },
-  "public_summary": "Linked completion of the first WELP stabilization-cohort campaign (Granite 4.2 8B, RTX 5070, official Q4_K_M GGUF, llama.cpp b10999). Reuses every retained raw inference output byte-identically, re-derives the answerless Controlled Context cell under the repaired methodology, and derives the model verdict the predecessor could not publish."
+  "public_summary": "Linked completion of the first WELP stabilization-cohort campaign (Granite 4.2 8B, RTX 5070, official Q4_K_M GGUF, llama.cpp b10999). Reuses every retained raw inference output byte-identically, re-derives the answerless Controlled Context cell under the repaired methodology, and derives the model verdict the predecessor could not publish.",
+  "identity": {
+    "model_id": "granite-4.2-8b",
+    "profile_id": "granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment",
+    "event_id": "granite-42-8b-rtx5070-welp-context-completion-20260924",
+    "event_type": "initial-evaluation",
+    "event_date": "2026-09-24",
+    "profile_status": "current",
+    "predecessor_campaign": "granite-4.2-8b-rtx5070-welp-characterization-2026-09-24"
+  }
 }
