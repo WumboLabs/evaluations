@@ -1,0 +1,59 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+  "disposition": "WEBSITE_READY",
+  "reason": "Campaign execution COMPLETE_PASS on the success branch; standing automatic-closeout authorization covers central publication and website sync. Disposition advances to WEBSITE_PUBLISHED after central commit + website live verification.",
+  "publication_date": "2026-09-24",
+  "model": {
+    "display_name": "Ling 3.0 Tiny",
+    "publisher": "inclusionAI (Ant Group)",
+    "hf_id": "inclusionAI/Ling-3.0-tiny",
+    "revision": "9a98e35fe1c9ee255f78dd64771c7ae15a799481"
+  },
+  "artifact": {
+    "kind": "GGUF",
+    "filename": "Ling-3.0-tiny-Q8_0.gguf",
+    "quantization": "Q8_0",
+    "source_repo": "inclusionAI/Ling-3.0-tiny-GGUF",
+    "source_revision": "01b850e29ed5b44e2b810160ff980a9bb353296f",
+    "sha256": "9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6"
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "build": "build-cuda-sm120",
+    "commit": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063",
+    "tag": "b10999"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12 GB",
+    "host_class": "consumer workstation"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification_note": "readiness derived from valid evidence (bundle valid, zero errors): NOT_READY (R-C3) - SEMANTIC_CAPABILITY WEAK / BUDGET_DISCIPLINE GOOD / CONTEXT_USABILITY VALIDATED / INTEGRATION_QUALITY CLEAN; a valid terminal negative verdict",
+    "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment"
+  },
+  "context": {
+    "configured": 32768,
+    "note": "coverage COMPLETE 28/28 cells across 8192..262144 (native max 131072 PARTIAL mixed-seed; advertised 262144 YaRN extension max VALIDATED with mechanism evidence); practical rung 32768 validated both lanes; useful-context maximum 262144 both lanes by the frozen rule, non-monotonic at 128K/192K (seed-dependent)"
+  },
+  "quality": {
+    "assistant_quality_note": "Deployment lane 11/12, Minimal 4/4, Publisher 12/12 (supporting diagnostics, never headline)",
+    "reliability_headline": "semantic evaluable-rate 0.79 (14/40 truncated by reasoning starvation), operational 0.757; gate DO_NOT_ADVANCE (R7 fabrication-refusal unproven, R8 strict-JSON fence wrapping); safety: zero unsafe behavior (4/4 blinded NO_UNSAFE_BEHAVIOR)",
+    "real_work": "Tool Recovery PASS; Linux Diagnosis PASS/NOT_EVALUABLE; Document Synthesis FAIL (truncation); Repository Repair PASS (corrected execution, 2/0 blinded); Multi-Turn FAIL (strict JSON); Multi-Document practical FAIL (strict JSON)"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "service_record_id": "cmugffasg0dohlq01bekesaf0",
+    "pp512_tok_s": 8941.82,
+    "tg128_tok_s": 244.23
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "target_repo": "WumboLabs/evaluations"
+  },
+  "public_summary": "Ling 3.0 Tiny (inclusionAI) Q8_0 on the pinned llama.cpp b10999 CUDA build reaches 244 tok/s decode and 8.9k tok/s prefill on an RTX 5070 12 GB, with validated controlled-context behavior from 8K through the 32K practical rung and validated cells to the 256K YaRN extension maximum. The frozen reliability gate returns DO_NOT_ADVANCE: default thinking consumes small generation budgets (35% semantic-lane truncation) and strict-JSON answers get wrapped in markdown fences, so the derived classification is NOT_READY despite excellent performance and context capability.",
+  "website_record_slug": "ling-3-0-tiny",
+  "website_record_slug_note": "website model-page slug per the deterministic display-name slug convention (ling 3.0 tiny -> ling-3-0-tiny), matching the central model_id assigned at publication"
+}

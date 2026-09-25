@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "ling-3.0-tiny",
+  "model_display_name": "Ling 3.0 Tiny (reasoning-on canonical)",
+  "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+  "profile_display_name": "llama.cpp official Q8_0 (reasoning-on, deployment sampler, 32K)",
+  "runtime_family": "llama.cpp (upstream)",
+  "artifact": "inclusionAI/Ling-3.0-tiny-GGUF@01b850e2 :: Ling-3.0-tiny-Q8_0.gguf (sha256 9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/ling-3.0-tiny/profiles/ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+  "event_ids": [
+    "ling-3-0-tiny-rtx5070-welp-characterization-20260924"
+  ],
+  "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+  "artifact_precision": "Q8_0 official publisher GGUF; f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (24/24 layers), -fa on, f16 KV, -np 1, embedded GGUF Bailing-V3 Jinja template, DEPLOYMENT sampler (temp 0.2 / top_k 80 / top_p 1.0 / repeat_penalty 1.05); effective reasoning ON (bailing v3 thinking default; enable_thinking=false OFF control proven effective but not the campaign profile). Default context 32,768 / native exact 131,072 / advertised 262,144 (YaRN x2.0, mechanism-qualified on this runtime); uncached scientific arms via --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false (proven by repeated-prompt probe). Publisher sampler (temp 1.0 / top_k 20 / top_p 0.95) measured as a matched comparison, never pooled.",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-24",
+    "note": "Native profile created at first publication of event ling-3-0-tiny-rtx5070-welp-characterization-20260924. Second WELP stabilization-cohort campaign (CLEAN, clean-count 2); executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS."
+  }
+}

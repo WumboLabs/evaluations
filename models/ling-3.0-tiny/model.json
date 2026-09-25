@@ -1,0 +1,35 @@
+{
+  "model_id": "ling-3.0-tiny",
+  "display_name": "Ling 3.0 Tiny",
+  "vendor": "inclusionAI (Ant Group)",
+  "weight": 25,
+  "aliases": [
+    "ling-3.0-tiny",
+    "ling30-tiny",
+    "ling-3-0-tiny"
+  ],
+  "website_slug": "ling-3-0-tiny",
+  "website_url": "https://wumbolabs.dev/evaluations/ling-3-0-tiny/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "localmaxxing": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "performance": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "capabilities": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "serving-profile": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "specialized": null,
+    "practical-use": null,
+    "context": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "reliability": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "recommended_profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+    "classification": "NOT_READY",
+    "profile_ids": [
+      "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment"
+    ],
+    "event_ids": [
+      "ling-3-0-tiny-rtx5070-welp-characterization-20260924"
+    ]
+  },
+  "context_summary": "Native 131,072-token context (config + GGUF measured); 262,144 advertised extension via YaRN x2.0 (model card, EXTERNAL_REPORTED; mechanism qualified on the pinned runtime). Measured on the 12 GB card with official Q8_0 (9,142 MiB at the native max): 32,768 configured practical context; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 at near-full occupancy (max placement error 0.374 pp), capability VALIDATED at the practical rung, useful-context maximum 262,144 both lanes by the frozen rule with a measured seed-dependent dip at 131,072/196,608 (native max PARTIAL). YaRN extension cells measured on mechanism-qualified arms. Classification NOT_READY (R-C3): SEMANTIC_CAPABILITY WEAK (reasoning starvation + strict-JSON fence wrapping; R7/R8 DO_NOT_ADVANCE), BUDGET_DISCIPLINE GOOD, CONTEXT_USABILITY VALIDATED, INTEGRATION_QUALITY CLEAN."
+}

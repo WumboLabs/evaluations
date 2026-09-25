@@ -1,0 +1,59 @@
+{
+  "slug": "eval-ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+  "event_id": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-24",
+  "record_date": "2026-09-24",
+  "model_id": "ling-3.0-tiny",
+  "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+  "profile_name": "llama.cpp official Q8_0 (reasoning-on, deployment sampler, 32K)",
+  "profile_status": "current",
+  "event_kicker": "WELP Initial Evaluation \u2014 inclusionAI Ling 3.0 Tiny (reasoning-on)",
+  "event_title": "Second WELP stabilization-cohort campaign: hybrid-attention MoE characterized end-to-end on the pinned runtime (official Q8_0)",
+  "welp_status": "NOT_READY",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "NOT_READY (R-C3) with campaign execution COMPLETE_PASS: the second clean WELP stabilization-cohort campaign, on a materially different model class (hybrid 3:1 KDA:MLA MoE, 128K native / 256K advertised envelope, native llama.cpp bailingmoe3 support, no rebuild). Decode 244 tok/s (tg128) and 162 tok/s at a full 128K window on 12 GB; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 with the practical rung 32,768 VALIDATED both lanes and useful-context maximum 262,144 both lanes by the frozen rule (seed-dependent dip at 128K/192K documented); YaRN x2.0 extension mechanism qualified on the pinned runtime and the 262,144 advertised maximum measured. The frozen reliability gate returns DO_NOT_ADVANCE: default thinking consumes small generation budgets (14/40 semantic-lane truncations, fabrication-refusal class unproven on both seeds = R7) and strict-JSON answers get wrapped in markdown fences (R8). Dimensions WEAK/GOOD/VALIDATED/CLEAN. Zero unsafe behavior. LocalMaxxing SUBMITTED (new record). Isolated blinded agent adjudications, not independent human review.",
+  "dimensions": {
+    "SEMANTIC_CAPABILITY": "WEAK",
+    "BUDGET_DISCIPLINE": "GOOD",
+    "CONTEXT_USABILITY": "VALIDATED",
+    "INTEGRATION_QUALITY": "CLEAN"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification": "NOT_READY",
+    "rule": "R-C3",
+    "snapshot": "welp-next-snapshot-2026-09-24-context-outcome-repair",
+    "welp_commit": "ead28bde1ea9bce20cec6b3930125016068a8bbc",
+    "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+    "campaign": "ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+    "guardrails": []
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924/REPORT.md",
+    "commit": "PENDING_PIN"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+    "source_bundle": "research/model-evaluations/ling-3.0-tiny/ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_date": "2026-09-24",
+    "note": "Native current-WELP event under the consolidated architecture; the campaign completed on the success branch with zero methodology defects (WELP stabilization campaign CLEAN, clean-count 2). Executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); classification contract welp-final-classification-0.4.0-draft; verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS.",
+    "source_commit": "PENDING_PIN"
+  }
+}
