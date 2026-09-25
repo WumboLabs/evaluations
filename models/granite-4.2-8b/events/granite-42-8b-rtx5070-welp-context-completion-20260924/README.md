@@ -19,3 +19,5 @@
 The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
 
 ## Provenance
+
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/e46d1c4ecf4969990a248861cd4dc606d67fe2aa/models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/website-publication.json)
