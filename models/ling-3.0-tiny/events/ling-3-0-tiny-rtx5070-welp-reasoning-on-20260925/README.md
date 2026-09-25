@@ -6,7 +6,7 @@
 - **Date:** 2026-09-25
 - **Models:** Ling 3.0 Tiny
 - **Profiles:** `ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment`
-- **Type:** reasoning-profile-characterization
+- **Type:** welp-recharacterization
 - **Status:** NOT_READY
 - **Evidence maturity:** CURRENT_WELP
 

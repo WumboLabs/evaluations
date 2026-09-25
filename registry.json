@@ -4509,7 +4509,7 @@
     {
       "slug": "eval-ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
       "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
-      "event_type": "reasoning-profile-characterization",
+      "event_type": "welp-recharacterization",
       "event_date": "2026-09-25",
       "record_date": "2026-09-25",
       "model_id": "ling-3.0-tiny",
@@ -4558,7 +4558,7 @@
     {
       "slug": "eval-ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
       "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
-      "event_type": "reasoning-profile-characterization",
+      "event_type": "follow-up",
       "event_date": "2026-09-25",
       "record_date": "2026-09-25",
       "model_id": "ling-3.0-tiny",
