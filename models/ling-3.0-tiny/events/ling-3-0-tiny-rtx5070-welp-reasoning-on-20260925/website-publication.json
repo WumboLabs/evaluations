@@ -52,7 +52,7 @@
     "state": "PENDING_HUMAN_GATE",
     "proposed_repo": "WumboLabs/evaluations"
   },
-  "website_record_slug": "ling-3-0-tiny",
+  "website_record_slug": "eval-ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
   "identity": {
     "model_id": "ling-3-0-tiny",
     "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
