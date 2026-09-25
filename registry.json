@@ -4546,12 +4546,12 @@
         "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
         "published_date": "2026-09-25",
         "note": "Reuse/re-derivation event under welp-reasoning-topology-0.1.0-draft: full migration matrix (REUSE/RE-DERIVED/INCOMPARABLE) in the campaign's REUSE-MIGRATION.md; the source event stays immutable. Executed under snapshot welp-next-snapshot-2026-09-25-reasoning-profiles (WELP commit 193cb645c81440cc1232447f3ebc32a8197a7f3e, DRAFT - NOT v1.0).",
-        "source_commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+        "source_commit": "31005a04b7058ab81b403d948019c2fc2bf83ae8"
       },
       "source": {
         "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925/website-publication.json",
-        "sha256": "e64b6e0161bd04040fb92ab75f6f661d3fde5c063e9c517c4336d6426597637e",
-        "commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+        "sha256": "f91f640fa158bb451dc0f1e861946e8082dbac8a5792eaf0e37999ad68dd3454",
+        "commit": "31005a04b7058ab81b403d948019c2fc2bf83ae8"
       }
     },
     {
@@ -4594,12 +4594,12 @@
         "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
         "published_date": "2026-09-25",
         "note": "Full independent WELP profile campaign under welp-next-snapshot-2026-09-25-reasoning-profiles (WELP commit 193cb645c81440cc1232447f3ebc32a8197a7f3e, DRAFT - NOT v1.0); artifact restored from the verified canonical archive with SHA-256 re-verification; LocalMaxxing VERIFIED_EXISTING (the llama-bench record does not exercise the reasoning control).",
-        "source_commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+        "source_commit": "31005a04b7058ab81b403d948019c2fc2bf83ae8"
       },
       "source": {
         "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/website-publication.json",
-        "sha256": "cbbcd065fc5252074053f2bdedd86c24796a3faddb5444cbda837724643ac327",
-        "commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+        "sha256": "8bf4b2cfddcdd42ba94ffe462480c62d0ed974e2231e48ec4140008d93aa8bff",
+        "commit": "31005a04b7058ab81b403d948019c2fc2bf83ae8"
       }
     }
   ],
