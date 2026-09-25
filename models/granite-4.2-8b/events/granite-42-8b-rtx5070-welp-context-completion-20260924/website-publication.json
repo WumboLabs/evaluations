@@ -2,7 +2,7 @@
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "granite-4.2-8b-rtx5070-welp-context-outcome-completion-2026-09-24",
   "disposition": "WEBSITE_PUBLISHED",
-  "website_record_slug": "granite-4-2-8b",
+  "website_record_slug": "eval-granite-42-8b-rtx5070-welp-context-completion-20260924",
   "reason": "COMPLETE_PASS successor campaign with a freshly derived terminal classification; publication authorized under the standing clean-success closeout.",
   "publication_date": "2026-09-24",
   "model": {
