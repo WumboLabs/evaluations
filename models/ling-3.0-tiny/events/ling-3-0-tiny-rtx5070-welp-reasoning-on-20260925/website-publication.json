@@ -1,0 +1,46 @@
+{
+  "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-on-2026-09-25",
+  "canonical_evidence": {
+    "proposed_repo": "WumboLabs/evaluations",
+    "state": "PENDING_HUMAN_GATE"
+  },
+  "disposition": "WEBSITE_READY",
+  "identity": {
+    "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "event_type": "reasoning-profile-characterization",
+    "evidence_scope": [
+      "reasoning-on-profile"
+    ],
+    "model_id": "ling-3-0-tiny",
+    "profile_id": "ling-3-0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+    "profile_status": "current",
+    "related_profile_ids": [
+      "ling-3-0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off"
+    ]
+  },
+  "model": {
+    "display_name": "Ling 3.0 Tiny"
+  },
+  "publication_date": "2026-09-25",
+  "reason": "Reasoning On reuse event closed (re-derived classification validator-approved); publication proceeds under the standing automatic-closeout authorization after central evidence publication.",
+  "reasoning_profiles": [
+    {
+      "display_name": "Reasoning On",
+      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+      "profile": "reasoning-on",
+      "publisher_default": true,
+      "readiness": "NOT_READY",
+      "summary": "Publisher/default profile (re-derived under the 2026-09-25 snapshot from retained evidence): NOT_READY (R-C3), semantic WEAK (reasoning starvation), budget GOOD, context VALIDATED."
+    },
+    {
+      "display_name": "Reasoning Off",
+      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+      "profile": "reasoning-off",
+      "publisher_default": false,
+      "readiness": "NOT_READY",
+      "summary": "Supported alternate deployment profile: NOT_READY (R-C3) via replicated fabrication; semantic ACCEPTABLE, excellent budget discipline. Verdicts are per-profile and never averaged."
+    }
+  ],
+  "schema": "wumbolabs-labs-publication/1",
+  "website_record_slug": "ling-3-0-tiny"
+}
