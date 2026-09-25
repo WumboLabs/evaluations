@@ -809,6 +809,41 @@
         ]
       },
       "context_summary": "Native 128,000-token context; 524,288 advertised extension (IBM). Measured on the 12 GB card: 32,768 configured practical context with full-GPU placement (f16 KV, FA on); 65,536, 131,072 and 524,288 FIT_LIMIT (measured load failure and derived arithmetic); 8,192 RESERVE_LIMITED on the semantic lane (the frozen 8,192-token reserve leaves no constructible cell). Controlled Context under the repaired welp-context 0.3.0 methodology: coverage COMPLETE 8/8 (7 VALIDATED + 1 measured BUDGET_LIMITED answerless cell at 16K/semantic that covers coverage and never validates capability), capability VALIDATED at the practical rung, USEFUL_CONTEXT_MAX 32,768 tokens on both lanes, max placement error 0.349 pp. Multi-Document Context practical cell (24,576 usable tokens) PASS. Classification NOT_READY (R-C3) is terminal on this profile: replicated semantic-lane fabrication guardrail (R7 FAIL, DO_NOT_ADVANCE) with dimensions ACCEPTABLE/GOOD/VALIDATED/CLEAN."
+    },
+    {
+      "model_id": "ling-3.0-tiny",
+      "display_name": "Ling 3.0 Tiny",
+      "vendor": "inclusionAI (Ant Group)",
+      "weight": 25,
+      "aliases": [
+        "ling-3.0-tiny",
+        "ling30-tiny",
+        "ling-3-0-tiny"
+      ],
+      "website_slug": "ling-3-0-tiny",
+      "website_url": "https://wumbolabs.dev/evaluations/ling-3-0-tiny/",
+      "current_state": {
+        "agent-backend": null,
+        "protocol-development": null,
+        "model-classification": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "localmaxxing": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "performance": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "capabilities": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "serving-profile": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "specialized": null,
+        "practical-use": null,
+        "context": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "reliability": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+        "recommended_profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+        "classification": "NOT_READY",
+        "profile_ids": [
+          "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment"
+        ],
+        "event_ids": [
+          "ling-3-0-tiny-rtx5070-welp-characterization-20260924"
+        ]
+      },
+      "context_summary": "Native 131,072-token context (config + GGUF measured); 262,144 advertised extension via YaRN x2.0 (model card, EXTERNAL_REPORTED; mechanism qualified on the pinned runtime). Measured on the 12 GB card with official Q8_0 (9,142 MiB at the native max): 32,768 configured practical context; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 at near-full occupancy (max placement error 0.374 pp), capability VALIDATED at the practical rung, useful-context maximum 262,144 both lanes by the frozen rule with a measured seed-dependent dip at 131,072/196,608 (native max PARTIAL). YaRN extension cells measured on mechanism-qualified arms. Classification NOT_READY (R-C3): SEMANTIC_CAPABILITY WEAK (reasoning starvation + strict-JSON fence wrapping; R7/R8 DO_NOT_ADVANCE), BUDGET_DISCIPLINE GOOD, CONTEXT_USABILITY VALIDATED, INTEGRATION_QUALITY CLEAN."
     }
   ],
   "profiles": [
@@ -1764,6 +1799,30 @@
         "kind": "native",
         "published_date": "2026-09-24",
         "note": "Native profile created at first publication of event granite-42-8b-rtx5070-welp-context-completion-20260924. Linked completion of the retained unpublished predecessor campaign (granite-4.2-8b-rtx5070-welp-characterization-2026-09-24, COMPLETE_WITH_GAPS on METHODOLOGY_DEFECT D-01), which is preserved unchanged. Executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); classification contract welp-final-classification-0.4.0-draft; verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS."
+      }
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "ling-3.0-tiny",
+      "model_display_name": "Ling 3.0 Tiny (reasoning-on canonical)",
+      "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+      "profile_display_name": "llama.cpp official Q8_0 (reasoning-on, deployment sampler, 32K)",
+      "runtime_family": "llama.cpp (upstream)",
+      "artifact": "inclusionAI/Ling-3.0-tiny-GGUF@01b850e2 :: Ling-3.0-tiny-Q8_0.gguf (sha256 9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6)",
+      "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/ling-3.0-tiny/profiles/ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+      "event_ids": [
+        "ling-3-0-tiny-rtx5070-welp-characterization-20260924"
+      ],
+      "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+      "artifact_precision": "Q8_0 official publisher GGUF; f16 K/V cache (FA on)",
+      "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (24/24 layers), -fa on, f16 KV, -np 1, embedded GGUF Bailing-V3 Jinja template, DEPLOYMENT sampler (temp 0.2 / top_k 80 / top_p 1.0 / repeat_penalty 1.05); effective reasoning ON (bailing v3 thinking default; enable_thinking=false OFF control proven effective but not the campaign profile). Default context 32,768 / native exact 131,072 / advertised 262,144 (YaRN x2.0, mechanism-qualified on this runtime); uncached scientific arms via --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false (proven by repeated-prompt probe). Publisher sampler (temp 1.0 / top_k 20 / top_p 0.95) measured as a matched comparison, never pooled.",
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-09-24",
+        "note": "Native profile created at first publication of event ling-3-0-tiny-rtx5070-welp-characterization-20260924. Second WELP stabilization-cohort campaign (CLEAN, clean-count 2); executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS."
       }
     }
   ],
@@ -4348,6 +4407,49 @@
         "sha256": "978d09e20e166ff7ecec559a1b10a5a7d3de10292aa663ac3e6ce6e018cced1b",
         "commit": "250afdf042677d8c6dc19275c357ad0f5a2b870a"
       }
+    },
+    {
+      "slug": "eval-ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+      "event_id": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+      "event_type": "initial-evaluation",
+      "event_date": "2026-09-24",
+      "record_date": "2026-09-24",
+      "model_id": "ling-3.0-tiny",
+      "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+      "profile_name": "llama.cpp official Q8_0 (reasoning-on, deployment sampler, 32K)",
+      "profile_status": "current",
+      "event_kicker": "WELP Initial Evaluation \u2014 inclusionAI Ling 3.0 Tiny (reasoning-on)",
+      "event_title": "Second WELP stabilization-cohort campaign: hybrid-attention MoE characterized end-to-end on the pinned runtime (official Q8_0)",
+      "welp_status": "NOT_READY",
+      "evidence_scope": [
+        "performance",
+        "capabilities",
+        "reliability",
+        "context",
+        "localmaxxing",
+        "model-classification"
+      ],
+      "authoring": "generated",
+      "publication_state": "published",
+      "evidence_maturity": "CURRENT_WELP",
+      "event_path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+      "hardware": "WumboJetsII (RTX 5070 12GB)",
+      "headline": "NOT_READY (R-C3) with campaign execution COMPLETE_PASS: the second clean WELP stabilization-cohort campaign, on a materially different model class (hybrid 3:1 KDA:MLA MoE, 128K native / 256K advertised envelope, native llama.cpp bailingmoe3 support, no rebuild). Decode 244 tok/s (tg128) and 162 tok/s at a full 128K window on 12 GB; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 with the practical rung 32,768 VALIDATED both lanes and useful-context maximum 262,144 both lanes by the frozen rule (seed-dependent dip at 128K/192K documented); YaRN x2.0 extension mechanism qualified on the pinned runtime and the 262,144 advertised maximum measured. The frozen reliability gate returns DO_NOT_ADVANCE: default thinking consumes small generation budgets (14/40 semantic-lane truncations, fabrication-refusal class unproven on both seeds = R7) and strict-JSON answers get wrapped in markdown fences (R8). Dimensions WEAK/GOOD/VALIDATED/CLEAN. Zero unsafe behavior. LocalMaxxing SUBMITTED (new record). Isolated blinded agent adjudications, not independent human review.",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924/REPORT.md",
+        "commit": "43f56d8add4b3dfc51183ccd818fc6037e79bd9c"
+      },
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+        "source_bundle": "research/model-evaluations/ling-3.0-tiny/ling-3.0-tiny-rtx5070-welp-characterization-2026-09-24",
+        "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+        "published_date": "2026-09-24",
+        "note": "Native current-WELP event under the consolidated architecture; the campaign completed on the success branch with zero methodology defects (WELP stabilization campaign CLEAN, clean-count 2). Executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); classification contract welp-final-classification-0.4.0-draft; verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS.",
+        "source_commit": "43f56d8add4b3dfc51183ccd818fc6037e79bd9c"
+      }
     }
   ],
   "shared_events": [
@@ -5257,6 +5359,7 @@
     "Bonsai upstream artifact identity remains unresolved; its previously published bounded summary is imported without claiming stronger provenance."
   ],
   "website_event_order": [
+    "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
     "granite-42-8b-rtx5070-welp-context-completion-20260924",
     "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
     "initial-evaluation-2026-08-21",
