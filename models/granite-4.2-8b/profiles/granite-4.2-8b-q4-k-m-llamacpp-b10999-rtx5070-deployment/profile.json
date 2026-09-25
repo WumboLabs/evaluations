@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "granite-4.2-8b",
+  "model_display_name": "Granite 4.2 8B (reasoning-on canonical)",
+  "profile_id": "granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment",
+  "profile_display_name": "llama.cpp official Q4_K_M (reasoning-on, deployment sampler, 32K)",
+  "runtime_family": "llama.cpp (upstream)",
+  "artifact": "ibm-granite/granite-4.2-8b-GGUF@93f3f6a8 :: granite-4.2-8b-Q4_K_M.gguf (sha256 16a9369d0805f80b7377d25d87f937a90c05dc04ad79173a52001e42c9aab311)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/granite-4.2-8b/profiles/granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment",
+  "event_ids": [
+    "granite-42-8b-rtx5070-welp-context-completion-20260924"
+  ],
+  "runtime_version": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063 (tag b10999, 0.4.1-dev build 1), CUDA SM120",
+  "artifact_precision": "Q4_K_M official publisher GGUF; f16 K/V cache (FA on)",
+  "deployment_topology": "Full-GPU upstream llama.cpp CUDA serving on RTX 5070 12GB: -ngl 99 (40/40 layers), -fa on, f16 KV, -np 1, embedded GGUF Jinja template, DEPLOYMENT sampler (temp 0.2 / top_k 80 / top_p 1.0 / repeat_penalty 1.05); effective reasoning ON (built-in thinking; OFF control proven effective but not the campaign profile). Default context 32,768 / native exact 131,072; uncached scientific arms via --cache-ram 0 --no-cache-prompt --slot-prompt-similarity 0 with cache_prompt:false (proven by repeated-prompt probe). Publisher sampler (temp 1.0 / top_p 0.95) measured as a matched comparison, never pooled.",
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-09-24",
+    "note": "Native profile created at first publication of event granite-42-8b-rtx5070-welp-context-completion-20260924. Linked completion of the retained unpublished predecessor campaign (granite-4.2-8b-rtx5070-welp-characterization-2026-09-24, COMPLETE_WITH_GAPS on METHODOLOGY_DEFECT D-01), which is preserved unchanged. Executed under snapshot welp-next-snapshot-2026-09-24-context-outcome-repair (WELP commit ead28bde1ea9bce20cec6b3930125016068a8bbc, DRAFT - NOT v1.0); classification contract welp-final-classification-0.4.0-draft; verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS."
+  }
+}
