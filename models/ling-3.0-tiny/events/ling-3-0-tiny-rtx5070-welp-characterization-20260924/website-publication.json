@@ -58,5 +58,13 @@
   },
   "public_summary": "Ling 3.0 Tiny (inclusionAI) Q8_0 on the pinned llama.cpp b10999 CUDA build reaches 244 tok/s decode and 8.9k tok/s prefill on an RTX 5070 12 GB, with validated controlled-context behavior from 8K through the 32K practical rung and validated cells to the 256K YaRN extension maximum. The frozen reliability gate returns DO_NOT_ADVANCE: default thinking consumes small generation budgets (35% semantic-lane truncation) and strict-JSON answers get wrapped in markdown fences, so the derived classification is NOT_READY despite excellent performance and context capability.",
   "website_record_slug": "eval-ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-  "website_record_slug_note": "website model-page slug per the deterministic display-name slug convention (ling 3.0 tiny -> ling-3-0-tiny), matching the central model_id assigned at publication"
+  "website_record_slug_note": "website model-page slug per the deterministic display-name slug convention (ling 3.0 tiny -> ling-3-0-tiny), matching the central model_id assigned at publication",
+  "identity": {
+    "model_id": "ling-3.0-tiny",
+    "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+    "event_id": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "event_type": "initial-evaluation",
+    "event_date": "2026-09-24",
+    "profile_status": "current"
+  }
 }
