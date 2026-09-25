@@ -1,46 +1,94 @@
 {
+  "schema": "wumbolabs-labs-publication/1",
   "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-on-2026-09-25",
-  "canonical_evidence": {
-    "proposed_repo": "WumboLabs/evaluations",
-    "state": "PENDING_HUMAN_GATE"
-  },
   "disposition": "WEBSITE_READY",
+  "reason": "Success-branch event under the standing automatic-closeout authorization; central evidence published and pinned, website sync follows. Intermediate WEBSITE_READY driven to WEBSITE_PUBLISHED at terminal closeout after live verification.",
+  "publication_date": "2026-09-25",
+  "model": {
+    "display_name": "Ling 3.0 Tiny",
+    "publisher": "inclusionAI (Ant Group)",
+    "hf_id": "inclusionAI/Ling-3.0-tiny",
+    "revision": "9a98e35fe1c9ee255f78dd64771c7ae15a799481"
+  },
+  "artifact": {
+    "kind": "GGUF",
+    "filename": "Ling-3.0-tiny-Q8_0.gguf",
+    "quantization": "Q8_0",
+    "source_repo": "inclusionAI/Ling-3.0-tiny-GGUF",
+    "source_revision": "01b850e29ed5b44e2b810160ff980a9bb353296f",
+    "sha256": "9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6"
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "build": "build-cuda-sm120",
+    "commit": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063",
+    "tag": "b10999"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12 GB",
+    "host_class": "consumer workstation"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification_note": "RE-DERIVED (not grandfathered) from retained hash-bound evidence under welp-next-snapshot-2026-09-25-reasoning-profiles: NOT_READY (R-C3) - SEMANTIC_CAPABILITY WEAK / BUDGET_DISCIPLINE GOOD / CONTEXT_USABILITY VALIDATED / INTEGRATION_QUALITY CLEAN; equal to the source event's verdict; reasoning-profile identity added"
+  },
+  "context": {
+    "configured": 32768,
+    "note": "Retained Reasoning On context evidence (byte-identical, hash-bound): coverage COMPLETE 28/28 across 8192..262144; practical rung 32768 VALIDATED both lanes; useful-context maximum 262144 both lanes by the frozen rule with measured seed-dependent dips at 131072/196608"
+  },
+  "quality": {
+    "assistant_quality_note": "Retained: Deployment 11/12, Minimal 4/4, Publisher 12/12 (supporting diagnostics, never headline)",
+    "reliability_headline": "Retained: semantic evaluable-rate 0.79 (14/40 truncated by reasoning starvation), operational 0.757; gate DO_NOT_ADVANCE (R7 unproven by starvation, R8 strict-JSON)"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "VERIFIED_EXISTING",
+    "service_record_id": "cmugffasg0dohlq01bekesaf0",
+    "pp512_tok_s": 8941.82,
+    "tg128_tok_s": 244.23,
+    "note": "the engine-native llama-bench record does not exercise the reasoning control, so both reasoning profiles share this record"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "proposed_repo": "WumboLabs/evaluations"
+  },
+  "website_record_slug": "ling-3-0-tiny",
   "identity": {
-    "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
-    "event_type": "reasoning-profile-characterization",
-    "evidence_scope": [
-      "reasoning-on-profile"
-    ],
     "model_id": "ling-3-0-tiny",
-    "profile_id": "ling-3-0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
-    "profile_status": "current",
+    "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+    "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "event_type": "follow-up",
+    "event_date": "2026-09-25",
+    "evidence_scope": [
+      "reliability",
+      "context",
+      "capabilities",
+      "performance",
+      "localmaxxing",
+      "model-classification"
+    ],
     "related_profile_ids": [
       "ling-3-0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off"
-    ]
+    ],
+    "profile_status": "current"
   },
-  "model": {
-    "display_name": "Ling 3.0 Tiny"
-  },
-  "publication_date": "2026-09-25",
-  "reason": "Reasoning On reuse event closed (re-derived classification validator-approved); publication proceeds under the standing automatic-closeout authorization after central evidence publication.",
   "reasoning_profiles": [
     {
-      "display_name": "Reasoning On",
-      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
       "profile": "reasoning-on",
+      "display_name": "Reasoning On",
       "publisher_default": true,
+      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
       "readiness": "NOT_READY",
-      "summary": "Publisher/default profile (re-derived under the 2026-09-25 snapshot from retained evidence): NOT_READY (R-C3), semantic WEAK (reasoning starvation), budget GOOD, context VALIDATED."
+      "summary": "Publisher/default profile: NOT_READY (R-C3) - semantic WEAK (reasoning starvation, 14/40 truncations), budget GOOD, context VALIDATED (useful-context max 262144, seed-dependent dips at 128K-192K)."
     },
     {
-      "display_name": "Reasoning Off",
-      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
       "profile": "reasoning-off",
+      "display_name": "Reasoning Off",
       "publisher_default": false,
+      "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
       "readiness": "NOT_READY",
-      "summary": "Supported alternate deployment profile: NOT_READY (R-C3) via replicated fabrication; semantic ACCEPTABLE, excellent budget discipline. Verdicts are per-profile and never averaged."
+      "summary": "Supported alternate profile: NOT_READY (R-C3) - replicated fabrication measured on both seeds; semantic ACCEPTABLE with zero starvation (1/40 truncated), context VALIDATED 8K-192K (useful-context max 196608; 262144 fails consistently). Verdicts are independent and never averaged."
     }
   ],
-  "schema": "wumbolabs-labs-publication/1",
-  "website_record_slug": "ling-3-0-tiny"
+  "public_summary": "Ling 3.0 Tiny (inclusionAI) Reasoning On profile (publisher default): this event re-derives the classification under the 2026-09-25 reasoning-profiles methodology from the retained, hash-bound evidence of the original campaign - no new inference. Verdict NOT_READY (R-C3): reasoning consumes small generation budgets before an answer appears (14/40 semantic truncations) and strict-JSON discipline fails, while context capability is validated to 256K with documented seed-dependent dips and speed is excellent for 12 GB (244 tok/s decode). The effective enable_thinking=false deployment is characterized separately in the linked Reasoning Off event; per-profile verdicts are never averaged."
 }
