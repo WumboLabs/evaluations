@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/151bb95b7a8d45ea8a5b77a78731efda2a7e6662/models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/250afdf042677d8c6dc19275c357ad0f5a2b870a/models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/website-publication.json)
