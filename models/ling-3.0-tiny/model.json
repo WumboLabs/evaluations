@@ -13,23 +13,44 @@
   "current_state": {
     "agent-backend": null,
     "protocol-development": null,
-    "model-classification": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-    "localmaxxing": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-    "performance": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-    "capabilities": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-    "serving-profile": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "model-classification": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "localmaxxing": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "performance": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "capabilities": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "serving-profile": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
     "specialized": null,
     "practical-use": null,
-    "context": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
-    "reliability": "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+    "context": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+    "reliability": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
     "recommended_profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
     "classification": "NOT_READY",
     "profile_ids": [
-      "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment"
+      "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+      "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off"
     ],
     "event_ids": [
-      "ling-3-0-tiny-rtx5070-welp-characterization-20260924"
-    ]
+      "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
+      "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+      "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925"
+    ],
+    "reasoning_profiles": {
+      "group_id": "ling-3-0-tiny-reasoning-profiles",
+      "topology_case": "C",
+      "publisher_default_profile": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment",
+      "profiles": {
+        "reasoning-on": {
+          "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+          "readiness": "NOT_READY",
+          "display_name": "Reasoning On"
+        },
+        "reasoning-off": {
+          "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+          "readiness": "NOT_READY",
+          "display_name": "Reasoning Off"
+        }
+      },
+      "note": "Independent per-profile classifications; never averaged."
+    }
   },
   "context_summary": "Native 131,072-token context (config + GGUF measured); 262,144 advertised extension via YaRN x2.0 (model card, EXTERNAL_REPORTED; mechanism qualified on the pinned runtime). Measured on the 12 GB card with official Q8_0 (9,142 MiB at the native max): 32,768 configured practical context; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 at near-full occupancy (max placement error 0.374 pp), capability VALIDATED at the practical rung, useful-context maximum 262,144 both lanes by the frozen rule with a measured seed-dependent dip at 131,072/196,608 (native max PARTIAL). YaRN extension cells measured on mechanism-qualified arms. Classification NOT_READY (R-C3): SEMANTIC_CAPABILITY WEAK (reasoning starvation + strict-JSON fence wrapping; R7/R8 DO_NOT_ADVANCE), BUDGET_DISCIPLINE GOOD, CONTEXT_USABILITY VALIDATED, INTEGRATION_QUALITY CLEAN."
 }

@@ -1,0 +1,49 @@
+{
+  "slug": "eval-ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+  "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+  "event_type": "reasoning-profile-characterization",
+  "event_date": "2026-09-25",
+  "record_date": "2026-09-25",
+  "model_id": "ling-3.0-tiny",
+  "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
+  "profile_name": "llama.cpp official Q8_0 (Reasoning Off, deployment sampler, 32K)",
+  "profile_status": "current-alternate",
+  "event_kicker": "WELP Reasoning-Profile Characterization — Ling 3.0 Tiny (Reasoning Off, supported alternate)",
+  "event_title": "Full WELP characterization of the Reasoning Off deployment profile: independent setup/calibration, same frozen task set, dual-profile completion of the case-C model",
+  "welp_status": "NOT_READY",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification",
+    "reasoning-profiles"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "NOT_READY (R-C3) with campaign execution COMPLETE_PASS: enable_thinking=false (proven effective) removes reasoning starvation entirely — 0/40 semantic answers starved, 1/40 truncated, evaluable rate 1.000; independent calibration halves the context-recall reserve to 1024 (9 of 12 classes at 512); Controlled Context fully VALIDATED 8,192..196,608 including the 131,072 native maximum, with a completed measured negative at the 262,144 extension maximum (useful-context max 196,608); all applicable real-work modules pass including Document Synthesis and both Linux Diagnosis cases. Fabrication is now measurable and weak: replicated on both seeds (hall-fake-package, hall-git-timewarp), so R7 fails on substance. Dimensions ACCEPTABLE/GOOD/VALIDATED/CLEAN. Engine-native speed unchanged vs Reasoning On — deployment gains are token economics. Profile verdicts are never averaged.",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/REPORT.md",
+    "commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-off-2026-09-25",
+    "source_bundle": "research/model-evaluations/ling-3.0-tiny/ling-3.0-tiny-rtx5070-welp-reasoning-off-2026-09-25",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_date": "2026-09-25",
+    "note": "Full independent WELP profile campaign under welp-next-snapshot-2026-09-25-reasoning-profiles (WELP commit 193cb645c81440cc1232447f3ebc32a8197a7f3e, DRAFT - NOT v1.0); artifact restored from the verified canonical archive with SHA-256 re-verification; LocalMaxxing VERIFIED_EXISTING (the llama-bench record does not exercise the reasoning control).",
+    "source_commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+  },
+  "source": {
+    "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/website-publication.json",
+    "sha256": "cbbcd065fc5252074053f2bdedd86c24796a3faddb5444cbda837724643ac327",
+    "commit": "a5717d2fecc21184da6dfa20d973fb8e4fbca0e4"
+  }
+}

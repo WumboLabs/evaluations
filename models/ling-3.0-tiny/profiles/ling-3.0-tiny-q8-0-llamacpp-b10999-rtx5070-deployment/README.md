@@ -1,6 +1,6 @@
 <!-- Generated from registry metadata — do not hand-edit. -->
 
-# llama.cpp official Q8_0 (reasoning-on, deployment sampler, 32K)
+# llama.cpp official Q8_0 (Reasoning On, deployment sampler, 32K)
 
 - **Profile ID:** `ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment`
 - **Model ID:** `ling-3.0-tiny`
@@ -17,6 +17,7 @@
 ## Events
 
 - 2026-09-24 — [Second WELP stabilization-cohort campaign: hybrid-attention MoE characterized end-to-end on the pinned runtime (official Q8_0)](../../../../models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924/)
+- 2026-09-25 — [Reasoning On classification re-derived under the 2026-09-25 reasoning-profiles snapshot from retained hash-bound evidence (no new inference)](../../../../models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925/)
 
 ## Provenance
 

@@ -42,7 +42,7 @@
   },
   "source": {
     "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-characterization-20260924/website-publication.json",
-    "sha256": "368499e631b8e8605bbd597a33f8b5504605bca7d9238c87ab713a4e6b87af65",
-    "commit": "43f56d8add4b3dfc51183ccd818fc6037e79bd9c"
+    "sha256": "128e900f0a2f3965b0833ad30c7ec5f5654a82b07e3a3cea9571ba2ca0f83871",
+    "commit": "719810861ab6d02136ea68fdd5d5e4e34e3e4ddb"
   }
 }

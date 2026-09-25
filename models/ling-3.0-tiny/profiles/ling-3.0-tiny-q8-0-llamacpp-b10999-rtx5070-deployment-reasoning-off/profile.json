@@ -1,0 +1,26 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "ling-3.0-tiny",
+  "model_display_name": "Ling 3.0 Tiny (dual reasoning profiles; Reasoning On = publisher default)",
+  "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
+  "profile_display_name": "llama.cpp official Q8_0 (Reasoning Off, deployment sampler, 32K)",
+  "runtime_family": "llama.cpp (upstream)",
+  "runtime_version": "b9672 (74ade5274, CUDA SM120)",
+  "artifact": "inclusionAI/Ling-3.0-tiny-GGUF@01b850e2 :: Ling-3.0-tiny-Q8_0.gguf (sha256 9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6)",
+  "artifact_precision": "Q8_0 official publisher GGUF; f16 K/V cache (FA on)",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current-alternate",
+  "profile_path": "models/ling-3.0-tiny/profiles/ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
+  "event_ids": [
+    "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925"
+  ],
+  "reasoning_profile": "reasoning-off",
+  "publisher_default_profile": false,
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-off-2026-09-25",
+    "published_date": "2026-09-25",
+    "note": "Supported alternate deployment profile of reasoning group ling-3-0-tiny-reasoning-profiles (welp-reasoning-topology-0.1.0-draft case C, effective enable_thinking=false control). Full independent WELP characterization under welp-next-snapshot-2026-09-25-reasoning-profiles (WELP commit 193cb645c81440cc1232447f3ebc32a8197a7f3e, DRAFT - NOT v1.0); verdict NOT_READY (R-C3) with campaign execution COMPLETE_PASS. Profile verdicts are never averaged with the publisher-default profile."
+  }
+}
