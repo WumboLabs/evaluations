@@ -1,0 +1,66 @@
+{
+  "slug": "eval-granite-42-8b-rtx5070-welp-context-completion-20260924",
+  "event_id": "granite-42-8b-rtx5070-welp-context-completion-20260924",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-24",
+  "record_date": "2026-09-24",
+  "model_id": "granite-4.2-8b",
+  "profile_id": "granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment",
+  "profile_name": "llama.cpp official Q4_K_M (reasoning-on, deployment sampler, 32K)",
+  "profile_status": "current",
+  "event_kicker": "WELP Initial Evaluation \u2014 IBM Granite 4.2 8B (reasoning-on)",
+  "event_title": "First published evaluation via linked completion of the methodology-repair predecessor (official Q4_K_M, upstream llama.cpp b10999)",
+  "welp_status": "NOT_READY",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "NOT_READY (R-C3) with campaign execution COMPLETE_PASS: the first WELP stabilization-cohort campaign to complete cleanly. The predecessor stopped on a frozen-methodology defect \u2014 an execution-valid Controlled Context cell exhausted its full 8,192-token reserve inside reasoning and emitted no visible answer, which the frozen vocabulary could not represent. The repaired methodology represents it as a measured budget-limited cell (semantic NOT_EVALUABLE, never a semantic failure); raw evidence reused byte-identically, no inference rerun. Coverage COMPLETE 8/8; practical rung 32,768 VALIDATED both lanes; useful context 32,768 both lanes; dimensions ACCEPTABLE/GOOD/VALIDATED/CLEAN with a replicated semantic-lane fabrication guardrail (R7 FAIL, DO_NOT_ADVANCE). LocalMaxxing SUBMITTED (new record). Isolated blinded agent adjudications, not independent human review.",
+  "dimensions": {
+    "SEMANTIC_CAPABILITY": "ACCEPTABLE",
+    "BUDGET_DISCIPLINE": "GOOD",
+    "CONTEXT_USABILITY": "VALIDATED",
+    "INTEGRATION_QUALITY": "CLEAN"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification": "NOT_READY",
+    "rule": "R-C3",
+    "snapshot": "welp-next-snapshot-2026-09-24-context-outcome-repair",
+    "welp_commit": "ead28bde1ea9bce20cec6b3930125016068a8bbc",
+    "profile_id": "granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment",
+    "campaign": "granite-4.2-8b-rtx5070-welp-context-outcome-completion-2026-09-24",
+    "guardrails": [
+      "replicated fabrication on the semantic lane"
+    ]
+  },
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/REPORT.md",
+    "commit": "PENDING_EVIDENCE_COMMIT"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "granite-4.2-8b-rtx5070-welp-context-outcome-completion-2026-09-24",
+    "source_bundle": "research/model-evaluations/granite-4.2-8b/granite-4.2-8b-rtx5070-welp-context-outcome-completion-2026-09-24",
+    "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+    "published_date": "2026-09-24",
+    "note": "Native current-WELP linked completion event under the consolidated architecture. The retained COMPLETE_WITH_GAPS predecessor campaign is preserved unchanged and unpublished; every raw evidence file is reused byte-identically (size + SHA-256 verified); only the answerless context cell's disposition/outcome is re-derived from original raw bytes under welp-context 0.3.0-draft."
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "submission_ref": "cmug9qe0i0d5wlq01lep45uua",
+    "service_status": "record present (service-approved NEW submission; verifiedRun false for local llama-bench evidence, recorded honestly)"
+  }
+}

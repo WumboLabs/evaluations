@@ -1,0 +1,53 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "granite-4.2-8b-rtx5070-welp-context-outcome-completion-2026-09-24",
+  "disposition": "WEBSITE_READY",
+  "website_record_slug": "granite-4-2-8b",
+  "reason": "COMPLETE_PASS successor campaign with a freshly derived terminal classification; publication authorized under the standing clean-success closeout.",
+  "publication_date": null,
+  "model": {
+    "display_name": "Granite 4.2 8B",
+    "publisher": "IBM (ibm-granite)",
+    "hf_id": "ibm-granite/granite-4.2-8b",
+    "revision": "f8de16cdcdbc6c779ca517604e050d82cc119e44"
+  },
+  "artifact": {
+    "kind": "GGUF",
+    "filename": "granite-4.2-8b-Q4_K_M.gguf",
+    "quantization": "Q4_K_M",
+    "source_repo": "ibm-granite/granite-4.2-8b-GGUF",
+    "source_revision": "93f3f6a8938ee922b784cf4e5b4203cd3428df8f",
+    "sha256": "16a9369d0805f80b7377d25d87f937a90c05dc04ad79173a52001e42c9aab311"
+  },
+  "runtime": {
+    "name": "llama.cpp",
+    "build": "build-cuda-sm120",
+    "commit": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063",
+    "tag": "b10999"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12 GB",
+    "host_class": "consumer workstation"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification_note": "NOT_READY (R-C3): replicated semantic-lane fabrication guardrail; negative verdict is a valid terminal result",
+    "profile_id": "granite-4.2-8b-q4-k-m-llamacpp-b10999-rtx5070-deployment"
+  },
+  "context": {
+    "configured": 32768,
+    "note": "coverage COMPLETE 8/8 under welp-context 0.3.0 (one cell measured BUDGET_LIMITED); practical rung 32768 VALIDATED both lanes; useful-context maximum 32,768 both lanes"
+  },
+  "quality": {
+    "note": "reliability pooled semantic 0.885; R7 replicated-fabrication guardrail; no unsafe behavior observed"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "note": "SUBMITTED/NEW, service record cmug9qe0i0d5wlq01lep45uua (APPROVED, verifiedRun false)"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "note": "pending central registry event pin"
+  },
+  "public_summary": "Linked completion of the first WELP stabilization-cohort campaign (Granite 4.2 8B, RTX 5070, official Q4_K_M GGUF, llama.cpp b10999). Reuses every retained raw inference output byte-identically, re-derives the answerless Controlled Context cell under the repaired methodology, and derives the model verdict the predecessor could not publish."
+}
