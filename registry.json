@@ -4345,8 +4345,8 @@
       },
       "source": {
         "path": "models/granite-4.2-8b/events/granite-42-8b-rtx5070-welp-context-completion-20260924/website-publication.json",
-        "sha256": "5c73bfd608da8211495b900861e8f0276180b8470706d3a582ea89416284d1da",
-        "commit": "e46d1c4ecf4969990a248861cd4dc606d67fe2aa"
+        "sha256": "d4ef1f0673c05f04915ceb0a12c47c9bfae38f7609d3b95bf825a374e2e9032e",
+        "commit": "151bb95b7a8d45ea8a5b77a78731efda2a7e6662"
       }
     }
   ],
