@@ -37,5 +37,10 @@
     "campaign": "neohorse-1-9b-rtx5070-welp-reasoning-off-2026-09-25",
     "published_date": "2026-09-26",
     "note": "Native publication of a first fresh-model WELP campaign group under snapshot welp-next-snapshot-2026-09-25-model-agentic; campaign REPORT.md is the primary scientific report; working/raw science retained in local research/model-evaluations/."
+  },
+  "source": {
+    "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/website-publication.json",
+    "sha256": "a4a095f5f07911427be702781dfbec99e046ab62d9668e4a540c8def1cb0865b",
+    "commit": "c287b99fda73263af9f2a361e6a5b1a97e77e98e"
   }
 }

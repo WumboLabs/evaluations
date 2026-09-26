@@ -19,3 +19,5 @@
 The report retains its originally published scope; a public summary is not represented as a full internal campaign report. Imported scientific bytes are unchanged. No public Lab Record companion was present unless explicitly linked here.
 
 ## Provenance
+
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/c287b99fda73263af9f2a361e6a5b1a97e77e98e/models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925/website-publication.json)
