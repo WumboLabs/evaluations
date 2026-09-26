@@ -17,6 +17,7 @@
 ## Events
 
 - 2026-09-25 — [Full WELP characterization of the Reasoning Off deployment profile: independent setup/calibration, same frozen task set, dual-profile completion of the case-C model](../../../../models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925/)
+- 2026-09-25 — [First WELP Agentic section execution: three bounded tool tasks through the pinned harness in a disposable offline sandbox; methodology-validation event on a known model](../../../../models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-agentic-20260925/)
 
 ## Provenance
 

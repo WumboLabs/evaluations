@@ -13,7 +13,8 @@
   "current_status": "current-alternate",
   "profile_path": "models/ling-3.0-tiny/profiles/ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
   "event_ids": [
-    "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925"
+    "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+    "ling-3-0-tiny-rtx5070-welp-agentic-20260925"
   ],
   "reasoning_profile": "reasoning-off",
   "publisher_default_profile": false,

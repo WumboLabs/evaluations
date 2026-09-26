@@ -31,7 +31,8 @@
     "event_ids": [
       "ling-3-0-tiny-rtx5070-welp-characterization-20260924",
       "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
-      "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925"
+      "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+      "ling-3-0-tiny-rtx5070-welp-agentic-20260925"
     ],
     "reasoning_profiles": {
       "group_id": "ling-3-0-tiny-reasoning-profiles",
@@ -50,7 +51,8 @@
         }
       },
       "note": "Independent per-profile classifications; never averaged."
-    }
+    },
+    "agentic": "ling-3-0-tiny-rtx5070-welp-agentic-20260925"
   },
   "context_summary": "Native 131,072-token context (config + GGUF measured); 262,144 advertised extension via YaRN x2.0 (model card, EXTERNAL_REPORTED; mechanism qualified on the pinned runtime). Measured on the 12 GB card with official Q8_0 (9,142 MiB at the native max): 32,768 configured practical context; Controlled Context coverage COMPLETE 28/28 across 8,192..262,144 at near-full occupancy (max placement error 0.374 pp), capability VALIDATED at the practical rung, useful-context maximum 262,144 both lanes by the frozen rule with a measured seed-dependent dip at 131,072/196,608 (native max PARTIAL). YaRN extension cells measured on mechanism-qualified arms. Classification NOT_READY (R-C3): SEMANTIC_CAPABILITY WEAK (reasoning starvation + strict-JSON fence wrapping; R7/R8 DO_NOT_ADVANCE), BUDGET_DISCIPLINE GOOD, CONTEXT_USABILITY VALIDATED, INTEGRATION_QUALITY CLEAN."
 }
