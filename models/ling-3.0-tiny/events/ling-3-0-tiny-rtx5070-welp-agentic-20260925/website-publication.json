@@ -1,0 +1,92 @@
+{
+ "schema": "wumbolabs-labs-publication/1",
+ "campaign": "ling-3.0-tiny-rtx5070-welp-reasoning-off-2026-09-25",
+ "disposition": "WEBSITE_READY",
+ "reason": "Terminal disposition: success-branch campaign (COMPLETE_PASS, zero methodology defects); central evidence published and pinned (evaluations commit e0a8e71ebd2c), website synced/built/deployed, live model page verified 2026-09-25 rendering both reasoning profiles with independent verdicts (never averaged).",
+ "publication_date": "2026-09-25",
+ "model": {
+  "display_name": "Ling 3.0 Tiny",
+  "publisher": "inclusionAI (Ant Group)",
+  "hf_id": "inclusionAI/Ling-3.0-tiny",
+  "revision": "9a98e35fe1c9ee255f78dd64771c7ae15a799481"
+ },
+ "artifact": {
+  "kind": "GGUF",
+  "filename": "Ling-3.0-tiny-Q8_0.gguf",
+  "quantization": "Q8_0",
+  "source_repo": "inclusionAI/Ling-3.0-tiny-GGUF",
+  "source_revision": "01b850e29ed5b44e2b810160ff980a9bb353296f",
+  "sha256": "9299a9e5cbc540597619e252a41fd671faa4e84e619e3cea816542c84e19f0d6"
+ },
+ "runtime": {
+  "name": "llama.cpp",
+  "build": "build-cuda-sm120",
+  "commit": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063",
+  "tag": "b10999"
+ },
+ "hardware": {
+  "gpu": "NVIDIA GeForce RTX 5070 12 GB",
+  "host_class": "consumer workstation"
+ },
+ "welp": {
+  "outcome": "COMPLETE_PASS",
+  "classification_note": "derived from valid evidence (bundle valid, zero errors): NOT_READY (R-C3) - SEMANTIC_CAPABILITY ACCEPTABLE / BUDGET_DISCIPLINE GOOD / CONTEXT_USABILITY VALIDATED / INTEGRATION_QUALITY CLEAN; R-C3 trigger: replicated fabrication on the semantic lane (hall-fake-package, hall-git-timewarp on both seeds)"
+ },
+ "context": {
+  "configured": 32768,
+  "note": "coverage COMPLETE 28/28 across 8192..262144: fully VALIDATED 8192..196608 including the 131072 native maximum; 262144 extension maximum FAILED all four cells (completed measured negative); practical rung 32768 VALIDATED both lanes; useful-context maximum 196608 by the frozen rule; independent context-recall reserve 1024 (half the sibling's 2048)"
+ },
+ "quality": {
+  "assistant_quality_note": "Deployment 10/12, Minimal 4/4, Publisher 10/12 (supporting diagnostics, never headline); ambiguity probe invents nothing but asks no clarifying question",
+  "reliability_headline": "semantic evaluable-rate 1.000 (zero starvation, 1/40 truncated), operational 1.000; gate DO_NOT_ADVANCE (R7 measured fabrication); all applicable real-work modules pass (Tool Recovery, both Linux Diagnosis cases, Document Synthesis, Repository Repair) except Multi-Turn and Multi-Document strict-JSON surfaces"
+ },
+ "localmaxxing": {
+  "status": "SUBMITTED",
+  "origin": "VERIFIED_EXISTING",
+  "service_record_id": "cmugffasg0dohlq01bekesaf0",
+  "pp512_tok_s": 8916.02,
+  "tg128_tok_s": 243.68,
+  "note": "this profile's own bench re-measurement; consistent with the existing service record (benchmark does not exercise the reasoning control; no duplicate submitted)"
+ },
+ "canonical_evidence": {
+  "state": "PENDING_HUMAN_GATE"
+ },
+ "identity": {
+  "model_id": "ling-3.0-tiny",
+  "profile_id": "ling-3.0-tiny-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
+  "event_id": "ling-3-0-tiny-rtx5070-welp-agentic-20260925",
+  "event_type": "welp-agentic-methodology-validation",
+  "event_date": "2026-09-25",
+  "evidence_scope": [
+   "agentic-task-outcomes",
+   "agentic-methodology-validation"
+  ],
+  "profile_status": "current-alternate"
+ },
+ "reasoning_profiles": [
+  {
+   "profile": "reasoning-on",
+   "display_name": "Reasoning On",
+   "publisher_default": true,
+   "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-on-20260925",
+   "readiness": "NOT_READY",
+   "summary": "Publisher/default profile: NOT_READY (R-C3) - semantic WEAK (reasoning starvation, 14/40 truncations), budget GOOD, context VALIDATED (useful-context max 262144, seed-dependent dips at 128K-192K)."
+  },
+  {
+   "profile": "reasoning-off",
+   "display_name": "Reasoning Off",
+   "publisher_default": false,
+   "event_id": "ling-3-0-tiny-rtx5070-welp-reasoning-off-20260925",
+   "readiness": "NOT_READY",
+   "summary": "Supported alternate profile: NOT_READY (R-C3) - replicated fabrication measured on both seeds; semantic ACCEPTABLE with zero starvation (1/40 truncated), context VALIDATED 8K-192K (useful-context max 196608; 262144 fails consistently). Verdicts are independent and never averaged."
+  }
+ ],
+ "public_summary": "Ling 3.0 Tiny (inclusionAI) Reasoning Off profile on the pinned llama.cpp b10999 CUDA build, same Q8_0 artifact and RTX 5070 12 GB as the publisher-default Reasoning On profile: with enable_thinking=false (proven effective), answers begin immediately - zero starvation, 1/40 truncation, and 512-token budgets suffice for most response classes; controlled retrieval is validated 8K-192K including the native 128K maximum while the 256K extension fails consistently. Fabrication resistance is measured weak (replicated on both seeds), keeping readiness NOT_READY. Engine speed is unchanged versus Reasoning On; the deployment differences are token economics and behavior. Verdicts of the two profiles are independent and never averaged.",
+ "agentic": {
+  "disposition": "COMPLETED",
+  "task_sample": "3 scored tasks (repository FAIL / system FAIL / research PASS); bounded sample",
+  "harness": "welp-agentic-harness/0.1.0-draft (native_tools adapter)",
+  "note": "Agentic verdict reported independently of the Model verdict; never combined."
+ },
+ "website_record_slug": "ling-3-0-tiny"
+}
