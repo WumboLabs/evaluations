@@ -10,7 +10,7 @@
   "artifact_precision": "Q8_0 official publisher GGUF; f16 K/V cache (FA on); no MTP draft head",
   "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
   "repository": "WumboLabs/evaluations",
-  "current_status": "current-recommended",
+  "current_status": "current",
   "profile_path": "models/neohorse-1-9b/profiles/neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
   "event_ids": [
     "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",

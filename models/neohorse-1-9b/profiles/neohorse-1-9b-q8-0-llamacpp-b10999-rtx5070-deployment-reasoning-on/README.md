@@ -4,7 +4,7 @@
 
 - **Profile ID:** `neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on`
 - **Model ID:** `neohorse-1-9b`
-- **Status:** current-recommended
+- **Status:** current
 - **Artifact identity:** TokenRhythm/NeoHorse-1-9B-GGUF@ddcb4c93 :: NeoHorse-1-9B-Q8_0.gguf (sha256 519869730bda973ec50bb3ac42cd874569e5f3a57c3e0d5d23a2b5040e93310f)
 - **Runtime family:** llama.cpp (upstream)
 - **Runtime revision:** b10999 (b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063, CUDA SM120)

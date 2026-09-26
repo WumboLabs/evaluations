@@ -7,7 +7,7 @@
   "model_id": "neohorse-1-9b",
   "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
   "profile_name": "llama.cpp official Q8_0 (Reasoning On = publisher default, deployment sampler, 32K)",
-  "profile_status": "current-recommended",
+  "profile_status": "current",
   "event_kicker": "WELP Fresh-Model Characterization — NeoHorse-1-9B (Reasoning On, publisher default)",
   "event_title": "First fresh-model WELP campaign under the model-agentic snapshot: full Model science of the publisher-default Reasoning On profile; case C measured (Reasoning Off sibling required)",
   "welp_status": "READY_WITH_GUARDRAILS",

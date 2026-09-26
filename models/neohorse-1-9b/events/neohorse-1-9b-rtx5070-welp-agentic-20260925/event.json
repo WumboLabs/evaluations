@@ -7,7 +7,7 @@
   "model_id": "neohorse-1-9b",
   "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
   "profile_name": "llama.cpp official Q8_0 (Reasoning On = publisher default, deployment sampler, 32K)",
-  "profile_status": "current-recommended",
+  "profile_status": "current",
   "event_kicker": "WELP Agentic — NeoHorse-1-9B (publisher-default profile, native tool calls)",
   "event_title": "First fresh-model WELP Agentic event: dual-adapter qualification, three required task classes with two scored (1 PASS / 1 FAIL) and the system class INTEGRATION_BLOCKED by a deterministic frozen-harness defect",
   "welp_status": "READY_WITH_GUARDRAILS",

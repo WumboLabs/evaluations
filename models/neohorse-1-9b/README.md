@@ -12,7 +12,7 @@
 
 ## Profiles
 
-- [neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on](profiles/neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on/) — current-recommended; llama.cpp (upstream); TokenRhythm/NeoHorse-1-9B-GGUF@ddcb4c93 :: NeoHorse-1-9B-Q8_0.gguf (sha256 519869730bda973ec50bb3ac42cd874569e5f3a57c3e0d5d23a2b5040e93310f)
+- [neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on](profiles/neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on/) — current; llama.cpp (upstream); TokenRhythm/NeoHorse-1-9B-GGUF@ddcb4c93 :: NeoHorse-1-9B-Q8_0.gguf (sha256 519869730bda973ec50bb3ac42cd874569e5f3a57c3e0d5d23a2b5040e93310f)
 - [neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off](profiles/neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off/) — current-alternate; llama.cpp (upstream); TokenRhythm/NeoHorse-1-9B-GGUF@ddcb4c93 :: NeoHorse-1-9B-Q8_0.gguf (sha256 519869730bda973ec50bb3ac42cd874569e5f3a57c3e0d5d23a2b5040e93310f)
 
 ## Testing history
