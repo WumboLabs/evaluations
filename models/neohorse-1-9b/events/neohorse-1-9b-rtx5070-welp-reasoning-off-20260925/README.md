@@ -20,4 +20,4 @@ The report retains its originally published scope; a public summary is not repre
 
 ## Provenance
 
-- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b/models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/website-publication.json)
+- [Original public structured export](https://github.com/WumboLabs/evaluations/blob/9ecf4f8bd1eed70df5047c64cbe6b1a1b779d1bc/models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/website-publication.json)
