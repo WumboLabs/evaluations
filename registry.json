@@ -4619,8 +4619,7 @@
    "event_title": "First WELP Agentic section execution: three bounded tool tasks through the pinned harness in a disposable offline sandbox; methodology-validation event on a known model",
    "welp_status": "NOT_READY",
    "evidence_scope": [
-    "agentic-task-outcomes",
-    "agentic-methodology-validation",
+    "agentic",
     "model-classification"
    ],
    "authoring": "generated",
