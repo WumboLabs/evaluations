@@ -30,3 +30,4 @@
 | [LFM2.5-8B-A1B](models/lfm2.5-8b-a1b/) | NOT_READY | 1 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | [Granite 4.2 8B](models/granite-4.2-8b/) | NOT_READY | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/granite-4-2-8b/) |
 | [Ling 3.0 Tiny](models/ling-3.0-tiny/) | NOT_READY | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/ling-3-0-tiny/) |
+| [NeoHorse-1-9B](models/neohorse-1-9b/) | READY_WITH_GUARDRAILS | 2 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/neohorse-1-9b/) |

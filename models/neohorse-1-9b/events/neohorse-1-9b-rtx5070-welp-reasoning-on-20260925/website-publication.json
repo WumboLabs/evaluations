@@ -1,9 +1,9 @@
 {
   "schema": "wumbolabs-labs-publication/1",
   "campaign": "neohorse-1-9b-rtx5070-welp-reasoning-on-2026-09-25",
-  "disposition": "WEBSITE_READY",
-  "reason": "Success-branch Model event (COMPLETE_PASS, zero methodology defects) with sufficient public-safe material. Terminal disposition (WEBSITE_PUBLISHED) is driven at campaign-group terminal closeout after the required Reasoning Off sibling event and the Agentic event complete, so the model page renders the full group (both reasoning profiles + Agentic) with independent verdicts.",
-  "publication_date": null,
+  "disposition": "WEBSITE_PUBLISHED",
+  "reason": "Terminal disposition: success-branch campaign group (COMPLETE_PASS, zero methodology defects); central evidence published and pinned (evaluations commit bf5e29e1afee4f391c4b8f83e77636b887453f53); website sync/build/deploy with live verification follows.",
+  "publication_date": "2026-09-26",
   "model": {
     "display_name": "NeoHorse-1-9B",
     "publisher": "TokenRhythm",
@@ -18,9 +18,11 @@
     "source_revision": "ddcb4c939b5392c86a9d2733c7c0ed30db2554fd"
   },
   "canonical_evidence": {
-    "state": "PENDING_HUMAN_GATE",
-    "target": "WumboLabs/evaluations",
-    "note": "Central publication occurs at campaign-group terminal closeout per the success-branch lifecycle; no canonical URL is invented before that."
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925/REPORT.md",
+    "commit": "bf5e29e1afee4f391c4b8f83e77636b887453f53",
+    "url": "https://github.com/WumboLabs/evaluations/blob/bf5e29e1afee4f391c4b8f83e77636b887453f53/models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925/REPORT.md"
   },
   "localmaxxing_summary": {
     "status": "SUBMITTED",

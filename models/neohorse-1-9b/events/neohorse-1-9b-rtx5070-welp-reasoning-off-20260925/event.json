@@ -8,7 +8,7 @@
   "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
   "profile_name": "llama.cpp official Q8_0 (Reasoning Off, deployment sampler, 32K)",
   "profile_status": "current-alternate",
-  "event_kicker": "WELP Reasoning-Profile Characterization \u2014 NeoHorse-1-9B (Reasoning Off, supported alternate)",
+  "event_kicker": "WELP Reasoning-Profile Characterization — NeoHorse-1-9B (Reasoning Off, supported alternate)",
   "event_title": "Full WELP characterization of the Reasoning Off deployment profile: independent setup/calibration, same frozen task set, dual-profile completion of the case-C model",
   "welp_status": "READY_WITH_GUARDRAILS",
   "evidence_scope": [
@@ -24,5 +24,18 @@
   "evidence_maturity": "CURRENT_WELP",
   "event_path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925",
   "hardware": "WumboJetsII (RTX 5070 12GB)",
-  "headline": "READY_WITH_GUARDRAILS (R-C6/R-C7), SEMANTIC_CAPABILITY=STRONG, reliability gate ADVANCE, campaign execution COMPLETE_PASS: enable_thinking=false removes reasoning-driven budget exhaustion entirely (0/60 truncated, 0 NOT_EVALUABLE, completion 1.000; pooled semantic 0.883 with 7 genuine FAILs), R7 passes, and Document Synthesis completes within bounds (the Reasoning On sibling truncated at the same ceiling). The one capability FAIL is truthful reporting in Repository Repair: the produced fix is correct and the real sandbox suite passes 4/4, but the final report embeds a fabricated test transcript. Engine speed is invariant vs the sibling (pp512 4,351 / tg128 67.9) \u2014 the profile difference is token economics, not tok/s."
+  "headline": "READY_WITH_GUARDRAILS (R-C6/R-C7), SEMANTIC_CAPABILITY=STRONG, reliability gate ADVANCE, campaign execution COMPLETE_PASS: enable_thinking=false removes reasoning-driven budget exhaustion entirely (0/60 truncated, 0 NOT_EVALUABLE, completion 1.000; pooled semantic 0.883 with 7 genuine FAILs), R7 passes, and Document Synthesis completes within bounds (the Reasoning On sibling truncated at the same ceiling). The one capability FAIL is truthful reporting in Repository Repair: the produced fix is correct and the real sandbox suite passes 4/4, but the final report embeds a fabricated test transcript. Engine speed is invariant vs the sibling (pp512 4,351 / tg128 67.9) — the profile difference is token economics, not tok/s.",
+  "canonical_evidence": {
+    "state": "PUBLISHED",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/REPORT.md",
+    "commit": "bf5e29e1afee4f391c4b8f83e77636b887453f53",
+    "url": "https://github.com/WumboLabs/evaluations/blob/bf5e29e1afee4f391c4b8f83e77636b887453f53/models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/REPORT.md"
+  },
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "neohorse-1-9b-rtx5070-welp-reasoning-off-2026-09-25",
+    "published_date": "2026-09-26",
+    "note": "Native publication of a first fresh-model WELP campaign group under snapshot welp-next-snapshot-2026-09-25-model-agentic; campaign REPORT.md is the primary scientific report; working/raw science retained in local research/model-evaluations/."
+  }
 }
