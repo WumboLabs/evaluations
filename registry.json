@@ -4644,8 +4644,8 @@
    },
    "source": {
     "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-agentic-20260925/website-publication.json",
-    "sha256": "80daf8554ed6e879b2c79ac457bdfc855b3393170ec2ac366900e8e7b2f75f2b",
-    "commit": "599063be57edd4f3b01f27c33da02d48abc541d8"
+    "sha256": "74a2313bc47bd56ce018eeef33e744c1ab28373396548acebb735c0020b57d17",
+    "commit": "8332a4e73c797f57a59f60550e2c7f2fcaf081c0"
    }
   }
  ],
