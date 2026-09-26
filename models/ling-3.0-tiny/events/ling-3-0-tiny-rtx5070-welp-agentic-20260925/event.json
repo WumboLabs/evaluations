@@ -26,10 +26,19 @@
   "state": "published",
   "repo": "WumboLabs/evaluations",
   "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-agentic-20260925/REPORT.md",
-  "commit": "PENDING_EVENT_BYTES_COMMIT"
+  "commit": "1f78420e64a2e7916a64aba910b0f34ed2f00e00"
  },
  "publication_provenance": {
-  "note": "Event bytes and registry entries published under the WELP success-branch closeout authorization."
+  "kind": "native",
+  "campaign": "ling-3.0-tiny-rtx5070-welp-agentic-2026-09-25",
+  "source_bundle": "research/model-evaluations/ling-3.0-tiny/ling-3.0-tiny-rtx5070-welp-agentic-2026-09-25",
+  "report_role": "public-safe derivative of the local campaign primary report REPORT.md",
+  "published_date": "2026-09-25",
+  "note": "METHODOLOGY_VALIDATION event under welp-next-snapshot-2026-09-25-model-agentic (WELP commit 5f611de36e44a2d06fa41acd75aa62dcf66c0edb, DRAFT - NOT v1.0). Agentic verdict reported independently of the Model verdict; never averaged."
  },
- "source": "local campaign bundle ling-3.0-tiny-rtx5070-welp-agentic-2026-09-25"
+ "source": {
+  "path": "models/ling-3.0-tiny/events/ling-3-0-tiny-rtx5070-welp-agentic-20260925/website-publication.json",
+  "sha256": "80daf8554ed6e879b2c79ac457bdfc855b3393170ec2ac366900e8e7b2f75f2b",
+  "commit": "1f78420e64a2e7916a64aba910b0f34ed2f00e00"
+ }
 }
