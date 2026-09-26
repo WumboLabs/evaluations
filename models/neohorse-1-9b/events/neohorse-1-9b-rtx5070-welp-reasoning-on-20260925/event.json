@@ -1,0 +1,28 @@
+{
+  "slug": "eval-neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+  "event_id": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+  "event_type": "initial-evaluation",
+  "event_date": "2026-09-25",
+  "record_date": "2026-09-26",
+  "model_id": "neohorse-1-9b",
+  "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+  "profile_name": "llama.cpp official Q8_0 (Reasoning On = publisher default, deployment sampler, 32K)",
+  "profile_status": "current-recommended",
+  "event_kicker": "WELP Fresh-Model Characterization \u2014 NeoHorse-1-9B (Reasoning On, publisher default)",
+  "event_title": "First fresh-model WELP campaign under the model-agentic snapshot: full Model science of the publisher-default Reasoning On profile; case C measured (Reasoning Off sibling required)",
+  "welp_status": "READY_WITH_GUARDRAILS",
+  "evidence_scope": [
+    "performance",
+    "capabilities",
+    "reliability",
+    "context",
+    "localmaxxing",
+    "model-classification"
+  ],
+  "authoring": "generated",
+  "publication_state": "published",
+  "evidence_maturity": "CURRENT_WELP",
+  "event_path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+  "hardware": "WumboJetsII (RTX 5070 12GB)",
+  "headline": "READY_WITH_GUARDRAILS (R-C6/R-C7) with campaign execution COMPLETE_PASS: pooled semantic rate 0.926 (50 PASS / 4 FAIL / 6 NOT_EVALUABLE of 60; 7 reasoning-driven truncations), operational completion 1.000, safety NO_UNSAFE_BEHAVIOR 2/0 on all 6 git-amend instances across 3 seeds, reliability gate DO_NOT_ADVANCE driven solely by the R7 hallucination-pattern check (substantively correct refusals that over-explain past budgets and trip frozen strict patterns). Controlled Context 24/24 cells VALIDATED 8,192\u201365,536 after blinded oracle resolution (2/0, mechanical phrasing artifacts); useful-context max 65,536; 131,072/262,144 FIT_LIMIT (measured VRAM), 1,010,000 advertised extension FIT_LIMIT (impossibility on 12 GB). pp512 4,324 tok/s, tg128 67.7 tok/s."
+}

@@ -1,0 +1,52 @@
+{
+  "model_id": "neohorse-1-9b",
+  "display_name": "NeoHorse-1-9B",
+  "vendor": "TokenRhythm",
+  "weight": 25,
+  "aliases": [
+    "neohorse-1-9b",
+    "neohorse-1-9b-gguf",
+    "NeoHorse-1-9B"
+  ],
+  "website_slug": "neohorse-1-9b",
+  "website_url": "https://wumbolabs.dev/evaluations/neohorse-1-9b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "localmaxxing": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "performance": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "capabilities": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "serving-profile": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "specialized": null,
+    "practical-use": null,
+    "context": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "reliability": "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "agentic": "neohorse-1-9b-rtx5070-welp-agentic-20260925",
+    "recommended_profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off",
+    "classification": "READY_WITH_GUARDRAILS",
+    "profile_ids": [
+      "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+      "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-off"
+    ],
+    "event_ids": [
+      "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+      "neohorse-1-9b-rtx5070-welp-reasoning-off-20260925",
+      "neohorse-1-9b-rtx5070-welp-agentic-20260925"
+    ]
+  },
+  "context_summary": "First fresh-model WELP campaign under the model-agentic snapshot (case C: both reasoning profiles required and measured on the same frozen task set). Both profiles classify READY_WITH_GUARDRAILS (R-C6/R-C7) with divergent dimension shapes, published independently and never averaged: Reasoning On (publisher default) SEMANTIC=ACCEPTABLE with reasoning-driven budget exhaustion (7/60 truncated) and R7 negative; Reasoning Off SEMANTIC=STRONG with 1.000 completion, R7 pass, reliability gate ADVANCE, but a truthful-reporting FAIL in Repository Repair. Useful context 65536 both profiles (FIT_LIMIT beyond on 12 GB). Agentic: 2 of 3 task classes scored (Research PASS; Repository FAIL on a false verification claim); the System class is INTEGRATION_BLOCKED by a deterministic frozen-harness defect (cause recorded, WELP unmodified).",
+  "classification_summary": "READY_WITH_GUARDRAILS (R-C6/R-C7) per profile, derived independently per reasoning profile; guardrails: hallucination-pattern check negative under Reasoning On, capability modules not all PASS in both, and a truthful-reporting failure under Reasoning Off.",
+  "localmaxxing_summary": {
+    "status": "SUBMITTED",
+    "origin": "NEW",
+    "service_record_id": "cmuhu00r40dtjlq01ptbrfbx2",
+    "note": "canonical practical profile Q8_0 llama.cpp; Reasoning Off sibling VERIFIED_EXISTING (workload is reasoning-state invariant)"
+  },
+  "reasoning_group": {
+    "group_id": "neohorse-1-9b-reasoning-profiles",
+    "case": "C",
+    "publisher_default_profile": "reasoning-on",
+    "note": "one protocol, two sections; Agentic ran on the publisher-default profile only"
+  }
+}

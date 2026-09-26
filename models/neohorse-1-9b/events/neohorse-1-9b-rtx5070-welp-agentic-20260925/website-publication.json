@@ -1,0 +1,40 @@
+{
+  "schema": "wumbolabs-labs-publication/1",
+  "campaign": "neohorse-1-9b-rtx5070-welp-agentic-2026-09-25",
+  "disposition": "WEBSITE_READY",
+  "reason": "Success-branch Agentic event with terminally dispositioned sections. Terminal disposition (WEBSITE_PUBLISHED) is driven at campaign-group terminal closeout, so the model page renders the full group with independent Model and Agentic verdicts.",
+  "publication_date": null,
+  "model": {
+    "display_name": "NeoHorse-1-9B",
+    "publisher": "TokenRhythm",
+    "hf_id": "TokenRhythm/NeoHorse-1-9B",
+    "revision": "ba5b6e40d88a6ddf4591e176738254a3bc715765"
+  },
+  "artifact": {
+    "kind": "GGUF",
+    "filename": "NeoHorse-1-9B-Q8_0.gguf",
+    "quantization": "Q8_0",
+    "source_repo": "TokenRhythm/NeoHorse-1-9B-GGUF",
+    "source_revision": "ddcb4c939b5392c86a9d2733c7c0ed30db2554fd"
+  },
+  "canonical_evidence": {
+    "state": "PENDING_HUMAN_GATE",
+    "target": "WumboLabs/evaluations",
+    "note": "Central publication occurs at campaign-group terminal closeout per the success-branch lifecycle."
+  },
+  "localmaxxing_summary": {
+    "status": "SUBMITTED",
+    "origin": "VERIFIED_EXISTING",
+    "service_record_id": "cmuhu00r40dtjlq01ptbrfbx2"
+  },
+  "classification_summary": {
+    "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+    "readiness": "READY_WITH_GUARDRAILS",
+    "rule": "R-C6/R-C7"
+  },
+  "agentic_summary": {
+    "disposition": "INTEGRATION_BLOCKED",
+    "tested": "2 of 3 task classes scored (1 PASS / 1 FAIL); system class blocked by a frozen-harness defect (cause recorded)"
+  },
+  "website_record_slug": "eval-neohorse-1-9b-rtx5070-welp-agentic-20260925"
+}

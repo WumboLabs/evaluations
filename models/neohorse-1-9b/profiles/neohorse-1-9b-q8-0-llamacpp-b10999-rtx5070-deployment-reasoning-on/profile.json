@@ -1,0 +1,27 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "neohorse-1-9b",
+  "model_display_name": "NeoHorse-1-9B (dual reasoning profiles; Reasoning On = publisher default)",
+  "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+  "profile_display_name": "llama.cpp official Q8_0 (Reasoning On = publisher default, deployment sampler, 32K)",
+  "runtime_family": "llama.cpp (upstream)",
+  "runtime_version": "b10999 (b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063, CUDA SM120)",
+  "artifact": "TokenRhythm/NeoHorse-1-9B-GGUF@ddcb4c93 :: NeoHorse-1-9B-Q8_0.gguf (sha256 519869730bda973ec50bb3ac42cd874569e5f3a57c3e0d5d23a2b5040e93310f)",
+  "artifact_precision": "Q8_0 official publisher GGUF; f16 K/V cache (FA on); no MTP draft head",
+  "hardware_scope": "WumboJetsII (RTX 5070 12GB)",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current-recommended",
+  "profile_path": "models/neohorse-1-9b/profiles/neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+  "event_ids": [
+    "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
+    "neohorse-1-9b-rtx5070-welp-agentic-20260925"
+  ],
+  "reasoning_profile": "reasoning-on",
+  "publisher_default_profile": true,
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "neohorse-1-9b-rtx5070-welp-reasoning-on-2026-09-25",
+    "published_date": "2026-09-26",
+    "note": "Case-C reasoning group neohorse-1-9b-reasoning-profiles (welp-reasoning-topology-0.1.0-draft; case C measured at preflight). Publisher-default profile."
+  }
+}
