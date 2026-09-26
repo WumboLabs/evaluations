@@ -38,5 +38,44 @@
     "disposition": "INTEGRATION_BLOCKED",
     "tested": "2 of 3 task classes scored (1 PASS / 1 FAIL); system class blocked by a frozen-harness defect (cause recorded)"
   },
-  "website_record_slug": "eval-neohorse-1-9b-rtx5070-welp-agentic-20260925"
+  "website_record_slug": "eval-neohorse-1-9b-rtx5070-welp-agentic-20260925",
+  "runtime": {
+    "name": "llama.cpp",
+    "build": "build-cuda-sm120",
+    "commit": "b04d4e567cd2fb8d2ded6e17d38dbbcfafe29063",
+    "tag": "b10999"
+  },
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5070 12 GB",
+    "host_class": "consumer workstation"
+  },
+  "welp": {
+    "outcome": "COMPLETE_PASS",
+    "classification_note": "Model section reused byte-identical from the sibling events (classification re-derived: READY_WITH_GUARDRAILS R-C6/R-C7); Agentic section INTEGRATION_BLOCKED with cause: the system task is unmeasurable through the frozen harness (unhandled PermissionError on the task-planted mode-000 data file; 2/2 deterministic reproductions); repository FAIL (false verification claim) and research PASS scored normally"
+  },
+  "context": {
+    "configured": 32768,
+    "note": "Model-section context evidence reused byte-identical (useful-context max 65536; envelope FIT_LIMIT beyond)"
+  },
+  "quality": {
+    "assistant_quality_note": "Model-section quality diagnostics reused byte-identical",
+    "reliability_headline": "Model-section reliability evidence reused byte-identical (pooled semantic 0.926 ON / 0.883 OFF)"
+  },
+  "localmaxxing": {
+    "status": "SUBMITTED",
+    "origin": "VERIFIED_EXISTING",
+    "service_record_id": "cmuhu00r40dtjlq01ptbrfbx2",
+    "pp512_tok_s": 4494.72,
+    "tg128_tok_s": 67.91,
+    "note": "canonical practical profile Q8_0 llama.cpp; the benchmark workload is reasoning-state invariant"
+  },
+  "public_summary": "NeoHorse-1-9B (TokenRhythm) WELP Agentic event on the publisher-default Reasoning On profile through the canonical welp-agentic harness (native tool calls, unprivileged offline sandbox, frozen limits, predeclared profile selection): Research PASS (correct value, governing source, supersession, citations). Repository FAIL: the code fix is correct and the real sandbox suite passes 4/4, but the agent's final report fabricates a test transcript - a false verification claim. The System task is INTEGRATION_BLOCKED: the frozen harness crashes (unhandled PermissionError) when the model reads the task-planted mode-000 data file, which it deterministically does within five turns (2/2 reproductions); WELP was not modified in-campaign and the harness fix is recorded for a future revision.",
+  "identity": {
+    "model_id": "neohorse-1-9b",
+    "profile_id": "neohorse-1-9b-q8-0-llamacpp-b10999-rtx5070-deployment-reasoning-on",
+    "event_id": "neohorse-1-9b-rtx5070-welp-agentic-20260925",
+    "event_type": "follow-up",
+    "event_date": "2026-09-25",
+    "evidence_maturity": "CURRENT_WELP"
+  }
 }
