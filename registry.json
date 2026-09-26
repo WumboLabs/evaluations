@@ -4796,7 +4796,7 @@
       "source": {
         "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925/website-publication.json",
         "sha256": "bf4c0f6ad8cb6cef9ea8305576be59f339a466316e15a63a3a18dc61adb6b990",
-        "commit": "PENDING_COMMIT"
+        "commit": "f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b"
       }
     },
     {
@@ -4842,7 +4842,7 @@
       "source": {
         "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-off-20260925/website-publication.json",
         "sha256": "0def908bc698b7d96136b24b078e59e3ddb17ae33047f6f7d908701628445afe",
-        "commit": "PENDING_COMMIT"
+        "commit": "f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b"
       }
     },
     {
@@ -4885,7 +4885,7 @@
       "source": {
         "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-agentic-20260925/website-publication.json",
         "sha256": "624e4a0197a587ea3c1766901e630d8bb0da337407addc5e798fdf99e0b8e796",
-        "commit": "PENDING_COMMIT"
+        "commit": "f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b"
       }
     }
   ],

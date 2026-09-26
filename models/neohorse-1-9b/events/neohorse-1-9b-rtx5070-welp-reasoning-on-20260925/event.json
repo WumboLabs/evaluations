@@ -40,7 +40,7 @@
   },
   "source": {
     "path": "models/neohorse-1-9b/events/neohorse-1-9b-rtx5070-welp-reasoning-on-20260925/website-publication.json",
-    "sha256": "785993b9ae7f2927d09c7b25555dbacb500ddcac41d28a7b43064bd85e0db427",
-    "commit": "c287b99fda73263af9f2a361e6a5b1a97e77e98e"
+    "sha256": "bf4c0f6ad8cb6cef9ea8305576be59f339a466316e15a63a3a18dc61adb6b990",
+    "commit": "f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b"
   }
 }
