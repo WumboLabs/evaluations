@@ -88,5 +88,5 @@
   "harness": "welp-agentic-harness/0.1.0-draft (native_tools adapter)",
   "note": "Agentic verdict reported independently of the Model verdict; never combined."
  },
- "website_record_slug": "ling-3-0-tiny"
+ "website_record_slug": "eval-ling-3-0-tiny-rtx5070-welp-agentic-20260925"
 }
