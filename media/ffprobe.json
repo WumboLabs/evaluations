@@ -1,0 +1,1 @@
+{"format":{"bit_rate":2767,"format_duration_seconds":26.0},"tool":"ffprobe (error-only verbosity), local","verified_file_identity":{"bytes":8993,"media_sha256":"72a16a92c3fb259322ef01969e401ac8a7e2ab56cd2fddafc678f7175d4f3fc4"},"video_stream":{"codec":"h264","codec_type":"video","frame_rate":"10/1","height":364,"pix_fmt":"yuv420p","width":800}}
