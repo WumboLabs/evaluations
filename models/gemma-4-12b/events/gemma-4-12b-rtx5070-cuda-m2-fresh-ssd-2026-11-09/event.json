@@ -1,1 +1,47 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-11-09","event_id":"gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09","event_kicker":"WELP v1.0 fresh second-family baseline and reasoning arm","event_path":"models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09","event_title":"Gemma 4 12B IT fresh Model/Core baseline + advanced reasoning (RTX 5070 CUDA)","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["capabilities","reliability","context","performance","specialized"],"hardware":"UNKNOWN","headline":"Accepted fresh second family: 61-identity baseline with reliability 17/20 and tool use 1/3, plus a three-PASS advanced-reasoning arm with ADVANCE; performance memory telemetry unmeasured (UNKNOWN, never zero); separate configurations, never averaged.","model_id":"gemma-4-12b","profile_id":"gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09","profile_name":"UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) \u2014 Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment","profile_status":"current","publication_provenance":{"campaign":"gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"117bbb6d0faf46168cf4e8471e3fc5d9461713f968b51db1bf4d8e6e1bb24502","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md"
+  },
+  "event_date": "2026-11-09",
+  "event_id": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+  "event_kicker": "WELP v1.0 fresh second-family baseline and reasoning arm",
+  "event_path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+  "event_title": "Gemma 4 12B IT fresh Model/Core baseline + advanced reasoning (RTX 5070 CUDA)",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "hardware": "UNKNOWN",
+  "headline": "Accepted fresh second family: 61-identity baseline with reliability 17/20 and tool use 1/3, plus a three-PASS advanced-reasoning arm with ADVANCE; performance memory telemetry unmeasured (UNKNOWN, never zero); separate configurations, never averaged.",
+  "model_id": "gemma-4-12b",
+  "profile_id": "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+  "profile_name": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) — Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "117bbb6d0faf46168cf4e8471e3fc5d9461713f968b51db1bf4d8e6e1bb24502",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/website-publication.json",
+    "sha256": "cbd7ca3d3a61de9b20b6ae70e59ea0d8048c5c9c1878ec2855af0e27d3cc871a",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

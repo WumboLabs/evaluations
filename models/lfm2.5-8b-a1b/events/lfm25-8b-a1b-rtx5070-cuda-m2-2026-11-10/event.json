@@ -1,1 +1,47 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-11-10","event_id":"lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10","event_kicker":"WELP v1.0 third-family baseline and reasoning arm","event_path":"models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10","event_title":"LFM2.5-8B-A1B Model/Core baseline + advanced reasoning (RTX 5070 CUDA)","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["capabilities","reliability","context","performance","specialized"],"hardware":"NVIDIA GeForce RTX 5070","headline":"Accepted third family with negatives retained: reliability 13/20, context 4/8, tool use 2/3; advanced-reasoning two PASS and one valid FAIL with ADVANCE; a distinct configuration reported independently, never averaged.","model_id":"lfm2.5-8b-a1b","profile_id":"lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10","profile_name":"Q5_K_M (official LiquidAI GGUF) \u2014 LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable, publisher sampler","profile_status":"current","publication_provenance":{"campaign":"lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"cd46b1adbd7799248481a780ded476f232d70b1bc7b6a11ec1935d196bf857e3","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/REPORT.md"
+  },
+  "event_date": "2026-11-10",
+  "event_id": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+  "event_kicker": "WELP v1.0 third-family baseline and reasoning arm",
+  "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+  "event_title": "LFM2.5-8B-A1B Model/Core baseline + advanced reasoning (RTX 5070 CUDA)",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "hardware": "NVIDIA GeForce RTX 5070",
+  "headline": "Accepted third family with negatives retained: reliability 13/20, context 4/8, tool use 2/3; advanced-reasoning two PASS and one valid FAIL with ADVANCE; a distinct configuration reported independently, never averaged.",
+  "model_id": "lfm2.5-8b-a1b",
+  "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+  "profile_name": "Q5_K_M (official LiquidAI GGUF) — LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable, publisher sampler",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "cd46b1adbd7799248481a780ded476f232d70b1bc7b6a11ec1935d196bf857e3",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/website-publication.json",
+    "sha256": "be7a478ca41736201401584267b101e27b93cce2359739040486f6ecb7a23d9f",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

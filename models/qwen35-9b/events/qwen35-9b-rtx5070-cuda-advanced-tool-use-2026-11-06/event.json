@@ -1,1 +1,43 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-11-06","event_id":"qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06","event_kicker":"WELP v1.0 Advanced Tool Use specialist","event_path":"models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06","event_title":"Qwen3.5-9B advanced tool-use specialist (RTX 5070 CUDA, thinking-on)","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["specialized"],"hardware":"NVIDIA GeForce RTX 5070","headline":"Advanced tool use (tool-use-advanced/1): selection, permission and recovery all PASS on executor-validated transcripts; executed tool events are the only evidence.","model_id":"qwen35-9b","profile_id":"qwen35-9b-rtx5070-cuda-atu-on-2026-11-06","profile_name":"Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced tool-use surface)","profile_status":"current","publication_provenance":{"campaign":"qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"d478326c322486351f38467ce8b40fefb6cb7881df816f3a4903cb8109ad6b9b","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/REPORT.md"
+  },
+  "event_date": "2026-11-06",
+  "event_id": "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+  "event_kicker": "WELP v1.0 Advanced Tool Use specialist",
+  "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+  "event_title": "Qwen3.5-9B advanced tool-use specialist (RTX 5070 CUDA, thinking-on)",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "NVIDIA GeForce RTX 5070",
+  "headline": "Advanced tool use (tool-use-advanced/1): selection, permission and recovery all PASS on executor-validated transcripts; executed tool events are the only evidence.",
+  "model_id": "qwen35-9b",
+  "profile_id": "qwen35-9b-rtx5070-cuda-atu-on-2026-11-06",
+  "profile_name": "Q4_K_M (Unsloth publisher GGUF) — Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced tool-use surface)",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "d478326c322486351f38467ce8b40fefb6cb7881df816f3a4903cb8109ad6b9b",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/website-publication.json",
+    "sha256": "e78794075406259a229ebc794f57e802e040728b801411167052f6400c31493c",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

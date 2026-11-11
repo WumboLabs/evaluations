@@ -1,1 +1,44 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-11-08","event_id":"qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08","event_kicker":"WELP v1.0 Runtime Performance","event_path":"models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08","event_title":"Qwen3.5-9B runtime performance (RTX 5070 CUDA, deployment-attributed)","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["performance","serving-profile"],"hardware":"NVIDIA GeForce RTX 5070","headline":"Deployment-attributed measurement only (runtime-performance/1): two accepted M2 workload identities, three repeats each; ~83 tok/s short and ~81 tok/s substantial generation on the measured deployment; memory telemetry unavailable, reported as unavailable and never zero.","model_id":"qwen35-9b","profile_id":"qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08","profile_name":"Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (runtime-performance measurement surface)","profile_status":"current","publication_provenance":{"campaign":"qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"b67dfa898d883267b8db21fc4d93561f01b88e4ec59a74e912bba4b490704827","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/REPORT.md"
+  },
+  "event_date": "2026-11-08",
+  "event_id": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+  "event_kicker": "WELP v1.0 Runtime Performance",
+  "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+  "event_title": "Qwen3.5-9B runtime performance (RTX 5070 CUDA, deployment-attributed)",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "performance",
+    "serving-profile"
+  ],
+  "hardware": "NVIDIA GeForce RTX 5070",
+  "headline": "Deployment-attributed measurement only (runtime-performance/1): two accepted M2 workload identities, three repeats each; ~83 tok/s short and ~81 tok/s substantial generation on the measured deployment; memory telemetry unavailable, reported as unavailable and never zero.",
+  "model_id": "qwen35-9b",
+  "profile_id": "qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08",
+  "profile_name": "Q4_K_M (Unsloth publisher GGUF) — Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (runtime-performance measurement surface)",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "b67dfa898d883267b8db21fc4d93561f01b88e4ec59a74e912bba4b490704827",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/website-publication.json",
+    "sha256": "28db53d0d546f411001081fc8d6a2e24098692c9f89585d78fd63d170caa7d76",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

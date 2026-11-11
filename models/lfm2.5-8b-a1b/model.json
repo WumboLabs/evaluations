@@ -15,20 +15,24 @@
     "model-classification": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
     "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
     "performance": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-    "capabilities": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "capabilities": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
     "serving-profile": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-    "specialized": null,
+    "specialized": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
     "practical-use": null,
     "context": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-    "reliability": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+    "reliability": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
     "recommended_profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
     "classification": "NOT_READY",
     "profile_ids": [
-      "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment"
+      "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+      "lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+      "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11"
     ],
     "event_ids": [
       "lfm25-8b-a1b-rtx5070-welp-20260923",
-      "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924"
+      "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+      "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+      "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11"
     ]
   },
   "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Controlled Context fixture 1.3 (canonical answer oracle, hardened snapshots): coverage COMPLETE (20/20 valid near-full cells, max placement error 0.23 pp), capability PARTIAL with USEFUL_CONTEXT_MAX 8,192 tokens on both lanes; seed 314159 validates 16K and 32K via oracle-reviewed cells; seed 42 and the 64K/128K rungs fail on synthesis and retrieval errors. The 2026-09-24 adjudication event supersedes current-state attribution only: raw evidence reused byte-identically from the hardening-validation campaign, whose 1-1 blinded document-synthesis disagreement resolved FAIL (2-of-3 with one blinded tie-break). Classification NOT_READY (R-C3, semantic WEAK) is terminal on this profile."

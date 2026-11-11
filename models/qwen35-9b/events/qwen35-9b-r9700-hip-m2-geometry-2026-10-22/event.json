@@ -1,1 +1,46 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-10-22","event_id":"qwen35-9b-r9700-hip-m2-geometry-2026-10-22","event_kicker":"WELP v1.0 reference-family Model/Core baseline","event_path":"models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22","event_title":"Qwen3.5-9B reference Model/Core baseline (Radeon R9700 HIP, thinking-on)","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["capabilities","reliability","context","performance"],"hardware":"AMD Radeon AI PRO R9700","headline":"Accepted reference-family baseline: 61 fixed identities under frozen 16K wide geometry, six BUDGET_LIMITED non-evaluables and five scored FAILs retained as first-class findings; no model classification assigned (thresholds uncalibrated).","model_id":"qwen35-9b","profile_id":"qwen35-9b-r9700-hip-on-2026-10-22","profile_name":"Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp HIP on AMD Radeon AI PRO R9700, thinking-on, qualified wide16k-C0 sampler","profile_status":"current","publication_provenance":{"campaign":"qwen35-9b-r9700-hip-m2-geometry-2026-10-22","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"088c87083754a0b1ebb337aa64aab1f3870b2e4cc698f414a997c6a8d016726f","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-qwen35-9b-r9700-hip-m2-geometry-2026-10-22","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/REPORT.md"
+  },
+  "event_date": "2026-10-22",
+  "event_id": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+  "event_kicker": "WELP v1.0 reference-family Model/Core baseline",
+  "event_path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+  "event_title": "Qwen3.5-9B reference Model/Core baseline (Radeon R9700 HIP, thinking-on)",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance"
+  ],
+  "hardware": "AMD Radeon AI PRO R9700",
+  "headline": "Accepted reference-family baseline: 61 fixed identities under frozen 16K wide geometry, six BUDGET_LIMITED non-evaluables and five scored FAILs retained as first-class findings; no model classification assigned (thresholds uncalibrated).",
+  "model_id": "qwen35-9b",
+  "profile_id": "qwen35-9b-r9700-hip-on-2026-10-22",
+  "profile_name": "Q4_K_M (Unsloth publisher GGUF) — Unsloth Q4_K_M GGUF, llama.cpp HIP on AMD Radeon AI PRO R9700, thinking-on, qualified wide16k-C0 sampler",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "088c87083754a0b1ebb337aa64aab1f3870b2e4cc698f414a997c6a8d016726f",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/website-publication.json",
+    "sha256": "cf54b1295fde52b69d5e9e15e792a3c40b6458e920024289edc4374ee5aefea6",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

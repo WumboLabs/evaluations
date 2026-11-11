@@ -6,7 +6,7 @@
 
 **Recommended profile:** `qwen35-9b-llamacpp-q8`
 
-**Context:** Practical default: 32,768 tokens; Guarded boundary: 65,536 tokens; Model-card native maximum: 262,144 tokens
+**Context:** Practical default: 16,384 tokens
 
 Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.
 
@@ -22,9 +22,22 @@ practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 2
 ## Profiles
 
 - [qwen35-9b-llamacpp-q8](profiles/qwen35-9b-llamacpp-q8/) — current; llama.cpp; Qwen3.5-9B-Q8_0.gguf (text-only conversion; Unsloth rev 3885219b6810b007914f3a7950a8d1b469d598a5)
+- [qwen35-9b-r9700-hip-on-2026-10-22](profiles/qwen35-9b-r9700-hip-on-2026-10-22/) — current; llama.cpp (HIP); Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
+- [qwen35-9b-rtx5070-cuda-on-2026-11-06](profiles/qwen35-9b-rtx5070-cuda-on-2026-11-06/) — current; llama.cpp (CUDA); Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
+- [qwen35-9b-rtx5070-cuda-lc-on-2026-11-06](profiles/qwen35-9b-rtx5070-cuda-lc-on-2026-11-06/) — current; llama.cpp (CUDA); Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
+- [qwen35-9b-rtx5070-cuda-atu-on-2026-11-06](profiles/qwen35-9b-rtx5070-cuda-atu-on-2026-11-06/) — current; llama.cpp (CUDA); Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
+- [qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08](profiles/qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08/) — current; llama.cpp (CUDA); Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8
 
 ## Testing history
 
+- 2026-11-08 — [Qwen3.5-9B runtime performance (RTX 5070 CUDA, deployment-attributed)](events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08](events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B scored Agentic M3 — research and repository (genuine negatives)](events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06](events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B scored Agentic M3 — readiness and system (RTX 5070 CUDA, thinking-on)](events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06](events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B advanced tool-use specialist (RTX 5070 CUDA, thinking-on)](events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06](events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B advanced reasoning specialist (RTX 5070 CUDA, thinking-on)](events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06](events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B advanced long-context specialist (RTX 5070 CUDA, thinking-on)](events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06](events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06/REPORT.md)
+- 2026-11-06 — [Qwen3.5-9B advanced coding specialist (RTX 5070 CUDA, thinking-on)](events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06/) — NOT_ASSIGNED; [qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06](events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06/REPORT.md)
+- 2026-10-22 — [Qwen3.5-9B reference Model/Core baseline (Radeon R9700 HIP, thinking-on)](events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/) — NOT_ASSIGNED; [qwen35-9b-r9700-hip-m2-geometry-2026-10-22](events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/REPORT.md)
 - 2026-09-11 — [Context envelope completion](events/context-envelope-completion-2026-09-11-qwen35-9b/) — READY_WITH_GUARDRAILS; [context-envelope-completion-2026-09-11-qwen35-9b](events/context-envelope-completion-2026-09-11-qwen35-9b/REPORT.md)
 
 Current-state attribution is recorded in [model.json](model.json). Related shared events do not silently replace this model's classifications or context findings.

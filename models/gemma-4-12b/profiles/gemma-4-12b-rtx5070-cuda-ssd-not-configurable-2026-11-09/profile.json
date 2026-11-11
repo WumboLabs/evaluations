@@ -1,1 +1,24 @@
-{"artifact":"UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) :: revision unsloth-UD-Q4_K_XL-fc034cfff751157913579611efad8462ac1be606 :: sha256 90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e","artifact_precision":"UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF)","current_status":"current","deployment_topology":"Fresh independently qualified canonical NVMe (SSD) deployment; llama.cpp CUDA; reasoning arm NOT_CONFIGURABLE; sampler temperature 1.0, top_k 64, top_p 0.95, min_p 0.0, repeat_penalty 1.0, presence_penalty 0.0, seed 42; configured capacity 16,384 tokens; accepted M2 fixed ceilings reused unchanged (4096 default / 12288 coding, 180 s deadline).","event_ids":["gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09"],"hardware_scope":"UNKNOWN","model_display_name":"Gemma 4 12B IT","model_id":"gemma-4-12b","profile_display_name":"Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment","profile_id":"gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09","profile_path":"models/gemma-4-12b/profiles/gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09","publication_provenance":{"kind":"native","note":"Native profile proposed at first publication of its linked event(s) gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.","published_date":"2026-11-11"},"repository":"WumboLabs/evaluations","runtime_family":"llama.cpp (CUDA)","runtime_version":"b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)","schema":"wumbolabs-eval-profile/2"}
+{
+  "artifact": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) :: revision unsloth-UD-Q4_K_XL-fc034cfff751157913579611efad8462ac1be606 :: sha256 90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e",
+  "artifact_precision": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF)",
+  "current_status": "current",
+  "deployment_topology": "Fresh independently qualified canonical NVMe (SSD) deployment; llama.cpp CUDA; reasoning arm NOT_CONFIGURABLE; sampler temperature 1.0, top_k 64, top_p 0.95, min_p 0.0, repeat_penalty 1.0, presence_penalty 0.0, seed 42; configured capacity 16,384 tokens; accepted M2 fixed ceilings reused unchanged (4096 default / 12288 coding, 180 s deadline).",
+  "event_ids": [
+    "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09"
+  ],
+  "hardware_scope": "UNKNOWN",
+  "model_display_name": "Gemma 4 12B IT",
+  "model_id": "gemma-4-12b",
+  "profile_display_name": "Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment",
+  "profile_id": "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+  "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+  "publication_provenance": {
+    "kind": "native",
+    "note": "Native profile proposed at first publication of its linked event(s) gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+    "published_date": "2026-11-11"
+  },
+  "repository": "WumboLabs/evaluations",
+  "runtime_family": "llama.cpp (CUDA)",
+  "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+  "schema": "wumbolabs-eval-profile/2"
+}

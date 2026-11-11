@@ -25,9 +25,11 @@ native_maximum_tokens: 262144; native_maximum_disposition: "FIT_LIMIT — measur
 - [gemma-4-12b-llamacpp-ud-q6-k-xl](profiles/gemma-4-12b-llamacpp-ud-q6-k-xl/) — benchmark-only; llama.cpp; unsloth/gemma-4-12b-it-GGUF UD-Q6_K_XL
 - [gemma-4-12b-llamacpp-q4km](profiles/gemma-4-12b-llamacpp-q4km/) — benchmark-only; llama.cpp; ggml-org/gemma-4-12b-it-GGUF Q4_K_M
 - [gemma-4-12b-llamacpp-ud-q5-k-xl](profiles/gemma-4-12b-llamacpp-ud-q5-k-xl/) — practical-use; llama.cpp; unsloth/gemma-4-12b-it-GGUF UD-Q5_K_XL
+- [gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09](profiles/gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09/) — current; llama.cpp (CUDA); UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) :: revision unsloth-UD-Q4_K_XL-fc034cfff751157913579611efad8462ac1be606 :: sha256 90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e
 
 ## Testing history
 
+- 2026-11-09 — [Gemma 4 12B IT fresh Model/Core baseline + advanced reasoning (RTX 5070 CUDA)](events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/) — NOT_ASSIGNED; [gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09](events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md)
 - 2026-09-12 — [Current-WELP recharacterization](events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12/) — READY_WITH_GUARDRAILS; [gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12](events/gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12/REPORT.md)
 - 2026-07-04 — [12B practical pool comparison v025 + Grug](../../shared-events/practical-use-comparison-2026-07-04/) — PRACTICAL_USE / SHARED_MULTI_MODEL_COMPARISON (canonical); [gemma4-12b-practical-pool-v025-2026-07-04](../../shared-events/practical-use-comparison-2026-07-04/REPORT.md)
 - 2026-07-04 — [LMX speed runs across four Gemma 4 12B quants](events/gemma4-12b-lmx-speed-2026-07-04/) — BENCHMARK_ONLY (LMX local speed); [gemma4-12b-lmx-speed-2026-07-04](events/gemma4-12b-lmx-speed-2026-07-04/REPORT.md)

@@ -1,1 +1,24 @@
-{"artifact":"Q5_K_M (official LiquidAI GGUF) :: revision LiquidAI-Q5_K_M-49c14831707011e64d70b2ebd8462ba08d608434 :: sha256 eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e","artifact_precision":"Q5_K_M (official LiquidAI GGUF)","current_status":"current","deployment_topology":"Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; reasoning arm NOT_CONFIGURABLE; publisher sampler (temperature 0.2, top_k 80, top_p 1.0, min_p 0.0, repeat_penalty 1.05, seed 42); configured capacity 16,384 tokens; one-shot HelicopterBench /2 generation surface.","event_ids":["lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11"],"hardware_scope":"NVIDIA GeForce RTX 5070","model_display_name":"LFM2.5-8B-A1B","model_id":"lfm2.5-8b-a1b","profile_display_name":"LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)","profile_id":"lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11","profile_path":"models/lfm2.5-8b-a1b/profiles/lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11","publication_provenance":{"kind":"native","note":"Native profile proposed at first publication of its linked event(s) lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.","published_date":"2026-11-11"},"repository":"WumboLabs/evaluations","runtime_family":"llama.cpp (CUDA)","runtime_version":"b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)","schema":"wumbolabs-eval-profile/2"}
+{
+  "artifact": "Q5_K_M (official LiquidAI GGUF) :: revision LiquidAI-Q5_K_M-49c14831707011e64d70b2ebd8462ba08d608434 :: sha256 eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+  "artifact_precision": "Q5_K_M (official LiquidAI GGUF)",
+  "current_status": "current",
+  "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; reasoning arm NOT_CONFIGURABLE; publisher sampler (temperature 0.2, top_k 80, top_p 1.0, min_p 0.0, repeat_penalty 1.05, seed 42); configured capacity 16,384 tokens; one-shot HelicopterBench /2 generation surface.",
+  "event_ids": [
+    "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11"
+  ],
+  "hardware_scope": "NVIDIA GeForce RTX 5070",
+  "model_display_name": "LFM2.5-8B-A1B",
+  "model_id": "lfm2.5-8b-a1b",
+  "profile_display_name": "LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)",
+  "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+  "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+  "publication_provenance": {
+    "kind": "native",
+    "note": "Native profile proposed at first publication of its linked event(s) lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+    "published_date": "2026-11-11"
+  },
+  "repository": "WumboLabs/evaluations",
+  "runtime_family": "llama.cpp (CUDA)",
+  "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+  "schema": "wumbolabs-eval-profile/2"
+}

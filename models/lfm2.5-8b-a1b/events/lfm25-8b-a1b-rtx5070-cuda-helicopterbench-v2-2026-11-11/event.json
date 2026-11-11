@@ -1,1 +1,43 @@
-{"authoring":"generated","canonical_evidence":{"proposed_repo":"WumboLabs/evaluations","state":"PENDING_HUMAN_GATE"},"event_date":"2026-11-11","event_id":"lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11","event_kicker":"WELP v1.0 authentic objective HelicopterBench /2","event_path":"models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11","event_title":"LFM2.5-8B-A1B HelicopterBench /2 one-shot objective result","event_type":"welp-recharacterization","evidence_maturity":"CURRENT_WELP","evidence_scope":["specialized"],"hardware":"NVIDIA GeForce RTX 5070","headline":"HUMAN_ACCEPTED authentic objective result (helicopterbench/2): one LFM generation, generation PASS, verification PARTIAL, 19/90 raw, 21.1/100 normalized; the historical /1 record (34/90) remains distinct and unchanged; supplementary gameplay capture is bound by hash.","model_id":"lfm2.5-8b-a1b","profile_id":"lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11","profile_name":"Q5_K_M (official LiquidAI GGUF) \u2014 LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)","profile_status":"current","publication_provenance":{"campaign":"lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11","kind":"native","note":"Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance). canonical_evidence stays PENDING_HUMAN_GATE until the registry commit pins the exact repo/commit/path; source {path, sha256, commit} is set at that commit.","published_report_sha256":"5a279ef389211577639b92002c4ebd2ab7884a57da0fc72d250154fa7876d8bf","report_role":"public-safe derivative of the local campaign evidence; the campaign bundle governs"},"publication_state":"pending_human_gate","record_date":"2026-11-11","slug":"eval-lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11","welp_status":"NOT_ASSIGNED"}
+{
+  "authoring": "generated",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/REPORT.md",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+    "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/REPORT.md"
+  },
+  "event_date": "2026-11-11",
+  "event_id": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+  "event_kicker": "WELP v1.0 authentic objective HelicopterBench /2",
+  "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+  "event_title": "LFM2.5-8B-A1B HelicopterBench /2 one-shot objective result",
+  "event_type": "welp-recharacterization",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "specialized"
+  ],
+  "hardware": "NVIDIA GeForce RTX 5070",
+  "headline": "HUMAN_ACCEPTED authentic objective result (helicopterbench/2): one LFM generation, generation PASS, verification PARTIAL, 19/90 raw, 21.1/100 normalized; the historical /1 record (34/90) remains distinct and unchanged; supplementary gameplay capture is bound by hash.",
+  "model_id": "lfm2.5-8b-a1b",
+  "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+  "profile_name": "Q5_K_M (official LiquidAI GGUF) — LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)",
+  "profile_status": "current",
+  "publication_provenance": {
+    "campaign": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+    "kind": "native",
+    "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+    "published_report_sha256": "5a279ef389211577639b92002c4ebd2ab7884a57da0fc72d250154fa7876d8bf",
+    "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+    "published_date": "2026-11-11"
+  },
+  "publication_state": "published",
+  "record_date": "2026-11-11",
+  "slug": "eval-lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+  "welp_status": "NOT_ASSIGNED",
+  "source": {
+    "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/website-publication.json",
+    "sha256": "010533924d0c9a7af4c44499cc1ebe231fb3512b1791e884b30d465060823e54",
+    "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+  }
+}

@@ -11,19 +11,20 @@
     "model-classification": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
     "localmaxxing": null,
     "performance": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
-    "capabilities": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+    "capabilities": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
     "serving-profile": null,
-    "specialized": "gemma4-12b-honesty-ladder-2026-06-21",
+    "specialized": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
     "practical-use": "gemma4-12b-practical-pool-v025-2026-07-04",
     "context": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
-    "reliability": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+    "reliability": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
     "recommended_profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
     "classification": "READY_WITH_GUARDRAILS",
     "profile_ids": [
       "gemma-4-12b-llamacpp-q4km",
       "gemma-4-12b-llamacpp-qat-q4-0",
       "gemma-4-12b-llamacpp-ud-q5-k-xl",
-      "gemma-4-12b-llamacpp-ud-q6-k-xl"
+      "gemma-4-12b-llamacpp-ud-q6-k-xl",
+      "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09"
     ],
     "event_ids": [
       "gemma4-12b-practical-use-family-2026-06-21",
@@ -31,7 +32,8 @@
       "gemma4-12b-honesty-ladder-2026-06-21",
       "gemma4-12b-practical-pool-v025-2026-07-04",
       "gemma4-12b-lmx-speed-2026-07-04",
-      "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12"
+      "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+      "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09"
     ]
   },
   "context_summary": "native_maximum_tokens: 262144; native_maximum_disposition: \"FIT_LIMIT — measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072\"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: \"Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED).\""

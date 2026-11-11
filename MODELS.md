@@ -11,10 +11,10 @@
 | [LFM2.5 1.2B](models/lfm2.5-1.2b/) | COMPLETE_SMALL_MODEL_EVALUATION | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-1-2b/) |
 | [Ornith 1.5 9B](models/ornith-1.5-9b/) | COMPLETE / FINAL_WELP_READINESS_NOT_READY | 1 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/ornith-1-5-9b/) |
 | [Qwen3.5-4B](models/qwen35-4b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/qwen35-4b/) |
-| [Qwen3.5-9B](models/qwen35-9b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/qwen35-9b/) |
+| [Qwen3.5-9B](models/qwen35-9b/) | No model-level classification published | 6 | 9 | [Evaluation](https://wumbolabs.dev/evaluations/qwen35-9b/) |
 | [MiniCPM5-2B](models/minicpm5-2b/) | READY_WITH_GUARDRAILS | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/minicpm5-2b/) |
 | [Gemma 4 E4B](models/gemma4-e4b/) | READY_WITH_GUARDRAILS / CLOSED_WELP_CROSS_FAMILY_CONTROL | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/gemma4-e4b/) |
-| [Gemma 4 12B IT](models/gemma-4-12b/) | READY_WITH_GUARDRAILS | 4 | 6 | [Evaluation](https://wumbolabs.dev/evaluations/gemma-4-12b/) |
+| [Gemma 4 12B IT](models/gemma-4-12b/) | READY_WITH_GUARDRAILS | 5 | 7 | [Evaluation](https://wumbolabs.dev/evaluations/gemma-4-12b/) |
 | [Mellum2 12B-A2.5B](models/mellum2-12b-a2.5b/) | LIMITED_ROLE_ONLY | 2 | 6 | [Evaluation](https://wumbolabs.dev/evaluations/mellum2-12b-a2-5b/) |
 | [Qwen3-14B](models/qwen3-14b/) | READY_WITH_GUARDRAILS | 3 | 5 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-14b/) |
 | [Qwen3.6-35B-A3B](models/qwen3.6-35b-a3b/) | LIMITED_ROLE_ONLY | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-6-35b-a3b/) |
@@ -27,7 +27,7 @@
 | [Bonsai 27B (Q1_0)](models/bonsai-27b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-27b/) |
 | [Ternary Bonsai 2 27B](models/bonsai-2-27b/) | READY_WITH_GUARDRAILS / PROFILE-SCOPED (thinking-off recommended; reasoning-on historical NOT_READY) | 2 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/bonsai-2-27b/) |
 | [Spark-X2.5-4B](models/spark-x2.5-4b/) | READY_WITH_GUARDRAILS | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/spark-x2-5-4b/) |
-| [LFM2.5-8B-A1B](models/lfm2.5-8b-a1b/) | NOT_READY | 1 | 2 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
+| [LFM2.5-8B-A1B](models/lfm2.5-8b-a1b/) | NOT_READY | 3 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | [Granite 4.2 8B](models/granite-4.2-8b/) | NOT_READY | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/granite-4-2-8b/) |
 | [Ling 3.0 Tiny](models/ling-3.0-tiny/) | NOT_READY | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/ling-3-0-tiny/) |
 | [NeoHorse-1-9B](models/neohorse-1-9b/) | READY_WITH_GUARDRAILS | 2 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/neohorse-1-9b/) |

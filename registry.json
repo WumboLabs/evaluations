@@ -230,24 +230,37 @@
       "website_slug": "qwen35-9b",
       "website_url": "https://wumbolabs.dev/evaluations/qwen35-9b/",
       "current_state": {
-        "agent-backend": null,
+        "agent-backend": "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
         "protocol-development": null,
         "model-classification": null,
         "localmaxxing": null,
-        "performance": null,
-        "capabilities": null,
-        "serving-profile": null,
-        "specialized": null,
+        "performance": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+        "capabilities": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+        "serving-profile": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+        "specialized": "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
         "practical-use": null,
-        "context": "context-envelope-completion-2026-09-11-qwen35-9b",
-        "reliability": null,
+        "context": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+        "reliability": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
         "recommended_profile_id": "qwen35-9b-llamacpp-q8",
         "classification": null,
         "profile_ids": [
-          "qwen35-9b-llamacpp-q8"
+          "qwen35-9b-llamacpp-q8",
+          "qwen35-9b-r9700-hip-on-2026-10-22",
+          "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-lc-on-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-atu-on-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08"
         ],
         "event_ids": [
-          "context-envelope-completion-2026-09-11-qwen35-9b"
+          "context-envelope-completion-2026-09-11-qwen35-9b",
+          "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+          "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+          "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08"
         ]
       },
       "context_summary": "practical_default_tokens: 32768; guarded_tokens: 65536; native_maximum_tokens: 262144; extension_mechanism: \"YaRN factor 4.0 (officially advertised to 1,010,000 tokens)\"; envelope_complete: true; native_maximum_disposition: \"FIT_LIMIT - native maximum 262,144 on the Q8_0/f16 primary surface (arithmetic lower bound) and on the authorized q4_0-KV alternate surface (measured admission failure); official YaRN 1,010,000 maximum FIT_LIMIT at every representable KV precision\"; exact_max_dispositions: {\"native_262144_f16_primary\": \"FIT_LIMIT \u2014 arithmetic lower bound: weights + f16 KV = 16,237.0 MiB > 12,227 MiB total VRAM\", \"native_262144_q4_0_alternate\": \"FIT_LIMIT \u2014 measured admission failure (compute buffer 1,336.28 MiB cudaMalloc OOM with weights + 2,304.00 MiB q4_0 KV resident)\", \"yarn_1010000\": \"FIT_LIMIT \u2014 exceeds total VRAM at every representable KV precision; mechanism representation separately confirmed (freq_scale 0.25)\"}; highest_measured_admitted: {\"primary_f16_tokens\": 65536, \"note\": \"highest measured/admitted near-full primary rung; 98,304 projected below the frozen 1,024 MiB operational floor and therefore not launched; exact physical ceiling between the two values not bracketed\"}; useful_context_finding: \"At 99.49-99.56% near-full occupancy both rechecked rungs retrieve all five planted values exactly at 2/25/50/75/95% depths (max placement error 0.104 pp), resist the decoy, retain synthesis and the checksum instruction, but emit the absent-information value under the wrong key name; strict useful-context gate FAILED at both rungs, both seeds. Compared with the same-family 4B control (which dropped synthesis/absent/checksum entirely), 9B retains more auxiliary instructions at the same occupancy; two model sizes do not establish causality\"; notes: \"32K default and 64K guarded profile both reevaluated at the current WELP near-full standard and confirmed; occupied 32K performance 7.8 s TTFT / 60.0 tok/s decode; 64K 17.5 s TTFT / 54.1 tok/s decode\""
@@ -325,19 +338,20 @@
         "model-classification": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
         "localmaxxing": null,
         "performance": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
-        "capabilities": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+        "capabilities": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
         "serving-profile": null,
-        "specialized": "gemma4-12b-honesty-ladder-2026-06-21",
+        "specialized": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
         "practical-use": "gemma4-12b-practical-pool-v025-2026-07-04",
         "context": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
-        "reliability": "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+        "reliability": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
         "recommended_profile_id": "gemma-4-12b-llamacpp-qat-q4-0",
         "classification": "READY_WITH_GUARDRAILS",
         "profile_ids": [
           "gemma-4-12b-llamacpp-q4km",
           "gemma-4-12b-llamacpp-qat-q4-0",
           "gemma-4-12b-llamacpp-ud-q5-k-xl",
-          "gemma-4-12b-llamacpp-ud-q6-k-xl"
+          "gemma-4-12b-llamacpp-ud-q6-k-xl",
+          "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09"
         ],
         "event_ids": [
           "gemma4-12b-practical-use-family-2026-06-21",
@@ -345,7 +359,8 @@
           "gemma4-12b-honesty-ladder-2026-06-21",
           "gemma4-12b-practical-pool-v025-2026-07-04",
           "gemma4-12b-lmx-speed-2026-07-04",
-          "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12"
+          "gemma4-12b-it-rtx5070-welp-recharacterization-2026-09-12",
+          "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09"
         ]
       },
       "context_summary": "native_maximum_tokens: 262144; native_maximum_disposition: \"FIT_LIMIT \u2014 measured: one bounded admission attempt failed with CUDA OOM (compute buffer) and KV-slope accounting (17.4 KiB/token) proves the point cannot fit with required reserve on 12GB; nearest measured boundary 131,072\"; practical_default_tokens: 32768; guarded_tokens: 131072; envelope_complete: true; notes: \"Native rungs 8K/16K/32K/64K/128K VALIDATED (near-full performance; useful-context at 131,072 with 2 seeds, all gates passing at 99.5% occupancy). Official extensions: NONE documented on official cards (EXTERNAL_REPORTED).\""
@@ -758,20 +773,24 @@
         "model-classification": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
         "localmaxxing": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
         "performance": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-        "capabilities": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+        "capabilities": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
         "serving-profile": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-        "specialized": null,
+        "specialized": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
         "practical-use": null,
         "context": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
-        "reliability": "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+        "reliability": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
         "recommended_profile_id": "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
         "classification": "NOT_READY",
         "profile_ids": [
-          "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment"
+          "lfm25-8b-a1b-q6-k-llamacpp-b10999-rtx5070-deployment",
+          "lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+          "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11"
         ],
         "event_ids": [
           "lfm25-8b-a1b-rtx5070-welp-20260923",
-          "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924"
+          "lfm25-8b-a1b-rtx5070-welp-adjudication-20260924",
+          "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+          "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11"
         ]
       },
       "context_summary": "Native 128,000-token context; measured capacity matches at every configured rung (f16 KV, full-GPU). Controlled Context fixture 1.3 (canonical answer oracle, hardened snapshots): coverage COMPLETE (20/20 valid near-full cells, max placement error 0.23 pp), capability PARTIAL with USEFUL_CONTEXT_MAX 8,192 tokens on both lanes; seed 314159 validates 16K and 32K via oracle-reviewed cells; seed 42 and the 64K/128K rungs fail on synthesis and retrieval errors. The 2026-09-24 adjudication event supersedes current-state attribution only: raw evidence reused byte-identically from the hardening-validation campaign, whose 1-1 blinded document-synthesis disagreement resolved FAIL (2-of-3 with one blinded tie-break). Classification NOT_READY (R-C3, semantic WEAK) is terminal on this profile."
@@ -1982,6 +2001,201 @@
         "published_date": "2026-09-26",
         "note": "Case-C reasoning group neohorse-1-9b-reasoning-profiles (welp-reasoning-topology-0.1.0-draft; case C measured at preflight). Supported alternate profile."
       }
+    },
+    {
+      "artifact": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) :: revision unsloth-UD-Q4_K_XL-fc034cfff751157913579611efad8462ac1be606 :: sha256 90fd944d227e9d9b68e7e2c7d5b57b79d4c66ed521b0919fbbd932cf834f6f8e",
+      "artifact_precision": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Fresh independently qualified canonical NVMe (SSD) deployment; llama.cpp CUDA; reasoning arm NOT_CONFIGURABLE; sampler temperature 1.0, top_k 64, top_p 0.95, min_p 0.0, repeat_penalty 1.0, presence_penalty 0.0, seed 42; configured capacity 16,384 tokens; accepted M2 fixed ceilings reused unchanged (4096 default / 12288 coding, 180 s deadline).",
+      "event_ids": [
+        "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09"
+      ],
+      "hardware_scope": "UNKNOWN",
+      "model_display_name": "Gemma 4 12B IT",
+      "model_id": "gemma-4-12b",
+      "profile_display_name": "Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment",
+      "profile_id": "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+      "profile_path": "models/gemma-4-12b/profiles/gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q5_K_M (official LiquidAI GGUF) :: revision LiquidAI-Q5_K_M-49c14831707011e64d70b2ebd8462ba08d608434 :: sha256 eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+      "artifact_precision": "Q5_K_M (official LiquidAI GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; reasoning arm NOT_CONFIGURABLE; publisher sampler (temperature 0.2, top_k 80, top_p 1.0, min_p 0.0, repeat_penalty 1.05, seed 42); configured capacity 16,384 tokens.",
+      "event_ids": [
+        "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "LFM2.5-8B-A1B",
+      "model_id": "lfm2.5-8b-a1b",
+      "profile_display_name": "LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable, publisher sampler",
+      "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+      "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q5_K_M (official LiquidAI GGUF) :: revision LiquidAI-Q5_K_M-49c14831707011e64d70b2ebd8462ba08d608434 :: sha256 eb8bd10148ea21e195502d6d6a205983ba40815302068ce72eb160684df92b3e",
+      "artifact_precision": "Q5_K_M (official LiquidAI GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; reasoning arm NOT_CONFIGURABLE; publisher sampler (temperature 0.2, top_k 80, top_p 1.0, min_p 0.0, repeat_penalty 1.05, seed 42); configured capacity 16,384 tokens; one-shot HelicopterBench /2 generation surface.",
+      "event_ids": [
+        "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "LFM2.5-8B-A1B",
+      "model_id": "lfm2.5-8b-a1b",
+      "profile_display_name": "LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)",
+      "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+      "profile_path": "models/lfm2.5-8b-a1b/profiles/lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "artifact_precision": "Q4_K_M (Unsloth publisher GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp HIP serving on AMD Radeon AI PRO R9700; thinking-on (enable_thinking=true); qualified wide16k-original-C0 sampler (temperature 1.0, top_k 20, top_p 0.95, min_p 0.0, presence_penalty 1.5, repeat_penalty 1.0, seed 42); configured capacity 16,384 tokens; frozen budgets 4096 default / 12288 coding tokens with 180 s deadline.",
+      "event_ids": [
+        "qwen35-9b-r9700-hip-m2-geometry-2026-10-22"
+      ],
+      "hardware_scope": "AMD Radeon AI PRO R9700",
+      "model_display_name": "Qwen3.5-9B",
+      "model_id": "qwen35-9b",
+      "profile_display_name": "Unsloth Q4_K_M GGUF, llama.cpp HIP on AMD Radeon AI PRO R9700, thinking-on, qualified wide16k-C0 sampler",
+      "profile_id": "qwen35-9b-r9700-hip-on-2026-10-22",
+      "profile_path": "models/qwen35-9b/profiles/qwen35-9b-r9700-hip-on-2026-10-22",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) qwen35-9b-r9700-hip-m2-geometry-2026-10-22. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (HIP)",
+      "runtime_version": "b11311-f7b384c1e (HIP)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "artifact_precision": "Q4_K_M (Unsloth publisher GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; thinking-on (enable_thinking=true); wide16k-original-C0 sampler (temperature 1.0, top_k 20, top_p 0.95, min_p 0.0, presence_penalty 1.5, repeat_penalty 1.0, seed 42); configured capacity 16,384 tokens; specialist sections and scored Agentic M3.",
+      "event_ids": [
+        "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+        "qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+        "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+        "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "Qwen3.5-9B",
+      "model_id": "qwen35-9b",
+      "profile_display_name": "Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (specialist and scored-M3 surface)",
+      "profile_id": "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "profile_path": "models/qwen35-9b/profiles/qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06, qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06, qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06, qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "artifact_precision": "Q4_K_M (Unsloth publisher GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; thinking-on (enable_thinking=true); wide16k-original-C0 sampler; configured capacity 16,384 tokens; advanced long-context specialist surface.",
+      "event_ids": [
+        "qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "Qwen3.5-9B",
+      "model_id": "qwen35-9b",
+      "profile_display_name": "Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced long-context surface)",
+      "profile_id": "qwen35-9b-rtx5070-cuda-lc-on-2026-11-06",
+      "profile_path": "models/qwen35-9b/profiles/qwen35-9b-rtx5070-cuda-lc-on-2026-11-06",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "artifact_precision": "Q4_K_M (Unsloth publisher GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; thinking-on (enable_thinking=true); wide16k-original-C0 sampler; configured capacity 16,384 tokens; advanced tool-use specialist surface.",
+      "event_ids": [
+        "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "Qwen3.5-9B",
+      "model_id": "qwen35-9b",
+      "profile_display_name": "Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced tool-use surface)",
+      "profile_id": "qwen35-9b-rtx5070-cuda-atu-on-2026-11-06",
+      "profile_path": "models/qwen35-9b/profiles/qwen35-9b-rtx5070-cuda-atu-on-2026-11-06",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "artifact": "Q4_K_M (Unsloth publisher GGUF) :: revision unsloth-Q4_K_M-sha256-03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8 :: sha256 03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "artifact_precision": "Q4_K_M (Unsloth publisher GGUF)",
+      "current_status": "current",
+      "deployment_topology": "Single-GPU llama.cpp CUDA serving on NVIDIA GeForce RTX 5070; thinking-on (enable_thinking=true); wide16k-original-C0 sampler; configured capacity 16,384 tokens; deployment-attributed runtime-performance measurement surface; single-device single-request condition.",
+      "event_ids": [
+        "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08"
+      ],
+      "hardware_scope": "NVIDIA GeForce RTX 5070",
+      "model_display_name": "Qwen3.5-9B",
+      "model_id": "qwen35-9b",
+      "profile_display_name": "Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (runtime-performance measurement surface)",
+      "profile_id": "qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08",
+      "profile_path": "models/qwen35-9b/profiles/qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08",
+      "publication_provenance": {
+        "kind": "native",
+        "note": "Native profile proposed at first publication of its linked event(s) qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08. Artifact identity and sampler/geometry values are carried from the staged accepted export profile_conditions; no value is invented.",
+        "published_date": "2026-11-11"
+      },
+      "repository": "WumboLabs/evaluations",
+      "runtime_family": "llama.cpp (CUDA)",
+      "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
+      "schema": "wumbolabs-eval-profile/2"
     }
   ],
   "records": [
@@ -4887,6 +5101,491 @@
         "sha256": "624e4a0197a587ea3c1766901e630d8bb0da337407addc5e798fdf99e0b8e796",
         "commit": "f551e9cc0b00afd5eb8a3bde81ed6f52a12e4e0b"
       }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md"
+      },
+      "event_date": "2026-11-09",
+      "event_id": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+      "event_kicker": "WELP v1.0 fresh second-family baseline and reasoning arm",
+      "event_path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+      "event_title": "Gemma 4 12B IT fresh Model/Core baseline + advanced reasoning (RTX 5070 CUDA)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "capabilities",
+        "reliability",
+        "context",
+        "performance",
+        "specialized"
+      ],
+      "hardware": "UNKNOWN",
+      "headline": "Accepted fresh second family: 61-identity baseline with reliability 17/20 and tool use 1/3, plus a three-PASS advanced-reasoning arm with ADVANCE; performance memory telemetry unmeasured (UNKNOWN, never zero); separate configurations, never averaged.",
+      "model_id": "gemma-4-12b",
+      "profile_id": "gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09",
+      "profile_name": "UD-Q4_K_XL (Unsloth Dynamic 2.0 GGUF) \u2014 Unsloth UD-Q4_K_XL GGUF, llama.cpp CUDA on RTX 5070, thinking not configurable, fresh NVMe (SSD) canonical deployment",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "117bbb6d0faf46168cf4e8471e3fc5d9461713f968b51db1bf4d8e6e1bb24502",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/website-publication.json",
+        "sha256": "cbd7ca3d3a61de9b20b6ae70e59ea0d8048c5c9c1878ec2855af0e27d3cc871a",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/REPORT.md"
+      },
+      "event_date": "2026-11-10",
+      "event_id": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+      "event_kicker": "WELP v1.0 third-family baseline and reasoning arm",
+      "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+      "event_title": "LFM2.5-8B-A1B Model/Core baseline + advanced reasoning (RTX 5070 CUDA)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "capabilities",
+        "reliability",
+        "context",
+        "performance",
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Accepted third family with negatives retained: reliability 13/20, context 4/8, tool use 2/3; advanced-reasoning two PASS and one valid FAIL with ADVANCE; a distinct configuration reported independently, never averaged.",
+      "model_id": "lfm2.5-8b-a1b",
+      "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10",
+      "profile_name": "Q5_K_M (official LiquidAI GGUF) \u2014 LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable, publisher sampler",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "cd46b1adbd7799248481a780ded476f232d70b1bc7b6a11ec1935d196bf857e3",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/website-publication.json",
+        "sha256": "be7a478ca41736201401584267b101e27b93cce2359739040486f6ecb7a23d9f",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/REPORT.md"
+      },
+      "event_date": "2026-11-11",
+      "event_id": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+      "event_kicker": "WELP v1.0 authentic objective HelicopterBench /2",
+      "event_path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+      "event_title": "LFM2.5-8B-A1B HelicopterBench /2 one-shot objective result",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "HUMAN_ACCEPTED authentic objective result (helicopterbench/2): one LFM generation, generation PASS, verification PARTIAL, 19/90 raw, 21.1/100 normalized; the historical /1 record (34/90) remains distinct and unchanged; supplementary gameplay capture is bound by hash.",
+      "model_id": "lfm2.5-8b-a1b",
+      "profile_id": "lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11",
+      "profile_name": "Q5_K_M (official LiquidAI GGUF) \u2014 LiquidAI official Q5_K_M GGUF, llama.cpp CUDA on RTX 5070, reasoning not configurable (HelicopterBench /2 one-shot surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "5a279ef389211577639b92002c4ebd2ab7884a57da0fc72d250154fa7876d8bf",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/website-publication.json",
+        "sha256": "010533924d0c9a7af4c44499cc1ebe231fb3512b1791e884b30d465060823e54",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/REPORT.md"
+      },
+      "event_date": "2026-10-22",
+      "event_id": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+      "event_kicker": "WELP v1.0 reference-family Model/Core baseline",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+      "event_title": "Qwen3.5-9B reference Model/Core baseline (Radeon R9700 HIP, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "capabilities",
+        "reliability",
+        "context",
+        "performance"
+      ],
+      "hardware": "AMD Radeon AI PRO R9700",
+      "headline": "Accepted reference-family baseline: 61 fixed identities under frozen 16K wide geometry, six BUDGET_LIMITED non-evaluables and five scored FAILs retained as first-class findings; no model classification assigned (thresholds uncalibrated).",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-r9700-hip-on-2026-10-22",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp HIP on AMD Radeon AI PRO R9700, thinking-on, qualified wide16k-C0 sampler",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "088c87083754a0b1ebb337aa64aab1f3870b2e4cc698f414a997c6a8d016726f",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-r9700-hip-m2-geometry-2026-10-22/website-publication.json",
+        "sha256": "cf54b1295fde52b69d5e9e15e792a3c40b6458e920024289edc4374ee5aefea6",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+      "event_kicker": "WELP v1.0 Advanced Coding specialist",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+      "event_title": "Qwen3.5-9B advanced coding specialist (RTX 5070 CUDA, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Advanced coding (coding-advanced/1): two of three frozen modules PASS under sandbox oracles; the multi-file repair unit ends NOT_EVALUABLE / BUDGET_LIMITED at the frozen 12,288-token coding ceiling; no budget increase is implied.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (specialist and scored-M3 surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "bd7bda6ea9a02e8966283cbd7be684b17d5845c372dcd1cba7bcedf68988ca7a",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06/website-publication.json",
+        "sha256": "c5cdbd8cdd2a6bf03eab451d0cc9fc8e0c0fbcfc92151232c8c3f3efa8eb2475",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+      "event_kicker": "WELP v1.0 Advanced Reasoning specialist",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+      "event_title": "Qwen3.5-9B advanced reasoning specialist (RTX 5070 CUDA, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Advanced reasoning (reasoning-advanced/1): constraints and revision PASS; the evidence-selection unit ends NOT_EVALUABLE / BUDGET_LIMITED; deterministic exact-answer oracles only, no chain-of-thought scoring.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (specialist and scored-M3 surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "98dc18e125b2bf16f97250bd755de46ef82e433f3e1cb5979917e0d6f1a4749b",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06/website-publication.json",
+        "sha256": "a4c78d20f05cde7da380cdbd7d9394bd238a0892dc6fedb804261fe07ced4721",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+      "event_kicker": "WELP v1.0 Advanced Long Context specialist",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+      "event_title": "Qwen3.5-9B advanced long-context specialist (RTX 5070 CUDA, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Advanced long context (long-context-advanced/1): synthesis and retention PASS, retrieval NOT_EVALUABLE / BUDGET_LIMITED; the gate remains explicitly HUMAN_DIRECTED / EXPLORATORY with standard eligibility DEFERRED.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-lc-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced long-context surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "5c29b6b5287b69d7637f873e3846a7c53141d0cc1493eae9a4820973d2e837d7",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06/website-publication.json",
+        "sha256": "d38965ccf231553dacfa843cadeb8b783bd5b247d0c1ce29ebfbe83081369f7f",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+      "event_kicker": "WELP v1.0 Advanced Tool Use specialist",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+      "event_title": "Qwen3.5-9B advanced tool-use specialist (RTX 5070 CUDA, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "specialized"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Advanced tool use (tool-use-advanced/1): selection, permission and recovery all PASS on executor-validated transcripts; executed tool events are the only evidence.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-atu-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (advanced tool-use surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "d478326c322486351f38467ce8b40fefb6cb7881df816f3a4903cb8109ad6b9b",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06/website-publication.json",
+        "sha256": "e78794075406259a229ebc794f57e802e040728b801411167052f6400c31493c",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+      "event_kicker": "WELP v1.0 Full Agentic M3 (readiness + system)",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+      "event_title": "Qwen3.5-9B scored Agentic M3 \u2014 readiness and system (RTX 5070 CUDA, thinking-on)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "agent-backend"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Scored Agentic (agentic/3): readiness qualification PASS (7/7 checks) and system repair PASS (14/14 checks) under the campaign-gated route, with original oracle caveats and a single deployment sample retained.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (specialist and scored-M3 surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "cfc4f25dc7f59d5844ad168cd80775e9dc2b4bde2e784d839dd756035b2af6a9",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06/website-publication.json",
+        "sha256": "bdf6d4c7abda39f19f2d654f8bcebc92c6f98edc5986fe20ba267babc3e151b7",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06/REPORT.md"
+      },
+      "event_date": "2026-11-06",
+      "event_id": "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+      "event_kicker": "WELP v1.0 Full Agentic M3 (research + repository negatives)",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+      "event_title": "Qwen3.5-9B scored Agentic M3 \u2014 research and repository (genuine negatives)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "agent-backend"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Scored Agentic (agentic/3): research and repository both FAIL as originally scored \u2014 a genuine negative result retained unchanged; acceptance of M3 completion is not a PASS reclassification.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-on-2026-11-06",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (specialist and scored-M3 surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "f8e2e37b6cecb1e143f2e1f336377ea69ce916059b5a680116df6c12a93666e5",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06/website-publication.json",
+        "sha256": "85b04153cbf3e517029010c887e4ee6c17bfa77c9ff9886549910d0d84b3d9e5",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
+    },
+    {
+      "authoring": "generated",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/REPORT.md",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be",
+        "url": "https://github.com/WumboLabs/evaluations/blob/a8e5cc762eb9b0c52c9de870264d943841c2c8be/models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/REPORT.md"
+      },
+      "event_date": "2026-11-08",
+      "event_id": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+      "event_kicker": "WELP v1.0 Runtime Performance",
+      "event_path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+      "event_title": "Qwen3.5-9B runtime performance (RTX 5070 CUDA, deployment-attributed)",
+      "event_type": "welp-recharacterization",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "performance",
+        "serving-profile"
+      ],
+      "hardware": "NVIDIA GeForce RTX 5070",
+      "headline": "Deployment-attributed measurement only (runtime-performance/1): two accepted M2 workload identities, three repeats each; ~83 tok/s short and ~81 tok/s substantial generation on the measured deployment; memory telemetry unavailable, reported as unavailable and never zero.",
+      "model_id": "qwen35-9b",
+      "profile_id": "qwen35-9b-rtx5070-cuda-rtperf-on-2026-11-08",
+      "profile_name": "Q4_K_M (Unsloth publisher GGUF) \u2014 Unsloth Q4_K_M GGUF, llama.cpp CUDA on RTX 5070, thinking-on (runtime-performance measurement surface)",
+      "profile_status": "current",
+      "publication_provenance": {
+        "campaign": "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+        "kind": "native",
+        "note": "Native current-WELP v1.0 event. Scientific acceptance recorded via welp-scientific-acceptance/1 (see website-publication.json scientific_acceptance; review_source_sha256 ad697f53f0c4ddfbb89e9c04eb0caa4da1eecc88019c708ee8a1b2461e5e8cc4 binds the private owner decision source). Pinned at the registry commit: canonical_evidence cites the event-introduction commit carrying REPORT.md bytes; source pins the website-publication.json bytes at that commit. Website disposition stays WEBSITE_READY until a fresh accepted-export update records the immutable citation and flips WEBSITE_PUBLISHED.",
+        "published_report_sha256": "b67dfa898d883267b8db21fc4d93561f01b88e4ec59a74e912bba4b490704827",
+        "report_role": "public-safe derivative of the local campaign evidence; the campaign bundle governs",
+        "published_date": "2026-11-11"
+      },
+      "publication_state": "published",
+      "record_date": "2026-11-11",
+      "slug": "eval-qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+      "welp_status": "NOT_ASSIGNED",
+      "source": {
+        "path": "models/qwen35-9b/events/qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08/website-publication.json",
+        "sha256": "28db53d0d546f411001081fc8d6a2e24098692c9f89585d78fd63d170caa7d76",
+        "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
+      }
     }
   ],
   "shared_events": [
@@ -5853,6 +6552,17 @@
     "ling-3-0-tiny-rtx5070-welp-agentic-20260925",
     "neohorse-1-9b-rtx5070-welp-reasoning-on-20260925",
     "neohorse-1-9b-rtx5070-welp-reasoning-off-20260925",
-    "neohorse-1-9b-rtx5070-welp-agentic-20260925"
+    "neohorse-1-9b-rtx5070-welp-agentic-20260925",
+    "gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09",
+    "lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10",
+    "lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11",
+    "qwen35-9b-r9700-hip-m2-geometry-2026-10-22",
+    "qwen35-9b-rtx5070-cuda-advanced-coding-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-advanced-reasoning-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-advanced-long-context-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
+    "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08"
   ]
 }
