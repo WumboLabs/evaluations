@@ -6,6 +6,7 @@ One row per immutable event; shared reports are stored once. Newest first.
 
 | Date | Model(s) | Event type | Profile(s) | Report | Website |
 |---|---|---|---|---|---|
+| 2026-11-11 | Qwen3.8-Flash-Next | welp-recharacterization | `qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11` | [qwen38-flash-next-welp-v11-strata-r9700-2026-11-11](models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md) | [Qwen3.8-Flash-Next](https://wumbolabs.dev/evaluations/qwen3-8-flash-next/) |
 | 2026-11-11 | LFM2.5-8B-A1B | welp-recharacterization | `lfm2.5-8b-a1b-rtx5070-cuda-heli-not-configurable-2026-11-11` | [lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11](models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-helicopterbench-v2-2026-11-11/REPORT.md) | [LFM2.5-8B-A1B](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | 2026-11-10 | LFM2.5-8B-A1B | welp-recharacterization | `lfm2.5-8b-a1b-rtx5070-cuda-not-configurable-2026-11-10` | [lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10](models/lfm2.5-8b-a1b/events/lfm25-8b-a1b-rtx5070-cuda-m2-2026-11-10/REPORT.md) | [LFM2.5-8B-A1B](https://wumbolabs.dev/evaluations/lfm2-5-8b-a1b/) |
 | 2026-11-09 | Gemma 4 12B IT | welp-recharacterization | `gemma-4-12b-rtx5070-cuda-ssd-not-configurable-2026-11-09` | [gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09](models/gemma-4-12b/events/gemma-4-12b-rtx5070-cuda-m2-fresh-ssd-2026-11-09/REPORT.md) | [Gemma 4 12B IT](https://wumbolabs.dev/evaluations/gemma-4-12b/) |

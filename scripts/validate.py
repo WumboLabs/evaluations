@@ -121,8 +121,9 @@ def validate(registry):
     for mid, model in models.items():
         require(model.get("website_url") == f"https://wumbolabs.dev/evaluations/{model['website_slug']}/", f"invalid website URL: {mid}")
         state = model["current_state"]
-        require(state["recommended_profile_id"] in profiles, f"unknown recommended profile: {mid}")
-        require(profiles[state["recommended_profile_id"]]["model_id"] == mid, f"cross-model recommendation: {mid}")
+        recommended = state["recommended_profile_id"]
+        require(recommended is None or recommended in profiles, f"unknown recommended profile: {mid}")
+        require(recommended is None or profiles[recommended]["model_id"] == mid, f"cross-model recommendation: {mid}")
         require(set(state["event_ids"]) <= events.keys(), f"unknown current-state event: {mid}")
         require(all(mid in event_models(events[eid]) for eid in state["event_ids"]), f"cross-model current-state event: {mid}")
     for pid, profile in profiles.items():
@@ -217,7 +218,8 @@ def generated(registry, models, profiles, events):
             if isinstance(context.get(key), int)
         ]
         context_summary = "; ".join(summary_parts) or model["context_summary"]
-        lines = [f"# {model['display_name']}", "", f"**Classification:** {classification}", "", f"**Recommended profile:** `{state['recommended_profile_id']}`", "", f"**Context:** {context_summary}", ""]
+        recommendation = f"`{state['recommended_profile_id']}`" if state["recommended_profile_id"] else "Not assigned; a tested profile is not automatically a recommendation"
+        lines = [f"# {model['display_name']}", "", f"**Classification:** {classification}", "", f"**Recommended profile:** {recommendation}", "", f"**Context:** {context_summary}", ""]
         if summary_parts:
             lines += ["Advertised capacity is not useful-context validation; the report retains exact admission, validation, and extension dispositions.", "", "<details>", "<summary>Published context findings and limitations</summary>", "", model["context_summary"], "", "</details>", ""]
         lines += [f"[Human-facing Evaluation]({model['website_url']})", "", "## Profiles", ""]

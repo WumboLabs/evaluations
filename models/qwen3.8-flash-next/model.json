@@ -1,0 +1,30 @@
+{
+  "model_id": "qwen3.8-flash-next",
+  "display_name": "Qwen3.8-Flash-Next",
+  "vendor": "Qwen",
+  "weight": 26,
+  "website_slug": "qwen3-8-flash-next",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen3-8-flash-next/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "capabilities": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "serving-profile": null,
+    "specialized": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "practical-use": null,
+    "context": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "reliability": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11"
+    ],
+    "event_ids": [
+      "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11"
+    ]
+  },
+  "context_summary": "Configured196608 tokens; all8 bounded Practical Context identities PASS at3057 to8178 native prompt tokens. No practical-context default, advanced long-context or full196K semantic claim."
+}

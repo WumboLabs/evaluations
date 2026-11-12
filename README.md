@@ -35,6 +35,10 @@ Small supporting artifacts that predate the event registry remain under profile 
 
 The registry owns model facts, profile metadata, event relationships, and per-surface current-state attribution. Model/profile/event JSON files and Markdown indexes are generated derivatives. The website pins an exact registry commit and generates static pages; it is not a second independently maintained registry.
 
+`current_state.recommended_profile_id` may be null when no serving recommendation
+has been scientifically established. Publishing an accepted tested profile does
+not automatically recommend it; a non-null recommendation must belong to the model.
+
 ## Cite and share
 
 Normally share `https://wumbolabs.dev/evaluations/<website-slug>/`.

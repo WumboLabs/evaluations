@@ -938,6 +938,36 @@
         "publisher_default_profile": "reasoning-on",
         "note": "one protocol, two sections; Agentic ran on the publisher-default profile only"
       }
+    },
+    {
+      "model_id": "qwen3.8-flash-next",
+      "display_name": "Qwen3.8-Flash-Next",
+      "vendor": "Qwen",
+      "weight": 26,
+      "website_slug": "qwen3-8-flash-next",
+      "website_url": "https://wumbolabs.dev/evaluations/qwen3-8-flash-next/",
+      "current_state": {
+        "agent-backend": null,
+        "protocol-development": null,
+        "model-classification": null,
+        "localmaxxing": null,
+        "performance": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "capabilities": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "serving-profile": null,
+        "specialized": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "practical-use": null,
+        "context": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "reliability": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "recommended_profile_id": null,
+        "classification": null,
+        "profile_ids": [
+          "qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11"
+        ],
+        "event_ids": [
+          "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11"
+        ]
+      },
+      "context_summary": "Configured196608 tokens; all8 bounded Practical Context identities PASS at3057 to8178 native prompt tokens. No practical-context default, advanced long-context or full196K semantic claim."
     }
   ],
   "profiles": [
@@ -2196,6 +2226,30 @@
       "runtime_family": "llama.cpp (CUDA)",
       "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc (CUDA)",
       "schema": "wumbolabs-eval-profile/2"
+    },
+    {
+      "schema": "wumbolabs-eval-profile/2",
+      "model_id": "qwen3.8-flash-next",
+      "model_display_name": "Qwen3.8-Flash-Next",
+      "profile_id": "qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11",
+      "profile_display_name": "IQ3_S: Strata v0.2.11 / R9700 HIP, reasoning ON/low",
+      "runtime_family": "Strata (HIP)",
+      "runtime_version": "v0.2.11/0bdcef4682c5+rocm; Control 0.1.57/c3b3f5035506",
+      "artifact": "Qwen3.8-Flash-Next IQ3_S GGUF + native Strata pack; revision ed59f92082b1e93c0e96d60a8b11aab089b52f09; transformer sha256 4c1eb2ceb4915e1192f4f386021897bde56a97f40a0bb78bb86465e0f7d2aca3",
+      "artifact_precision": "IQ3_S",
+      "hardware_scope": "AMD Radeon AI PRO R9700 32 GB / gfx1201 / HIP",
+      "deployment_topology": "Strata v0.2.11, HIP gfx1201, R9700 32 GB, reasoning ON/low, INT8 KV; configured196608 tokens, not semantic validation at full capacity. Temperature1.0/top_p0.95/top_k20/seed42. No serving recommendation assigned.",
+      "repository": "WumboLabs/evaluations",
+      "current_status": "current",
+      "profile_path": "models/qwen3.8-flash-next/profiles/qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11",
+      "event_ids": [
+        "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11"
+      ],
+      "publication_provenance": {
+        "kind": "native",
+        "published_date": "2026-11-11",
+        "note": "Native tested profile bound to the accepted three-section Strata event; original profile revision 30ec2e0692dd4d15ddea24d68632784be6d12cca4fa6a0875106c5e8fbc4251c. No readiness classification or recommendation inferred."
+      }
     }
   ],
   "records": [
@@ -5586,6 +5640,58 @@
         "sha256": "28db53d0d546f411001081fc8d6a2e24098692c9f89585d78fd63d170caa7d76",
         "commit": "a8e5cc762eb9b0c52c9de870264d943841c2c8be"
       }
+    },
+    {
+      "slug": "eval-qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+      "event_id": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+      "event_type": "welp-recharacterization",
+      "event_title": "Qwen3.8-Flash-Next IQ3_S: accepted Model/Core, Tool Use and Runtime Performance (Strata / R9700 HIP)",
+      "event_kicker": "HUMAN_ACCEPTED independent sections; HelicopterBench deferred by owner",
+      "event_date": "2026-11-11",
+      "record_date": "2026-11-11",
+      "model_id": "qwen3.8-flash-next",
+      "profile_id": "qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11",
+      "profile_name": "IQ3_S: Strata v0.2.11 / R9700 HIP, reasoning ON/low",
+      "profile_status": "current",
+      "hardware": "AMD Radeon AI PRO R9700 32 GB / gfx1201 / HIP",
+      "evidence_maturity": "CURRENT_WELP",
+      "evidence_scope": [
+        "capabilities",
+        "reliability",
+        "context",
+        "performance",
+        "specialized"
+      ],
+      "headline": "61/61 baseline identities:57 PASS and4 substantive FAIL; Practical Context8/8 PASS at bounded geometry; Advanced Tool Use3/3 PASS. Runtime measurements retain cache scopes and missing metrics. HelicopterBench DEFERRED_BY_OWNER, no accepted gameplay score.",
+      "welp_status": "NOT_ASSIGNED",
+      "authoring": "hand-authored",
+      "event_path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+      "canonical_evidence": {
+        "state": "published",
+        "repo": "WumboLabs/evaluations",
+        "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714",
+        "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md",
+        "url": "https://github.com/WumboLabs/evaluations/blob/b50eb6546cb01b95b329bf614e51e688b2f77714/models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md"
+      },
+      "source": {
+        "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/website-publication.json",
+        "sha256": "9216f3befacc94a16938bb1bc2e40f4dd8a7b4f53f2b9ed13516666176ec7468",
+        "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714"
+      },
+      "body_source": {
+        "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md",
+        "sha256": "f96aec115eba03673da77b758bc7f7d5dde7236a3ef3d2558cb10d62a829b9b6",
+        "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714"
+      },
+      "publication_state": "published",
+      "publication_provenance": {
+        "kind": "native",
+        "campaign": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+        "published_date": "2026-11-11",
+        "report_role": "Public-safe derivative of original campaign evidence; original local bundle governs",
+        "published_report_sha256": "f96aec115eba03673da77b758bc7f7d5dde7236a3ef3d2558cb10d62a829b9b6",
+        "note": "Real owner scientific acceptance, welp-scientific-acceptance/1, original delivered source sha256 08becfc90444cdbfa1a6366969792b92d1927aaef608dca7e644a2a4716b5a2d. Accepted baseline/advanced-tool-use/runtime-performance only; helicopterbench excluded DEFERRED_BY_OWNER. Original section manifests and all accepted negative findings preserved. Event-introduction and registry snapshot pins remain distinct."
+      }
     }
   ],
   "shared_events": [
@@ -6563,6 +6669,7 @@
     "qwen35-9b-rtx5070-cuda-advanced-tool-use-2026-11-06",
     "qwen35-9b-rtx5070-cuda-m3-scored-2026-11-06",
     "qwen35-9b-rtx5070-cuda-m3-scored-remaining-2026-11-06",
-    "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08"
+    "qwen35-9b-rtx5070-cuda-runtime-performance-2026-11-08",
+    "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11"
   ]
 }

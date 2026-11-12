@@ -1,0 +1,52 @@
+{
+  "slug": "eval-qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+  "event_id": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+  "event_type": "welp-recharacterization",
+  "event_title": "Qwen3.8-Flash-Next IQ3_S: accepted Model/Core, Tool Use and Runtime Performance (Strata / R9700 HIP)",
+  "event_kicker": "HUMAN_ACCEPTED independent sections; HelicopterBench deferred by owner",
+  "event_date": "2026-11-11",
+  "record_date": "2026-11-11",
+  "model_id": "qwen3.8-flash-next",
+  "profile_id": "qwen3.8-flash-next-strata-r9700-hip-v11-on-2026-11-11",
+  "profile_name": "IQ3_S: Strata v0.2.11 / R9700 HIP, reasoning ON/low",
+  "profile_status": "current",
+  "hardware": "AMD Radeon AI PRO R9700 32 GB / gfx1201 / HIP",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "headline": "61/61 baseline identities:57 PASS and4 substantive FAIL; Practical Context8/8 PASS at bounded geometry; Advanced Tool Use3/3 PASS. Runtime measurements retain cache scopes and missing metrics. HelicopterBench DEFERRED_BY_OWNER, no accepted gameplay score.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714",
+    "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/b50eb6546cb01b95b329bf614e51e688b2f77714/models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md"
+  },
+  "source": {
+    "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/website-publication.json",
+    "sha256": "9216f3befacc94a16938bb1bc2e40f4dd8a7b4f53f2b9ed13516666176ec7468",
+    "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714"
+  },
+  "body_source": {
+    "path": "models/qwen3.8-flash-next/events/qwen38-flash-next-welp-v11-strata-r9700-2026-11-11/REPORT.md",
+    "sha256": "f96aec115eba03673da77b758bc7f7d5dde7236a3ef3d2558cb10d62a829b9b6",
+    "commit": "b50eb6546cb01b95b329bf614e51e688b2f77714"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "qwen38-flash-next-welp-v11-strata-r9700-2026-11-11",
+    "published_date": "2026-11-11",
+    "report_role": "Public-safe derivative of original campaign evidence; original local bundle governs",
+    "published_report_sha256": "f96aec115eba03673da77b758bc7f7d5dde7236a3ef3d2558cb10d62a829b9b6",
+    "note": "Real owner scientific acceptance, welp-scientific-acceptance/1, original delivered source sha256 08becfc90444cdbfa1a6366969792b92d1927aaef608dca7e644a2a4716b5a2d. Accepted baseline/advanced-tool-use/runtime-performance only; helicopterbench excluded DEFERRED_BY_OWNER. Original section manifests and all accepted negative findings preserved. Event-introduction and registry snapshot pins remain distinct."
+  }
+}
