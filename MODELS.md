@@ -36,3 +36,6 @@
 | [Nanbeige4.3-33B](models/nanbeige4.3-33b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/nanbeige4-3-33b/) |
 | [Tess-4.5-27B](models/tess-4.5-27b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/tess-4-5-27b/) |
 | [Occamy-1.0](models/occamy-1.0/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/occamy-1-0/) |
+| [Qwen3-Coder-30B-A3B-Instruct](models/qwen3-coder-30b-a3b-instruct/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-coder-30b-a3b-instruct/) |
+| [Nanbeige4.2-3B](models/nanbeige4.2-3b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/nanbeige4-2-3b/) |
+| [Muse Glimmer 30B](models/muse-glimmer-30b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/muse-glimmer-30b/) |

@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "qwen3-coder-30b-a3b-instruct",
+  "model_display_name": "Qwen3-Coder-30B-A3B-Instruct",
+  "profile_id": "qwen3-coder-30b-a3b-instruct-r9700-hip-not-configurable-2026-11-17",
+  "profile_display_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, native non-thinking",
+  "runtime_family": "llama.cpp (HIP)",
+  "runtime_version": "b11311-f7b384c1e5c5b2c5b321a4a7cefea04b15b54cb7",
+  "artifact": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF; revision ef85c7f175f00be8af4e1de0c14e59ce7e5d0db3; GGUF Q4_K_M; sha256 f6050b4da22869aa3fb9d94bb3314e9fc5a027d4741c1f97761c387d6b2b2335",
+  "artifact_precision": "Q4_K_M",
+  "hardware_scope": "AMD Radeon AI PRO R9700 / HIP",
+  "deployment_topology": "llama.cpp, HIP, AMD Radeon AI PRO R9700, native non-thinking; configured 16384 tokens, not validation at full capacity. No serving recommendation assigned.",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/qwen3-coder-30b-a3b-instruct/profiles/qwen3-coder-30b-a3b-instruct-r9700-hip-not-configurable-2026-11-17",
+  "event_ids": [
+    "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-11-18",
+    "note": "Native tested profile for the accepted event; original profile revision cf92da45dbe0ca725b58a0f46457906b3df5ca32702308237afdffd1403ed71e."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "model_id": "muse-glimmer-30b",
+  "display_name": "Muse Glimmer 30B",
+  "vendor": "Meta Models",
+  "weight": 33,
+  "website_slug": "muse-glimmer-30b",
+  "website_url": "https://wumbolabs.dev/evaluations/muse-glimmer-30b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "muse-glimmer-30b-r9700-hip-high-2026-11-17",
+    "capabilities": "muse-glimmer-30b-r9700-hip-high-2026-11-17",
+    "serving-profile": null,
+    "specialized": "muse-glimmer-30b-r9700-hip-high-2026-11-17",
+    "practical-use": null,
+    "context": "muse-glimmer-30b-r9700-hip-high-2026-11-17",
+    "reliability": "muse-glimmer-30b-r9700-hip-high-2026-11-17",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "muse-glimmer-30b-r9700-hip-not-configurable-2026-11-17"
+    ],
+    "event_ids": [
+      "muse-glimmer-30b-r9700-hip-high-2026-11-17"
+    ]
+  },
+  "context_summary": "Both 3K controlled checks and both Multi-Document checks passed; all four 4K/8K controlled checks were budget-limited. The 16,384-token configured capacity is not a validated useful-context default."
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "eval-qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+  "event_id": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+  "event_type": "welp-recharacterization",
+  "event_title": "Qwen3-Coder-30B-A3B-Instruct: Model/Core baseline",
+  "event_kicker": "HUMAN_ACCEPTED Model/Core only; Advanced Coding deferred by owner",
+  "event_date": "2026-11-17",
+  "record_date": "2026-11-17",
+  "model_id": "qwen3-coder-30b-a3b-instruct",
+  "profile_id": "qwen3-coder-30b-a3b-instruct-r9700-hip-not-configurable-2026-11-17",
+  "profile_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, native non-thinking",
+  "profile_status": "current",
+  "hardware": "AMD Radeon AI PRO R9700 / HIP",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance"
+  ],
+  "headline": "Model/Core: 61 identities; 49 PASS, 10 FAIL, 0 BUDGET_LIMITED across 59 capability checks. Advanced Coding: DEFERRED_BY_OWNER, not accepted.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/qwen3-coder-30b-a3b-instruct/events/qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9",
+    "path": "models/qwen3-coder-30b-a3b-instruct/events/qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/844dcc6e47c6092b492af372985cf45f4923a0a9/models/qwen3-coder-30b-a3b-instruct/events/qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17/REPORT.md"
+  },
+  "source": {
+    "path": "models/qwen3-coder-30b-a3b-instruct/events/qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17/website-publication.json",
+    "sha256": "59dad2a877205933116f1c2bcfc2913732a9c9d0267fecbd037ed6e08525129b",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9"
+  },
+  "body_source": {
+    "path": "models/qwen3-coder-30b-a3b-instruct/events/qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17/REPORT.md",
+    "sha256": "4f5c5a7203c08fae0beb7ddfbac92c5bbd7dc1f49b9db21acd88e0cc4ca4e1f5",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+    "published_date": "2026-11-18",
+    "report_role": "Public-safe derivative; original local scientific evidence governs",
+    "published_report_sha256": "4f5c5a7203c08fae0beb7ddfbac92c5bbd7dc1f49b9db21acd88e0cc4ca4e1f5",
+    "note": "Direct owner scientific acceptance 2026-11-18 UTC with private decision-source SHA-256 891b97683f05246b5c8321af0cb0b1e02ebe1218549229cda04f5abf835dbd3c. All accepted outcomes retained; Advanced Coding retains original manifest provenance only."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "eval-nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+  "event_id": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+  "event_type": "welp-recharacterization",
+  "event_title": "Nanbeige4.2-3B: Model/Core baseline",
+  "event_kicker": "HUMAN_ACCEPTED Model/Core only; Advanced Coding deferred by owner",
+  "event_date": "2026-11-17",
+  "record_date": "2026-11-17",
+  "model_id": "nanbeige4.2-3b",
+  "profile_id": "nanbeige4.2-3b-rtx5070-cuda-on-2026-11-17",
+  "profile_name": "Q8_0: llama.cpp / NVIDIA GeForce RTX 5070 CUDA, native reasoning ON with preserved thinking and XML tools",
+  "profile_status": "current",
+  "hardware": "NVIDIA GeForce RTX 5070 / CUDA",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance"
+  ],
+  "headline": "Model/Core: 61 identities; 46 PASS, 7 FAIL, 6 BUDGET_LIMITED across 59 capability checks. Advanced Coding: DEFERRED_BY_OWNER, not accepted.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/nanbeige4.2-3b/events/nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9",
+    "path": "models/nanbeige4.2-3b/events/nanbeige42-3b-rtx5070-cuda-on-2026-11-17/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/844dcc6e47c6092b492af372985cf45f4923a0a9/models/nanbeige4.2-3b/events/nanbeige42-3b-rtx5070-cuda-on-2026-11-17/REPORT.md"
+  },
+  "source": {
+    "path": "models/nanbeige4.2-3b/events/nanbeige42-3b-rtx5070-cuda-on-2026-11-17/website-publication.json",
+    "sha256": "23ff2d28ac710ec7bffe4988a565dc9042f19303ffdada2f88dfa0c35290a5ab",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9"
+  },
+  "body_source": {
+    "path": "models/nanbeige4.2-3b/events/nanbeige42-3b-rtx5070-cuda-on-2026-11-17/REPORT.md",
+    "sha256": "9c8883dedb110ed342af10e02cfd42c47bdefec193e891b374faa0c778f89181",
+    "commit": "844dcc6e47c6092b492af372985cf45f4923a0a9"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+    "published_date": "2026-11-18",
+    "report_role": "Public-safe derivative; original local scientific evidence governs",
+    "published_report_sha256": "9c8883dedb110ed342af10e02cfd42c47bdefec193e891b374faa0c778f89181",
+    "note": "Direct owner scientific acceptance 2026-11-18 UTC with private decision-source SHA-256 891b97683f05246b5c8321af0cb0b1e02ebe1218549229cda04f5abf835dbd3c. All accepted outcomes retained; Advanced Coding retains original manifest provenance only."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "model_id": "qwen3-coder-30b-a3b-instruct",
+  "display_name": "Qwen3-Coder-30B-A3B-Instruct",
+  "vendor": "Qwen",
+  "weight": 31,
+  "website_slug": "qwen3-coder-30b-a3b-instruct",
+  "website_url": "https://wumbolabs.dev/evaluations/qwen3-coder-30b-a3b-instruct/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+    "capabilities": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+    "reliability": "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "qwen3-coder-30b-a3b-instruct-r9700-hip-not-configurable-2026-11-17"
+    ],
+    "event_ids": [
+      "qwen3-coder-30b-a3b-instruct-r9700-hip-native-2026-11-17"
+    ]
+  },
+  "context_summary": "Six controlled Family A checks passed; both Multi-Document checks failed on source attribution. The 16,384-token configured capacity is not a validated useful-context default."
+}

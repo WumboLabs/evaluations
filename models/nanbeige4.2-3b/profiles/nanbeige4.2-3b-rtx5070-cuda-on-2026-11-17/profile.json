@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "nanbeige4.2-3b",
+  "model_display_name": "Nanbeige4.2-3B",
+  "profile_id": "nanbeige4.2-3b-rtx5070-cuda-on-2026-11-17",
+  "profile_display_name": "Q8_0: llama.cpp / NVIDIA GeForce RTX 5070 CUDA, native reasoning ON with preserved thinking and XML tools",
+  "runtime_family": "llama.cpp (CUDA)",
+  "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc",
+  "artifact": "bartowski/Nanbeige_Nanbeige4.2-3B-GGUF; revision 17562eefe9752007209148d5f7a6e275fc8d8077; GGUF Q8_0; sha256 837ba713ef3a3b5c9aee82e5dcba07600ea7db36ae392419f982b3bfaec04ef2",
+  "artifact_precision": "Q8_0",
+  "hardware_scope": "NVIDIA GeForce RTX 5070 / CUDA",
+  "deployment_topology": "llama.cpp, CUDA, NVIDIA GeForce RTX 5070, native reasoning ON with preserved thinking and XML tools; configured 16384 tokens, not validation at full capacity. No serving recommendation assigned.",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/nanbeige4.2-3b/profiles/nanbeige4.2-3b-rtx5070-cuda-on-2026-11-17",
+  "event_ids": [
+    "nanbeige42-3b-rtx5070-cuda-on-2026-11-17"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-11-18",
+    "note": "Native tested profile for the accepted event; original profile revision 6dc2a0455cef18ba4556d34d66d33a08b71ed4b2349ff1cc61d8b232c89c714a."
+  }
+}

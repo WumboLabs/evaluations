@@ -1,0 +1,30 @@
+{
+  "model_id": "nanbeige4.2-3b",
+  "display_name": "Nanbeige4.2-3B",
+  "vendor": "Nanbeige",
+  "weight": 32,
+  "website_slug": "nanbeige4-2-3b",
+  "website_url": "https://wumbolabs.dev/evaluations/nanbeige4-2-3b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+    "capabilities": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+    "serving-profile": null,
+    "specialized": null,
+    "practical-use": null,
+    "context": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+    "reliability": "nanbeige42-3b-rtx5070-cuda-on-2026-11-17",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "nanbeige4.2-3b-rtx5070-cuda-on-2026-11-17"
+    ],
+    "event_ids": [
+      "nanbeige42-3b-rtx5070-cuda-on-2026-11-17"
+    ]
+  },
+  "context_summary": "Six bounded Practical Context checks passed, one failed and one was budget-limited. The 16,384-token configured capacity is not a validated useful-context default."
+}
