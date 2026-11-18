@@ -1,0 +1,30 @@
+{
+  "model_id": "nanbeige4.3-33b",
+  "display_name": "Nanbeige4.3-33B",
+  "vendor": "Nanbeige",
+  "weight": 28,
+  "website_slug": "nanbeige4-3-33b",
+  "website_url": "https://wumbolabs.dev/evaluations/nanbeige4-3-33b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "capabilities": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "serving-profile": null,
+    "specialized": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "practical-use": null,
+    "context": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "reliability": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "nanbeige4.3-33b-r9700-hip-recovery-on-2026-11-16"
+    ],
+    "event_ids": [
+      "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16"
+    ]
+  },
+  "context_summary": "Seven of eight bounded Practical Context checks passed; the 4K seed-42 family-A check did not. The 16,384-token serving capacity is configuration, not a validated useful-context default."
+}

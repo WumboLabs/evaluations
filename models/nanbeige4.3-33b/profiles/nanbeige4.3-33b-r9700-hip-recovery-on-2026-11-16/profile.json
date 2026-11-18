@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "nanbeige4.3-33b",
+  "model_display_name": "Nanbeige4.3-33B",
+  "profile_id": "nanbeige4.3-33b-r9700-hip-recovery-on-2026-11-16",
+  "profile_display_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, reasoning ON",
+  "runtime_family": "llama.cpp (HIP)",
+  "runtime_version": "b11311-f7b384c1e5c5b2c5b321a4a7cefea04b15b54cb7",
+  "artifact": "bartowski/Nanbeige_Nanbeige4.3-33B-GGUF; revision 9beb68421fdf7be095093a6888325fa2c83ddd38; GGUF Q4_K_M; sha256 2cef79855ca47ee6571e166db32a07089e34f3cf78e0397b262d124ddb814c37",
+  "artifact_precision": "Q4_K_M",
+  "hardware_scope": "AMD Radeon AI PRO R9700 / HIP",
+  "deployment_topology": "llama.cpp, HIP, AMD Radeon AI PRO R9700, native reasoning ON; configured 16384 tokens, not validation at full capacity. No serving recommendation assigned.",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/nanbeige4.3-33b/profiles/nanbeige4.3-33b-r9700-hip-recovery-on-2026-11-16",
+  "event_ids": [
+    "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-11-18",
+    "note": "Native tested profile for the accepted event; original profile revision ef3f2903becc1a643b6334aead6f4ef1b686f29f77b7e6f5190e5cd71b87cd70."
+  }
+}

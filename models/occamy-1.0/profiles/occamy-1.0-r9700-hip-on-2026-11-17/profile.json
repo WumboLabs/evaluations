@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "occamy-1.0",
+  "model_display_name": "Occamy-1.0",
+  "profile_id": "occamy-1.0-r9700-hip-on-2026-11-17",
+  "profile_display_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, reasoning ON",
+  "runtime_family": "llama.cpp (HIP)",
+  "runtime_version": "b11311-f7b384c1e5c5b2c5b321a4a7cefea04b15b54cb7",
+  "artifact": "Accio-Lab/occamy-1.0-GGUF; revision 15027de49a5f8bbb5a131ed3fcfc1b54a543089d; GGUF Q4_K_M; sha256 ffb25f763ff9c27f5f4e2adcdef399c5654f9f840fdac33dffe7035ba8266a87",
+  "artifact_precision": "Q4_K_M",
+  "hardware_scope": "AMD Radeon AI PRO R9700 / HIP",
+  "deployment_topology": "llama.cpp, HIP, AMD Radeon AI PRO R9700, native reasoning ON; configured 16384 tokens, not validation at full capacity. No serving recommendation assigned.",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/occamy-1.0/profiles/occamy-1.0-r9700-hip-on-2026-11-17",
+  "event_ids": [
+    "occamy10-r9700-hip-on-2026-11-17"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-11-18",
+    "note": "Native tested profile for the accepted event; original profile revision 8fe42148c60216898b68983dbd77167e0e2e907572a7d3d54eafbecf9d521198."
+  }
+}

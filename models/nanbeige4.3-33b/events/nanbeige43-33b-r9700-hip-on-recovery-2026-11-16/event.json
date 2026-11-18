@@ -1,0 +1,52 @@
+{
+  "slug": "eval-nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+  "event_id": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+  "event_type": "welp-recharacterization",
+  "event_title": "Nanbeige4.3-33B recovery: Model/Core and Advanced Reasoning",
+  "event_kicker": "HUMAN_ACCEPTED independent sections; SCI-01 Q02 interpretation attributed separately",
+  "event_date": "2026-11-16",
+  "record_date": "2026-11-16",
+  "model_id": "nanbeige4.3-33b",
+  "profile_id": "nanbeige4.3-33b-r9700-hip-recovery-on-2026-11-16",
+  "profile_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, reasoning ON",
+  "profile_status": "current",
+  "hardware": "AMD Radeon AI PRO R9700 / HIP",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "headline": "Model/Core: 61 identities; recorded capability counts 53 PASS, 5 FAIL, 1 BUDGET_LIMITED. SCI-01 Q02: recorded FAIL, source-oracle PASS as a separate interpretation. Advanced Reasoning: three of three bounded tasks PASS.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/nanbeige4.3-33b/events/nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5",
+    "path": "models/nanbeige4.3-33b/events/nanbeige43-33b-r9700-hip-on-recovery-2026-11-16/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/5a8ecd7cafe5ff70c5f718620820d02f03be9ca5/models/nanbeige4.3-33b/events/nanbeige43-33b-r9700-hip-on-recovery-2026-11-16/REPORT.md"
+  },
+  "source": {
+    "path": "models/nanbeige4.3-33b/events/nanbeige43-33b-r9700-hip-on-recovery-2026-11-16/website-publication.json",
+    "sha256": "b17d14196eb8976f3c874152f1216d32c8acc608f6561dc20eb5151a43fa51cb",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "body_source": {
+    "path": "models/nanbeige4.3-33b/events/nanbeige43-33b-r9700-hip-on-recovery-2026-11-16/REPORT.md",
+    "sha256": "fc5cf46b4122f4ee6b9ddc5695d82af676891c6c3226c869c473c50ce9cf2578",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "nanbeige43-33b-r9700-hip-on-recovery-2026-11-16",
+    "published_date": "2026-11-18",
+    "report_role": "Public-safe derivative; original local scientific evidence governs",
+    "published_report_sha256": "fc5cf46b4122f4ee6b9ddc5695d82af676891c6c3226c869c473c50ce9cf2578",
+    "note": "Direct owner scientific acceptance 2026-11-18 UTC with private decision-source SHA-256 bbd66fe6a7314746f8bb77e386c5e68cf78b6121c374c35d5a0a22a2b54b10e4. Original sections and outcomes retained; SCI-01 Q02 is an attributed interpretation, not a rescore. Event and registry pins remain distinct."
+  }
+}

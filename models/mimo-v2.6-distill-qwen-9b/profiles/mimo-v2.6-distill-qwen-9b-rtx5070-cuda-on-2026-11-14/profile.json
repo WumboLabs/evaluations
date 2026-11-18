@@ -1,0 +1,24 @@
+{
+  "schema": "wumbolabs-eval-profile/2",
+  "model_id": "mimo-v2.6-distill-qwen-9b",
+  "model_display_name": "MiMo-V2.6-Distill-Qwen-9B",
+  "profile_id": "mimo-v2.6-distill-qwen-9b-rtx5070-cuda-on-2026-11-14",
+  "profile_display_name": "Q8_0: llama.cpp / NVIDIA GeForce RTX 5070 CUDA, reasoning ON",
+  "runtime_family": "llama.cpp (CUDA)",
+  "runtime_version": "b11827-970b51ce7c9ba5fff0726c5e9994f1c2f0e4eedc",
+  "artifact": "ggml-org/MiMo-V2.6-Distill-Qwen-9B-GGUF; revision 81baddc39bc48924a88e87b8d31aceb03058e559; GGUF Q8_0; sha256 de6dae10334e088876358ef9f574835bb3b401ea2ecf5d6a9473f37894df6b73",
+  "artifact_precision": "Q8_0",
+  "hardware_scope": "NVIDIA GeForce RTX 5070 / CUDA",
+  "deployment_topology": "llama.cpp, CUDA, NVIDIA GeForce RTX 5070, native reasoning ON; configured 16384 tokens, not validation at full capacity. No serving recommendation assigned.",
+  "repository": "WumboLabs/evaluations",
+  "current_status": "current",
+  "profile_path": "models/mimo-v2.6-distill-qwen-9b/profiles/mimo-v2.6-distill-qwen-9b-rtx5070-cuda-on-2026-11-14",
+  "event_ids": [
+    "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14"
+  ],
+  "publication_provenance": {
+    "kind": "native",
+    "published_date": "2026-11-18",
+    "note": "Native tested profile for the accepted event; original profile revision 2f22b28d23b23eb8383ccb429fcf2739941bb7d8294d69f683e72d3289335f86."
+  }
+}

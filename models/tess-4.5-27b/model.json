@@ -1,0 +1,30 @@
+{
+  "model_id": "tess-4.5-27b",
+  "display_name": "Tess-4.5-27B",
+  "vendor": "Migtissera",
+  "weight": 29,
+  "website_slug": "tess-4-5-27b",
+  "website_url": "https://wumbolabs.dev/evaluations/tess-4-5-27b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "tess45-27b-r9700-hip-on-2026-11-17",
+    "capabilities": "tess45-27b-r9700-hip-on-2026-11-17",
+    "serving-profile": null,
+    "specialized": "tess45-27b-r9700-hip-on-2026-11-17",
+    "practical-use": null,
+    "context": "tess45-27b-r9700-hip-on-2026-11-17",
+    "reliability": "tess45-27b-r9700-hip-on-2026-11-17",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "tess-4.5-27b-r9700-hip-on-2026-11-17"
+    ],
+    "event_ids": [
+      "tess45-27b-r9700-hip-on-2026-11-17"
+    ]
+  },
+  "context_summary": "All eight bounded Practical Context checks passed. The 16,384-token serving capacity is configuration, not a validated useful-context default."
+}

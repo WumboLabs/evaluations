@@ -1,0 +1,30 @@
+{
+  "model_id": "occamy-1.0",
+  "display_name": "Occamy-1.0",
+  "vendor": "Accio Lab",
+  "weight": 30,
+  "website_slug": "occamy-1-0",
+  "website_url": "https://wumbolabs.dev/evaluations/occamy-1-0/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "occamy10-r9700-hip-on-2026-11-17",
+    "capabilities": "occamy10-r9700-hip-on-2026-11-17",
+    "serving-profile": null,
+    "specialized": "occamy10-r9700-hip-on-2026-11-17",
+    "practical-use": null,
+    "context": "occamy10-r9700-hip-on-2026-11-17",
+    "reliability": "occamy10-r9700-hip-on-2026-11-17",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "occamy-1.0-r9700-hip-on-2026-11-17"
+    ],
+    "event_ids": [
+      "occamy10-r9700-hip-on-2026-11-17"
+    ]
+  },
+  "context_summary": "Six of eight bounded Practical Context checks passed; both Multi-Document checks failed. The 16,384-token serving capacity is configuration, not a validated useful-context default."
+}

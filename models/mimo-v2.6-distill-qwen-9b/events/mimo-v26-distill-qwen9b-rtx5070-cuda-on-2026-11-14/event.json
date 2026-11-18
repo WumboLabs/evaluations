@@ -1,0 +1,52 @@
+{
+  "slug": "eval-mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+  "event_id": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+  "event_type": "welp-recharacterization",
+  "event_title": "MiMo-V2.6-Distill-Qwen-9B: Model/Core and Advanced Reasoning",
+  "event_kicker": "HUMAN_ACCEPTED independent sections; SCI-01 Q02 interpretation attributed separately",
+  "event_date": "2026-11-14",
+  "record_date": "2026-11-14",
+  "model_id": "mimo-v2.6-distill-qwen-9b",
+  "profile_id": "mimo-v2.6-distill-qwen-9b-rtx5070-cuda-on-2026-11-14",
+  "profile_name": "Q8_0: llama.cpp / NVIDIA GeForce RTX 5070 CUDA, reasoning ON",
+  "profile_status": "current",
+  "hardware": "NVIDIA GeForce RTX 5070 / CUDA",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "headline": "Model/Core: 61 identities; recorded capability counts 46 PASS, 13 FAIL, 0 BUDGET_LIMITED. SCI-01 Q02: recorded FAIL, source-oracle PASS as a separate interpretation. Advanced Reasoning: three of three bounded tasks PASS.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/mimo-v2.6-distill-qwen-9b/events/mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5",
+    "path": "models/mimo-v2.6-distill-qwen-9b/events/mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/5a8ecd7cafe5ff70c5f718620820d02f03be9ca5/models/mimo-v2.6-distill-qwen-9b/events/mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14/REPORT.md"
+  },
+  "source": {
+    "path": "models/mimo-v2.6-distill-qwen-9b/events/mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14/website-publication.json",
+    "sha256": "c9fc42c30ca7f4d8cb7b2261dcd6d17779fc48ccdb15c9c6b209b1715bd65a9e",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "body_source": {
+    "path": "models/mimo-v2.6-distill-qwen-9b/events/mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14/REPORT.md",
+    "sha256": "841fe57e5b30ae0a948724f9fc2e56cc3679b64411ba866bd5401ecfb4ce8297",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "published_date": "2026-11-18",
+    "report_role": "Public-safe derivative; original local scientific evidence governs",
+    "published_report_sha256": "841fe57e5b30ae0a948724f9fc2e56cc3679b64411ba866bd5401ecfb4ce8297",
+    "note": "Direct owner scientific acceptance 2026-11-18 UTC with private decision-source SHA-256 bbd66fe6a7314746f8bb77e386c5e68cf78b6121c374c35d5a0a22a2b54b10e4. Original sections and outcomes retained; SCI-01 Q02 is an attributed interpretation, not a rescore. Event and registry pins remain distinct."
+  }
+}

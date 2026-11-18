@@ -1,0 +1,30 @@
+{
+  "model_id": "mimo-v2.6-distill-qwen-9b",
+  "display_name": "MiMo-V2.6-Distill-Qwen-9B",
+  "vendor": null,
+  "weight": 27,
+  "website_slug": "mimo-v2-6-distill-qwen-9b",
+  "website_url": "https://wumbolabs.dev/evaluations/mimo-v2-6-distill-qwen-9b/",
+  "current_state": {
+    "agent-backend": null,
+    "protocol-development": null,
+    "model-classification": null,
+    "localmaxxing": null,
+    "performance": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "capabilities": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "serving-profile": null,
+    "specialized": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "practical-use": null,
+    "context": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "reliability": "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14",
+    "recommended_profile_id": null,
+    "classification": null,
+    "profile_ids": [
+      "mimo-v2.6-distill-qwen-9b-rtx5070-cuda-on-2026-11-14"
+    ],
+    "event_ids": [
+      "mimo-v26-distill-qwen9b-rtx5070-cuda-on-2026-11-14"
+    ]
+  },
+  "context_summary": "Seven of eight bounded Practical Context checks passed; the 6K Multi-Document check did not. The 16,384-token serving capacity is configuration, not a validated useful-context default."
+}

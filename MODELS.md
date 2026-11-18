@@ -32,3 +32,7 @@
 | [Ling 3.0 Tiny](models/ling-3.0-tiny/) | NOT_READY | 2 | 4 | [Evaluation](https://wumbolabs.dev/evaluations/ling-3-0-tiny/) |
 | [NeoHorse-1-9B](models/neohorse-1-9b/) | READY_WITH_GUARDRAILS | 2 | 3 | [Evaluation](https://wumbolabs.dev/evaluations/neohorse-1-9b/) |
 | [Qwen3.8-Flash-Next](models/qwen3.8-flash-next/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/qwen3-8-flash-next/) |
+| [MiMo-V2.6-Distill-Qwen-9B](models/mimo-v2.6-distill-qwen-9b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/mimo-v2-6-distill-qwen-9b/) |
+| [Nanbeige4.3-33B](models/nanbeige4.3-33b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/nanbeige4-3-33b/) |
+| [Tess-4.5-27B](models/tess-4.5-27b/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/tess-4-5-27b/) |
+| [Occamy-1.0](models/occamy-1.0/) | No model-level classification published | 1 | 1 | [Evaluation](https://wumbolabs.dev/evaluations/occamy-1-0/) |

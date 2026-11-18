@@ -1,0 +1,52 @@
+{
+  "slug": "eval-occamy10-r9700-hip-on-2026-11-17",
+  "event_id": "occamy10-r9700-hip-on-2026-11-17",
+  "event_type": "welp-recharacterization",
+  "event_title": "Occamy-1.0: Model/Core and Advanced Reasoning",
+  "event_kicker": "HUMAN_ACCEPTED independent sections; SCI-01 Q02 interpretation attributed separately",
+  "event_date": "2026-11-17",
+  "record_date": "2026-11-17",
+  "model_id": "occamy-1.0",
+  "profile_id": "occamy-1.0-r9700-hip-on-2026-11-17",
+  "profile_name": "Q4_K_M: llama.cpp / AMD Radeon AI PRO R9700 HIP, reasoning ON",
+  "profile_status": "current",
+  "hardware": "AMD Radeon AI PRO R9700 / HIP",
+  "evidence_maturity": "CURRENT_WELP",
+  "evidence_scope": [
+    "capabilities",
+    "reliability",
+    "context",
+    "performance",
+    "specialized"
+  ],
+  "headline": "Model/Core: 61 identities; recorded capability counts 47 PASS, 12 FAIL, 0 BUDGET_LIMITED. SCI-01 Q02: recorded FAIL, source-oracle PASS as a separate interpretation. Advanced Reasoning: three of three bounded tasks PASS.",
+  "welp_status": "NOT_ASSIGNED",
+  "authoring": "hand-authored",
+  "event_path": "models/occamy-1.0/events/occamy10-r9700-hip-on-2026-11-17",
+  "canonical_evidence": {
+    "state": "published",
+    "repo": "WumboLabs/evaluations",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5",
+    "path": "models/occamy-1.0/events/occamy10-r9700-hip-on-2026-11-17/REPORT.md",
+    "url": "https://github.com/WumboLabs/evaluations/blob/5a8ecd7cafe5ff70c5f718620820d02f03be9ca5/models/occamy-1.0/events/occamy10-r9700-hip-on-2026-11-17/REPORT.md"
+  },
+  "source": {
+    "path": "models/occamy-1.0/events/occamy10-r9700-hip-on-2026-11-17/website-publication.json",
+    "sha256": "0e96117c73f217a47299d97feb87804a8bcc96e5f2f297c27eb5f57e8130fad2",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "body_source": {
+    "path": "models/occamy-1.0/events/occamy10-r9700-hip-on-2026-11-17/REPORT.md",
+    "sha256": "5a1cebd49f3749c9b519fe95b4bb7c76391f8db7c8b84b6ac6a3dba3b6b934e2",
+    "commit": "5a8ecd7cafe5ff70c5f718620820d02f03be9ca5"
+  },
+  "publication_state": "published",
+  "publication_provenance": {
+    "kind": "native",
+    "campaign": "occamy10-r9700-hip-on-2026-11-17",
+    "published_date": "2026-11-18",
+    "report_role": "Public-safe derivative; original local scientific evidence governs",
+    "published_report_sha256": "5a1cebd49f3749c9b519fe95b4bb7c76391f8db7c8b84b6ac6a3dba3b6b934e2",
+    "note": "Direct owner scientific acceptance 2026-11-18 UTC with private decision-source SHA-256 bbd66fe6a7314746f8bb77e386c5e68cf78b6121c374c35d5a0a22a2b54b10e4. Original sections and outcomes retained; SCI-01 Q02 is an attributed interpretation, not a rescore. Event and registry pins remain distinct."
+  }
+}
